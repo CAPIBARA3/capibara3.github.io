@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Instruments used in the Cosmic Ray Detection Satellite Project.">
+    <title>Instruments - Cosmic Ray Detection Satellite Project</title>
+    <style>
+        /* Google Fonts for modern typography */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff9800, #8e44ad);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 4rem;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin: 1rem 0;
+        }
+
+        .section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            color: #8e44ad;
+            margin-bottom: 2rem;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+            line-height: 1.8;
+        }
+
+        .section a{
+            color: #8e44ad;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .image-grid .box {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-grid .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: 200px; /* Fixed height for all images */
+            object-fit: cover;
+        }
+
+        .box h3 {
+            font-size: 1.5rem;
+            color: #8e44ad;
+            margin: 1rem 0;
+        }
+
+        .box p {
+            padding: 0 1rem 1rem;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .back-link a {
+            color: #8e44ad;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our Instruments</h1>
+        <p>Tools for the exploration of cosmic rays in the high-energy Cosmos.</p>
+    </header>
+
+    <section class="section" id="instruments">
+        <h2>Instruments Overview</h2>
+        <p>To explore the mysteries of cosmic rays and their interactions in Earth's orbit, our satellite will be equipped with a suite of advanced instruments designed to detected and analyze high-energy radiation.</p>
+        <!--<p>While the spark program provides us with platform assistance, we are fully responsible for the development of the experimental payload.</p>-->
+        <p>Each instrument plays a key role in capturing data, contributing to the overall mission goals.</p>
+
+        <div class="image-grid">
+            <div class="box">
+                <img src="images/CosmicRays_996x581_v2.jpg" alt="Proton Detector">
+                <h3>Charged Particle Detector</h3>
+                <p>This instrument is designed to detect primary cosmic rays by measuring the charge, energy, and trajectory of high-energy particles that enter Earth's atmosphere.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/black-and-white-bones-hand-x-ray-207496-300x361.jpg" alt="X-ray Detector">
+                <h3>X-ray</h3>
+                <p>This detector captures secondary emissions in the form of X-rays and gamma rays, providing insights into high-energy astrophysical phenomena such as supernovae and black holes.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/Greek_lc_gamma.svg" alt="gamma-ray Detector">
+                <h3>𝛾-ray Detector</h3>
+                <p>Used to measure the magnetic fields in space, this instrument will help study how cosmic rays interact with Earth's magnetosphere and the solar wind.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="back-link">
+        <a href="https://capibara3.github.io/">&larr; Back to Main Project Page</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Cosmic Ray Detection Project. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Research on GRBs for cosmological distances - CAPIBARA Project.">
-    <title>Website</title>
+    <meta name="description" content="Cosmic Ray Detection Satellite Project - An interdisciplinary space exploration initiative.">
+    <title>Cosmic Ray Detection Satellite Project</title>
     <style>
+        /* Google Fonts for modern typography */
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
         body {
@@ -14,6 +15,141 @@
             padding: 0;
             background-color: #f5f5f5;
             color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff9800, #8e44ad);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 5rem;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin: 1rem 0;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+            background: url('images/chandra-banner.jpg') center/cover no-repeat;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+
+        .hero h2 {
+            font-size: 3.0rem;
+            margin: 0;
+        }
+
+        .section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .section h3 {
+            font-size: 2rem;
+            color: #8e44ad;
+            margin-bottom: 2rem;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+            line-height: 1.8;
+        }
+
+        .section a {
+            color: #8e44ad;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .image-grid .box {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-grid .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: 200px; /* Fixed height for all images */
+            object-fit: cover; /* Ensures images fill the box without distortion */
+        }
+
+        /* New styles for research section */
+        #research {
+            margin-top: 3rem;
+        }
+
+        #research h2 {
+            font-size: 1.5rem;
+            color: #8e44ad;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .cta {
+            padding: 2rem;
+            background-color: #8e44ad;
+            color: white;
+            text-align: center;
+        }
+
+        .cta h4 {
+            font-size: 1.8rem;
+        }
+
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact button styling */
+        /* Adjust the buttons inside the .cta section */
+        .cta a {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: #F29C6A;
+            /*background-color: #ff9800;*/
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-right: 1rem; /* Adds space between buttons */
+        }
+
+        /* Ensures the last button doesn't have unnecessary margin */
+        .cta a:last-child {
+            margin-right: 0;
+        }
+
+        .cta a:hover {
+            background-color: #e68900;
         }
 
         footer {
@@ -30,8 +166,67 @@
     </style>
 </head>
 <body>
+
+    <header>
+        <h1>CAPIBARA</h1>
+        <p><b>C</b>ollaboration for the <b>A</b>nalysis of <b>P</b>hotonic and <b>I</b>onic <b>B</b>ursts <b>a</b>nd <b>R</b>adiation from B<b>a</b>rcelona</p>
+    </header>
+
+    <div class="hero">
+        <center>
+        <h2>A Student Satellite to Explore the<br>Mysteries of the Energetic Cosmos</h2>
+        </center>
+    </div>
+
+    <section class="section" id="about">
+        <h3>About the Project</h3>
+        <p>This project aims to develop and launch a satellite to detect cosmic rays in Earth's orbit. We seek to measure both primary cosmic rays (charged particles) and secondary emissions (X-rays and 𝛾-rays).</p>
+        <p>Exploring these high-energy radiation, we hope to advance our understanding of astrophysical phenomena and Earth's physics.</p>
+        <p>We also aim to contribute to fields such as particle physics, climate studies, medicine, planetary science, and more by making our data accessible to the public.</p>
+        <p>As a student-led project, we are very grateful to the <a href="https://spark-program.pldspace.com">SPARK program</a> for the opportunity and our teachers for their support and dedication.</p>
+        <div class="image-grid">
+            <div class="box">
+                <a href="preliminar_proposal.pdf"><img src="images/proposal.png"><h2>Mission Proposal</h2></a>
+            </div>
+            <div class="box">
+                <a href="instruments.html"><img src="images/instruments.png"><h2>Our Instruments</h2></a>
+            </div>
+            <div class="box">
+                <a href="https://spark-program.pldspace.com"><img src="images/PLD-Space_visual_full-width_879-2.jpg.webp"><h2>SPARK program</h2></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="research">
+        <h3>Research Initiatives</h3>
+        <div class="image-grid">
+            <div class="box">
+                <a href="research/GRB_cosmology.html"><img src="images/hubbleconstant.jpg"><h2>GRBs Cosmology</h2></a>
+            </div>
+            <div class="box">
+                <a href="research/idea_template.html"><img src="images/ideas.png"><h2>RESEARCH IDEA 2</h2></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="team">
+        <h3>Meet the Team</h3>
+        <p>We are a group of high school and university students from various fields that have joined to collaborate for this mission. With interests and expertise ranging from medicine to astrophysics through climate studies, particle physics and, of course, aerospace engineering.</p>
+        <p>Are you a student and want to join our team? Go ahead, just <a href="#cta">reach out</a> to us!</p>
+    </section>
+
+    <div class="cta" id="cta">
+        <h4>Interested in Learning More?</h4>
+        <p>Contact us for more details on the project and our research.</p>
+        <div class="cta-buttons"> <!-- Optional wrapper for better control -->
+            <a href="mailto:joanalnu@hotmail.com">Get in Touch</a>
+            <a href="https://calendly.com/joanalnu/30min-meeting">Book a meeting</a>
+        </div>
+    </div>
+    
+
     <footer>
-        <p>&copy; 2024 CAPIBARA Project. All rights reserved.</p>
+        <p>&copy; 2024 Cosmic Ray Detection Project. All rights reserved.</p>
     </footer>
 
 </body>
