@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAPIBARA - Meet Our Team</title>
+  <style>
+    :root {
+      --primary-color: #ff6f61;
+      --secondary-color: #6a1b9a;
+      --text-color: #333;
+      --bg-color: #f5f5f5;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      text-align: center;
+      padding: 50px 0;
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      color: white;
+    }
+
+    .header h1 {
+      font-size: 2.5em;
+    }
+
+    .header p {
+      font-size: 1.2em;
+    }
+
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
+
+    .team-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      width: 250px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-photo {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 15px;
+    }
+
+    .team-card h2 {
+      color: var(--primary-color);
+      font-size: 1.5em;
+      margin: 10px 0;
+    }
+
+    .team-card h3 {
+      color: var(--secondary-color);
+      font-size: 1.2em;
+      margin: 5px 0;
+    }
+
+    .team-card p {
+      color: var(--text-color);
+      font-size: 0.9em;
+      margin: 10px 0 15px;
+    }
+
+    .contact-links a {
+      color: var(--secondary-color);
+      margin: 0 5px;
+      font-size: 0.9em;
+      text-decoration: none;
+    }
+
+    .contact-links a:hover {
+      text-decoration: underline;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal-header h2 {
+      color: var(--primary-color);
+      margin: 0;
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .close {
+      color: #aaa;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .modal-body p {
+      color: var(--text-color);
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Meet Our Team</h1>
+    <p>Dedicated minds behind CAPIBARA</p>
+  </header>
+
+  <!-- Team Member Cards Section -->
+  <section class="team-grid">
+    <div class="team-card">
+      <img src="images/default.png" alt="J. Alcaide Photo" class="profile-photo">
+      <h2>Joan Alcaide-Núñez</h2>
+      <h3>Group Leader</h3>
+      <p>I serve as the Groups principal investigator while</p>
+      <p>Leading CAPIBARA's cosmic ray research, with a focus on developing detector instrumentation and scientific outreach.</p>
+      <div class="contact-links">
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com/joanalnu" target="_blank">GitHub</a>
+        <a href="mailto:joanalnu@outlook.com">Email</a>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <img src="images/default.png" alt="Team Member Photo" class="profile-photo">
+      <h2>Martí Delgado Farriol</h2>
+      <h3>Role or Position</h3>
+      <p>Short bio or description of the team member's role within the project.</p>
+      <div class="contact-links">
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="mailto:example@example.com">Email</a>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <img src="images/default.png" alt="Team Member Photo" class="profile-photo">
+      <h2>Lluc Soler Manich</h2>
+      <h3>Role or Position</h3>
+      <p>Short bio or description of the team member's role within the project.</p>
+      <div class="contact-links">
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="mailto:example@example.com">Email</a>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <img src="images/default.png" alt="Team Member Photo" class="profile-photo">
+      <h2>Anna Abadal Garrido</h2>
+      <h3>Role or Position</h3>
+      <p>Short bio or description of the team member's role within the project.</p>
+      <div class="contact-links">
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="mailto:example@example.com">Email</a>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <img src="images/default.png" alt="Team Member Photo" class="profile-photo">
+      <h2>Emma Massó Sala</h2>
+      <h3>Role or Position</h3>
+      <p>Short bio or description of the team member's role within the project.</p>
+      <div class="contact-links">
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="mailto:example@example.com">Email</a>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <img src="images/default.png" alt="Team Member Photo" class="profile-photo">
+      <h2>Christian Schaefter González</h2>
+      <h3>Role or Position</h3>
+      <p>Short bio or description of the team member's role within the project.</p>
+      <div class="contact-links">
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="mailto:example@example.com">Email</a>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <img src="images/default.png" alt="Team Member Photo" class="profile-photo">
+      <h2>Hongda Zheng</h2>
+      <h3>Role or Position</h3>
+      <p>Short bio or description of the team member's role within the project.</p>
+      <div class="contact-links">
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="mailto:example@example.com">Email</a>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <img src="images/default.png" alt="Team Member Photo" class="profile-photo">
+      <h2>Carles Fonseca Maurí</h2>
+      <h3>Role or Position</h3>
+      <p>Short bio or description of the team member's role within the project.</p>
+      <div class="contact-links">
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="mailto:example@example.com">Email</a>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <img src="images/default.png" alt="Team Member Photo" class="profile-photo">
+      <h2>Alícia Lòpez</h2>
+      <h3>Supporting Teacher</h3>
+      <p>Short bio or description of the teacher's role within the project.</p>
+      <div class="contact-links">
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="mailto:example@example.com">Email</a>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <img src="images/default.png" alt="Team Member Photo" class="profile-photo">
+      <h2>Susana De Mesa Sterthoff</h2>
+      <h3>Supporting Teacher</h3>
+      <p>Short bio or description of the teacher's role within the project.</p>
+      <div class="contact-links">
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="mailto:example@example.com">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals for each team member -->
+  <div id="joan-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Joan Alcaide-Núñez</h2>
+        <span class="close" onclick="closeModal('joan-modal')">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>Joan is the Group Leader of CAPIBARA, focusing on cosmic ray detection instrumentation and outreach. His work includes designing detector systems to enhance data accuracy and mentoring junior team members.</p>
+        <div class="contact-links">
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com/joanalnu" target="_blank">GitHub</a>
+          <a href="mailto:joanalnu@outlook.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="marti-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Martí Delgado Farriol</h2>
+        <span class="close" onclick="closeModal('marti-modal')">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>Description</p>
+        <div class="contact-links">
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com/" target="_blank">GitHub</a>
+          <a href="mailto:example@mail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="lluc-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Lluc Soler Manich</h2>
+        <span class="close" onclick="closeModal('lluc-modal')">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>Description</p>
+        <div class="contact-links">
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com/" target="_blank">GitHub</a>
+          <a href="mailto:example@mail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="anna-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Anna Abadal Garrido</h2>
+        <span class="close" onclick="closeModal('anna-modal')">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>Description</p>
+        <div class="contact-links">
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com/" target="_blank">GitHub</a>
+          <a href="mailto:example@mail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="emma-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Emma Massó Sala</h2>
+        <span class="close" onclick="closeModal('emma-modal')">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>Description</p>
+        <div class="contact-links">
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com/" target="_blank">GitHub</a>
+          <a href="mailto:example@mail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="christian-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Christian Schaefter González</h2>
+        <span class="close" onclick="closeModal('christian-modal')">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>Description</p>
+        <div class="contact-links">
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com/" target="_blank">GitHub</a>
+          <a href="mailto:example@mail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="hongda-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Hongda Zheng</h2>
+        <span class="close" onclick="closeModal('hongda-modal')">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>Description</p>
+        <div class="contact-links">
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com/" target="_blank">GitHub</a>
+          <a href="mailto:example@mail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="carles-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Carles Fonseca Maurí</h2>
+        <span class="close" onclick="closeModal('carles-modal')">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>Description</p>
+        <div class="contact-links">
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com/" target="_blank">GitHub</a>
+          <a href="mailto:example@mail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="alicia-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Alícia Lòpez</h2>
+        <span class="close" onclick="closeModal('alicia-modal')">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>Description</p>
+        <div class="contact-links">
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com/" target="_blank">GitHub</a>
+          <a href="mailto:example@mail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="susana-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Susana De Mesa Sterthoff</h2>
+        <span class="close" onclick="closeModal('susana-modal')">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>Description</p>
+        <div class="contact-links">
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com/" target="_blank">GitHub</a>
+          <a href="mailto:example@mail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script>
+    // Function to open modal
+    function openModal(modalId) {
+      document.getElementById(modalId).style.display = "block";
+    }
+
+    // Function to close modal
+    function closeModal(modalId) {
+      document.getElementById(modalId).style.display = "none";
+    }
+
+    // Close the modal when clicking outside of it
+    window.onclick = function(event) {
+      const modals = document.getElementsByClassName('modal');
+      for (let modal of modals) {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      }
+    }
+  </script>
+</body>
+</html>
