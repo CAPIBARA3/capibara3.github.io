@@ -16,6 +16,18 @@
             background-color: #f5f5f5;
             color: #333;
         }
+        
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
 
         header {
             background: linear-gradient(135deg, #ff9800, #8e44ad);
@@ -184,10 +196,7 @@
     <section class="section" id="general_links">
         <div class="image-grid">
             <div class="box">
-                <a href="preliminar_proposal.pdf"><img src="images/proposal.png"><h2>Mission Proposal*</h2></a>
-            </div>
-            <div class="box">
-                <a href="instruments.html"><img src="images/instruments.png"><h2>Our Instruments</h2></a>
+                <a href="preliminar_proposal.pdf"><img src="images/proposal.png"><h2>Mission Proposal</h2></a>
             </div>
             <div class="box">
                 <a href="https://spark-program.pldspace.com"><img src="images/PLD-Space_visual_full-width_879-2.jpg.webp"><h2>SPARK program - PLDSPace</h2></a>
@@ -207,11 +216,13 @@
             <div class="box">
                 <a href="research/supernova_research.html"><img src="images/supernova.jpg"><h2>Supernova Research</h2></a>
             </div>
+        </div>
+        <div class="image-grid">
             <div class="box">
-                <a href="research/exoplanet_atmospheres.html"><img src="images/ideas.png"></a>
+                <a href="research/exoplanet_atmospheres.html"><img src="images/exoplanet.jpeg"><h2>Exoplanet Atmospheres</h2></a>
             </div>
             <div class="box">
-                <a href="research/solar_cosmic_rays"><img src="images/ideas.png"></a>
+                <a href="research/solar_cosmic_rays"><img src="images/solar-wind.jpg"><h2>Solar Cosmic Rays</h2></a>
             </div>
             <!-- <div class="box">
                 <a href="research/idea_template.html"><img src="images/ideas.png"><h2>RESEARCH IDEA</h2></a>
@@ -219,10 +230,44 @@
         </div>
     </section>
 
+    <section class="section" id="instruments">
+        <h3>Our Instruments</h3>
+        <p>Our satellite will be equipped with a suite of <a href="instruments.html">advanced instruments</a> designed to detect and analyze high-energy radiation.</p>
+        <div class="image-grid">
+            <div class="box">
+                <img src="images/CosmicRays_996x581_v2.jpg" alt="Proton Detector">
+                <h3>Primary Cosmic Ray Detector</h3>
+                <p>This experiment detects cosmic ray protons and alpha-particles. Using a layered structure of detectors, it captures time-of-flight, charge, and energy of cosmic rays for full characterization.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/black-and-white-bones-hand-x-ray-207496-300x361.jpg" alt="X-ray Detector">
+                <h3>X-ray Observatory</h3>
+                <p>Equipped with a Charged-Coupled Device (CCD) array, this instrument detects X-rays emitted from high-energy astrophysical sources like supernovae and black holes, with a pointing accuracy of 5'' RA and 0.5'' DEC.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/Greek_lc_gamma.svg" alt="gamma-ray Detector">
+                <h3>𝛾-ray Observatory</h3>
+                <p>A wide-field camera surveys gamma-ray sources with less stringent pointing requirements, detecting high-energy radiation emitted by astrophysical objects.</p>
+            </div>
+        </div>
+    </section>
+
     <section class="section" id="team">
         <h3>Meet the Team</h3>
-        <p>We’re a dedicated <a href="group/overview.html">group of high school students</a>, each bringing unique perspectives and skills to this ambitious mission. Our team’s interests span diverse fields such as medicine, astrophysics, climate science, particle physics, and aerospace engineering. Together, we're pushing boundaries to explore and understand the cosmos.</p>
-        <p>Are you a student with a passion for science or engineering? We'd love for you to join us on this journey! <a href="mailto:joanalnu@hotmail.com">Reach out</a> and become part of our team!</p>
+        <div class="row">
+            <div class="column">
+                <center>
+                    <p style="max-width: 400px;">We’re a dedicated <a href="group/overview.html">group of high school students</a>, each bringing unique perspectives and skills to this ambitious mission. Our team’s interests span diverse fields such as astrophysics, particle physics, and aerospace engineering.</p><p style="max-width: 400px;">Together, we're pushing boundaries to explore and understand the cosmos.</p>
+                </center>
+            </div>
+            <div class="column">
+                <center>
+                    <img src="group/images/team.gif" alt="Team Photo">
+                </center>
+            </div>
+        </div>
     </section>
 
     <div class="cta" id="cta">
@@ -236,8 +281,7 @@
     
 
     <footer>
-        <p>* Note that the mission proposal is a preliminary document and is subject to change as the project progresses.</p>
-        <p>&copy; 2024 Cosmic Ray Detection Project. All rights reserved.</p>
+        &copy; 2024 Cosmic Ray Detection Project. All rights reserved.
     </footer>
 
 </body>
