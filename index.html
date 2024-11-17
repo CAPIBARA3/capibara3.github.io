@@ -29,6 +29,107 @@
             width: 50%;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* General Reset for Navigation Menu */
+        .menu {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            backdrop-filter: blur(10px); /* Blur effect for the background */
+            color: white;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Light border for separation */
+        }
+
+        /* Menu Structure */
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Center the items */
+            align-items: center;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        /* Styling for Links */
+        .menu a {
+            text-decoration: none;
+            color: #333; /* Dark color for readability */
+            padding: 0.75rem 1rem; /* Adjust padding */
+            display: block;
+            font-weight: 600;
+            font-size: 0.9rem; /* Smaller font size for modern look */
+            transition: background-color 0.3s, color 0.3s, transform 0.3s ease; /* Smooth hover transition */
+            text-align: center;
+        }
+
+        /* Hover Effects for Links */
+        .menu a:hover {
+            background-color: #ff6600; /* Orange color for hover */
+            color: white; /* White text when hovered */
+            transform: scale(1.05); /* Slight scaling for dynamic hover effect */
+            border-radius: 5px; /* Smooth rounded corners */
+        }
+
+        /* Dropdown Menu Styling */
+        .menu .dropdown-menu {
+            display: none; /* Hidden by default */
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f0f0f0; /* Light gray background for dropdown */
+            padding: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            z-index: 1000;
+            min-width: 200px; /* Set minimum width for dropdown */
+        }
+
+        .menu .dropdown-menu li {
+            width: 100%;
+        }
+
+        .menu .dropdown-menu a {
+            padding: 0.75rem 1rem;
+            color: #333; /* Text color */
+        }
+
+        .menu .dropdown-menu a:hover {
+            background-color: #ff6600; /* Matching orange hover */
+            color: white;
+        }
+
+        /* Show Dropdown on Hover */
+        .menu li:hover .dropdown-menu {
+            display: block; /* Display dropdown when hovering */
+        }
+
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 768px) {
+            .menu ul {
+                flex-direction: column; /* Stack items vertically */
+                align-items: flex-start;
+            }
+
+            .menu li {
+                width: 100%;
+            }
+
+            .menu .dropdown-menu {
+                position: static; /* Stack dropdown inline with the menu */
+            }
+        }
+
         /* Clear floats after the columns */
         .row:after {
             content: "";
@@ -64,6 +165,10 @@
             background: url('images/chandra-banner.jpg') center/cover no-repeat;
             color: white;
             text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+            
+            position: relative;
+            /* height: 100vh; Adjust based on your design */
+            text-align: center;
         }
 
         .hero h2 {
@@ -234,7 +339,6 @@
     </style>
 </head>
 <body>
-
     <header>
         <h1>CAPIBARA</h1>
         <p><b style="color: black; font-size:1.5rem;">C</b style="color: black; font-size:1.5rem;">ollaboration for the <b style="color: black; font-size:1.5rem;">A</b>nalysis of <b style="color: black; font-size:1.5rem;">P</b>hotonic and <b style="color: black; font-size:1.5rem;">I</b>onic <b style="color: black; font-size:1.5rem;">B</b>ursts <b style="color: black; font-size:1.5rem;">a</b>nd <b style="color: black; font-size:1.5rem;">R</b>adiation from B<b style="color: black; font-size:1.5rem;">a</b>rcelona</p>
@@ -245,6 +349,24 @@
         <h2>A Student Satellite to Explore the<br>Mysteries of the Energetic Cosmos</h2>
         </center>
     </div>
+
+    <nav class="menu" id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#instruments">Instruments</a></li>
+            <li class="dropdown">
+                <a href="#research">Research</a>
+                <ul class="dropdown-menu">
+                    <li><a href="research/GRB_cosmology.html">GRB Cosmology</a></li>
+                    <li><a href="research/agn_jet_dynamics_and_cosmic_ray_interact.html">AGN Jet Dynamics</a></li>
+                    <li><a href="research/supernova_research.html">Supernova Remnants</a></li>
+                    <li><a href="research/solar_cosmic_rays.html">Solar Cosmic Rays</a></li>
+                    <li><a href="research/exoplanet_atmospheres.html">Exoplanet Atmospheres</a></li>
+                </ul>
+            </li>
+            <li><a href="group/overview.html">Group</a></li>
+        </ul>
+    </nav>
 
     <section class="section" id="about">
         <h3>About the Project</h3>

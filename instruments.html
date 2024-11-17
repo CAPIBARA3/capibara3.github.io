@@ -120,6 +120,59 @@
             font-size: 0.9rem;
             margin: 0;
         }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-header h2 {
+            color: var(--primary-color);
+            margin: 0;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .close {
+            color: #aaa;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            }   
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-body p {
+            color: var(--text-color);
+        }
     </style>
 </head>
 <body>
@@ -130,23 +183,22 @@
     </header>
 
     <section class="section" id="instruments">
-        <h2>Instruments Overview</h2>
-        <p>To explore the mysteries of cosmic rays and their interactions in Earth's orbit, our satellite will be equipped with a suite of advanced instruments designed to detect and analyze high-energy radiation.</p>
-
+        <h3>Instruments</h3>
+        <p>Our satellite will be equipped with a suite of <a href="instruments.html">advanced instruments</a> designed to detect and analyze high-energy radiation by our amazing engineering team: Lluc Soler, Emma Massó, and Christian Schaefter.</p>
         <div class="image-grid">
-            <div class="box">
+            <div class="box" onclick="openModal('pcr-detector')">
                 <img src="images/CosmicRays_996x581_v2.jpg" alt="Proton Detector">
                 <h3>Primary Cosmic Ray Detector</h3>
                 <p>This experiment detects cosmic ray protons and alpha-particles. Using a layered structure of detectors, it captures time-of-flight, charge, and energy of cosmic rays for full characterization.</p>
             </div>
 
-            <div class="box">
+            <div class="box" onclick="openModal('x-ray-detector')">
                 <img src="images/black-and-white-bones-hand-x-ray-207496-300x361.jpg" alt="X-ray Detector">
                 <h3>X-ray Observatory</h3>
                 <p>Equipped with a Charged-Coupled Device (CCD) array, this instrument detects X-rays emitted from high-energy astrophysical sources like supernovae and black holes, with a pointing accuracy of 5'' RA and 0.5'' DEC.</p>
             </div>
 
-            <div class="box">
+            <div class="box" onclick="openModal('gamma-ray-detector')">
                 <img src="images/Greek_lc_gamma.svg" alt="gamma-ray Detector">
                 <h3>𝛾-ray Observatory</h3>
                 <p>A wide-field camera surveys gamma-ray sources with less stringent pointing requirements, detecting high-energy radiation emitted by astrophysical objects.</p>
@@ -157,6 +209,68 @@
     <div class="back-link">
         <a href="https://capibara3.github.io/index.html#instruments">&larr; Back to Main Project Page</a>
     </div>
+
+    <div id="pcr-detector" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>PCR Detector</h2>
+                <span class="close" onclick="closeModal('pcr-detector')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>The Primary Cosmic Ray (PCR) detector onboard our satellite is designed to identify and analyze high-energy cosmic particles, primarily protons and, if possible, alpha particles. To ensure comprehensive particle characterization, the detector incorporates a layered setup of multiple devices, each tailored for specific measurements:</p>
+                <li>Time-of-Flight (TOF), charge detection, and energy measurement. TOF detectors use scintillators to capture particle velocities by emitting a flash of light when struck by a charged particle, with timing precision provided by paired detectors that measure travel time between them.</li>
+                <li>Charge detection is achieved using silicon detectors, which act as parallel-plate ionization chambers, generating a current to determine particle charge.</li>
+                <li>Finally, an electromagnetic calorimeter measures particle energy by absorbing and converting the particle’s full energy into a detectable signal.</li>
+                <p>This compact, layered arrangement enables the satellite’s PCR detector to capture critical data on cosmic ray particles with high accuracy, contributing valuable insights into their composition and behavior.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="x-ray-detector" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>X-ray Detector</h2>
+                <span class="close" onclick="closeModal('x-ray-detector')">&times;</span>
+            </div>
+                <p>The satellite’s X-ray detector uses Charged-Coupled Devices (CCDs) for precise photon detection and analysis. With a pointing accuracy of 5’’ and 0.5’’ in right ascension (RA) and declination (DEC), the instrument provides high-resolution observations. CCDs convert incoming X-ray photons into photoelectrons, which are shifted to a readout register, creating a digital signal. When X-ray photons interact with the CCD, they lose energy through Compton scattering, fluorescence, or the photoelectric effect, generating electron-hole pairs in the silicon substrate. Using the ionization energy of silicon (3.65 eV), the photon’s energy can be estimated.</p>
+                <p>Functioning as a photon counter, the detector counts individual photons, typically ensuring each photon is collected within a single pixel. In cases where photons interact with multiple pixels, an intensity threshold distinguishes single-pixel from multi-pixel events. This method, combined with a grading system similar to the ASCA mission, helps separate X-ray events from cosmic rays, ensuring accurate detection and analysis of X-ray sources. This instrument will contribute significantly to the study of high-energy astronomical phenomena through detailed X-ray observations.</p>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+
+    <div id="gamma-ray-detector" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>𝛾-ray Detector</h2>
+                <span class="close" onclick="closeModal('gamma-ray-detector')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>A wide-field camera surveys gamma-ray sources with less stringent pointing requirements, detecting high-energy radiation emitted by astrophysical objects.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle modals -->
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+            }
+
+            function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            }
+
+            // Close modal when clicking outside of modal content
+            window.onclick = function(event) {
+            const modals = document.getElementsByClassName('modal');
+            for (let modal of modals) {
+                if (event.target === modal) {
+                modal.style.display = 'none';
+                }
+            }
+        }
+    </script>
 
     <footer>
         <p>&copy; 2024 CAPIBARA Collaboration. All rights reserved.</p>
