@@ -114,19 +114,64 @@
             display: block; /* Display dropdown when hovering */
         }
 
-        /* Responsive Design for Smaller Screens */
+        .hamburger-icon {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+            
+        }
+
         @media (max-width: 768px) {
-            .menu ul {
-                flex-direction: column; /* Stack items vertically */
-                align-items: flex-start;
-            }
-
-            .menu li {
+            /* Hide the regular menu items on mobile */
+            .menu {
+                display: none;
+                flex-direction: column;
+                align-items: center;
                 width: 100%;
+                background-color: rgba(255, 255, 255, 0.9);
+                position: absolute;
+                top: 60px;
+                left: 0;
+                z-index: 10;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
             }
 
-            .menu .dropdown-menu {
-                position: static; /* Stack dropdown inline with the menu */
+            /* Show the mobile menu when active */
+            .menu.active {
+                display: flex;
+            }
+
+            /* Adjust list items spacing for mobile */
+            .menu > li {
+                margin: 10px 0;
+            }
+
+            /* Show hamburger icon only on mobile */
+            .menu-container {
+                display: flex;
+                justify-content: center; /* Center horizontally */
+                align-items: center; /* Center vertically */
+                height: 60px; /* Adjust as needed for your design */
+                background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+                position: sticky; /* Keeps it at the top when scrolling */
+                top: 0;
+                z-index: 10;
+                border-bottom: 1px solid rgb(255, 255, 255);
+            }
+
+            .hamburger-icon {
+                font-size: 30px;
+                cursor: pointer;
+                color: #333; /* Icon color */
+                display: block;
+            }
+
+            /* Dropdown menu on mobile */
+            .dropdown .dropdown-content {
+                position: static;
+                background-color: rgba(255, 255, 255, 0.9);
+                min-width: 100%;
+                box-shadow: none;
             }
         }
 
@@ -350,23 +395,28 @@
         </center>
     </div>
 
-    <nav class="menu" id="menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#instruments">Instruments</a></li>
-            <li class="dropdown">
-                <a href="#research">Research</a>
-                <ul class="dropdown-menu">
-                    <li><a href="research/GRB_cosmology.html">GRB Cosmology</a></li>
-                    <li><a href="research/agn_jet_dynamics_and_cosmic_ray_interact.html">AGN Jet Dynamics</a></li>
-                    <li><a href="research/supernova_research.html">Supernova Remnants</a></li>
-                    <li><a href="research/solar_cosmic_rays.html">Solar Cosmic Rays</a></li>
-                    <li><a href="research/exoplanet_atmospheres.html">Exoplanet Atmospheres</a></li>
-                </ul>
-            </li>
-            <li><a href="group/overview.html">Group</a></li>
-        </ul>
-    </nav>
+    <div class="menu-container">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger menu icon -->
+        </div>
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#instruments">Instruments</a></li>
+                <li class="dropdown">
+                    <a href="#research">Research</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="research/GRB_cosmology.html">GRB Cosmology</a></li>
+                        <li><a href="research/agn_jet_dynamics_and_cosmic_ray_interact.html">AGN Jet Dynamics</a></li>
+                        <li><a href="research/supernova_research.html">Supernova Remnants</a></li>
+                        <li><a href="research/solar_cosmic_rays.html">Solar Cosmic Rays</a></li>
+                        <li><a href="research/exoplanet_atmospheres.html">Exoplanet Atmospheres</a></li>
+                    </ul>
+                </li>
+                <li><a href="group/overview.html">Group</a></li>
+            </ul>  
+        </nav>
+    </div>
 
     <section class="section" id="about">
         <h3>About the Project</h3>
@@ -537,9 +587,15 @@
         }
     </script>
 
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+
     <footer>
         <p>&copy; 2024 CAPIBARA Collaboration. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
