@@ -117,7 +117,7 @@ html {
         top: 60px;
         left: 0;
         z-index: 10;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     }
 
     /* Show the mobile menu when active */
