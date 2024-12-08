@@ -1,3 +1,8 @@
-research/agn_jet_dynamics_and_cosmic_ray_interact.html
-research/supernova_research.html
+# OS essentials
 .idea
+
+# developing templates
+research/idea_template.html
+
+# deprecated
+deprecated/original_home.css
