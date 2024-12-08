@@ -11,6 +11,8 @@ body {
 .column {
     float: left;
     width: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 html {
