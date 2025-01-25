@@ -1,9 +1,10 @@
 # OS essentials
 .idea
-.DS_Store/
+.DS_Store
 research/.DS_Store
 group/.DS_Store
 images/.DS_Store
+group/images/.DS_Store
 
 # developing templates
 research/idea_template.html
