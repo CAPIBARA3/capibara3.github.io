@@ -20,19 +20,19 @@
         <p>Our satellite will be equipped with a suite of <a href="instruments.html">advanced instruments</a> designed to detect and analyze high-energy radiation by our amazing engineering team: Lluc Soler, Emma Massó, and Christian Schaefter.</p>
         <div class="image-grid">
             <div class="box" onclick="openModal('pcr-detector')">
-                <img src="images/CosmicRays_996x581_v2.jpg" alt="Proton Detector">
+                <img src="images/cosmic-rays.jpg" alt="Proton Detector">
                 <h3>Primary Cosmic Ray Detector</h3>
                 <p>This experiment detects cosmic ray protons and alpha-particles. Using a layered structure of detectors, it captures time-of-flight, charge, and energy of cosmic rays for full characterization.</p>
             </div>
 
             <div class="box" onclick="openModal('x-ray-detector')">
-                <img src="images/black-and-white-bones-hand-x-ray-207496-300x361.jpg" alt="X-ray Detector">
+                <img src="images/charge_transfer_CCDs.png" alt="X-ray Detector">
                 <h3>X-ray Observatory</h3>
                 <p>Equipped with a Charged-Coupled Device (CCD) array, this instrument detects X-rays emitted from high-energy astrophysical sources like supernovae and black holes, with a pointing accuracy of 5'' RA and 0.5'' DEC.</p>
             </div>
 
             <div class="box" onclick="openModal('gamma-ray-detector')">
-                <img src="images/Greek_lc_gamma.svg" alt="gamma-ray Detector">
+                <img src="images/compton_detector.png" alt="gamma-ray Detector">
                 <h3>𝛾-ray Observatory</h3>
                 <p>A wide-field camera surveys gamma-ray sources with less stringent pointing requirements, detecting high-energy radiation emitted by astrophysical objects.</p>
             </div>
@@ -65,9 +65,10 @@
                 <h2>X-ray Detector</h2>
                 <span class="close" onclick="closeModal('x-ray-detector')">&times;</span>
             </div>
+            <div class="modal-body">
                 <p>The satellite’s X-ray detector uses Charged-Coupled Devices (CCDs) for precise photon detection and analysis. With a pointing accuracy of 5’’ and 0.5’’ in right ascension (RA) and declination (DEC), the instrument provides high-resolution observations. CCDs convert incoming X-ray photons into photoelectrons, which are shifted to a readout register, creating a digital signal. When X-ray photons interact with the CCD, they lose energy through Compton scattering, fluorescence, or the photoelectric effect, generating electron-hole pairs in the silicon substrate. Using the ionization energy of silicon (3.65 eV), the photon’s energy can be estimated.</p>
                 <p>Functioning as a photon counter, the detector counts individual photons, typically ensuring each photon is collected within a single pixel. In cases where photons interact with multiple pixels, an intensity threshold distinguishes single-pixel from multi-pixel events. This method, combined with a grading system similar to the ASCA mission, helps separate X-ray events from cosmic rays, ensuring accurate detection and analysis of X-ray sources. This instrument will contribute significantly to the study of high-energy astronomical phenomena through detailed X-ray observations.</p>
-            <div class="modal-body">
+                <img src="images/charge_transfer_CCDs.png" alt="X-Ray Detector">
             </div>
         </div>
     </div>
@@ -80,6 +81,7 @@
             </div>
             <div class="modal-body">
                 <p>A wide-field camera surveys gamma-ray sources with less stringent pointing requirements, detecting high-energy radiation emitted by astrophysical objects.</p>
+                <img src="images/compton_detector.png" width="90%" alt="Gamma-Ray Detector">
             </div>
         </div>
     </div>
