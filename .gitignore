@@ -8,6 +8,7 @@ group/images/.DS_Store
 
 # developing templates
 research/idea_template.html
+research/exoplanet_atmospheres.html
 
 # deprecated
 deprecated/
