@@ -167,6 +167,25 @@ footer p {
 
 }
 
+.disclaimer {
+    position: sticky;
+    top: 0;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightblue;
+    color: #000000;
+    padding: 2px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.disclaimer a{
+    color: #8e44ad;
+}
+
 @media (max-width: 768px) {
     /* Hide the regular menu items on mobile */
     .menu {
