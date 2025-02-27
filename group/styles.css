@@ -307,3 +307,81 @@ footer p {
         box-shadow: none;
     }
 }
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #ff6f61; /* Primary color stays the same */
+    --secondary-color: #9b59b6; /* Secondary color for dark mode */
+    --text-color: #e0e0e0; /* Light text color for dark mode */
+    --bg-color: #121212; /* Dark background color */
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+
+  .header {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
+  }
+
+  .team-card {
+    background-color: #333; /* Dark background for team cards */
+    color: var(--text-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .team-card h2 {
+    color: var(--primary-color);
+  }
+
+  .team-card h3 {
+    color: var(--secondary-color);
+  }
+
+  .team-card p {
+    color: var(--text-color);
+  }
+
+  .contact-links a {
+    color: var(--secondary-color);
+  }
+
+  .contact-links a:hover {
+    text-decoration: underline;
+  }
+
+  .modal-content {
+    background-color: #222; /* Dark background for modals */
+    color: var(--text-color);
+  }
+
+  footer {
+    background-color: #2c3e50;
+    color: white;
+  }
+
+  .menu {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark menu background */
+    color: white;
+  }
+
+  .menu a {
+    color: var(--text-color);
+  }
+
+  .menu a:hover {
+    background-color: #ff6600; /* Orange hover color */
+    color: white;
+  }
+
+  .menu .dropdown-menu {
+    background-color: #333;
+  }
+
+  .hamburger-icon {
+    color: var(--text-color);
+  }
+}
