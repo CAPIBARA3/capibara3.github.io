@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #ff9800, #8e44ad);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+.section {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #8e44ad;
+    margin-bottom: 0.5rem;
+}
+
+.section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.8;
+}
+
+.section img {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.back-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.back-link a {
+    color: #8e44ad;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+
+/* General Reset for Navigation Menu */
+.menu {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect for the background */
+    color: white;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Light border for separation */
+}
+
+/* Menu Structure */
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the items */
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+/* Styling for Links */
+.menu a {
+    text-decoration: none;
+    color: #333; /* Dark color for readability */
+    padding: 0.75rem 1rem; /* Adjust padding */
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem; /* Smaller font size for modern look */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s ease; /* Smooth hover transition */
+    text-align: center;
+}
+
+/* Hover Effects for Links */
+.menu a:hover {
+    background-color: #ff6600; /* Orange color for hover */
+    color: white; /* White text when hovered */
+    transform: scale(1.05); /* Slight scaling for dynamic hover effect */
+    border-radius: 5px; /* Smooth rounded corners */
+}
+
+/* Dropdown Menu Styling */
+.menu .dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f0f0f0; /* Light gray background for dropdown */
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    min-width: 200px; /* Set minimum width for dropdown */
+}
+
+.menu .dropdown-menu li {
+    width: 100%;
+}
+
+.menu .dropdown-menu a {
+    padding: 0.75rem 1rem;
+    color: #333; /* Text color */
+}
+
+.menu .dropdown-menu a:hover {
+    background-color: #ff6600; /* Matching orange hover */
+    color: white;
+}
+
+/* Show Dropdown on Hover */
+.menu li:hover .dropdown-menu {
+    display: block; /* Display dropdown when hovering */
+}
+
+.hamburger-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+}
+
+
+
+@media (max-width: 768px) {
+    /* Hide the regular menu items on mobile */
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 10;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Show the mobile menu when active */
+    .menu.active {
+        display: flex;
+    }
+
+    /* Adjust list items spacing for mobile */
+    .menu > li {
+        margin: 10px 0;
+    }
+
+    /* Show hamburger icon only on mobile */
+    .menu-container {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 60px; /* Adjust as needed for your design */
+        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+        position: sticky; /* Keeps it at the top when scrolling */
+        top: 0;
+        z-index: 10;
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+    .hamburger-icon {
+        font-size: 30px;
+        cursor: pointer;
+        color: #333; /* Icon color */
+        display: block;
+    }
+
+    /* Dropdown menu on mobile */
+    .dropdown .dropdown-content {
+        position: static;
+        background-color: rgba(255, 255, 255, 0.9);
+        min-width: 100%;
+        box-shadow: none;
+    }
+}
+
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222; /* Dark background */
+        color: #e0e0e0; /* Light text color */
+    }
+
+    .menu {
+        background-color: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
+        color: #fff;
+    }
+
+    .menu a {
+        color: #e0e0e0; /* Light text color */
+    }
+
+    .menu a:hover {
+        background-color: #ff6600; /* Keep the same hover color */
+        color: #fff;
+    }
+
+    .menu .dropdown-menu {
+        background-color: #333; /* Dark dropdown background */
+    }
+
+    .menu .dropdown-menu a {
+        color: #e0e0e0; /* Light text in dropdown */
+    }
+
+    .menu .dropdown-menu a:hover {
+        background-color: #ff6600; /* Hover effect */
+        color: #fff;
+    }
+
+    header {
+        background: linear-gradient(135deg, #ff9800, #8e44ad); /* You may want to adjust the gradient for dark mode */
+        color: white;
+    }
+
+    .hero {
+        background: url('images/chandra-banner.jpg') center/cover no-repeat;
+        background-blend-mode: darken; /* Darken the background image */
+        color: #fff;
+    }
+
+    .section {
+        background-color: #222; /* Dark background for sections */
+        color: #e0e0e0; /* Light text color */
+    }
+
+    .cta {
+        background-color: #8e44ad; /* Darker CTA section background */
+    }
+
+    footer {
+        background-color: #2c3e50; /* You can darken the footer a bit */
+        color: white;
+    }
+
+    .modal-content {
+        background-color: #333; /* Dark modal background */
+        color: #fff;
+    }
+
+    .modal-header h2 {
+        color: #ff6600; /* Make the modal header stand out in dark mode */
+    }
+
+    .close {
+        color: #ccc;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #fff;
+    }
+
+    .image-grid .box {
+        background-color: #333; /* Dark background for image boxes */
+    }
+
+    .image-grid .box:hover {
+        box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2); /* Lighter shadow on hover */
+    }
+
+    .back-link a {
+        color: #8e44ad; /* Keep the same color for links */
+    }
+
+    /* Optionally tweak other areas for dark mode */
+    .hero h2 {
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* Darker text shadow */
+    }
+
+    table, th, td {
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    }
+}
