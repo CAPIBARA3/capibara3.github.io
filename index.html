@@ -32,7 +32,13 @@
         <nav class="menu" id="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#instruments">Instruments</a></li>
+                <li class="dropdown">
+                    <a href="#missions">Missions</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="missions/ionic.html">Ionic Mission</a></li>
+                        <li><a href="missions/photonic.html">Photonic Mission</a></li>
+                    </ul>
+                </li>
                 <li class="dropdown">
                     <a href="#research">Research</a>
                     <ul class="dropdown-menu">
@@ -106,6 +112,7 @@
         <h3>Missions</h3>
         <p>We have a dual goal (ionic and photonic radiation), each with specific characteristics, challenges, and needs. To optimize and have the best science quality possible, CAPIBARA is currently developing two missions.</p>
         <div class="image-grid">
+            <!--TODO: change openModal code to full-box link to sites-->
             <div class="box" onclick="openModal('ionic-mission')">
                 <img src="" alt="Ionic Mission">
                 <a href=""><h3>The Ionic Mission</h3></a>
