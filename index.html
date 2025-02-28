@@ -140,6 +140,37 @@
         </div>
     </section>
 
+    <section class="faq-section" id="FAQ">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="faq-question">What is CAPIBARA? Who is involved? <span class="faq-toggle">&#x25BC;</span></div>
+            <div class="faq-answer">CAPIBARA is a scientific collaboration focused on studying the high-energy universe through two space missions. It brings together young students working to understand the cosmos using ions (cosmic rays) and photons (gamma/X-rays).</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Why do we need two missions? <span class="faq-toggle">&#x25BC;</span></div>
+            <div class="faq-answer">Different cosmic messengers (ions and photons) provide complementary information about high-energy astrophysical events. In addition, separating the goals makes it more manageable to optimize its mission for its detectors and needs.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Why do we need space missions instead of ground-based telescopes? <span class="faq-toggle">&#x25BC;</span></div>
+            <div class="faq-answer">Earth's atmosphere blocks many high-energy particles and photons. Ground-based detectors study some cosmic rays, but space missions allow us to directly detect these signals without atmospheric interference, leading to scientific-level quality measurements.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How do young students contribute to CAPIBARA? <span class="faq-toggle">&#x25BC;</span></div>
+            <div class="faq-answer">The organization is fully integrated and run by young students in every aspect. At CAPIBARA, we want to show what young researchers are capable of and encourage other students to have an active role in science and research. Science isn't just for some, it's for all!</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How can these missions teach us about the Universe? <span class="faq-toggle">&#x25BC;</span></div>
+            <div class="faq-answer">
+                <ul>
+                    <li>How cosmic rays are produced and accelerated by magnetic fields?</li>
+                    <li>The nature of extreme astrophysical objects like black holes or neutron stars.</li>
+                    <li>Whether high-energy cosmic particles could hint at new physics beyond our current models.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
     <div class="cta" id="cta">
         <h4>Interested in Learning More?</h4>
         <p>Contact us for more details on the project and our research.</p>
@@ -147,6 +178,7 @@
             <a href="mailto:capibara-mission@outlook.com">Get in Touch</a>
             <a href="https://calendly.com/joanalnu/30min-meeting">Book a meeting</a>
             <a href="https://forms.office.com/r/2EspnT3KWr?origin=lprLink">Have a Problem?</a>
+            <a href="mailto:capibara-mission@outlook.com?subject=Subscription%20to%20CAPIBARA%20Collaboration%News&body=Hello,%0D%0A%0D%0ABy sending this email, you are requesting to add your email address to the mailing list of CAPIBARA. This will allow you to receive notifications when we achieve a milestone, are accepted to an event, are selected for an opportunity, etc.%0D%0A%0D%0AYour data will be stored in a local spreadsheet and will not be shared with third parties. It will be treated by the CAPIBARA Collaboration in accordance with the goals stated above. The laws of the Kingdom of Spain and the European Union apply. We are not responsible for any malfunction of the system, loss of your personal information, or data robbery.%0D%0A%0D%0ABest regards,%0D%0A%0D%0ACAPIBARA Collaboration">Receive News</a>
         </div>
     </div>
 
@@ -170,6 +202,30 @@
                 } else {
                     menu.style.position = "relative";
                 }
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const faqItems = document.querySelectorAll(".faq-item");
+
+            faqItems.forEach(item => {
+                const question = item.querySelector(".faq-question");
+                const answer = item.querySelector(".faq-answer");
+
+                question.addEventListener("click", () => {
+                    const isOpen = answer.style.display === "block";
+
+                    // Close all answers before opening the selected one
+                    document.querySelectorAll(".faq-answer").forEach(ans => ans.style.display = "none");
+                    document.querySelectorAll(".faq-toggle").forEach(toggle => toggle.innerHTML = "&#x25BC;");
+
+                    if (!isOpen) {
+                        answer.style.display = "block";
+                        question.querySelector(".faq-toggle").innerHTML = "&#x25B2;"; // Change icon to up arrow
+                    }
+                });
             });
         });
     </script>
