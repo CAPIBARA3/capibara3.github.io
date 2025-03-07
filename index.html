@@ -32,7 +32,13 @@
         <nav class="menu" id="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#instruments">Instruments</a></li>
+                <li class="dropdown">
+                    <a href="#missions">Missions</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="missions/ionic.html">Ionic Mission</a></li>
+                        <li><a href="missions/photonic.html">Photonic Mission</a></li>
+                    </ul>
+                </li>
                 <li class="dropdown">
                     <a href="#research">Research</a>
                     <ul class="dropdown-menu">
@@ -43,38 +49,41 @@
                     </ul>
                 </li>
                 <li><a href="group/overview.html">Group</a></li>
+                <li><a href="https://github.com/capibara3">GitHub</a></li>
             </ul>
         </nav>
     </div>
 
     <section class="section" id="about">
-        <h3>About the Project</h3>
-        <p>This Project aims to develop and launch a satellite for the observation and research of the high-energy cosmos. We seek to measure both primary cosmic rays (charged particles) as well as X-ray and 𝛾-ray emissions.</p>
-        <p>By exploring high-energy radiation we will to advance our understading of astrophysical phenomena, quantum physics, and Earth's physics. Furthermore, we will make our data public with the goal of boosting this fields with additional data and inspiring other young researchers.</p>
-        <p>As a student-led project, we are very grateful to the <a href="https://spark-program.pldspace.com">SPARK program</a> by <a href="https://pldspace.com/en/">PLDSpace</a>, which gives us the opportunity to launch our mission with their <a href="https://pldspace.com/en/miura-5">Miura 5</a> rocket, for the opportunity and our teachers for their support.</p>
-    </section>
-
-    <section class="section" id="what?">
-        <h2>What Is CAPIBARA and What We Aim For</h2>
+        <h3>What Is CAPIBARA and What We Aim For</h3>
+        <p>CAPIBARA is a collaboration of young students with the aim to explore the high-energy Universe it all its facets, including ionic and photonic radiation. We propose two space missions to explore cosmic rays (ionic) and gamma/X-rays (photonic) and advance our understanding of the high energy astrophysical phenomena, quantum and particle physics, and Earth’s physics. Furthermore, we aim to boost these fields and research making our data public and inspiring other young students to have an active role in research.</p>
+        <p>We have applied to the <a href="https://spark-program.pldspace.com">SPARK program</a> by <a href="https://pldspace.com/en/">PLD Space</a>, which gives the opportunity to students and schools to launch their satellite with their <a href="https://pldspace.com/en/miura-5">Miura 5</a> rocket.</p>
         <video width="40%" height="40%" controls>
             <source src="images/main_video.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
     </section>
 
-    <section class="section" id="general_links">
+    <section class="section" id="missions">
+        <h3>Missions</h3>
+        <p>We have a dual goal (ionic and photonic radiation), each with specific characteristics, challenges, and needs. To optimize and have the best science quality possible, CAPIBARA is currently developing two missions.</p>
         <div class="image-grid">
             <div class="box">
-                <a href="preliminar_proposal.pdf"><img src="images/proposal.png" alt="Preliminar Report iamge"><h2>Complete Mission Proposal</h2></a>
+                <a href="missions/ionic.html"><img src="images/artist_concept_1.jpeg" alt="Ionic Mission"></a>
+                <a href="missions/ionic.html"><h3>The Ionic Mission</h3></a>
+                <p>This mission will focus on the goal of detecting cosmic rays, the ionic high-energy radiation. It will feature a particle detector capable of detecting protons and alpha-particles, which account for the 97% of the cosmic ray particles in Earth orbit.</p>
             </div>
             <div class="box">
-                <a href="https://spark-program.pldspace.com"><img src="images/PLD-Space.jpg.webp" alt="PLD Space image"><h2>SPARK program - PLDSPace</h2></a>
+                <a href="missions/photonic.html"><img src="images/artist_concept_3.jpg" alt="Photonic Mission"></a>
+                <a href="missions/photonic.html"><h3>The Photonic Mission</h3></a>
+                <p>This mission will focus on the goal of observing the light emission of the high-energy Universe. It will have a wide-field gamma-ray detector (1-10,000 MeV) for detecting high-energy transients, as well as an X_ray observatory for rapid follow-up observations. This will be the first mission to incorporate gamma-ray and X-ray transient monitoring in the same satellite and will proof the concept of intensity interferometry for high-energy transient localization.</p>
             </div>
         </div>
     </section>
 
     <section class="section" id="research">
         <h3>Research Initiatives</h3>
+        <p>We have developed a set of research lines we want to focus inside the Collaboration. Hoewver, we are open to any collaboration regarding the scientific outcomes of the missions (<a href="mailto:capibara-mission@outlook.com">contact us!</a>) and we will make all of our data public for the research community.</p>
         <div class="image-grid">
             <div class="box" id="grb">
                 <a href="research/GRB_cosmology.html"><img src="images/hubble-constant.jpg" alt="Universe's Bell image"><h2>GRBs Cosmology</h2></a>
@@ -100,26 +109,26 @@
         </div>
     </section>
 
-    <section class="section" id="instruments">
-        <h3>Instruments</h3>
-        <p>Our satellite will be equipped with a suite of <a href="instruments.html">advanced instruments</a> designed to detect and analyze high-energy radiation by our amazing engineering team: Lluc Soler, Emma Massó, and Christian Schaefter.</p>
+    <section class="section" id="publications">
+        <h3>Publications</h3>
         <div class="image-grid">
-            <div class="box" onclick="openModal('pcr-detector')">
-                <img src="images/cosmic-rays.jpg" alt="Proton Detector">
-                <h3>Primary Cosmic Ray Detector</h3>
-                <p>This experiment detects cosmic ray protons and alpha-particles. Using a layered structure of detectors, it captures time-of-flight, charge, and energy of cosmic rays for full characterization.</p>
+            <div class="box">
+                <a href="files/preliminar_proposal.pdf"><img src="images/proposal.png" alt="Preliminar Report iamge"><h2>Complete SPARK Program Application</h2></a>
+                <p>Initially, we applied to the <a href="https://spark-program.pldspace.com">SPARK program</a>, however, in the end our goals and plans did not align. Here's the complete application containing some of the goals and scientific initiatives, although some information might be outdated.</p>
             </div>
-
-            <div class="box" onclick="openModal('x-ray-detector')">
-                <img src="images/charge_transfer_CCDs.png" alt="X-ray Detector">
-                <h3>X-ray Observatory</h3>
-                <p>Equipped with a Charged-Coupled Device (CCD) array, this instrument detects X-rays emitted from high-energy astrophysical sources like supernovae and black holes, with a pointing accuracy of 5'' RA and 0.5'' DEC.</p>
+            <div class="box"> <!--TODO: insert here the paper "The Necessity for a Gamma-ray Telescope..."-->
+                <a href="unavailable.html"><img src="research/images/ideas.png" alt="Page Not Found"><h2><i>The Necessity for a Gamma-Ray Telescope Mission</i></h2></a>
+                <p><i>In preparation</i> paper on the necessity of an additional gamma-ray telescope in the context of current and future gamma-ray and X-ray observation capabilities and availability.</p>
             </div>
+        </div>
+    </section>
 
-            <div class="box" onclick="openModal('gamma-ray-detector')">
-                <img src="images/compton_detector.png" alt="gamma-ray Detector">
-                <h3>𝛾-ray Observatory</h3>
-                <p>A wide-field camera surveys gamma-ray sources with less stringent pointing requirements, detecting high-energy radiation emitted by astrophysical objects.</p>
+    <section class="section" id="outreach">
+        <h3>Outreach</h3>
+        <div class="image-grid">
+            <div class="box" style="max-width:70%">
+                <a href="files/CosmoXarxa_presentation.pdf"><img src="images/cosmoxarxa-presentation.png" alt="Page Not Found"><h2>Presentation at the CosmoXarxa</h2></a>
+                <p>This is a presentation of the project held by our project leader, Joan, at the CosmoCarxa, an initiatives by the Explainers community of the CosmoCaixa Science Museum to share science and career advice by explainers for explainers.</p>
             </div>
         </div>
     </section>
@@ -129,7 +138,7 @@
 
         <div class="row">
             <div class="column">
-                <p style="max-width: 400px;">We’re a dedicated <a href="group/overview.html">group of high school students</a>, each bringing unique perspectives and skills to this ambitious mission. Our team’s interests span diverse fields such as astrophysics, particle physics, and aerospace engineering.</p><p style="max-width: 400px;">Together, we're pushing boundaries to explore and understand the cosmos.</p>
+                <p style="max-width: 400px;">We’re a dedicated <a href="group/overview.html">group of high school students</a>, each with unique perspectives and skills, who are embarking on an ambitious mission. Our team’s interests span a wide range of fields, including astrophysics, particle physics, and aerospace engineering. Together, we’re determined to push the boundaries of knowledge and explore the mysteries of the cosmos.</p>
             </div>
             <div class="column">
                 <a href="group/overview.html"><img src="images/group-gif.GIF" alt="Team Photo" height="50%" width="50%"></a>
@@ -137,78 +146,47 @@
         </div>
     </section>
 
+    <section class="faq-section" id="FAQ">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="faq-question">What is CAPIBARA? Who is involved? <span class="faq-toggle">&#x25BC;</span></div>
+            <div class="faq-answer">CAPIBARA is a scientific collaboration focused on studying the high-energy universe through two space missions. It brings together young students working to understand the cosmos using ions (cosmic rays) and photons (gamma/X-rays).</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Why do we need two missions? <span class="faq-toggle">&#x25BC;</span></div>
+            <div class="faq-answer">Different cosmic messengers (ions and photons) provide complementary information about high-energy astrophysical events. In addition, separating the goals makes it more manageable to optimize each mission for its detectors and needs.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Why do we need space missions instead of ground-based telescopes? <span class="faq-toggle">&#x25BC;</span></div>
+            <div class="faq-answer">Earth's atmosphere blocks many high-energy particles and photons. Ground-based detectors study some cosmic rays, but space missions allow us to directly detect these signals without atmospheric interference.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How do young students contribute to CAPIBARA? <span class="faq-toggle">&#x25BC;</span></div>
+            <div class="faq-answer">The organization is fully integrated and run by young students in every aspect. At CAPIBARA, we want to show what young researchers are capable of and encourage other students to have an active role in science and research. Science isn't just for some, it's for all!</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How can these missions teach us about the Universe? <span class="faq-toggle">&#x25BC;</span></div>
+            <div class="faq-answer">
+                <ul>
+                    <li>How cosmic rays are produced and accelerated by magnetic fields?</li>
+                    <li>What is the nature of extreme astrophysical phenomena like black holes or neutron stars?</li>
+                    <li>What do distant high-energy transients tell us about the early Universe?</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
     <div class="cta" id="cta">
         <h4>Interested in Learning More?</h4>
         <p>Contact us for more details on the project and our research.</p>
         <div class="cta-buttons">
             <a href="mailto:capibara-mission@outlook.com">Get in Touch</a>
             <a href="https://calendly.com/joanalnu/30min-meeting">Book a meeting</a>
+            <a href="https://forms.office.com/r/2EspnT3KWr?origin=lprLink">Have a Problem?</a>
+            <a href="mailto:capibara-mission@outlook.com?subject=Subscription%20to%20CAPIBARA%20Collaboration%News&body=Hello,%0D%0A%0D%0ABy sending this email, you are requesting to add your email address to the mailing list of CAPIBARA. This will allow you to receive notifications when we achieve a milestone, are accepted to an event, are selected for an opportunity, etc.%0D%0A%0D%0AYour data will be stored in a local spreadsheet and will not be shared with third parties. It will be treated by the CAPIBARA Collaboration in accordance with the goals stated above. The laws of the Kingdom of Spain and the European Union apply. We are not responsible for any malfunction of the system, loss of your personal information, or data robbery.%0D%0A%0D%0ABest regards,%0D%0A%0D%0ACAPIBARA Collaboration">Receive News</a>
         </div>
     </div>
-
-    <div id="pcr-detector" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>PCR Detector</h2>
-                <span class="close" onclick="closeModal('pcr-detector')">&times;</span>
-            </div>
-            <ul class="modal-body">
-                <p>The Primary Cosmic Ray (PCR) detector onboard our satellite is designed to identify and analyze high-energy cosmic particles, primarily protons and, if possible, alpha particles. To ensure comprehensive particle characterization, the detector incorporates a layered setup of multiple devices, each tailored for specific measurements:</p>
-                <li>Time-of-Flight (TOF), charge detection, and energy measurement. TOF detectors use scintillators to capture particle velocities by emitting a flash of light when struck by a charged particle, with timing precision provided by paired detectors that measure travel time between them.</li>
-                <li>Charge detection is achieved using silicon detectors, which act as parallel-plate ionization chambers, generating a current to determine particle charge.</li>
-                <li>Finally, an electromagnetic calorimeter measures particle energy by absorbing and converting the particle’s full energy into a detectable signal.</li>
-                <p>This compact, layered arrangement enables the satellite’s PCR detector to capture critical data on cosmic ray particles with high accuracy, contributing valuable insights into their composition and behavior.</p>
-            </ul>
-        </div>
-    </div>
-
-    <div id="x-ray-detector" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>X-ray Detector</h2>
-                <span class="close" onclick="closeModal('x-ray-detector')">&times;</span>
-            </div>
-            <div class="modal-body"></div>
-                <p>The satellite’s X-ray detector uses Charged-Coupled Devices (CCDs) for precise photon detection and analysis. With a pointing accuracy of 5’’ and 0.5’’ in right ascension (RA) and declination (DEC), the instrument provides high-resolution observations. CCDs convert incoming X-ray photons into photoelectrons, which are shifted to a readout register, creating a digital signal. When X-ray photons interact with the CCD, they lose energy through Compton scattering, fluorescence, or the photoelectric effect, generating electron-hole pairs in the silicon substrate. Using the ionization energy of silicon (3.65 eV), the photon’s energy can be estimated.</p>
-                <p>Functioning as a photon counter, the detector counts individual photons, typically ensuring each photon is collected within a single pixel. In cases where photons interact with multiple pixels, an intensity threshold distinguishes single-pixel from multi-pixel events. This method, combined with a grading system similar to the ASCA mission, helps separate X-ray events from cosmic rays, ensuring accurate detection and analysis of X-ray sources. This instrument will contribute significantly to the study of high-energy astronomical phenomena through detailed X-ray observations.</p>
-            <img src="images/charge_transfer_CCDs.png" alt="X-ray Detector">
-            </div>
-        </div>
-    </div>
-
-    <div id="gamma-ray-detector" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>𝛾-ray Detector</h2>
-                <span class="close" onclick="closeModal('gamma-ray-detector')">&times;</span>
-            </div>
-            <div class="modal-body">
-                <p>A wide-field camera surveys gamma-ray sources with less stringent pointing requirements, detecting high-energy radiation emitted by astrophysical objects.</p>
-                <img src="images/compton_detector.png" width="90%" alt="gamma-ray Detector"></img>
-            </div>
-        </div>
-    </div>
-
-    <!-- JavaScript to handle modals -->
-    <script>
-        function openModal(modalId) {
-            document.getElementById(modalId).style.display = 'block';
-            }
-
-            function closeModal(modalId) {
-            document.getElementById(modalId).style.display = 'none';
-            }
-
-            // Close modal when clicking outside of modal content
-            window.onclick = function(event) {
-            const modals = document.getElementsByClassName('modal');
-            for (let modal of modals) {
-                if (event.target === modal) {
-                modal.style.display = 'none';
-                }
-            }
-        }
-    </script>
 
     <script>
         function toggleMenu() {
@@ -216,7 +194,6 @@
             menu.classList.toggle("active");
         }
     </script>
-
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -230,6 +207,30 @@
                 } else {
                     menu.style.position = "relative";
                 }
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const faqItems = document.querySelectorAll(".faq-item");
+
+            faqItems.forEach(item => {
+                const question = item.querySelector(".faq-question");
+                const answer = item.querySelector(".faq-answer");
+
+                question.addEventListener("click", () => {
+                    const isOpen = answer.style.display === "block";
+
+                    // Close all answers before opening the selected one
+                    document.querySelectorAll(".faq-answer").forEach(ans => ans.style.display = "none");
+                    document.querySelectorAll(".faq-toggle").forEach(toggle => toggle.innerHTML = "&#x25BC;");
+
+                    if (!isOpen) {
+                        answer.style.display = "block";
+                        question.querySelector(".faq-toggle").innerHTML = "&#x25B2;"; // Change icon to up arrow
+                    }
+                });
             });
         });
     </script>

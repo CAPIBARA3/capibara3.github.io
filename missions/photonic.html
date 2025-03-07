@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Idea template for CAPIBARA Research Project">
+    <meta name="keywords" content="Research, Students, PLDSpace, CAPIBARA, Space Mission, astronomy, astrophysics, aerospace">
+    <title>Photonic Mission</title>
+    <link rel="stylesheet" href="missions.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h2>[mission name] - Photonic Mission</h2>
+        <p>A mission to study <b>gamma and X-rays</b></p>
+    </header>
+
+    <div class="menu-container">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger menu icon -->
+        </div>
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="../index.html#missions">Missions</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ionic.html">Ionic Mission</a></li>
+                        <li><a href="photonic.html">Photonic Mission</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../index.html#research">Research</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../research/GRB_cosmology.html">GRB Cosmology</a></li>
+                        <li><a href="../research/agn_jet_dynamics_and_cosmic_ray_interact.html">AGN Jet Dynamics</a></li>
+                        <li><a href="../research/supernova_research.html">Supernova Remnants</a></li>
+                        <li><a href="../research/solar_cosmic_rays.html">Solar Cosmic Rays</a></li>
+                    </ul>
+                </li>
+                <li><a href="../group/overview.html">Group</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="section" id="introduction">
+        <h2>Introduction</h2>
+        <p>This mission will focus on the goal of exploring the photonic high-energy Universe, that is the observation of gamma-ray and X-ray radiation.</p>
+    </section>
+
+    <section class="section" id="objectives">
+        <h2>Mission Objectives</h2>
+        <p>The main objectives of this mission are to fill in the future observational gap between 1-10,000 MeV, to serve as an high-energy transient monitor telescope, and to provide unprecendented gamma-ray angular resolution with intensity interferometry.</p>
+    </section>
+
+    <section class="section" id="instruments">
+        <h2>Instruments</h2>
+        <!--TODO: update this section with new concepts and designs-->
+        <h3>Gamma-Ray Detector</h3>
+        <p>A wide-field camera surveys gamma-ray sources with less stringent pointing requirements, detecting high-energy radiation emitted by astrophysical objects.</p>
+        <img src="images/compton_detector.png" alt="Compton Detector">
+        <h3>X-ray Detector</h3>
+        <p>The satellite’s X-ray detector uses Charged-Coupled Devices (CCDs) for precise photon detection and analysis. With a pointing accuracy of 5’’ and 0.5’’ in right ascension (RA) and declination (DEC), the instrument provides high-resolution observations. CCDs convert incoming X-ray photons into photoelectrons, which are shifted to a readout register, creating a digital signal. When X-ray photons interact with the CCD, they lose energy through Compton scattering, fluorescence, or the photoelectric effect, generating electron-hole pairs in the silicon substrate. Using the ionization energy of silicon (3.65 eV), the photon’s energy can be estimated.</p>
+        <p>Functioning as a photon counter, the detector counts individual photons, typically ensuring each photon is collected within a single pixel. In cases where photons interact with multiple pixels, an intensity threshold distinguishes single-pixel from multi-pixel events. This method, combined with a grading system similar to the ASCA mission, helps separate X-ray events from cosmic rays, ensuring accurate detection and analysis of X-ray sources. This instrument will contribute significantly to the study of high-energy astronomical phenomena through detailed X-ray observations.</p>
+        <img src="images/charge_transfer_CCDs.png" alt="Charge Transfer CCD">
+    </section>
+
+    <section class="section" id="satellite">
+        <h2>Satellite Characteristics</h2>
+        <table style="margin-left: auto; margin-right: auto; border-collapse: collapse;">
+            <tr>
+              <td>Orbit</td>
+              <td>Highly eliptical for main satellite</td>
+            </tr>
+            <tr>
+                <td>Altitude</td>
+                <td>10,000-50,000 km</td>
+            </tr>
+            <tr>
+                <td>LTAN</td>
+                <td>midnight (maximize night time)</td>
+            </tr>
+        </table>
+        <p>* these are preliminary parameters</p>
+    </section>
+
+    <section class="section" id="cta">
+        <h2>Corresponding Authors</h2>
+        <a href="mailto:joanalnu@outlook.com">Joan Alcaide-Núñez</a>
+    </section>
+
+    <div class="back-link">
+        <a href="https://capibara3.github.io/">&larr; Back to Main Project Page</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CAPIBARA Collaboration. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
