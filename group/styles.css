@@ -234,7 +234,7 @@ footer p {
 
 .menu .dropdown-menu a {
     padding: 0.75rem 1rem;
-    color: #333; /* Text color */
+    color: white;
 }
 
 .menu .dropdown-menu a:hover {
