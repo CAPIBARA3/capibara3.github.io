@@ -55,19 +55,15 @@ a:focus {
 
 
 /* === Burger Container (only visible on mobile) === */
-.burger__container {
+div.burger__container {
     height: 4rem;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     padding: 0 1.5rem;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     background: #fff;
-    z-index: 10;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 10; /* higher than .nav */
 }
 
 @media screen and (min-width: 800px) {
@@ -82,6 +78,7 @@ a:focus {
     width: 28px;
     height: 28px;
     cursor: pointer;
+    z-index: 20; /* Ensure burger is always clickable above nav */
 }
 
 .burger__meat {
@@ -120,25 +117,22 @@ a:focus {
 
 /* === Navigation === */
 .nav {
+    font-size: 16px;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.99);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: rgba(255, 255, 255, 0.99);
     visibility: hidden;
-    opacity: 0;
-    z-index: 9;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 5; /* Lower than burger__container */
+    top: 0;
+    left: 0;
 }
 
 .nav--active .nav {
-    visibility: visible;
-    opacity: 1;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (min-width: 800px) {
