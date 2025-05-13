@@ -1,12 +1,11 @@
-function toggleMobileNavState() {
-    const a=document.querySelector("body");
-    a.classList.toggle("nav--active")
-}
-function initBurger() {
-    const a=document.querySelector(".burger");
-    a.addEventListener("click",toggleMobileNavState)
-}
-initBurger();
+const burger = document.getElementById('burger');
+const nav = document.getElementById('nav');
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    nav.classList.toggle('active');
+});
+
 
 
 // Burger menu toggle

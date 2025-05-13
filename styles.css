@@ -54,172 +54,144 @@ a:focus {
 }
 
 
-/* === Burger Container (only visible on mobile) === */
-div.burger__container {
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    padding: 0 1.5rem;
-    position: fixed;
-    width: 100%;
-    background: #fff;
-    z-index: 10; /* higher than .nav */
+/* menu */
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media screen and (min-width: 800px) {
-    .burger__container {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.burger__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.burger__meat {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav__list li {
+    text-align: center;
+}
+
+.nav__list a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav__list a:hover,
+.nav__list a.active {
+    color: #f90;
+}
+
+/* === Responsive styles === */
+
+@media (max-width: 991px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        display: none;
+        flex-direction: column;
+        padding: 2rem 0;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .burger.active .burger__meat--1 {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burger.active .burger__meat--2 {
+        opacity: 0;
+    }
+
+    .burger.active .burger__meat--3 {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+/* On desktop and laptops: always horizontal, centered links */
+@media (min-width: 992px) {
+    .nav {
+        display: flex !important;
+        position: static;
+        width: auto;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .nav__list {
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .burger {
         display: none;
     }
 }
 
-/* === Burger Icon === */
-.burger {
-    position: relative;
-    width: 28px;
-    height: 28px;
-    cursor: pointer;
-    z-index: 20; /* Ensure burger is always clickable above nav */
-}
 
-.burger__meat {
-    position: absolute;
-    width: 28px;
-    height: 2px;
-    background: #111;
-    top: calc(50% - 1px);
-    left: 0;
-    transition: all 150ms ease-in;
-}
-
-.burger__meat--1 {
-    transform: translateY(-10px);
-}
-
-.burger__meat--2 {
-    width: 22px;
-}
-
-.burger__meat--3 {
-    transform: translateY(10px);
-}
-
-.nav--active .burger__meat--1 {
-    transform: rotate(45deg);
-}
-
-.nav--active .burger__meat--2 {
-    opacity: 0;
-}
-
-.nav--active .burger__meat--3 {
-    transform: rotate(-45deg);
-}
-
-/* === Navigation === */
-.nav {
-    font-size: 16px;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.99);
-    visibility: hidden;
-    z-index: 5; /* Lower than burger__container */
-    top: 0;
-    left: 0;
-}
-
-.nav--active .nav {
-    visibility: visible;
-    width: 100%;
-    height: 100%;
-}
-
-@media screen and (min-width: 800px) {
-    .nav {
-        position: static;
-        height: auto;
-        width: 100%;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        visibility: visible;
-        opacity: 1;
-        flex-direction: row;
-        padding: 0 2rem;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    }
-}
-
-/* === Navigation List === */
-.nav__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-@media screen and (min-width: 800px) {
-    .nav__list {
-        flex-direction: row;
-        justify-content: center;
-        width: auto;
-    }
-}
-
-/* Mobile entrance animation */
-@media screen and (max-width: 799px) {
-    .nav__list {
-        transform: translateY(-20px);
-        opacity: 0;
-        transition: all 500ms ease;
-    }
-
-    .nav--active .nav__list {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* === List Items === */
-.nav__list li {
-    margin-bottom: 2rem;
-}
-
-@media screen and (min-width: 800px) {
-    .nav__list li {
-        margin: 0 1rem;
-    }
-}
-
-/* === Links === */
-.nav__list a {
-    color: rgba(74, 144, 226, 1);
-    text-decoration: none;
-    font-size: 1.5rem;
-    transition: color 0.3s, transform 0.3s ease;
-}
-
-.nav__list a.active,
-.nav__list a:hover {
-    color: #111;
-    transform: scale(1.05);
-}
-
-@media screen and (min-width: 800px) {
-    .nav__list a {
-        font-size: 1rem;
-    }
-}
-
-/* === Body locked when nav is active (mobile only) === */
-body.nav--active {
-    overflow: hidden;
-}
 
 
 
