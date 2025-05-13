@@ -7,22 +7,6 @@ burger.addEventListener('click', () => {
 });
 
 
-
-// Burger menu toggle
-// const burger = document.getElementById('burger');
-// const nav = document.getElementById('nav');
-// burger.addEventListener('click', () => {
-//     document.body.classList.toggle('nav--active');
-//     nav.classList.toggle('nav--active');
-//     burger.classList.toggle('nav--active');
-// });
-// burger.addEventListener('keydown', (e) => {
-//     if (e.key === 'Enter' || e.key === ' ') {
-//         e.preventDefault();
-//         burger.click();
-//     }
-// });
-
 // FAQ toggle
 document.addEventListener("DOMContentLoaded", function () {
     const faqItems = document.querySelectorAll(".faq-item");
