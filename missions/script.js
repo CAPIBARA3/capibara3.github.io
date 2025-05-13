@@ -1,7 +1,10 @@
-function toggleMenu() {
-    const menu = document.getElementById("menu");
-    menu.classList.toggle("active");
-}
+const burger = document.getElementById('burger');
+const nav = document.getElementById('nav');
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    nav.classList.toggle('active');
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     const menu = document.querySelector(".menu");
