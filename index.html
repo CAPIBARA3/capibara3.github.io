@@ -1,289 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CAPIBARA - A student-led satellite mission to study cosmic rays and high-energy radiation through innovative space-based observatories.">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="CAPIBARA - A student-led satellite mission to study cosmic rays and high-energy radiation through innovative space-based observatories." />
     <title>CAPIBARA Mission</title>
-    <meta name="keywords" content="Cosmic Ray, Spark Program, Research, Students, PLDSpace, CAPIBARA, Space Mission, astronomy, astrophysics, aerospace, Miura 5">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="CAPIBARA Mission - A Student-Led Cosmic Ray Satellite Project">
-    <meta property="og:description" content="The CAPIBARA project is a student-driven satellite mission dedicated to the study of cosmic rays and high-energy radiation from space. Discover more about our research and collaboration.">
-    <meta property="og:image" content="https://capibara3.github.io/images/chandra-banner.jpg">
-    <meta property="og:url" content="https://capibara3.github.io/index.html">
-    <link rel="canonical" href="https://capibara3.github.io/index.html">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="keywords" content="Cosmic Ray, Spark Program, Research, Students, PLDSpace, CAPIBARA, Space Mission, astronomy, astrophysics, aerospace, Miura 5" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="CAPIBARA Mission - A Student-Led Cosmic Ray Satellite Project" />
+    <meta property="og:description" content="The CAPIBARA project is a student-driven satellite mission dedicated to the study of cosmic rays and high-energy radiation from space. Discover more about our research and collaboration." />
+    <meta property="og:image" content="https://capibara3.github.io/images/chandra-banner.jpg" />
+    <meta property="og:url" content="https://capibara3.github.io/index.html" />
+    <link rel="canonical" href="https://capibara3.github.io/index.html" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>CAPIBARA</h1>
-        <p><b style="color: black; font-size:1.5rem;">C</b>ollaboration for the <b style="color: black; font-size:1.5rem;">A</b>nalysis of <b style="color: black; font-size:1.5rem;">P</b>hotonic and <b style="color: black; font-size:1.5rem;">I</b>onic <b style="color: black; font-size:1.5rem;">B</b>ursts <b style="color: black; font-size:1.5rem;">a</b>nd <b style="color: black; font-size:1.5rem;">Ra</b>diation</p>
-    </header>
-
-    <div class="hero">
-        <h2>A Student Satellite to Explore the<br>Mysteries of the Energetic Cosmos</h2>
-    </div>
-
-    <div class="menu-container">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            &#9776; <!-- Hamburger menu icon -->
+    <div class="burger__container">
+        <div class="burger" id="burger" aria-label="Toggle navigation" role="button" tabindex="0">
+            <span class="burger__meat burger__meat--1"></span>
+            <span class="burger__meat burger__meat--2"></span>
+            <span class="burger__meat burger__meat--3"></span>
         </div>
-        <nav class="menu" id="menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="#missions">Missions</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="missions/ionic.html">Ionic Mission</a></li>
-                        <li><a href="missions/photonic.html">Photonic Mission</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#research">Research</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="research/GRB_cosmology.html">GRB Cosmology</a></li>
-                        <li><a href="research/agn_jet_dynamics_and_cosmic_ray_interact.html">AGN Jet Dynamics</a></li>
-                        <li><a href="research/supernova_research.html">Supernova Remnants</a></li>
-                        <li><a href="research/solar_cosmic_rays.html">Solar Cosmic Rays</a></li>
-                    </ul>
-                </li>
+        <nav class="nav" id="nav">
+            <ul class="nav__list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#missions">Missions</a></li>
+                <li><a href="#research">Research</a></li>
                 <li><a href="group/overview.html">Group</a></li>
                 <li><a href="https://github.com/capibara3">GitHub</a></li>
             </ul>
         </nav>
     </div>
 
-    <section class="section" id="about">
-        <h3>What Is CAPIBARA and What We Aim For</h3>
-        <p>CAPIBARA is a collaboration of young students with the aim to explore the high-energy Universe it all its facets, including ionic and photonic radiation. We propose two space missions to explore cosmic rays (ionic) and gamma/X-rays (photonic) and advance our understanding of the high energy astrophysical phenomena, quantum and particle physics, and Earth’s physics. Furthermore, we aim to boost these fields and research making our data public and inspiring other young students to have an active role in research.</p>
-        <p>We have applied to the <a href="https://spark-program.pldspace.com">SPARK program</a> by <a href="https://pldspace.com/en/">PLD Space</a>, which gives the opportunity to students and schools to launch their satellite with their <a href="https://pldspace.com/en/miura-5">Miura 5</a> rocket.</p>
-        <video width="40%" height="40%" controls>
-            <source src="images/main_video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-    </section>
+    <main>
+        <section class="hero-section" aria-label="Hero section">
+            <h1>CAPIBARA</h1>
+            <p class="lead">
+                <b>C</b>ollaboration for the <b>A</b>nalysis of <b>P</b>hotonic and <b>I</b>onic <b>B</b>ursts <b>a</b>nd <b>Ra</b>diation
+            </p>
+            <h2>A Student Satellite to Explore the<br />Mysteries of the Energetic Cosmos</h2>
+        </section>
+        
+        <section class="about-section" id="about" aria-label="About CAPIBARA">
+            <h2>What Is CAPIBARA and What We Aim For</h2>
+            <p>
+                CAPIBARA is a collaboration of young students with the aim to explore the high-energy Universe it all its facets, including ionic and photonic radiation. We propose two space missions to explore cosmic rays (ionic) and gamma/X-rays (photonic) and advance our understanding of the high energy astrophysical phenomena, quantum and particle physics, and Earth’s physics. Furthermore, we aim to boost these fields and research making our data public and inspiring other young students to have an active role in research.
+            </p>
+            <p>
+                We have applied to the <a href="https://spark-program.pldspace.com">SPARK program</a> by <a href="https://pldspace.com/en/">PLD Space</a>, which gives the opportunity to students and schools to launch their satellite with their <a href="https://pldspace.com/en/miura-5">Miura 5</a> rocket.
+            </p>
+            <video width="40%" height="40%" controls>
+                <source src="images/main_video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </section>
 
-    <section class="section" id="missions">
-        <h3>Missions</h3>
-        <p>We have a dual goal (ionic and photonic radiation), each with specific characteristics, challenges, and needs. To optimize and have the best science quality possible, CAPIBARA is currently developing two missions.</p>
-        <div class="image-grid">
-            <div class="box">
-                <a href="missions/ionic.html"><img src="images/artist_concept_1.jpeg" alt="Ionic Mission"></a>
-                <a href="missions/ionic.html"><h3>The Ionic Mission</h3></a>
+        <span class="section-title">Missions</span>
+        <section class="project-cards" id="missions" aria-label="Missions">        
+            <article class="card">
+                <a href="missions/ionic.html"><img src="images/artist_concept_1.jpeg" alt="Ionic Mission" /></a>
+                <h3><a href="missions/ionic.html">The Ionic Mission</a></h3>
                 <p>This mission will focus on the goal of detecting cosmic rays, the ionic high-energy radiation. It will feature a particle detector capable of detecting protons and alpha-particles, which account for the 97% of the cosmic ray particles in Earth orbit.</p>
-            </div>
-            <div class="box">
-                <a href="missions/photonic.html"><img src="images/artist_concept_3.jpg" alt="Photonic Mission"></a>
-                <a href="missions/photonic.html"><h3>The Photonic Mission</h3></a>
+            </article>
+            <article class="card">
+                <a href="missions/photonic.html"><img src="images/artist_concept_3.jpg" alt="Photonic Mission" /></a>
+                <h3><a href="missions/photonic.html">The Photonic Mission</a></h3>
                 <p>This mission will focus on the goal of observing the light emission of the high-energy Universe. It will have a wide-field gamma-ray detector (1-10,000 MeV) for detecting high-energy transients, as well as an X_ray observatory for rapid follow-up observations. This will be the first mission to incorporate gamma-ray and X-ray transient monitoring in the same satellite and will proof the concept of intensity interferometry for high-energy transient localization.</p>
-            </div>
-        </div>
-    </section>
+            </article>
+        </section>
 
-    <section class="section" id="research">
-        <h3>Research Initiatives</h3>
-        <p>We have developed a set of research lines we want to focus inside the Collaboration. Hoewver, we are open to any collaboration regarding the scientific outcomes of the missions (<a href="mailto:capibara-mission@outlook.com">contact us!</a>) and we will make all of our data public for the research community.</p>
-        <div class="image-grid">
-            <div class="box" id="grb">
-                <a href="research/GRB_cosmology.html"><img src="images/hubble-constant.jpg" alt="Universe's Bell image"><h2>GRBs Cosmology</h2></a>
+        <span class="section-title">Research</span>
+        <section class="project-cards" id="research" aria-label="Research Initiatives">
+            <article class="card" id="grb">
+                <a href="research/GRB_cosmology.html"><img src="images/hubble-constant.jpg" alt="Universe's Bell image" /></a>
+                <h3><a href="research/GRB_cosmology.html">GRBs Cosmology</a></h3>
                 <p>Using the most powerful explosions as distance indicators.</p>
-            </div>
-            <div class="box" id="agn">
-                <a href="research/agn_jet_dynamics_and_cosmic_ray_interact.html"><img src="images/agn-jets.png" alt="AGN with Jets"><h2>AGN Jet Dynamics and Cosmic Ray Interactions</h2></a>
+            </article>
+            <article class="card" id="agn">
+                <a href="research/agn_jet_dynamics_and_cosmic_ray_interact.html"><img src="images/agn-jets.png" alt="AGN with Jets" /></a>
+                <h3><a href="research/agn_jet_dynamics_and_cosmic_ray_interact.html">AGN Jet Dynamics and Cosmic Ray Interactions</a></h3>
                 <p>Understanding the relation between AGNs and cosmic rays.</p>
-            </div>
-        </div>
-        <div class="image-grid">
-            <div class="box" id="supernova">
-                <a href="research/supernova_research.html"><img src="images/supernova.jpg" alt="supernova remnant image"><h2>Supernova Research</h2></a>
+            </article>
+            <article class="card" id="supernova">
+                <a href="research/supernova_research.html"><img src="images/supernova.jpg" alt="supernova remnant image" /></a>
+                <h3><a href="research/supernova_research.html">Supernova Research</a></h3>
                 <p>Detecting the role of remnants in cosmic ray radiation.</p>
-            </div>
-            <div class="box" id="solar">
-                <a href="research/solar_cosmic_rays.html"><img src="images/solar-wind.jpg" alt="Solar wind particles image"><h2>Solar Cosmic Rays</h2></a>
+            </article>
+            <article class="card" id="solar">
+                <a href="research/solar_cosmic_rays.html"><img src="images/solar-wind.jpg" alt="Solar wind particles image" /></a>
+                <h3><a href="research/solar_cosmic_rays.html">Solar Cosmic Rays</a></h3>
                 <p>Detecting the radiation from our most nearby star.</p>
-            </div>
-            <!-- <div class="box">
-                <a href="research/idea_template.html"><img src="images/ideas.png"><h2>RESEARCH IDEA</h2></a>
-            </div> -->
-        </div>
-    </section>
+            </article>
+        </section>
 
-    <section class="section" id="publications">
-        <h3>Publications</h3>
-        <div class="image-grid">
-            <div class="box">
-                <a href="files/preliminar_proposal.pdf"><img src="images/proposal.png" alt="Preliminar Report iamge"><h2>Complete SPARK Program Application</h2></a>
+        <span class="section-title">Publications</span>
+        <section class="project-cards" id="publications" aria-label="Publications">
+            <article class="card">
+                <a href="files/preliminar_proposal.pdf"><img src="images/proposal.png" alt="Preliminar Report image" /></a>
+                <h3><a href="files/preliminar_proposal.pdf">Complete SPARK Program Application</a></h3>
                 <p>Initially, we applied to the <a href="https://spark-program.pldspace.com">SPARK program</a>, however, in the end our goals and plans did not align. Here's the complete application containing some of the goals and scientific initiatives, although some information might be outdated.</p>
-            </div>
-            <div class="box"> <!--TODO: insert here the paper "The Necessity for a Gamma-ray Telescope..."-->
-                <a href="unavailable.html"><img src="research/images/ideas.png" alt="Page Not Found"><h2><i>The Necessity for a Gamma-Ray Telescope Mission</i></h2></a>
+            </article>
+            <article class="card">
+                <a href="unavailable.html"><img src="research/images/ideas.png" alt="Page Not Found" /></a>
+                <h3><a href="unavailable.html"><i>The Necessity for a Gamma-Ray Telescope Mission</i></a></h3>
                 <p><i>In preparation</i> paper on the necessity of an additional gamma-ray telescope in the context of current and future gamma-ray and X-ray observation capabilities and availability.</p>
-            </div>
-        </div>
-    </section>
+            </article>
+        </section>
 
-    <section class="section" id="outreach">
-        <h3>Outreach</h3>
-        <div class="image-grid">
-            <div class="box" style="max-width:70%">
-                <a href="files/CosmoXarxa_presentation.pdf"><img src="images/cosmoxarxa-presentation.png" alt="Page Not Found"><h2>Presentation at the CosmoXarxa</h2></a>
+        <span class="section-title">Outreach</span>
+        <section class="project-cards" id="outreach" aria-label="Outreach" style="display:flex">
+            <article class="card" style="max-width: 70%;">
+                <a href="files/CosmoXarxa_presentation.pdf"><img src="images/cosmoxarxa-presentation.png" alt="Page Not Found" /></a>
+                <h3><a href="files/CosmoXarxa_presentation.pdf">Presentation at the CosmoXarxa</a></h3>
                 <p>This is a presentation of the project held by our project leader, Joan, at the CosmoCarxa, an initiatives by the Explainers community of the CosmoCaixa Science Museum to share science and career advice by explainers for explainers.</p>
+            </article>
+        </section>
+
+        <span class="section-title">Meet the Team</span>
+        <section class="project-cards" id="team" aria-label="Meet the Team">
+            <article class="card" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+                <div style="flex: 1 1 400px; max-width: 400px;">
+                    <p>We’re a dedicated <a href="group/overview.html">group of high school students</a>, each with unique perspectives and skills, who are embarking on an ambitious mission. Our team’s interests span a wide range of fields, including astrophysics, particle physics, and aerospace engineering. Together, we’re determined to push the boundaries of knowledge and explore the mysteries of the cosmos.</p>
+                </div>
+                <div style="flex: 1 1 400px; max-width: 400px; text-align: center;">
+                    <a href="group/overview.html"><img src="images/group-gif.GIF" alt="Team Photo" style="max-width: 100%; height: auto;" /></a>
+                </div>
+            </article>
+        </section>
+
+        <span class="section-title">FAQ</span>
+        <section class="faq-section" id="FAQ" aria-label="Frequently Asked Questions">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">What is CAPIBARA? Who is involved? <span class="faq-toggle">&#x25BC;</span></div>
+                <div class="faq-answer">CAPIBARA is a scientific collaboration focused on studying the high-energy universe through two space missions. It brings together young students working to understand the cosmos using ions (cosmic rays) and photons (gamma/X-rays).</div>
             </div>
-        </div>
-    </section>
-
-    <section class="section" id="team">
-        <h3>Meet the Team</h3>
-
-        <div class="row">
-            <div class="column">
-                <p style="max-width: 400px;">We’re a dedicated <a href="group/overview.html">group of high school students</a>, each with unique perspectives and skills, who are embarking on an ambitious mission. Our team’s interests span a wide range of fields, including astrophysics, particle physics, and aerospace engineering. Together, we’re determined to push the boundaries of knowledge and explore the mysteries of the cosmos.</p>
+            <div class="faq-item">
+                <div class="faq-question">Why do we need two missions? <span class="faq-toggle">&#x25BC;</span></div>
+                <div class="faq-answer">Different cosmic messengers (ions and photons) provide complementary information about high-energy astrophysical events. In addition, separating the goals makes it more manageable to optimize each mission for its detectors and needs.</div>
             </div>
-            <div class="column">
-                <a href="group/overview.html"><img src="images/group-gif.GIF" alt="Team Photo" height="50%" width="50%"></a>
+            <div class="faq-item">
+                <div class="faq-question">Why do we need space missions instead of ground-based telescopes? <span class="faq-toggle">&#x25BC;</span></div>
+                <div class="faq-answer">Earth's atmosphere blocks many high-energy particles and photons. Ground-based detectors study some cosmic rays, but space missions allow us to directly detect these signals without atmospheric interference.</div>
             </div>
-        </div>
-    </section>
+            <div class="faq-item">
+                <div class="faq-question">How do young students contribute to CAPIBARA? <span class="faq-toggle">&#x25BC;</span></div>
+                <div class="faq-answer">The organization is fully integrated and run by young students in every aspect. At CAPIBARA, we want to show what young researchers are capable of and encourage other students to have an active role in science and research. Science isn't just for some, it's for all!</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How can these missions teach us about the Universe? <span class="faq-toggle">&#x25BC;</span></div>
+                <div class="faq-answer">
+                    <ul>
+                        <li>How cosmic rays are produced and accelerated by magnetic fields?</li>
+                        <li>What is the nature of extreme astrophysical phenomena like black holes or neutron stars?</li>
+                        <li>What do distant high-energy transients tell us about the early Universe?</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What makes CAPIBARA unique compared to other space missions? <span class="faq-toggle">&#x25BC;</span></div>
+                <div class="faq-answer">CAPIBARA is unique because it is run by young students, emphasizing hands-on experience and innovation. It also focuses on combining insights from cosmic rays and high-energy photons to provide a more complete picture of the universe.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What challenges do these space missions face? <span class="faq-toggle">&#x25BC;</span></div>
+                <div class="faq-answer">Space missions encounter challenges such as radiation exposure, limited power supply, and the need for precise instrumentation. Overcoming these requires innovative engineering and problem-solving.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How can students get involved with CAPIBARA? <span class="faq-toggle">&#x25BC;</span></div>
+                <div class="faq-answer">CAPIBARA is open to new student members (both high school and undergraduate). If you are passionate about space science or astrophysics, we are waiting for you! In addition, we are preparing school materials about astronomy and astrophysics, as well as are open to giving talks or conducting workshops at schools or other events.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How is the data collected by CAPIBARA missions used? <span class="faq-toggle">&#x25BC;</span></div>
+                <div class="faq-answer">Data is collected differently for the two space missions. We will analyze cosmic ray data as well as x-ray and gamma-ray images and spectra. We are currently working on the data publication system to share this data with the entire community.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How does CAPIBARA collaborate with other organizations? <span class="faq-toggle">&#x25BC;</span></div>
+                <div class="faq-answer">CAPIBARA partners with universities, research institutions, and space agencies to leverage expertise, share resources, and maximize the scientific output of its missions. Student members have participate and conduct internships at research institutes, bringing expertise, knowledge, and experience to the group.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What kind of discoveries could CAPIBARA potentially make? <span class="faq-toggle">&#x25BC;</span></div>
+                <div class="faq-answer">CAPIBARA aims to uncover insights about the nature of solar cosmic rays and solar weather, as well as the evolution of the Universe and the physics of high-energy phenomena like black hole jets.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How is CAPIBARA funded? <span class="faq-toggle">&#x25BC;</span></div>
+                <div class="faq-answer">CAPIBARA is a new initiative and we are currently working without funding. However, we are planning diverse actions in order to cover the costs of the instruments. If you would want to fund us, please send us an email with the contact below.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Why is studying high-energy phenomena important for science? <span class="faq-toggle">&#x25BC;</span></div>
+                <div class="faq-answer">High-energy phenomena help us understand the most extreme environments in the universe, offering clues about fundamental physics, cosmic evolution, and the limits of our current scientific models.</div>
+            </div>
+        </section>
 
-    <section class="faq-section" id="FAQ">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-item">
-        <div class="faq-question">What is CAPIBARA? Who is involved? <span class="faq-toggle">&#x25BC;</span></div>
-        <div class="faq-answer">CAPIBARA is a scientific collaboration focused on studying the high-energy universe through two space missions. It brings together young students working to understand the cosmos using ions (cosmic rays) and photons (gamma/X-rays).</div>
-    </div>
-    <div class="faq-item">
-        <div class="faq-question">Why do we need two missions? <span class="faq-toggle">&#x25BC;</span></div>
-        <div class="faq-answer">Different cosmic messengers (ions and photons) provide complementary information about high-energy astrophysical events. In addition, separating the goals makes it more manageable to optimize each mission for its detectors and needs.</div>
-    </div>
-    <div class="faq-item">
-        <div class="faq-question">Why do we need space missions instead of ground-based telescopes? <span class="faq-toggle">&#x25BC;</span></div>
-        <div class="faq-answer">Earth's atmosphere blocks many high-energy particles and photons. Ground-based detectors study some cosmic rays, but space missions allow us to directly detect these signals without atmospheric interference.</div>
-    </div>
-    <div class="faq-item">
-        <div class="faq-question">How do young students contribute to CAPIBARA? <span class="faq-toggle">&#x25BC;</span></div>
-        <div class="faq-answer">The organization is fully integrated and run by young students in every aspect. At CAPIBARA, we want to show what young researchers are capable of and encourage other students to have an active role in science and research. Science isn't just for some, it's for all!</div>
-    </div>
-    <div class="faq-item">
-        <div class="faq-question">How can these missions teach us about the Universe? <span class="faq-toggle">&#x25BC;</span></div>
-        <div class="faq-answer">
-            <ul>
-                <li>How cosmic rays are produced and accelerated by magnetic fields?</li>
-                <li>What is the nature of extreme astrophysical phenomena like black holes or neutron stars?</li>
-                <li>What do distant high-energy transients tell us about the early Universe?</li>
-            </ul>
-        </div>
-    </div>
-    <div class="faq-item">
-        <div class="faq-question">What makes CAPIBARA unique compared to other space missions? <span class="faq-toggle">&#x25BC;</span></div>
-        <div class="faq-answer">CAPIBARA is unique because it is run by young students, emphasizing hands-on experience and innovation. It also focuses on combining insights from cosmic rays and high-energy photons to provide a more complete picture of the universe.</div>
-    </div>
-    <div class="faq-item">
-        <div class="faq-question">What challenges do these space missions face? <span class="faq-toggle">&#x25BC;</span></div>
-        <div class="faq-answer">Space missions encounter challenges such as radiation exposure, limited power supply, and the need for precise instrumentation. Overcoming these requires innovative engineering and problem-solving.</div>
-    </div>
-    <div class="faq-item">
-        <div class="faq-question">How can students get involved with CAPIBARA? <span class="faq-toggle">&#x25BC;</span></div>
-        <div class="faq-answer">CAPIBARA is open to new student members (both high school and undergraduate). If you are passionate about space science or astrophysics, we are waiting for you! In addition, we are preparing school materials about astronomy and astrophysics, as well as are open to giving talks or conducting workshops at schools or other events.</div>
-    </div>
-    <div class="faq-item">
-        <div class="faq-question">How is the data collected by CAPIBARA missions used? <span class="faq-toggle">&#x25BC;</span></div>
-        <div class="faq-answer">Data is collected differently for the two space missions. We will analyze cosmic ray data as well as x-ray and gamma-ray images and spectra. We are currently working on the data publication system to share this data with the entire community.</div>
-    </div>
-    <div class="faq-item">
-        <div class="faq-question">How does CAPIBARA collaborate with other organizations? <span class="faq-toggle">&#x25BC;</span></div>
-        <div class="faq-answer">CAPIBARA partners with universities, research institutions, and space agencies to leverage expertise, share resources, and maximize the scientific output of its missions. Student members have participate and conduct internships at research institutes, bringing expertise, knowledge, and experience to the group.</div>
-    </div>
-    <div class="faq-item">
-        <div class="faq-question">What kind of discoveries could CAPIBARA potentially make? <span class="faq-toggle">&#x25BC;</span></div>
-        <div class="faq-answer">CAPIBARA aims to uncover insights about the nature of solar cosmic rays and solar weather, as well as the evolution of the Universe and the physics of high-energy phenomena like black hole jets.</div>
-    </div>
-    <div class="faq-item">
-        <div class="faq-question">How is CAPIBARA funded? <span class="faq-toggle">&#x25BC;</span></div>
-        <div class="faq-answer">CAPIBARA is a new initiative and we are currently working without funding. However, we are planning diverse actions in order to cover the costs of the instruments. If you would want to fund us, please send us an email with the contact below.</div>
-    </div>
-    <div class="faq-item">
-        <div class="faq-question">Why is studying high-energy phenomena important for science? <span class="faq-toggle">&#x25BC;</span></div>
-        <div class="faq-answer">High-energy phenomena help us understand the most extreme environments in the universe, offering clues about fundamental physics, cosmic evolution, and the limits of our current scientific models.</div>
-    </div>
-</section>
+        <span class="section-title">Partners</span>
+        <section class="project-cards" id="partners" aria-label="Partners">
+            <article class="card" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+                <div style="flex: 1 1 150px; max-width: 150px;">
+                    <a href="https://spark-program.pldspace.com"><img src="images/logos/pldspace.png" alt="PLD Space Logo" style="max-width: 100%; height: auto;" /></a>
+                </div>
+                <div style="flex: 1 1 150px; max-width: 150px;">
+                    <a href="https://oba.space"><img src="images/logos/obaspace.png" alt="OBA Space Logo" style="max-width: 100%; height: auto;" /></a>
+                </div>
+                <div style="flex: 1 1 150px; max-width: 150px;">
+                    <a href="https://tinygs.com"><img src="images/logos/TinyGS_logo.png" alt="TinyGS Logo" style="max-width: 100%; height: auto;" /></a>
+                </div>
+                <div style="flex: 1 1 150px; max-width: 150px;">
+                    <a href="https://teidesat.com"><img src="images/logos/teidesat.jpeg" alt="TeideSat Logo" style="max-width: 100%; height: auto;" /></a>
+                </div>
+                <div style="flex: 1 1 150px; max-width: 150px;">
+                    <a href="https://labosat.space"><img src="images/logos/labosat.png" alt="LabOSat Logo" style="max-width: 100%; height: auto;" /></a>
+                </div>
+                <div style="flex: 1 1 150px; max-width: 150px;">
+                    <a href="https://ifae.es"><img src="images/logos/ifae.png" alt="IFAE Logo" style="max-width: 100%; height: auto;" /></a>
+                </div>
+            </article>
+        </section>
 
-    <section class="section" id="partners">
-        <h3>Partners</h3>
-        <p>Through the Matchmaking Session of the SPARK Program, we were able to forge many partnerships that will come with us in our endeavor.</p>
-        <div class="image-grid">
-            <div class="box"><a href="https://spark-program.pldspace.com"><img src="images/logos/pldspace.png"></a></div>
-            <div class="box"><a href="https://oba.space"><img src="images/logos/obaspace.png" alt="OBA Space Logo"></a></div>
-            <div class="box"><a href="https://tinygs.com"><img src="images/logos/TinyGS_logo.png" alt="TinyGS Logo"></a></div>
-            <div class="box"><a href="https://teidesat.com"><img src="images/logos/teidesat.jpeg" alt="TeideSat Logo"></a></div>
-            <div class="box"><a href="https://labosat.space"><img src="images/logos/labosat.png" alt="LabOSat Logo"></a></div>
-            <div class="box"><a href="https://ifae.es"><img src="images/logos/ifae.png" alt="IFAE Logo"></a></div>
-        </div>
-    </section>
-
-
-
-    <div class="cta" id="cta">
-        <h4>Interested in Learning More?</h4>
-        <p>Contact us for more details on the project and our research.</p>
-        <div class="cta-buttons">
-            <a href="mailto:capibara-mission@outlook.com">Get in Touch</a>
-            <a href="https://calendly.com/joanalnu/30min-meeting">Book a meeting</a>
-            <a href="https://forms.office.com/r/2EspnT3KWr?origin=lprLink">Have a Problem?</a>
-            <a href="mailto:capibara-mission@outlook.com?subject=Subscription%20to%20CAPIBARA%20Collaboration%News&body=Hello,%0D%0A%0D%0ABy sending this email, you are requesting to add your email address to the mailing list of CAPIBARA. This will allow you to receive notifications when we achieve a milestone, are accepted to an event, are selected for an opportunity, etc.%0D%0A%0D%0AYour data will be stored in a local spreadsheet and will not be shared with third parties. It will be treated by the CAPIBARA Collaboration in accordance with the goals stated above. The laws of the Kingdom of Spain and the European Union apply. We are not responsible for any malfunction of the system, loss of your personal information, or data robbery.%0D%0A%0D%0ABest regards,%0D%0A%0D%0ACAPIBARA Collaboration">Receive News</a>
-        </div>
-    </div>
-
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById("menu");
-            menu.classList.toggle("active");
-        }
-    </script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const menu = document.querySelector(".menu");
-            const menuOffset = menu.offsetTop; // Get the menu's initial offset from the top of the page
-
-            window.addEventListener("scroll", () => {
-                if (window.scrollY >= menuOffset) {
-                    menu.style.position = "fixed";
-                    menu.style.top = "0"; // Fix it to the top of the viewport
-                } else {
-                    menu.style.position = "relative";
-                }
-            });
-        });
-    </script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-        const faqItems = document.querySelectorAll(".faq-item");
-
-            faqItems.forEach(item => {
-                const question = item.querySelector(".faq-question");
-                const answer = item.querySelector(".faq-answer");
-
-                question.addEventListener("click", () => {
-                    const isOpen = answer.style.display === "block";
-
-                    // Close all answers before opening the selected one
-                    document.querySelectorAll(".faq-answer").forEach(ans => ans.style.display = "none");
-                    document.querySelectorAll(".faq-toggle").forEach(toggle => toggle.innerHTML = "&#x25BC;");
-
-                    if (!isOpen) {
-                        answer.style.display = "block";
-                        question.querySelector(".faq-toggle").innerHTML = "&#x25B2;"; // Change icon to up arrow
-                    }
-                });
-            });
-        });
-    </script>
-
-
+        <section class="cta" id="cta" aria-label="Call to Action">
+            <h4>Interested in Learning More?</h4>
+            <p>Contact us for more details on the project and our research.</p>
+            <div class="cta-buttons">
+                <a href="mailto:capibara-mission@outlook.com">Get in Touch</a>
+                <a href="https://calendly.com/joanalnu/30min-meeting">Book a meeting</a>
+                <a href="https://forms.office.com/r/2EspnT3KWr?origin=lprLink">Have a Problem?</a>
+                <a href="mailto:capibara-mission@outlook.com?subject=Subscription%20to%20CAPIBARA%20Collaboration%News&amp;body=Hello,%0D%0A%0D%0ABy sending this email, you are requesting to add your email address to the mailing list of CAPIBARA. This will allow you to receive notifications when we achieve a milestone, are accepted to an event, are selected for an opportunity, etc.%0D%0A%0D%0AYour data will be stored in a local spreadsheet and will not be shared with third parties. It will be treated by the CAPIBARA Collaboration in accordance with the goals stated above. The laws of the Kingdom of Spain and the European Union apply. We are not responsible for any malfunction of the system, loss of your personal information, or data robbery.%0D%0A%0D%0ABest regards,%0D%0A%0D%0ACAPIBARA Collaboration">Receive News</a>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 CAPIBARA Collaboration. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
