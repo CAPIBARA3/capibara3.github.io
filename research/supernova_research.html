@@ -10,72 +10,63 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-
-    <header>
-        <h2>Supernova Research</h2>
-        <p>Research Initiative - CAPIBARA Project</p>
-    </header>
-
-    <div class="menu-container">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            &#9776; <!-- Hamburger menu icon -->
+    <div class="burger__container">
+        <div class="burger" id="burger" aria-label="Toggle navigation" role="button" tabindex="0">
+            <span class="burger__meat burger__meat--1"></span>
+            <span class="burger__meat burger__meat--2"></span>
+            <span class="burger__meat burger__meat--3"></span>
         </div>
-        <nav class="menu" id="menu">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="../index.html#missions">Missions</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../missions/ionic.html">Ionic Mission</a></li>
-                        <li><a href="../missions/photonic.html">Photonic Mission</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="../index.html#research">Research</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="GRB_cosmology.html">GRB Cosmology</a></li>
-                        <li><a href="agn_jet_dynamics_and_cosmic_ray_interact.html">AGN Jet Dynamics</a></li>
-                        <li><a href="supernova_research.html">Supernova Remnants</a></li>
-                        <li><a href="solar_cosmic_rays.html">Solar Cosmic Rays</a></li>
-                    </ul>
-                </li>
+        <nav class="nav" id="nav">
+            <ul class="nav__list">
+                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="../index.html#missions">Missions</a></li>
+                <li><a href="../index.html#research">Research</a></li>
                 <li><a href="../group/overview.html">Group</a></li>
                 <li><a href="https://github.com/capibara3">GitHub</a></li>
             </ul>
         </nav>
     </div>
 
-    <section class="section" id="introduction">
-        <h2>Introduction</h2>
-        <p>Supernova Remnants (SNRs) are the expanding materials left after a supernova explosion. Supernovae are classified as either Core Collapse (massive stars) or Thermonuclear (white dwarf explosions), each producing different types of stellar remnants. SNRs allow us to study chemical element formation and contribute heavy metals to new stars. Their X-ray emissions also reveal the possible presence of neutron stars.</p>
-    </section>
+    <main>
 
-    <section class="section" id="focus">
-        <h2>Research Focus</h2>
-        <p>We aim to identify particles in the core of SNRs by studying their influence on shock waves.</p>
-    </section>
+        <section class="hero">
+            <span class="section-title">Supernova Research</span>
+            <p>Research Initiative - CAPIBARA Project</p>
+        </section>
 
-    <section class="section" id="methods">
-        <h2>Methods</h2>
-        <p>X-ray observations and analysis.</p>
-    </section>
+        <div class="project-cards">
+            <div class="card">
+                <span class="section-title">Introduction</span>
+                <p>Supernova Remnants (SNRs) are the expanding materials left after a supernova explosion. Supernovae are classified as either Core Collapse (massive stars) or Thermonuclear (white dwarf explosions), each producing different types of stellar remnants. SNRs allow us to study chemical element formation and contribute heavy metals to new stars. Their X-ray emissions also reveal the possible presence of neutron stars.</p>
+            </div>
 
-    <section class="section" id="authors">
-        <h2>Authors</h2>
-        <p><a href="mailto:zhenghonga@gmail.com">Hongda Zheng</a></p>
-    </section>
+            <div class="card">
+                <span class="section-title">Research Focus</span>
+                <p>We aim to identify particles in the core of SNRs by studying their influence on shock waves.</p>
+                
+                <span class="section-title">Methods</span>
+                <p>X-ray observations and analysis.</p>
+            </div>
+        </div>
 
-    <div class="back-link">
-        <a href="https://capibara3.github.io/index.html#supernova">&larr; Back to Main Project Page</a>
-    </div>
 
-    <div class="disclaimer">
-        <h4>This project is part of the scientific program by the CAPIBARA Collaboration. However, we are open to any collaboration regarding the science outcomes of the missions (<a href="mailto:capibara-mission@outlook.com">contact us!</a>) and we will make all of our data public for the research community.</h4>
-    </div>
+        <section class="section" id="authors">
+            <p style="font-style: italic; color: #8e44ad">Correspoding authors: <a href="mailto:zhenghonga@gmail.com">Hongda Zheng</a></p>
+        </section>
 
-    <footer>
-        <p>&copy; 2025 CAPIBARA Collaboration. All rights reserved.</p>
-    </footer>
+        <div class="back-link">
+            <a href="https://capibara3.github.io/index.html#supernova">&larr; Back to Main Project Page</a>
+        </div>
+
+        <div class="disclaimer">
+            <h4>This project is part of the scientific program by the CAPIBARA Collaboration. However, we are open to any collaboration regarding the science outcomes of the missions (<a href="mailto:capibara-mission@outlook.com">contact us!</a>) and we will make all of our data public for the research community.</h4>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 CAPIBARA Collaboration. All rights reserved.</p>
+        </footer>
+
+    </main>
 
 </body>
 </html>

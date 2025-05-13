@@ -10,73 +10,60 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-
-    <header>
-        <h2>AGN Jet Dynamics and Cosmic Ray Interactions</h2>
-        <p>Research Initiative - CAPIBARA Project</p>
-    </header>
-
-    <div class="menu-container">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            &#9776; <!-- Hamburger menu icon -->
+    <div class="burger__container">
+        <div class="burger" id="burger" aria-label="Toggle navigation" role="button" tabindex="0">
+            <span class="burger__meat burger__meat--1"></span>
+            <span class="burger__meat burger__meat--2"></span>
+            <span class="burger__meat burger__meat--3"></span>
         </div>
-        <nav class="menu" id="menu">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="../index.html#missions">Missions</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../missions/ionic.html">Ionic Mission</a></li>
-                        <li><a href="../missions/photonic.html">Photonic Mission</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="../index.html#research">Research</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="GRB_cosmology.html">GRB Cosmology</a></li>
-                        <li><a href="agn_jet_dynamics_and_cosmic_ray_interact.html">AGN Jet Dynamics</a></li>
-                        <li><a href="supernova_research.html">Supernova Remnants</a></li>
-                        <li><a href="solar_cosmic_rays.html">Solar Cosmic Rays</a></li>
-                    </ul>
-                </li>
+        <nav class="nav" id="nav">
+            <ul class="nav__list">
+                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="../index.html#missions">Missions</a></li>
+                <li><a href="../index.html#research">Research</a></li>
                 <li><a href="../group/overview.html">Group</a></li>
                 <li><a href="https://github.com/capibara3">GitHub</a></li>
             </ul>
         </nav>
     </div>
 
-    <section class="section" id="introduction">
-        <h2>Introduction</h2>  
-        <p>Active Galactic Nuclei (AGN) are some of the most powerful objects in space, found at the center of galaxies. They create huge jets of energy that affect the space around them, influencing the formation of stars and even the growth of galaxies. The CAPIBARA mission is designed to detect cosmic rays (high-energy particles from space) and X-ray and 𝛾-ray emissions from AGN, helping us learn more about how these powerful jets shape the universe.</p>
-    </section>
+    <main>
+        <section class="hero">
+            <span class="section-title">AGN Jet Dynamics and Cosmic Ray Interactions</span>
+            <p>Research Initiative - CAPIBARA Project</p>
+        </section>
 
-    <section class="section" id="focus">
-        <h2>Our Research Focus</h2>  
-        <p>Our research is focused on understanding the role of AGN jets in the universe. These jets are thought to impact everything from how stars form to the movement of energy across galaxies. The CAPIBARA mission will compare its observations of cosmic rays and high-energy light with simulations of AGN jets, allowing us to learn more about how these powerful jets contribute to cosmic ray populations and the high-energy background of the universe.</p>
-        <p>Our main goal is to explore how AGN jets interact with the space around them, especially when it comes to producing cosmic rays and high-energy light. By modeling AGN jets and comparing the results with CAPIBARA’s real data, we can get a better understanding of these interactions and how they might impact the development of galaxies.</p>
-    </section>
+        <div class="project-cards">
+            <div class="card">
+                <span class="section-title">Introduction</span>  
+                <p>Active Galactic Nuclei (AGN) are some of the most powerful objects in space, found at the center of galaxies. They create huge jets of energy that affect the space around them, influencing the formation of stars and even the growth of galaxies. The CAPIBARA mission is designed to detect cosmic rays (high-energy particles from space) and X-ray and 𝛾-ray emissions from AGN, helping us learn more about how these powerful jets shape the universe.</p>
+            </div>
+            <div class="card">
+                <span class="section-title">Our Research Focus</span>  
+                <p>Our research is focused on understanding the role of AGN jets in the universe. These jets are thought to impact everything from how stars form to the movement of energy across galaxies. The CAPIBARA mission will compare its observations of cosmic rays and high-energy light with simulations of AGN jets, allowing us to learn more about how these powerful jets contribute to cosmic ray populations and the high-energy background of the universe.</p>
+                <p>Our main goal is to explore how AGN jets interact with the space around them, especially when it comes to producing cosmic rays and high-energy light. By modeling AGN jets and comparing the results with CAPIBARA’s real data, we can get a better understanding of these interactions and how they might impact the development of galaxies.</p>
 
-    <section class="section" id="methods">
-        <h2>Methods and Tools</h2>
-        <p>To study AGN jets, we use a tool called the SWIFT simulation code, which allows us to create computer models of these jets in action. With SWIFT, we can simulate the power and movement of AGN jets and compare them to CAPIBARA’s observations. This helps us understand the big picture: how AGN jets affect cosmic rays and the space around them.</p>
-    </section>
+                <span class="section-title">Methods and Tools</span>
+                <p>To study AGN jets, we use a tool called the SWIFT simulation code, which allows us to create computer models of these jets in action. With SWIFT, we can simulate the power and movement of AGN jets and compare them to CAPIBARA’s observations. This helps us understand the big picture: how AGN jets affect cosmic rays and the space around them.</p>
+            </div>
+        </div>
 
-    <section class="section" id="authors">
-        <h2>Authors</h2>
-        <p><a href="mailto:carles.fonseca.m@gmail.com">Carles Fonseca</a></p>
-    </section>
+        <section class="section" id="authors">
+            <p style="font-style: italic; color: #8e44ad">Corresponding authors: <a href="mailto:carles.fonseca.m@gmail.com">Carles Fonseca</a></p>
+        </section>
 
-    <div class="back-link">
-        <a href="https://capibara3.github.io/index.html#agn">&larr; Back to Main Project Page</a>
-    </div>
+        <div class="back-link">
+            <a href="https://capibara3.github.io/index.html#agn">&larr; Back to Main Project Page</a>
+        </div>
 
-    <div class="disclaimer">
-        <h4>This project is part of the scientific program by the CAPIBARA Collaboration. However, we are open to any collaboration regarding the science outcomes of the missions (<a href="mailto:capibara-mission@outlook.com">contact us!</a>) and we will make all of our data public for the research community.</h4>
-    </div>
+        <div class="disclaimer">
+            <h4>This project is part of the scientific program by the CAPIBARA Collaboration. However, we are open to any collaboration regarding the science outcomes of the missions (<a href="mailto:capibara-mission@outlook.com">contact us!</a>) and we will make all of our data public for the research community.</h4>
+        </div>
 
-    <footer>
-        <p>&copy; 2025 CAPIBARA Collaboration. All rights reserved.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 CAPIBARA Collaboration. All rights reserved.</p>
+        </footer>
 
+    </main>
 </body>
 </html>

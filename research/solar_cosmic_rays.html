@@ -10,72 +10,62 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-
-    <header>
-        <h2>Solar Cosmic Rays</h2>
-        <p>Research Initiative - CAPIBARA Project</p>
-    </header>
-
-    <div class="menu-container">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            &#9776; <!-- Hamburger menu icon -->
+    <div class="burger__container">
+        <div class="burger" id="burger" aria-label="Toggle navigation" role="button" tabindex="0">
+            <span class="burger__meat burger__meat--1"></span>
+            <span class="burger__meat burger__meat--2"></span>
+            <span class="burger__meat burger__meat--3"></span>
         </div>
-        <nav class="menu" id="menu">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="../index.html#missions">Missions</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../missions/ionic.html">Ionic Mission</a></li>
-                        <li><a href="../missions/photonic.html">Photonic Mission</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="../index.html#research">Research</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="GRB_cosmology.html">GRB Cosmology</a></li>
-                        <li><a href="agn_jet_dynamics_and_cosmic_ray_interact.html">AGN Jet Dynamics</a></li>
-                        <li><a href="supernova_research.html">Supernova Remnants</a></li>
-                        <li><a href="solar_cosmic_rays.html">Solar Cosmic Rays</a></li>
-                    </ul>
-                </li>
+        <nav class="nav" id="nav">
+            <ul class="nav__list">
+                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="../index.html#missions">Missions</a></li>
+                <li><a href="../index.html#research">Research</a></li>
                 <li><a href="../group/overview.html">Group</a></li>
                 <li><a href="https://github.com/capibara3">GitHub</a></li>
             </ul>
         </nav>
     </div>
 
-    <section class="section" id="introduction">
-        <h2>Introduction</h2>
-        <p>Primary Cosmic Rays (PCRs) generally originate from high-energy events, but particles from solar wind—ejected from the Sun’s corona—pose risks to satellites and human spaceflight.</p>
-    </section>
+    <main>
 
-    <section class="section" id="focus">
-        <h2>Research Focus</h2>
-        <p>This project aims to distinguish between PCRs from the Sun and those from beyond the solar system. By comparing radiation levels detected in Earth’s day-side and night-side orbits, we intend to characterize solar PCRs, which are expected to show lower energies and velocities.</p>
-    </section>
-    
-    <section class="section" id="methods">
-        <h2>Methods</h2>
-        <p>We use particle detection techniques, analyze magnetic fields, and study orbital trajectories to track solar PCRs and differentiate them from non-solar cosmic radiation.</p>
-    </section>
+        <section class="hero">
+            <span class="section-title">Solar Cosmic Rays</span>
+            <p>Research Initiative - CAPIBARA Project</p>
+        </section>
 
-    <section class="section" id="authors">
-        <h2>Authors</h2>
-        <p><a href="mailto:marti.delgado.farriol@gmail.com">Marti Delgado Farriol</a></p>
-    </section>
+        <div class="project-cards">
+            <div class="card">
+                <span class="section-title">Introduction</span>
+                <p>Primary Cosmic Rays (PCRs) generally originate from high-energy events, but particles from solar wind—ejected from the Sun’s corona—pose risks to satellites and human spaceflight.</p>
+            </div>
 
-    <div class="back-link">
-        <a href="https://capibara3.github.io/index.html#solar">&larr; Back to Main Project Page</a>
-    </div>
+            <div class="card">
+                <span class="section-title">Research Focus</span>
+                <p>This project aims to distinguish between PCRs from the Sun and those from beyond the solar system. By comparing radiation levels detected in Earth’s day-side and night-side orbits, we intend to characterize solar PCRs, which are expected to show lower energies and velocities.</p>
 
-    <div class="disclaimer">
-        <h4>This project is part of the scientific program by the CAPIBARA Collaboration. However, we are open to any collaboration regarding the science outcomes of the missions (<a href="mailto:capibara-mission@outlook.com">contact us!</a>) and we will make all of our data public for the research community.</h4>
-    </div>
+                <span class="section-title">Methods</span>
+                <p>We use particle detection techniques, analyze magnetic fields, and study orbital trajectories to track solar PCRs and differentiate them from non-solar cosmic radiation.</p>
+            </div>
+        </div>
 
-    <footer>
-        <p>&copy; 2025 CAPIBARA Collaboration. All rights reserved.</p>
-    </footer>
+        <section class="section" id="authors">
+            <p style="font-style: italic; color: #8e44ad"> Corresponding authors: <a href="mailto:marti.delgado.farriol@gmail.com">Marti Delgado Farriol</a></p>
+        </section>
+
+        <div class="back-link">
+            <a href="https://capibara3.github.io/index.html#solar">&larr; Back to Main Project Page</a>
+        </div>
+
+        <div class="disclaimer">
+            <h4>This project is part of the scientific program by the CAPIBARA Collaboration. However, we are open to any collaboration regarding the science outcomes of the missions (<a href="mailto:capibara-mission@outlook.com">contact us!</a>) and we will make all of our data public for the research community.</h4>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 CAPIBARA Collaboration. All rights reserved.</p>
+        </footer>
+
+    </main>
 
 </body>
 </html>
