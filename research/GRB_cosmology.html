@@ -10,80 +10,69 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-
-    <header>
-        <h1>GRBs for Cosmological Distances</h1>
-        <p>Research Initiative - CAPIBARA Project</p>
-    </header>
-
-    <div class="menu-container">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            &#9776; <!-- Hamburger menu icon -->
+    <div class="burger__container">
+        <div class="burger" id="burger" aria-label="Toggle navigation" role="button" tabindex="0">
+            <span class="burger__meat burger__meat--1"></span>
+            <span class="burger__meat burger__meat--2"></span>
+            <span class="burger__meat burger__meat--3"></span>
         </div>
-        <nav class="menu" id="menu">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="../index.html#missions">Missions</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../missions/ionic.html">Ionic Mission</a></li>
-                        <li><a href="../missions/photonic.html">Photonic Mission</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="../index.html#research">Research</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="GRB_cosmology.html">GRB Cosmology</a></li>
-                        <li><a href="agn_jet_dynamics_and_cosmic_ray_interact.html">AGN Jet Dynamics</a></li>
-                        <li><a href="supernova_research.html">Supernova Remnants</a></li>
-                        <li><a href="solar_cosmic_rays.html">Solar Cosmic Rays</a></li>
-                    </ul>
-                </li>
-                <li><a href="../group/overview.html">Group</a></li>
+        <nav class="nav" id="nav">
+            <ul class="nav__list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#missions">Missions</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="group/overview.html">Group</a></li>
                 <li><a href="https://github.com/capibara3">GitHub</a></li>
             </ul>
         </nav>
     </div>
+    
+    
+    <main>
+        <section class="hero">
+            <h1>GRBs for Cosmological Distances</h1>
+            <p>Research Initiative - CAPIBARA Project</p>
+        </section>
 
-    <section class="section" id="introduction">
-        <h2>What are GRBs?</h2>
-        <p>Gamma-ray bursts (GRBs) are the most energetic explosions in the Universe, which makes them visible at great distances. In just a few seconds, GRBs release more energy than the Sun emits over its entire lifetime. GRBs are thought to be produced in highly energetic events like collapsars or hypernovae, mergers between neutron stars or neutron stars with black holes, and magnetar giant flares.</p>
+        <div class="project-cards">
+            <div class="card">
+                <span class="section-title">What are GRBs?</span>
+                <p>Gamma-ray bursts (GRBs) are the most energetic explosions in the Universe, which makes them visible at great distances. In just a few seconds, GRBs release more energy than the Sun emits over its entire lifetime. GRBs are thought to be produced in highly energetic events like collapsars or hypernovae, mergers between neutron stars or neutron stars with black holes, and magnetar giant flares.</p>
+            
+                <span class="section-title">What is cosmology?</span>
+                <p>Cosmology is the study of the Universe as a whole, its origin, evolution, and fate. For nearly a century, we have known that the Universe is expanding, and in the last decades, that this expansion is accelerated. Despite the Hubble-Lemaître constant (the expansion rate) being a key value for cosmology, there is a diverging discrepancy between methods based on the local Universe (standard candles and distance ladder) and the ones based on the early universe (CMB).</p>
+            
+                <span class="section-title">Why are GRBs important to cosmology?</span>
+                <p>GRBs are standardizable distance indicators, which means expanding the distance ladder method to greater distances and providing new tools for cosmology. Not only will this help refine the value for the Hubble-Lemaître constant, but it will also allow for precise fitting of cosmological models, leading to a better understanding of other fundamental parameters of the Universe. The goal is to provide new data at greater distances to test cosmological models of the Universe, including testing the evolution of dark energy.</p>
 
-        <h2>What is cosmology?</h2>
-        <p>Cosmology is the study of the Universe as a whole, its origin, evolution, and fate. For nearly a century, we have known that the Universe is expanding, and in the last decades, that this expansion is accelerated. Despite the Hubble-Lemaître constant (the expansion rate) being a key value for cosmology, there is a diverging discrepancy between methods based on the local Universe (standard candles and distance ladder) and the ones based on the early universe (CMB).</p>
+                <img src="images/grb_visualization.jpg" alt="GRB Animation">
+            </div>
+            <div class="card">
+                <span class="section-title">Research Focus</span>
+                <p>Our research focuses on leveraging GRBs as “cosmic beacons” to measure cosmological distances and better understand the origin, evolution, and fate of the Universe. We aim to develop a further powerful standard candle to the distance ladder method, which is capable of reaching much greater distances. In addition, we are consider blazars (which can be detected in CAPIBARA's observation range) as potential standard candles too.</p>
 
-        <h2>Why are GRBs important to cosmology?</h2>
-        <p>GRBs are standardizable distance indicators, which means expanding the distance ladder method to greater distances and providing new tools for cosmology. Not only will this help refine the value for the Hubble-Lemaître constant, but it will also allow for precise fitting of cosmological models, leading to a better understanding of other fundamental parameters of the Universe. The goal is to provide new data at greater distances to test cosmological models of the Universe, including testing the evolution of dark energy.</p>
+                <span class="section-title">Methods</span>
+                <p>We rely on the X-ray and 𝛾-ray detector on our satellite to detect GRBs using a wide field of view. The afterglow of GRBs will then be observed with our more accurate X-ray detector. Combining these key observations with data from other space-based 𝛾-ray and X-ray telescopes, we will measure model-independent distances to the GRBs. Having these distance measurements enables us to analyze the parameters for modeling the Universe.</p>
+            </div>
+        </div>
 
-        <img src="images/grb_visualization.jpg" alt="GRB Animation">
-    </section>
+        <section class="section" id="contact">
+            <span class="section-title">Corresponding Authors</span>
+            <p><a href="mailto:joanalnu@outlook.com">Joan Alcaide-Núñez</a></p>
+        </section>
 
-    <section class="section" id="focus">
-        <h2>Research Focus</h2>
-        <p>Our research focuses on leveraging GRBs as “cosmic beacons” to measure cosmological distances and better understand the origin, evolution, and fate of the Universe. We aim to develop a further powerful standard candle to the distance ladder method, which is capable of reaching much greater distances. In addition, we are consider blazars (which can be detected in CAPIBARA's observation range) as potential standard candles too.</p>
-    </section>
+        <div class="back-link">
+            <a href="https://capibara3.github.io/index.html#grb">&larr; Back to Main Project Page</a>
+        </div>
 
-    <section class="section" id="methods">
-        <h2>Methods</h2>
-        <p>We rely on the X-ray and 𝛾-ray detector on our satellite to detect GRBs using a wide field of view. The afterglow of GRBs will then be observed with our more accurate X-ray detector. Combining these key observations with data from other space-based 𝛾-ray and X-ray telescopes, we will measure model-independent distances to the GRBs. Having these distance measurements enables us to analyze the parameters for modeling the Universe.</p>
-    </section>
+        <div class="disclaimer">
+            <h4>This project is part of the scientific program by the CAPIBARA Collaboration. However, we are open to any collaboration regarding the science outcomes of the missions (<a href="mailto:capibara-mission@outlook.com">contact us!</a>) and we will make all of our data public for the research community.</h4>
+        </div>
 
-    <section class="section" id="contact">
-        <h2>Corresponding Authors</h2>
-        <p><a href="mailto:joanalnu@outlook.com">Joan Alcaide-Núñez</a></p>
-    </section>
-
-    <div class="back-link">
-        <a href="https://capibara3.github.io/index.html#grb">&larr; Back to Main Project Page</a>
-    </div>
-
-    <div class="disclaimer">
-        <h4>This project is part of the scientific program by the CAPIBARA Collaboration. However, we are open to any collaboration regarding the science outcomes of the missions (<a href="mailto:capibara-mission@outlook.com">contact us!</a>) and we will make all of our data public for the research community.</h4>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 CAPIBARA Collaboration. All rights reserved.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 CAPIBARA Collaboration. All rights reserved.</p>
+        </footer>
+    </main>
 
 </body>
 </html>
