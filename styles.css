@@ -68,7 +68,8 @@ body {
 }
 
 .burger__container {
-    position: relative;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,6 +99,7 @@ body {
 
 .nav {
     display: flex;
+    align-items: center;
 }
 
 .nav__list {
@@ -117,6 +119,12 @@ body {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
+}
+
+.nav__list a:not(.dropbtn) {
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .nav__list a:hover,
