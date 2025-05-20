@@ -31,8 +31,10 @@ html, body {
     margin-bottom: 3rem;
     line-height: 1.6;
     font-weight: bold;
-    text-transform: uppercase;
     letter-spacing: 0.05em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero {
@@ -250,7 +252,7 @@ main {
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(142, 68, 173, 0.1);
     padding: 1.5rem;
-    text-align: center;
+    /* text-align: justify; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -284,6 +286,10 @@ main {
     font-size: 1rem;
     line-height: 1.5;
     color: var(--text-color);
+    margin-bottom: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
 }
 
 .faq-section {
