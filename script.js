@@ -6,6 +6,21 @@ burger.addEventListener('click', () => {
     nav.classList.toggle('active');
 });
 
+// Dropdown toggle for mobile
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdowns = document.querySelectorAll(".nav__list li.dropdown > a.dropbtn");
+
+    dropdowns.forEach(dropbtn => {
+        dropbtn.addEventListener("click", function (e) {
+            if (window.innerWidth <= 991) {
+                e.preventDefault();
+                const parentLi = this.parentElement;
+                parentLi.classList.toggle("active");
+            }
+        });
+    });
+});
+
 
 // FAQ toggle
 document.addEventListener("DOMContentLoaded", function () {
