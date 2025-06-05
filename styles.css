@@ -2,7 +2,7 @@
     --primary-color: #bf87e6; /* Deep Purple from logo */
     --secondary-color: #ffc857; /* Bright Yellow-Orange accent */
     --accent-color: #ff4fa0; /* Magenta-Pink glow for hover/focus */
-    --link-color: #ff9800; /* Orange for links */
+    --navbutton-color: #ff9800; /* Orange for links */
     --background-color: #f5f5f5; /* Light background */
     --text-color: #2d2d2d;
     --header-gradient: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
@@ -169,7 +169,7 @@ body {
 
 .nav__list li.dropdown .dropbtn:hover,
 .nav__list li.dropdown .dropbtn:focus {
-    color: var(--accent-color);
+    color: var(--navbutton-color);
     outline: none;
 }
 
@@ -209,7 +209,7 @@ body {
 
 .nav__list li.dropdown .dropdown-content li a:hover,
 .nav__list li.dropdown .dropdown-content li a:focus {
-    background-color: var(--accent-color);
+    background-color: var(--navbutton-color);
     color: white;
     outline: none;
 }
@@ -232,7 +232,7 @@ body {
     .nav__list li.dropdown .dropdown-content li a:hover,
     .nav__list li.dropdown .dropdown-content li a:focus {
         background-color: transparent;
-        color: var(--accent-color);
+        color: var(--navbutton-color);
     }
 }
 
@@ -516,7 +516,7 @@ footer {
 
     .nav__list li.dropdown .dropbtn:hover,
     .nav__list li.dropdown .dropbtn:focus {
-        color: var(--accent-color);
+        color: var(--navbutton-color);
     }
 
     .nav__list li.dropdown .dropdown-content {
@@ -531,7 +531,7 @@ footer {
 
     .nav__list li.dropdown .dropdown-content li a:hover,
     .nav__list li.dropdown .dropdown-content li a:focus {
-        background-color: var(--accent-color);
+        background-color: var(--navbutton-color);
         color: white;
     }
 
