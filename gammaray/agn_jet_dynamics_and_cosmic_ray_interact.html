@@ -6,11 +6,12 @@
     <meta name="description" content="Idea template for CAPIBARA Research Project">
     <meta name="keywords" content="AGN, Simulations, SWIFT, Black Holes, Cosmic Ray, Spark Program, Research, Students, PLDSpace, CAPIBARA, Space Mission, astronomy, astrophysics, aerospace">
     <title>AGN Jet Dynamics and Cosmic Ray Interactions</title>
-    <link rel="stylesheet" href="research.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <div class="burger__container">
+        <!-- Each item is in class="dropbtn" although not necessarily a dropdown menu button, because so all buttons are identical -->
         <div class="burger" id="burger" aria-label="Toggle navigation" role="button" tabindex="0">
             <span class="burger__meat burger__meat--1"></span>
             <span class="burger__meat burger__meat--2"></span>
@@ -18,25 +19,25 @@
         </div>
         <nav class="nav" id="nav">
             <ul class="nav__list">
-                <li><a href="../index.html" class="active">Home</a></li>
+                <li class="dropdown"><a href="../index.html" class="dropbtn">Home</a></li>
                 <li class="dropdown">
-                    <a href="../index.html#missions" class="dropbtn">Missions</a>
+                    <a href="../ionic/index.html" class="dropbtn">Cosmic rays</a>
                     <ul class="dropdown-content">
-                        <li><a href="../missions/ionic.html">Ionic Mission</a></li>
-                        <li><a href="../missions/photonic.html">Photonic Mission</a></li>
+                        <li><a href="../ionic/index.html">Ionic Mission</a></li> <!--change to index.html-->
+                        <li><a href="../ionic/solar_cosmic_rays.html">Solar Cosmic Rays</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="../index.html#research" class="dropbtn">Research</a>
+                    <a href="../gammaray/index.html" class="dropbtn">Gamma/X-rays</a>
                     <ul class="dropdown-content">
-                        <li><a href="../research/GRB_cosmology.html">GRBs Cosmology</a></li>
-                        <li><a href="../research/agn_jet_dynamics_and_cosmic_ray_interact.html">AGN Jet Dynamics and Cosmic Ray Interactions</a></li>
-                        <li><a href="../research/supernova_research.html">Supernova Research</a></li>
-                        <li><a href="../research/solar_cosmic_rays.html">Solar Cosmic Rays</a></li>
+                        <li><a href="../gammaray/photonic.html">Photonic Mission</a></li>
+                        <li><a href="../gammaray/GRB_cosmology.html">GRBs Cosmology</a></li>
+                        <li><a href="../gammaray/agn_jet_dynamics_and_cosmic_ray_interact.html">AGN Jet Dynamics and Cosmic Ray Interactions</a></li>
+                        <li><a href="../gammaray/supernova_research.html">Supernova Research</a></li>
                     </ul>
                 </li>
-                <li><a href="../group/overview.html">Group</a></li>
-                <li><a href="https://github.com/capibara3">GitHub</a></li>
+                <li class="dropdown"><a href="../group/overview.html" class="dropbtn">Group</a></li>
+                <li class="dropdown"><a href="https://github.com/capibara3" class="dropbtn">GitHub</a></li>
             </ul>
         </nav>
     </div>
