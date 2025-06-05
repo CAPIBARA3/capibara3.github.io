@@ -16,6 +16,7 @@
 </head>
 <body>
     <div class="burger__container">
+        <!-- Each item is in class="dropbtn" although not necessarily a dropdown menu button, because so all buttons are identical -->
         <div class="burger" id="burger" aria-label="Toggle navigation" role="button" tabindex="0">
             <span class="burger__meat burger__meat--1"></span>
             <span class="burger__meat burger__meat--2"></span>
@@ -23,7 +24,7 @@
         </div>
         <nav class="nav" id="nav">
             <ul class="nav__list">
-                <li><a href="index.html" class="active">Home</a></li>
+                <li class="dropdown"><a href="index.html" class="dropbtn">Home</a></li>
                 <li class="dropdown">
                     <a href="#missions" class="dropbtn">Missions</a>
                     <ul class="dropdown-content">
@@ -40,8 +41,8 @@
                         <li><a href="research/solar_cosmic_rays.html">Solar Cosmic Rays</a></li>
                     </ul>
                 </li>
-                <li><a href="group/overview.html">Group</a></li>
-                <li><a href="https://github.com/capibara3">GitHub</a></li>
+                <li class="dropdown"><a href="group/overview.html" class="dropbtn">Group</a></li>
+                <li class="dropdown"><a href="https://github.com/capibara3" class="dropbtn">GitHub</a></li>
             </ul>
         </nav>
     </div>
@@ -55,19 +56,26 @@
             <h2>A Student Satellite to Explore the<br />Mysteries of the Energetic Cosmos</h2>
         </section>
         
-        <section class="about-section" id="about" aria-label="About CAPIBARA">
-            <h2>What Is CAPIBARA and What We Aim For</h2>
-            <p>
-                CAPIBARA is a collaboration of young students with the aim to explore the high-energy Universe it all its facets, including ionic and photonic radiation. We propose two space missions to explore cosmic rays (ionic) and gamma/X-rays (photonic) and advance our understanding of the high energy astrophysical phenomena, quantum and particle physics, and Earth’s physics. Furthermore, we aim to boost these fields and research making our data public and inspiring other young students to have an active role in research.
-            </p>
-            <p>
-                We have applied to the <a href="https://spark-program.pldspace.com">SPARK program</a> by <a href="https://pldspace.com/en/">PLD Space</a>, which gives the opportunity to students and schools to launch their satellite with their <a href="https://pldspace.com/en/miura-5">Miura 5</a> rocket.
-            </p>
-            <video width="40%" height="40%" controls>
+        <br><br><br>
+        <span class="section-title">What Is CAPIBARA and What We Aim For</span>
+
+        <p>
+            CAPIBARA is a collaboration of young students with the aim to explore the high-energy Universe it all its facets, including ionic and photonic radiation. We propose two space missions to explore cosmic rays (ionic) and gamma/X-rays (photonic) and advance our understanding of the high energy astrophysical phenomena, quantum and particle physics, and Earth’s physics. Furthermore, we aim to boost these fields and research making our data public and inspiring other young students to have an active role in research.
+        </p>
+        <p>
+            We have applied to the <a href="https://spark-program.pldspace.com">SPARK program</a> by <a href="https://pldspace.com/en/">PLD Space</a>, which gives the opportunity to students and schools to launch their satellite with their <a href="https://pldspace.com/en/miura-5">Miura 5</a> rocket.
+        </p>
+        <!-- <div style="padding: 2rem; text-align: center; display: flex; justify-content: center;">
+            <video width="40%" height="auto" style="padding: 1rem; border-radius: 15px;" controls>
                 <source src="images/main_video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-        </section>
+        </div> -->
+
+        
+
+        <!-- <section class="about-section" id="about" aria-label="About CAPIBARA">
+        </section> -->
 
         <span class="section-title">Missions</span>
         <section class="project-cards" id="missions" aria-label="Missions">        
@@ -207,7 +215,7 @@
 
         <span class="section-title">Partners</span>
         <section class="project-cards" id="partners" aria-label="Partners">
-            <article class="card" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+            <article class="card" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; align-items: center;">
                 <div style="flex: 1 1 150px; max-width: 150px;">
                     <a href="https://spark-program.pldspace.com"><img src="images/logos/pldspace.png" alt="PLD Space Logo" style="max-width: 100%; height: auto;" /></a>
                 </div>
