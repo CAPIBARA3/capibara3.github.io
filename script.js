@@ -1,46 +1,71 @@
-const burger = document.getElementById('burger');
-const nav = document.getElementById('nav');
+document.addEventListener('DOMContentLoaded', function() {
+    // Load components
+    const componentsScript = document.createElement('script');
+    componentsScript.src = './loadComponents.js';
+    document.head.appendChild(componentsScript);
 
-burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
-    nav.classList.toggle('active');
-});
+    // Initialize theme with system preference awareness
+    initThemeSystem();
 
-// Dropdown toggle for mobile
-document.addEventListener("DOMContentLoaded", function () {
-    const dropdowns = document.querySelectorAll(".nav__list li.dropdown > a.dropbtn");
-
-    dropdowns.forEach(dropbtn => {
-        dropbtn.addEventListener("click", function (e) {
-            if (window.innerWidth <= 991) {
-                e.preventDefault();
-                const parentLi = this.parentElement;
-                parentLi.classList.toggle("active");
+    // Add smooth scrolling to all links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
             }
         });
     });
 });
 
+function initThemeSystem() {
+    // Create toggle button
+    const toggleBtn = document.createElement('button');
+    toggleBtn.className = 'theme-toggle';
+    toggleBtn.setAttribute('aria-label', 'Toggle dark mode');
+    document.body.appendChild(toggleBtn);
 
-// FAQ toggle
-document.addEventListener("DOMContentLoaded", function () {
-    const faqItems = document.querySelectorAll(".faq-item");
+    // Check system preference and saved preference
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const savedTheme = localStorage.getItem('theme');
 
-    faqItems.forEach(item => {
-        const question = item.querySelector(".faq-question");
-        const answer = item.querySelector(".faq-answer");
+    // Set initial theme state
+    function setInitialTheme() {
+        if (savedTheme) {
+            // Use saved preference if exists
+            document.body.classList.toggle('dark-mode', savedTheme === 'dark');
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            toggleBtn.innerHTML = savedTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        } else {
+            // Fall back to system preference
+            document.body.classList.toggle('dark-mode', systemPrefersDark);
+            document.documentElement.setAttribute('data-theme', systemPrefersDark ? 'dark' : 'light');
+            toggleBtn.innerHTML = systemPrefersDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        }
+    }
+    setInitialTheme();
 
-        question.addEventListener("click", () => {
-            const isOpen = answer.style.display === "block";
+    // Toggle theme manually
+    toggleBtn.addEventListener('click', function() {
+        const isDark = document.body.classList.toggle('dark-mode');
+        const newTheme = isDark ? 'dark' : 'light';
 
-            // Close all answers before opening the selected one
-            document.querySelectorAll(".faq-answer").forEach(ans => ans.style.display = "none");
-            document.querySelectorAll(".faq-toggle").forEach(toggle => toggle.innerHTML = "&#x25BC;");
-
-            if (!isOpen) {
-                answer.style.display = "block";
-                question.querySelector(".faq-toggle").innerHTML = "&#x25B2;"; // Change icon to up arrow
-            }
-        });
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        toggleBtn.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
     });
-});
+
+    // Watch for system theme changes (only when no manual preference set)
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        if (!localStorage.getItem('theme')) {
+            const isDark = e.matches;
+            document.body.classList.toggle('dark-mode', isDark);
+            document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+            toggleBtn.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        }
+    });
+}
