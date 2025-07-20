@@ -1,0 +1,79 @@
+├── ionic/
+│   ├── index.html
+│   ├── styles.css
+│   ├── images/
+│   │   └── cosmic-rays.jpg
+│   ├── script.js
+│   └── solar_cosmic_rays.html
+├── index.html
+├── styles.css
+├── images/
+│   ├── main_video.mov
+│   ├── main_video.mp4
+│   ├── supernova.jpg
+│   ├── group-gif.key
+│   ├── exoplanet.jpeg
+│   ├── cosmoxarxa-presentation.png
+│   ├── ideas.png
+│   ├── logos/
+│   │   ├── obaspace.png
+│   │   ├── labosat.png
+│   │   ├── TinyGS_logo.png
+│   │   ├── ifae.png
+│   │   ├── pldspace.png
+│   │   └── teidesat.jpeg
+│   ├── proposal.png
+│   ├── agn-jets.png
+│   ├── artist_concept_1.jpeg
+│   ├── artist_concept_2.png
+│   ├── neutron-star.jpg
+│   ├── hubble-constant.jpg
+│   ├── group-gif.GIF
+│   ├── chandra-banner.jpg
+│   └── solar-wind.jpg
+├── group/
+│   ├── styles.css
+│   ├── images/
+│   │   ├── emma-picture.png
+│   │   ├── mail.png
+│   │   ├── website.png
+│   │   ├── instagram.png
+│   │   ├── x.png
+│   │   ├── lluc.png
+│   │   ├── carles.png
+│   │   ├── marti.png
+│   │   ├── github.png
+│   │   ├── presentation-videos/
+│   │   │   ├── emma.mp4
+│   │   │   ├── joan.mov
+│   │   │   ├── joan.mp4
+│   │   │   ├── marti.mp4
+│   │   │   ├── lluc.mp4
+│   │   │   ├── carles.mp4
+│   │   │   ├── christian.mp4
+│   │   │   └── hongda.mp4
+│   │   ├── youtube.webp
+│   │   ├── linkedin.png
+│   │   ├── video.png
+│   │   ├── facebook.png
+│   │   ├── joan-picture.png
+│   │   └── default.png
+│   └── overview.html
+├── 404.html
+├── gammaray/
+│   ├── agn_jet_dynamics_and_cosmic_ray_interact.html
+│   ├── supernova_research.html
+│   ├── index.html
+│   ├── styles.css
+│   ├── images/
+│   │   ├── compton_detector.png
+│   │   ├── grb_visualization.jpg
+│   │   └── charge_transfer_CCDs.png
+│   ├── GRB_cosmology.html
+│   ├── script.js
+│   └── instruments.html
+├── script.js
+├── files/
+│   ├── CosmoXarxa_presentation.pdf
+│   └── preliminar_proposal.pdf
+└── .mapping-ignore

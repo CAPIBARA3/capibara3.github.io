@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Idea template for CAPIBARA Research Project">
+    <meta name="keywords" content="Cosmic Ray, Research, Students, PLDSpace, CAPIBARA, Space Mission, astronomy, astrophysics, aerospace">
+    <title>Ionic Mission</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="burger__container">
+        <!-- Each item is in class="dropbtn" although not necessarily a dropdown menu button, because so all buttons are identical -->
+        <div class="burger" id="burger" aria-label="Toggle navigation" role="button" tabindex="0">
+            <span class="burger__meat burger__meat--1"></span>
+            <span class="burger__meat burger__meat--2"></span>
+            <span class="burger__meat burger__meat--3"></span>
+        </div>
+        <nav class="nav" id="nav">
+            <ul class="nav__list">
+                <li class="dropdown"><a href="../index.html" class="dropbtn">Home</a></li>
+                <li class="dropdown">
+                    <a href="../ionic/index.html" class="dropbtn">Cosmic rays</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../ionic/index.html">Ionic Mission</a></li> <!--change to index.html-->
+                        <li><a href="../ionic/solar_cosmic_rays.html">Solar Cosmic Rays</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../gammaray/index.html" class="dropbtn">Gamma/X-rays</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../gammaray/photonic.html">Photonic Mission</a></li>
+                        <li><a href="../gammaray/instruments.html">Instruments</a></li>
+                        <li><a href="../gammaray/GRB_cosmology.html">GRBs Cosmology</a></li>
+                        <li><a href="../gammaray/agn_jet_dynamics_and_cosmic_ray_interact.html">AGN Jet Dynamics and Cosmic Ray Interactions</a></li>
+                        <li><a href="../gammaray/supernova_research.html">Supernova Research</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="../group/overview.html" class="dropbtn">Group</a></li>
+                <li class="dropdown"><a href="https://github.com/capibara3" class="dropbtn">GitHub</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+
+        <section class="hero">
+            <span class="section-title"><!--[mission name] - -->Ionic Mission</span>
+            <p>A mission to study <b>cosmic rays</b></p>
+        </section>
+
+        <div class="project-cards">
+            <div class="card">
+                <span class="section-title">Introduction</span>
+                <p><b>Unveiling the Invisible Particles of Space</b></p>
+                <p>Cosmic rays are high-energy particles—mostly protons and alpha particles—that constantly bombard Earth from deep space. Though invisible to the naked eye, they carry vital clues about the most energetic and violent phenomena in the cosmos.</p>
+                <p>The Ionic Mission by CAPIBARA is designed to detect and study these particles from low Earth orbit. Our student-built satellite features a layered particle detector that measures the time-of-flight, charge, and energy of each incoming cosmic ray, enabling us to fully characterize their properties.</p>
+
+                <p>This mission will focus on the goal of exploring the ionic high-energy Universe by detecting cosmic rays.</p>
+            </div>
+            <div class="card">
+                <span class="section-title">Instruments</span>
+                <p>This satellite will feature a particle detector, capable of detecting protons and alpha particles. Using a layered structure of detectors, it captures time-of-flight and charge information for a comprehensive detection.</p>
+                <ul>
+                    <p>🧪 <b>Time-of-Flight Detectors</b> Scintillators detect particle speed by flashing light when struck by cosmic rays. Timing the flashes between layers reveals the particle's velocity.</p>
+                    <p>⚡ <b>Charge Detection (Silicon Detectors)</b>These detectors act like tiny ion chambers, identifying the charge of each particle by measuring ionization.</p>
+                    <!--<p>→ Finally, an electromagnetic calorimeter measures particle energy by absorbing and converting the particle’s full energy into a detectable signal.</p>-->
+                </ul>
+                <p>This layered arrangement enables the satellite’s PCR detector to capture critical data on cosmic ray particles with high accuracy, contributing valuable insights into their composition and behavior.</p>
+                <img src="images/cosmic-rays.jpg" alt="Cosmic Ray Detector">
+            </div>
+
+            <div class="card">
+                <span class="section-title">Satellite Characteristics</span>
+                <table style="margin-left: auto; margin-right: auto; border-collapse: collapse; font-size: 1.0rem">
+                    <tr>
+                    <td>Orbit</td>
+                    <td>LEO/SSO</td>
+                    </tr>
+                    <tr>
+                        <td>Altitude</td>
+                        <td>~500 km</td>
+                    </tr>
+                    <tr>
+                    <td>Inclination</td>
+                    <td>50-60º</td>
+                    </tr>
+                </table>
+                <p>* these are preliminary parameters, and will ultimatelly follow the decisions by OBA FARADAY and the Miura 5 Spark Program teams.</p>
+            </div>
+
+            <div class="card">
+                <span class="section-title">Why It Matters</span>
+                <p>Cosmic rays could help us understand the origins of supernovae, black holes, and even dark matter. With this mission, we take a leap forward in <b>space weather forecasting</b>, <b>particle astrophysics</b>, and <b>science education</b> — all while showing what students are capable of in real space research.</p>
+            </div>
+        </div>
+
+        <div class="back-link">
+            <a href="https://capibara3.github.io/">&larr; Back to Main Project Page</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 CAPIBARA Collaboration. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
