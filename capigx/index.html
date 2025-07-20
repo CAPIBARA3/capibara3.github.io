@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPIGX | Capibara Collaboration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<!-- Navigation will be injected here -->
+
+<main class="main-content subpage">
+    <!-- Breadcrumb navigation -->
+    <nav class="breadcrumb">
+        <ol>
+            <li><a href="../">Home</a></li>
+            <li>CAPIGX</li>
+        </ol>
+    </nav>
+
+    <!-- Page header -->
+    <header class="page-header">
+        <h1>CAPIBARA's Gamma-ray/X-ray Mission</h1>
+        <p class="subtitle">A High-Energy Trasient Monitoring Constellation</p>
+    </header>
+
+    <!-- Main content sections -->
+    <section class="content-section">
+        <h2>Section Title</h2>
+        <div class="content-grid">
+            <!-- Text content -->
+            <div class="text-content">
+                <p>CAPIGX focuses on monitoring and following-up <b>gamma-ray and X-ray transient events</b>-the highest-energy forms of light in the Universe. These photons are emitted during cataclysmic events like black hole mergers and last only for a few seconds. Our mission aims to fill the upcoming <b>observational gap in the 1 kev - 1 MeV range</b> and push the limits of angular resolution with <b>intensity interferometry</b>. Our mission, set to <b>launch between 2032–2035</b>, will come in the era of multi-messenger astrophysics with many key X-ray and gamma-ray space telescopes (NewAthena, THESEUS) and gravitational wave observatories (Einstein Telescope, Cosmic Explorer, LISA) going online.</p>
+
+                <h3>Intensity Interferometry</h3>
+                <p>The technique of intensity interferometry has been previously used by the interplanetary network (IPN) to efficiently localize transients. Our mission proposes using a small constellation of CubeSats to help constrain the coordinates for source localization. With different CubeSats located at a baseline distance, different signal times of arrival (ToA) are used to compute and reduce the uncertainty of the source location. Following the steps of the HERMES mission, we aim to extend this to the 2030s and enhance the angular resolution capabilities for multi-messenger events.</p>
+
+                <h3>Instruments</h3>
+                <p>To cover the observational gap in the keV to MeV range, we need to combine X-ray and gamma-ray instruments with segmentation at 150 keV.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> 1-150 keV (X-ray): Cadmium Zinc Telluride (CZT) detectors</li>
+                    <li><i class="fas fa-check-circle"></i> 0.15-1 MeV (hard X-ray/gamma-ray): Cesium Iodide (CsL(TI)) with Silicon Photomultipliers (SiPMs)</li>
+                </ul>
+            </div>
+
+            <!-- Image/content card -->
+            <div class="content-card glow-on-hover">
+                <img src="../images/ideas.png" alt="Descriptive alt text">
+                <div class="card-caption">
+                    <p>Check Out the Latest Related Publication</p>
+                    <a href="../publications/index.html" class="btn btn-small">Read It</a>
+                    <!--TODO: add publication when available-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full-width highlight section -->
+    <section class="highlight-section">
+        <div class="highlight-content">
+            <h2>Why Does It Matter?</h2>
+            <p>Monitoring high-energy transient phenomena is vital for real-time alerts to the scientific community about gamma-ray bursts, magnetar bursts, AGN, and other rapid events, enabling a fast response and observation. Its unprecedented angular resolution allows precise mapping of gamma-ray sources, enhancing our understanding of the universe. Studying extreme environments near black holes, neutron stars, and active galaxies provides insights into fundamental cosmic processes, advancing our knowledge of the unvierse's msot powerful and mysterious phenomena.</p>
+            <p><b>A Mission for Everyone <i class="fas fa-earth"></i></b></p>
+            <p>By making our data publicly available, we open the door to collaborative discovery. Whether you're a high school student or PhD reseacher, CAPIGX offers a new window into the high-energy Universe As a student-led initiative; we want to show what <a href="../team">passionate students</a> are capable of.</p>
+            <a href="#" class="btn">Donate!</a>
+        </div>
+    </section>
+
+    <!-- Multi-column content -->
+    <section class="columns-section">
+        <h2>Related Research Initiatives</h2>
+        <div class="columns-container">
+            <div class="column">
+                <h3><a href="../capigx/multi-messenger-cosmology.html"><i class="fas fa-wave-square"></i> <u>Multi-Messenger Cosmology</u></a></h3>
+                <p>Combining CAPIGX GRBs data with GW signals' luminosity distance estimations.</p>
+                <img src="../images/hubble-constant.jpg" alt="Hubble Constant">
+            </div>
+            <div class="column">
+                <h3><a href="../capigx/agn-cosmic-ray-interactions.html"><i class="fas fa-radiation"></i> <u>AGN Cosmic Ray Interaction</u></a></h3>
+                <p>Studying the relation between AGN jet dynamics and cosmic rays.</p>
+                <img src="../images/agn-jets.png" alt="AGN Jets">
+            </div>
+            <div class="column">
+                <h3><a href="../capigx/supernova-remnant-environments.html"><i class="fas fa-dot-circle"></i> <u>Supernova Remnant Enviroments</u></a></h3>
+                <p>Exploring the acceleration of cosmic rays in supernova remnants.</p>
+                <img src="../images/supernova.jpg" alt="Supernova Remnant">
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer will be injected here -->
+
+<script src="../script.js"></script>
+<script src="../loadComponents.js"></script>
+</body>
+</html>

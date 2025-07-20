@@ -861,6 +861,17 @@ body.dark-mode .page-header .subtitle {
     margin: 1.5rem 0 1rem;
 }
 
+.text-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.text-content a:hover {
+    color: var(--dark-primary);
+    text-decoration: underline;
+
+}
+
 body.dark-mode .text-content h3 {
     color: var(--dark-primary);
 }
@@ -884,6 +895,29 @@ body.dark-mode .text-content h3 {
 
 body.dark-mode .feature-list i {
     color: var(--dark-secondary);
+}
+
+.styled-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.styled-list li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.styled-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+body.dark-mode .styled-list li::before {
+    color: var(--dark-primary);
 }
 
 /* Content cards */
@@ -983,6 +1017,15 @@ body.dark-mode .column h3 {
 
 .column h3 i {
     margin-right: 0.8rem;
+}
+
+.column a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.column a:hover {
+    color: var(--accent-color);
 }
 
 /* Gallery section */
