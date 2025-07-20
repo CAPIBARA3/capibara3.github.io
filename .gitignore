@@ -1,13 +1,2 @@
-# OS essentials
-.idea
+.idea/
 .DS_Store
-research/.DS_Store
-group/.DS_Store
-images/.DS_Store
-group/images/.DS_Store
-
-# developing templates
-research/idea_template.html
-
-# deprecated
-deprecated/
