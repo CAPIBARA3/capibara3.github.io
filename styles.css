@@ -1297,10 +1297,6 @@ body.dark-mode .modal-image .contact-links {
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
-.modal-text {
-    flex: 2;
-}
-
 .modal-image img {
     width: 100%;
     border-radius: 8px;
@@ -1319,6 +1315,18 @@ body.dark-mode .modal-image img {
     margin-bottom: 1rem;
     line-height: 1.6;
 }
+
+.modal-text a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.modal-text a:hover {
+    color: var(--accent-color);
+    transform: translateY(-2px);
+    text-decoration: underline;
+}
+
 
 /* Back link */
 .back-link {
