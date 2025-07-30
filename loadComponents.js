@@ -1,6 +1,6 @@
 function loadComponents() {
     // Load navigation
-    fetch('./nav.html')
+    fetch('/assets/nav.html')
         .then(response => {
             if (!response.ok) throw new Error('Network response was not ok');
             return response.text();
@@ -22,7 +22,7 @@ function loadComponents() {
             document.body.insertAdjacentHTML('afterbegin', `
                 <nav class="navbar" style="background: var(--header-gradient); padding: 1rem;">
                     <div class="navbar-container">
-                        <a href="./" class="navbar-logo" style="color: white; text-decoration: none;">
+                        <a href="" class="navbar-logo" style="color: white; text-decoration: none;">
                             Capibara Collaboration
                         </a>
                     </div>
@@ -31,7 +31,7 @@ function loadComponents() {
         });
 
     // Load footer
-    fetch('./footer.html')
+    fetch('/assets/footer.html')
         .then(response => {
             if (!response.ok) throw new Error('Network response was not ok');
             return response.text();
@@ -88,12 +88,12 @@ function initNavbar() {
     });
 
     // Highlight active link
-    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    const currentPath = window.location.pathname.split('/').pop() || 'earth.html';
     document.querySelectorAll('.nav-link').forEach(link => {
         const linkPath = link.getAttribute('href').split('/').pop();
         if (currentPath === linkPath ||
-            (currentPath === '' && linkPath === 'index.html') ||
-            (currentPath === 'index.html' && linkPath === '')) {
+            (currentPath === '' && linkPath === 'earth.html') ||
+            (currentPath === 'earth.html' && linkPath === '')) {
             link.classList.add('active');
         }
     });
