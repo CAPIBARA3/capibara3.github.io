@@ -1317,7 +1317,7 @@ body.dark-mode .modal-image img {
 }
 
 .modal-text a {
-    color: var(--text-color);
+    color: var(--primary-color);
     text-decoration: none;
     transition: all 0.3s ease;
 }
