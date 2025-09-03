@@ -1,3 +1,78 @@
+class ThemeManager {
+    constructor() {
+        this.themes = ['auto', 'light', 'dark'];
+        this.currentTheme = localStorage.getItem('theme') || 'auto';
+        this.themeToggle = document.getElementById('theme-toggle');
+        this.themeIcon = document.getElementById('theme-icon');
+
+        this.init();
+    }
+
+    init() {
+        this.applyTheme(this.currentTheme);
+        if (this.themeToggle) {
+            this.themeToggle.addEventListener('click', () => this.cycleTheme());
+        }
+
+        // Listen for system theme changes when in auto mode
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+            if (this.currentTheme === 'auto') {
+                this.applyTheme('auto');
+            }
+        });
+    }
+
+    cycleTheme() {
+        const currentIndex = this.themes.indexOf(this.currentTheme);
+        const nextIndex = (currentIndex + 1) % this.themes.length;
+        this.currentTheme = this.themes[nextIndex];
+
+        this.applyTheme(this.currentTheme);
+        localStorage.setItem('theme', this.currentTheme);
+
+        // Add animation class
+        this.themeToggle.classList.add('active');
+        setTimeout(() => {
+            this.themeToggle.classList.remove('active');
+        }, 600);
+    }
+
+    applyTheme(theme) {
+        const root = document.documentElement;
+
+        // Remove all theme attributes first
+        root.removeAttribute('data-theme');
+
+        if (theme === 'auto') {
+            // Let CSS media query handle it
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.body.classList.add('dark-mode');
+            } else {
+                document.body.classList.remove('dark-mode');
+            }
+        } else {
+            root.setAttribute('data-theme', theme);
+            if (theme === 'dark') {
+                document.body.classList.add('dark-mode');
+            } else {
+                document.body.classList.remove('dark-mode');
+            }
+        }
+
+        this.updateThemeDisplay(theme);
+    }
+
+    updateThemeDisplay(theme) {
+        const icons = {
+            auto: 'fas fa-adjust',
+            light: 'fas fa-sun',
+            dark: 'fas fa-moon'
+        };
+
+        this.themeIcon.className = icons[theme];
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     // Load components
     const componentsScript = document.createElement('script');
@@ -5,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.head.appendChild(componentsScript);
 
     // Initialize theme with system preference awareness
-    initThemeSystem();
+    const themeManager = new ThemeManager();
 
     // Add smooth scrolling to all links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -21,51 +96,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-function initThemeSystem() {
-    // Create toggle button
-    const toggleBtn = document.createElement('button');
-    toggleBtn.className = 'theme-toggle';
-    toggleBtn.setAttribute('aria-label', 'Toggle dark mode');
-    document.body.appendChild(toggleBtn);
-
-    // Check system preference and saved preference
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const savedTheme = localStorage.getItem('theme');
-
-    // Set initial theme state
-    function setInitialTheme() {
-        if (savedTheme) {
-            // Use saved preference if exists
-            document.body.classList.toggle('dark-mode', savedTheme === 'dark');
-            document.documentElement.setAttribute('data-theme', savedTheme);
-            toggleBtn.innerHTML = savedTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-        } else {
-            // Fall back to system preference
-            document.body.classList.toggle('dark-mode', systemPrefersDark);
-            document.documentElement.setAttribute('data-theme', systemPrefersDark ? 'dark' : 'light');
-            toggleBtn.innerHTML = systemPrefersDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-        }
-    }
-    setInitialTheme();
-
-    // Toggle theme manually
-    toggleBtn.addEventListener('click', function() {
-        const isDark = document.body.classList.toggle('dark-mode');
-        const newTheme = isDark ? 'dark' : 'light';
-
-        document.documentElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        toggleBtn.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-    });
-
-    // Watch for system theme changes (only when no manual preference set)
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-        if (!localStorage.getItem('theme')) {
-            const isDark = e.matches;
-            document.body.classList.toggle('dark-mode', isDark);
-            document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
-            toggleBtn.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-        }
-    });
-}
