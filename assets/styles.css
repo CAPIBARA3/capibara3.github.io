@@ -14,59 +14,22 @@
 
 }
 
-/* Dark Theme */
-[dark-theme="dark"] {
-    --dark-primary: #a56bd6;
-    --dark-secondary: #ffbb33;
-    --dark-accent: #ff66a3;
-    --dark-background: #1a1a1a;
-    --dark-text: #f0f0f0;
-    --dark-card: #2d2d2d;
-    /*--dark-nav: #0d0d0d;*/
-}
-
-/* Auto theme - use system preference */
+/* Dark Theme - only via system preference */
 @media (prefers-color-scheme: dark) {
-    :root:not([data-theme]) {
-        --dark-primary: #a56bd6;
-        --dark-secondary: #ffbb33;
-        --dark-accent: #ff66a3;
-        --dark-background: #1a1a1a;
-        --dark-text: #f0f0f0;
-        --dark-card: #2d2d2d;
+    :root {
+        --primary-color: #a56bd6;
+        --secondary-color: #ffbb33;
+        --accent-color: #ff66a3;
+        --background-color: #1a1a1a;
+        --text-color: #f0f0f0;
+        --card-bg: #2d2d2d;
+        --header-gradient: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+        --glow-color: rgba(255, 102, 163, 0.3);
+        --dark-bg: #111;
     }
 }
 
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
-
-/*!* This ensures manual toggle overrides system preference *!*/
-/*[data-theme="dark"] {*/
-/*    --primary-color: var(--dark-primary);*/
-/*    --secondary-color: var(--dark-secondary);*/
-/*    --accent-color: var(--dark-accent);*/
-/*    --background-color: var(--dark-background);*/
-/*    --text-color: var(--dark-text);*/
-/*    --card-bg: var(--dark-card);*/
-/*}*/
-
-/*[data-theme="light"] {*/
-/*    --primary-color: #bf87e6;*/
-/*    --secondary-color: #ffc857;*/
-/*    --accent-color: #ff4fa0;*/
-/*    --background-color: #f5f5f5;*/
-/*    --text-color: #2d2d2d;*/
-/*    --card-bg: #ffffff;*/
-/*}*/
+/* Removed manual theme switching and theme-toggle button styles */
 
 /* Base Styles */
 * {
@@ -120,43 +83,6 @@ section {
     margin-bottom: 3rem;
 }
 
-/* Theme Toggle */
-.theme-toggle {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    z-index: 1000;
-    background: var(--header-gradient);
-    border: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 15px var(--glow-color);
-    transition: all 0.3s ease;
-}
-
-.theme-toggle:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 20px var(--glow-color);
-}
-
-.theme-toggle i {
-    color: white;
-    font-size: 1.3rem;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-.theme-toggle.active {
-    animation: spin 0.6s ease;
-}
 
 /* Navigation */
 .navbar {
