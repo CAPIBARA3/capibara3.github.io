@@ -290,6 +290,7 @@ body.dark-mode .navbar {
     transform: translateY(10px);
     transition: all 0.3s ease;
     z-index: 1001;
+    list-style: none; /* remove bullet points in dropdown menu */
 }
 
 body.dark-mode .dropdown-menu {
