@@ -1317,3 +1317,47 @@ body.dark-mode .modal-image img {
         grid-template-columns: 1fr;
     }
 }
+
+
+
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    margin-top: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--text-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.5rem;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--navbutton-color);
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px var(--text-color);
+}
+
+.timeline-year {
+    font-weight: 700;
+    color: var(--header-gradient);
+    font-size: 1.2rem;
+}
