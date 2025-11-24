@@ -1,0 +1,153 @@
+Collaborating via GitHub
+---
+
+GitHub is the ultimate collaborationg platform for open-source projects and code developers. Here's a summary of how it works. Please, always adhere to our own [contributing guidelines](https://github.com/capibara3/.github-private/blob/main/profile/CONTRIBUTING.md).
+
+---
+## Index - What will you do here?
+1. [Repository Workflow](#1-repository-workflow)\
+	1.1 [Branching Strategy](#11-branching-strategy)\
+	1.2 [Creating a New Branch (localy)](#12-creating-a-new-branch-locally)\
+	1.3 [Commit Changes](#13-commit-changes)\
+	1.4 [Push Changes](#14-push-changes)
+2. [Pull Requests and Code Reviews](#2-pull-requests-and-code-reviews)\
+	2.1 [Opening a Pull Request](#21-opening-a-pull-request)\
+	2.2 [Review Process](#22-review-process)\
+	2.3 [Merging Guidelines](#23-merging-guidelines)
+3. [Issue Management](#3-issue-management)\
+	3.1 [Creating an Issue](#31-creating-an-issue)\
+	3.2 [Working on Issues](#32-working-on-issues)
+4. [Best practices](#4-best-practices)\
+	4.1 [Commit Frequently](#41-commit-frequently)\
+	4.2 [Branch Management](#42-branch-management)\
+	4.3 [Code Documentation](#43-code-documentation)\
+	4.4 [Repository Maintenance](#44-repository-maintenance)
+5. [Useful Resources](#5-useful-resources)
+---
+
+## 1. Repository Workflow
+
+### 1.1 Branching Strategy
+
+* Main Branch (main): Production-ready code only
+* Development Branch (dev): Staging area for all features
+* Feature Branches: One branch per feature or bug fix
+* Naming Convention:
+	+ `feature/`: New features
+	+ `bugfix/`: Bug repairs
+	+ `hotfix/`: Critical production fixes
+	+ `docs/`: Documentation updates
+
+It is recommendable to identify a branch of yourself like `tag/username/branchname`.
+
+### 1.2 Creating a New Branch (locally)
+
+```bash
+git checkout -b feature/new-instrument-module
+```
+
+### 1.3 Commit Changes
+
+Stage changes:
+```bash
+git add <file>
+# Or stage all changes
+git add .
+```
+Commit with a descriptive message:
+```bash
+git commit -m "Added module for X-ray instrument calibration"
+```
+
+### 1.4 Push Changes
+
+Push your branch to GitHub:
+```bash
+git push -u origin feature/new-instrument-module
+```
+
+## 2. Pull Requests and Code Reviews
+
+### 2.1 Opening a Pull Request
+
+* Go to the repository on GitHub
+* Navigate to "Pull Requests" tab
+* Click "New Pull Request"
+* Select your branch
+* Provide a clear, descriptive title and summary of changes
+
+### 2.2 Review Process
+
+* Minimum one team member review required
+* The code owner (repo owner) must approve the PR
+* Use inline comments for specific suggestions
+* Check for:
+	* Code quality
+	* Documentation
+	* Test coverage
+	* Alignment with project standards
+
+### 2.3 Merging Guidelines
+
+* Squash and merge into development branch
+* Ensure no merge conflicts
+* Delete source branch after merging
+* Update local repository after merge
+
+## 3. Issue Management
+
+### 3.1 Creating an Issue
+
+* Navigate to "Issues" tab
+* Click "New Issue"
+* Use clear, descriptive templates
+* Add appropriate labels and assignees
+* Link to related pull requests or commits
+
+### 3.2 Working on Issues
+
+Reference issue number in commits:
+```bash
+git commit -m "Fix #42: Resolved gamma-ray detector calibration bug"
+```
+
+## 4. Best Practices
+
+### 4.1 Commit Frequently
+
+* Small, focused commits
+* Clear, descriptive messages
+* Commit working code
+
+### 4.2 Branch Management
+
+* Never work directly on main or dev
+* Use feature branches
+* Keep branches short-lived
+
+### 4.3 Code Documentation
+
+* Comment complex algorithms
+* Maintain README files
+* Document setup and usage instructions
+
+### 4.4 Repository Maintenance
+
+* Regularly sync your fork:
+```bash
+git fetch origin
+git rebase origin/dev
+```
+* Remove merged/completed branches
+* Keep dependencies updated
+
+
+## 5. Useful Resources
+1. [Introduction to GitHub (by GitHub)](https://github.com/skills/introduction-to-github/blob/main/README.md)
+2. [Our Contribution Guideline](https://github.com/CAPIBARA3/.github-private/blob/main/profile/CONTRIBUTING.md)
+3. [Explainer Video](https://www.youtube.com/watch?v=pBy1zgt0XPc)
+4. [GitHub for Beginners Series](https://www.youtube.com/watch?v=tlu5e0TxSzo&list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f)
+5. [Use GitHub CLI from your shell](https://cli.github.com)
+
+---
+## Next step is ... [Setting Up Python](https://github.com/CAPIBARA3/.github-private/blob/main/tutorials/05_Setting_Up_Python.md)

@@ -1,0 +1,10 @@
+# internal docs
+
+Documentation that contains personal information of collaboration members or collaborating entities.
+
+```{toctree}
+:maxdepth: 2
+
+agreements
+members
+```

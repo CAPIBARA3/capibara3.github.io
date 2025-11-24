@@ -1,0 +1,84 @@
+# **Setting Up Python** 🐍
+
+Welcome to the Python setup guide! Python is one of the most popular programming languages, and it’s an essential tool for developers. In this tutorial, we'll guide you through the steps to install and configure Python on your system.
+
+---
+## Index - What will you do here?
+1. [Check for Pre-installed Python](#1-check-for-pre-installed-python)
+2. [Installing Python](#2-installing-python)\
+    2.1 [macOS](#21-macos)\
+    2.2 [Linux](#22-linux-ubuntudebian)
+3. [Learning Python](#3-learning-python)
+---
+
+## 1. Check for Pre-installed Python
+
+Before you start installing Python, it’s good to check whether it’s already installed on your machine. Open your terminal and type the following command:
+
+```bash
+python --version
+```
+
+or for Python 3 specifically:
+```bash
+python3 --version
+```
+If Python is installed, you'll see an output similar to:
+```bash
+Python 3.10.0
+```
+If Python is not installed, you'll see an error message, and you can proceed with the installation steps below.
+
+---
+## 2. Installing Python
+### 2.1 macos
+macOS often comes with Python pre-installed, but it might not be the latest version. to install the latest version, you can use [Homebrew](https://brew.sh), a package manager for macOS:
+
+1. FIrst, install Homebrew if you haven't already:
+    ```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+
+2. Once Homebrew is installed, you can install Python 3:
+    ```bash
+    brew install python
+    ```
+
+3. You can veryfy the installation with:
+    ```bash
+    python3 --version
+    ```
+
+### 2.2 Linux (Ubuntu/Debian)
+On Linux, you can install Python using the package manager `apt`:
+1. Update the package list:
+    ```bash
+    sudo apt update
+    ```
+
+2. Install Python 3:
+    ```bash
+    sudo apt install python3
+    ```
+
+3. You can verify the installation with:
+    ```bash
+    python3 --version
+    ```
+
+---
+## 3. Learning Python
+Here are some resources for learning to code with Python:
+
+1. **Official Python Documentation:** https://docs.python.org/3/tutorial/index.html
+2. **Tutorials for entry-levels:** [https://github.com/omsharansalafia/intropython](https://github.com/omsharansalafia/intropython), a vast and easy-to-follow guide into Python
+3. **Interactive Coding Platforms:**
+    - freeCodeCamp: https://youtu.be/rfscVS0vtbw
+    - Python Tutor: https://pythontutor.com/python-compiler.html#mode=edit
+4. **Stack Overflow**
+5. **Putting Yourself to Test:** Write some code!
+
+Remember to ask for help to me or other experienced team members when you have any doubt or questions!.
+
+---
+## Next step is ... [Installing Pip](https://github.com/CAPIBARA3/.github-private/blob/main/tutorials/06_Installing_pip.md)

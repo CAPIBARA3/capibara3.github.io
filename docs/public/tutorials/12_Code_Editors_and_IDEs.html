@@ -1,0 +1,554 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Code Editors and IDEs &#8212; Collaboration Documentation  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'public/tutorials/12_Code_Editors_and_IDEs';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Collaboration Documentation  documentation</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html">
+    Public Documentation
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../internal/index.html">
+    internal docs
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html">
+    Public Documentation
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../internal/index.html">
+    internal docs
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Code Editors and IDEs</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="code-editors-and-ides">
+<h1>Code Editors and IDEs<a class="headerlink" href="#code-editors-and-ides" title="Link to this heading">#</a></h1>
+<p>We’re arriving to the end of our journey, now its time to decide what code editor or IDE will you use, or what combination.</p>
+<hr class="docutils" />
+<section id="index-what-will-you-do-here">
+<h2>Index - What will you do here?<a class="headerlink" href="#index-what-will-you-do-here" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#1-common-applications"><span class="xref myst">Common Applications</span></a><br />
+1.1 <a class="reference internal" href="#11-common-code-editors"><span class="xref myst">Common Code Editors</span></a><br />
+1.1 <a class="reference internal" href="#12-common-ides"><span class="xref myst">Common IDEs</span></a></p></li>
+<li><p><a class="reference internal" href="#2-key-differences"><span class="xref myst">Key Differences</span></a></p></li>
+<li><p><a class="reference internal" href="#3-choosing-the-right-tool"><span class="xref myst">Choosing the Right Tool</span></a></p></li>
+<li><p><a class="reference internal" href="#4-alternatives"><span class="xref myst">Alternatives</span></a></p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="common-applications">
+<h2>1. Common Applications<a class="headerlink" href="#common-applications" title="Link to this heading">#</a></h2>
+<p>Obviously, you are free to use the code editor or IDE of you choice. Some popular options include:</p>
+</section>
+<section id="common-code-editors">
+<h2>1.1 Common Code Editors<a class="headerlink" href="#common-code-editors" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Visual Studio Code (VS Code)</strong>: A lightweight, open-source code editor with a large community and extensive library of extensions. <a class="reference external" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
+<ul>
+<li><p>Pros: Highly customizable, large community, and frequent updates.</p></li>
+<li><p>Cons: Can be overwhelming for beginners, and some features require additional setup.</p></li>
+</ul>
+</li>
+<li><p><strong>Sublime Text</strong>: A feature-rich, proprietary code editor known for its speed and ease of use. <a class="reference external" href="https://www.sublimetext.com/">https://www.sublimetext.com/</a></p>
+<ul>
+<li><p>Pros: Fast and responsive, with a wide range of features and plugins.</p></li>
+<li><p>Cons: Not free, and some users find the interface outdated.</p></li>
+</ul>
+</li>
+<li><p><strong>Atom</strong>: An open-source code editor with a strong focus on community and customization. <a class="reference external" href="https://atom.io/">https://atom.io/</a></p>
+<ul>
+<li><p>Pros: Highly customizable, with a large community and frequent updates.</p></li>
+<li><p>Cons: Can be slow and resource-intensive, and some features require additional setup.</p></li>
+</ul>
+</li>
+<li><p><strong>Brackets</strong>: A free, open-source code editor specifically designed for web development. <a class="reference external" href="https://brackets.io/">https://brackets.io/</a></p>
+<ul>
+<li><p>Pros: Strong focus on web development, with features like live preview and preprocessor support.</p></li>
+<li><p>Cons: Limited support for other programming languages, and some users find the interface cluttered.</p></li>
+</ul>
+</li>
+<li><p><strong>Notepad++</strong>: A free, open-source code editor for Windows with a strong focus on simplicity and ease of use. <a class="reference external" href="https://notepad-plus-plus.org/">https://notepad-plus-plus.org/</a></p>
+<ul>
+<li><p>Pros: Lightweight and easy to use, with a wide range of features and plugins.</p></li>
+<li><p>Cons: Limited support for advanced features, and some users find the interface outdated.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="common-ides">
+<h2>1.2 Common IDEs<a class="headerlink" href="#common-ides" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>PyCharm</strong>: A proprietary IDE specifically designed for Python development, with a strong focus on code analysis and debugging. <a class="reference external" href="https://www.jetbrains.com/pycharm/">https://www.jetbrains.com/pycharm/</a></p>
+<ul>
+<li><p>Pros: Strong focus on Python development, with features like code analysis and debugging.</p></li>
+<li><p>Cons: some users find the interface cluttered.</p></li>
+</ul>
+</li>
+<li><p><strong>IntelliJ IDEA</strong>: A proprietary IDE with a strong focus on Java development, but also supporting other languages. <a class="reference external" href="https://www.jetbrains.com/idea/">https://www.jetbrains.com/idea/</a></p>
+<ul>
+<li><p>Pros: Strong focus on Java development, with features like code analysis and debugging.</p></li>
+<li><p>Cons: Not free, and some users find the interface cluttered.</p></li>
+</ul>
+</li>
+<li><p><strong>Eclipse</strong>: A free, open-source IDE with a strong focus on Java development, but also supporting other languages. <a class="reference external" href="https://www.eclipse.org/">https://www.eclipse.org/</a></p>
+<ul>
+<li><p>Pros: Highly customizable, with a wide range of features and plugins.</p></li>
+<li><p>Cons: Can be slow and resource-intensive, and some users find the interface outdated.</p></li>
+</ul>
+</li>
+<li><p><strong>NetBeans</strong>: A free, open-source IDE with a strong focus on Java development, but also supporting other languages. <a class="reference external" href="https://netbeans.apache.org/">https://netbeans.apache.org/</a></p>
+<ul>
+<li><p>Pros: Highly customizable, with a wide range of features and plugins.</p></li>
+<li><p>Cons: Can be slow and resource-intensive, and some users find the interface outdated.</p></li>
+</ul>
+</li>
+<li><p><strong>Visual Studio</strong>: A proprietary IDE with a strong focus on Windows and .NET development, but also supporting other languages. <a class="reference external" href="https://visualstudio.microsoft.com/">https://visualstudio.microsoft.com/</a></p>
+<ul>
+<li><p>Pros: Strong focus on Windows and .NET development, with features like code analysis and debugging.</p></li>
+<li><p>Cons: Not free, and some users find the interface cluttered.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="key-differences">
+<h2>2. Key Differences<a class="headerlink" href="#key-differences" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Code Editors</p></th>
+<th class="head"><p>IDEs</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Lightweight</p></td>
+<td><p>Occupy more local storage</p></td>
+</tr>
+<tr class="row-odd"><td><p>Basic features for writing code</p></td>
+<td><p>More comprehensive</p></td>
+</tr>
+<tr class="row-even"><td><p>Limits to syntax highlighting and auto-completion</p></td>
+<td><p>Project management, debugging, version control, integration</p></td>
+</tr>
+<tr class="row-odd"><td><p>Limited customization options</p></td>
+<td><p>Highly customizable with plugins and extensions</p></td>
+</tr>
+<tr class="row-even"><td><p>Easy to learn and use</p></td>
+<td><p>Steeper learning curve due to additional features</p></td>
+</tr>
+<tr class="row-odd"><td><p>Limited support for multiple languages</p></td>
+<td><p>Support for multiple programming languages</p></td>
+</tr>
+<tr class="row-even"><td><p>No project management features</p></td>
+<td><p>Includes features like project templates, build automation, and deployment tools</p></td>
+</tr>
+<tr class="row-odd"><td><p>No debugging tools</p></td>
+<td><p>Includes debugging tools like breakpoints, code stepping, and variable inspection</p></td>
+</tr>
+<tr class="row-even"><td><p>No version control integration</p></td>
+<td><p>Includes version control integration with Git, SVN, and other systems</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>Code editors are lightweight and provide basic features for writing code, such as syntax highlighting and auto-completion.</p></li>
+<li><p>IDEs (Integrated Development Environments) are more comprehensive and provide additional features, such as project management, debugging, and version control integration.</p></li>
+</ul>
+</section>
+<section id="choosing-the-right-tool">
+<h2>3. Choosing the Right Tool<a class="headerlink" href="#choosing-the-right-tool" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Consider the type of project you’re working</p></li>
+<li><p>Consider the language you’re primarily using</p></li>
+<li><p>Consider your OS</p></li>
+<li><p>Think about personal preferences and workflow</p></li>
+<li><p>Experiment with different options to find the one that works best for you.</p></li>
+</ul>
+</section>
+<section id="alternatives">
+<h2>4. Alternatives<a class="headerlink" href="#alternatives" title="Link to this heading">#</a></h2>
+<p>Remember you can always use python notebooks in browser-based IDEs like jupyter lab or google colab. Additionally, you also can rely on online code editors like replit, ideone, or codepad.</p>
+<p>Note: I haven’t checked that all the recommendations are free, but most of them should be.</p>
+</section>
+<hr class="docutils" />
+<section id="congratulations-you-re-done-with-all-the-tutorials">
+<h2>Congratulations you’re done with all the tutorials! 🎉<a class="headerlink" href="#congratulations-you-re-done-with-all-the-tutorials" title="Link to this heading">#</a></h2>
+<p>You are fully equiped to seamlessly collaborate with the rest of the collaboration. Go ahead and create a repository for a new project, review a PR, or open a notebook for drafting an idea. You can also open an issue for this repository if you found a mistake or wish an additional tutorial.</p>
+<p>I hope you enjoyed the process and have learned lots of usefull coding skills. Don’t forget to return to your open issue ‘<yourname> Tutorials Checklist’, check the last box and close the Issue with a comment.</p>
+<p>Remember you can always access these tutorials when you have questions or doubts.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#index-what-will-you-do-here">Index - What will you do here?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-applications">1. Common Applications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-code-editors">1.1 Common Code Editors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-ides">1.2 Common IDEs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-differences">2. Key Differences</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-the-right-tool">3. Choosing the Right Tool</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alternatives">4. Alternatives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#congratulations-you-re-done-with-all-the-tutorials">Congratulations you’re done with all the tutorials! 🎉</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/public/tutorials/12_Code_Editors_and_IDEs.md.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

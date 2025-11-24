@@ -1,0 +1,576 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Intro to Shell/Terminal/Command Line 🖥️ &#8212; Collaboration Documentation  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'public/tutorials/01_Intro_to_Shell-terminal-command_line';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Collaboration Documentation  documentation</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html">
+    Public Documentation
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../internal/index.html">
+    internal docs
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html">
+    Public Documentation
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../internal/index.html">
+    internal docs
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>Intro to Shell/Terminal/Command Line</strong> 🖥️</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="intro-to-shell-terminal-command-line">
+<h1><strong>Intro to Shell/Terminal/Command Line</strong> 🖥️<a class="headerlink" href="#intro-to-shell-terminal-command-line" title="Link to this heading">#</a></h1>
+<p>Welcome to the world of the shell! The terminal is a powerful tool that allows you to interact with your operating system using text commands. In this tutorial, we’ll cover the basic concepts of using the shell and introduce you to some common commands that will help you navigate and manage files on your system.</p>
+<p>If you’re on <strong>Windows</strong>, please make sure you’ve installed Ubuntu on your machine. You can follow the instructions <a class="reference external" href="https://github.com/CAPIBARA3/.github-private/blob/main/tutorials/Ubuntu_on_Windows.md">here</a> to get set up with a Unix-like environment.</p>
+<hr class="docutils" />
+<section id="index-what-will-you-do-here">
+<h2>Index - What will you do here?<a class="headerlink" href="#index-what-will-you-do-here" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#1-what-is-the-shell"><span class="xref myst">What is the Shell?</span></a></p></li>
+<li><p><a class="reference internal" href="#2-opening-the-terminal"><span class="xref myst">Opening the Terminal</span></a></p></li>
+<li><p><a class="reference internal" href="#3-basic-terminal-commands"><span class="xref myst">Basic Terminal Commands</span></a></p></li>
+<li><p><a class="reference internal" href="#4-using-the-man-command"><span class="xref myst">Using the Man Command</span></a></p></li>
+<li><p><a class="reference internal" href="#5-understanding-the-file-system"><span class="xref myst">Understanding the File System</span></a></p></li>
+<li><p><a class="reference internal" href="#6-permissions-in-the-terminal"><span class="xref myst">Permissions in the Terminal</span></a></p></li>
+<li><p><a class="reference internal" href="#7-a-few-more-useful-commands"><span class="xref myst">More Useful Commands</span></a></p></li>
+<li><p><a class="reference internal" href="#8-practice"><span class="xref myst">Practice</span></a></p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="what-is-the-shell">
+<h2><strong>1. What is the Shell?</strong><a class="headerlink" href="#what-is-the-shell" title="Link to this heading">#</a></h2>
+<p>The shell, also known as the command line, terminal, or command prompt, is an interface that allows you to interact directly with your computer’s operating system using text-based commands. It may look intimidating at first, but it’s a powerful tool that gives you control over your system.</p>
+<p>In a terminal, you type commands to:</p>
+<ul class="simple">
+<li><p>Navigate the file system</p></li>
+<li><p>Create, move, and delete files and directories</p></li>
+<li><p>Install software packages</p></li>
+<li><p>And much more!</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="opening-the-terminal">
+<h2><strong>2. Opening the Terminal</strong><a class="headerlink" href="#opening-the-terminal" title="Link to this heading">#</a></h2>
+<p>If you’re using macOS or Linux, the terminal should already be installed. You can open it by:</p>
+<ul class="simple">
+<li><p><strong>macOS</strong>: Press <code class="docutils literal notranslate"><span class="pre">Cmd</span> <span class="pre">+</span> <span class="pre">Space</span></code>, type “Terminal”, and hit <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p></li>
+<li><p><strong>Linux</strong>: Press <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">T</span></code> or search for “Terminal” in your application menu.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="basic-terminal-commands">
+<h2><strong>3. Basic Terminal Commands</strong><a class="headerlink" href="#basic-terminal-commands" title="Link to this heading">#</a></h2>
+<p>Here are some fundamental commands to get started. Try typing these into your terminal:</p>
+<section id="navigating-directories">
+<h3><strong>Navigating Directories</strong><a class="headerlink" href="#navigating-directories" title="Link to this heading">#</a></h3>
+<ul>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">pwd</span></code></strong> — <strong>Print Working Directory</strong>: Shows the current directory you’re in.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">pwd</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>Output example: <code class="docutils literal notranslate"><span class="pre">/home/username</span></code></p>
+<ul>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">ls</span></code></strong> — <strong>List</strong>: Lists the files and directories in your current directory.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls
+</pre></div>
+</div>
+</li>
+</ul>
+<p>Output example: <code class="docutils literal notranslate"><span class="pre">Documents</span>&#160; <span class="pre">Downloads</span>&#160; <span class="pre">Pictures</span>&#160; <span class="pre">Projects</span></code></p>
+<ul>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">cd</span></code></strong> — <strong>Change Directory</strong>: Changes the current directory.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>Documents
+</pre></div>
+</div>
+</li>
+</ul>
+<p>use <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code>to go up one level in the directory tree.</p>
+</section>
+<section id="managing-files-and-directories">
+<h3><strong>Managing Files and Directories</strong><a class="headerlink" href="#managing-files-and-directories" title="Link to this heading">#</a></h3>
+<ul>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">mkdir</span></code></strong> — <strong>Make Directory</strong>: Creates a new directory.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>my_new_directory
+</pre></div>
+</div>
+</li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">touch</span></code></strong> - <strong>Create Empty File</strong>: Creates an empty file.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>touch<span class="w"> </span>myfile.txt
+</pre></div>
+</div>
+</li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">rm</span></code></strong> — <strong>Remove</strong>: Deletes a file.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm<span class="w"> </span>myfile.txt
+</pre></div>
+</div>
+</li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">rmdir</span></code></strong> — <strong>Remove Directory</strong>: Deletes an empty directory.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rmdir<span class="w"> </span>my_new_directory
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="viewing-and-editing-files">
+<h3><strong>Viewing and Editing Files</strong><a class="headerlink" href="#viewing-and-editing-files" title="Link to this heading">#</a></h3>
+<ul>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">cat</span></code></strong> — <strong>Concatenate</strong>: Displays the content of a file.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat<span class="w"> </span>myfile.txt
+</pre></div>
+</div>
+</li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">nano</span></code></strong> — <strong>Text Editor</strong>: A simple text editor to edit files.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nano<span class="w"> </span>myfile.txt
+</pre></div>
+</div>
+</li>
+</ul>
+<p>Press <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">X</span></code> to exit.
+Press <code class="docutils literal notranslate"><span class="pre">Y</span></code> to confirm saving changes.</p>
+</section>
+</section>
+<section id="using-the-man-command">
+<h2>4. Using the <code class="docutils literal notranslate"><span class="pre">man</span></code> Command<a class="headerlink" href="#using-the-man-command" title="Link to this heading">#</a></h2>
+<p>Many commands in the terminal have built-in help. The man` command is used to open the manual (help documentation) for a command. For example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls
+</pre></div>
+</div>
+<p>This will show detailed information about the <code class="docutils literal notranslate"><span class="pre">ls</span></code> command and its options.</p>
+</section>
+<section id="understanding-the-file-system">
+<h2>5. Understanding the File System<a class="headerlink" href="#understanding-the-file-system" title="Link to this heading">#</a></h2>
+<p>In Unix-like systems, files and directories are organized in a hierarchical structure. Here’s a basic rundown of the common directories you may encounter:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">/</span></code> — The root directory, the top of the file system.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/home/username/</span></code> — Your personal home directory.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/bin/</span></code> — Essential system binaries (programs).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/usr/</span></code> — User utilities and applications.</p></li>
+</ul>
+</section>
+<section id="permissions-in-the-terminal">
+<h2>6. Permissions in the Terminal<a class="headerlink" href="#permissions-in-the-terminal" title="Link to this heading">#</a></h2>
+<p>You might see some commands fail or require elevated privileges. This is because files and directories in Unix-like systems have permissions. For example:</p>
+<ul>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">chmod</span></code></strong> — Changes file permissions.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod<span class="w"> </span>+x<span class="w"> </span>myscript.sh
+</pre></div>
+</div>
+</li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">sudo</span></code></strong> — Execute commands as the superuser (administrator).</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</pre></div>
+</div>
+</li>
+</ul>
+<p>Note: You’ll need to enter your password when using sudo.</p>
+</section>
+<section id="a-few-more-useful-commands">
+<h2>7. A Few More Useful Commands<a class="headerlink" href="#a-few-more-useful-commands" title="Link to this heading">#</a></h2>
+<ul>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">clear</span></code></strong> — Clears the terminal screen.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clear
+</pre></div>
+</div>
+</li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">exit</span></code></strong> - Closes the terminal window.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">exit</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="practice">
+<h2>8. Practice!<a class="headerlink" href="#practice" title="Link to this heading">#</a></h2>
+<p>The best way to get comfortable with the terminal is through practice. Try using the commands above to navigate, create files, and explore your system. You can always use man <code class="docutils literal notranslate"><span class="pre">&lt;command&gt;</span></code> to get more information about any command.</p>
+</section>
+<hr class="docutils" />
+<section id="next-step-is-configuring-git-locally">
+<h2>Next Step is… <a class="reference external" href="https://github.com/CAPIBARA3/.github-private/blob/main/tutorials/02_Configuring_Git_Locally.md">Configuring Git Locally</a><a class="headerlink" href="#next-step-is-configuring-git-locally" title="Link to this heading">#</a></h2>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#index-what-will-you-do-here">Index - What will you do here?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-the-shell"><strong>1. What is the Shell?</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#opening-the-terminal"><strong>2. Opening the Terminal</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-terminal-commands"><strong>3. Basic Terminal Commands</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#navigating-directories"><strong>Navigating Directories</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-files-and-directories"><strong>Managing Files and Directories</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#viewing-and-editing-files"><strong>Viewing and Editing Files</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-man-command">4. Using the <code class="docutils literal notranslate"><span class="pre">man</span></code> Command</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-file-system">5. Understanding the File System</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permissions-in-the-terminal">6. Permissions in the Terminal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-few-more-useful-commands">7. A Few More Useful Commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice">8. Practice!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-step-is-configuring-git-locally">Next Step is… Configuring Git Locally</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/public/tutorials/01_Intro_to_Shell-terminal-command_line.md.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

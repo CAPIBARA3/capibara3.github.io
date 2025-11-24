@@ -1,0 +1,136 @@
+# Installing Ubuntu on a Windows Computer
+
+This guide will walk you through the process of installing Ubuntu on your Windows computer. Ubuntu is a popular open-source Linux distribution known for its ease of use, stability, and security. You can either dual-boot Ubuntu alongside Windows or install Ubuntu within Windows using Windows Subsystem for Linux (WSL).
+
+Please note that I haven't needed to go through this process and I haven't checked the reliability nor troubleshoot these instructions.
+
+# Why Install Ubuntu (or Linux) on a Windows Computer?
+
+- **Seamless Code Integration**: Aligns your environment with Linux/macOS (Unix-based) systems, reducing platform-specific bugs.
+- **Consistent File Paths**: Ensures compatibility with Unix-style file paths (e.g., `/home/user/project`) and case-sensitive file systems.
+- **Efficient Package Management**: Use APT and other tools for easy installation and management of dependencies in a unified way.
+- **Improved Development Tools**: Access to Bash, Docker, and open-source tools that streamline collaboration and development.
+- **Better Collaboration**: Reduces "it works on my machine" issues, ensuring smoother teamwork with other Linux/macOS developers.
+
+In this tutorial you will learn to install an Ubuntu virtual machine on your Windows computer using VirtualBox, which is a popular and free software.
+
+### Prerequisites
+
+1. **A Linux Computer**: Ensure you have a Linux distribution installed (e.g., Ubuntu, Fedora, etc.).
+2. **Internet Connection**: Required for downloading VirtualBox and the Ubuntu ISO.
+3. **Sufficient Resources**: Ensure your computer has enough RAM and disk space to run a virtual machine.
+
+### Step 1: Install VirtualBox
+
+1. **Open Terminal**: You can usually find the terminal in your applications menu.
+
+2. **Update Package List**: Before installing new software, it’s a good idea to update your package list. Run:
+   ```bash
+   sudo apt update
+   ```
+
+3. **Install VirtualBox**: Use the following command to install VirtualBox. This command is for Ubuntu-based distributions. If you are using a different distribution, the package manager command may vary.
+   ```bash
+   sudo apt install virtualbox
+   ```
+
+4. **Verify Installation**: After installation, you can verify that VirtualBox is installed by running:
+   ```bash
+   virtualbox --help
+   ```
+   This should display the help information for VirtualBox.
+
+### Step 2: Download the Ubuntu ISO
+
+1. **Visit the Ubuntu Website**: Go to the [Ubuntu Downloads page](https://ubuntu.com/download/desktop).
+
+2. **Choose Your Version**: Select the version of Ubuntu you want to install (the latest LTS version is recommended for stability).
+
+3. **Download the ISO**: Click on the download link to download the Ubuntu ISO file to your computer.
+
+### Step 3: Create a New Virtual Machine
+
+1. **Open VirtualBox**: Launch VirtualBox from your applications menu.
+
+2. **Create a New VM**:
+   - Click on the **"New"** button in the toolbar.
+   - **Name**: Enter a name for your virtual machine (e.g., "Ubuntu VM").
+   - **Type**: Select "Linux".
+   - **Version**: Select "Ubuntu (64-bit)" or "Ubuntu (32-bit)" depending on the ISO you downloaded.
+
+3. **Allocate Memory**:
+   - Choose the amount of RAM to allocate to the VM. A minimum of 2048 MB (2 GB) is recommended for Ubuntu, but more is better if your system allows it.
+   - Click **Next**.
+
+4. **Create a Virtual Hard Disk**:
+   - Select **"Create a virtual hard disk now"** and click **Create**.
+   - Choose **VDI (VirtualBox Disk Image)** and click **Next**.
+   - Select **Dynamically allocated** and click **Next**.
+   - Set the size of the virtual hard disk. A minimum of 20 GB is recommended. Click **Create**.
+
+### Step 4: Configure the Virtual Machine
+
+1. **Select the VM**: Click on the newly created VM in the VirtualBox Manager.
+
+2. **Open Settings**: Click on the **"Settings"** button in the toolbar.
+
+3. **System Settings**:
+   - Go to the **"System"** tab.
+   - Under the **"Motherboard"** tab, ensure that "Enable EFI" is unchecked (unless you specifically need it).
+   - Under the **"Processor"** tab, allocate at least 1 CPU (more if your system allows).
+
+4. **Storage Settings**:
+   - Go to the **"Storage"** tab.
+   - Under **"Controller: IDE"**, click on the empty disk icon.
+   - On the right side, click the disk icon next to "Optical Drive" and select **"Choose a disk file..."**.
+   - Navigate to and select the Ubuntu ISO you downloaded earlier.
+
+5. **Network Settings** (Optional):
+   - Go to the **"Network"** tab.
+   - Ensure that **"Adapter 1"** is enabled and attached to **NAT** for internet access.
+
+6. **Save Settings**: Click **OK** to save your settings.
+
+### Step 5: Install Ubuntu in the Virtual Machine
+
+1. **Start the VM**: Select your VM in VirtualBox and click the **"Start"** button.
+
+2. **Boot from ISO**: The VM will boot from the Ubuntu ISO. You should see the Ubuntu welcome screen.
+
+3. **Install Ubuntu**:
+   - Select **"Try Ubuntu"** or **"Install Ubuntu"**.
+   - Follow the installation prompts:
+     - Choose your language.
+     - Select your keyboard layout.
+     - Choose whether to install third-party software (recommended).
+     - Select the installation type (choose "Erase disk and install Ubuntu" if you are only using the VM for Ubuntu, or "Something else" for custom partitioning).
+
+4. **Allocate Disk Space**: If you chose "Something else," create a partition for Ubuntu using the free space allocated for the virtual hard disk. Typically, you will need at least one partition for the root filesystem ("/").
+
+5. **Complete Installation**: Follow the remaining prompts to set your timezone, create a user account, and finalize the installation. Once the installation is complete, you will be prompted to restart the VM.
+
+6. **Remove the ISO**: When prompted, make sure to remove the installation media (the Ubuntu ISO) from the virtual drive to avoid booting from it again. You can do this by going back to the **Storage** settings in VirtualBox and unmounting the ISO.
+
+7. **Reboot the VM**: After removing the ISO, restart the virtual machine. You should now boot into your newly installed Ubuntu system.
+
+### Step 6: Post-Installation Setup
+
+1. **Update Ubuntu**: Once logged in, open a terminal and run the following commands to update your system:
+   ```bash
+   sudo apt update
+   sudo apt upgrade
+   ```
+
+2. **Install Additional Software**: You can install any additional software you need using the Ubuntu Software Center or via the terminal.
+
+3. **Install Guest Additions**: For better performance and usability, install VirtualBox Guest Additions:
+   - In the VM window, go to **Devices** > **Insert Guest Additions CD image**.
+   - Follow the prompts to install the Guest Additions, which will enhance graphics performance and enable shared clipboard functionality.
+
+4. **Configure Shared Folders** (Optional): If you want to share files between your host and the VM, you can set up shared folders in the VM settings under the **Shared Folders** section.
+
+
+## Conclusion
+Installing Ubuntu on a Windows computer is a great way to take advantage of the powerful Linux environment without losing access to your Windows applications. You can choose between a dual-boot setup for a full Ubuntu experience or use Windows Subsystem for Linux (WSL) to run Ubuntu alongside Windows without rebooting.
+
+Follow the steps in this guide, and you'll be able to easily manage both operating systems on your machine!

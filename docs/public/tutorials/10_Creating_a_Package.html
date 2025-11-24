@@ -1,0 +1,609 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Creating a Package &#8212; Collaboration Documentation  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'public/tutorials/10_Creating_a_Package';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Collaboration Documentation  documentation</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html">
+    Public Documentation
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../internal/index.html">
+    internal docs
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html">
+    Public Documentation
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../internal/index.html">
+    internal docs
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Creating a Package</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="creating-a-package">
+<h1>Creating a Package<a class="headerlink" href="#creating-a-package" title="Link to this heading">#</a></h1>
+<p>Packages is the way to enable everybody to straigforwardly use your functions and integrate them in their code.</p>
+<hr class="docutils" />
+<section id="index-what-will-you-do-here">
+<h2>Index - What will you do here?<a class="headerlink" href="#index-what-will-you-do-here" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#1-repository-structure"><span class="xref myst">Repository Structure</span></a></p></li>
+<li><p><a class="reference internal" href="#2-__init__py"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">_init__.py</span></code></span></a></p></li>
+<li><p><a class="reference internal" href="#3-setuppy"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">setup.py</span></code></span></a></p></li>
+<li><p><a class="reference internal" href="#4-__version__py"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">__version__.py</span></code></span></a></p></li>
+<li><p><a class="reference internal" href="#5-requirementstxt"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code></span></a></p></li>
+<li><p><a class="reference internal" href="#6-installing-your-package-via-pip"><span class="xref myst">Installing Your Package via pip</span></a></p></li>
+<li><p><a class="reference internal" href="#7-getting-a-doi"><span class="xref myst">Getting a DOI</span></a><br />
+7.1 <a class="reference internal" href="#71-connecting-github-to-zenodo"><span class="xref myst">Connecting GitHub to Zenodo</span></a><br />
+7.2 <a class="reference internal" href="#72-creating-a-new-release"><span class="xref myst">Creating a New Release</span></a><br />
+7.3 <a class="reference internal" href="#73-getting-doi"><span class="xref myst">Getting DOI</span></a></p></li>
+<li><p><a class="reference internal" href="#8-publish-your-package-on-pypi"><span class="xref myst">Pubish Your Package on PyPi</span></a><br />
+8.1 <a class="reference internal" href="#81-creating-a-pypi-account"><span class="xref myst">Creating a PyPi Account</span></a><br />
+8.2 <a class="reference internal" href="#82-uploading-packages"><span class="xref myst">Uploading Packages</span></a></p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="repository-structure">
+<h2>1. Repository Structure<a class="headerlink" href="#repository-structure" title="Link to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>api
+<span class="w">    </span>__init__.py
+<span class="w">    </span>code1.py
+<span class="w">    </span>code2.py
+<span class="w">    </span>_version.py
+README.md
+.gitignore
+setup.py
+requirements.txt
+</pre></div>
+</div>
+<p>Where <code class="docutils literal notranslate"><span class="pre">api</span></code> is a directory for the API’s scripts and <code class="docutils literal notranslate"><span class="pre">codeX.py</span></code> the files of the API.</p>
+</section>
+<section id="init-py">
+<h2>2. `<strong>init</strong>.py<a class="headerlink" href="#init-py" title="Link to this heading">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code> initiates the API and samples all the package’s scripts.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">._version</span><span class="w"> </span><span class="kn">import</span> <span class="n">__version__</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.api</span><span class="o">/</span><span class="n">code1</span> <span class="kn">import</span><span class="w"> </span><span class="o">*</span>  <span class="c1"># import all functions</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.api</span><span class="o">/</span><span class="n">code2</span> <span class="kn">import</span><span class="w"> </span><span class="o">*</span>
+</pre></div>
+</div>
+</section>
+<section id="setup-py">
+<h2>3. <code class="docutils literal notranslate"><span class="pre">setup.py</span></code><a class="headerlink" href="#setup-py" title="Link to this heading">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> file contains the metadata for the package and is necessary to build it. Here’s a template:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">setuptools</span><span class="w"> </span><span class="kn">import</span> <span class="n">setup</span><span class="p">,</span> <span class="n">find_packages</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;README.md&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">readme_file</span><span class="p">:</span>
+    <span class="n">long_description</span> <span class="o">=</span> <span class="n">readme_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;requirements.txt&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">requirements_file</span><span class="p">:</span>
+    <span class="n">requirements</span> <span class="o">=</span> <span class="n">requirements_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;api/_version.py&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">version_file</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">version_file</span><span class="p">:</span>
+        <span class="k">if</span> <span class="s2">&quot;__version__&quot;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+            <span class="n">__version__</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">setup</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;api-name&quot;</span><span class="p">,</span>
+    <span class="n">version</span><span class="o">=</span><span class="s2">&quot;0.0.0&quot;</span><span class="p">,</span>
+    <span class="n">author</span><span class="o">=</span><span class="s2">&quot;your name&quot;</span><span class="p">,</span>
+    <span class="n">author_email</span><span class="o">=</span><span class="s2">&quot;example@email.com&quot;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Description&quot;</span><span class="p">,</span>
+    <span class="n">long_description</span><span class="o">=</span><span class="n">long_description</span><span class="p">,</span>
+    <span class="n">long_description_content_type</span><span class="o">=</span><span class="s2">&quot;text/markdown&quot;</span><span class="p">,</span>
+    <span class="n">url</span><span class="o">=</span><span class="s1">&#39;https://github.com/username/api-name&#39;</span><span class="p">,</span>
+    <span class="n">packages</span><span class="o">=</span><span class="n">find_packages</span><span class="p">(),</span>
+    <span class="n">python_requires</span><span class="o">=</span><span class="s2">&quot;&gt;=3.9&quot;</span><span class="p">,</span>
+    <span class="n">install_requires</span><span class="o">=</span><span class="n">requirements</span><span class="p">,</span>
+    <span class="n">classifiers</span><span class="o">=</span><span class="p">[</span>
+        <span class="s1">&#39;Programming Language :: Python :: 3&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;License :: OSI Approved :: MIT License&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;Operating System :: Unix&#39;</span>
+    <span class="p">],</span>
+    <span class="n">package_data</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;api-name&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;static/*&quot;</span><span class="p">]},</span>
+    <span class="n">include_package_data</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="version-py">
+<h2>4. <code class="docutils literal notranslate"><span class="pre">__version__.py</span></code><a class="headerlink" href="#version-py" title="Link to this heading">#</a></h2>
+<p>This file containts version info. Needs to be updated for every new version.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">__version__</span> <span class="o">=</span> <span class="s2">&quot;1.0.0&quot;</span> <span class="c1"># don&#39;t forget to update</span>
+</pre></div>
+</div>
+</section>
+<section id="requirements-txt">
+<h2>5. <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code><a class="headerlink" href="#requirements-txt" title="Link to this heading">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file is a plain text file listing all the required libraries. This file is used to install libraries using pip</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</pre></div>
+</div>
+<p>or in dockerfiles and in the <code class="docutils literal notranslate"><span class="pre">setup.py</span></code>. It is important to list all the dependencies of your package, but don’t list built-in Python libraries (e.g. <code class="docutils literal notranslate"><span class="pre">os</span></code>).</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>pandas
+matplotlib
+numpy
+astropy
+</pre></div>
+</div>
+</section>
+<section id="installing-your-package-via-pip">
+<h2>6. Installing Your Package via pip<a class="headerlink" href="#installing-your-package-via-pip" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Activate the conda environment where you want to install it.</p></li>
+<li><p>Navigate to the repository of the package (where <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> is located).</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">.</span></code>. Alternatively, you can enter <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">&lt;dirpath&gt;</span></code>, where <code class="docutils literal notranslate"><span class="pre">dirpath</span></code> is the path to the package’s directory in your computer.</p></li>
+<li><p>You may want to consider adding build-related (such as <code class="docutils literal notranslate"><span class="pre">build/</span></code> or <code class="docutils literal notranslate"><span class="pre">name.egg-info/</span></code>) files to <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code>.</p></li>
+</ol>
+</section>
+<section id="getting-a-doi">
+<h2>7. Getting a DOI<a class="headerlink" href="#getting-a-doi" title="Link to this heading">#</a></h2>
+<p>A DOI is a Digital Object Identifier <a class="reference external" href="https://doi.org">doi.org</a>, most of scientific papers and package do have one, as it is straightforward for identification and citations.</p>
+<section id="connecting-github-to-zenodo">
+<h3>7.1 Connecting GitHub to Zenodo<a class="headerlink" href="#connecting-github-to-zenodo" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Sign in to <a class="reference external" href="https://zenodo.org">Zenodo</a></p></li>
+<li><p>Go to your Zenodo dashboard and navigate to “GitHub”, click the “connect button” and authorize the access to your repositories.</p></li>
+<li><p>Enable the repository for which you want to get a DOI.</p></li>
+</ol>
+</section>
+<section id="creating-a-new-release">
+<h3>7.2 Creating a New Release<a class="headerlink" href="#creating-a-new-release" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Go to your GitHub repository and navigate to the “Releases” section.</p></li>
+<li><p>Create a new release by cliking on “Draft a new release”.</p></li>
+<li><p>Fill in the tag version, title, description, release notes, …, then publish the release.</p></li>
+</ol>
+</section>
+<section id="getting-doi">
+<h3>7.3 Getting DOI<a class="headerlink" href="#getting-doi" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Zenodo will automatically archive your release.</p></li>
+<li><p>In the “GitHub” section of your Zenodo dashboard, find your repository and the corresponding release.</p></li>
+<li><p>You can find the DOI next to your release tag.</p></li>
+</ol>
+</section>
+</section>
+<section id="publish-your-package-on-pypi">
+<h2>8. Publish Your Package on PyPi<a class="headerlink" href="#publish-your-package-on-pypi" title="Link to this heading">#</a></h2>
+<section id="creating-a-pypi-account">
+<h3>8.1 Creating a PyPi Account<a class="headerlink" href="#creating-a-pypi-account" title="Link to this heading">#</a></h3>
+<p><a class="reference external" href="https://pypi.org">PyPi</a> is the Python Package Index, which is a repository of software for the Python programming language, and the source of the <code class="docutils literal notranslate"><span class="pre">pip</span></code> command. In order to upload your package, you must create an account. Follow the steps in the website for this purpose.</p>
+<p>Once you’ve created an account you can generate a token for authentication when upload packages via <code class="docutils literal notranslate"><span class="pre">twine</span></code>. For straighforward authentication on your local machine, create a file <code class="docutils literal notranslate"><span class="pre">$HOME/.pypirc</span></code> and save your token like:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>[pypi]
+username = __token__
+password = &lt;your-token&gt;
+</pre></div>
+</div>
+<p>This way <code class="docutils literal notranslate"><span class="pre">twine</span></code> will identify your user automatically.</p>
+</section>
+<section id="uploading-packages">
+<h3>8.2 Uploading Packages<a class="headerlink" href="#uploading-packages" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Ensure your <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> file is correct (see example above).</p></li>
+<li><p>If you have written tests, run them and check everything works fine.</p></li>
+<li><p>Ensure you have installed the required libraries for uploading:</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>setuptools<span class="w"> </span>wheel
+pip<span class="w"> </span>install<span class="w"> </span>twine
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Build the package (without installing it)</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>setup.py<span class="w"> </span>sdist<span class="w"> </span>bdist_wheel
+</pre></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Upload to PyPi via <code class="docutils literal notranslate"><span class="pre">twine</span></code></p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>twine<span class="w"> </span>upload<span class="w"> </span>dist/*
+</pre></div>
+</div>
+<ol class="arabic simple" start="6">
+<li><p>Install your package everywhere via pip</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>&lt;package-name&gt;
+</pre></div>
+</div>
+<p>Additionally, before uploading to the live PyPi, you can test your package on the Test PyPi server. You can do this by running:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>twine<span class="w"> </span>upload<span class="w"> </span>--repository-url<span class="w"> </span>https://test.pypi.org/legacy/<span class="w"> </span>dist/*
+</pre></div>
+</div>
+<p>and installing the test version using</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--index-url<span class="w"> </span>https://test.pypi.org/sample/<span class="w"> </span>&lt;package-name&gt;
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="next-step-is-automated-tests">
+<h2>Next step is … <a class="reference external" href="https://github.com/CAPIBARA3/.github-private/blob/main/tutorials/11_Automated_Tests.md">Automated Tests</a><a class="headerlink" href="#next-step-is-automated-tests" title="Link to this heading">#</a></h2>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#index-what-will-you-do-here">Index - What will you do here?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repository-structure">1. Repository Structure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#init-py">2. `<strong>init</strong>.py</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup-py">3. <code class="docutils literal notranslate"><span class="pre">setup.py</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version-py">4. <code class="docutils literal notranslate"><span class="pre">__version__.py</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements-txt">5. <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-your-package-via-pip">6. Installing Your Package via pip</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-a-doi">7. Getting a DOI</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-github-to-zenodo">7.1 Connecting GitHub to Zenodo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-new-release">7.2 Creating a New Release</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-doi">7.3 Getting DOI</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-your-package-on-pypi">8. Publish Your Package on PyPi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-pypi-account">8.1 Creating a PyPi Account</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uploading-packages">8.2 Uploading Packages</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-step-is-automated-tests">Next step is … Automated Tests</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/public/tutorials/10_Creating_a_Package.md.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

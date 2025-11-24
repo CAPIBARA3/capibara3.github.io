@@ -1,0 +1,73 @@
+# Automated Tests
+Here you'll learn to write and run tests for Python using the `pytest` library, run `pip install pytest` to install it in your enviroment.
+
+---
+## Index - What will you do here?
+1. [Create Testing Directory](#1-create-testing-directory)
+2. [CReate Test Scripts](#2-create-test-scripts)
+3. [Write Test Functions](#3-write-test-functions)\
+    3.1 [Import Required Libraries](#31-import-required-libraries)\
+    3.2 [Write a Function](#32-write-a-function)\
+    3.3 [Example Usage](#33-example-usage)
+4. [Run Your Tests](#4-run-your-tests)
+---
+## 1. Create Testing Directory
+Create a new directory for the test scripts inside your package's repository.
+```shell
+mkdir tests/
+```
+
+## 2. Create Test Scripts
+```shell
+touch tests/test<name>.py
+```
+
+## 3. Write Test Functions
+
+### 3.1 Import Required Libraries
+```python
+import pytest
+import <package-name> # to import your full package
+from build.lib.<package-name> import <function> # to import a specific function
+```
+
+### 3.2 Write a Function
+Testing functions must start with `test_`
+```python
+def test_<function-name>():
+    # your function goes here
+```
+
+### 3.3 Example Usage
+```python
+import pytest
+import my_package as mp
+
+def test_addition_function():
+	inp = (1,1) # input
+	expected = 2
+	out = mp.sum_function(inp) # output
+	assert out == expected # assert evaluates the tested result with the expected result
+
+def test_addition_function():
+	inps = [(1,1), (2,5), (4,5), (3,8), (10,10)]
+	expected = [2, 7, 9, 11, 20]
+	for inp, result in zip(inps, expected):
+		assert mp.sum_function(inp) == result
+
+def test_addition_function():
+	inp = ('1',3.5)
+	with pytest.raises(ValueError, match="Both values must be integers."):
+		mp.addition_function(inp)
+		# pytest.raises enables to run a function and check the correct error is raised
+```
+
+## 4. Run Your Tests
+To run the test, enter the following command to the shell:
+```shell
+pytest
+```
+You'll see if 'all test passed' or which tests failed and where.
+
+---
+## Next step is ... [Code Editors and IDEs](https://github.com/CAPIBARA3/.github-private/blob/main/tutorials/12_Code_Editors_and_IDEs.md)

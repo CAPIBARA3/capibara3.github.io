@@ -1,0 +1,18 @@
+# Collaboration Documentation
+
+Welcome to the official documentation hub for the CAPIBARA Collaboration.
+
+This site contains both public and internal resources used by the collaboration, including governance documents, computing setup instructions, coding tutorials, and templates.
+
+```{toctree}
+:maxdepth: 2
+:caption: Public Documentation
+
+public/index
+:maxdepth: 1
+:hidden:
+
+internal/index
+templates/index
+
+```

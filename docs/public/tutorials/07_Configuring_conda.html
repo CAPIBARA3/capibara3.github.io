@@ -1,0 +1,515 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Configuring Conda &#8212; Collaboration Documentation  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'public/tutorials/07_Configuring_conda';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Collaboration Documentation  documentation</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html">
+    Public Documentation
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../internal/index.html">
+    internal docs
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html">
+    Public Documentation
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../internal/index.html">
+    internal docs
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Configuring Conda</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="configuring-conda">
+<h1>Configuring Conda<a class="headerlink" href="#configuring-conda" title="Link to this heading">#</a></h1>
+<p>Conda environments are the perfect way to handle different version of libraries and dependencies for all of your projects.</p>
+<hr class="docutils" />
+<section id="index-what-will-you-do-here">
+<h2>Index - What will you do here?<a class="headerlink" href="#index-what-will-you-do-here" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#1-why-use-conda-or-miniconda"><span class="xref myst">Why Use Conda (or Miniconda)</span></a></p></li>
+<li><p><a class="reference internal" href="#2-install-conda"><span class="xref myst">Intall Conda</span></a></p></li>
+<li><p><a class="reference internal" href="#3-managing-environments"><span class="xref myst">Managing Environments</span></a><br />
+3.1 <a class="reference internal" href="#31-create-a-new-environment"><span class="xref myst">Create a New Environment</span></a><br />
+3.2 <a class="reference internal" href="#32-activate-an-environment"><span class="xref myst">Activate an Environment</span></a><br />
+3.3 <a class="reference internal" href="#33-deactivate-an-environment"><span class="xref myst">Deactivate an Environment</span></a><br />
+3.4 <a class="reference internal" href="#34-list-all-environments"><span class="xref myst">List All Environments</span></a><br />
+3.5 <a class="reference internal" href="#35-remove-an-environment"><span class="xref myst">Remove an Environment</span></a></p></li>
+<li><p><a class="reference internal" href="#4-useful-resources"><span class="xref myst">Useful Resources</span></a></p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="why-use-conda-or-miniconda">
+<h2>1. Why Use Conda (or Miniconda)?<a class="headerlink" href="#why-use-conda-or-miniconda" title="Link to this heading">#</a></h2>
+<p>Conda is a package manager that allows you to easily manage different environments for your projects. It provides a simple way to install, update, and manage packages, including Python and other dependencies.</p>
+<section id="advantages-of-using-conda">
+<h3>Advantages of Using Conda<a class="headerlink" href="#advantages-of-using-conda" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Isolation:</strong>- Conda allows you to create isolated environments for your projects, which helps to avoid version conflicts and makes it easier to manage dependencies.</p></li>
+<li><p><strong>Reproducibility:</strong>- Conda environments are reproducible, which means that you can easily recreate the same environment on a different machine.</p></li>
+<li><p><strong>Easy Package Management:</strong>- Conda provides a simple way to install, update, and manage packages.</p></li>
+</ul>
+</section>
+</section>
+<section id="install-conda">
+<h2>2. Install Conda<a class="headerlink" href="#install-conda" title="Link to this heading">#</a></h2>
+<p>To install Conda, follow these steps:</p>
+<section id="option-1-install-miniconda">
+<h3>Option 1: Install Miniconda<a class="headerlink" href="#option-1-install-miniconda" title="Link to this heading">#</a></h3>
+<p>Miniconda is a minimal installer for Conda. It includes the Conda package manager and Python.</p>
+<ul class="simple">
+<li><p>Download the Miniconda installer from the official website: <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a></p></li>
+<li><p>Follow the installation instructions for your operating system.</p></li>
+</ul>
+</section>
+<section id="option-2-install-anaconda">
+<h3>Option 2: Install Anaconda<a class="headerlink" href="#option-2-install-anaconda" title="Link to this heading">#</a></h3>
+<p>Anaconda is a full-featured distribution that includes Conda, Python, and a collection of packages for data science and scientific computing.</p>
+<ul class="simple">
+<li><p>Download the Anaconda installer from the official website: <a class="reference external" href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a></p></li>
+<li><p>Follow the installation instructions for your operating system.</p></li>
+</ul>
+</section>
+</section>
+<section id="managing-environments">
+<h2>3. Managing Environments<a class="headerlink" href="#managing-environments" title="Link to this heading">#</a></h2>
+<p>Conda environments are isolated environments that allow you to manage different versions of packages and dependencies.</p>
+<section id="create-a-new-environment">
+<h3>3.1 Create a New Environment<a class="headerlink" href="#create-a-new-environment" title="Link to this heading">#</a></h3>
+<p>To create a new environment, use the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>myenv
+</pre></div>
+</div>
+<p>Replace <code class="docutils literal notranslate"><span class="pre">myenv</span></code> with the name of your environment.</p>
+</section>
+<section id="activate-an-environment">
+<h3>3.2 Activate an Environment<a class="headerlink" href="#activate-an-environment" title="Link to this heading">#</a></h3>
+<p>To activate an environment, use the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>myenv
+</pre></div>
+</div>
+<p>Replace <code class="docutils literal notranslate"><span class="pre">myenv</span></code> with the name of your environment.</p>
+</section>
+<section id="deactivate-an-environment">
+<h3>3.3 Deactivate an Environment<a class="headerlink" href="#deactivate-an-environment" title="Link to this heading">#</a></h3>
+<p>To deactivate an environment, use the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>deactivate
+</pre></div>
+</div>
+</section>
+<section id="list-all-environments">
+<h3>3.4 List All Environments<a class="headerlink" href="#list-all-environments" title="Link to this heading">#</a></h3>
+<p>To list all environments, use the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>info<span class="w"> </span>--envs
+</pre></div>
+</div>
+</section>
+<section id="remove-an-environment">
+<h3>3.5 Remove an Environment<a class="headerlink" href="#remove-an-environment" title="Link to this heading">#</a></h3>
+<p>To remove an environment, use the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>env<span class="w"> </span>remove<span class="w"> </span>--name<span class="w"> </span>myenv
+</pre></div>
+</div>
+<p>Replace <code class="docutils literal notranslate"><span class="pre">myenv</span></code> with the name of your environment.</p>
+</section>
+</section>
+<section id="useful-resources">
+<h2>4. Useful Resources<a class="headerlink" href="#useful-resources" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Conda Documentation: <a class="reference external" href="https://conda.io/docs">https://conda.io/docs</a></p></li>
+<li><p>Conda GitHub Repository: <a class="github reference external" href="https://github.com/conda/conda">conda/conda</a></p></li>
+<li><p>Anaconda Documentation: <a class="reference external" href="https://docs.anaconda.com/">https://docs.anaconda.com/</a></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="next-step-is-using-docker">
+<h2>Next step is … <a class="reference external" href="https://github.com/CAPIBARA3/.github-private/blob/main/tutorials/08_Using_Docker.md">Using Docker</a><a class="headerlink" href="#next-step-is-using-docker" title="Link to this heading">#</a></h2>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#index-what-will-you-do-here">Index - What will you do here?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-conda-or-miniconda">1. Why Use Conda (or Miniconda)?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advantages-of-using-conda">Advantages of Using Conda</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-conda">2. Install Conda</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#option-1-install-miniconda">Option 1: Install Miniconda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#option-2-install-anaconda">Option 2: Install Anaconda</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-environments">3. Managing Environments</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-new-environment">3.1 Create a New Environment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#activate-an-environment">3.2 Activate an Environment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deactivate-an-environment">3.3 Deactivate an Environment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#list-all-environments">3.4 List All Environments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#remove-an-environment">3.5 Remove an Environment</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#useful-resources">4. Useful Resources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-step-is-using-docker">Next step is … Using Docker</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/public/tutorials/07_Configuring_conda.md.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

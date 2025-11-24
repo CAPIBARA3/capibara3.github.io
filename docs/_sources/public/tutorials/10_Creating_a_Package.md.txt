@@ -1,0 +1,172 @@
+# Creating a Package
+
+Packages is the way to enable everybody to straigforwardly use your functions and integrate them in their code.
+
+---
+## Index - What will you do here?
+1. [Repository Structure](#1-repository-structure)
+2. [`_init__.py`](#2-__init__py)
+3. [`setup.py`](#3-setuppy)
+4. [`__version__.py`](#4-__version__py)
+5. [`requirements.txt`](#5-requirementstxt)
+6. [Installing Your Package via pip](#6-installing-your-package-via-pip)
+7. [Getting a DOI](#7-getting-a-doi)\
+    7.1 [Connecting GitHub to Zenodo](#71-connecting-github-to-zenodo)\
+    7.2 [Creating a New Release](#72-creating-a-new-release)\
+    7.3 [Getting DOI](#73-getting-doi)
+8. [Pubish Your Package on PyPi](#8-publish-your-package-on-pypi)\
+    8.1 [Creating a PyPi Account](#81-creating-a-pypi-account)\
+    8.2 [Uploading Packages](#82-uploading-packages)
+
+---
+
+## 1. Repository Structure
+```bash
+api
+    __init__.py
+    code1.py
+    code2.py
+    _version.py
+README.md
+.gitignore
+setup.py
+requirements.txt
+```
+Where `api` is a directory for the API's scripts and `codeX.py` the files of the API.
+
+## 2. `__init__.py
+The `__init__.py` initiates the API and samples all the package's scripts.
+```python
+from ._version import __version__
+from .api/code1 import *  # import all functions
+from .api/code2 import *
+```
+
+## 3. `setup.py`
+The `setup.py` file contains the metadata for the package and is necessary to build it. Here's a template:
+```python
+from setuptools import setup, find_packages
+
+with open("README.md", "r") as readme_file:
+    long_description = readme_file.read()
+
+with open("requirements.txt") as requirements_file:
+    requirements = requirements_file.read().splitlines()
+
+with open("api/_version.py") as version_file:
+    for line in version_file:
+        if "__version__" in line:
+            __version__ = line.split()[-1].replace('"', "")
+
+setup(
+    name="api-name",
+    version="0.0.0",
+    author="your name",
+    author_email="example@email.com",
+    description="Description",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url='https://github.com/username/api-name',
+    packages=find_packages(),
+    python_requires=">=3.9",
+    install_requires=requirements,
+    classifiers=[
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: Unix'
+    ],
+    package_data={"api-name": ["static/*"]},
+    include_package_data=True,
+)
+```
+
+## 4. `__version__.py`
+This file containts version info. Needs to be updated for every new version.
+```python
+__version__ = "1.0.0" # don't forget to update
+```
+
+## 5. `requirements.txt`
+The `requirements.txt` file is a plain text file listing all the required libraries. This file is used to install libraries using pip
+```shell
+pip install -r requirements.txt
+```
+or in dockerfiles and in the `setup.py`. It is important to list all the dependencies of your package, but don't list built-in Python libraries (e.g. `os`).
+```text
+pandas
+matplotlib
+numpy
+astropy
+```
+
+## 6. Installing Your Package via pip
+1. Activate the conda environment where you want to install it.
+2. Navigate to the repository of the package (where `setup.py` is located).
+3. Run `pip install .`. Alternatively, you can enter `pip install <dirpath>`, where `dirpath` is the path to the package's directory in your computer.
+4. You may want to consider adding build-related (such as `build/` or `name.egg-info/`) files to `.gitignore`.
+
+## 7. Getting a DOI
+A DOI is a Digital Object Identifier [doi.org](https://doi.org), most of scientific papers and package do have one, as it is straightforward for identification and citations.
+
+### 7.1 Connecting GitHub to Zenodo
+1. Sign in to [Zenodo](https://zenodo.org)
+2. Go to your Zenodo dashboard and navigate to "GitHub", click the "connect button" and authorize the access to your repositories.
+3. Enable the repository for which you want to get a DOI.
+
+### 7.2 Creating a New Release
+1. Go to your GitHub repository and navigate to the "Releases" section.
+2. Create a new release by cliking on "Draft a new release".
+3. Fill in the tag version, title, description, release notes, ..., then publish the release.
+
+### 7.3 Getting DOI
+1. Zenodo will automatically archive your release.
+2. In the "GitHub" section of your Zenodo dashboard, find your repository and the corresponding release.
+3. You can find the DOI next to your release tag.
+
+## 8. Publish Your Package on PyPi
+
+### 8.1 Creating a PyPi Account
+[PyPi](https://pypi.org) is the Python Package Index, which is a repository of software for the Python programming language, and the source of the `pip` command. In order to upload your package, you must create an account. Follow the steps in the website for this purpose.
+
+Once you've created an account you can generate a token for authentication when upload packages via `twine`. For straighforward authentication on your local machine, create a file `$HOME/.pypirc` and save your token like:
+```text
+[pypi]
+username = __token__
+password = <your-token>
+```
+This way `twine` will identify your user automatically.
+
+### 8.2 Uploading Packages
+1. Ensure your `setup.py` file is correct (see example above).
+2. If you have written tests, run them and check everything works fine.
+3. Ensure you have installed the required libraries for uploading:
+```shell
+pip install setuptools wheel
+pip install twine
+```
+4. Build the package (without installing it)
+```shell
+python setup.py sdist bdist_wheel
+```
+5. Upload to PyPi via `twine`
+```shell
+twine upload dist/*
+```
+6. Install your package everywhere via pip
+```shell
+pip install <package-name>
+```
+
+Additionally, before uploading to the live PyPi, you can test your package on the Test PyPi server. You can do this by running:
+```shell
+twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+```
+and installing the test version using
+```shell
+pip install --index-url https://test.pypi.org/sample/ <package-name>
+```
+
+
+
+---
+## Next step is ... [Automated Tests](https://github.com/CAPIBARA3/.github-private/blob/main/tutorials/11_Automated_Tests.md)

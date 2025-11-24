@@ -1,0 +1,561 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Installing Ubuntu on a Windows Computer &#8212; Collaboration Documentation  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'public/tutorials/Ubuntu_on_Windows';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Collaboration Documentation  documentation</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html">
+    Public Documentation
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../internal/index.html">
+    internal docs
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html">
+    Public Documentation
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../internal/index.html">
+    internal docs
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Installing Ubuntu on a Windows Computer</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="installing-ubuntu-on-a-windows-computer">
+<h1>Installing Ubuntu on a Windows Computer<a class="headerlink" href="#installing-ubuntu-on-a-windows-computer" title="Link to this heading">#</a></h1>
+<p>This guide will walk you through the process of installing Ubuntu on your Windows computer. Ubuntu is a popular open-source Linux distribution known for its ease of use, stability, and security. You can either dual-boot Ubuntu alongside Windows or install Ubuntu within Windows using Windows Subsystem for Linux (WSL).</p>
+<p>Please note that I haven’t needed to go through this process and I haven’t checked the reliability nor troubleshoot these instructions.</p>
+</section>
+<section id="why-install-ubuntu-or-linux-on-a-windows-computer">
+<h1>Why Install Ubuntu (or Linux) on a Windows Computer?<a class="headerlink" href="#why-install-ubuntu-or-linux-on-a-windows-computer" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>Seamless Code Integration</strong>: Aligns your environment with Linux/macOS (Unix-based) systems, reducing platform-specific bugs.</p></li>
+<li><p><strong>Consistent File Paths</strong>: Ensures compatibility with Unix-style file paths (e.g., <code class="docutils literal notranslate"><span class="pre">/home/user/project</span></code>) and case-sensitive file systems.</p></li>
+<li><p><strong>Efficient Package Management</strong>: Use APT and other tools for easy installation and management of dependencies in a unified way.</p></li>
+<li><p><strong>Improved Development Tools</strong>: Access to Bash, Docker, and open-source tools that streamline collaboration and development.</p></li>
+<li><p><strong>Better Collaboration</strong>: Reduces “it works on my machine” issues, ensuring smoother teamwork with other Linux/macOS developers.</p></li>
+</ul>
+<p>In this tutorial you will learn to install an Ubuntu virtual machine on your Windows computer using VirtualBox, which is a popular and free software.</p>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>A Linux Computer</strong>: Ensure you have a Linux distribution installed (e.g., Ubuntu, Fedora, etc.).</p></li>
+<li><p><strong>Internet Connection</strong>: Required for downloading VirtualBox and the Ubuntu ISO.</p></li>
+<li><p><strong>Sufficient Resources</strong>: Ensure your computer has enough RAM and disk space to run a virtual machine.</p></li>
+</ol>
+</section>
+<section id="step-1-install-virtualbox">
+<h2>Step 1: Install VirtualBox<a class="headerlink" href="#step-1-install-virtualbox" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p><strong>Open Terminal</strong>: You can usually find the terminal in your applications menu.</p></li>
+<li><p><strong>Update Package List</strong>: Before installing new software, it’s a good idea to update your package list. Run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</pre></div>
+</div>
+</li>
+<li><p><strong>Install VirtualBox</strong>: Use the following command to install VirtualBox. This command is for Ubuntu-based distributions. If you are using a different distribution, the package manager command may vary.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>virtualbox
+</pre></div>
+</div>
+</li>
+<li><p><strong>Verify Installation</strong>: After installation, you can verify that VirtualBox is installed by running:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>virtualbox<span class="w"> </span>--help
+</pre></div>
+</div>
+<p>This should display the help information for VirtualBox.</p>
+</li>
+</ol>
+</section>
+<section id="step-2-download-the-ubuntu-iso">
+<h2>Step 2: Download the Ubuntu ISO<a class="headerlink" href="#step-2-download-the-ubuntu-iso" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Visit the Ubuntu Website</strong>: Go to the <a class="reference external" href="https://ubuntu.com/download/desktop">Ubuntu Downloads page</a>.</p></li>
+<li><p><strong>Choose Your Version</strong>: Select the version of Ubuntu you want to install (the latest LTS version is recommended for stability).</p></li>
+<li><p><strong>Download the ISO</strong>: Click on the download link to download the Ubuntu ISO file to your computer.</p></li>
+</ol>
+</section>
+<section id="step-3-create-a-new-virtual-machine">
+<h2>Step 3: Create a New Virtual Machine<a class="headerlink" href="#step-3-create-a-new-virtual-machine" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Open VirtualBox</strong>: Launch VirtualBox from your applications menu.</p></li>
+<li><p><strong>Create a New VM</strong>:</p>
+<ul class="simple">
+<li><p>Click on the <strong>“New”</strong> button in the toolbar.</p></li>
+<li><p><strong>Name</strong>: Enter a name for your virtual machine (e.g., “Ubuntu VM”).</p></li>
+<li><p><strong>Type</strong>: Select “Linux”.</p></li>
+<li><p><strong>Version</strong>: Select “Ubuntu (64-bit)” or “Ubuntu (32-bit)” depending on the ISO you downloaded.</p></li>
+</ul>
+</li>
+<li><p><strong>Allocate Memory</strong>:</p>
+<ul class="simple">
+<li><p>Choose the amount of RAM to allocate to the VM. A minimum of 2048 MB (2 GB) is recommended for Ubuntu, but more is better if your system allows it.</p></li>
+<li><p>Click <strong>Next</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Create a Virtual Hard Disk</strong>:</p>
+<ul class="simple">
+<li><p>Select <strong>“Create a virtual hard disk now”</strong> and click <strong>Create</strong>.</p></li>
+<li><p>Choose <strong>VDI (VirtualBox Disk Image)</strong> and click <strong>Next</strong>.</p></li>
+<li><p>Select <strong>Dynamically allocated</strong> and click <strong>Next</strong>.</p></li>
+<li><p>Set the size of the virtual hard disk. A minimum of 20 GB is recommended. Click <strong>Create</strong>.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="step-4-configure-the-virtual-machine">
+<h2>Step 4: Configure the Virtual Machine<a class="headerlink" href="#step-4-configure-the-virtual-machine" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Select the VM</strong>: Click on the newly created VM in the VirtualBox Manager.</p></li>
+<li><p><strong>Open Settings</strong>: Click on the <strong>“Settings”</strong> button in the toolbar.</p></li>
+<li><p><strong>System Settings</strong>:</p>
+<ul class="simple">
+<li><p>Go to the <strong>“System”</strong> tab.</p></li>
+<li><p>Under the <strong>“Motherboard”</strong> tab, ensure that “Enable EFI” is unchecked (unless you specifically need it).</p></li>
+<li><p>Under the <strong>“Processor”</strong> tab, allocate at least 1 CPU (more if your system allows).</p></li>
+</ul>
+</li>
+<li><p><strong>Storage Settings</strong>:</p>
+<ul class="simple">
+<li><p>Go to the <strong>“Storage”</strong> tab.</p></li>
+<li><p>Under <strong>“Controller: IDE”</strong>, click on the empty disk icon.</p></li>
+<li><p>On the right side, click the disk icon next to “Optical Drive” and select <strong>“Choose a disk file…”</strong>.</p></li>
+<li><p>Navigate to and select the Ubuntu ISO you downloaded earlier.</p></li>
+</ul>
+</li>
+<li><p><strong>Network Settings</strong> (Optional):</p>
+<ul class="simple">
+<li><p>Go to the <strong>“Network”</strong> tab.</p></li>
+<li><p>Ensure that <strong>“Adapter 1”</strong> is enabled and attached to <strong>NAT</strong> for internet access.</p></li>
+</ul>
+</li>
+<li><p><strong>Save Settings</strong>: Click <strong>OK</strong> to save your settings.</p></li>
+</ol>
+</section>
+<section id="step-5-install-ubuntu-in-the-virtual-machine">
+<h2>Step 5: Install Ubuntu in the Virtual Machine<a class="headerlink" href="#step-5-install-ubuntu-in-the-virtual-machine" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Start the VM</strong>: Select your VM in VirtualBox and click the <strong>“Start”</strong> button.</p></li>
+<li><p><strong>Boot from ISO</strong>: The VM will boot from the Ubuntu ISO. You should see the Ubuntu welcome screen.</p></li>
+<li><p><strong>Install Ubuntu</strong>:</p>
+<ul class="simple">
+<li><p>Select <strong>“Try Ubuntu”</strong> or <strong>“Install Ubuntu”</strong>.</p></li>
+<li><p>Follow the installation prompts:</p>
+<ul>
+<li><p>Choose your language.</p></li>
+<li><p>Select your keyboard layout.</p></li>
+<li><p>Choose whether to install third-party software (recommended).</p></li>
+<li><p>Select the installation type (choose “Erase disk and install Ubuntu” if you are only using the VM for Ubuntu, or “Something else” for custom partitioning).</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Allocate Disk Space</strong>: If you chose “Something else,” create a partition for Ubuntu using the free space allocated for the virtual hard disk. Typically, you will need at least one partition for the root filesystem (“/”).</p></li>
+<li><p><strong>Complete Installation</strong>: Follow the remaining prompts to set your timezone, create a user account, and finalize the installation. Once the installation is complete, you will be prompted to restart the VM.</p></li>
+<li><p><strong>Remove the ISO</strong>: When prompted, make sure to remove the installation media (the Ubuntu ISO) from the virtual drive to avoid booting from it again. You can do this by going back to the <strong>Storage</strong> settings in VirtualBox and unmounting the ISO.</p></li>
+<li><p><strong>Reboot the VM</strong>: After removing the ISO, restart the virtual machine. You should now boot into your newly installed Ubuntu system.</p></li>
+</ol>
+</section>
+<section id="step-6-post-installation-setup">
+<h2>Step 6: Post-Installation Setup<a class="headerlink" href="#step-6-post-installation-setup" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p><strong>Update Ubuntu</strong>: Once logged in, open a terminal and run the following commands to update your system:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt<span class="w"> </span>upgrade
+</pre></div>
+</div>
+</li>
+<li><p><strong>Install Additional Software</strong>: You can install any additional software you need using the Ubuntu Software Center or via the terminal.</p></li>
+<li><p><strong>Install Guest Additions</strong>: For better performance and usability, install VirtualBox Guest Additions:</p>
+<ul class="simple">
+<li><p>In the VM window, go to <strong>Devices</strong> &gt; <strong>Insert Guest Additions CD image</strong>.</p></li>
+<li><p>Follow the prompts to install the Guest Additions, which will enhance graphics performance and enable shared clipboard functionality.</p></li>
+</ul>
+</li>
+<li><p><strong>Configure Shared Folders</strong> (Optional): If you want to share files between your host and the VM, you can set up shared folders in the VM settings under the <strong>Shared Folders</strong> section.</p></li>
+</ol>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
+<p>Installing Ubuntu on a Windows computer is a great way to take advantage of the powerful Linux environment without losing access to your Windows applications. You can choose between a dual-boot setup for a full Ubuntu experience or use Windows Subsystem for Linux (WSL) to run Ubuntu alongside Windows without rebooting.</p>
+<p>Follow the steps in this guide, and you’ll be able to easily manage both operating systems on your machine!</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Installing Ubuntu on a Windows Computer</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#why-install-ubuntu-or-linux-on-a-windows-computer">Why Install Ubuntu (or Linux) on a Windows Computer?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-install-virtualbox">Step 1: Install VirtualBox</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-download-the-ubuntu-iso">Step 2: Download the Ubuntu ISO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-create-a-new-virtual-machine">Step 3: Create a New Virtual Machine</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-configure-the-virtual-machine">Step 4: Configure the Virtual Machine</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-install-ubuntu-in-the-virtual-machine">Step 5: Install Ubuntu in the Virtual Machine</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-post-installation-setup">Step 6: Post-Installation Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/public/tutorials/Ubuntu_on_Windows.md.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

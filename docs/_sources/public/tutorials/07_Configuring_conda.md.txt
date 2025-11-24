@@ -1,0 +1,104 @@
+# Configuring Conda
+
+Conda environments are the perfect way to handle different version of libraries and dependencies for all of your projects.
+
+---
+## Index - What will you do here?
+1. [Why Use Conda (or Miniconda)](#1-why-use-conda-or-miniconda)
+2. [Intall Conda](#2-install-conda)
+3. [Managing Environments](#3-managing-environments)\
+    3.1 [Create a New Environment](#31-create-a-new-environment)\
+    3.2 [Activate an Environment](#32-activate-an-environment)\
+    3.3 [Deactivate an Environment](#33-deactivate-an-environment)\
+    3.4 [List All Environments](#34-list-all-environments)\
+    3.5 [Remove an Environment](#35-remove-an-environment)
+4. [Useful Resources](#4-useful-resources)
+
+---
+
+## 1. Why Use Conda (or Miniconda)?
+
+Conda is a package manager that allows you to easily manage different environments for your projects. It provides a simple way to install, update, and manage packages, including Python and other dependencies.
+
+### Advantages of Using Conda
+
+- **Isolation:**- Conda allows you to create isolated environments for your projects, which helps to avoid version conflicts and makes it easier to manage dependencies.
+- **Reproducibility:**- Conda environments are reproducible, which means that you can easily recreate the same environment on a different machine.
+- **Easy Package Management:**- Conda provides a simple way to install, update, and manage packages.
+
+## 2. Install Conda
+
+To install Conda, follow these steps:
+
+### Option 1: Install Miniconda
+
+Miniconda is a minimal installer for Conda. It includes the Conda package manager and Python.
+
+- Download the Miniconda installer from the official website: <https://docs.conda.io/en/latest/miniconda.html>
+- Follow the installation instructions for your operating system.
+
+### Option 2: Install Anaconda
+
+Anaconda is a full-featured distribution that includes Conda, Python, and a collection of packages for data science and scientific computing.
+
+- Download the Anaconda installer from the official website: <https://www.anaconda.com/products/individual>
+- Follow the installation instructions for your operating system.
+
+## 3. Managing Environments
+
+Conda environments are isolated environments that allow you to manage different versions of packages and dependencies.
+
+### 3.1 Create a New Environment
+
+To create a new environment, use the following command:
+
+```bash
+conda create --name myenv
+```
+
+Replace `myenv` with the name of your environment.
+
+### 3.2 Activate an Environment
+
+To activate an environment, use the following command:
+
+```bash
+conda activate myenv
+```
+
+Replace `myenv` with the name of your environment.
+
+### 3.3 Deactivate an Environment
+
+To deactivate an environment, use the following command:
+
+```bash
+conda deactivate
+```
+
+### 3.4 List All Environments
+
+To list all environments, use the following command:
+
+```bash
+conda info --envs
+```
+
+### 3.5 Remove an Environment
+
+To remove an environment, use the following command:
+
+```bash
+conda env remove --name myenv
+```
+
+Replace `myenv` with the name of your environment.
+
+## 4. Useful Resources
+
+- Conda Documentation: <https://conda.io/docs>
+- Conda GitHub Repository: <https://github.com/conda/conda>
+- Anaconda Documentation: <https://docs.anaconda.com/>
+
+---
+## Next step is ... [Using Docker](https://github.com/CAPIBARA3/.github-private/blob/main/tutorials/08_Using_Docker.md)
