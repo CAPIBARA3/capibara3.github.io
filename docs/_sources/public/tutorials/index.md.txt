@@ -1,3 +1,32 @@
+````markdown
+# Tutorials
+
+Welcome to the CAPIBARA tutorials. These pages are organized to help new collaborators set up their environment and learn the collaboration workflow.
+
+Start with the first tutorial, then follow the numbered list.
+
+```{toctree}
+:maxdepth: 1
+
+00_index
+01_Intro_to_Shell-terminal-command_line
+02_Configuring_Git_Locally
+03_Configuring_GitHub
+04_Collaborating_via_GitHub
+05_Setting_Up_Python
+06_Installing_pip
+07_Configuring_conda
+08_Using_Docker
+09_Jupyter_Notebook
+10_Creating_a_Package
+11_Automated_Tests
+12_Code_Editors_and_IDEs
+13_Using_LaTeX_Locally
+
+```
+
+Back to Public docs: [Public Documentation](../index.md)
+````
 # **Welcome to Tutorials!** 🎓
 ## and if you are new, Welcome to the CAPIBARA Collaboration!
 

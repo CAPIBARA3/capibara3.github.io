@@ -5,11 +5,9 @@ Welcome to the official documentation hub for the CAPIBARA Collaboration. This s
 Use the sections below to navigate the site. Content is organized into public documentation (tutorials and guides), internal documents (policies and member information), and reusable templates.
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 3
 :caption: Sections
 
 public/index
-internal/index
-templates/index
 
 ```
