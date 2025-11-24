@@ -1,8 +1,14 @@
+````markdown
 # Public Documentation
+
+This section contains user-facing guides and tutorials intended for the broader community and new collaborators. Content here is safe to share publicly.
 
 ```{toctree}
 :maxdepth: 2
 
-tutorials
-profile
+tutorials/index
+
 ```
+
+Back to the main documentation: [Home](../index.md)
+````

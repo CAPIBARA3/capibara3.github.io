@@ -1,10 +1,15 @@
-# internal docs
+````markdown
+# Internal Documentation
 
-Documentation that contains personal information of collaboration members or collaborating entities.
+This section contains internal policies and documents intended for collaboration members and maintainers. Access to some pages may be restricted.
 
 ```{toctree}
 :maxdepth: 2
 
 agreements
 members
+
 ```
+
+Back to the main documentation: [Home](../index.md)
+````
