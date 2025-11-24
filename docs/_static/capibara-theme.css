@@ -1,0 +1,101 @@
+/* ============================================================
+   Custom Theme Palette
+   Overrides for PyData Sphinx Theme (light + dark)
+   ============================================================ */
+
+:root {
+    --primary-color: #bf87e6;
+    --secondary-color: #ffc857;
+    --accent-color: #ff4fa0;
+    --navbutton-color: #ff9800;
+
+    --background-color: #f5f5f5;
+    --text-color: #2d2d2d;
+    --card-bg: #ffffff;
+
+    --header-gradient: linear-gradient(
+        135deg,
+        var(--secondary-color),
+        var(--primary-color)
+    );
+
+    --glow-color: rgba(255, 79, 160, 0.3);
+    --dark-bg: #111;
+
+    /* Map to PyData Theme Variables */
+    --pst-color-primary: var(--primary-color);
+    --pst-color-secondary: var(--secondary-color);
+    --pst-color-accent: var(--accent-color);
+    --pst-color-background: var(--background-color);
+    --pst-color-text: var(--text-color);
+}
+
+/* ----------------------------------------------------------------
+   DARK THEME
+---------------------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #a56bd6;
+        --secondary-color: #ffbb33;
+        --accent-color: #ff66a3;
+
+        --background-color: #1a1a1a;
+        --text-color: #f0f0f0;
+        --card-bg: #2d2d2d;
+
+        --header-gradient: linear-gradient(
+            135deg,
+            var(--secondary-color),
+            var(--primary-color)
+        );
+
+        --glow-color: rgba(255, 102, 163, 0.3);
+        --dark-bg: #111;
+
+        /* PyData dark override */
+        --pst-color-primary: var(--primary-color);
+        --pst-color-secondary: var(--secondary-color);
+        --pst-color-accent: var(--accent-color);
+        --pst-color-background: var(--background-color);
+        --pst-color-text: var(--text-color);
+    }
+}
+
+/* ----------------------------------------------------------------
+   HEADER / NAVBAR STYLING
+---------------------------------------------------------------- */
+header.bd-header {
+    background: var(--header-gradient) !important;
+}
+
+/* Active navigation highlight */
+.nav-link.active, .current.reference.internal {
+    color: var(--accent-color) !important;
+}
+
+/* Navbar icons hover */
+a.navbar-icon:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* ----------------------------------------------------------------
+   CARDS, PANELS, CODE BLOCKS
+---------------------------------------------------------------- */
+.bd-card {
+    background: var(--card-bg) !important;
+    border-radius: 10px;
+}
+
+/* Code block highlighting accents */
+.highlight {
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--accent-color);
+}
