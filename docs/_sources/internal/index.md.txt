@@ -1,4 +1,3 @@
-````markdown
 # Internal Documentation
 
 This section contains internal policies and documents intended for collaboration members and maintainers. Access to some pages may be restricted.
@@ -12,4 +11,3 @@ members
 ```
 
 Back to the main documentation: [Home](../index.md)
-````

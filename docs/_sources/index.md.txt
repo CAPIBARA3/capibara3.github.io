@@ -1,4 +1,3 @@
-````markdown
 # Collaboration Documentation
 
 Welcome to the official documentation hub for the CAPIBARA Collaboration. This site contains both the public-facing guides and internal resources used by collaborators, including governance documents, computing setup instructions, coding tutorials, and templates.
@@ -14,4 +13,3 @@ internal/index
 templates/index
 
 ```
-````
