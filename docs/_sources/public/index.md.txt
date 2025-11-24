@@ -3,7 +3,7 @@
 This section contains user-facing guides and tutorials intended for the broader community and new collaborators. Content here is safe to share publicly.
 
 ```{toctree}
-:maxdepth: 4
+:maxdepth: 2
 
 tutorials/index
 
