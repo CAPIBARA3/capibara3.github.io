@@ -99,3 +99,73 @@ a {
 a:hover {
     color: var(--accent-color);
 }
+
+/* ----------------------------------------------------------------
+   DARK MODE TOGGLE SUPPORT
+   Support for theme toggles that set `data-theme="dark"` or
+   common dark-mode classes. These mirror the variables used in
+   the prefers-color-scheme block so the theme toggle works.
+---------------------------------------------------------------- */
+html[data-theme="dark"], html.theme-dark, body.dark {
+    --background-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --card-bg: #2d2d2d;
+
+    --pst-color-background: var(--background-color);
+    --pst-color-text: var(--text-color);
+}
+
+/* Apply colors broadly to avoid isolated black text on dark pages */
+html[data-theme="dark"] body,
+html.theme-dark body,
+body.dark,
+html[data-theme="dark"] .wy-nav-content,
+html.theme-dark .wy-nav-content,
+body.dark .wy-nav-content,
+html[data-theme="dark"] .bd-content,
+html.theme-dark .bd-content,
+body.dark .bd-content {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+}
+
+/* Links and interactive elements */
+html[data-theme="dark"] a,
+html.theme-dark a,
+body.dark a {
+    color: var(--primary-color) !important;
+}
+
+/* Cards and panels */
+html[data-theme="dark"] .bd-card,
+html.theme-dark .bd-card,
+body.dark .bd-card {
+    background: var(--card-bg) !important;
+    color: var(--text-color) !important;
+}
+
+/* Code blocks and highlights */
+html[data-theme="dark"] pre,
+html[data-theme="dark"] code,
+html.theme-dark pre,
+html.theme-dark code,
+body.dark pre,
+body.dark code {
+    color: var(--text-color) !important;
+    background: transparent !important;
+}
+
+html[data-theme="dark"] .highlight,
+html.theme-dark .highlight,
+body.dark .highlight {
+    border-left-color: var(--primary-color) !important;
+    background: var(--card-bg) !important;
+    color: var(--text-color) !important;
+}
+
+/* Increase specificity for elements that sometimes get black text */
+html[data-theme="dark"] .document *,
+html.theme-dark .document *,
+body.dark .document * {
+    color: inherit !important;
+}
