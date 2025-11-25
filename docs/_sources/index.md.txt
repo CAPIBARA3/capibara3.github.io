@@ -1,13 +1,45 @@
-# Collaboration Documentation
+# CAPIBARA Collaboration Documentation
 
-Welcome to the official documentation hub for the CAPIBARA Collaboration. This site contains both the public-facing guides and internal resources used by collaborators, including governance documents, computing setup instructions, coding tutorials, and templates.
+Welcome to the official documentation hub of the **CAPIBARA Collaboration**.  
+Here you will find:
 
-Use the sections below to navigate the site. Content is organized into public documentation (tutorials and guides), internal documents (policies and member information), and reusable templates.
+- **Public documentation** — project overviews, onboarding tutorials, software guides, governance policies.
+- **Internal documents** — collaboration-only materials such as meeting notes, agreements, and private templates.
+- **Reusable templates** — project templates, proposal forms, analysis note structures, meeting-minute templates, etc.
+
+Use the navigation tree below to browse the major sections of the documentation.
+
+---
 
 ```{toctree}
 :maxdepth: 2
-:caption: Sections
+:caption: 🚀 Public Documentation
 
-public/index
+about/index
+projects/index
+software/index
+onboarding/index
+governance/index
+````
 
+```{toctree}
+:maxdepth: 2
+:caption: 🔒 Internal (Private) Documentation
+:hidden:
+
+internal/index
+internal/external_agreements/index
+internal/members_agreements/index
+```
+
+```{toctree}
+:maxdepth: 1
+:caption: 📄 Templates (Private)
+:hidden:
+
+templates/project-template
+templates/project-proposal-template
+templates/tutorial-template
+templates/meeting-minutes-template
+templates/analysis-note-template
 ```
