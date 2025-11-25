@@ -15,11 +15,11 @@ Use the navigation tree below to browse the major sections of the documentation.
 :maxdepth: 2
 :caption: 🚀 Public Documentation
 
-about/index
-projects/index
-software/index
-onboarding/index
-governance/index
+public/about/index
+public/projects/index
+public/software/index
+public/onboarding/index
+public/governance/index
 ```
 <!-- 
 :maxdepth: 2
