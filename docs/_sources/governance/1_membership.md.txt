@@ -1,0 +1,175 @@
+# CAPIBARA Collaboration Membership Agreement (Draft v0.2)
+
+**Last Updated:** November 23, 2025
+**Status:** Draft
+**Applies to:** All members, contributors, and external collaborators
+
+---
+
+## 1. Purpose of Agreement
+
+This agreement defines the rights and responsibilities of individuals (“Members”) participating in the **CAPIBARA Collaboration** (“the Collaboration”).
+
+It is intended to:
+
+* Set expectations for participation
+* Protect member contributions under clear license terms
+* Establish behavior and communication standards
+* Enable safe collaboration with minors
+* Clarify ownership of code, data, and publications
+
+By joining, Members voluntarily agree to the terms below.
+
+---
+
+## 2. Nature of Participation
+
+* The Collaboration is a **volunteer, educational scientific project**.
+* No employment relationship is created.
+* Members are not required to pay fees.
+* Participation is on a best-effort and goodwill basis.
+
+---
+
+## 3. Eligibility
+
+Members must:
+
+* Agree to this Membership Agreement and Code of Conduct
+* Provide accurate name and contact information
+* Be at least 13 years old
+* Obtain parental/guardian consent if under 18
+
+The Collaboration reserves the right to decline or remove any member.
+
+---
+
+## 4. Conduct & Community Standards
+
+Members must follow:
+
+* The CAPIBARA **Code of Conduct**
+* Local laws and regulations
+* Ethical scientific behavior
+
+Harassment, discrimination, and harmful conduct are grounds for removal.
+
+---
+
+## 5. Intellectual Property (IP) & Licensing
+
+### 5.1 Ownership
+
+Members **retain copyright** to any code, writing, designs, or data they independently create.
+
+### 5.2 License to the Collaboration
+
+By contributing, Members grant the Collaboration a:
+
+* Nonexclusive
+* Worldwide
+* Free
+* Irrevocable
+* Perpetual license
+
+To use, modify, reproduce, and distribute the contribution under the project’s open-source license(s).
+
+### 5.3 Changes to Licensing
+
+Licensing changes require:
+
+* Discussion and review
+* Approval by project leadership
+* Notification to contributors
+
+---
+
+## 6. Confidentiality & Private Information
+
+Some discussions, repositories, or documents may be private. Members agree:
+
+* Not to publicly distribute private internal information
+* Not to leak unfinished designs, personal contact info, or security information
+
+Public data and repositories remain free to use under their licenses.
+
+---
+
+## 7. Attribution, Publications & Credit
+
+Members who contribute substantially to scientific results or code are entitled to:
+
+* Authorship or acknowledgment in publications
+* Proper credit in public releases
+
+The **Publication & Authorship Policy** defines the precise rules.
+
+---
+
+## 8. Leaving the Collaboration
+
+Members can leave at any time. Contributions already made remain under the project license.
+
+Leadership may remove members for:
+
+* Violating the Code of Conduct
+* Legal or ethical misconduct
+* Security or safety concerns
+* Extended inactivity if necessary for operations
+
+When possible, removals will include a warning and review process.
+
+---
+
+## 9. Minors & Parental Consent
+
+For members under 18:
+
+* A parent/guardian must review and agree to this membership
+* Parent/guardian acknowledges that participation is voluntary and educational
+* Collaboration communication will occur in group settings whenever possible
+* No member is permitted to request personal or private contact with minors
+
+---
+
+## 10. Liability & Responsibility
+
+The Collaboration:
+
+* Is not a legal entity (at present)
+* Provides no insurance, salary, or warranty
+* Is not responsible for personal losses, injuries, or legal issues
+
+Members participate at their own risk.
+
+---
+
+## 11. Amendments
+
+This agreement may be updated. Members will be notified via GitHub or email. Continued participation implies agreement to updated terms.
+
+---
+
+## 12. Agreement
+
+By signing or submitting the membership form (or equivalent digital acknowledgment), the Member affirms that:
+
+1. They have read and understood this Membership Agreement.
+2. They agree to comply with Collaboration rules and policies.
+3. If under 18, a parent or legal guardian has given permission.
+
+---
+
+### Member:
+
+Name: __________________________
+Email: __________________________
+Date: __________________________
+
+### Parent/Guardian (if under 18):
+
+Name: __________________________
+Relationship: __________________________
+Signature: __________________________
+
+---
