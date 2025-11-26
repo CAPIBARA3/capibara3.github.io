@@ -163,3 +163,86 @@ body.dark-mode .floating-input:not(:placeholder-shown) + .floating-label {
     background: var(--dark-card);
     color: var(--dark-primary);
 }
+
+
+/* ----------------------------- */
+/* NEW STYLES FOR APPLICATION FORM */
+/* ----------------------------- */
+
+/* Multi-select Dropdown */
+form select {
+    width: 100%;
+    padding: 14px 18px;
+    margin-top: 8px;
+    background: var(--background-color);
+    border: 2px solid rgba(191, 135, 230, 0.3);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+body.dark-mode form select {
+    background: var(--dark-background);
+    border-color: rgba(165, 107, 214, 0.3);
+    color: var(--dark-text);
+}
+
+form select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px var(--glow-color);
+}
+
+body.dark-mode form select:focus {
+    border-color: var(--dark-primary);
+}
+
+/* Date Picker */
+form input[type="date"] {
+    width: 100%;
+    padding: 14px 18px;
+    margin-top: 8px;
+    background: var(--background-color);
+    border: 2px solid rgba(191, 135, 230, 0.3);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+body.dark-mode form input[type="date"] {
+    background: var(--dark-background);
+    border-color: rgba(165, 107, 214, 0.3);
+    color: var(--dark-text);
+}
+
+/* File Upload Field */
+form input[type="file"] {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 0.95rem;
+    background: var(--background-color);
+    border: 2px dashed rgba(191, 135, 230, 0.4);
+    border-radius: 8px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+body.dark-mode form input[type="file"] {
+    background: var(--dark-background);
+    border-color: rgba(165, 107, 214, 0.4);
+    color: var(--dark-text);
+}
+
+/* Section Titles */
+.form-section-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 2rem 0 1rem 0;
+    color: var(--text-color);
+}
+
+body.dark-mode .form-section-title {
+    color: var(--dark-text);
+}
