@@ -36,7 +36,7 @@
 │   │   ├── 15_local_latex.md
 │   │   └── X_code_editors.md
 │   │
-│   ├── python/
+│   ├── python/ # right now recommending gh.com/omsharansalafia/intropython, a python tutorial series might come in the future
 │   │   ├── 06_python_basics.md
 │   │   ├── 08_jupyter_notebook.md
 │   │   ├── 09_numpy_pandas.md

@@ -1,0 +1,88 @@
+# 🌟 Contributing Guidelines
+
+Thank you for taking the time to contribute to this project! Whether you're fixing a bug, improving documentation, or suggesting a feature — every contribution matters.
+Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community inclusive and respectful.
+
+---
+
+## 📌 Getting Started
+
+1. Read the **README** of the repo to understand the project goals and setup.
+2. Make sure Git is [installed and set up](https://docs.github.com/en/get-started/git-basics/set-up-git).
+3. Familiarize yourself with the [GitHub flow](https://docs.github.com/en/get-started/using-github/github-flow).
+
+Useful links:
+- [Finding ways to contribute](https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github)
+- [How to use Pull Requests](https://docs.github.com/en/github/collaborating-with-pull-requests)
+
+---
+
+## 🐛 Creating a Good Issue
+
+If you notice a bug or have an idea for a feature:
+
+1. Check if existing issues to avoid duplicates have already addressed that.
+2. If it doesn't exist, open a new using an appropriate template (or a blanck issue, if the repo has not templates).
+3. Clearly describe the problem or suggestion, providing context, screenshots, and steps to reproduce (if applicable).
+
+You can freely work on any issue that hasn't been assigned or that has asked for help. Remember to always notify this to the code owners (see the `CODEOWNERS.md` file in the repo) or to @joanalnu, so that the issue can be assigned to you.
+
+---
+
+## 🚀 Making Contributions
+
+We welcome all types of contributions! Here’s how to make meaningful changes:
+
+### 🔧 Local Setup
+
+1. **Fork and clone the repo**
+   ```bash
+   git clone https://github.com/<your-username>/<repo-name>.git
+   cd <repo-name>
+   ```
+
+2. **Create a new branch**
+   ```bash
+   git checkout -b <your-name>/<feature-name>
+   ```
+
+3. (Optional) Set up a virtual environment (e.g., `conda`, `venv`) and install dependencies.
+
+4. **Make your changes** — including code, tests, or docs.
+
+5. **Run tests** locally (if applicable) and ensure everything passes.
+
+### 💬 Commit Guidelines
+
+- Use clear and concise commit messages.
+- Make sure commits are grouped logically.
+- Example:
+  ```bash
+  git add .
+  git commit -m "Fix typo in contributing guide"
+  git push origin <your-name>/<feature-name>
+  ```
+
+---
+
+## 🔄 Opening a Pull Request (PR)
+
+1. Go to your fork on GitHub and click **"Compare & Pull Request."**
+2. Complete the PR template with a summary of what you’ve done.
+3. Link the PR to any relevant issues (e.g., `Closes #123` where `123` is the issue number you have worked on).
+4. Enable "Allow edits from maintainers" for easier collaboration.
+5. Reviewers may suggest changes — apply them promptly.
+
+Before submitting:
+- [ ] Review your code
+- [ ] Ensure your PR contains only one focused change (split large changes into multiple PRs when possible)
+- [ ] Run tests again
+
+Once approved and merged, your contribution will become part of the repo! 🎉
+
+---
+
+## 📬 Contact
+
+If you have questions or need help, don't hesitate to [reach out](https://capibara3.github.io/contact).
+.

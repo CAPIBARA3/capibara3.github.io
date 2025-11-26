@@ -1,0 +1,36 @@
+# 00 Applying to Join
+
+## Goal
+Learn about the application process for joining the CAPIBARA Collaboration. This is not about the process of joining and onboarding, see the next tutorial [01_getting_started.md](01_getting_started.md)
+
+## Prerequisites
+
+- **Strong English communication** (oral/written) is required for collaboration and outreach.
+- Be a **Student from any level**: from high school to PhD. CAPIBARA sends a strong message since it is fully run by students, and originally founded by high schoolers.
+- Be **curious and interested** in a field(s). You don't have to contribute any expertise or know your field of study, but we recommend having an interest to pursue. Plus, it doesn't need to be STEM (astrophysics, physics, geophysics; mechanical, aerospace, electronic, software engineering, etc.), we are also looking for artists, social media creators, outreach writters...
+- Be **motivated and passionate** in pursuing this project. Members have different levels of commitment subject to their personal lives, but you should have a minimum time to interact with the community. Members typically dedicate 1-6 hours/week, but you can work at your own path corresponding with your status (e.g., exams, thesis writing, etc.).
+
+Recommended, but **NOT** required at all: strong academic record, experience in a specific field, GitHub/coding knowledge (Python)
+
+_If you don't know any or some of the previous skills, don't worry; you will learn them by us!_
+
+## Steps
+
+### 1. Introduction
+You are a student that partially or totally fulfills the prerequisites states above? Then you should apply to join the CAPIBARA Collaboration, an enthusiastic group of students who will soon be your collaborators and, perhaps, friends.
+
+Note that in order to join the Collaboration you must fulfill a minimum set of requirements outlined in the [membership agreement](../governance/1_membership.md). These requirements are kept at a minimum for example "English communication", which is a basic for working in an international collaboration and particularly in research. There is no selection process or application process as such where the information of applicants is evaluated. Everyone who applies and fulfills these basic requirements can join, and we are happy to meet you!
+
+### 2. Setup
+You will need browser and internet connection. You may want to have prepared a Curriculum Vitae (CV), motivation letter or other supporting documentation. The upload of this documentation is absolute optional, but it helps us getting to know you and getting started to work with you.
+
+Before proceeding with the application itself, you may want to download a copy of the membership agreement and signit it. If you are underage in your country (most of Europe that means under 18 years), you will additionally need the signature of at least one of your parents or legal tutors.
+
+### 3. Execution
+On your browser visit [capibara3.github.io/application-form](https://capibara3.github.io/application-form) and fill in all the required information and, if you want, the optional information. Then submit the form. You will find more information and the data privacy statement at the form itself.
+
+### 4. Verification
+In less than 10 working days, you should have received a confirmation email explaining the next steps and maybe inquiring more information. If you don't received this email, make sure to reach out to us. It may be that we didn't correctly receive you information or that we are simply too busy at the moment.
+
+## Next Steps
+Once you receive the confirmation email, you will proceed to joining the collaboration. Next step [01_getting_started.md](01_getting_started.md).
