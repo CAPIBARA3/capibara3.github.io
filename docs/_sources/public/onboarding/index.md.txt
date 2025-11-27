@@ -9,23 +9,29 @@ Coming description...
 00_applying_to_join.md
 01_getting_started.md
 
+:caption: Environment Setup
 env/02_setting_up_unix.md
 env/03_command_line.md
-env/04_git.md
-env/05_github.md
-env/06_setup_python_pip.md
-env/07_conda_venv.ms
-env/15_docker.md
-env/16_local_latex.md
+env/04_configuring_git.md
+env/05_configuring_github.md
+env/06_collaborating_github.md
+env/07_setup_python_pip.md
+env/08_conda_venv.ms
+env/16_docker.md
+env/17_local_latex.md
 env/X_code_editors.md
 
+:caption: Python tutorials
 python/ <!--right now recommending gh.com/omsharansalafia/intropython, a python tutorial series might come in the future-->
-python/08_python_basics.md
-python/09_jupyter_notebook.md
-python/10_numpy_pandas.md
-python/11_matplotlib.md
-python/12_scipy_fitting.md
+python/09_python_basics.md
+python/10_jupyter_notebook.md
+python/11_numpy_pandas.md
+python/12_matplotlib.md
+python/13_scipy_fitting.md
 
-engineering/13_automating_tests.md
-engineering/14_packages.md
+:caption: Software Engineering
+engineering/14_automating_tests.md
+engineering/15_packages.md
 ```
+
+Back to the main documentation: [Home](../../index.md)

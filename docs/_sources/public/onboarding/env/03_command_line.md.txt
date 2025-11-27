@@ -131,4 +131,4 @@ You can always go to your file explorer or finder application and check whether 
 The ebst way to getThe best way to get comfortable with the terminal is through practise. Try using the commands above to navigate, create files, and explore your system. You can always use the `man <command>` to get more information and help about any command.
 
 ## Next Steps
-Now that you can create, edit, move, copy and delete files it would be beneficial to keep track of your changes: [04_git](04_git.md)
+Now that you can create, edit, move, copy and delete files it would be beneficial to keep track of your changes: [04_git](04_configuring_git.md)

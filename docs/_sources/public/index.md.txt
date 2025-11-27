@@ -5,7 +5,8 @@ This section contains user-facing guides and tutorials intended for the broader 
 ```{toctree}
 :maxdepth: 2
 
-tutorials/index
+onboarding/
+governance/
 
 ```
 

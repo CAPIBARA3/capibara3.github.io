@@ -1,4 +1,4 @@
-# [Tutorial Title]
+# 06 Collaborating Github
 
 ## Goal
 What will the user learn?

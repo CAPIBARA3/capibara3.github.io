@@ -20,24 +20,4 @@ public/projects/index
 public/software/index
 public/onboarding/index
 public/governance/index
-
-
-:maxdepth: 2
-:caption: 🔒 Internal (Private) Documentation
-:hidden:
-
-internal/index
-internal/external_agreements/index
-internal/members_agreements/index
-
-
-:maxdepth: 1
-:caption: 📄 Templates (Private)
-:hidden:
-
-templates/project-template
-templates/project-proposal-template
-templates/tutorial-template
-templates/meeting-minutes-template
-templates/analysis-note-template
 ```

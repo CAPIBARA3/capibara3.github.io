@@ -1,0 +1,89 @@
+# 05 GitHub
+
+## Goal
+The goal is to setup your GitHub account, synchronise it to your device via git and learn about useful commands and resouces.
+
+## Prerequisites
+- [02_setting_up_unid](02_setting_up_unix.md)
+- [03_command_line](03_command_line.md)
+- [04_git](04_git.md)
+
+## Steps
+
+### 1. Introduction
+[GitHub](https://github.com) is a cloud based hub for sharing repositories, files, code using git at its core. It is where the CAPIBARA Collaboration exist, serving as our information hub for code repositories, documentation like this, general files, progress tracking and communication.
+
+**Why GitHub?**
+- Centralized repository for hosting code and project-related documentation and files
+- Collaborationg through pull requests, issue tracking, and discussions
+- Code review and CI/CD integration
+- Enhanced project management tools and organisation administration
+- Community and open-source collaboration features
+
+### 2. Setup
+
+### 2.1 Creating a GitHub Account
+- **Sign up at GitHub**, see this [guide](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
+- Set up **two-factor authentication** (2FA) for additional security (optional, but recommended)
+- By sending us your GitHub username in [01_getting_started](../01_getting_started.md), we will invite you to join the [CAPIBARA Collaboration GitHub organisation](https://github.com/orgs/capibara3) and setup your teams/roles.
+- To enable secure communication between your local machine and remote repositories, configure an SSH key (see [Configuring SSH Keys for GitHub](#configuring-ssh-keys-for-github) and [see below](#3-execution))
+
+### 2.2 Useful Definitions
+
+- **organisation:** A group of people or entities that collaborate on projects and share resources on GitHub.
+- **repo (repository):** A central location where all the files, history, and metadata for a project are stored.
+- **branch:** A separate line of development in a repository, allowing multiple versions of a project to coexist.
+- **commit:** A snapshot of changes made to a repository, including a description of the changes and the author.
+- **diff:** A comparison of the differences between two versions of a file or repository.
+- **fork:** A copy of a repository, allowing users to experiment with changes without affecting the original.
+- **pull:** To retrieve changes from a remote repository and merge them into the local repository.
+- **pull request:** A request to merge changes from a forked repository into the original repository.
+- **push:** To send changes from the local repository to a remote repository.
+- **staging:** The process of preparing changes to be committed, including selecting the files and changes to be included.
+
+This [video series](https://www.youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f) created by GitHub gets you started with the GitHub workflow and show you practical examples.
+
+
+### 3. Execution
+To fully configure your device with GitHub, we need to configure an SSH key to enable your device secure access and authentication to your GitHub repositories. SSH are a credential so that the GitHub server can verify you are telling the truth when pushing changes to your or CAPIBARA's repositories.
+
+1. **Generate a new SSH key**
+```bash
+ssh-keygen -t ed25519 -C "your.email@example.com" -f ~/.ssh/my_key_name
+```
+
+2. **Save the key pair**: You will be prompted to save the key pair. Choose a secure location such as `~/.ssh/`.
+
+3. **Add the SSH Key to the ssh-agent**:
+```bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/my_key_name
+```
+
+4. **Copy the SSH key**: Copy the contents of the public key file `~/.ssh/my_key_name.pub`.
+
+5. **Add the SSH key to your GitHub account**:
+   * Go to your GitHub account settings.
+   * Click on "SSH and GPG keys" in the left-hand menu.
+   * Click "New SSH key".
+   * Give your key a label (e.g., "Laptop").
+   * Paste the contents of your public key into the "Key" field.
+   * Click "Add SSH key".
+
+### 4. Verification
+
+6. **Verify the SSH connection**:
+   ```bash
+   ssh -T git@github.com
+   ```
+   You should see a message indicating that you've successfully authenticated.
+
+7. **Use the SSH URL for cloning repositories**:
+   Instead of using the HTTPS URL, use the SSH URL to clone repositories:
+   ```bash
+   git clone git@github.com:username/repository.git
+   ```
+   Replace `username` and `repository` with your actual GitHub username and repository name.
+
+## Next Steps
+Perfect, you are now prepared to start using GitHub like a professional. Let's continue by learning how to [06_collaborate_github](06_collaborate_github.md)
