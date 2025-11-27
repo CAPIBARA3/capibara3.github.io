@@ -34,7 +34,7 @@ If Python is not installed, you'll see an error message, and you can proceed wit
 ### 2.1 macos
 macOS often comes with Python pre-installed, but it might not be the latest version. to install the latest version, you can use [Homebrew](https://brew.sh), a package manager for macOS:
 
-1. FIrst, install Homebrew if you haven't already:
+1. First, install Homebrew if you haven't already:
     ```bash
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     ```

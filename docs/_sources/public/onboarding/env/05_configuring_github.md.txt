@@ -6,7 +6,7 @@ The goal is to setup your GitHub account, synchronise it to your device via git 
 ## Prerequisites
 - [02_setting_up_unid](02_setting_up_unix.md)
 - [03_command_line](03_command_line.md)
-- [04_git](04_git.md)
+- [04_configuring_git](04_configuring_git.md)
 
 ## Steps
 

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>06 Collaborating Github &#8212; CAPIBARA  documentation</title>
+    <title>06 Collaborating GitHub &#8212; CAPIBARA  documentation</title>
   
   
   
@@ -46,7 +46,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'public/onboarding/env/06_collaborating_github';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Governance" href="../../governance/index.html" />
+    <link rel="next" title="07 Configuring Python Pip" href="07_configuring_python_pip.html" />
     <link rel="prev" title="05 GitHub" href="05_configuring_github.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -310,7 +310,9 @@
 <li class="toctree-l1"><a class="reference internal" href="03_command_line.html">03 Introduction to the command line</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_configuring_git.html">04 Git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05_configuring_github.html">05 GitHub</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">06 Collaborating Github</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">06 Collaborating GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_configuring_python_pip.html">07 Configuring Python Pip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_configuring_conda_venv.html">08 Configuring conda venv</a></li>
 </ul>
 </div>
 </nav></div>
@@ -354,7 +356,7 @@
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Onboarding</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">06 Collaborating Github</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">06 Collaborating GitHub</span></li>
   </ul>
 </nav>
 </div>
@@ -372,44 +374,249 @@
                 <article class="bd-article">
                   
   <section id="collaborating-github">
-<h1>06 Collaborating Github<a class="headerlink" href="#collaborating-github" title="Link to this heading">#</a></h1>
+<h1>06 Collaborating GitHub<a class="headerlink" href="#collaborating-github" title="Link to this heading">#</a></h1>
 <section id="goal">
 <h2>Goal<a class="headerlink" href="#goal" title="Link to this heading">#</a></h2>
-<p>What will the user learn?</p>
+<p>Learn the GitHub workflow and how to use GitHub’s features to collaborate, contribute, and communicate with the rest of the team.</p>
 </section>
 <section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Basic collaboration account</p></li>
-<li><p>Installed environment</p></li>
+<li><p><a class="reference internal" href="02_setting_up_unix.html"><span class="std std-doc">02_setting_up_unix</span></a></p></li>
+<li><p><a class="reference internal" href="03_command_line.html"><span class="std std-doc">03_command_line</span></a></p></li>
+<li><p><a class="reference internal" href="04_configuring_git.html"><span class="std std-doc">04_configuring_git</span></a></p></li>
+<li><p><a class="reference internal" href="05_configuring_github.html"><span class="std std-doc">05_configuring_github</span></a></p></li>
 </ul>
 </section>
-<section id="steps">
-<h2>Steps<a class="headerlink" href="#steps" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
 <section id="introduction">
-<h3>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h3>
-<p>Explain context.</p>
+<h2>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>GitHub is a powerful collaboration platform that integrates the tools a distributed, mostly asynchronous team needs to work effectively.</p>
+<p>Because this topic is extensive, this tutorial does <strong>not</strong> follow the usual <em>Introduction → Setup → Execution → Verification</em> format. Instead, it is organized into these sections:</p>
+<ol class="arabic simple" start="2">
+<li><p>Repositories</p></li>
+<li><p>Pull Requests</p></li>
+<li><p>Issues</p></li>
+<li><p>Discussions</p></li>
+<li><p>Projects</p></li>
+<li><p>Best Practices</p></li>
+</ol>
 </section>
-<section id="setup">
-<h3>2. Setup<a class="headerlink" href="#setup" title="Link to this heading">#</a></h3>
-<p>Step-by-step instructions.</p>
+<hr class="docutils" />
+<section id="repositories">
+<h2>2. Repositories<a class="headerlink" href="#repositories" title="Link to this heading">#</a></h2>
+<section id="branching-strategy">
+<h3>2.1 Branching Strategy<a class="headerlink" href="#branching-strategy" title="Link to this heading">#</a></h3>
+<p><strong>Main Branch (<code class="docutils literal notranslate"><span class="pre">main</span></code>)</strong>
+Main, working, safe codebase.</p>
+<p><strong>Development Branch (<code class="docutils literal notranslate"><span class="pre">dev</span></code>)</strong>
+Staging area for features before they move to <code class="docutils literal notranslate"><span class="pre">main</span></code>. Used in production repositories (e.g., published packages).</p>
+<p><strong>Feature Branches</strong>
+One branch per feature, improvement, or bug fix.</p>
+<p><strong>Naming Conventions</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">feature/...</span></code> – New features</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bugfix/...</span></code> – Bug fixes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hotfix/...</span></code> – Critical production fixes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">docs/...</span></code> – Documentation updates</p></li>
+</ul>
+<p>You may also tag the branch with your username, e.g., <code class="docutils literal notranslate"><span class="pre">feature/username/topic</span></code> such as <code class="docutils literal notranslate"><span class="pre">docs/joanalnu</span></code> or <code class="docutils literal notranslate"><span class="pre">fix-altfunc-joanalnu</span></code>.
+<strong>Note:</strong> For the <code class="docutils literal notranslate"><span class="pre">capibara3/papers</span></code> repository, refer to the repository-specific guidelines.</p>
 </section>
-<section id="execution">
-<h3>3. Execution<a class="headerlink" href="#execution" title="Link to this heading">#</a></h3>
-<p>Commands, examples, screenshots.</p>
+<hr class="docutils" />
+<section id="creating-a-new-branch">
+<h3>2.2 Creating a New Branch<a class="headerlink" href="#creating-a-new-branch" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>feature/new-instrument-module
+</pre></div>
+</div>
 </section>
-<section id="verification">
-<h3>4. Verification<a class="headerlink" href="#verification" title="Link to this heading">#</a></h3>
-<p>How to confirm success.</p>
+<hr class="docutils" />
+<section id="committing-changes">
+<h3>2.3 Committing Changes<a class="headerlink" href="#committing-changes" title="Link to this heading">#</a></h3>
+<p>Stage changes:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>&lt;file&gt;
+<span class="c1"># Or stage all changes</span>
+git<span class="w"> </span>add<span class="w"> </span>.
+</pre></div>
+</div>
+<p>Commit with a descriptive message:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Add module for X-ray instrument calibration&quot;</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="pushing-changes">
+<h3>2.4 Pushing Changes<a class="headerlink" href="#pushing-changes" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>feature/new-instrument-module
+</pre></div>
+</div>
 </section>
 </section>
-<section id="troubleshooting">
-<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">#</a></h2>
-<p>Common issues and fixes.</p>
+<hr class="docutils" />
+<section id="pull-requests-pr">
+<h2>3. Pull Requests (PR)<a class="headerlink" href="#pull-requests-pr" title="Link to this heading">#</a></h2>
+<p>When you want to merge your branch into the main development flow, you create a <strong>Pull Request (PR)</strong>. PRs allow you and others to visualize changes, review code, discuss ideas, and request modifications.</p>
+<section id="opening-a-pull-request">
+<h3>3.1 Opening a Pull Request<a class="headerlink" href="#opening-a-pull-request" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Go to the repository on GitHub.</p></li>
+<li><p>Open the <strong>Pull Requests</strong> tab.</p></li>
+<li><p>Click <strong>New Pull Request</strong>.</p></li>
+<li><p>Select your branch.</p></li>
+<li><p>Provide a clear title and a concise summary of the changes.</p></li>
+</ol>
+<p>Using GitHub CLI:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gh<span class="w"> </span>pr<span class="w"> </span>create
+</pre></div>
+</div>
 </section>
+<hr class="docutils" />
+<section id="review-process">
+<h3>3.2 Review Process<a class="headerlink" href="#review-process" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>At least one team member review is required.</p></li>
+<li><p>The code owner (repo maintainer) must approve before merging.</p></li>
+<li><p>Use inline comments for specific suggestions or corrections.</p></li>
+<li><p>Reviewers should check:</p>
+<ul>
+<li><p>Code quality and readability</p></li>
+<li><p>Documentation updates</p></li>
+<li><p>Test coverage</p></li>
+<li><p>Consistency with project standards</p></li>
+</ul>
+</li>
+</ul>
+<p>Reviews help ensure quality and shared understanding. When reviewing or being reviewed, use GitHub’s discussion features constructively and collaboratively.</p>
+</section>
+<hr class="docutils" />
+<section id="merging-guidelines">
+<h3>3.3 Merging Guidelines<a class="headerlink" href="#merging-guidelines" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Prefer <strong>Squash and Merge</strong> into the development branch.</p></li>
+<li><p>Ensure there are no merge conflicts.</p></li>
+<li><p>Delete the source branch after merging.</p></li>
+<li><p>Update your local repository afterward.</p></li>
+</ul>
+<p>Using GitHub CLI:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gh<span class="w"> </span>pr<span class="w"> </span>merge<span class="w"> </span>&lt;PR_NUMBER&gt;
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="issues">
+<h2>4. Issues<a class="headerlink" href="#issues" title="Link to this heading">#</a></h2>
+<p>Issues allow team members to report bugs, request enhancements, discuss features, or identify missing documentation—without needing to create a pull request immediately. A good issue is clear, concise, and includes all relevant context.</p>
+<p>Issues can be linked to PRs, referenced from commits, and used as entries in Projects.</p>
+<section id="creating-an-issue">
+<h3>4.1 Creating an Issue<a class="headerlink" href="#creating-an-issue" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Open the <strong>Issues</strong> tab.</p></li>
+<li><p>Click <strong>New Issue</strong>.</p></li>
+<li><p>Choose a template when possible.</p></li>
+<li><p>Add labels and assignees.</p></li>
+<li><p>Link any related PRs or commits.</p></li>
+</ol>
+<p>Using GitHub CLI:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gh<span class="w"> </span>issue<span class="w"> </span>create
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="working-on-issues">
+<h3>4.2 Working on Issues<a class="headerlink" href="#working-on-issues" title="Link to this heading">#</a></h3>
+<p>Reference the issue in your commits:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Fix #42: Resolve gamma-ray detector calibration bug&quot;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="discussions">
+<h2>5. Discussions<a class="headerlink" href="#discussions" title="Link to this heading">#</a></h2>
+<p>Discussions provide organization-wide communication for topics that benefit from open conversation: conference planning, funding applications, documentation questions, announcements, etc. They are organized into categories and should stay focused on a single topic per discussion.</p>
+<p>Please follow the Code of Conduct and contribution guidelines. Read previous messages before posting, and stay engaged if you start or participate in a discussion.</p>
+</section>
+<hr class="docutils" />
+<section id="projects">
+<h2>6. Projects<a class="headerlink" href="#projects" title="Link to this heading">#</a></h2>
+<p>Projects help teams plan, track, and reflect on work across multiple repositories. For each CAPIBARA mission, we maintain a Project that aggregates issues and work items.</p>
+<p>Each card in a Project may represent an issue or a draft note. From within a Project, you can:</p>
+<ul class="simple">
+<li><p>open the issue</p></li>
+<li><p>edit its metadata</p></li>
+<li><p>track assignees and progress</p></li>
+<li><p>view discussions and linked PRs</p></li>
+</ul>
+<p>Projects give a high-level view of the work happening across the organization.</p>
+</section>
+<hr class="docutils" />
+<section id="best-practices">
+<h2>7. Best Practices<a class="headerlink" href="#best-practices" title="Link to this heading">#</a></h2>
+<section id="commit-frequently">
+<h3>7.1 Commit Frequently<a class="headerlink" href="#commit-frequently" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Use small, focused commits.</p></li>
+<li><p>Write clear, descriptive commit messages.</p></li>
+<li><p>Commit only working, coherent pieces of code.</p></li>
+</ul>
+</section>
+<section id="branch-management">
+<h3>7.2 Branch Management<a class="headerlink" href="#branch-management" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Never work directly on <code class="docutils literal notranslate"><span class="pre">main</span></code> or <code class="docutils literal notranslate"><span class="pre">dev</span></code>.</p></li>
+<li><p>Use feature branches.</p></li>
+<li><p>Keep branches short-lived to reduce merge conflicts.</p></li>
+</ul>
+</section>
+<section id="code-documentation">
+<h3>7.3 Code Documentation<a class="headerlink" href="#code-documentation" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Comment your code clearly.</p></li>
+<li><p>Keep README and other documentation up to date.</p></li>
+<li><p>Document setup, usage instructions, dependencies, and tests.</p></li>
+</ul>
+</section>
+<section id="repository-maintenance">
+<h3>7.4 Repository Maintenance<a class="headerlink" href="#repository-maintenance" title="Link to this heading">#</a></h3>
+<p>Regularly update your local repo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>fetch<span class="w"> </span>origin
+git<span class="w"> </span>rebase<span class="w"> </span>origin/dev
+</pre></div>
+</div>
+<p>Additional guidelines:</p>
+<ul class="simple">
+<li><p>Remove merged or closed branches.</p></li>
+<li><p>Enable security scanning and Dependabot in repositories.</p></li>
+<li><p>Close unupdated Issues and PRs</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="github-cli">
+<h2>GitHub CLI<a class="headerlink" href="#github-cli" title="Link to this heading">#</a></h2>
+<p>If you want to use GitHub without constantly switching between your browser and terminal, consider installing the <strong>GitHub CLI</strong>. It provides an intuitive command-line interface for most GitHub features.</p>
+<ul class="simple">
+<li><p>Website: <a class="reference external" href="https://cli.github.com">https://cli.github.com</a></p></li>
+<li><p>Manual: <a class="reference external" href="https://cli.github.com/manual/">https://cli.github.com/manual/</a></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="useful-resources">
+<h2>Useful Resources<a class="headerlink" href="#useful-resources" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://github.com/skills/introduction-to-github/blob/main/README.md">Introduction to GitHub (by GitHub)</a></p></li>
+<li><p><a class="reference external" href="https://github.com/CAPIBARA3/.github-private/blob/main/profile/CONTRIBUTING.md">Our Contribution Guideline</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=pBy1zgt0XPc">Explainer Video</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=tlu5e0TxSzo&amp;amp;list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f">GitHub for Beginners Series</a></p></li>
+<li><p><a class="reference external" href="https://cli.github.com">Use GitHub CLI from your shell</a></p></li>
+</ol>
+</section>
+<hr class="docutils" />
 <section id="next-steps">
 <h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading">#</a></h2>
-<p>Links to related tutorials.</p>
+<p>Now that you’re familiar with GitHub, explore our organization’s repositories and start contributing. Many of our projects involve Python, so your next step is:
+<a class="reference internal" href="07_configuring_python_pip.html"><span class="std std-doc">07_configuring_python</span></a></p>
 </section>
 </section>
 
@@ -433,11 +640,11 @@
       </div>
     </a>
     <a class="right-next"
-       href="../../governance/index.html"
+       href="07_configuring_python_pip.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Governance</p>
+        <p class="prev-next-title">07 Configuring Python Pip</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -462,14 +669,36 @@
     <ul class="nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal">Goal</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steps">Steps</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">2. Setup</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#execution">3. Execution</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verification">4. Verification</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repositories">2. Repositories</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#branching-strategy">2.1 Branching Strategy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-new-branch">2.2 Creating a New Branch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#committing-changes">2.3 Committing Changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-changes">2.4 Pushing Changes</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting">Troubleshooting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pull-requests-pr">3. Pull Requests (PR)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#opening-a-pull-request">3.1 Opening a Pull Request</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#review-process">3.2 Review Process</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#merging-guidelines">3.3 Merging Guidelines</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#issues">4. Issues</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-an-issue">4.1 Creating an Issue</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#working-on-issues">4.2 Working on Issues</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussions">5. Discussions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projects">6. Projects</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#best-practices">7. Best Practices</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commit-frequently">7.1 Commit Frequently</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#branch-management">7.2 Branch Management</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-documentation">7.3 Code Documentation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repository-maintenance">7.4 Repository Maintenance</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-cli">GitHub CLI</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#useful-resources">Useful Resources</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a></li>
 </ul>
   </nav></div>

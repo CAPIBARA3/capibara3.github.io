@@ -1,0 +1,107 @@
+# 07 Configuring Python Pip
+
+## Goal
+In this tutorial you will learn to setup your computer to compile and run code in the Python programming language. Since many times you will need additional packages, such as Matplotlib for graphics, Pandas for tabular databases, or NumPy for all sorts of math functions, we will also guide you to installin `pip` a widely used Python package manager.
+
+## Prerequisites
+- [02_setting_up_unix](02_setting_up_unix.md)
+- [03_command_line](03_command_line.md)
+
+## Steps
+
+### 1. Introduction
+Python is one of the most popular programming languages, for its versatility, simple language and lots of powerful packages. It is well-adopted in research and engineering and a very important tool for software developers as well.
+
+### 2. Setup
+Before we start we will have to check a couple things.
+
+1. Python is pre-installed in many devices running Linux or MacOS. To check whether you already have installed it run the following command in the terminal
+```bash
+python --version
+```
+Write `python3` to look for Python version >3.0 in particular. You can find out the installation location of your Python by running
+```bash
+which python
+```
+
+If you get something like
+```bash
+python 3.10.0
+```
+then you already have Python installed. `pip` is installed by default with Python after python `v3.4`, you can check for it by running
+```bash
+pip --version
+```
+
+If you also have it perfect, you are good to jump into the [common pip commands section](#5-common-pip-commands). You may want to re-install Python with the latest update, so you may also want to continue reading.
+
+If you are missing both or one of them, no problem that's why this tutorial is here. Proceed to the next steps.
+
+### 3. Execution
+
+### 3.1 Linux
+On Linux, you can install Python using the package manager `apt`:
+1. Update the package list:
+    ```bash
+    sudo apt update
+    ```
+
+2. Install Python 3:
+    ```bash
+    sudo apt install python3
+    ```
+
+3. You can verify the installation with:
+    ```bash
+    python3 --version
+    ```
+
+### 3.2 macOS
+macOS often comes with Python pre-installed, but it might not be the latest version. to install the latest version, you can use [Homebrew](https://brew.sh), a package manager for macOS:
+
+1. First, install Homebrew if you haven't already:
+    ```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+
+2. Once Homebrew is installed, you can install Python 3:
+    ```bash
+    brew install python
+    ```
+
+3. You can veryfy the installation with:
+    ```bash
+    python3 --version
+    ```
+
+### 4. Verification
+To verify your Python installation run `python --version` to find out what version you are using and `which python` to know its location (this will become helpful later with environments).
+
+To verify `pip` installation run `pip --version`.
+
+### 5. Common `pip` commands
+
+1. Upgrade `pip`: `pip install --upgrade pip`
+2. Install package: `pip install <package-name>`
+3. Upgrade package: `pip install --upgrade <package-name>`
+4. Install specific version of package: `pip install <package-name>==0.0.0>`
+5. Uninstall package: `pip uninstall <package-name>>`
+6. Show package information: `pip show <package-name>`
+
+### Learning Python
+
+Right now, we are developed a custom guide to learning Python specifically tailored for the needs of our community. However, it is a bold task that requires time and patience. For the moment I am going to recommend you the following repository: [https://github.com/omsharansalafia/intropython](https://github.com/omsharansalafia/intropython). It consists of a straightfoward, notebook based Python course focusing on the language structure itself (in general, the structure of programing), and scientific related packages and functions such as plotting, pandas, file reading/writing, and more. Plus, in contains examples you can run and exercises for every topic. Whether you are new to coding, new to the language, or just want to refresh I couldn't recommend you more trying it out.
+
+Here are some other resources for learning to code with Python:
+
+1. **Official Python Documentation:** https://docs.python.org/3/tutorial/index.html
+2. **Interactive Coding Platforms:**
+    - freeCodeCamp: https://youtu.be/rfscVS0vtbw
+    - Python Tutor: https://pythontutor.com/python-compiler.html#mode=edit
+3. **Stack Overflow**
+4. **Putting Yourself to Test:** Write some code!
+
+Remember to ask for help to me or other experienced team members when you have any doubt or questions! In our Discussions tab you can write in the IT Desk topic or create a complete new topic.
+
+## Next Steps
+Python is an essential tool for collaborating in the CAPIBARA Collaboration and it is a skill that will serve you well in the future, and not so future. Next up is [08_configuring_conda_venv](08_configuring_conda_venv.md) so you don't mess up with package updates and versions!

@@ -1,28 +1,256 @@
-# 06 Collaborating Github
+# 06 Collaborating GitHub
 
 ## Goal
-What will the user learn?
+
+Learn the GitHub workflow and how to use GitHub’s features to collaborate, contribute, and communicate with the rest of the team.
 
 ## Prerequisites
-- Basic collaboration account
-- Installed environment
 
-## Steps
+- [02_setting_up_unix](02_setting_up_unix.md)
+- [03_command_line](03_command_line.md)
+- [04_configuring_git](04_configuring_git.md)
+- [05_configuring_github](05_configuring_github.md)
 
-### 1. Introduction
-Explain context.
+---
 
-### 2. Setup
-Step-by-step instructions.
+## 1. Introduction
 
-### 3. Execution
-Commands, examples, screenshots.
+GitHub is a powerful collaboration platform that integrates the tools a distributed, mostly asynchronous team needs to work effectively.
 
-### 4. Verification
-How to confirm success.
+Because this topic is extensive, this tutorial does **not** follow the usual *Introduction → Setup → Execution → Verification* format. Instead, it is organized into these sections:
 
-## Troubleshooting
-Common issues and fixes.
+2. Repositories
+3. Pull Requests
+4. Issues
+5. Discussions
+6. Projects
+7. Best Practices
+
+---
+
+## 2. Repositories
+
+### 2.1 Branching Strategy
+
+**Main Branch (`main`)**
+Main, working, safe codebase.
+
+**Development Branch (`dev`)**
+Staging area for features before they move to `main`. Used in production repositories (e.g., published packages).
+
+**Feature Branches**
+One branch per feature, improvement, or bug fix.
+
+**Naming Conventions**
+
+* `feature/...` – New features
+* `bugfix/...` – Bug fixes
+* `hotfix/...` – Critical production fixes
+* `docs/...` – Documentation updates
+
+You may also tag the branch with your username, e.g., `feature/username/topic` such as `docs/joanalnu` or `fix-altfunc-joanalnu`.
+**Note:** For the `capibara3/papers` repository, refer to the repository-specific guidelines.
+
+---
+
+### 2.2 Creating a New Branch
+
+```bash
+git checkout -b feature/new-instrument-module
+```
+
+---
+
+### 2.3 Committing Changes
+
+Stage changes:
+
+```bash
+git add <file>
+# Or stage all changes
+git add .
+```
+
+Commit with a descriptive message:
+
+```bash
+git commit -m "Add module for X-ray instrument calibration"
+```
+
+---
+
+### 2.4 Pushing Changes
+
+```bash
+git push -u origin feature/new-instrument-module
+```
+
+---
+
+## 3. Pull Requests (PR)
+
+When you want to merge your branch into the main development flow, you create a **Pull Request (PR)**. PRs allow you and others to visualize changes, review code, discuss ideas, and request modifications.
+
+### 3.1 Opening a Pull Request
+
+1. Go to the repository on GitHub.
+2. Open the **Pull Requests** tab.
+3. Click **New Pull Request**.
+4. Select your branch.
+5. Provide a clear title and a concise summary of the changes.
+
+Using GitHub CLI:
+
+```bash
+gh pr create
+```
+
+---
+
+### 3.2 Review Process
+
+* At least one team member review is required.
+* The code owner (repo maintainer) must approve before merging.
+* Use inline comments for specific suggestions or corrections.
+* Reviewers should check:
+
+  * Code quality and readability
+  * Documentation updates
+  * Test coverage
+  * Consistency with project standards
+
+Reviews help ensure quality and shared understanding. When reviewing or being reviewed, use GitHub’s discussion features constructively and collaboratively.
+
+---
+
+### 3.3 Merging Guidelines
+
+* Prefer **Squash and Merge** into the development branch.
+* Ensure there are no merge conflicts.
+* Delete the source branch after merging.
+* Update your local repository afterward.
+
+Using GitHub CLI:
+
+```bash
+gh pr merge <PR_NUMBER>
+```
+
+---
+
+## 4. Issues
+
+Issues allow team members to report bugs, request enhancements, discuss features, or identify missing documentation—without needing to create a pull request immediately. A good issue is clear, concise, and includes all relevant context.
+
+Issues can be linked to PRs, referenced from commits, and used as entries in Projects.
+
+### 4.1 Creating an Issue
+
+1. Open the **Issues** tab.
+2. Click **New Issue**.
+3. Choose a template when possible.
+4. Add labels and assignees.
+5. Link any related PRs or commits.
+
+Using GitHub CLI:
+
+```bash
+gh issue create
+```
+
+---
+
+### 4.2 Working on Issues
+
+Reference the issue in your commits:
+
+```bash
+git commit -m "Fix #42: Resolve gamma-ray detector calibration bug"
+```
+
+---
+
+## 5. Discussions
+
+Discussions provide organization-wide communication for topics that benefit from open conversation: conference planning, funding applications, documentation questions, announcements, etc. They are organized into categories and should stay focused on a single topic per discussion.
+
+Please follow the Code of Conduct and contribution guidelines. Read previous messages before posting, and stay engaged if you start or participate in a discussion.
+
+---
+
+## 6. Projects
+
+Projects help teams plan, track, and reflect on work across multiple repositories. For each CAPIBARA mission, we maintain a Project that aggregates issues and work items.
+
+Each card in a Project may represent an issue or a draft note. From within a Project, you can:
+
+* open the issue
+* edit its metadata
+* track assignees and progress
+* view discussions and linked PRs
+
+Projects give a high-level view of the work happening across the organization.
+
+---
+
+## 7. Best Practices
+
+### 7.1 Commit Frequently
+
+* Use small, focused commits.
+* Write clear, descriptive commit messages.
+* Commit only working, coherent pieces of code.
+
+### 7.2 Branch Management
+
+* Never work directly on `main` or `dev`.
+* Use feature branches.
+* Keep branches short-lived to reduce merge conflicts.
+
+### 7.3 Code Documentation
+
+* Comment your code clearly.
+* Keep README and other documentation up to date.
+* Document setup, usage instructions, dependencies, and tests.
+
+### 7.4 Repository Maintenance
+
+Regularly update your local repo:
+
+```bash
+git fetch origin
+git rebase origin/dev
+```
+
+Additional guidelines:
+
+* Remove merged or closed branches.
+* Enable security scanning and Dependabot in repositories.
+* Close unupdated Issues and PRs
+
+---
+
+## GitHub CLI
+
+If you want to use GitHub without constantly switching between your browser and terminal, consider installing the **GitHub CLI**. It provides an intuitive command-line interface for most GitHub features.
+
+* Website: [https://cli.github.com](https://cli.github.com)
+* Manual: [https://cli.github.com/manual/](https://cli.github.com/manual/)
+
+---
+
+## Useful Resources
+
+1. [Introduction to GitHub (by GitHub)](https://github.com/skills/introduction-to-github/blob/main/README.md)
+2. [Our Contribution Guideline](https://github.com/CAPIBARA3/.github-private/blob/main/profile/CONTRIBUTING.md)
+3. [Explainer Video](https://www.youtube.com/watch?v=pBy1zgt0XPc)
+4. [GitHub for Beginners Series](https://www.youtube.com/watch?v=tlu5e0TxSzo&list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f)
+5. [Use GitHub CLI from your shell](https://cli.github.com)
+
+---
 
 ## Next Steps
-Links to related tutorials.
+
+Now that you’re familiar with GitHub, explore our organization’s repositories and start contributing. Many of our projects involve Python, so your next step is:
+[07_configuring_python](07_configuring_python_pip.md)
+

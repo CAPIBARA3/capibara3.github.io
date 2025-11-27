@@ -15,8 +15,8 @@ env/03_command_line.md
 env/04_configuring_git.md
 env/05_configuring_github.md
 env/06_collaborating_github.md
-env/07_setup_python_pip.md
-env/08_conda_venv.ms
+env/07_configuring_python_pip.md
+env/08_configuring_conda_venv.md
 env/16_docker.md
 env/17_local_latex.md
 env/X_code_editors.md

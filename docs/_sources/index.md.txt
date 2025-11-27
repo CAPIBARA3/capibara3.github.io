@@ -21,3 +21,12 @@ public/software/index
 public/onboarding/index
 public/governance/index
 ```
+
+
+## A Documentation for Documentation
+> should this be in a separated file, perhaps in public/software?
+* what is
+* how to use
+* report bugs
+* contribute
+* ...

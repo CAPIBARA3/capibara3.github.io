@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>05 GitHub &#8212; CAPIBARA  documentation</title>
+    <title>07 Configuring Python Pip &#8212; CAPIBARA  documentation</title>
   
   
   
@@ -43,11 +43,11 @@
     <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'public/onboarding/env/05_configuring_github';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'public/onboarding/env/07_configuring_python_pip';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="06 Collaborating GitHub" href="06_collaborating_github.html" />
-    <link rel="prev" title="04 Git" href="04_configuring_git.html" />
+    <link rel="next" title="08 Configuring conda venv" href="08_configuring_conda_venv.html" />
+    <link rel="prev" title="06 Collaborating GitHub" href="06_collaborating_github.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -309,9 +309,9 @@
 <li class="toctree-l1"><a class="reference internal" href="02_setting_up_unix.html">02 Installing Ubuntu on a Windows Computer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_command_line.html">03 Introduction to the command line</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_configuring_git.html">04 Git</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">05 GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_configuring_github.html">05 GitHub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="06_collaborating_github.html">06 Collaborating GitHub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="07_configuring_python_pip.html">07 Configuring Python Pip</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">07 Configuring Python Pip</a></li>
 <li class="toctree-l1"><a class="reference internal" href="08_configuring_conda_venv.html">08 Configuring conda venv</a></li>
 </ul>
 </div>
@@ -356,7 +356,7 @@
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Onboarding</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">05 GitHub</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">07 Configuring Python Pip</span></li>
   </ul>
 </nav>
 </div>
@@ -373,113 +373,129 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="github">
-<h1>05 GitHub<a class="headerlink" href="#github" title="Link to this heading">#</a></h1>
+  <section id="configuring-python-pip">
+<h1>07 Configuring Python Pip<a class="headerlink" href="#configuring-python-pip" title="Link to this heading">#</a></h1>
 <section id="goal">
 <h2>Goal<a class="headerlink" href="#goal" title="Link to this heading">#</a></h2>
-<p>The goal is to setup your GitHub account, synchronise it to your device via git and learn about useful commands and resouces.</p>
+<p>In this tutorial you will learn to setup your computer to compile and run code in the Python programming language. Since many times you will need additional packages, such as Matplotlib for graphics, Pandas for tabular databases, or NumPy for all sorts of math functions, we will also guide you to installin <code class="docutils literal notranslate"><span class="pre">pip</span></code> a widely used Python package manager.</p>
 </section>
 <section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="02_setting_up_unix.html"><span class="std std-doc">02_setting_up_unid</span></a></p></li>
+<li><p><a class="reference internal" href="02_setting_up_unix.html"><span class="std std-doc">02_setting_up_unix</span></a></p></li>
 <li><p><a class="reference internal" href="03_command_line.html"><span class="std std-doc">03_command_line</span></a></p></li>
-<li><p><a class="reference internal" href="04_configuring_git.html"><span class="std std-doc">04_configuring_git</span></a></p></li>
 </ul>
 </section>
 <section id="steps">
 <h2>Steps<a class="headerlink" href="#steps" title="Link to this heading">#</a></h2>
 <section id="introduction">
 <h3>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h3>
-<p><a class="reference external" href="https://github.com">GitHub</a> is a cloud based hub for sharing repositories, files, code using git at its core. It is where the CAPIBARA Collaboration exist, serving as our information hub for code repositories, documentation like this, general files, progress tracking and communication.</p>
-<p><strong>Why GitHub?</strong></p>
-<ul class="simple">
-<li><p>Centralized repository for hosting code and project-related documentation and files</p></li>
-<li><p>Collaborationg through pull requests, issue tracking, and discussions</p></li>
-<li><p>Code review and CI/CD integration</p></li>
-<li><p>Enhanced project management tools and organisation administration</p></li>
-<li><p>Community and open-source collaboration features</p></li>
-</ul>
+<p>Python is one of the most popular programming languages, for its versatility, simple language and lots of powerful packages. It is well-adopted in research and engineering and a very important tool for software developers as well.</p>
 </section>
 <section id="setup">
 <h3>2. Setup<a class="headerlink" href="#setup" title="Link to this heading">#</a></h3>
-</section>
-<section id="creating-a-github-account">
-<h3>2.1 Creating a GitHub Account<a class="headerlink" href="#creating-a-github-account" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>Sign up at GitHub</strong>, see this <a class="reference external" href="https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github">guide</a></p></li>
-<li><p>Set up <strong>two-factor authentication</strong> (2FA) for additional security (optional, but recommended)</p></li>
-<li><p>By sending us your GitHub username in <a class="reference internal" href="../01_getting_started.html"><span class="std std-doc">01_getting_started</span></a>, we will invite you to join the <a class="reference external" href="https://github.com/orgs/capibara3">CAPIBARA Collaboration GitHub organisation</a> and setup your teams/roles.</p></li>
-<li><p>To enable secure communication between your local machine and remote repositories, configure an SSH key (see <a class="reference internal" href="#configuring-ssh-keys-for-github"><span class="xref myst">Configuring SSH Keys for GitHub</span></a> and <a class="reference internal" href="#3-execution"><span class="xref myst">see below</span></a>)</p></li>
-</ul>
-<p>### 2.2 Useful Definitions</p>
-<ul class="simple">
-<li><p><strong>organisation:</strong> A group of people or entities that collaborate on projects and share resources on GitHub.</p></li>
-<li><p><strong>repo (repository):</strong> A central location where all the files, history, and metadata for a project are stored.</p></li>
-<li><p><strong>branch:</strong> A separate line of development in a repository, allowing multiple versions of a project to coexist.</p></li>
-<li><p><strong>commit:</strong> A snapshot of changes made to a repository, including a description of the changes and the author.</p></li>
-<li><p><strong>diff:</strong> A comparison of the differences between two versions of a file or repository.</p></li>
-<li><p><strong>fork:</strong> A copy of a repository, allowing users to experiment with changes without affecting the original.</p></li>
-<li><p><strong>pull:</strong> To retrieve changes from a remote repository and merge them into the local repository.</p></li>
-<li><p><strong>pull request:</strong> A request to merge changes from a forked repository into the original repository.</p></li>
-<li><p><strong>push:</strong> To send changes from the local repository to a remote repository.</p></li>
-<li><p><strong>staging:</strong> The process of preparing changes to be committed, including selecting the files and changes to be included.</p></li>
-</ul>
-<p>This <a class="reference external" href="https://www.youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f">video series</a> created by GitHub gets you started with the GitHub workflow and show you practical examples.</p>
+<p>Before we start we will have to check a couple things.</p>
+<ol class="arabic simple">
+<li><p>Python is pre-installed in many devices running Linux or MacOS. To check whether you already have installed it run the following command in the terminal</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>--version
+</pre></div>
+</div>
+<p>Write <code class="docutils literal notranslate"><span class="pre">python3</span></code> to look for Python version &gt;3.0 in particular. You can find out the installation location of your Python by running</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>which<span class="w"> </span>python
+</pre></div>
+</div>
+<p>If you get something like</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span><span class="m">3</span>.10.0
+</pre></div>
+</div>
+<p>then you already have Python installed. <code class="docutils literal notranslate"><span class="pre">pip</span></code> is installed by default with Python after python <code class="docutils literal notranslate"><span class="pre">v3.4</span></code>, you can check for it by running</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>--version
+</pre></div>
+</div>
+<p>If you also have it perfect, you are good to jump into the <a class="reference internal" href="#5-common-pip-commands"><span class="xref myst">common pip commands section</span></a>. You may want to re-install Python with the latest update, so you may also want to continue reading.</p>
+<p>If you are missing both or one of them, no problem that’s why this tutorial is here. Proceed to the next steps.</p>
 </section>
 <section id="execution">
 <h3>3. Execution<a class="headerlink" href="#execution" title="Link to this heading">#</a></h3>
-<p>To fully configure your device with GitHub, we need to configure an SSH key to enable your device secure access and authentication to your GitHub repositories. SSH are a credential so that the GitHub server can verify you are telling the truth when pushing changes to your or CAPIBARA’s repositories.</p>
-<ol class="arabic simple">
-<li><p><strong>Generate a new SSH key</strong></p></li>
-</ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;your.email@example.com&quot;</span><span class="w"> </span>-f<span class="w"> </span>~/.ssh/my_key_name
+</section>
+<section id="linux">
+<h3>3.1 Linux<a class="headerlink" href="#linux" title="Link to this heading">#</a></h3>
+<p>On Linux, you can install Python using the package manager <code class="docutils literal notranslate"><span class="pre">apt</span></code>:</p>
+<ol class="arabic">
+<li><p>Update the package list:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update
 </pre></div>
 </div>
-<ol class="arabic simple" start="2">
-<li><p><strong>Save the key pair</strong>: You will be prompted to save the key pair. Choose a secure location such as <code class="docutils literal notranslate"><span class="pre">~/.ssh/</span></code>.</p></li>
-<li><p><strong>Add the SSH Key to the ssh-agent</strong>:</p></li>
-</ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">eval</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>ssh-agent<span class="w"> </span>-s<span class="k">)</span><span class="s2">&quot;</span>
-ssh-add<span class="w"> </span>~/.ssh/my_key_name
+</li>
+<li><p>Install Python 3:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3
 </pre></div>
 </div>
-<ol class="arabic simple" start="4">
-<li><p><strong>Copy the SSH key</strong>: Copy the contents of the public key file <code class="docutils literal notranslate"><span class="pre">~/.ssh/my_key_name.pub</span></code>.</p></li>
-<li><p><strong>Add the SSH key to your GitHub account</strong>:</p>
-<ul class="simple">
-<li><p>Go to your GitHub account settings.</p></li>
-<li><p>Click on “SSH and GPG keys” in the left-hand menu.</p></li>
-<li><p>Click “New SSH key”.</p></li>
-<li><p>Give your key a label (e.g., “Laptop”).</p></li>
-<li><p>Paste the contents of your public key into the “Key” field.</p></li>
-<li><p>Click “Add SSH key”.</p></li>
-</ul>
+</li>
+<li><p>You can verify the installation with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>--version
+</pre></div>
+</div>
+</li>
+</ol>
+<p>### 3.2 macOS
+macOS often comes with Python pre-installed, but it might not be the latest version. to install the latest version, you can use <a class="reference external" href="https://brew.sh">Homebrew</a>, a package manager for macOS:</p>
+<ol class="arabic">
+<li><p>First, install Homebrew if you haven’t already:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Once Homebrew is installed, you can install Python 3:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew<span class="w"> </span>install<span class="w"> </span>python
+</pre></div>
+</div>
+</li>
+<li><p>You can veryfy the installation with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>--version
+</pre></div>
+</div>
 </li>
 </ol>
 </section>
 <section id="verification">
 <h3>4. Verification<a class="headerlink" href="#verification" title="Link to this heading">#</a></h3>
-<ol class="arabic" start="6">
-<li><p><strong>Verify the SSH connection</strong>:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>-T<span class="w"> </span>git@github.com
-</pre></div>
-</div>
-<p>You should see a message indicating that you’ve successfully authenticated.</p>
-</li>
-<li><p><strong>Use the SSH URL for cloning repositories</strong>:
-Instead of using the HTTPS URL, use the SSH URL to clone repositories:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:username/repository.git
-</pre></div>
-</div>
-<p>Replace <code class="docutils literal notranslate"><span class="pre">username</span></code> and <code class="docutils literal notranslate"><span class="pre">repository</span></code> with your actual GitHub username and repository name.</p>
-</li>
+<p>To verify your Python installation run <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">--version</span></code> to find out what version you are using and <code class="docutils literal notranslate"><span class="pre">which</span> <span class="pre">python</span></code> to know its location (this will become helpful later with environments).</p>
+<p>To verify <code class="docutils literal notranslate"><span class="pre">pip</span></code> installation run <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">--version</span></code>.</p>
+</section>
+<section id="common-pip-commands">
+<h3>5. Common <code class="docutils literal notranslate"><span class="pre">pip</span></code> commands<a class="headerlink" href="#common-pip-commands" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Upgrade <code class="docutils literal notranslate"><span class="pre">pip</span></code>: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--upgrade</span> <span class="pre">pip</span></code></p></li>
+<li><p>Install package: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">&lt;package-name&gt;</span></code></p></li>
+<li><p>Upgrade package: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--upgrade</span> <span class="pre">&lt;package-name&gt;</span></code></p></li>
+<li><p>Install specific version of package: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">&lt;package-name&gt;==0.0.0&gt;</span></code></p></li>
+<li><p>Uninstall package: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">uninstall</span> <span class="pre">&lt;package-name&gt;&gt;</span></code></p></li>
+<li><p>Show package information: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">show</span> <span class="pre">&lt;package-name&gt;</span></code></p></li>
 </ol>
+</section>
+<section id="learning-python">
+<h3>Learning Python<a class="headerlink" href="#learning-python" title="Link to this heading">#</a></h3>
+<p>Right now, we are developed a custom guide to learning Python specifically tailored for the needs of our community. However, it is a bold task that requires time and patience. For the moment I am going to recommend you the following repository: <a class="github reference external" href="https://github.com/omsharansalafia/intropython">omsharansalafia/intropython</a>. It consists of a straightfoward, notebook based Python course focusing on the language structure itself (in general, the structure of programing), and scientific related packages and functions such as plotting, pandas, file reading/writing, and more. Plus, in contains examples you can run and exercises for every topic. Whether you are new to coding, new to the language, or just want to refresh I couldn’t recommend you more trying it out.</p>
+<p>Here are some other resources for learning to code with Python:</p>
+<ol class="arabic simple">
+<li><p><strong>Official Python Documentation:</strong> https://docs.python.org/3/tutorial/index.html</p></li>
+<li><p><strong>Interactive Coding Platforms:</strong></p>
+<ul class="simple">
+<li><p>freeCodeCamp: https://youtu.be/rfscVS0vtbw</p></li>
+<li><p>Python Tutor: https://pythontutor.com/python-compiler.html#mode=edit</p></li>
+</ul>
+</li>
+<li><p><strong>Stack Overflow</strong></p></li>
+<li><p><strong>Putting Yourself to Test:</strong> Write some code!</p></li>
+</ol>
+<p>Remember to ask for help to me or other experienced team members when you have any doubt or questions! In our Discussions tab you can write in the IT Desk topic or create a complete new topic.</p>
 </section>
 </section>
 <section id="next-steps">
 <h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading">#</a></h2>
-<p>Perfect, you are now prepared to start using GitHub like a professional. Let’s continue by learning how to <a class="reference internal" href="#06_collaborate_github.md"><span class="xref myst">06_collaborate_github</span></a></p>
+<p>Python is an essential tool for collaborating in the CAPIBARA Collaboration and it is a skill that will serve you well in the future, and not so future. Next up is <a class="reference internal" href="08_configuring_conda_venv.html"><span class="std std-doc">08_configuring_conda_venv</span></a> so you don’t mess up with package updates and versions!</p>
 </section>
 </section>
 
@@ -494,20 +510,20 @@ Instead of using the HTTPS URL, use the SSH URL to clone repositories:</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="04_configuring_git.html"
+       href="06_collaborating_github.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">04 Git</p>
+        <p class="prev-next-title">06 Collaborating GitHub</p>
       </div>
     </a>
     <a class="right-next"
-       href="06_collaborating_github.html"
+       href="08_configuring_conda_venv.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">06 Collaborating GitHub</p>
+        <p class="prev-next-title">08 Configuring conda venv</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -535,9 +551,11 @@ Instead of using the HTTPS URL, use the SSH URL to clone repositories:</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steps">Steps</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">2. Setup</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-github-account">2.1 Creating a GitHub Account</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#execution">3. Execution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linux">3.1 Linux</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verification">4. Verification</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-pip-commands">5. Common <code class="docutils literal notranslate"><span class="pre">pip</span></code> commands</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-python">Learning Python</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a></li>
@@ -548,7 +566,7 @@ Instead of using the HTTPS URL, use the SSH URL to clone repositories:</p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../../_sources/public/onboarding/env/05_configuring_github.md.txt"
+      <li><a href="../../../_sources/public/onboarding/env/07_configuring_python_pip.md.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>
