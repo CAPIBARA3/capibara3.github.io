@@ -4,9 +4,9 @@
 
 This guide will walk you through the process of installing Ubuntu on your Windows computer using **VirtualBox**, a free virtualization tool that allows you to run Ubuntu in a window—like an app—without modifying your existing Windows installation.
 
-Using a virtual machine (VM) is often the easiest and safest way for new employees to get a Unix-like development environment.
+Using a virtual machine (VM) is often the easiest and safest way for you to get a Unix-like development environment.
 
-Please note that I haven’t personally validated every step of this process. If you encounter issues, consult your internal IT team or VirtualBox/Ubuntu documentation.
+Please note that I haven’t personally validated every step of this process. Besides, your computer might have custom or simply different settings. If you encounter issues, consult the VirtualBox/Ubuntu documentation or reach out to other members.
 
 ## Prerequisites
 
