@@ -1,0 +1,28 @@
+# [Tutorial Title]
+
+## Goal
+What will the user learn?
+
+## Prerequisites
+- Basic collaboration account
+- Installed environment
+
+## Steps
+
+### 1. Introduction
+Explain context.
+
+### 2. Setup
+Step-by-step instructions.
+
+### 3. Execution
+Commands, examples, screenshots.
+
+### 4. Verification
+How to confirm success.
+
+## Troubleshooting
+Common issues and fixes.
+
+## Next Steps
+Links to related tutorials.

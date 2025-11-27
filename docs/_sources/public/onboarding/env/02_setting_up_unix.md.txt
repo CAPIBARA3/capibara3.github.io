@@ -1,0 +1,197 @@
+# 02 Installing Ubuntu on a Windows Computer
+
+## Goal
+
+This guide will walk you through the process of installing Ubuntu on your Windows computer using **VirtualBox**, a free virtualization tool that allows you to run Ubuntu in a window—like an app—without modifying your existing Windows installation.
+
+Using a virtual machine (VM) is often the easiest and safest way for new employees to get a Unix-like development environment.
+
+Please note that I haven’t personally validated every step of this process. If you encounter issues, consult your internal IT team or VirtualBox/Ubuntu documentation.
+
+## Prerequisites
+
+* A Windows computer with:
+
+  * At least **8 GB RAM** (16 GB recommended)
+  * At least **20–30 GB free disk space**
+* Internet connection
+* Permission to install software
+* **Ubuntu ISO** (downloadable from ubuntu.com)
+
+---
+
+## Steps
+
+### 1. Introduction
+
+**Why install Ubuntu (or Linux in general) on a Windows computer?**
+
+* **Seamless Code Integration:** Aligns your environment with Linux/macOS (Unix-based) systems, reducing platform-specific bugs.
+* **Consistent File Paths:** Ensures compatibility with Unix-style file paths and case-sensitive filesystems.
+* **Efficient Package Management:** Use APT and other tools for easy installation and management of dependencies.
+* **Improved Development Tools:** Access to Bash, Docker, SSH, and open-source utilities that streamline collaboration.
+* **Better Collaboration:** Reduces “works on my machine” variability and aligns dev environments across teams.
+
+Virtual machines make this possible without altering your actual Windows installation.
+
+---
+
+## 2. Setup
+
+### Step 2.1 — Download VirtualBox
+
+1. Visit: [https://www.virtualbox.org](https://www.virtualbox.org)
+2. Click **Downloads**.
+3. Select **Windows hosts**.
+4. Run the installer and follow the prompts (default options are fine).
+
+### Step 2.2 — Download the Ubuntu ISO
+
+1. Visit: [https://ubuntu.com/download](https://ubuntu.com/download)
+2. Choose **Ubuntu Desktop LTS** (recommended for stability).
+3. Download the `.iso` file (around 4–5 GB).
+
+### Step 2.3 — Create a New Virtual Machine
+
+1. Open **VirtualBox**.
+2. Click **New**.
+3. Fill in:
+
+   * **Name:** Ubuntu
+   * **Type:** Linux
+   * **Version:** Ubuntu (64-bit)
+4. Click **Next**.
+
+### Step 2.4 — Allocate RAM
+
+* Choose how much memory to give the VM:
+
+  * **4 GB (4096 MB)** minimum
+  * **8 GB or more** recommended if your system allows
+
+Click **Next**.
+
+### Step 2.5 — Create Virtual Hard Disk
+
+1. Select **Create a virtual hard disk now**.
+2. Choose:
+
+   * Type: **VDI (VirtualBox Disk Image)**
+   * Storage: **Dynamically allocated**
+3. Set size: **20–40 GB** depending on needs.
+
+Click **Create**.
+
+### Step 2.6 — Attach the Ubuntu ISO
+
+1. Select your new VM in the VirtualBox list.
+2. Click **Settings → Storage**.
+3. Under “Controller: IDE,” click the empty disk icon.
+4. On the right, click the small disk icon → **Choose a disk file…**
+5. Select the Ubuntu ISO you downloaded.
+
+Click **OK**.
+
+---
+
+## 3. Execution
+
+### Step 3.1 — Start the VM
+
+Click **Start** and the Ubuntu installer will launch.
+
+### Step 3.2 — Install Ubuntu
+
+When the Ubuntu splash screen appears:
+
+1. Choose **Try or Install Ubuntu**.
+2. Select your language.
+3. Click **Install Ubuntu**.
+
+Follow the installation wizard:
+
+* **Keyboard Layout:** Keep default or adjust.
+* **Updates and Other Software:**
+
+  * Normal installation (recommended)
+  * Check “Install third-party software” if needed for Wi-Fi/media
+* **Installation Type:**
+
+  * Choose **Erase disk and install Ubuntu**
+    *This only affects the VM’s virtual disk, not your real Windows disk.*
+* **Username and Password:**
+  Create a user you’ll use for development.
+
+Click **Install Now** and wait for installation to complete.
+
+### Step 3.3 — Restart
+
+After installation finishes, restart the VM when prompted.
+If the ISO boots again by accident, shut down the VM, remove the ISO from **Settings → Storage**, and start it again.
+
+---
+
+## 4. Verification
+
+After Ubuntu boots into the desktop:
+
+### Verify system basics
+
+Open the terminal (Ctrl+Alt+T):
+
+```bash
+lsb_release -a
+```
+
+You should see Ubuntu version information.
+
+### Verify internet connectivity
+
+```bash
+ping -c 3 google.com
+```
+
+### Verify package installation works
+
+```bash
+sudo apt update && sudo apt upgrade
+```
+
+### Optional: verify shared folders (if configured)
+
+Check `/media` or `/mnt` for your Windows-shared folder.
+
+---
+
+## Troubleshooting
+
+### VM won’t start / 64-bit options missing
+
+* Enable **Virtualization Technology (VT-x/AMD-V)** in BIOS.
+* Close software that conflicts with virtualization (e.g., Hyper-V, WSL2, Docker Desktop).
+  You may need to disable Hyper-V in *Windows Features*.
+
+### Ubuntu installation freezes
+
+* Increase RAM or video memory in VirtualBox settings.
+* Switch **Graphics Controller** to “VMSVGA”.
+
+### No internet in VM
+
+* In VirtualBox: **Settings → Network → Adapter 1 → NAT**.
+
+### Screen resolution is low
+
+* Inside Ubuntu terminal, install Guest Additions:
+
+  ```bash
+  sudo apt install virtualbox-guest-dkms virtualbox-guest-x11
+  ```
+
+  Then reboot.
+
+---
+
+## Next Steps
+
+You now have a functional Ubuntu VM. Continue with: [03_command_line](03_command_line.md)

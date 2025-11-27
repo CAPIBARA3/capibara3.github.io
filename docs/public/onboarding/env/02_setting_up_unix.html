@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; CAPIBARA  documentation</title>
+    <title>02 Installing Ubuntu on a Windows Computer &#8212; CAPIBARA  documentation</title>
   
   
   
@@ -332,7 +332,7 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">&lt;no title&gt;</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">02 Installing Ubuntu on a Windows Computer</span></li>
   </ul>
 </nav>
 </div>
@@ -349,7 +349,230 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  
+  <section id="installing-ubuntu-on-a-windows-computer">
+<h1>02 Installing Ubuntu on a Windows Computer<a class="headerlink" href="#installing-ubuntu-on-a-windows-computer" title="Link to this heading">#</a></h1>
+<section id="goal">
+<h2>Goal<a class="headerlink" href="#goal" title="Link to this heading">#</a></h2>
+<p>This guide will walk you through the process of installing Ubuntu on your Windows computer using <strong>VirtualBox</strong>, a free virtualization tool that allows you to run Ubuntu in a window—like an app—without modifying your existing Windows installation.</p>
+<p>Using a virtual machine (VM) is often the easiest and safest way for new employees to get a Unix-like development environment.</p>
+<p>Please note that I haven’t personally validated every step of this process. If you encounter issues, consult your internal IT team or VirtualBox/Ubuntu documentation.</p>
+</section>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>A Windows computer with:</p>
+<ul>
+<li><p>At least <strong>8 GB RAM</strong> (16 GB recommended)</p></li>
+<li><p>At least <strong>20–30 GB free disk space</strong></p></li>
+</ul>
+</li>
+<li><p>Internet connection</p></li>
+<li><p>Permission to install software</p></li>
+<li><p><strong>Ubuntu ISO</strong> (downloadable from ubuntu.com)</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="steps">
+<h2>Steps<a class="headerlink" href="#steps" title="Link to this heading">#</a></h2>
+<section id="introduction">
+<h3>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h3>
+<p><strong>Why install Ubuntu (or Linux in general) on a Windows computer?</strong></p>
+<ul class="simple">
+<li><p><strong>Seamless Code Integration:</strong> Aligns your environment with Linux/macOS (Unix-based) systems, reducing platform-specific bugs.</p></li>
+<li><p><strong>Consistent File Paths:</strong> Ensures compatibility with Unix-style file paths and case-sensitive filesystems.</p></li>
+<li><p><strong>Efficient Package Management:</strong> Use APT and other tools for easy installation and management of dependencies.</p></li>
+<li><p><strong>Improved Development Tools:</strong> Access to Bash, Docker, SSH, and open-source utilities that streamline collaboration.</p></li>
+<li><p><strong>Better Collaboration:</strong> Reduces “works on my machine” variability and aligns dev environments across teams.</p></li>
+</ul>
+<p>Virtual machines make this possible without altering your actual Windows installation.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="setup">
+<h2>2. Setup<a class="headerlink" href="#setup" title="Link to this heading">#</a></h2>
+<section id="step-2-1-download-virtualbox">
+<h3>Step 2.1 — Download VirtualBox<a class="headerlink" href="#step-2-1-download-virtualbox" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Visit: <a class="reference external" href="https://www.virtualbox.org">https://www.virtualbox.org</a></p></li>
+<li><p>Click <strong>Downloads</strong>.</p></li>
+<li><p>Select <strong>Windows hosts</strong>.</p></li>
+<li><p>Run the installer and follow the prompts (default options are fine).</p></li>
+</ol>
+</section>
+<section id="step-2-2-download-the-ubuntu-iso">
+<h3>Step 2.2 — Download the Ubuntu ISO<a class="headerlink" href="#step-2-2-download-the-ubuntu-iso" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Visit: <a class="reference external" href="https://ubuntu.com/download">https://ubuntu.com/download</a></p></li>
+<li><p>Choose <strong>Ubuntu Desktop LTS</strong> (recommended for stability).</p></li>
+<li><p>Download the <code class="docutils literal notranslate"><span class="pre">.iso</span></code> file (around 4–5 GB).</p></li>
+</ol>
+</section>
+<section id="step-2-3-create-a-new-virtual-machine">
+<h3>Step 2.3 — Create a New Virtual Machine<a class="headerlink" href="#step-2-3-create-a-new-virtual-machine" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Open <strong>VirtualBox</strong>.</p></li>
+<li><p>Click <strong>New</strong>.</p></li>
+<li><p>Fill in:</p>
+<ul class="simple">
+<li><p><strong>Name:</strong> Ubuntu</p></li>
+<li><p><strong>Type:</strong> Linux</p></li>
+<li><p><strong>Version:</strong> Ubuntu (64-bit)</p></li>
+</ul>
+</li>
+<li><p>Click <strong>Next</strong>.</p></li>
+</ol>
+</section>
+<section id="step-2-4-allocate-ram">
+<h3>Step 2.4 — Allocate RAM<a class="headerlink" href="#step-2-4-allocate-ram" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Choose how much memory to give the VM:</p>
+<ul>
+<li><p><strong>4 GB (4096 MB)</strong> minimum</p></li>
+<li><p><strong>8 GB or more</strong> recommended if your system allows</p></li>
+</ul>
+</li>
+</ul>
+<p>Click <strong>Next</strong>.</p>
+</section>
+<section id="step-2-5-create-virtual-hard-disk">
+<h3>Step 2.5 — Create Virtual Hard Disk<a class="headerlink" href="#step-2-5-create-virtual-hard-disk" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Select <strong>Create a virtual hard disk now</strong>.</p></li>
+<li><p>Choose:</p>
+<ul class="simple">
+<li><p>Type: <strong>VDI (VirtualBox Disk Image)</strong></p></li>
+<li><p>Storage: <strong>Dynamically allocated</strong></p></li>
+</ul>
+</li>
+<li><p>Set size: <strong>20–40 GB</strong> depending on needs.</p></li>
+</ol>
+<p>Click <strong>Create</strong>.</p>
+</section>
+<section id="step-2-6-attach-the-ubuntu-iso">
+<h3>Step 2.6 — Attach the Ubuntu ISO<a class="headerlink" href="#step-2-6-attach-the-ubuntu-iso" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Select your new VM in the VirtualBox list.</p></li>
+<li><p>Click <strong>Settings → Storage</strong>.</p></li>
+<li><p>Under “Controller: IDE,” click the empty disk icon.</p></li>
+<li><p>On the right, click the small disk icon → <strong>Choose a disk file…</strong></p></li>
+<li><p>Select the Ubuntu ISO you downloaded.</p></li>
+</ol>
+<p>Click <strong>OK</strong>.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="execution">
+<h2>3. Execution<a class="headerlink" href="#execution" title="Link to this heading">#</a></h2>
+<section id="step-3-1-start-the-vm">
+<h3>Step 3.1 — Start the VM<a class="headerlink" href="#step-3-1-start-the-vm" title="Link to this heading">#</a></h3>
+<p>Click <strong>Start</strong> and the Ubuntu installer will launch.</p>
+</section>
+<section id="step-3-2-install-ubuntu">
+<h3>Step 3.2 — Install Ubuntu<a class="headerlink" href="#step-3-2-install-ubuntu" title="Link to this heading">#</a></h3>
+<p>When the Ubuntu splash screen appears:</p>
+<ol class="arabic simple">
+<li><p>Choose <strong>Try or Install Ubuntu</strong>.</p></li>
+<li><p>Select your language.</p></li>
+<li><p>Click <strong>Install Ubuntu</strong>.</p></li>
+</ol>
+<p>Follow the installation wizard:</p>
+<ul class="simple">
+<li><p><strong>Keyboard Layout:</strong> Keep default or adjust.</p></li>
+<li><p><strong>Updates and Other Software:</strong></p>
+<ul>
+<li><p>Normal installation (recommended)</p></li>
+<li><p>Check “Install third-party software” if needed for Wi-Fi/media</p></li>
+</ul>
+</li>
+<li><p><strong>Installation Type:</strong></p>
+<ul>
+<li><p>Choose <strong>Erase disk and install Ubuntu</strong>
+<em>This only affects the VM’s virtual disk, not your real Windows disk.</em></p></li>
+</ul>
+</li>
+<li><p><strong>Username and Password:</strong>
+Create a user you’ll use for development.</p></li>
+</ul>
+<p>Click <strong>Install Now</strong> and wait for installation to complete.</p>
+</section>
+<section id="step-3-3-restart">
+<h3>Step 3.3 — Restart<a class="headerlink" href="#step-3-3-restart" title="Link to this heading">#</a></h3>
+<p>After installation finishes, restart the VM when prompted.
+If the ISO boots again by accident, shut down the VM, remove the ISO from <strong>Settings → Storage</strong>, and start it again.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="verification">
+<h2>4. Verification<a class="headerlink" href="#verification" title="Link to this heading">#</a></h2>
+<p>After Ubuntu boots into the desktop:</p>
+<section id="verify-system-basics">
+<h3>Verify system basics<a class="headerlink" href="#verify-system-basics" title="Link to this heading">#</a></h3>
+<p>Open the terminal (Ctrl+Alt+T):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>lsb_release<span class="w"> </span>-a
+</pre></div>
+</div>
+<p>You should see Ubuntu version information.</p>
+</section>
+<section id="verify-internet-connectivity">
+<h3>Verify internet connectivity<a class="headerlink" href="#verify-internet-connectivity" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">3</span><span class="w"> </span>google.com
+</pre></div>
+</div>
+</section>
+<section id="verify-package-installation-works">
+<h3>Verify package installation works<a class="headerlink" href="#verify-package-installation-works" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade
+</pre></div>
+</div>
+</section>
+<section id="optional-verify-shared-folders-if-configured">
+<h3>Optional: verify shared folders (if configured)<a class="headerlink" href="#optional-verify-shared-folders-if-configured" title="Link to this heading">#</a></h3>
+<p>Check <code class="docutils literal notranslate"><span class="pre">/media</span></code> or <code class="docutils literal notranslate"><span class="pre">/mnt</span></code> for your Windows-shared folder.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">#</a></h2>
+<section id="vm-wont-start-64-bit-options-missing">
+<h3>VM won’t start / 64-bit options missing<a class="headerlink" href="#vm-wont-start-64-bit-options-missing" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Enable <strong>Virtualization Technology (VT-x/AMD-V)</strong> in BIOS.</p></li>
+<li><p>Close software that conflicts with virtualization (e.g., Hyper-V, WSL2, Docker Desktop).
+You may need to disable Hyper-V in <em>Windows Features</em>.</p></li>
+</ul>
+</section>
+<section id="ubuntu-installation-freezes">
+<h3>Ubuntu installation freezes<a class="headerlink" href="#ubuntu-installation-freezes" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Increase RAM or video memory in VirtualBox settings.</p></li>
+<li><p>Switch <strong>Graphics Controller</strong> to “VMSVGA”.</p></li>
+</ul>
+</section>
+<section id="no-internet-in-vm">
+<h3>No internet in VM<a class="headerlink" href="#no-internet-in-vm" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>In VirtualBox: <strong>Settings → Network → Adapter 1 → NAT</strong>.</p></li>
+</ul>
+</section>
+<section id="screen-resolution-is-low">
+<h3>Screen resolution is low<a class="headerlink" href="#screen-resolution-is-low" title="Link to this heading">#</a></h3>
+<ul>
+<li><p>Inside Ubuntu terminal, install Guest Additions:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>virtualbox-guest-dkms<span class="w"> </span>virtualbox-guest-x11
+</pre></div>
+</div>
+<p>Then reboot.</p>
+</li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="next-steps">
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading">#</a></h2>
+<p>You now have a functional Ubuntu VM. Continue with: <a class="reference internal" href="03_command_line.html"><span class="std std-doc">03_command_line</span></a></p>
+</section>
+</section>
+
 
                 </article>
               
@@ -378,9 +601,44 @@
     <i class="fa-solid fa-list"></i> On this page
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal">Goal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steps">Steps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction</a></li>
 </ul>
-
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">2. Setup</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-1-download-virtualbox">Step 2.1 — Download VirtualBox</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-2-download-the-ubuntu-iso">Step 2.2 — Download the Ubuntu ISO</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-3-create-a-new-virtual-machine">Step 2.3 — Create a New Virtual Machine</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-4-allocate-ram">Step 2.4 — Allocate RAM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-5-create-virtual-hard-disk">Step 2.5 — Create Virtual Hard Disk</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-6-attach-the-ubuntu-iso">Step 2.6 — Attach the Ubuntu ISO</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#execution">3. Execution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-1-start-the-vm">Step 3.1 — Start the VM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-2-install-ubuntu">Step 3.2 — Install Ubuntu</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-3-restart">Step 3.3 — Restart</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verification">4. Verification</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verify-system-basics">Verify system basics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verify-internet-connectivity">Verify internet connectivity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verify-package-installation-works">Verify package installation works</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-verify-shared-folders-if-configured">Optional: verify shared folders (if configured)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting">Troubleshooting</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vm-wont-start-64-bit-options-missing">VM won’t start / 64-bit options missing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ubuntu-installation-freezes">Ubuntu installation freezes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-internet-in-vm">No internet in VM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#screen-resolution-is-low">Screen resolution is low</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a></li>
+</ul>
   </nav></div>
 
   <div class="sidebar-secondary-item">

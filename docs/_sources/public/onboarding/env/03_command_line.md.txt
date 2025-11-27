@@ -1,0 +1,134 @@
+# 03 Introduction to the command line
+
+## Goal
+In this tutorial, we'll cover the basic concepts of useing the terminal (often also called shell or command line) and introduce you to some of the most common and important commands that will help you navigate and manage files on your system.
+
+## Prerequisites
+- [02_setting_up_unix.md](02_setting_up_unix.md)
+
+## Steps
+
+### 1. Introduction
+The shell, also known as the command line, terminal, or command prompt, is an interface that allows you to interact directly with your computer’s operating system using text-based commands. It may look intimidating at first, but it’s a powerful tool that gives you control over your system.
+
+In a terminal, you type commands to:
+
+* Navigate the file system
+* Create, move, and delete files and directories
+* Install software packages
+* And much more!
+
+### 2. Setup
+
+Terminal should be a native application of your operating system, you can open it by:
+* **Linux**: Press `Ctrl + Alt + T` or search for "Terminal" in your application menu.
+* *macOS**: Press `Cmd + Space`, type "Terminal" and hit `Enter`
+
+### 3. Execution
+
+Here are some fundamental commands to get started. Try typing these into your terminal:
+
+### 3.1 **Navigating Directories**
+
+- **`pwd`** — **Print Working Directory**: Shows the current directory you’re in.
+  ```bash
+  pwd
+
+Output example: `/home/username`
+
+- **`ls`** — **List**: Lists the files and directories in your current directory.
+    ```bash
+    ls
+    ```
+Output example: `Documents  Downloads  Pictures  Projects`
+
+- **`cd`** — **Change Directory**: Changes the current directory.
+    ```bash
+    cd Documents
+    ```
+use `cd ..`to go up one level in the directory tree.
+
+### 3.2 **Managing Files and Directories**
+- **`mkdir`** — **Make Directory**: Creates a new directory.
+    ```bash
+    mkdir my_new_directory
+    ```
+
+- **`touch`** - **Create Empty File**: Creates an empty file.
+    ```bash
+    touch myfile.txt
+    ```
+
+- **`rm`** — **Remove**: Deletes a file.
+    ```bash
+    rm myfile.txt
+    ```
+
+- **`rmdir`** — **Remove Directory**: Deletes an empty directory.
+    ```bash
+    rmdir my_new_directory
+    ```
+
+### 3.3 **Viewing and Editing Files**
+- **`cat`** — **Concatenate**: Displays the content of a file.
+    ```bash
+    cat myfile.txt
+    ```
+
+- **`nano`** — **Text Editor**: A simple text editor to edit files.
+    ```bash
+    nano myfile.txt
+    ```
+
+Press `Ctrl + X` to exit.
+Press `Y` to confirm saving changes.
+
+
+## 3.4 Using the `man` Command
+Many commands in the terminal have built-in help. The `man` command is used to open the manual (help documentation) for a command. For example:
+
+```bash
+man ls
+```
+
+This will show detailed information about the `ls` command and its options. Press `q` to exit the manual.
+
+## 3.5 Understanding the File System
+In Unix-like systems, files and directories are organized in a hierarchical structure. Here’s a basic rundown of the common directories you may encounter:
+
+* `/` — The root directory, the top of the file system.
+* `/home/username/` — Your personal home directory.
+* `/bin/` — Essential system binaries (programs).
+* `/usr/` — User utilities and applications.
+
+
+## 3.6 Permissions in the Terminal
+You might see some commands fail or require elevated privileges. This is because files and directories in Unix-like systems have permissions. For example:
+
+- **`chmod`** — Changes file permissions.
+    ```bash
+    chmod +x myscript.sh
+    ```
+- **`sudo`** — Execute commands as the superuser (administrator).
+    ```bash
+    sudo apt update
+    ```
+Note: You'll need to enter your password when using sudo.
+
+## 3.7 A Few More Useful Commands
+- **`clear`** — Clears the terminal screen.
+    ```bash
+    clear
+    ```
+- **`exit`** - Closes the terminal window.
+    ```bash
+    exit
+    ```
+
+### 4. Verification
+You can always go to your file explorer or finder application and check whether you actions in the terminal have been reflected in this more intuitive setting.
+
+The ebst way to getThe best way to get comfortable with the terminal is through practise. Try using the commands above to navigate, create files, and explore your system. You can always use the `man <command>` to get more information and help about any command.
+
+## Next Steps
+Now that you can create, edit, move, copy and delete files it would be beneficial to keep track of your changes: [04_git](04_git.md)
