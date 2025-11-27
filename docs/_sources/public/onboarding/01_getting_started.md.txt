@@ -28,7 +28,7 @@ In order to finalise the joining process, you need to enter the CAPIBARA GitHub 
 * Links (LinkedIn, YouTube, website, email, get inspired by other profiles!)
 * Short presentation video (30 sec max)
 
-> _Providing this data is optional, and you may also request not to have a public profile. By sending the data, you agree to it being treated as outlined here. It will be hosted on GitHub Pages and be publicly available on the CAPIBARA Collaboration’s website._
+> _Providing this data is optional, and you may also request not to have a public profile or to delete your data anytime. By sending the data, you agree to it being treated as outlined here. It will be hosted on GitHub Pages and be publicly available on the CAPIBARA Collaboration’s website._
 
 
 
@@ -45,4 +45,4 @@ After sharing this information, you may proceed to read the most important docum
 -
 
 ## Next Steps
-Once you have joined the CAPIBARA GitHub organisation, you can start contributing! Plus, you also have access to all of our private files. Make sure to always comply with the code of conduct and contribution expectations, both collaboration-wide and repository-specific guideslines. You will learn about GitHub in a future tutorial. Now, let's set up your computer: [02_setting_up_unix.md](env/02_setting_up_unix.md).
+Once you have joined the CAPIBARA GitHub organisation, you can start contributing! Plus, you also have access to all of our private files. Make sure to always comply with the code of conduct and contribution expectations, both collaboration-wide and repository-specific guidelines. You will learn about GitHub in a future tutorial. Now, let's set up your computer: [02_setting_up_unix.md](env/02_setting_up_unix.md).
