@@ -1,1 +1,31 @@
 # Onboarding
+
+Coming description...
+
+```{toctree}
+:maxdepth: 2
+:caption: Onboarding Tutorials
+
+00_applying_to_join.md
+01_getting_started.md
+
+env/02_setting_up_unix.md
+env/03_command_line.md
+env/04_git.md
+env/05_github.md
+env/06_setup_python_pip.md
+env/07_conda_venv.ms
+env/15_docker.md
+env/16_local_latex.md
+env/X_code_editors.md
+
+<!--│   ├── python/ # right now recommending gh.com/omsharansalafia/intropython, a python tutorial series might come in the future
+│   │   ├── 08_python_basics.md
+│   │   ├── 09_jupyter_notebook.md
+│   │   ├── 10_numpy_pandas.md
+│   │   ├── 11_matplotlib.md
+│   │   └── 12_scipy_fitting.md-->
+
+engineering/13_automating_tests.md
+engineering/14_packages.md
+```
