@@ -28,7 +28,7 @@ Terminal should be a native application of your operating system, you can open i
 
 Here are some fundamental commands to get started. Try typing these into your terminal:
 
-### 3.1 **Navigating Directories**
+### 3.1 Navigating Directories
 
 - **`pwd`** — **Print Working Directory**: Shows the current directory you’re in.
   ```bash
@@ -48,7 +48,7 @@ Output example: `Documents  Downloads  Pictures  Projects`
     ```
 use `cd ..`to go up one level in the directory tree.
 
-### 3.2 **Managing Files and Directories**
+### 3.2 Managing Files and Directories
 - **`mkdir`** — **Make Directory**: Creates a new directory.
     ```bash
     mkdir my_new_directory
@@ -69,7 +69,7 @@ use `cd ..`to go up one level in the directory tree.
     rmdir my_new_directory
     ```
 
-### 3.3 **Viewing and Editing Files**
+### 3.3 Viewing and Editing Files
 - **`cat`** — **Concatenate**: Displays the content of a file.
     ```bash
     cat myfile.txt
