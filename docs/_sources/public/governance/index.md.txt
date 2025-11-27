@@ -1,0 +1,15 @@
+# Governance
+
+Coming description...
+
+```{toctree}
+:maxdepth: 1
+:capition: Legal Files
+
+0_governance.md
+1_membership.md
+2_authorship.md
+3_licensing.md
+4_communication.md
+:caption: more comming...
+```
