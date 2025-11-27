@@ -84,7 +84,7 @@ Press `Ctrl + X` to exit.
 Press `Y` to confirm saving changes.
 
 
-## 3.4 Using the `man` Command
+### 3.4 Using the `man` Command
 Many commands in the terminal have built-in help. The `man` command is used to open the manual (help documentation) for a command. For example:
 
 ```bash
@@ -93,7 +93,7 @@ man ls
 
 This will show detailed information about the `ls` command and its options. Press `q` to exit the manual.
 
-## 3.5 Understanding the File System
+### 3.5 Understanding the File System
 In Unix-like systems, files and directories are organized in a hierarchical structure. Here’s a basic rundown of the common directories you may encounter:
 
 * `/` — The root directory, the top of the file system.
@@ -102,7 +102,7 @@ In Unix-like systems, files and directories are organized in a hierarchical stru
 * `/usr/` — User utilities and applications.
 
 
-## 3.6 Permissions in the Terminal
+### 3.6 Permissions in the Terminal
 You might see some commands fail or require elevated privileges. This is because files and directories in Unix-like systems have permissions. For example:
 
 - **`chmod`** — Changes file permissions.
@@ -115,7 +115,7 @@ You might see some commands fail or require elevated privileges. This is because
     ```
 Note: You'll need to enter your password when using sudo.
 
-## 3.7 A Few More Useful Commands
+### 3.7 A Few More Useful Commands
 - **`clear`** — Clears the terminal screen.
     ```bash
     clear
@@ -125,7 +125,7 @@ Note: You'll need to enter your password when using sudo.
     exit
     ```
 
-### 4. Verification
+## 4. Verification
 You can always go to your file explorer or finder application and check whether you actions in the terminal have been reflected in this more intuitive setting.
 
 The ebst way to getThe best way to get comfortable with the terminal is through practise. Try using the commands above to navigate, create files, and explore your system. You can always use the `man <command>` to get more information and help about any command.
