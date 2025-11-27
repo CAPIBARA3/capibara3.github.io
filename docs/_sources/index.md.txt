@@ -20,8 +20,8 @@ public/projects/index
 public/software/index
 public/onboarding/index
 public/governance/index
-```
-<!-- 
+
+
 :maxdepth: 2
 :caption: 🔒 Internal (Private) Documentation
 :hidden:
@@ -40,4 +40,4 @@ templates/project-proposal-template
 templates/tutorial-template
 templates/meeting-minutes-template
 templates/analysis-note-template
-``` -->
+```
