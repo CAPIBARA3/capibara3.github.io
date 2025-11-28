@@ -1,28 +1,163 @@
-# 08 Configuring conda venv
+# 08 Configuring Conda & venv
 
 ## Goal
-What will the user learn?
+
+Learn how to create, activate, manage, and remove isolated Python environments using **Conda** and **Python’s built-in `venv`**. This ensures clean, reproducible setups for different projects without dependency conflicts.
 
 ## Prerequisites
-- Basic collaboration account
-- Installed environment
+
+- [02_setting_up_unix](02_setting_up_unix.md)
+- [03_command_line](03_command_line.md)
+- [07_configuring_python_pip](07_configuring_python_pip.md)
+
+
 
 ## Steps
 
 ### 1. Introduction
-Explain context.
+
+When working on multiple Python projects, you often need different versions of specific packages or Python itself. Environments are ways to separate versions of packages for different projects and keep different versions isolated. Conda is an environment manager which you can use to create and organise environments and packages inside them. Whiel `venv` stands for virtual environment and is created inside a project's directory and by using Python. It is a more lightweight version of conda environments, but it is distributed instead of centralised.
+
 
 ### 2. Setup
-Step-by-step instructions.
+
+### 2.1 Install Conda
+
+**Option 1 — Miniconda (recommended)**
+A minimal, lightweight installer for Conda.
+
+* Download: *[https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)*
+* Install using the instructions for your OS.
+
+**Option 2 — Anaconda**
+Includes Conda + many preinstalled data science packages.
+
+* Download: *[https://www.anaconda.com/products/individual](https://www.anaconda.com/products/individual)*
+* Install following your OS instructions.
+
+### 2.2 Ensure Python is Installed (for `venv`)
+
+Check Python version:
+
+```bash
+python3 --version
+```
+
+`venv` comes bundled with Python 3.3+.
+
 
 ### 3. Execution
-Commands, examples, screenshots.
 
-### 4. Verification
-How to confirm success.
+### 3.1 Using Conda
 
-## Troubleshooting
-Common issues and fixes.
+**Create a new Conda environment**
 
-## Next Steps
-Links to related tutorials.
+```bash
+conda create --name myenv
+```
+
+**Create a Conda environment with a specific Python version**
+
+```bash
+conda create --name myenv python=3.10
+```
+
+**Activate**
+
+```bash
+conda activate myenv
+```
+
+**Deactivate**
+
+```bash
+conda deactivate
+```
+
+**List all environments**
+
+```bash
+conda info --envs
+```
+
+**Remove an environment**
+
+```bash
+conda env remove --name myenv
+```
+
+### 3.2 Using Python `venv`
+
+**Create a new environment**
+
+```bash
+python3 -m venv myenv
+```
+
+**Activate environment**
+
+```bash
+source myenv/bin/activate
+```
+
+**Deactivate**
+
+```bash
+deactivate
+```
+
+**Remove a `venv` environment**
+
+Just delete the folder:
+
+```bash
+rm -rf myenv
+```
+
+
+### **4. Verification**
+
+**Check active environment**
+
+Conda:
+
+```bash
+conda env list
+```
+
+Active environment will be marked with `*`.
+
+venv:
+
+```bash
+which python
+```
+
+It should point to the environment folder.
+
+**Check installed packages**
+
+```bash
+pip list
+```
+
+## **Troubleshooting**
+
+### Conda
+
+| Issue                      | Cause                   | Fix                                                         |
+| -------------------------- | ----------------------- | ----------------------------------------------------------- |
+| `conda: command not found` | Conda not added to PATH | Restart terminal or reinstall Miniconda/Anaconda            |
+| Environment not activating | Shell not initialized   | `conda init bash` (or zsh, fish, powershell)                |
+| Packages won’t install     | Wrong channels          | Try `conda-forge`: `conda install -c conda-forge <package>` |
+
+### venv
+
+| Issue                                  | Cause                     | Fix                                                         |
+| -------------------------------------- | ------------------------- | ----------------------------------------------------------- |
+| Activation script not working          | Missing permissions       | `chmod +x myenv/bin/activate`                               |
+| `python` still points to system Python | Environment not activated | Re-run `source myenv/bin/activate`                          |
+
+
+## **Next Steps**
+You are ready to start working with environemnts, that's great! However, many times we want to share code among the collaboration and avoid the 'it-works-on-my-computer' problem. Environments are a tool to isolate package versions, but they are also heavy. That's why most of the repositories should have a `requirements.txt` file, specifing which package you need to install in a conda environment or `venv`. Anyways, there even is a more straightforward solution [16_docker](16_docker.md).

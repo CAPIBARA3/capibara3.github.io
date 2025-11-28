@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>08 Configuring conda venv &#8212; CAPIBARA  documentation</title>
+    <title>08 Configuring Conda &amp; venv &#8212; CAPIBARA  documentation</title>
   
   
   
@@ -46,7 +46,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'public/onboarding/env/08_configuring_conda_venv';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Governance" href="../../governance/index.html" />
+    <link rel="next" title="16 Docker" href="16_docker.html" />
     <link rel="prev" title="07 Configuring Python Pip" href="07_configuring_python_pip.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -312,7 +312,8 @@
 <li class="toctree-l1"><a class="reference internal" href="05_configuring_github.html">05 GitHub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="06_collaborating_github.html">06 Collaborating GitHub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="07_configuring_python_pip.html">07 Configuring Python Pip</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">08 Configuring conda venv</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">08 Configuring Conda &amp; venv</a></li>
+<li class="toctree-l1"><a class="reference internal" href="16_docker.html">16 Docker</a></li>
 </ul>
 </div>
 </nav></div>
@@ -356,7 +357,7 @@
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Onboarding</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">08 Configuring conda venv</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">08 Configuring Conda &amp; venv</span></li>
   </ul>
 </nav>
 </div>
@@ -374,44 +375,174 @@
                 <article class="bd-article">
                   
   <section id="configuring-conda-venv">
-<h1>08 Configuring conda venv<a class="headerlink" href="#configuring-conda-venv" title="Link to this heading">#</a></h1>
+<h1>08 Configuring Conda &amp; venv<a class="headerlink" href="#configuring-conda-venv" title="Link to this heading">#</a></h1>
 <section id="goal">
 <h2>Goal<a class="headerlink" href="#goal" title="Link to this heading">#</a></h2>
-<p>What will the user learn?</p>
+<p>Learn how to create, activate, manage, and remove isolated Python environments using <strong>Conda</strong> and <strong>Python’s built-in <code class="docutils literal notranslate"><span class="pre">venv</span></code></strong>. This ensures clean, reproducible setups for different projects without dependency conflicts.</p>
 </section>
 <section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Basic collaboration account</p></li>
-<li><p>Installed environment</p></li>
+<li><p><a class="reference internal" href="02_setting_up_unix.html"><span class="std std-doc">02_setting_up_unix</span></a></p></li>
+<li><p><a class="reference internal" href="03_command_line.html"><span class="std std-doc">03_command_line</span></a></p></li>
+<li><p><a class="reference internal" href="07_configuring_python_pip.html"><span class="std std-doc">07_configuring_python_pip</span></a></p></li>
 </ul>
 </section>
 <section id="steps">
 <h2>Steps<a class="headerlink" href="#steps" title="Link to this heading">#</a></h2>
 <section id="introduction">
 <h3>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h3>
-<p>Explain context.</p>
+<p>When working on multiple Python projects, you often need different versions of specific packages or Python itself. Environments are ways to separate versions of packages for different projects and keep different versions isolated. Conda is an environment manager which you can use to create and organise environments and packages inside them. Whiel <code class="docutils literal notranslate"><span class="pre">venv</span></code> stands for virtual environment and is created inside a project’s directory and by using Python. It is a more lightweight version of conda environments, but it is distributed instead of centralised.</p>
 </section>
 <section id="setup">
 <h3>2. Setup<a class="headerlink" href="#setup" title="Link to this heading">#</a></h3>
-<p>Step-by-step instructions.</p>
+</section>
+<section id="install-conda">
+<h3>2.1 Install Conda<a class="headerlink" href="#install-conda" title="Link to this heading">#</a></h3>
+<p><strong>Option 1 — Miniconda (recommended)</strong>
+A minimal, lightweight installer for Conda.</p>
+<ul class="simple">
+<li><p>Download: <em><a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a></em></p></li>
+<li><p>Install using the instructions for your OS.</p></li>
+</ul>
+<p><strong>Option 2 — Anaconda</strong>
+Includes Conda + many preinstalled data science packages.</p>
+<ul class="simple">
+<li><p>Download: <em><a class="reference external" href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a></em></p></li>
+<li><p>Install following your OS instructions.</p></li>
+</ul>
+</section>
+<section id="ensure-python-is-installed-for-venv">
+<h3>2.2 Ensure Python is Installed (for <code class="docutils literal notranslate"><span class="pre">venv</span></code>)<a class="headerlink" href="#ensure-python-is-installed-for-venv" title="Link to this heading">#</a></h3>
+<p>Check Python version:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>--version
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">venv</span></code> comes bundled with Python 3.3+.</p>
 </section>
 <section id="execution">
 <h3>3. Execution<a class="headerlink" href="#execution" title="Link to this heading">#</a></h3>
-<p>Commands, examples, screenshots.</p>
+</section>
+<section id="using-conda">
+<h3>3.1 Using Conda<a class="headerlink" href="#using-conda" title="Link to this heading">#</a></h3>
+<p><strong>Create a new Conda environment</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>myenv
+</pre></div>
+</div>
+<p><strong>Create a Conda environment with a specific Python version</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>myenv<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10
+</pre></div>
+</div>
+<p><strong>Activate</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>myenv
+</pre></div>
+</div>
+<p><strong>Deactivate</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>deactivate
+</pre></div>
+</div>
+<p><strong>List all environments</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>info<span class="w"> </span>--envs
+</pre></div>
+</div>
+<p><strong>Remove an environment</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>env<span class="w"> </span>remove<span class="w"> </span>--name<span class="w"> </span>myenv
+</pre></div>
+</div>
+</section>
+<section id="using-python-venv">
+<h3>3.2 Using Python <code class="docutils literal notranslate"><span class="pre">venv</span></code><a class="headerlink" href="#using-python-venv" title="Link to this heading">#</a></h3>
+<p><strong>Create a new environment</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>myenv
+</pre></div>
+</div>
+<p><strong>Activate environment</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>myenv/bin/activate
+</pre></div>
+</div>
+<p><strong>Deactivate</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>deactivate
+</pre></div>
+</div>
+<p><strong>Remove a <code class="docutils literal notranslate"><span class="pre">venv</span></code> environment</strong></p>
+<p>Just delete the folder:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm<span class="w"> </span>-rf<span class="w"> </span>myenv
+</pre></div>
+</div>
 </section>
 <section id="verification">
-<h3>4. Verification<a class="headerlink" href="#verification" title="Link to this heading">#</a></h3>
-<p>How to confirm success.</p>
+<h3><strong>4. Verification</strong><a class="headerlink" href="#verification" title="Link to this heading">#</a></h3>
+<p><strong>Check active environment</strong></p>
+<p>Conda:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>env<span class="w"> </span>list
+</pre></div>
+</div>
+<p>Active environment will be marked with <code class="docutils literal notranslate"><span class="pre">*</span></code>.</p>
+<p>venv:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>which<span class="w"> </span>python
+</pre></div>
+</div>
+<p>It should point to the environment folder.</p>
+<p><strong>Check installed packages</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>list
+</pre></div>
+</div>
 </section>
 </section>
 <section id="troubleshooting">
-<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">#</a></h2>
-<p>Common issues and fixes.</p>
+<h2><strong>Troubleshooting</strong><a class="headerlink" href="#troubleshooting" title="Link to this heading">#</a></h2>
+<section id="conda">
+<h3>Conda<a class="headerlink" href="#conda" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>Cause</p></th>
+<th class="head"><p>Fix</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">conda:</span> <span class="pre">command</span> <span class="pre">not</span> <span class="pre">found</span></code></p></td>
+<td><p>Conda not added to PATH</p></td>
+<td><p>Restart terminal or reinstall Miniconda/Anaconda</p></td>
+</tr>
+<tr class="row-odd"><td><p>Environment not activating</p></td>
+<td><p>Shell not initialized</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">init</span> <span class="pre">bash</span></code> (or zsh, fish, powershell)</p></td>
+</tr>
+<tr class="row-even"><td><p>Packages won’t install</p></td>
+<td><p>Wrong channels</p></td>
+<td><p>Try <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code>: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">&lt;package&gt;</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="venv">
+<h3>venv<a class="headerlink" href="#venv" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>Cause</p></th>
+<th class="head"><p>Fix</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Activation script not working</p></td>
+<td><p>Missing permissions</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">+x</span> <span class="pre">myenv/bin/activate</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">python</span></code> still points to system Python</p></td>
+<td><p>Environment not activated</p></td>
+<td><p>Re-run <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">myenv/bin/activate</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 </section>
 <section id="next-steps">
-<h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading">#</a></h2>
-<p>Links to related tutorials.</p>
+<h2><strong>Next Steps</strong><a class="headerlink" href="#next-steps" title="Link to this heading">#</a></h2>
+<p>You are ready to start working with environemnts, that’s great! However, many times we want to share code among the collaboration and avoid the ‘it-works-on-my-computer’ problem. Environments are a tool to isolate package versions, but they are also heavy. That’s why most of the repositories should have a <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file, specifing which package you need to install in a conda environment or <code class="docutils literal notranslate"><span class="pre">venv</span></code>. Anyways, there even is a more straightforward solution <a class="reference internal" href="16_docker.html"><span class="std std-doc">16_docker</span></a>.</p>
 </section>
 </section>
 
@@ -435,11 +566,11 @@
       </div>
     </a>
     <a class="right-next"
-       href="../../governance/index.html"
+       href="16_docker.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Governance</p>
+        <p class="prev-next-title">16 Docker</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -467,12 +598,20 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steps">Steps</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">2. Setup</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-conda">2.1 Install Conda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ensure-python-is-installed-for-venv">2.2 Ensure Python is Installed (for <code class="docutils literal notranslate"><span class="pre">venv</span></code>)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#execution">3. Execution</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verification">4. Verification</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-conda">3.1 Using Conda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-python-venv">3.2 Using Python <code class="docutils literal notranslate"><span class="pre">venv</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verification"><strong>4. Verification</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting">Troubleshooting</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting"><strong>Troubleshooting</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conda">Conda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#venv">venv</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps"><strong>Next Steps</strong></a></li>
 </ul>
   </nav></div>
 
