@@ -13,7 +13,6 @@ Use the navigation tree below to browse the major sections of the documentation.
 
 ```{toctree}
 :maxdepth: 2
-:caption: 🚀 Public Documentation
 
 public/about/index
 public/projects/index
@@ -24,9 +23,33 @@ public/governance/index
 
 
 ## A Documentation for Documentation
-> should this be in a separated file, perhaps in public/software?
-* what is
-* how to use
-* report bugs
-* contribute
-* ...
+
+### 1. What is this?
+This part of the website (capibara3.githubio/docs) hosts the documentation files for the CAPIBARA Collaboration, from onboarding tutorials, to software guides as well as organisation and policies. We make all of our files, including organisation and legal ones, open except for signed agreements and documents containing personal data due to privacy protection.
+
+### 2. How to use?
+You can consult the structure of the documentation at [capibara3.github.io/docs/sitemap](https:capibara3.github.io/docs/sitemap.html). On the left-handed menu you can see the pages contained in your current directory, while in the right-handed one the section of your current page are displayed. On top there is a menu and a search tab which lets you find relevant pages by keywords. We try to maintain links updated, but since docs are always evolving it can happen that some paths become broken.
+
+###3.  Report bugs
+
+If you spot any errors of any type (website production, typos, content-wise, ...) you should communicate these to us. In all cases when communicating bugs and errors, please provide clear and detailed explanations with links to the relevant pages, you may include screenshots or other supporting documentation to help understanding your situation.
+
+**3.1 Collaboration Members**
+
+If you are a member, you can open an issue at the [capibara3/.github-private](https://github.com/capibara3/.github-private) repository or read the next section to know how to submit a PR.
+
+Of course, if you are still unfamiliar with the GitHub workflow, you can contact the project lead through the official email or the [contact page](https://capibara3.github.io/contact.html)
+
+
+**3.2 External**
+
+If you are visitor from outside the collaboration (by the way, happy you're here!), you can send us an email through our [contact page](https://capibara3.github.io/contact.html). Alternatively, if you are familiar with the GitHub workflow you can create an issue at the website repository ([capibara3/capibara3.github.io](https://github.com/capibara3/capibara3.github.io)). In either case, we will try to get back to you as soon as possible.
+
+
+### 4. Contribute
+
+All members are invited to contribute to the enhancing of the documentation, both guides and tutorials as well as legal documents and policies. We are all part of this so we want to make our tutorials more accessible to unexperienced members and policies adapted to our collaboration and status, although the ammendment of policies is regulated and can only happen by majority.
+
+Our documentation live in the `.github-private` [repository](https://github.com/capibara3/.github-private), where only collaboration members can access both the public and internal markdown files. These are the files that need to be edited. Then with GitHub Actions, we use `Sphinx` and `pydata-sphinx-theme` to automatically generate HTML pages from these docs and push the public files to our website repository ([capibara3/capibara3.github.io](https://github.com/capibara3/capibara3.github.io)). Afterwards, the website is uploaded and published but this a different process.
+
+To contribute to our docs you must fork and/or create a new branch in the [capibara3/.github-private](https://github.com/capibara3/.github-private) repository and later on create a PR for discussion and merging of your changes. Please, make sure to wait for review, comments and suggestions before merging your edits.

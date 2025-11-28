@@ -338,7 +338,6 @@ Here you will find:</p>
 <p>Use the navigation tree below to browse the major sections of the documentation.</p>
 <hr class="docutils" />
 <div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">🚀 Public Documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="public/onboarding/index.html">Onboarding</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="public/onboarding/00_applying_to_join.html">00 Applying to Join</a></li>
@@ -364,16 +363,27 @@ Here you will find:</p>
 </div>
 <section id="a-documentation-for-documentation">
 <h2>A Documentation for Documentation<a class="headerlink" href="#a-documentation-for-documentation" title="Link to this heading">#</a></h2>
-<blockquote>
-<div><p>should this be in a separated file, perhaps in public/software?</p>
-</div></blockquote>
-<ul class="simple">
-<li><p>what is</p></li>
-<li><p>how to use</p></li>
-<li><p>report bugs</p></li>
-<li><p>contribute</p></li>
-<li><p>…</p></li>
-</ul>
+<section id="what-is-this">
+<h3>1. What is this?<a class="headerlink" href="#what-is-this" title="Link to this heading">#</a></h3>
+<p>This part of the website (capibara3.githubio/docs) hosts the documentation files for the CAPIBARA Collaboration, from onboarding tutorials, to software guides as well as organisation and policies. We make all of our files, including organisation and legal ones, open except for signed agreements and documents containing personal data due to privacy protection.</p>
+</section>
+<section id="how-to-use">
+<h3>2. How to use?<a class="headerlink" href="#how-to-use" title="Link to this heading">#</a></h3>
+<p>You can consult the structure of the documentation at <a class="reference external" href="https:capibara3.github.io/docs/sitemap.html">capibara3.github.io/docs/sitemap</a>. On the left-handed menu you can see the pages contained in your current directory, while in the right-handed one the section of your current page are displayed. On top there is a menu and a search tab which lets you find relevant pages by keywords. We try to maintain links updated, but since docs are always evolving it can happen that some paths become broken.</p>
+<p>###3.  Report bugs</p>
+<p>If you spot any errors of any type (website production, typos, content-wise, …) you should communicate these to us. In all cases when communicating bugs and errors, please provide clear and detailed explanations with links to the relevant pages, you may include screenshots or other supporting documentation to help understanding your situation.</p>
+<p><strong>3.1 Collaboration Members</strong></p>
+<p>If you are a member, you can open an issue at the <a class="reference external" href="https://github.com/capibara3/.github-private">capibara3/.github-private</a> repository or read the next section to know how to submit a PR.</p>
+<p>Of course, if you are still unfamiliar with the GitHub workflow, you can contact the project lead through the official email or the <a class="reference external" href="https://capibara3.github.io/contact.html">contact page</a></p>
+<p><strong>3.2 External</strong></p>
+<p>If you are visitor from outside the collaboration (by the way, happy you’re here!), you can send us an email through our <a class="reference external" href="https://capibara3.github.io/contact.html">contact page</a>. Alternatively, if you are familiar with the GitHub workflow you can create an issue at the website repository (<a class="reference external" href="https://github.com/capibara3/capibara3.github.io">capibara3/capibara3.github.io</a>). In either case, we will try to get back to you as soon as possible.</p>
+</section>
+<section id="contribute">
+<h3>4. Contribute<a class="headerlink" href="#contribute" title="Link to this heading">#</a></h3>
+<p>All members are invited to contribute to the enhancing of the documentation, both guides and tutorials as well as legal documents and policies. We are all part of this so we want to make our tutorials more accessible to unexperienced members and policies adapted to our collaboration and status, although the ammendment of policies is regulated and can only happen by majority.</p>
+<p>Our documentation live in the <code class="docutils literal notranslate"><span class="pre">.github-private</span></code> <a class="reference external" href="https://github.com/capibara3/.github-private">repository</a>, where only collaboration members can access both the public and internal markdown files. These are the files that need to be edited. Then with GitHub Actions, we use <code class="docutils literal notranslate"><span class="pre">Sphinx</span></code> and <code class="docutils literal notranslate"><span class="pre">pydata-sphinx-theme</span></code> to automatically generate HTML pages from these docs and push the public files to our website repository (<a class="reference external" href="https://github.com/capibara3/capibara3.github.io">capibara3/capibara3.github.io</a>). Afterwards, the website is uploaded and published but this a different process.</p>
+<p>To contribute to our docs you must fork and/or create a new branch in the <a class="reference external" href="https://github.com/capibara3/.github-private">capibara3/.github-private</a> repository and later on create a PR for discussion and merging of your changes. Please, make sure to wait for review, comments and suggestions before merging your edits.</p>
+</section>
 </section>
 </section>
 
@@ -415,7 +425,12 @@ Here you will find:</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-documentation-for-documentation">A Documentation for Documentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-documentation-for-documentation">A Documentation for Documentation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-this">1. What is this?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use">2. How to use?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contribute">4. Contribute</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
