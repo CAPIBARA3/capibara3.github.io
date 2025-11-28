@@ -1,0 +1,93 @@
+# Emails for Contacting Institutions for Partnership
+
+## **Email for Companies**
+
+**Subject:** Partnership Opportunity: CAPIBARA – A Student-Led High-Energy Transients Satellite Mission
+
+Dear [Name],
+
+I am writing to you on behalf of *CAPIBARA*, a space research initiative led by a highly motivated group of high school and university students. Our mission is to explore the high-energy cosmos by monitoring transient phenomena through a Gamma-ray/X-ray CubeSat mission.
+
+We aim to launch between 2030 and 2035, targeting a gap in high-energy observations left by missions like *FERMI*, *Swift*, and *INTEGRAL*, and complementing the era of next-generation gravitational wave observatories like the *Einstein Telescope* and *Cosmic Explorer*. Here is a brief summary of our mission:
+
+| Property | Description |
+|---|---|
+| Observation Range | $1-150$ keV and $150$ kev - $1$ MeV ($5$ MeV?) |
+| Launch Schedule | 2030-2035 (filling the gap left by FERMI, Swift, and INTEGRAL, plus in timing for the era of new Gravitational wave observatories like Einstein Telescope and Cosmic Explorer) |
+| Primary Goals | To monitor high-energy transients, related to many questions (like the engine of Gamma-ray bursts, binary neutron star and neutron star-black hole collisions (gravitational waves), the expansion of the Universe, ...)|
+
+
+While many of us have research experience from short-term stays and independent projects, we lack [funding/resources/expertise – please customize] to bring this mission to fruition. That is why we are reaching out to you.
+[Insert personalized message relevant to the company's focus.]
+
+As a [...]-focused company, your support and technical assistance could play a crucial role in our progress. Furthermore, your partnership would significantly strengthen our application to ESA’s *Fly Your Satellite!* program, increasing our chances of securing launch services and mentorship. This collaboration would not only support a unique student-led mission but also inspire the next generation of engineers and scientists. Of course, your support would be acknowledged publicly.
+
+We welcome any questions or feedback you may have and are eager to hear your thoughts on potential collaboration. Feel free to share this message with colleagues. Additional information about CAPIBARA can be found on our website: [capibara3.github.io](https://capibara3.github.io), where you can also schedule a meeting.
+
+Sincerely,
+[Your Name]
+[Your Role in CAPIBARA]
+
+---
+
+## **Email for Research Institutes**
+
+**Subject:** Invitation to Collaborate on CAPIBARA: A CubeSat for High-Energy Transient Observations
+
+Dear [Name],
+
+I am reaching out regarding *CAPIBARA*, a student-led initiative composed of enthusiastic high school and university students aiming to study the transient high-energy universe.
+
+Our team is planning a Gamma-ray/X-ray CubeSat mission to observe high-energy transients—GRBs, AGNs, and gravitational wave electromagnetic counterparts. We target a 2030–2035 launch window to fill a gap in observation capabilities left by past missions like *FERMI*, *Swift*, and *INTEGRAL*, while aligning with the launch era of observatories like the *Einstein Telescope* and *Cosmic Explorer*.
+
+Here is a short overview of our mission:
+
+| Property | Description |
+|---|---|
+| Observation Range | $1-150$ keV and $150$ kev - $1$ MeV ($5$ MeV?) |
+| Launch Schedule | 2030-2035 (filling the gap left by FERMI, Swift, and INTEGRAL, plus in timing for the era of new Gravitational wave observatories like Einstein Telescope and Cosmic Explorer) |
+| Primary Goals | To monitor high-energy transients, related to many questions (like the engine of Gamma-ray bursts, binary neutron star and neutron star-black hole collisions (gravitational waves), the expansion of the Universe, ...)|
+
+
+Our members bring experience from STEM programs and independent scientific activities, including realistic model rocketry and research projects.
+
+[Add your own academic/research background here.]
+
+*Example:*
+I am part of the Youth and Science program and have conducted recalculations of the Hubble constant using Cepheids and Type Ia supernovae. I presented my results at *Jugend Forscht*, Europe’s leading youth science competition. With CAPIBARA’s data, I hope to investigate how GRBs can contribute to resolving the Hubble tension at high redshifts.
+
+We believe in the scientific potential of our mission. Science is built collaboratively, which is why we are seeking your support. Your mentorship would be invaluable, and your endorsement would strengthen our proposal to ESA’s *Fly Your Satellite!* program. As a research collaborator, you would receive appropriate acknowledgment for your contributions.
+
+We welcome your questions and suggestions and are excited to discuss how we might collaborate. Visit [capibara3.github.io](https://capibara3.github.io) for more on our mission plans, team, and instrument design, and to schedule a meeting.
+
+Sincerely,
+[Your Name]
+[Your Role in CAPIBARA]
+
+---
+
+## **Email for Foundations**
+
+**Subject:** Support Request for CAPIBARA – A Student-Led Satellite Mission for High-Energy Astrophysics
+
+Dear [Name],
+
+I am writing to introduce *CAPIBARA*, a student-driven space research initiative. A dedicated group of high school and university students has committed to launching a CubeSat designed to monitor high-energy transients such as Gamma-ray bursts. This is a rare and inspiring goal for a student team.
+
+Though we bring talent and experience from science programs and research activities, our main challenge is securing financial support.
+
+We plan to apply to ESA’s *Fly Your Satellite!* program, which offers technical guidance and, potentially, free launch services. However, we must still cover the cost of manufacturing the CubeSat—a challenge for a fully student-led, volunteer effort with no current funding source.
+
+We are forming partnerships with universities and organizations to obtain mentoring and facilities. Financial support from those entities is uncertain, and we intend to organize a crowdfunding campaign as well.
+
+The [foundationName] Foundation has long [recognized/supported/etc.] [...]. We believe our mission aligns with your goals of promoting [STEM/science/youth education/etc. – customize based on the foundation].
+
+This is a “huge if true” initiative, showcasing students’ capacity to contribute to serious scientific work and promoting STEAM education and accessibility in space science. We would be honored to receive your support, with full acknowledgement in all public and academic materials.
+
+Please feel free to ask any questions. We’re excited to hear your thoughts and ideas for collaboration. Share this with your colleagues if you believe they may be interested.
+
+You can find more details on our mission, planning, and team at [capibara3.github.io](https://capibara3.github.io), where you can also schedule a meeting.
+
+Sincerely,
+[Your Name]
+[Your Role in CAPIBARA]

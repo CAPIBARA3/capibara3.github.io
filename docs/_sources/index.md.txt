@@ -13,12 +13,14 @@ Use the navigation tree below to browse the major sections of the documentation.
 
 ```{toctree}
 :maxdepth: 2
-
+public/CODE_OF_CONDUCT
+public/CONTRIBUTING
 public/about/index
 public/projects/index
 public/software/index
 public/onboarding/index
 public/governance/index
+public/templates/index
 ```
 
 

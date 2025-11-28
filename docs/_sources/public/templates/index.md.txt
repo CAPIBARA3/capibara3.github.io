@@ -1,0 +1,22 @@
+# Templates
+
+## Papers & Technical Documentation
+All papers are edited collaboratively on the group's Overleaf account. Remember to create duplicates of the templates before editting them!!
+
+1. [Scientific White Paper](https://www.overleaf.com/project/67d5c7e31f6d3b0cc9cbd5e0)
+2. [Instrument Technical Documentation](https://www.overleaf.com/project/67db04963ef2803d05c8e9b7)
+
+You can also find `.zip` version of the complete templates in this directory ([Scientific White Paper](https://github.com/CAPIBARA3/.github-private/blob/main/templates/Scientific%20White%20Paper.zip), [Instrument Technical Documentation](https://github.com/CAPIBARA3/.github-private/blob/main/templates/Engineering%20Documentation%20Template.zip))
+
+## Emails
+If you need to send a formal email to a company, institutions or any other entity on behalf of the CAPIBARA Collaboration, we strongly recommend using on of the following templates:
+- **CAPICR**: [Email Template](https://github.com/CAPIBARA3/.github-private/blob/main/templates/email_capicr.md)
+- **CAPIGX**: [Email Template](https://github.com/CAPIBARA3/.github-private/blob/main/templates/email_capigx.md)
+
+## Presentations
+
+If you do an informal presentation on behalf or about the CAPIBARA Collaboration or one of its projects, you can use the following template:
+- **Keynote**: [capibara_template.key](https://github.com/CAPIBARA3/.github-private/blob/main/templates/capibara_template.key)
+- **Power Point**: [power_capibara_template.pptx](https://github.com/CAPIBARA3/.github-private/blob/main/templates/power_capibara_template.pptx)
+
+### For more formal presentation we still have not an appropiate template.
