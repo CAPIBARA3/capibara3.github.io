@@ -1,0 +1,175 @@
+# 17 Local $\LaTeX{}$
+
+## Goal
+- [02_setting_up_unix](02_setting_up_unix.md)
+- [03_command_line](03_command_line.md)
+
+## Prerequisites
+- Basic collaboration account
+- Installed environment
+
+## Steps
+
+### 1. Introduction
+
+$\LaTeX{}$ is the most powerful tool for scientific writing, since it includes tons of packages and functions for math writing and diagrams/tables. It also is great for bibliography, and you can even write anywhere in $\LaTeX{}$ within markdown files: typing
+```markdown
+This is a markdown text with an inline equation: $E = mc^2$, and a block equation:
+$$
+E = \nu h
+$$
+```
+will result in 
+
+>This is a markdown text with an inline equation: $E = mc^2$, and a block equation:
+>$$
+>E = \nu h
+>$$
+>
+
+### 2. Setup
+
+### 2.1 macOS
+1. Download and install **MacTeX**:
+   - [https://tug.org/mactex/](https://tug.org/mactex/)  
+   - (Large package ~4 GB, but includes everything you need.)
+2. After installation, make sure the LaTeX binaries are in your PATH:
+   ```bash
+   echo $PATH
+
+
+You should see `/Library/TeX/texbin`.
+
+### 2.2 Linux (Debian/Ubuntu)
+
+1. Update your package list:
+
+   ```bash
+   sudo apt update
+   ```
+2. Install TeX Live (basic version):
+
+   ```bash
+   sudo apt install texlive-latex-base
+   ```
+
+   Or full installation (recommended, larger size):
+
+   ```bash
+   sudo apt install texlive-full
+   ```
+
+### 2.3 Linux (Fedora/RHEL)
+
+```bash
+sudo dnf install texlive-scheme-full
+```
+
+### 2.4 Choose an Editor
+
+You can edit `.tex` files with any text editor, but these are popular:
+
+* **TeXShop** (macOS, included with MacTeX)
+* **TeXworks** (lightweight, cross-platform)
+* **VS Code** with [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
+
+### 3. Execution
+
+### 3.1 Create Your FIrst $\LaTeX{}$ Document
+
+Create a file named `paper.tex`:
+
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{My First Paper}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+Hello, world! This is my first \LaTeX{} paper.
+
+\end{document}
+```
+
+### 3.2 Compile the Document
+
+Using Terminal:
+
+```bash
+pdflatex paper.tex
+```
+
+After compilation, you’ll find `paper.pdf` in the same directory.
+
+
+## 4. Collaborating via GitHub
+
+LaTeX works well with Git since `.tex` files are plain text.
+
+### Workflow
+
+1. **Clone this repository**
+```bash
+git clone git@github.com:capibara3/papers.git
+cd repo
+```
+
+2. **Create a branch**
+```bash
+git checkout -b your-branch-name
+```
+
+3. **Go to a directory and add your edits**
+```bash
+cd paper-title/
+```
+
+4. **Add and commit your changes**
+```bash
+git add paper.tex
+git commit -m "Added introduction section"
+```
+
+5. **Push your branch to the remote**
+```bash
+git push origin your-branch-name
+```
+
+6. **Open a Pull Request (PR)** \
+ 6.1 If the PR does not delete or overwrite text → merge directly to update the main document. \
+ 6.2 If the PR deletes or changes someone else’s text → request their review and resolve merge conflicts before merging.
+
+### Best Practices
+* You may:
+  * Create a new branch for each contribution or paper, OR
+  * Reuse the same branch for ongoing edits.
+* Always write clear commit messages (e.g., Added results section).
+* Add a .gitignore file to keep the repo clean:
+```
+*.aux
+*.log
+*.out
+*.pdf
+```
+* Consider using [GitHub Actions](https://docs.github.com/en/actions) to **auto-compile PDFs** on each push.
+
+
+## Troubleshooting
+Visit the Overleaf website, they have some resources around $\LaTeX{}$ troubleshooting and errors. Rice University happens to also have some resources and guides around working with $\LaTeX{}$, like this summary of [basic math commands](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf).
+
+### Extra Tips
+
+* Use `latexmk` for automatic builds:
+
+  ```bash
+  latexmk -pdf paper.tex
+  ```
+* For bibliography management, install `biber` or `bibtex`.
+
+## Next Steps
+Next steps...

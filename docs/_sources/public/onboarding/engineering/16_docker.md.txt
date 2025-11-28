@@ -1,0 +1,86 @@
+# 16 Docker
+
+## Goal
+- [02_setting_up_unix](../env/02_setting_up_unix.md)
+- [03_command_line](../env/03_command_line.md)
+- [07_configuring_python_pip](../env/07_configuring_python_pip.md)
+
+## Prerequisites
+- Basic collaboration account
+- Installed environment
+
+## Steps
+
+### 1. Introduction
+[Docker](https://docker.com) is a platform that uses containerization to allow developers to package applications and their dependencies into a standardized unit called a container. Containers are lightweight, portable, and can run on any system that has Docker installed.
+
+### 2. Setup
+
+### 2.1 Installing Docker
+1. Download Docker Desktop for your operating system from [their website](https://www.docker.com/products/docker-desktop/)
+2. Install following the instructions
+3. Verify installtion running
+```shell
+docker --version
+```
+
+### 2.2 Basic Docker Concepts
+1. Images: Read-only templates used to create containers. Images are built from Dockerfiles
+2. Containers: Running instances of images. Containers are isolated and portable.
+3. Dockerfile: A text file that defines the steps to create a Docker image.
+4. Docker Hub: A repository where Docker images are stored and shared.
+
+### 3. Execution
+
+### 3.1 Basic Docker Commands
+1. Check Docker installation: `docker info`
+2. Search for an image: `docker search <image-name>`
+3. Pull an image: `docker pull <image-name>`
+4. Run a container: `docker run -it <image-name>`
+5. List running containers: `docker ps`
+6. List all containers: `docker ps -a`
+7. Stop a container: `docker stop <container-id>`
+8. Remove a container: `docker rm <container-id>`
+9. List docker images: `docker images`
+10. Remove an image: `docker rmi <image-name>`
+
+### 3.2 Creating a Dockerfile
+Create a file running `touch <dockerfilename>`and write it like:
+```dockerfile
+# Use the official Python image from the Docker Hub
+FROM python:3.9
+
+# Set the working directory in the container
+WORKDIR /<your-directory>
+
+# Copy the requirements file into the container
+COPY requirements.txt .
+
+# Install the dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of your application code
+COPY . .
+
+# Command to run your application
+CMD ["python", "your_script.py"]
+```
+
+### 3.3 Building and Running the Image
+```shell
+docker build t <image-name> .
+```
+
+```shell
+docker run -it <image-name> <command-to-run>
+```
+```shell
+docker run -it dockerfile python new_script.py
+```
+
+## Troubleshooting
+Visit the official [Docker documentation](https://docs.docker.com/).
+
+## Next Steps
+
+Next steps...

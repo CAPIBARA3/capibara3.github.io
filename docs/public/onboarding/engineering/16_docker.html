@@ -43,11 +43,11 @@
     <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'public/onboarding/env/16_docker';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'public/onboarding/engineering/16_docker';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Governance" href="../../governance/index.html" />
-    <link rel="prev" title="08 Configuring Conda &amp; venv" href="08_configuring_conda_venv.html" />
+    <link rel="next" title="17 Local $\LaTeX{}$" href="17_local_latex.html" />
+    <link rel="prev" title="08 Configuring Conda &amp; venv" href="../env/08_configuring_conda_venv.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -288,14 +288,15 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../00_applying_to_join.html">00 Applying to Join</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_getting_started.html">01 Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_setting_up_unix.html">02 Installing Ubuntu on a Windows Computer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_command_line.html">03 Introduction to the command line</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_configuring_git.html">04 Git</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_configuring_github.html">05 GitHub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="06_collaborating_github.html">06 Collaborating GitHub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="07_configuring_python_pip.html">07 Configuring Python Pip</a></li>
-<li class="toctree-l1"><a class="reference internal" href="08_configuring_conda_venv.html">08 Configuring Conda &amp; venv</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../env/02_setting_up_unix.html">02 Installing Ubuntu on a Windows Computer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../env/03_command_line.html">03 Introduction to the command line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../env/04_configuring_git.html">04 Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../env/05_configuring_github.html">05 GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../env/06_collaborating_github.html">06 Collaborating GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../env/07_configuring_python_pip.html">07 Configuring Python Pip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../env/08_configuring_conda_venv.html">08 Configuring Conda &amp; venv</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">16 Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17_local_latex.html">17 Local $\LaTeX{}$</a></li>
 </ul>
 </div>
 </nav></div>
@@ -360,7 +361,11 @@
 <h1>16 Docker<a class="headerlink" href="#docker" title="Link to this heading">#</a></h1>
 <section id="goal">
 <h2>Goal<a class="headerlink" href="#goal" title="Link to this heading">#</a></h2>
-<p>What will the user learn?</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../env/02_setting_up_unix.html"><span class="std std-doc">02_setting_up_unix</span></a></p></li>
+<li><p><a class="reference internal" href="../env/03_command_line.html"><span class="std std-doc">03_command_line</span></a></p></li>
+<li><p><a class="reference internal" href="../env/07_configuring_python_pip.html"><span class="std std-doc">07_configuring_python_pip</span></a></p></li>
+</ul>
 </section>
 <section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
@@ -373,28 +378,90 @@
 <h2>Steps<a class="headerlink" href="#steps" title="Link to this heading">#</a></h2>
 <section id="introduction">
 <h3>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h3>
-<p>Explain context.</p>
+<p><a class="reference external" href="https://docker.com">Docker</a> is a platform that uses containerization to allow developers to package applications and their dependencies into a standardized unit called a container. Containers are lightweight, portable, and can run on any system that has Docker installed.</p>
 </section>
 <section id="setup">
 <h3>2. Setup<a class="headerlink" href="#setup" title="Link to this heading">#</a></h3>
-<p>Step-by-step instructions.</p>
+<p>### 2.1 Installing Docker</p>
+<ol class="arabic simple">
+<li><p>Download Docker Desktop for your operating system from <a class="reference external" href="https://www.docker.com/products/docker-desktop/">their website</a></p></li>
+<li><p>Install following the instructions</p></li>
+<li><p>Verify installtion running</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>--version
+</pre></div>
+</div>
+</section>
+<section id="basic-docker-concepts">
+<h3>2.2 Basic Docker Concepts<a class="headerlink" href="#basic-docker-concepts" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Images: Read-only templates used to create containers. Images are built from Dockerfiles</p></li>
+<li><p>Containers: Running instances of images. Containers are isolated and portable.</p></li>
+<li><p>Dockerfile: A text file that defines the steps to create a Docker image.</p></li>
+<li><p>Docker Hub: A repository where Docker images are stored and shared.</p></li>
+</ol>
 </section>
 <section id="execution">
 <h3>3. Execution<a class="headerlink" href="#execution" title="Link to this heading">#</a></h3>
-<p>Commands, examples, screenshots.</p>
 </section>
-<section id="verification">
-<h3>4. Verification<a class="headerlink" href="#verification" title="Link to this heading">#</a></h3>
-<p>How to confirm success.</p>
+<section id="basic-docker-commands">
+<h3>3.1 Basic Docker Commands<a class="headerlink" href="#basic-docker-commands" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Check Docker installation: <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">info</span></code></p></li>
+<li><p>Search for an image: <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">search</span> <span class="pre">&lt;image-name&gt;</span></code></p></li>
+<li><p>Pull an image: <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">pull</span> <span class="pre">&lt;image-name&gt;</span></code></p></li>
+<li><p>Run a container: <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">-it</span> <span class="pre">&lt;image-name&gt;</span></code></p></li>
+<li><p>List running containers: <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">ps</span></code></p></li>
+<li><p>List all containers: <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">ps</span> <span class="pre">-a</span></code></p></li>
+<li><p>Stop a container: <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">stop</span> <span class="pre">&lt;container-id&gt;</span></code></p></li>
+<li><p>Remove a container: <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">rm</span> <span class="pre">&lt;container-id&gt;</span></code></p></li>
+<li><p>List docker images: <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">images</span></code></p></li>
+<li><p>Remove an image: <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">rmi</span> <span class="pre">&lt;image-name&gt;</span></code></p></li>
+</ol>
+</section>
+<section id="creating-a-dockerfile">
+<h3>3.2 Creating a Dockerfile<a class="headerlink" href="#creating-a-dockerfile" title="Link to this heading">#</a></h3>
+<p>Create a file running <code class="docutils literal notranslate"><span class="pre">touch</span> <span class="pre">&lt;dockerfilename&gt;</span></code>and write it like:</p>
+<div class="highlight-dockerfile notranslate"><div class="highlight"><pre><span></span><span class="c"># Use the official Python image from the Docker Hub</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">python:3.9</span>
+
+<span class="c"># Set the working directory in the container</span>
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/&lt;your-directory&gt;</span>
+
+<span class="c"># Copy the requirements file into the container</span>
+<span class="k">COPY</span><span class="w"> </span>requirements.txt<span class="w"> </span>.
+
+<span class="c"># Install the dependencies</span>
+<span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-cache-dir<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+
+<span class="c"># Copy the rest of your application code</span>
+<span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>.
+
+<span class="c"># Command to run your application</span>
+<span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;python&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;your_script.py&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="building-and-running-the-image">
+<h3>3.3 Building and Running the Image<a class="headerlink" href="#building-and-running-the-image" title="Link to this heading">#</a></h3>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>build<span class="w"> </span>t<span class="w"> </span>&lt;image-name&gt;<span class="w"> </span>.
+</pre></div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </span>&lt;image-name&gt;<span class="w"> </span>&lt;command-to-run&gt;
+</pre></div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </span>dockerfile<span class="w"> </span>python<span class="w"> </span>new_script.py
+</pre></div>
+</div>
 </section>
 </section>
 <section id="troubleshooting">
 <h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">#</a></h2>
-<p>Common issues and fixes.</p>
+<p>Visit the official <a class="reference external" href="https://docs.docker.com/">Docker documentation</a>.</p>
 </section>
 <section id="next-steps">
 <h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading">#</a></h2>
-<p>Links to related tutorials.</p>
+<p>Next steps…</p>
 </section>
 </section>
 
@@ -409,7 +476,7 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="08_configuring_conda_venv.html"
+       href="../env/08_configuring_conda_venv.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
@@ -418,11 +485,11 @@
       </div>
     </a>
     <a class="right-next"
-       href="../../governance/index.html"
+       href="17_local_latex.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Governance</p>
+        <p class="prev-next-title">17 Local $\LaTeX{}$</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -450,8 +517,11 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steps">Steps</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">2. Setup</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-docker-concepts">2.2 Basic Docker Concepts</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#execution">3. Execution</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verification">4. Verification</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-docker-commands">3.1 Basic Docker Commands</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-dockerfile">3.2 Creating a Dockerfile</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-and-running-the-image">3.3 Building and Running the Image</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting">Troubleshooting</a></li>
@@ -463,7 +533,7 @@
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../../_sources/public/onboarding/env/16_docker.md.txt"
+      <li><a href="../../../_sources/public/onboarding/engineering/16_docker.md.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>

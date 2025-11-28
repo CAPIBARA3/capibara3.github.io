@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>03 Introduction to the command line &#8212; CAPIBARA  documentation</title>
+    <title>17 Local $\LaTeX{}$ &#8212; CAPIBARA  documentation</title>
   
   
   
@@ -43,11 +43,11 @@
     <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'public/onboarding/env/03_command_line';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'public/onboarding/engineering/17_local_latex';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="04 Git" href="04_configuring_git.html" />
-    <link rel="prev" title="02 Installing Ubuntu on a Windows Computer" href="02_setting_up_unix.html" />
+    <link rel="next" title="Governance" href="../../governance/index.html" />
+    <link rel="prev" title="16 Docker" href="16_docker.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -288,15 +288,15 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../00_applying_to_join.html">00 Applying to Join</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_getting_started.html">01 Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_setting_up_unix.html">02 Installing Ubuntu on a Windows Computer</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">03 Introduction to the command line</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_configuring_git.html">04 Git</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_configuring_github.html">05 GitHub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="06_collaborating_github.html">06 Collaborating GitHub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="07_configuring_python_pip.html">07 Configuring Python Pip</a></li>
-<li class="toctree-l1"><a class="reference internal" href="08_configuring_conda_venv.html">08 Configuring Conda &amp; venv</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../engineering/16_docker.html">16 Docker</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../engineering/17_local_latex.html">17 Local $\LaTeX{}$</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../env/02_setting_up_unix.html">02 Installing Ubuntu on a Windows Computer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../env/03_command_line.html">03 Introduction to the command line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../env/04_configuring_git.html">04 Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../env/05_configuring_github.html">05 GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../env/06_collaborating_github.html">06 Collaborating GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../env/07_configuring_python_pip.html">07 Configuring Python Pip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../env/08_configuring_conda_venv.html">08 Configuring Conda &amp; venv</a></li>
+<li class="toctree-l1"><a class="reference internal" href="16_docker.html">16 Docker</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">17 Local $\LaTeX{}$</a></li>
 </ul>
 </div>
 </nav></div>
@@ -340,7 +340,7 @@
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Onboarding</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">03 Introduction to the command line</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">17 Local $\LaTeX{}$</span></li>
   </ul>
 </nav>
 </div>
@@ -357,171 +357,209 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="introduction-to-the-command-line">
-<h1>03 Introduction to the command line<a class="headerlink" href="#introduction-to-the-command-line" title="Link to this heading">#</a></h1>
+  <section id="local-latex">
+<h1>17 Local $\LaTeX{}$<a class="headerlink" href="#local-latex" title="Link to this heading">#</a></h1>
 <section id="goal">
 <h2>Goal<a class="headerlink" href="#goal" title="Link to this heading">#</a></h2>
-<p>In this tutorial, we’ll cover the basic concepts of useing the terminal (often also called shell or command line) and introduce you to some of the most common and important commands that will help you navigate and manage files on your system.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#02_setting_up_unix.md"><span class="xref myst">02_setting_up_unix</span></a></p></li>
+<li><p><a class="reference internal" href="#03_command_line.md"><span class="xref myst">03_command_line</span></a></p></li>
+</ul>
 </section>
 <section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="02_setting_up_unix.html"><span class="std std-doc">02_setting_up_unix.md</span></a></p></li>
+<li><p>Basic collaboration account</p></li>
+<li><p>Installed environment</p></li>
 </ul>
 </section>
 <section id="steps">
 <h2>Steps<a class="headerlink" href="#steps" title="Link to this heading">#</a></h2>
 <section id="introduction">
 <h3>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h3>
-<p>The shell, also known as the command line, terminal, or command prompt, is an interface that allows you to interact directly with your computer’s operating system using text-based commands. It may look intimidating at first, but it’s a powerful tool that gives you control over your system.</p>
-<p>In a terminal, you type commands to:</p>
-<ul class="simple">
-<li><p>Navigate the file system</p></li>
-<li><p>Create, move, and delete files and directories</p></li>
-<li><p>Install software packages</p></li>
-<li><p>And much more!</p></li>
-</ul>
+<p>$\LaTeX{}$ is the most powerful tool for scientific writing, since it includes tons of packages and functions for math writing and diagrams/tables. It also is great for bibliography, and you can even write anywhere in $\LaTeX{}$ within markdown files: typing</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>This is a markdown text with an inline equation: $E = mc^2$, and a block equation:
+$$
+E = \nu h
+$$
+</pre></div>
+</div>
+<p>will result in</p>
+<blockquote>
+<div><p>This is a markdown text with an inline equation: $E = mc^2$, and a block equation:
+$$
+E = \nu h
+$$</p>
+</div></blockquote>
 </section>
 <section id="setup">
 <h3>2. Setup<a class="headerlink" href="#setup" title="Link to this heading">#</a></h3>
-<p>Terminal should be a native application of your operating system, you can open it by:</p>
+</section>
+<section id="macos">
+<h3>2.1 macOS<a class="headerlink" href="#macos" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Download and install <strong>MacTeX</strong>:</p>
 <ul class="simple">
-<li><p><strong>Linux</strong>: Press <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">T</span></code> or search for “Terminal” in your application menu.</p></li>
-<li><p><em>macOS</em>*: Press <code class="docutils literal notranslate"><span class="pre">Cmd</span> <span class="pre">+</span> <span class="pre">Space</span></code>, type “Terminal” and hit <code class="docutils literal notranslate"><span class="pre">Enter</span></code></p></li>
+<li><p><a class="reference external" href="https://tug.org/mactex/">https://tug.org/mactex/</a></p></li>
+<li><p>(Large package ~4 GB, but includes everything you need.)</p></li>
 </ul>
+</li>
+<li><p>After installation, make sure the LaTeX binaries are in your PATH:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="nv">$PATH</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>You should see <code class="docutils literal notranslate"><span class="pre">/Library/TeX/texbin</span></code>.</p>
 </section>
-<section id="execution">
-<h3>3. Execution<a class="headerlink" href="#execution" title="Link to this heading">#</a></h3>
-<p>Here are some fundamental commands to get started. Try typing these into your terminal:</p>
-</section>
-<section id="navigating-directories">
-<h3>3.1 Navigating Directories<a class="headerlink" href="#navigating-directories" title="Link to this heading">#</a></h3>
-<ul>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">pwd</span></code></strong> — <strong>Print Working Directory</strong>: Shows the current directory you’re in.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">pwd</span>
-</pre></div>
-</div>
-</li>
-</ul>
-<p>Output example: <code class="docutils literal notranslate"><span class="pre">/home/username</span></code></p>
-<ul>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">ls</span></code></strong> — <strong>List</strong>: Lists the files and directories in your current directory.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls
-</pre></div>
-</div>
-</li>
-</ul>
-<p>Output example: <code class="docutils literal notranslate"><span class="pre">Documents</span>&#160; <span class="pre">Downloads</span>&#160; <span class="pre">Pictures</span>&#160; <span class="pre">Projects</span></code></p>
-<ul>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">cd</span></code></strong> — <strong>Change Directory</strong>: Changes the current directory.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>Documents
-</pre></div>
-</div>
-</li>
-</ul>
-<p>use <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code>to go up one level in the directory tree.</p>
-</section>
-<section id="managing-files-and-directories">
-<h3>3.2 Managing Files and Directories<a class="headerlink" href="#managing-files-and-directories" title="Link to this heading">#</a></h3>
-<ul>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">mkdir</span></code></strong> — <strong>Make Directory</strong>: Creates a new directory.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>my_new_directory
-</pre></div>
-</div>
-</li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">touch</span></code></strong> - <strong>Create Empty File</strong>: Creates an empty file.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>touch<span class="w"> </span>myfile.txt
-</pre></div>
-</div>
-</li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">rm</span></code></strong> — <strong>Remove</strong>: Deletes a file.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm<span class="w"> </span>myfile.txt
-</pre></div>
-</div>
-</li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">rmdir</span></code></strong> — <strong>Remove Directory</strong>: Deletes an empty directory.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rmdir<span class="w"> </span>my_new_directory
-</pre></div>
-</div>
-</li>
-</ul>
-</section>
-<section id="viewing-and-editing-files">
-<h3>3.3 Viewing and Editing Files<a class="headerlink" href="#viewing-and-editing-files" title="Link to this heading">#</a></h3>
-<ul>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">cat</span></code></strong> — <strong>Concatenate</strong>: Displays the content of a file.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat<span class="w"> </span>myfile.txt
-</pre></div>
-</div>
-</li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">nano</span></code></strong> — <strong>Text Editor</strong>: A simple text editor to edit files.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nano<span class="w"> </span>myfile.txt
-</pre></div>
-</div>
-</li>
-</ul>
-<p>Press <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">X</span></code> to exit.
-Press <code class="docutils literal notranslate"><span class="pre">Y</span></code> to confirm saving changes.</p>
-</section>
-<section id="using-the-man-command">
-<h3>3.4 Using the <code class="docutils literal notranslate"><span class="pre">man</span></code> Command<a class="headerlink" href="#using-the-man-command" title="Link to this heading">#</a></h3>
-<p>Many commands in the terminal have built-in help. The <code class="docutils literal notranslate"><span class="pre">man</span></code> command is used to open the manual (help documentation) for a command. For example:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>man<span class="w"> </span>ls
-</pre></div>
-</div>
-<p>This will show detailed information about the <code class="docutils literal notranslate"><span class="pre">ls</span></code> command and its options. Press <code class="docutils literal notranslate"><span class="pre">q</span></code> to exit the manual.</p>
-</section>
-<section id="understanding-the-file-system">
-<h3>3.5 Understanding the File System<a class="headerlink" href="#understanding-the-file-system" title="Link to this heading">#</a></h3>
-<p>In Unix-like systems, files and directories are organized in a hierarchical structure. Here’s a basic rundown of the common directories you may encounter:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">/</span></code> — The root directory, the top of the file system.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">/home/username/</span></code> — Your personal home directory.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">/bin/</span></code> — Essential system binaries (programs).</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">/usr/</span></code> — User utilities and applications.</p></li>
-</ul>
-</section>
-<section id="permissions-in-the-terminal">
-<h3>3.6 Permissions in the Terminal<a class="headerlink" href="#permissions-in-the-terminal" title="Link to this heading">#</a></h3>
-<p>You might see some commands fail or require elevated privileges. This is because files and directories in Unix-like systems have permissions. For example:</p>
-<ul>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">chmod</span></code></strong> — Changes file permissions.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod<span class="w"> </span>+x<span class="w"> </span>myscript.sh
-</pre></div>
-</div>
-</li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">sudo</span></code></strong> — Execute commands as the superuser (administrator).</p>
+<section id="linux-debian-ubuntu">
+<h3>2.2 Linux (Debian/Ubuntu)<a class="headerlink" href="#linux-debian-ubuntu" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Update your package list:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update
 </pre></div>
 </div>
 </li>
-</ul>
-<p>Note: You’ll need to enter your password when using sudo.</p>
+<li><p>Install TeX Live (basic version):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>texlive-latex-base
+</pre></div>
+</div>
+<p>Or full installation (recommended, larger size):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>texlive-full
+</pre></div>
+</div>
+</li>
+</ol>
 </section>
-<section id="a-few-more-useful-commands">
-<h3>3.7 A Few More Useful Commands<a class="headerlink" href="#a-few-more-useful-commands" title="Link to this heading">#</a></h3>
+<section id="linux-fedora-rhel">
+<h3>2.3 Linux (Fedora/RHEL)<a class="headerlink" href="#linux-fedora-rhel" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>texlive-scheme-full
+</pre></div>
+</div>
+<p>### 2.4 Choose an Editor</p>
+<p>You can edit <code class="docutils literal notranslate"><span class="pre">.tex</span></code> files with any text editor, but these are popular:</p>
+<ul class="simple">
+<li><p><strong>TeXShop</strong> (macOS, included with MacTeX)</p></li>
+<li><p><strong>TeXworks</strong> (lightweight, cross-platform)</p></li>
+<li><p><strong>VS Code</strong> with <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop">LaTeX Workshop</a></p></li>
+</ul>
+</section>
+<section id="execution">
+<h3>3. Execution<a class="headerlink" href="#execution" title="Link to this heading">#</a></h3>
+</section>
+<section id="create-your-first-latex-document">
+<h3>3.1 Create Your FIrst $\LaTeX{}$ Document<a class="headerlink" href="#create-your-first-latex-document" title="Link to this heading">#</a></h3>
+<p>Create a file named <code class="docutils literal notranslate"><span class="pre">paper.tex</span></code>:</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+
+<span class="k">\title</span><span class="nb">{</span>My First Paper<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span>Your Name<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\maketitle</span>
+
+Hello, world! This is my first <span class="k">\LaTeX</span><span class="nb">{}</span> paper.
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+</section>
+<section id="compile-the-document">
+<h3>3.2 Compile the Document<a class="headerlink" href="#compile-the-document" title="Link to this heading">#</a></h3>
+<p>Using Terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pdflatex<span class="w"> </span>paper.tex
+</pre></div>
+</div>
+<p>After compilation, you’ll find <code class="docutils literal notranslate"><span class="pre">paper.pdf</span></code> in the same directory.</p>
+</section>
+</section>
+<section id="collaborating-via-github">
+<h2>4. Collaborating via GitHub<a class="headerlink" href="#collaborating-via-github" title="Link to this heading">#</a></h2>
+<p>LaTeX works well with Git since <code class="docutils literal notranslate"><span class="pre">.tex</span></code> files are plain text.</p>
+<section id="workflow">
+<h3>Workflow<a class="headerlink" href="#workflow" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Clone this repository</strong></p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:capibara3/papers.git
+<span class="nb">cd</span><span class="w"> </span>repo
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p><strong>Create a branch</strong></p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>your-branch-name
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p><strong>Go to a directory and add your edits</strong></p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>paper-title/
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p><strong>Add and commit your changes</strong></p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>paper.tex
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Added introduction section&quot;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p><strong>Push your branch to the remote</strong></p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>your-branch-name
+</pre></div>
+</div>
+<ol class="arabic simple" start="6">
+<li><p><strong>Open a Pull Request (PR)</strong> <br />
+6.1 If the PR does not delete or overwrite text → merge directly to update the main document. <br />
+6.2 If the PR deletes or changes someone else’s text → request their review and resolve merge conflicts before merging.</p></li>
+</ol>
+</section>
+<section id="best-practices">
+<h3>Best Practices<a class="headerlink" href="#best-practices" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>You may:</p>
 <ul>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">clear</span></code></strong> — Clears the terminal screen.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clear
+<li><p>Create a new branch for each contribution or paper, OR</p></li>
+<li><p>Reuse the same branch for ongoing edits.</p></li>
+</ul>
+</li>
+<li><p>Always write clear commit messages (e.g., Added results section).</p></li>
+<li><p>Add a .gitignore file to keep the repo clean:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*.</span><span class="n">aux</span>
+<span class="o">*.</span><span class="n">log</span>
+<span class="o">*.</span><span class="n">out</span>
+<span class="o">*.</span><span class="n">pdf</span>
 </pre></div>
 </div>
-</li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">exit</span></code></strong> - Closes the terminal window.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">exit</span>
-</pre></div>
-</div>
-</li>
+<ul class="simple">
+<li><p>Consider using <a class="reference external" href="https://docs.github.com/en/actions">GitHub Actions</a> to <strong>auto-compile PDFs</strong> on each push.</p></li>
 </ul>
 </section>
 </section>
-<section id="verification">
-<h2>4. Verification<a class="headerlink" href="#verification" title="Link to this heading">#</a></h2>
-<p>You can always go to your file explorer or finder application and check whether you actions in the terminal have been reflected in this more intuitive setting.</p>
-<p>The ebst way to getThe best way to get comfortable with the terminal is through practise. Try using the commands above to navigate, create files, and explore your system. You can always use the <code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">&lt;command&gt;</span></code> to get more information and help about any command.</p>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">#</a></h2>
+<p>Visit the Overleaf website, they have some resources around $\LaTeX{}$ troubleshooting and errors. Rice University happens to also have some resources and guides around working with $\LaTeX{}$, like this summary of <a class="reference external" href="https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf">basic math commands</a>.</p>
+<section id="extra-tips">
+<h3>Extra Tips<a class="headerlink" href="#extra-tips" title="Link to this heading">#</a></h3>
+<ul>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">latexmk</span></code> for automatic builds:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>latexmk<span class="w"> </span>-pdf<span class="w"> </span>paper.tex
+</pre></div>
+</div>
+</li>
+<li><p>For bibliography management, install <code class="docutils literal notranslate"><span class="pre">biber</span></code> or <code class="docutils literal notranslate"><span class="pre">bibtex</span></code>.</p></li>
+</ul>
+</section>
 </section>
 <section id="next-steps">
 <h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading">#</a></h2>
-<p>Now that you can create, edit, move, copy and delete files it would be beneficial to keep track of your changes: <a class="reference internal" href="04_configuring_git.html"><span class="std std-doc">04_git</span></a></p>
+<p>Next steps…</p>
 </section>
 </section>
 
@@ -536,20 +574,20 @@ Press <code class="docutils literal notranslate"><span class="pre">Y</span></cod
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="02_setting_up_unix.html"
+       href="16_docker.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">02 Installing Ubuntu on a Windows Computer</p>
+        <p class="prev-next-title">16 Docker</p>
       </div>
     </a>
     <a class="right-next"
-       href="04_configuring_git.html"
+       href="../../governance/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">04 Git</p>
+        <p class="prev-next-title">Governance</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -577,17 +615,23 @@ Press <code class="docutils literal notranslate"><span class="pre">Y</span></cod
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steps">Steps</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">2. Setup</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#macos">2.1 macOS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-debian-ubuntu">2.2 Linux (Debian/Ubuntu)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-fedora-rhel">2.3 Linux (Fedora/RHEL)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#execution">3. Execution</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#navigating-directories">3.1 Navigating Directories</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-files-and-directories">3.2 Managing Files and Directories</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#viewing-and-editing-files">3.3 Viewing and Editing Files</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-man-command">3.4 Using the <code class="docutils literal notranslate"><span class="pre">man</span></code> Command</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-file-system">3.5 Understanding the File System</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#permissions-in-the-terminal">3.6 Permissions in the Terminal</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-few-more-useful-commands">3.7 A Few More Useful Commands</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-your-first-latex-document">3.1 Create Your FIrst $\LaTeX{}$ Document</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compile-the-document">3.2 Compile the Document</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verification">4. Verification</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collaborating-via-github">4. Collaborating via GitHub</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow">Workflow</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#best-practices">Best Practices</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting">Troubleshooting</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-tips">Extra Tips</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a></li>
 </ul>
   </nav></div>
@@ -596,7 +640,7 @@ Press <code class="docutils literal notranslate"><span class="pre">Y</span></cod
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../../_sources/public/onboarding/env/03_command_line.md.txt"
+      <li><a href="../../../_sources/public/onboarding/engineering/17_local_latex.md.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>
