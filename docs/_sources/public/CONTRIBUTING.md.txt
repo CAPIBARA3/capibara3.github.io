@@ -1,4 +1,4 @@
-# 🌟 Contributing Guidelines
+# Contributing Guidelines
 
 Thank you for taking the time to contribute to this project! Whether you're fixing a bug, improving documentation, or suggesting a feature — every contribution matters.
 Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community inclusive and respectful.

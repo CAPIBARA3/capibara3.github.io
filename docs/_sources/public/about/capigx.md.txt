@@ -1,0 +1,5 @@
+# CAPICR
+
+CAPIBARA's Gamma-ray / X-ray mission
+
+For the moment, refer to the [mission's website](https://capibara3.github.io/capigx).

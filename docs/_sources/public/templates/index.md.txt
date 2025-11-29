@@ -1,5 +1,18 @@
 # Templates
 
+## Summary
+
+```{toctree}
+:maxdepth: 1
+Engineering Documentation template
+Scientific White Paper
+emails_capicr
+emails_capigx
+power_capibara_template
+capibara_template
+
+```
+
 ## Papers & Technical Documentation
 All papers are edited collaboratively on the group's Overleaf account. Remember to create duplicates of the templates before editting them!!
 

@@ -1,4 +1,6 @@
-# Contributor Covenant Code of Conduct
+# Code of Conduct
+
+> Adapted from GitHub's Contributor COvenant Code of Conduct
 
 ## Our Pledge
 
