@@ -1,0 +1,178 @@
+# Creating Packages
+
+## Goal
+In this onboarding tutorial you will learn how to set up your repo structure and additional files to create your own pip package as well as getting a DOI and uploading it to `pypi`.
+
+## Prerequisites
+- [02_setting_up_unix](../env/02_setting_up_unix.md)
+- [03_command_line](../env/03_command_line.md)
+- [04_configuring_git](../env/04_configuring_git.md)
+- [05_configuring_github](../env/06_collaborating_github.md)
+- [python_pip](../env/07_configuring_python_pip.md)
+- [conda_venv](../env/08_configuring_conda_venv.md)
+- [14_packages](14_packages.md)
+
+## Steps
+
+### 1. Introduction
+Many times you will need a specific function in multiple places, or other people will need it too. For example, you may want a cosmic ray flux function in terms of altitude for simulations, for science data analysis preparation, for detector design and calibration, etc. A good way to share code without copying is GitHub, but then instead of downloading or having to work with different repos you can give your code a package structure for making importing to other scripts much more easier. Plus, you can also update your packages to `pypi` for free, the official Python package distributor which will enable anyone to install you package using `pip install <your-package>`.
+
+### 2. Setup
+
+### 2.1 Repository Structure
+```bash
+package/
+    __init__.py
+    code1.py
+    code2.py
+    _version.py
+README.md
+.gitignore
+setup.py
+requirements.txt
+```
+Where `package` is a directory for the package's scripts and `codeX.py` the files of the package.
+
+### 2. `__init__.py
+The `__init__.py` initiates the package and samples all the package's scripts.
+```python
+from ._version import __version__
+from .api/code1 import *  # import all functions
+from .api/code2 import *
+```
+
+## 2.3 `setup.py`
+The `setup.py` file contains the metadata for the package and is necessary to build it. Here's a template:
+```python
+from setuptools import setup, find_packages
+
+with open("README.md", "r") as readme_file:
+    long_description = readme_file.read()
+
+with open("requirements.txt") as requirements_file:
+    requirements = requirements_file.read().splitlines()
+
+with open("api/_version.py") as version_file:
+    for line in version_file:
+        if "__version__" in line:
+            __version__ = line.split()[-1].replace('"', "")
+
+setup(
+    name="package-name",
+    version="0.0.0",
+    author="your name",
+    author_email="example@email.com",
+    description="Description",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url='https://github.com/username/package-name',
+    packages=find_packages(),
+    python_requires=">=3.9",
+    install_requires=requirements,
+    classifiers=[
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: Unix'
+    ],
+    package_data={"package-name": ["static/*"]},
+    include_package_data=True,
+)
+```
+
+### 2.4 `__version__.py`
+This file containts version info. Needs to be updated for every new version.
+```python
+__version__ = "1.0.0" # don't forget to update
+```
+
+### 2.5 `requirements.txt`
+The `requirements.txt` file is a plain text file listing all the required libraries. This file is used to install libraries using pip
+```shell
+pip install -r requirements.txt
+```
+or in dockerfiles and in the `setup.py`. It is important to list all the dependencies of your package, but don't list built-in Python libraries (e.g. `os`).
+```text
+pandas
+matplotlib
+numpy
+astropy
+```
+
+Attention, if you are considering uploading the package for creating a DOI and/or publishing it by uploading to `pypi` make sure you have obtained the sufficient authorisation by the code owners and contributers and from the collaboration lead. Please, refer to the [Authorship](../../governance/2_authorship.md) and [Licensing](../../governance/3_licensing.md) policies.
+
+### 3. Execution
+
+## 3.1 Installing Your Package via pip
+1. Activate the conda environment where you want to install it.
+2. Navigate to the repository of the package (where `setup.py` is located).
+3. Run `pip install .`. Alternatively, you can enter `pip install <dirpath>`, where `dirpath` is the path to the package's directory in your computer.
+4. You may want to consider adding build-related (such as `build/` or `name.egg-info/`) files to `.gitignore`.
+
+## 3.2 Getting a DOI
+A DOI is a Digital Object Identifier [doi.org](https://doi.org), most of scientific papers and package do have one, as it is straightforward for identification and citations.
+
+**Connecting GitHub to Zenodo**
+1. Sign in to [Zenodo](https://zenodo.org)
+2. Go to your Zenodo dashboard and navigate to "GitHub", click the "connect button" and authorize the access to your repositories.
+3. Enable the repository for which you want to get a DOI.
+
+**Creating a New Release**
+1. Go to your GitHub repository and navigate to the "Releases" section.
+2. Create a new release by cliking on "Draft a new release".
+3. Fill in the tag version, title, description, release notes, ..., then publish the release.
+
+**Getting DOI**
+1. Zenodo will automatically archive your release.
+2. In the "GitHub" section of your Zenodo dashboard, find your repository and the corresponding release.
+3. You can find the DOI next to your release tag.
+
+
+## 3.3 Publish Your Package on PyPi
+
+**Creating a PyPi Account**
+[PyPi](https://pypi.org) is the Python Package Index, which is a repository of software for the Python programming language, and the source of the `pip` command. In order to upload your package, you must create an account. Follow the steps in the website for this purpose.
+
+Once you've created an account you can generate a token for authentication when upload packages via `twine`. For straighforward authentication on your local machine, create a file `$HOME/.pypirc` and save your token like:
+```text
+[pypi]
+username = __token__
+password = <your-token>
+```
+This way `twine` will identify your user automatically.
+
+**Uploading Packages**
+1. Ensure your `setup.py` file is correct (see example above).
+2. If you have written tests, run them and check everything works fine.
+3. Ensure you have installed the required libraries for uploading:
+```shell
+pip install setuptools wheel
+pip install twine
+```
+4. Build the package (without installing it)
+```shell
+python setup.py sdist bdist_wheel
+```
+5. Upload to PyPi via `twine`
+```shell
+twine upload dist/*
+```
+6. Install your package everywhere via pip
+```shell
+pip install <package-name>
+```
+
+Additionally, before uploading to the live PyPi, you can test your package on the Test PyPi server. You can do this by running:
+```shell
+twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+```
+and installing the test version using
+```shell
+pip install --index-url https://test.pypi.org/sample/ <package-name>
+```
+
+
+## Troubleshooting
+Please, check the `pypi` [documentation](https://docs.pypi.org), Zenodo's [documentation](https://help.zenodo.org/docs/).
+
+## Next Steps
+In the next tutorial, you will learn to automate your package's tests: [15_automating_tests](15_automating_tests.md).

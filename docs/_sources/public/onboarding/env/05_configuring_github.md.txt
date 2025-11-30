@@ -1,4 +1,4 @@
-# 05 GitHub
+# 05 Configuring GitHub
 
 ## Goal
 The goal is to setup your GitHub account, synchronise it to your device via git and learn about useful commands and resouces.
