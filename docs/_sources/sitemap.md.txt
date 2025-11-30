@@ -43,8 +43,8 @@
 │   │   └── 13_scipy_fitting.md
 │   │
 │   └── engineering/
-│       ├── 14_automating_tests.md
-│       ├── 15_packages.md
+│       ├── 14_packages.md
+│       ├── 15_automating_tests.md
 │       ├── 16_docker.md
 │       └── 17_local_latex.md
 

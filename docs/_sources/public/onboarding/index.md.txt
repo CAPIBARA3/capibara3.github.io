@@ -28,8 +28,8 @@ python/12_matplotlib.md
 python/13_scipy_fitting.md
 
 :caption: Additional guides
-engineering/14_automating_tests.md
-engineering/15_packages.md
+engineering/14_packages.md
+engineering/15_automating_tests.md
 engineering/16_docker.md
 engineering/17_local_latex.md
 ```
