@@ -1,4 +1,4 @@
-# 02 Installing Ubuntu on a Windows Computer
+# 02 Ubuntu on Windows
 
 ## Goal
 

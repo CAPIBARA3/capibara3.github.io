@@ -408,32 +408,64 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="contributing-guidelines">
 <h1>Contributing Guidelines<a class="headerlink" href="#contributing-guidelines" title="Link to this heading">#</a></h1>
-<p>Thank you for taking the time to contribute to this project! Whether you’re fixing a bug, improving documentation, or suggesting a feature — every contribution matters.
-Please read our <a class="reference internal" href="CODE_OF_CONDUCT.html"><span class="std std-doc">Code of Conduct</span></a> to keep our community inclusive and respectful.</p>
+<p>Thank you for taking the time to contribute to the CAPIBARA Collaboration! Whether you’re fixing a bug, improving documentation, or suggesting a feature — every contribution matters.</p>
+<p>Please read our <a class="reference internal" href="CODE_OF_CONDUCT.html"><span class="std std-doc">Code of Conduct</span></a> to keep our community inclusive and respectful.</p>
 <hr class="docutils" />
 <section id="getting-started">
 <h2>📌 Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h2>
+<section id="prerequisites">
+<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p>Read the <strong>README</strong> of the repo to understand the project goals and setup.</p></li>
-<li><p>Make sure Git is <a class="reference external" href="https://docs.github.com/en/get-started/git-basics/set-up-git">installed and set up</a>.</p></li>
-<li><p>Familiarize yourself with the <a class="reference external" href="https://docs.github.com/en/get-started/using-github/github-flow">GitHub flow</a>.</p></li>
+<li><p>Read the <strong>README</strong> of the repo to understand the project goals and setup</p></li>
+<li><p>Make sure Git is <a class="reference external" href="https://docs.github.com/en/get-started/git-basics/set-up-git">installed and set up</a></p></li>
+<li><p>Familiarize yourself with the <a class="reference external" href="https://docs.github.com/en/get-started/using-github/github-flow">GitHub flow</a></p></li>
+<li><p>Review our <a class="reference internal" href="#./0_governance.md"><span class="xref myst">Governance Charter</span></a> and <a class="reference internal" href="#./1_membership.md"><span class="xref myst">Membership Agreement</span></a></p></li>
 </ol>
-<p>Useful links:</p>
+</section>
+<section id="useful-links">
+<h3>Useful Links<a class="headerlink" href="#useful-links" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github">Finding ways to contribute</a></p></li>
 <li><p><a class="reference external" href="https://docs.github.com/en/github/collaborating-with-pull-requests">How to use Pull Requests</a></p></li>
+<li><p><a class="reference external" href="https://github.com/capibara3">CAPIBARA Collaboration Overview</a></p></li>
+<li><p><a class="reference internal" href="index.html"><span class="std std-doc">CAPIBARA Collaboration Documentation</span></a></p></li>
 </ul>
+</section>
 </section>
 <hr class="docutils" />
 <section id="creating-a-good-issue">
 <h2>🐛 Creating a Good Issue<a class="headerlink" href="#creating-a-good-issue" title="Link to this heading">#</a></h2>
-<p>If you notice a bug or have an idea for a feature:</p>
+<section id="before-creating-an-issue">
+<h3>Before Creating an Issue<a class="headerlink" href="#before-creating-an-issue" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p>Check if existing issues to avoid duplicates have already addressed that.</p></li>
-<li><p>If it doesn’t exist, open a new using an appropriate template (or a blanck issue, if the repo has not templates).</p></li>
-<li><p>Clearly describe the problem or suggestion, providing context, screenshots, and steps to reproduce (if applicable).</p></li>
+<li><p><strong>Check Existing Issues:</strong> Search open and closed issues to avoid duplicates</p></li>
+<li><p><strong>Use Templates:</strong> If available, use the issue template appropriate for your concern</p></li>
+<li><p><strong>Check Documentation:</strong> Ensure your question isn’t already answered in docs</p></li>
 </ol>
-<p>You can freely work on any issue that hasn’t been assigned or that has asked for help. Remember to always notify this to the code owners (see the <code class="docutils literal notranslate"><span class="pre">CODEOWNERS.md</span></code> file in the repo) or to &#64;joanalnu, so that the issue can be assigned to you.</p>
+</section>
+<section id="issue-requirements">
+<h3>Issue Requirements<a class="headerlink" href="#issue-requirements" title="Link to this heading">#</a></h3>
+<p>If you notice a bug or have an idea for a feature:</p>
+<ul class="simple">
+<li><p><strong>Title:</strong> Clear, descriptive title</p></li>
+<li><p><strong>Description:</strong> Detailed explanation of the problem or suggestion</p></li>
+<li><p><strong>Context:</strong> Operating system, software versions, etc.</p></li>
+<li><p><strong>Reproduction Steps:</strong> For bugs, specific steps to reproduce</p></li>
+<li><p><strong>Expected vs Actual:</strong> What should happen vs what actually happens</p></li>
+<li><p><strong>Screenshots:</strong> If applicable, include screenshots or error messages</p></li>
+<li><p><strong>Related Issues:</strong> Link to any related issues</p></li>
+</ul>
+</section>
+<section id="issue-assignment">
+<h3>Issue Assignment<a class="headerlink" href="#issue-assignment" title="Link to this heading">#</a></h3>
+<p>You can work on any issue that:</p>
+<ul class="simple">
+<li><p>Hasn’t been assigned</p></li>
+<li><p>Has the “help wanted” label</p></li>
+<li><p>Is marked as “good first issue”</p></li>
+</ul>
+<p><strong>Always comment on the issue</strong> to let others know you’re working on it. This prevents duplicate work.</p>
+</section>
 </section>
 <hr class="docutils" />
 <section id="making-contributions">
@@ -442,60 +474,265 @@ Please read our <a class="reference internal" href="CODE_OF_CONDUCT.html"><span 
 <section id="local-setup">
 <h3>🔧 Local Setup<a class="headerlink" href="#local-setup" title="Link to this heading">#</a></h3>
 <ol class="arabic">
-<li><p><strong>Fork and clone the repo</strong></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/&lt;your-username&gt;/&lt;repo-name&gt;.git
+<li><p><strong>Fork the Repository</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Click &#39;Fork&#39; button on GitHub, then:</span>
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/&lt;your-username&gt;/&lt;repo-name&gt;.git
 <span class="nb">cd</span><span class="w"> </span>&lt;repo-name&gt;
 </pre></div>
 </div>
 </li>
-<li><p><strong>Create a new branch</strong></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>&lt;your-name&gt;/&lt;feature-name&gt;
+<li><p><strong>Create a New Branch</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>&lt;branch-type&gt;/&lt;short-description&gt;
+<span class="c1"># Examples:</span>
+<span class="c1"># git checkout -b fix/typo-in-readme</span>
+<span class="c1"># git checkout -b feat/add-new-sensor-support</span>
+<span class="c1"># git checkout -b docs/update-contributing-guide</span>
 </pre></div>
 </div>
 </li>
-<li><p>(Optional) Set up a virtual environment (e.g., <code class="docutils literal notranslate"><span class="pre">conda</span></code>, <code class="docutils literal notranslate"><span class="pre">venv</span></code>) and install dependencies.</p></li>
-<li><p><strong>Make your changes</strong> — including code, tests, or docs.</p></li>
-<li><p><strong>Run tests</strong> locally (if applicable) and ensure everything passes.</p></li>
+<li><p><strong>Set Up Development Environment</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check for environment setup instructions in README</span>
+<span class="c1"># Common setup:</span>
+python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv<span class="w"> </span><span class="c1"># create virtual environment</span>
+<span class="nb">source</span><span class="w"> </span>venv/bin/activate<span class="w"> </span><span class="c1"># activate virual environment</span>
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt<span class="w"> </span><span class="c1"># install the required packages</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Make Your Changes</strong></p>
+<ul class="simple">
+<li><p>Follow the project’s coding standards</p></li>
+<li><p>Add tests for new functionalities</p></li>
+<li><p>Update documentation as needed</p></li>
+<li><p>Keep changes focused (one feature/fix per PR)</p></li>
+</ul>
+</li>
+<li><p><strong>Test You Changes</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run existing tests</span>
+pytest
+
+<span class="c1"># Run liners if available</span>
+flake8<span class="w"> </span>.
+black<span class="w"> </span>--check<span class="w"> </span>.
+</pre></div>
+</div>
+</li>
 </ol>
 </section>
 <section id="commit-guidelines">
-<h3>💬 Commit Guidelines<a class="headerlink" href="#commit-guidelines" title="Link to this heading">#</a></h3>
-<ul>
-<li><p>Use clear and concise commit messages.</p></li>
-<li><p>Make sure commits are grouped logically.</p></li>
-<li><p>Example:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>.
-git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Fix typo in contributing guide&quot;</span>
-git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>&lt;your-name&gt;/&lt;feature-name&gt;
+<h3>Commit Guidelines<a class="headerlink" href="#commit-guidelines" title="Link to this heading">#</a></h3>
+<p>We follow conventional commits:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Format: type(scope): description</span>
+
+<span class="c1"># Examples:</span>
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;fix(parser): handle null values in CSV import&quot;</span>
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;feat(api): add new endpoint for sensor data&quot;</span>
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;docs(readme): update installation instructions&quot;</span>
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;test(analysis): add unit tests for statistics module&quot;</span>
 </pre></div>
 </div>
-</li>
+<p><strong>Commit Types</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">feat</span></code>: New feature</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fix</span></code>: Bug fix</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">docs</span></code>: Documentation</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">style</span></code>: Formatting, missing semi-colons, etc.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">refactor</span></code>: Code restructuring</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">test</span></code>: Adding tests</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">chore</span></code>: Maintenance tasks</p></li>
+</ul>
+<p>**Keep Commits Atomic:</p>
+<ul class="simple">
+<li><p>One logical change per commit</p></li>
+<li><p>Commit often, push when ready</p></li>
+<li><p>Write clear commit messages</p></li>
 </ul>
 </section>
 </section>
-<hr class="docutils" />
 <section id="opening-a-pull-request-pr">
 <h2>🔄 Opening a Pull Request (PR)<a class="headerlink" href="#opening-a-pull-request-pr" title="Link to this heading">#</a></h2>
+<section id="pr-creation">
+<h3>PR Creation<a class="headerlink" href="#pr-creation" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p>Go to your fork on GitHub and click <strong>“Compare &amp; Pull Request.”</strong></p></li>
-<li><p>Complete the PR template with a summary of what you’ve done.</p></li>
-<li><p>Link the PR to any relevant issues (e.g., <code class="docutils literal notranslate"><span class="pre">Closes</span> <span class="pre">#123</span></code> where <code class="docutils literal notranslate"><span class="pre">123</span></code> is the issue number you have worked on).</p></li>
-<li><p>Enable “Allow edits from maintainers” for easier collaboration.</p></li>
-<li><p>Reviewers may suggest changes — apply them promptly.</p></li>
-</ol>
-<p>Before submitting:</p>
+<li><p>Go to your fork on GitHub and click “<strong>Compare &amp; Pull Request</strong>”</p></li>
+<li><p>Complete the PR template with:</p>
 <ul class="simple">
-<li><p>[ ] Review your code</p></li>
-<li><p>[ ] Ensure your PR contains only one focused change (split large changes into multiple PRs when possible)</p></li>
-<li><p>[ ] Run tests again</p></li>
+<li><p>Summary of changes</p></li>
+<li><p>Related issue numbers (e.g., <code class="docutils literal notranslate"><span class="pre">Closes</span> <span class="pre">#123</span></code>)</p></li>
+<li><p>Testing performed</p></li>
+<li><p>Screenshots (if UI changes)</p></li>
 </ul>
-<p>Once approved and merged, your contribution will become part of the repo! 🎉</p>
+</li>
+<li><p>Enable “<strong>Allow edits from maintainers</strong>”</p></li>
+</ol>
+</section>
+<section id="pr-requirements-checklist">
+<h3>PR Requirements Checklist<a class="headerlink" href="#pr-requirements-checklist" title="Link to this heading">#</a></h3>
+<p>Before submitting, ensure:</p>
+<ul class="simple">
+<li><p>Code follows project style guidelines</p></li>
+<li><p>Tests pass locally</p></li>
+<li><p>Documentation updated</p></li>
+<li><p>No new linting errors</p></li>
+<li><p>Commit messages follow conventions</p></li>
+<li><p>PR addresses single concern (split large changes)</p></li>
+<li><p>Changes are backward compatible (or document breaking changes)</p></li>
+<li><p>License headers maintained in new files</p></li>
+</ul>
+</section>
+<section id="review-process">
+<h3>Review Process<a class="headerlink" href="#review-process" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Automated Checks: CI/CD runs tests and linting</p></li>
+<li><p>Code Review: At least one maintainer reviews</p></li>
+<li><p>Feedback: Address review comments promptly</p></li>
+<li><p>Merge: After approval and all checks pass</p></li>
+</ol>
+<p><strong>Review Expectations:</strong></p>
+<ul class="simple">
+<li><p>Be respectful and constructive</p></li>
+<li><p>Focus on code, not individuals</p></li>
+<li><p>Explain reasoning for suggestions</p></li>
+<li><p>Thank reviewers for their time</p></li>
+</ul>
+</section>
+</section>
+<section id="contribution-areas">
+<h2>🎯 Contribution Areas<a class="headerlink" href="#contribution-areas" title="Link to this heading">#</a></h2>
+<section id="code-contributions">
+<h3>Code Contributions<a class="headerlink" href="#code-contributions" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Bug fixes</p></li>
+<li><p>New features</p></li>
+<li><p>Performance improvements</p></li>
+<li><p>Test coverage</p></li>
+<li><p>Refactoring</p></li>
+</ul>
+</section>
+<section id="documentation">
+<h3>Documentation<a class="headerlink" href="#documentation" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Tutorials and guides</p></li>
+<li><p>API documentation</p></li>
+<li><p>Translation</p></li>
+<li><p>Example projects</p></li>
+</ul>
+<ul class="simple">
+<li><p>README improvements</p></li>
+</ul>
+</section>
+<section id="design-ux">
+<h3>Design &amp; UX<a class="headerlink" href="#design-ux" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>UI/UX improvements</p></li>
+<li><p>Graphics and diagrams</p></li>
+<li><p>User research</p></li>
+<li><p>Accessibility improvements</p></li>
+</ul>
+</section>
+<section id="community">
+<h3>Community<a class="headerlink" href="#community" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Answering questions</p></li>
+<li><p>Reviewing PRs</p></li>
+<li><p>Mentoring newcomers</p></li>
+<li><p>Writing blog posts</p></li>
+<li><p>Giving thanks</p></li>
+</ul>
+</section>
+</section>
+<section id="tracking-contributions">
+<h2>📊 Tracking Contributions<a class="headerlink" href="#tracking-contributions" title="Link to this heading">#</a></h2>
+<section id="for-students">
+<h3>For Students<a class="headerlink" href="#for-students" title="Link to this heading">#</a></h3>
+<p>If contributing for academic credit:</p>
+<ol class="arabic simple">
+<li><p>Notify Steering Committee of requirements</p></li>
+<li><p>Document hours and contributions</p></li>
+<li><p>Request supervisor coordination if needed</p></li>
+<li><p>Ensure compliance with institutional policies</p></li>
+</ol>
+</section>
+<section id="contribution-recognition">
+<h3>Contribution Recognition<a class="headerlink" href="#contribution-recognition" title="Link to this heading">#</a></h3>
+<p>All contributions are recognized through:</p>
+<ul class="simple">
+<li><p>GitHub contributor graph</p></li>
+<li><p>Publication acknowledgements</p></li>
+<li><p>Annual contributor awards</p></li>
+<li><p>Speaker opportunities</p></li>
+</ul>
+</section>
+</section>
+<section id="development-guidelines">
+<h2>🛠️ Development Guidelines<a class="headerlink" href="#development-guidelines" title="Link to this heading">#</a></h2>
+<section id="code-style">
+<h3>Code Style<a class="headerlink" href="#code-style" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Follow language-specific conventions</p></li>
+<li><p>Use meaningful variable names</p></li>
+<li><p>Comment complex logic</p></li>
+<li><p>Keep functions small and focused</p></li>
+</ul>
+</section>
+<section id="testing">
+<h3>Testing<a class="headerlink" href="#testing" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Write tests for new functionality</p></li>
+<li><p>Maintain or improve test coverage</p></li>
+<li><p>Test edge cases</p></li>
+<li><p>Include integration tests where appropriate</p></li>
+</ul>
+</section>
+<section id="id1">
+<h3>Documentation<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Document public APIs</p></li>
+<li><p>Update README for significant changes</p></li>
+<li><p>Include examples</p></li>
+<li><p>Keep documentation in sync with code</p></li>
+</ul>
+</section>
+<section id="dependencies">
+<h3>Dependencies<a class="headerlink" href="#dependencies" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Justify new dependencies</p></li>
+<li><p>Check license compatibility</p></li>
+<li><p>Keep dependencies updated</p></li>
+<li><p>Document in DEPENDENCIES.md</p></li>
+</ul>
+</section>
 </section>
 <hr class="docutils" />
-<section id="contact">
-<h2>📬 Contact<a class="headerlink" href="#contact" title="Link to this heading">#</a></h2>
-<p>If you have questions or need help, don’t hesitate to <a class="reference external" href="https://capibara3.github.io/contact">reach out</a>.
-.</p>
+<section id="getting-help">
+<h2>❓ Getting Help<a class="headerlink" href="#getting-help" title="Link to this heading">#</a></h2>
+<section id="resources">
+<h3>Resources<a class="headerlink" href="#resources" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://capibara3.github.io/docs">CAPIBARA Collaboration Documentation</a></p></li>
+<li><p><a class="reference external" href="https://github.com/capibara3/discussions">GitHub Discussions</a></p></li>
+</ul>
+</section>
+<section id="contact-points">
+<h3>Contact Points<a class="headerlink" href="#contact-points" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Technical Questions: Repository maintainers</p></li>
+<li><p>Governance Questions: Steering Committee</p></li>
+<li><p>Code of Conduct: <a class="reference external" href="https://capibara3.github.io/contact">Contact Form</a></p></li>
+<li><p>General Inquiries: <a class="reference external" href="https://github.com/capibara3/discussions">GitHub Discussions</a></p></li>
+</ul>
+</section>
+<section id="meetings">
+<h3>Meetings<a class="headerlink" href="#meetings" title="Link to this heading">#</a></h3>
+<p>Check for meeting availability for specific members.</p>
+</section>
+</section>
+<section id="acknowledgments">
+<h2>🙏 Acknowledgments<a class="headerlink" href="#acknowledgments" title="Link to this heading">#</a></h2>
+<p>Thank you for contributing to open science! Your work helps advance space science and supports student researchers worldwide.</p>
+<p>Remember: Every contribution matters, no matter how small. Whether fixing a typo or building a new instrument, you’re helping make science more open and accessible.</p>
+<hr class="docutils" />
+<p>These guidelines adapt to our growing community. Suggestions for improvement are always welcome via issues or pull requests.</p>
 </section>
 </section>
 
@@ -546,15 +783,54 @@ git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started">📌 Getting Started</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-good-issue">🐛 Creating a Good Issue</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-contributions">🚀 Making Contributions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#local-setup">🔧 Local Setup</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commit-guidelines">💬 Commit Guidelines</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started">📌 Getting Started</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#useful-links">Useful Links</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#opening-a-pull-request-pr">🔄 Opening a Pull Request (PR)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contact">📬 Contact</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-good-issue">🐛 Creating a Good Issue</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#before-creating-an-issue">Before Creating an Issue</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#issue-requirements">Issue Requirements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#issue-assignment">Issue Assignment</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-contributions">🚀 Making Contributions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#local-setup">🔧 Local Setup</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commit-guidelines">Commit Guidelines</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#opening-a-pull-request-pr">🔄 Opening a Pull Request (PR)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pr-creation">PR Creation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pr-requirements-checklist">PR Requirements Checklist</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#review-process">Review Process</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contribution-areas">🎯 Contribution Areas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-contributions">Code Contributions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation">Documentation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#design-ux">Design &amp; UX</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#community">Community</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tracking-contributions">📊 Tracking Contributions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-students">For Students</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contribution-recognition">Contribution Recognition</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#development-guidelines">🛠️ Development Guidelines</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-style">Code Style</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#testing">Testing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Documentation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dependencies">Dependencies</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-help">❓ Getting Help</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">Resources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contact-points">Contact Points</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#meetings">Meetings</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledgments">🙏 Acknowledgments</a></li>
 </ul>
   </nav></div>
 

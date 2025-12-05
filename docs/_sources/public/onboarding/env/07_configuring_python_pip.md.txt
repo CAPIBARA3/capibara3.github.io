@@ -94,10 +94,10 @@ Right now, we are developed a custom guide to learning Python specifically tailo
 
 Here are some other resources for learning to code with Python:
 
-1. **Official Python Documentation:** https://docs.python.org/3/tutorial/index.html
+1. **Official Python Documentation:** [https://docs.python.org/3/tutorial/index.html](https://docs.python.org/3/tutorial/index.html)
 2. **Interactive Coding Platforms:**
-    - freeCodeCamp: https://youtu.be/rfscVS0vtbw
-    - Python Tutor: https://pythontutor.com/python-compiler.html#mode=edit
+    - freeCodeCamp: [https://youtu.be/rfscVS0vtbw](https://youtu.be/rfscVS0vtbw)
+    - Python Tutor: [https://pythontutor.com/python-compiler.html#mode=edit](https://pythontutor.com/python-compiler.html#mode=edit)
 3. **Stack Overflow**
 4. **Putting Yourself to Test:** Write some code!
 

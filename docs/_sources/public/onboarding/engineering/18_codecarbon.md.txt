@@ -1,0 +1,180 @@
+# CodeCarbon
+
+## Goal
+You will learn how to track and visualize the carbon footprint of your Python code using the `codecarbon` package. This includes installing the package, integrating it into a Python script, and creating an interactive web-based visualization of the emissions data.
+
+## Prerequisites
+- [02_setting_up_unix](../env/02_setting_up_unix.md)
+- [03_command_line](../env/03_command_line.md)
+- [07_configuring_python_pip](../env/07_configuring_python_pip.md)
+
+## Steps
+
+### 1. Introduction
+[CodeCarbon](https://codecarbon.io/) is a lightweight software package that seamlessly integrates into Python codes, estimating the amount of carbon dioxide (CO2) produced by the cloud or personal computing resources used to execute the code. It is particularly meant to track the impact of AI and ML oriented coding, however it can be integrated in any Python script. The goal of the creators is to show developers how they can lessen emissions by optimizing their code or by hosting their cloud infrastructure in geographical regions that use renewable energy sources.
+
+### 2. Setup
+
+#### 2.1 Installing CodeCarbon
+To install `codecarbon` simply use `pip`:
+
+```bash
+pip install codecarbon
+```
+
+### 3. Execution
+
+#### 3.1 Tracking Your Carbon Footprint
+To track the carbon emission of a Python script:
+
+1. **Import the package** in your Python script:
+```python
+from codecarbon import EmissionsTracker
+```
+
+2. **Initialize and start the tracker** when you begin performing computational tasks:
+```python
+tracker = EmissionsTracker()
+tracker.start()
+```
+> 💡 **Note**: You only need to track emissions during actual computations (e.g., model training, data processing), not during variable definitions or imports.
+
+3. **Stop the tracker** at the end of your script:
+```python
+tracker.stop()
+```
+
+4. **Run your script**. This will generate two files:
+   - `emissions.csv`: Contains the emissions data
+   - `powermetrics-log.txt`: Contains CPU, GPU, and RAM metrics
+
+#### 3.2 Example Script
+Here’s a complete example:
+
+```python
+from codecarbon import EmissionsTracker
+
+tracker = EmissionsTracker()
+tracker.start()
+
+# Simulate a computationally intensive task
+for i in range(1000000):
+    _ = i ** 2
+
+tracker.stop()
+```
+
+### 4. Verification
+
+#### 4.1 Checking Generated Files
+After running your script, verify that the following files are created in your working directory:
+- `emissions.csv`
+- `powermetrics-log.txt`
+
+#### 4.2 Visualizing the Data
+To visualize the emissions data, create an HTML file with the following content. This will display interactive charts using Chart.js:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emissions Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        canvas { max-width: 800px; margin: 20px auto; }
+        h1, h2 { text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Emissions Report</h1>
+    <h2>Emissions Over Time</h2>
+    <canvas id="emissionsChart"></canvas>
+    <h2>Energy Consumption Over Time</h2>
+    <canvas id="energyChart"></canvas>
+
+    <script>
+        // Data extracted from emissions.csv
+        const data = [
+            {
+                timestamp: "2025-04-20T16:35:23",
+                emissions: 9.548730149866211e-07,
+                energy_consumed: 5.486199454102965e-06
+            }
+        ];
+
+        const timestamps = data.map(entry => entry.timestamp);
+        const emissions = data.map(entry => entry.emissions);
+        const energyConsumed = data.map(entry => entry.energy_consumed);
+
+        // Emissions Chart
+        const emissionsCtx = document.getElementById('emissionsChart').getContext('2d');
+        new Chart(emissionsCtx, {
+            type: 'bar',
+            data: {
+                labels: timestamps,
+                datasets: [{
+                    label: 'Emissions (kg CO2)',
+                    data: emissions,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: { title: { display: true, text: 'Timestamp' } },
+                    y: { title: { display: true, text: 'Emissions (kg CO2)' }, beginAtZero: true }
+                }
+            }
+        });
+
+        // Energy Consumption Chart
+        const energyCtx = document.getElementById('energyChart').getContext('2d');
+        new Chart(energyCtx, {
+            type: 'line',
+            data: {
+                labels: timestamps,
+                datasets: [{
+                    label: 'Energy Consumed (kWh)',
+                    data: energyConsumed,
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: { title: { display: true, text: 'Timestamp' } },
+                    y: { title: { display: true, text: 'Energy Consumed (kWh)' }, beginAtZero: true }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+```
+
+Save this as `emissions_report.html` and open it in a browser to see your emissions and energy consumption visualized.
+
+## Troubleshooting
+- **No files generated**: Ensure `tracker.stop()` is called before the script ends.
+- **Import errors**: Verify the installation with `pip show codecarbon`.
+- **Permission errors**: Run your script in a directory where you have write permissions.
+- **Visualization not loading**: Check that `emissions.csv` exists in the same directory as the HTML file, or update the `data` array in the script with your CSV content.
+
+For more help, visit the [CodeCarbon documentation](https://codecarbon.io/).
+
+## Next Steps
+- Learn how to optimize your code for lower emissions
+- Explore cloud regions with greener energy options
+- Integrate CodeCarbon into CI/CD pipelines for continuous monitoring
+
+---
+
+> ✅ **Success**: You can now track, measure, and visualize the carbon footprint of your Python code.
