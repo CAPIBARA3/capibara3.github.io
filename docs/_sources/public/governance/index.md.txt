@@ -6,6 +6,9 @@ Welcome to the CAPIBARA Collaboration governance documentation. These documents 
 :maxdepth: 1
 :caption: Governance Documents
 
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+
 0_governance.md
 1_membership.md
 2_authorship.md
@@ -15,17 +18,8 @@ Welcome to the CAPIBARA Collaboration governance documentation. These documents 
 6_removal_procedure.md
 7_steering_committee.md
 
-CODE_OF_CONDUCT.md
-CONTRIBUTING.md
 :capsule: Additional Documents Coming Soon
 ```
-
-## Quick Links
-
-* Join the Collaboration (link to membership form)
-* Report an Issue
-* Contact Steering Committee
-
 
 ## Overview
 
@@ -43,20 +37,18 @@ The CAPIBARA Collaboration is a volunteer-based international student research c
 
 ## Getting Started
 
-New members should:
+To get familiar with our policies visit the:
 
-1. Read the [Code of Conduct](../CODE_OF_CONDUCT.md)
-2. Review the [Membership Agreement](1_membership.md)
-3. Check [Contributing Guidelines](../CONTRIBUTING.md)
-4. Join [discussions](https://github.com/capibara3/discussions) on GitHub
-5. Begin with the [onboarding tutorials](../tutorials/00_index.md)
+1. [Code of Conduct](CODE_OF_CONDUCT.md)
+2. Read the [Government Charter](0_governance.md) and [Membership Agreement](1_membership.md)
+3. Check the [Contributing Guidlines](CONTRIBUTING.md), [Authorship](2_authorship.md) and [Licensing](3_licensing.md) policies
+4. Read the [Communication](4_communication.md) and [Data Privacy](5_privacy_policy.md) policies
+5. Review other documentation
 
 
 ## Need Help?
 
-* **General Questions:** Open a GitHub discussion
-* **Code of Conduct Issues:** Email [capibara-collaboration@outlook.com](mailto:capibara-collaboration@outlook.com)
-* **Policy Questions:** Open an issue in this repository
-* **Technical Questions:** Check relevant project repositories
+* **Code of Conduct Issues:** [Contact us](https://capibara3.github.io/contact)
+* **Policy Questions:** Open an issue or PR in the [`.github-private`](https://github.com/capibara3/.github-private) repository
 
-Last updated: December 4, 2025
+Last updated: December 5, 2025
