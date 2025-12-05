@@ -23,6 +23,7 @@ public/software/index
 public/onboarding/index
 public/governance/index
 public/templates/index
+sitemap
 ```
 
 
