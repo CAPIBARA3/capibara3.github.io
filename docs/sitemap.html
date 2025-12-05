@@ -383,77 +383,74 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="sitemap-for-documentation">
 <h1>Sitemap for Documentation<a class="headerlink" href="#sitemap-for-documentation" title="Link to this heading">#</a></h1>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>├──<span class="w"> </span>index.md<span class="w">  </span><span class="c1"># landing page: welcome statement, feature projects, ...</span>
-├──<span class="w"> </span>CONTRIBUTING.md
-├──<span class="w"> </span>CODE_OF_CONDUCT.md
-├──<span class="w"> </span>about/
-│<span class="w">   </span>├──<span class="w"> </span>index.md<span class="w">  </span><span class="c1"># goals, members, institutions, governance summary</span>
-│<span class="w">   </span>├──<span class="w"> </span>capigx.md<span class="w">  </span><span class="c1"># overview of capigx with useful links and info, list of coll. institutions, </span>
-│<span class="w">   </span>├──<span class="w"> </span>capicr.md<span class="w">  </span><span class="c1"># overview of capicr with useful links and info</span>
-│<span class="w">   </span>├──<span class="w"> </span>publications.md<span class="w">  </span><span class="c1"># list of publications</span>
-│<span class="w">   </span>└──<span class="w"> </span>contacts.md<span class="w">  </span><span class="c1"># who to talk to</span>
-├──<span class="w"> </span>projects/
-│<span class="w">   </span>├──<span class="w"> </span>index.md<span class="w">  </span><span class="c1"># list of projects</span>
-│<span class="w">   </span>├──<span class="w"> </span>scientific_project_A.md<span class="w">  </span><span class="c1"># overview of scientific projects (i.e. multi-messenger cosmology)</span>
-│<span class="w">   </span>├──<span class="w"> </span>technical_project.md<span class="w">  </span><span class="c1"># overview of technical project (i.e. development of simulations for capicr)</span>
-├──<span class="w"> </span>software/<span class="w"> </span><span class="c1"># tutorials for pacakges or software produced by the capibara or frequently used (i.e. a module for cosmic ray detection simulations, or a dataset of high-energy transients)</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docs/
+├──<span class="w"> </span>_static
+│<span class="w">   </span>├──<span class="w"> </span>capibara-theme.css
+│<span class="w">   </span>└──<span class="w"> </span>logo.png
+├──<span class="w"> </span>docs-templates
+│<span class="w">   </span>├──<span class="w"> </span>legal-template.md
+│<span class="w">   </span>├──<span class="w"> </span>policy-template.md
+│<span class="w">   </span>└──<span class="w"> </span>tutorial-template.md
+├──<span class="w"> </span>internal-docs/<span class="w"> </span><span class="c1"># personal data</span>
+├──<span class="w"> </span>public
+│<span class="w">   </span>├──<span class="w"> </span>about
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>capicr.md
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>capigx.md
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>contacts.md
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>index.md
+│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>publications.md
+│<span class="w">   </span>├──<span class="w"> </span>governance
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>CODE_OF_CONDUCT.md
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>CONTRIBUTING.md
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>drafts/<span class="w"> </span><span class="c1"># in progress</span>
+│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>index.md
+│<span class="w">   </span>├──<span class="w"> </span>onboarding
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>00_applying_to_join.md
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>01_getting_started.md
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>engineering
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>14_packages.md
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>15_automating_tests.md
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>16_docker.md
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>17_local_latex.md
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>18_codecarbon.md
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>env
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>02_setting_up_unix.md
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>03_command_line.md
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>04_configuring_git.md
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>05_configuring_github.md
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>06_collaborating_github.md
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>07_configuring_python_pip.md
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>08_configuring_conda_venv.md
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>index.md
+│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>old-versions
+│<span class="w">   </span>│<span class="w">       </span>├──<span class="w"> </span>00_index.md
+│<span class="w">   </span>│<span class="w">       </span>├──<span class="w"> </span>01_Intro_to_Shell-terminal-command_line.md
+│<span class="w">   </span>│<span class="w">       </span>├──<span class="w"> </span>02_Configuring_Git_Locally.md
+│<span class="w">   </span>│<span class="w">       </span>├──<span class="w"> </span>03_Configuring_GitHub.md
+│<span class="w">   </span>│<span class="w">       </span>├──<span class="w"> </span>04_Collaborating_via_GitHub.md
+│<span class="w">   </span>│<span class="w">       </span>├──<span class="w"> </span>05_Setting_Up_Python.md
+│<span class="w">   </span>│<span class="w">       </span>├──<span class="w"> </span>06_Installing_pip.md
+│<span class="w">   </span>│<span class="w">       </span>├──<span class="w"> </span>07_Configuring_conda.md
+│<span class="w">   </span>│<span class="w">       </span>├──<span class="w"> </span>08_Using_Docker.md
+│<span class="w">   </span>│<span class="w">       </span>├──<span class="w"> </span>10_Creating_a_Package.md
+│<span class="w">   </span>│<span class="w">       </span>├──<span class="w"> </span>11_Automated_Tests.md
+│<span class="w">   </span>│<span class="w">       </span>├──<span class="w"> </span>13_Using_LaTeX_Locally.md
+│<span class="w">   </span>│<span class="w">       </span>├──<span class="w"> </span>PENDINGUPDATE_09_Jupyter_Notebook.md
+│<span class="w">   </span>│<span class="w">       </span>├──<span class="w"> </span>PENDINGUPDATE_12_Code_Editors_and_IDEs.md
+│<span class="w">   </span>│<span class="w">       </span>├──<span class="w"> </span>Ubuntu_on_Windows.md
+│<span class="w">   </span>│<span class="w">       </span>└──<span class="w"> </span>index.md
+│<span class="w">   </span>├──<span class="w"> </span>templates
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>Engineering<span class="w"> </span>Documentation<span class="w"> </span>Template.zip
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>Scientific<span class="w"> </span>White<span class="w"> </span>Paper.zip
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>capibara_template.key
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>emails_capicr.md
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>emails_capigx.md
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>index.md
+│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>power_capibara_template.pptx
 │<span class="w">   </span>├──<span class="w"> </span>index.md
-│<span class="w">   </span>├──<span class="w"> </span>cr-sim.md<span class="w"> </span><span class="c1"># should contain installation, usage examples, dependencies and environment setup/templates, APIs/CLIs,</span>
-│<span class="w">   </span>└──<span class="w"> </span>fermi-database-api.md
-├──<span class="w"> </span>onboarding/<span class="w"> </span><span class="c1"># introduction to the tools used in the collaboration, analog to the previous tutorials directory</span>
-│<span class="w">   </span>├──<span class="w"> </span>index.md
-│<span class="w">   </span>├──<span class="w"> </span>00_applying_to_join.md
-│<span class="w">   </span>├──<span class="w"> </span>01_getting_started.md
-│<span class="w">   </span>│
-│<span class="w">   </span>├──<span class="w"> </span>env/
-│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>02_setting_up_unix.md
-│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>03_command_line.md
-│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>04_configuring_git.md
-│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>05_configuring_github.md
-│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>06_collaborating_github.md
-│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>07_configuring_python_pip.md
-│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>08_configuring_conda_venv.md
-│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>X_code_editors.md
-│<span class="w">   </span>│
-│<span class="w">   </span>├──<span class="w"> </span>python/<span class="w"> </span><span class="c1"># right now recommending gh.com/omsharansalafia/intropython, a python tutorial series might come in the future</span>
-│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>09_python_basics.md
-│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>10_jupyter_notebook.md
-│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>11_numpy_pandas.md
-│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>12_matplotlib.md
-│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>13_scipy_fitting.md
-│<span class="w">   </span>│
-│<span class="w">   </span>└──<span class="w"> </span>engineering/
-│<span class="w">       </span>├──<span class="w"> </span>14_packages.md
-│<span class="w">       </span>├──<span class="w"> </span>15_automating_tests.md
-│<span class="w">       </span>├──<span class="w"> </span>16_docker.md
-│<span class="w">       </span>└──<span class="w"> </span>17_local_latex.md
-
-├──<span class="w"> </span>governance/<span class="w"> </span><span class="c1"># store policy defining files</span>
-<span class="c1"># note that signed agreements are not stored here, but on the private (hidden) part of the documentation)</span>
-│<span class="w">   </span>├──<span class="w"> </span>index.md
-│<span class="w">   </span>├──<span class="w"> </span>0_governance.md
-│<span class="w">   </span>├──<span class="w"> </span>1_memberships
-│<span class="w">   </span>├──<span class="w"> </span>2_authorship.md
-│<span class="w">   </span>├──<span class="w"> </span>3_licensing.md
-│<span class="w">   </span>├──<span class="w"> </span>04_communication.md
-│<span class="w">   </span>├──<span class="w"> </span>...
-│<span class="w">   </span>└──<span class="w"> </span>data_management.md
-├──<span class="w"> </span>internal/<span class="w"> </span><span class="c1"># private files</span>
-│<span class="w">   </span>├──<span class="w"> </span>index.md
-│<span class="w">   </span>├──<span class="w"> </span>important_links.md
-│<span class="w">   </span>├──<span class="w"> </span>meeting-notes.md
-│<span class="w">   </span>├──<span class="w"> </span>external_agreements/
-│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>agreement_a.pdf
-│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>agreement_a.pdf
-│<span class="w">   </span>└──<span class="w"> </span>members_agreements/
-│<span class="w">       </span>├──<span class="w"> </span>agreement_a.pdf
-│<span class="w">       </span>└──<span class="w"> </span>agreement_a.pdf
-└──<span class="w"> </span>templates/<span class="w"> </span><span class="c1"># templates (also remain private)</span>
-<span class="w">    </span>├──<span class="w"> </span>project-template.md
-<span class="w">    </span>├──<span class="w"> </span>project-proposal-template.md
-<span class="w">    </span>├──<span class="w"> </span>tutorial-template.md
-<span class="w">    </span>├──<span class="w"> </span>meeting-minutes-template.md
-<span class="w">    </span>└──<span class="w"> </span>analysis-note-template.md
+├──<span class="w"> </span>conf.py
+├──<span class="w"> </span>index.md
+└──<span class="w"> </span>sitemap.md
 </pre></div>
 </div>
 </section>

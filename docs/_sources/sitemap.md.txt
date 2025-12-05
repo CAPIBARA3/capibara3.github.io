@@ -3,76 +3,74 @@
 
 ```bash
 
-├── index.md  # landing page: welcome statement, feature projects, ...
-├── CONTRIBUTING.md
-├── CODE_OF_CONDUCT.md
-├── about/
-│   ├── index.md  # goals, members, institutions, governance summary
-│   ├── capigx.md  # overview of capigx with useful links and info, list of coll. institutions, 
-│   ├── capicr.md  # overview of capicr with useful links and info
-│   ├── publications.md  # list of publications
-│   └── contacts.md  # who to talk to
-├── projects/
-│   ├── index.md  # list of projects
-│   ├── scientific_project_A.md  # overview of scientific projects (i.e. multi-messenger cosmology)
-│   ├── technical_project.md  # overview of technical project (i.e. development of simulations for capicr)
-├── software/ # tutorials for pacakges or software produced by the capibara or frequently used (i.e. a module for cosmic ray detection simulations, or a dataset of high-energy transients)
+docs/
+├── _static
+│   ├── capibara-theme.css
+│   └── logo.png
+├── docs-templates
+│   ├── legal-template.md
+│   ├── policy-template.md
+│   └── tutorial-template.md
+├── internal-docs/ # personal data
+├── public
+│   ├── about
+│   │   ├── capicr.md
+│   │   ├── capigx.md
+│   │   ├── contacts.md
+│   │   ├── index.md
+│   │   └── publications.md
+│   ├── governance
+│   │   ├── CODE_OF_CONDUCT.md
+│   │   ├── CONTRIBUTING.md
+│   │   ├── drafts/ # in progress
+│   │   └── index.md
+│   ├── onboarding
+│   │   ├── 00_applying_to_join.md
+│   │   ├── 01_getting_started.md
+│   │   ├── engineering
+│   │   │   ├── 14_packages.md
+│   │   │   ├── 15_automating_tests.md
+│   │   │   ├── 16_docker.md
+│   │   │   ├── 17_local_latex.md
+│   │   │   └── 18_codecarbon.md
+│   │   ├── env
+│   │   │   ├── 02_setting_up_unix.md
+│   │   │   ├── 03_command_line.md
+│   │   │   ├── 04_configuring_git.md
+│   │   │   ├── 05_configuring_github.md
+│   │   │   ├── 06_collaborating_github.md
+│   │   │   ├── 07_configuring_python_pip.md
+│   │   │   └── 08_configuring_conda_venv.md
+│   │   ├── index.md
+│   │   └── old-versions
+│   │       ├── 00_index.md
+│   │       ├── 01_Intro_to_Shell-terminal-command_line.md
+│   │       ├── 02_Configuring_Git_Locally.md
+│   │       ├── 03_Configuring_GitHub.md
+│   │       ├── 04_Collaborating_via_GitHub.md
+│   │       ├── 05_Setting_Up_Python.md
+│   │       ├── 06_Installing_pip.md
+│   │       ├── 07_Configuring_conda.md
+│   │       ├── 08_Using_Docker.md
+│   │       ├── 10_Creating_a_Package.md
+│   │       ├── 11_Automated_Tests.md
+│   │       ├── 13_Using_LaTeX_Locally.md
+│   │       ├── PENDINGUPDATE_09_Jupyter_Notebook.md
+│   │       ├── PENDINGUPDATE_12_Code_Editors_and_IDEs.md
+│   │       ├── Ubuntu_on_Windows.md
+│   │       └── index.md
+│   ├── templates
+│   │   ├── Engineering Documentation Template.zip
+│   │   ├── Scientific White Paper.zip
+│   │   ├── capibara_template.key
+│   │   ├── emails_capicr.md
+│   │   ├── emails_capigx.md
+│   │   ├── index.md
+│   │   └── power_capibara_template.pptx
 │   ├── index.md
-│   ├── cr-sim.md # should contain installation, usage examples, dependencies and environment setup/templates, APIs/CLIs,
-│   └── fermi-database-api.md
-├── onboarding/ # introduction to the tools used in the collaboration, analog to the previous tutorials directory
-│   ├── index.md
-│   ├── 00_applying_to_join.md
-│   ├── 01_getting_started.md
-│   │
-│   ├── env/
-│   │   ├── 02_setting_up_unix.md
-│   │   ├── 03_command_line.md
-│   │   ├── 04_configuring_git.md
-│   │   ├── 05_configuring_github.md
-│   │   ├── 06_collaborating_github.md
-│   │   ├── 07_configuring_python_pip.md
-│   │   ├── 08_configuring_conda_venv.md
-│   │   └── X_code_editors.md
-│   │
-│   ├── python/ # right now recommending gh.com/omsharansalafia/intropython, a python tutorial series might come in the future
-│   │   ├── 09_python_basics.md
-│   │   ├── 10_jupyter_notebook.md
-│   │   ├── 11_numpy_pandas.md
-│   │   ├── 12_matplotlib.md
-│   │   └── 13_scipy_fitting.md
-│   │
-│   └── engineering/
-│       ├── 14_packages.md
-│       ├── 15_automating_tests.md
-│       ├── 16_docker.md
-│       └── 17_local_latex.md
+├── conf.py
+├── index.md
+└── sitemap.md
 
-├── governance/ # store policy defining files
-# note that signed agreements are not stored here, but on the private (hidden) part of the documentation)
-│   ├── index.md
-│   ├── 0_governance.md
-│   ├── 1_memberships
-│   ├── 2_authorship.md
-│   ├── 3_licensing.md
-│   ├── 04_communication.md
-│   ├── ...
-│   └── data_management.md
-├── internal/ # private files
-│   ├── index.md
-│   ├── important_links.md
-│   ├── meeting-notes.md
-│   ├── external_agreements/
-│   │   ├── agreement_a.pdf
-│   │   └── agreement_a.pdf
-│   └── members_agreements/
-│       ├── agreement_a.pdf
-│       └── agreement_a.pdf
-└── templates/ # templates (also remain private)
-    ├── project-template.md
-    ├── project-proposal-template.md
-    ├── tutorial-template.md
-    ├── meeting-minutes-template.md
-    └── analysis-note-template.md
 
 ```
