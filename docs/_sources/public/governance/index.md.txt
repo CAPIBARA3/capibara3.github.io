@@ -1,15 +1,62 @@
 # Governance
 
-Coming description...
+Welcome to the CAPIBARA Collaboration governance documentation. These documents define how our collaboration operates, from membership to publications.
 
 ```{toctree}
 :maxdepth: 1
-:capition: Legal Files
+:caption: Governance Documents
 
 0_governance.md
 1_membership.md
 2_authorship.md
 3_licensing.md
 4_communication.md
-:caption: more comming...
+5_privacy_policy.md
+6_removal_procedure.md
+7_steering_committee.md
+
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+:capsule: Additional Documents Coming Soon
 ```
+
+## Quick Links
+
+* Join the Collaboration (link to membership form)
+* Report an Issue
+* Contact Steering Committee
+
+
+## Overview
+
+The CAPIBARA Collaboration is a volunteer-based international student research collective focused on space science and high-energy astrophysics instrumentation. Our governance is designed to be transparent, fair, and educational while producing high-quality scientific outputs.
+
+
+## Core Principles
+
+1. **Open Science:** Default to open licensing and public dissemination
+2. **Student-Led:** Empower students in leadership and decision-making
+3. **Transparency:** Document decisions and maintain public records
+4. **Safety First:** Protect all members, especially minors
+5. **Merit-Based:** Recognize contributions fairly and objectively
+
+
+## Getting Started
+
+New members should:
+
+1. Read the [Code of Conduct](../CODE_OF_CONDUCT.md)
+2. Review the [Membership Agreement](1_membership.md)
+3. Check [Contributing Guidelines](../CONTRIBUTING.md)
+4. Join [discussions](https://github.com/capibara3/discussions) on GitHub
+5. Begin with the [onboarding tutorials](../tutorials/00_index.md)
+
+
+## Need Help?
+
+* **General Questions:** Open a GitHub discussion
+* **Code of Conduct Issues:** Email [capibara-collaboration@outlook.com](mailto:capibara-collaboration@outlook.com)
+* **Policy Questions:** Open an issue in this repository
+* **Technical Questions:** Check relevant project repositories
+
+Last updated: December 4, 2025

@@ -7,12 +7,11 @@
 ├── CONTRIBUTING.md
 ├── CODE_OF_CONDUCT.md
 ├── about/
-│   ├── index.md  # history, goals, members, institutions, governance summary
-│   ├── mission.md  # overview of our goals and missions
+│   ├── index.md  # goals, members, institutions, governance summary
 │   ├── capigx.md  # overview of capigx with useful links and info, list of coll. institutions, 
 │   ├── capicr.md  # overview of capicr with useful links and info
 │   ├── publications.md  # list of publications
-│   └── contact.md  # who to talk to
+│   └── contacts.md  # who to talk to
 ├── projects/
 │   ├── index.md  # list of projects
 │   ├── scientific_project_A.md  # overview of scientific projects (i.e. multi-messenger cosmology)
@@ -29,23 +28,26 @@
 │   ├── env/
 │   │   ├── 02_setting_up_unix.md
 │   │   ├── 03_command_line.md
-│   │   ├── 04_git_github.md
-│   │   ├── 05_set_up_python_pip.md
-│   │   ├── 07_conda_venv.md
-│   │   ├── 14_docker.md
-│   │   ├── 15_local_latex.md
+│   │   ├── 04_configuring_git.md
+│   │   ├── 05_configuring_github.md
+│   │   ├── 06_collaborating_github.md
+│   │   ├── 07_configuring_python_pip.md
+│   │   ├── 08_configuring_conda_venv.md
 │   │   └── X_code_editors.md
 │   │
 │   ├── python/ # right now recommending gh.com/omsharansalafia/intropython, a python tutorial series might come in the future
-│   │   ├── 06_python_basics.md
-│   │   ├── 08_jupyter_notebook.md
-│   │   ├── 09_numpy_pandas.md
-│   │   ├── 10_matplotlib.md
-│   │   └── 11_scipy_fitting.md
+│   │   ├── 09_python_basics.md
+│   │   ├── 10_jupyter_notebook.md
+│   │   ├── 11_numpy_pandas.md
+│   │   ├── 12_matplotlib.md
+│   │   └── 13_scipy_fitting.md
 │   │
 │   └── engineering/
-│       ├── 12_automating_tests.md
-│       └── 13_packages.md
+│       ├── 14_packages.md
+│       ├── 15_automating_tests.md
+│       ├── 16_docker.md
+│       └── 17_local_latex.md
+
 ├── governance/ # store policy defining files
 # note that signed agreements are not stored here, but on the private (hidden) part of the documentation)
 │   ├── index.md

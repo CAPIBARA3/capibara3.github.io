@@ -1,4 +1,4 @@
-# 04 Git
+# 04 Configuring Git
 
 ## Goal
 To configure the Git version control software on your device, learn basic commands and how to use git.
