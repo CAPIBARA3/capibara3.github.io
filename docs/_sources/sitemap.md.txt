@@ -42,23 +42,6 @@ docs/
 │   │   │   ├── 07_configuring_python_pip.md
 │   │   │   └── 08_configuring_conda_venv.md
 │   │   ├── index.md
-│   │   └── old-versions
-│   │       ├── 00_index.md
-│   │       ├── 01_Intro_to_Shell-terminal-command_line.md
-│   │       ├── 02_Configuring_Git_Locally.md
-│   │       ├── 03_Configuring_GitHub.md
-│   │       ├── 04_Collaborating_via_GitHub.md
-│   │       ├── 05_Setting_Up_Python.md
-│   │       ├── 06_Installing_pip.md
-│   │       ├── 07_Configuring_conda.md
-│   │       ├── 08_Using_Docker.md
-│   │       ├── 10_Creating_a_Package.md
-│   │       ├── 11_Automated_Tests.md
-│   │       ├── 13_Using_LaTeX_Locally.md
-│   │       ├── PENDINGUPDATE_09_Jupyter_Notebook.md
-│   │       ├── PENDINGUPDATE_12_Code_Editors_and_IDEs.md
-│   │       ├── Ubuntu_on_Windows.md
-│   │       └── index.md
 │   ├── templates
 │   │   ├── Engineering Documentation Template.zip
 │   │   ├── Scientific White Paper.zip
