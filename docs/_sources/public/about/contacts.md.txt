@@ -1,9 +1,10 @@
-# Who to talk to
+# Who to reach out to?
 
-## Project Lead
+Most of the contacts are either mentioned on a project's page in the main website or can be found in the team section. Besides, most collaboration internal communications happens on GitHub discussions conversations insde of issues and PRs.
 
-## Mission Lead
+Anyways, here is a brief summary of important contacts:
 
-## Repository owners
-
-## Initiative organisers
+* Main [contact site](https://capibara3.github.io/contact) for any enquiry to the collaboration lead
+* Official email is linked to the contact form. Members of the collaboration may request the direct address contacting us.
+* For any collaboration-wide or CAPIGX related messages you may contact @joanalnu
+* For any technical CAPICR messages you may contact @luke3773
