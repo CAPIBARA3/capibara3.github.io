@@ -1,0 +1,56 @@
+# CAPIBARA Collaboration Communications & Data Policy
+## Version 1.0 | Effective Date: January 1, 2026
+
+### 1. Communication Channels Hierarchy
+
+#### A. Official Channels (All members must join)
+1.  **GitHub Organization** (`CAPIBARA-Collaboration`)
+    - Source of truth for all technical documentation
+    - Issues & Projects for task tracking
+    - Discussions for Q&A
+2. **Official Email**
+2.  **Email Lists** (Google Groups)
+    - `capibaracollaboration@outlook.com`
+    - `crd.capibara@outlook.com`
+    - `cosmos.capibara@outlook.com`
+3.  **Monthly All-Hands Video Call**
+    - Agree to a date
+    - Notes posted on GitHub docs repository
+
+#### B. Informal Channels (Optional)
+- WhatsApp: the Whatsapp group is voluntary and not managed by the CAPIBARA Collaboration.
+
+
+### 2. Data Privacy & Security
+
+- We collect only: Name, email, institution, role, GitHub metadata (by joining the collaboration)
+- Stored in our GitHub website repository. Storage of data is voluntary, except GitHub username.
+- Right to be forgotten: Email the general collaboration email to request your personal data deletion anytime.
+- We never share your personal data without your consent
+
+
+### 3. External Communications
+
+#### A. Social Media Guidelines
+- **Official accounts:** Managed by Communications Lead
+- **Individual members:** May share public info with disclaimer: "Views my own"
+- **Never share:** Unreleased data, internal disputes, proprietary designs
+
+#### B. Press Inquiries
+- All media requests → `capibaracollaboration@outlook.com`
+- Only Program Directors may give official statements
+
+#### C. Conference Presentations
+- Submit abstract to Program Director 2 weeks before deadline
+- Acknowledge: "The CAPIBARA Collaboration"
+- Share slides in the `.github-private` repository under `internal/outreach`
+
+### 4. Internal Transparency Requirements
+- Partnership decisions: Announced within 24 hours
+- Technical failures: Post-mortem within 1 week
+- Meeting minutes: Posted within 48 hours
+
+### 5. Violation Procedure
+1. First offense: Private warning from Program Director
+2. Second offense: Temporary suspension (2 weeks)
+3. Third offense: Membership review (see MEMBERSHIP_POLICY.md)

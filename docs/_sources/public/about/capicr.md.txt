@@ -1,5 +1,0 @@
-# CAPICR
-
-CAPIBARA's Cosmic Ray Detector
-
-For the moment, refer to the [mission's website](https://capibara3.github.io/capicr).

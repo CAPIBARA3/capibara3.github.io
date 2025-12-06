@@ -1,0 +1,26 @@
+# Authorship & Publication Policy
+## Version 1.0 | Effective Date: January 1, 2026
+
+## 1. Publication Categories
+
+### A. Technical/Instrument Papers
+(e.g., "Design of the CAPIBARA-1 GAGG Detector")
+**Author list:** All contributors to the specific work described, listed alphabetically.
+**Collaboration author:** "on behalf of the CAPIBARA Collaboration"
+
+### B. Science Results Papers  
+(e.g., "First GRB detection with CAPIBARA-1")
+**Author list:** The CAPIBARA Collaboration (with consortium author list in appendix)
+**Writing committee:** 5-7 members who drafted the paper, listed first alphabetically
+
+### C. Student Theses
+Students may use collaboration data for theses with approval from their Program Director.
+
+## 2. Authorship Requirements
+To be listed as author on collaboration papers, one must:
+1. Make significant contribution to instrumentation, software, data analysis, or interpretation
+2. Participate in paper review
+3. Approve final manuscript
+
+## 3. Dispute Resolution
+Authorship disputes go to Advisory Board for mediation.

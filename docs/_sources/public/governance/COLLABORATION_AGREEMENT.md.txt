@@ -1,0 +1,26 @@
+# CAPIBARA Collaboration Agreement
+## Version 1.0 | Effective Date: January 1, 2026
+
+### 1. Mission Statement
+The CAPIBARA Collaboration is an international, student-led initiative to develop and operate space-based observatories for high-energy astrophysics and cosmic ray research. We operate on principles of open science, educational training, and incremental technological development.
+
+### 2. Organizational Structure
+- **Founding Director:** Joan Alcaide Núñez (oversees collaboration-wide administration)
+- **Program Directors:** 
+  - CAPIBARA-CRD: Lluc Soler Manich
+  - CAPIBARA-SENTINEL: Joan Alcaide Núñez
+- **Advisory Board:** To be composed of 3-5 senior scientists/engineers
+- **Member Institutions:** To be composed by our host universities. Formalised via signing Memorandum of Understanding.
+
+### 3. Decision Making
+- **Technical decisions:** Made by program team leads
+- **Strategic decisions:** Requires consensus among Program Directors + Advisory Board
+- **New member admissions:** Approved by Program Directors
+
+### 4. Intellectual Property (IP) Policy
+- All hardware designs, software, and documentation are **open source** under MIT License unless otherwise required by partner institutions.
+- Scientific data will be public with maximum 6-month proprietary period for analysis.
+- Publications must acknowledge "The CAPIBARA Collaboration" and follow our authorship policy.
+
+### 5. Amendment Process
+This agreement can be amended by 2/3 vote of Program Directors + Advisory Board.

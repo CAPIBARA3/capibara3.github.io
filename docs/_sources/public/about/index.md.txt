@@ -1,9 +1,0 @@
-# About
-
-```{toctree}
-
-capicr
-capigx
-publications
-contacts
-```

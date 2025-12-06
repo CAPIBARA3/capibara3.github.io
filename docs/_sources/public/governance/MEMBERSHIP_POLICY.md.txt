@@ -1,0 +1,122 @@
+# CAPIBARA Collaboration Membership Policy
+## Version 1.0 | Effective Date: January 1, 2026
+
+### 1. Membership Tiers & Benefits
+
+#### Tier 1: Student Member (Core Contributor)
+**Requirements:**
+- Currently enrolled student (high school, undergraduate, graduate)
+- Minimum 3 hours/week contribution
+- Complete onboarding checklist (`env` guides only)
+- Signed Membership agreement
+
+**Benefits:**
+- Access to GitHub repositories
+- Listed as collaboration member on website (with consent)
+- Eligible for authorship per AUTHORSHIP_POLICY.md
+- May represent CAPIBARA at conferences
+- Vote in technical decisions
+
+#### Tier 2: Associate Member (Occasional Contributor)
+**Requirements:**
+- Contributes <3 hours/week
+- May be professionals, alumni, or irregular students
+- Signed Code of Conduct agreement
+
+**Benefits:**
+- Access to relevant GitHub repositories
+- Listed as associate member
+- May earn authorship for substantial contributions
+
+#### Tier 3: Advisory Member
+**Requirements:**
+- Faculty, industry professional, or senior scientist
+- Agrees to mentor/advise 1 hour/month
+- Approved by Program Directors
+
+**Benefits:**
+- Listed on website Advisory Board
+- Access to all non-sensitive documents
+- Invitation to quarterly strategy meetings
+
+### 2. Application Process
+
+#### For Student Members:
+1. Submit application via website form
+2. Complete introductory tasks (join GitHub organisation and onboarding tutorials)
+3. Interview with Program Director (30 min video call)
+4. 30-day probationary period
+5. Full membership granted upon team lead approval
+
+#### For Advisory Members:
+1. Invitation from Program Directors
+2. Review of CV/background
+3. Meeting with Program Directors
+4. Signed Memorandum of Understanding
+
+### 3. Expectations & Responsibilities
+
+#### All Members Must:
+- Contribute constructively to team goals
+- Communicate availability changes
+- Document their work
+- Respect collaboration policies
+- Attend monthly meetings (or watch recordings)
+
+#### Time Commitment:
+- **Minimum:** 3 hours/week for Student Members
+- **Recommended:** 3+ hours/week for leadership roles
+- **Tracking:** Self-reported via monthly survey
+
+### 4. Removal of Membership
+
+#### Grounds for Removal:
+1. **Inactivity:** No contributions for 12 months without notice
+2. **Violations:** Repeated breaches of Code of Conduct
+3. **Harmful Actions:** Deliberate sabotage, harassment, data theft
+4. **Misrepresentation:** Falsifying credentials or contributions
+
+#### Removal Process (Progressive):
+```
+Incident → Private Warning → 30-Day Probation → Vote → Removal
+```
+1. **Documentation:** Incident report by Program Director
+2. **Private Discussion:** With member to understand situation
+3. **Probation Period:** 30 days to improve (except for severe violations)
+4. **Team Vote:** Majority vote of Program Directors + Advisory Board
+5. **Notification:** Formal email with reasons and appeal process
+
+#### Appeal Process:
+1. Written appeal within 14 days of removal
+2. Reviewed by 3-member panel (1 Advisory, 2 Student Members not involved)
+3. Decision within 30 days
+4. Final decision binding
+
+### 5. Alumni Status
+- Graduating students may become Associate Members
+- Maintain website listing (with "Alumni" tag)
+- Invited tosome events
+- May continue contributing if desired
+
+### 6. Institutional Membership
+For universities/labs wishing to formally partner:
+1. Signed Memorandum of Understanding (MOU template coming)
+2. Designated faculty liaison
+3. Resource contribution (lab space, compute, etc.)
+
+---
+
+## Member Agreement (To be signed digitally)
+
+By joining the CAPIBARA Collaboration, I agree to:
+- [ ] Abide by all collaboration policies
+- [ ] Contribute a minimum of 3 hours/week (Student Members)
+- [ ] Maintain professional conduct
+- [ ] Acknowledge collaboration in relevant publications
+- [ ] Respect data privacy and intellectual property policies
+
+Name: ________________________
+Date: ________________________
+Signature: ___________
+
+People that are underage (less than 18 years old) must also submitt a declaration by parents or legal tutors. The submission of both documents must be via email to the official collaboration email, in PDF format and is a necessary requirement to joining the CAPIBARA Collaboration.
