@@ -1,0 +1,21 @@
+# Team
+
+A summary of all team members, and their current responsibilities and tasks.
+
+
+| Name | Team | Task | Role |
+| --- | --- | --- | --- |
+| adeelalbaa | undecided | CAPICR software/CAPIGX MCD | technical staff (software) |
+| alesab-08 | undecided | prep for SSEA | undecided |
+| Aticus54 | undecided | SNe/CAPICR support | undecided |
+| carlesfonseca | CAPICR / CAPIGX | CR simulations, CAPIGX MCD | scientific collaborator |
+| delfarri | CAPICR | CAPICR analysis software | scientific collaborator |
+| joanalnu | CAPIGX | coordination, CAPIGX MCD and MM cosmo | PI + scientific collaborator |
+| luke3773 | CAPICR | CAPICR engineering | technical staff |
+| martinasolano | CAPIGX | CAPIGX MCD | scientific collaborator |
+| rosabersab | CAPIGX | CAPIGX MCD and SNe/MM cosmo | scientific collaborator |
+| snowbreak3742 | CAPICR | CAPICR engineering | technical staff |
+| truitaderiu | undecided | CAPIGX MCD? CAPICR support? | technical staff |
+
+
+Feel free to PR this to update your tasks as you progress. Remember you can see our roadmap in our organisation's [projects](https://github.com/capibara3/projects).

@@ -18,7 +18,8 @@ docs/
 │   │   ├── capigx.md
 │   │   ├── contacts.md
 │   │   ├── index.md
-│   │   └── publications.md
+│   │   ├── publications.md
+│   │   └── team.md
 │   ├── governance
 │   │   ├── CODE_OF_CONDUCT.md
 │   │   ├── CONTRIBUTING.md
