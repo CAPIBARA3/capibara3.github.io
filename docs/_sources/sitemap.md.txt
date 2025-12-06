@@ -3,7 +3,7 @@
 
 ```bash
 
-docs/
+docs
 ├── _static
 │   ├── capibara-theme.css
 │   └── logo.png
@@ -11,23 +11,28 @@ docs/
 │   ├── legal-template.md
 │   ├── policy-template.md
 │   └── tutorial-template.md
-├── internal-docs/ # personal data
+├── internal-docs
 ├── public
-│   ├── about
-│   │   ├── capicr.md
-│   │   ├── capigx.md
-│   │   ├── contacts.md
-│   │   ├── index.md
-│   │   ├── publications.md
-│   │   └── team.md
 │   ├── governance
+│   │   ├── AUTHORSHIP_POLICY.md
 │   │   ├── CODE_OF_CONDUCT.md
+│   │   ├── COLLABORATION_AGREEMENT.md
 │   │   ├── CONTRIBUTING.md
-│   │   ├── drafts/ # in progress
+│   │   ├── MEMBERSHIP_POLICY.md
+│   │   ├── PRIVACY_POLICY.md
+│   │   ├── about.md
+│   │   ├── drafts
+│   │   │   ├── 0_governance.md
+│   │   │   ├── 1_membership.md
+│   │   │   ├── 2_authorship.md
+│   │   │   ├── 3_licensing.md
+│   │   │   ├── 4_communication.md
+│   │   │   ├── 5_privacy_policy.md
+│   │   │   ├── 6_removal_procedure.md
+│   │   │   ├── 7_steering_committee.md
+│   │   │   └── X_environment.md
 │   │   └── index.md
 │   ├── onboarding
-│   │   ├── 00_applying_to_join.md
-│   │   ├── 01_getting_started.md
 │   │   ├── engineering
 │   │   │   ├── 14_packages.md
 │   │   │   ├── 15_automating_tests.md
@@ -42,7 +47,9 @@ docs/
 │   │   │   ├── 06_collaborating_github.md
 │   │   │   ├── 07_configuring_python_pip.md
 │   │   │   └── 08_configuring_conda_venv.md
-│   │   ├── index.md
+│   │   ├── 00_applying_to_join.md
+│   │   ├── 01_getting_started.md
+│   │   └── index.md
 │   ├── templates
 │   │   ├── Engineering Documentation Template.zip
 │   │   ├── Scientific White Paper.zip
@@ -51,7 +58,7 @@ docs/
 │   │   ├── emails_capigx.md
 │   │   ├── index.md
 │   │   └── power_capibara_template.pptx
-│   ├── index.md
+│   └── index.md
 ├── conf.py
 ├── index.md
 └── sitemap.md

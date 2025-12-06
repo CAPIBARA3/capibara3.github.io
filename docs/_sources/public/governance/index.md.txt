@@ -8,17 +8,11 @@ Welcome to the CAPIBARA Collaboration governance documentation. These documents 
 
 CODE_OF_CONDUCT.md
 CONTRIBUTING.md
+COLLABORATION_AGREEMENT.md
+PRIVACY_POLICY.md
+AUTHORSHIP_POLICY.md
+MEMBERSHIP_POLICY.md
 
-0_governance.md
-1_membership.md
-2_authorship.md
-3_licensing.md
-4_communication.md
-5_privacy_policy.md
-6_removal_procedure.md
-7_steering_committee.md
-
-:capsule: Additional Documents Coming Soon
 ```
 
 ## Overview
