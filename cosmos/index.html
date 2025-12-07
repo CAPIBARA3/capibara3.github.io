@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAPIGX | Capibara Collaboration</title>
+    <title>CAPIBARA-COSMOS | Student-Led High-Energy Constellation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/styles.css">
     <link rel="shortcut icon" type="image/png" href="/images/logos/capibara.png" />
+    <style>
+        /* Center content grid for this page only */
+        .content-grid {
+            grid-template-columns: 1fr !important;
+            max-width: 900px !important;
+            margin: 0 auto !important;
+        }
+    </style>
 </head>
 <body>
 <!-- Navigation will be injected here -->
@@ -17,14 +25,19 @@
     <nav class="breadcrumb">
         <ol>
             <li><a href="../">Home</a></li>
-            <li>CAPIGX</li>
+            <li>CAPIBARA-COSMOS</li>
         </ol>
     </nav>
 
     <!-- Page header -->
     <header class="page-header">
-        <h1>CAPIBARA's Gamma-ray/X-ray Mission</h1>
-        <p class="subtitle">A High-Energy Trasient Monitoring Constellation</p>
+        <h1>CAPIBARA-COSMOS</h1>
+        <p class="subtitle">A Student-Built Pathway to an All-Sky High-Energy Monitor</p>
+        <div class="mission-tagline">
+            <span class="tag">Student-Led</span>
+            <span class="tag">Incremental Development</span>
+            <span class="tag">Multi-Messenger Ready</span>
+        </div>
     </header>
 
     <!-- Main content sections -->
@@ -32,106 +45,181 @@
         <div class="content-grid">
             <!-- Text content -->
             <div class="text-content">
-                <h2>Mission Overview</h2>
-                <p>CAPIGX is a student-led mission aiming to monitoring the sky for high energy transient phenomena. Sensitive in the X-ray and Gamma-ray regime, it will consist of a constellation of 3 CubeSats, enabling sub-arcminute source localisation precision. By providing rapid and precise observations of transient phenomena, such as Gamma-ray bursts (GRBs) or X-ray flashes, it will be a useful resource for the astrophysical community. It will allow follow-up observations to gravitational event alerts and monitor the sky for other transients, thus aiding the schedule of flagship missions.</p>
+                <h2>Our Ambition</h2>
+                <p>The ultimate goal of the CAPIBARA-COSMOS program is to provide a scalable, robuts, simple, and agile platform for monitoring high-energy transients in the X-ray and gamma-ray, in particular upon the “golden era” of multi-messerger astronomy in the 2030s. Besides as a student-led endeavour CAPIBARA-COSMOS has a unique educational value, enabling young aspiring researchers to get they hands dirty with aerospace engineering and satellite development all the way to astrophysical data analysis and fundamental physics.</p>
+
+                <h2>The Three-Phase Roadmap</h2>
+                <div class="roadmap-overview">
+                    <div class="phase">
+                        <h3><i class="fas fa-rocket"></i> Phase 1: Pathfinder (2026-2029)</h3>
+                        <p>COSMOS-1 will be a single CubeSat based on the proven GRBAlpha design, and learning from other missions such as BurstCube, CAMELOT, and HERMES. The goal is to put our first CubeSat in orbit and detect 1-2 bright GRBs demonstrating our technology readiness, testing data analysis pipelines, fast alert algorithms, and ground segment operations, while gaining flight experience. This mission will consist of a commercial 3U CubeSat with a single detector and we expect to launch it around 2028 via ESA’s Fly Your Satellite! or NASA CSLI programs.</p>
+                    </div>
+                    <div class="phase">
+                        <h3><i class="fas fa-satellite"></i> Phase 2: Demonstrator (2028-2032)</h3>
+                        <p>COSMOS-Duo will be the first student-led in-orbit triangulation, demonstrating our main innovation and moving closer to our goal of a monitoring constellation. The goal is to perform subarcminute locasation for over 20 transients per year. Both satellites will consist of customise CubeSat busses, building upon the knowledge gained with our pathfinder. It will be launched around 2032 and extend its operation until the next phase (approximately aiming for 5 years of lifetime).</p>
+                    </div>
+                    <div class="phase">
+                        <h3><i class="fas fa-network-wired"></i> Phase 3: Constellation (2032-2035)</h3>
+                        <p>Reaching our ultimate goal, COSMOS-NET will be a 4 microsatellite constellation providing fast transient and multi-messenger counterpart alerts with arcminute-level localisation for follow-up observations. The goal is to perform continuous, all-sky observations and rapidly provide useful data to the astrophysics community. COSMOS-NET data combined with observations from other X-ray, IR, optical, and radio telescopes well as gravitational wave (GW) and neutrino observatories will unfold a new multi-messenger view on the nature of the universe.</p>
+                    </div>
+                    <p><b>Why this approach works?</b> CAPIBARA-COSMOS flips the usual mission development model, we put students as the primary developers, supported by our advisory council of senior researchers and experts and industry partners. Thus, each phase proves capability and provides experience to students to build the next. The CAPIBARA Collaboration is an international student-led group of students building not only innovative missions, but also a network of enthuasistic and high-achieving students across universities.</p>
+                </div>
             </div>
 
             <div class="text-content">
-                <h2>Unique Value</h2>
-                <p>Specially unique to this mission is its educational value, since both CAPIGX and the CAPIBARA Collaboration are fully student-led. It fosters collaboration between education and professionals and bridges the gap between school and current research. Furthermore, it creates hands-on experience for young students passionate about fields ranging from electrical and aerospace engineering to computer science and theoretical astrophysics. At the same time, the mission will provide valuable data by continuously monitoring the high energy sky.</p>
-            </div>
-
-            <div class="text-content">
-                <h2>Key Innovation</h2>
-                By deploying an array of 3 different CubeSats with a baseline distance, we aim to perform very high precision localisation of burst sources through triangulation and, potentially, intensity interferometry. Building up from technology already developed and tested by the interplanetary network (IPN) and the HERMES mission, our goal is to provide sub-arcminute precision for the next era of gravitational wave observatories in the late 2030s. The issue this setup solves is that gamma-ray and X-ray are impossible to focus with regular optics like telescopes. Triangulation with multiple detectors will allow for accurate host galaxy identification and ground-based telescope follow-up observations at lower wavelengths.
-
-                <h2>Instruments</h2>
-                <p>To cover the observational gap in the keV to MeV range, we need to combine X-ray and gamma-ray instruments with segmentation at 150 keV.</p>
+                <h2>Why This Approach Works</h2>
+                <p>Traditional mission development often excludes students from meaningful hardware roles. SENTINEL flips this model: <strong>students are the primary architects</strong>, supported by advisors and industry partners. This creates:</p>
                 <ul class="feature-list">
-                    <li><i class="fas fa-check-circle"></i> 1-150 keV (X-ray): Cadmium Zinc Telluride (CZT) detectors</li>
-                    <li><i class="fas fa-check-circle"></i> 0.15-1 MeV (hard X-ray/gamma-ray): Cesium Iodide (CsL(TI)) with Silicon Photomultipliers (SiPMs)</li>
+                    <li><i class="fas fa-graduation-cap"></i> <strong>Real Flight Heritage:</strong> Students gain end-to-end mission experience</li>
+                    <li><i class="fas fa-handshake"></i> <strong>Institutional Trust:</strong> Each phase proves capability for the next</li>
+                    <li><i class="fas fa-bolt"></i> <strong>Rapid Innovation:</strong> Student agility accelerates development cycles</li>
+                    <li><i class="fas fa-globe"></i> <strong>Global Collaboration:</strong> Distributed teams across universities</li>
                 </ul>
             </div>
 
             <!-- Image/content card -->
-            <div class="content-card glow-on-hover">
-                <img src="../images/ideas.png" alt="Descriptive alt text">
+            <!-- <div class="content-card glow-on-hover">
+                <img src="../images/constellation-concept.png" alt="SENTINEL constellation concept">
                 <div class="card-caption">
-                    <p>Check Out the Latest Related Publication</p>
-                    <a href="../publications/index.html" class="btn btn-small">Read It</a>
-                    <!--TODO: add publication when available-->
+                    <p>Explore Our Technical Documentation</p>
+                    <a href="https://github.com/CAPIBARA-Collaboration/sentinel-mcd" class="btn btn-small" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
     <!-- Multi-column content -->
     <section class="columns-section">
-        <h2>Related Research Initiatives</h2>
-        <p>The CAPIBARA Collaboration's research projects with CAPIGX mission data results.</p>
+        <h2>Synergy with Next-Generation Observatories</h2>
+        <p>CAPIBARA-COSMOS is timed to become the high-energy sentinel for the 2035 multi-messenger network:</p>
         <div class="columns-container">
             <div class="column">
-                <h3><a href="../capigx/multi-messenger-cosmology.html"><i class="fas fa-wave-square"></i> <u>Multi-Messenger Cosmology</u></a></h3>
-                <p>Combining CAPIGX's GRBs data with GW signals to learn about the origin and future of the Universe.</p>
-                <img src="../images/hubble-constant.jpg" alt="Hubble Constant">
+                <h3><i class="fas fa-wave-square"></i> Gravitational Waves</h3>
+                <p>Rapid, precise localization of short GRB counterparts to neutron star mergers detected by LIGO, ET, and LISA.</p>
+                <div class="observatory-tag">LIGO · ET · LISA</div>
             </div>
             <div class="column">
-                <h3><a href="../capigx/agn-cosmic-ray-interactions.html"><i class="fas fa-radiation"></i> <u>AGN Cosmic Ray Interaction</u></a></h3>
-                <p>Studying the relation between AGN jet dynamics and cosmic rays.</p>
-                <img src="../images/agn-jets.png" alt="AGN Jets">
+                <h3><i class="fas fa-snowflake"></i> Neutrino Astronomy</h3>
+                <p>Identifying high-energy electromagnetic counterparts to IceCube and KM3NeT neutrino alerts.</p>
+                <div class="observatory-tag">IceCube · KM3NeT</div>
             </div>
             <div class="column">
-                <h3><a href="../capigx/supernova-remnant-environments.html"><i class="fas fa-dot-circle"></i> <u>Supernova Remnant Enviroments</u></a></h3>
-                <p>Exploring the acceleration of cosmic rays in supernova remnants.</p>
-                <img src="../images/supernova.jpg" alt="Supernova Remnant">
+                <h3><i class="fas fa-stopwatch"></i> Time-Domain Astrophysics</h3>
+                <p>Triggering follow-up observations by THESEUS, NewAthena, and CTAO for transients across the spectrum. Follow-ups across the full Em spectrum.</p>
+                <div class="observatory-tag">THESEUS · CTAO · NewAthena</div>
             </div>
         </div>
     </section>
 
-    <section id="timeline">
-        <h2>Mission Timeline</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-year">2025-2026</div>
-                <p><strong>Mission Concept Development (MCD)</strong> - Planning, study the field and its needs, forecasts for the future, publishing MCD, establishing connections.</p>
+    <section class="columns-section">
+        <h2>Scientific Outcomes</h2>
+        <p>CAPIBARA-COSMOS data will join the great amount of diverse data publicly available for astrophysical research, contributing to science in many fields.</p>
+        <div class="columns-container">
+            <div class="column">
+                <h3><i class="fas fa-bolt"></i> High-Energy Transients</h3>
+                <p>Gamma-ray bursts (GRBs), X-ray flashes, magnetar flares, tidal disruption events (TDEs), soft gamma-ray repeaters</p>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-year">2027-2030</div>
-                <p><strong>Preliminary Design Review</strong> - Satellite (constellation) first design, design iteration, industry feedback, application for launch programmes (FlyYourSatellite!), funding campaigns.</p>
+            <div class="column">
+                <h3><i class="fas fa-star"></i> Persistent Sources</h3>
+                <p>AGN variability, blazar flares, X-ray binaries</p>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-year">2031-2033</div>
-                <p><strong>Critical Design & Manufacturing</strong> - Final design review, building satellites, production of scientific data pipelines and storage archives, satellites testing.</p>
+            <div class="column">
+                <h3><i class="fas fa-eye"></i> Multi-Messenger Synergy</h3>
+                <p>GW counterparts, neutrino astronomy, fast radio bursts (FRBs) counterparts, CR origin studies</p>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-year">2034</div>
-                <p><strong>Launch Preparation</strong> - Final launch preparation, launch-vehicle integration, preparation of operations.</p>
+            <div class="column">
+                <h3><i class="fas fa-stairs"></i> Cosmology</h3>
+                <p>Star formation at high-z, reionization era studies, large scale structure (LSS) tracing</p>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-year">2035+</div>
-                <p><strong>Launch & Operations</strong> - Lunch, constellation depolyment, commissining phase, science operations start. Expected mission lifetime: 5 years (typical for CubeSats). Despite this mission's lifetime the constellation may be extended with more and/or replacement satellites by CAPIBARA or other initiatives!</p>
+            <div class="column">
+                <h3><i class="fas fa-atom"></i> Fundamental Physics</h3>
+                <p>Lorentz invariance violations (LIV), photon mass constraints</p>
+            </div>
+            <div class="column">
+                <h3><i class="fas fa-sun"></i> Solar High-Energy Events</h3>
+                <p>Solar physics, SEP acceleration, space weather</p>
             </div>
         </div>
     </section>
 
-    <!-- Full-width highlight section -->
-    <section class="highlight-section">
-        <div class="highlight-content">
-            <h2>Why Does It Matter?</h2>
-            <p>Monitoring high-energy transient phenomena is vital for real-time alerts to the scientific community about gamma-ray bursts, magnetar bursts, AGN, and other rapid events, enabling a fast response and observation. Its unprecedented angular resolution allows precise mapping of gamma-ray sources, enhancing our understanding of the universe. Studying extreme environments near black holes, neutron stars, and active galaxies provides insights into fundamental cosmic processes, advancing our knowledge of the unvierse's msot powerful and mysterious phenomena.</p>
-
-            <br>
-            
-            <h2>A Mission for Everyone <i class="fas fa-earth"></i></h2>
-            <p>By making all of our data and code repositories publicly available, we open the door to collaborative discovery. Whether you're a high school student or PhD reseacher, CAPIGX offers a new window into the high-energy Universe As a student-led initiative; we want to show what <a href="../team">passionate students</a> are capable of achieving.</p>
-            <br>
-
-            <h2>An Opportunity to Connect</h2>            
-            <p>CAPIGX is actively seeking collaborators, advisors, and supporters who share our passion for high energy astrophysics and aerospace engineering. Whether you'are a student in interested joining the team, a researcher who can provide advice, or an organisation interested in supporting our mission, we'd love to hear from you! We welcome students from all backgrounds, experience levels (even high school), and fields of interest (from physics and engineering to science communication, design, and coding). No prior experience required, just enthusiams and willingness to learn!</p>
-
-            <br>
-            <a href="../contact.html" class="btn">Contact Us!</a>
+    <section class="columns-section">
+        <h2>Research Initiative</h2>
+        <p>The research it takes within CAPIBARA to develop CAPIBARA-COSMOS and how we will use its data products.</p>
+        <div class="columns-container">
+            <div class="column">
+                <h3><i class="fas fa-computer-code"></i> Machine Learning Transient Classification</h3>
+                <p>ML driven classification for rapid alerts</p>
+            </div>
+            <div class="column">
+                <h3><i class="fas fa-wave-square"></i> Multi-Messenger Cosmology</h3>
+                <p>Combining information from GRBs and GWs to learn about the expanding Universe</p>
+            </div>
+            <div class="column">
+                <h3><i class="fas fa-atom"></i> Fundamental Physics</h3>
+                <p>...</p>
+            </div>
         </div>
+    </section>
+
+    <section class="content-grid">
+        <section id="timeline">
+            <h2>Our Development Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item current">
+                    <div class="timeline-year">2024-2025</div>
+                    <p><strong>Consortium Building & Pathfinder Design</strong> - Formalize collaboration structure, establish advisory board, complete COSMOS-1 CubeSat design in partnership with GRBAlpha team.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2026-2028</div>
+                    <p><strong>COSMOS-1 Launch & Operations</strong> - Build, test, and launch our first CubeSat via ESA Fly Your Satellite!/NASA CSLI programs. First light and initial GRB detections.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2029-2032</div>
+                    <p><strong>COSMOS-Duo Development</strong> - Design, build, and launch two microsatellites to demonstrate triangulation. Secure agency funding through proven track record.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2033-2035</div>
+                    <p><strong>COSMOS-NET Constellation</strong> - Final constellation development and launch. Begin operations as primary high-energy alert system for the multi-messenger community.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2035+</div>
+                    <p><strong>Extended Operations & Legacy</strong> - 5-year prime mission with 10-year goal. Continuous all-sky monitoring and scientific data.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full-width highlight section -->
+        <section class="highlight-section">
+            <div class="highlight-content">
+                <h2><i class="fas fa-users"></i> Join the Movement</h2>
+                <p>COSMOS is more than hardware, it's about <strong>building a new generation of space scientists</strong>. We're creating a collaboration where students don't just learn about space missions; they <em>build and operate them</em>.</p>
+
+                <div class="join-options">
+                    <div class="option">
+                        <h3><i class="fas fa-user-graduate"></i> For Students</h3>
+                        <p>Work on real flight hardware, simulations, or operations. No prior experience required, only requirement: passion and willingness to learn. <a href="../application-form.html">Just get in touch with us</a>.</p>
+                    </div>
+                    <div class="option">
+                        <h3><i class="fas fa-chalkboard-teacher"></i> For Advisors</h3>
+                        <p>Mentor the next generation. Join our Advisory Board or host a student team at your institution. You provide invaluable knowledge and guidance! <a href="../contact.html">Contact us</a>.</p>
+                    </div>
+                    <div class="option">
+                        <h3><i class="fas fa-university"></i> For Institutions</h3>
+                        <p>Partner with us. Provide lab space, expertise, or funding. Help scale the student-led mission model. <a href="../contact">Contact for partnership</a>.</p>
+                    </div>
+                </div>
+
+                <div class="current-status">
+                    <h3><i class="fas fa-satellite-dish"></i> Live Project Status</h3>
+                    <p>We're currently: <strong>Forming the core consortium and preparing our pathfinder proposal which we will publish soon</strong></p>
+                    <a href="https://github.com/CAPIBARA3" class="btn" target="_blank">
+                        <i class="fab fa-github"></i> Follow Our Progress on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
     </section>
 
 </main>
