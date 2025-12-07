@@ -8,6 +8,7 @@ Welcome to the CAPIBARA Collaboration governance documentation. These documents 
 
 CODE_OF_CONDUCT.md
 CONTRIBUTING.md
+about.md
 COLLABORATION_AGREEMENT.md
 PRIVACY_POLICY.md
 AUTHORSHIP_POLICY.md
