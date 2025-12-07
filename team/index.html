@@ -9,6 +9,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/styles.css">
     <link rel="shortcut icon" type="image/png" href="/images/logos/capibara.png" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- map-specific styling -->
+    <style>
+        .map-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #map {
+            height: 100vh;
+            width: 80%;
+        }
+
+        /* Popup styling */
+        .leaflet-popup-content-wrapper {
+            border-radius: 12px;
+            padding: 8px;
+            background: white;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+        }
+
+        .leaflet-popup-content {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+            margin: 8px;
+        }
+    </style>
 </head>
 <body>
 <!-- Navigation will be injected here -->
@@ -461,6 +491,10 @@
         </div>
     </div>
 
+    <div class="map-container">
+        <div id="map"></div>
+    </div>
+
     <!-- Back link -->
     <div class="back-link">
         <a href="../" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Back to Home</a>
@@ -471,6 +505,7 @@
 
 <script src="../assets/script.js"></script>
 <script src="../loadComponents.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script>
     // Modal functionality
     function openModal(modalId) {
@@ -507,5 +542,53 @@
         }
     });
 </script>
+<script>
+    // Team example data
+    const teamMembers = [
+
+        { name: "Joan - Germany" , lat: 48.1371, lng: 11.5761 },
+        { name: "Martí - Spain", lat: 41.4911, lng: 2.1408 },
+        { name: "Lluc - Spain", lat: 41.4036, lng: 2.1744 },
+        { name: "Hongda - Spain", lat: 41.4911, lng: 2.0008 },
+        { name: "Carles - USA", lat: 34.0522, lng: -118.244},
+        { name: "Martina - Spain", lat: 41.4036, lng: 2.0000 },
+        { name: "Adel - Spain", lat: 41.5000, lng: 1.9058 },
+        { name: "Alessandro - Italy", lat: 44.500, lng: 8.833 },
+        { name: "Anna - Spain", lat: 41.4036, lng: 1.9058 },
+        { name: "Rosa - Spain", lat: 40.9701, lng: -5.6635 },
+    ];
+
+    // Initialize the map
+    const map = L.map('map', {
+      zoomControl: false,   // Removes default zoom buttons for a clean look
+      scrollWheelZoom: true,
+      worldCopyJump: true,
+      maxZoom: 10,
+      minZoom: 2,
+      zoomSnap: 0.1,
+    }).setView([20, 0], 2);
+
+    // Add zoom buttons in bottom right instead
+    L.control.zoom({ position: "bottomright" }).addTo(map);
+
+    // Beautiful tile layer (Carto Voyager)
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO'
+    }).addTo(map);
+
+    // Add markers with a nicer style
+    teamMembers.forEach(member => {
+      const marker = L.circleMarker([member.lat, member.lng], {
+        radius: 8,
+        color: "#1f78ff",
+        fillColor: "#1f78ff",
+        fillOpacity: 0.9,
+        weight: 2,
+        className: "glow-marker"
+      }).addTo(map);
+
+      marker.bindPopup(`<div>${member.name}</div>`);
+    });
+  </script>
 </body>
 </html>
