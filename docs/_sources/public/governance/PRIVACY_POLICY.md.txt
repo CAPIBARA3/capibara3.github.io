@@ -4,12 +4,12 @@
 ### 1. Communication Channels Hierarchy
 
 #### A. Official Channels (All members must join)
-1.  **GitHub Organization** (`CAPIBARA-Collaboration`)
+1.  **GitHub Organization** (`CAPIBARA3`)
     - Source of truth for all technical documentation
     - Issues & Projects for task tracking
     - Discussions for Q&A
 2. **Official Email**
-2.  **Email Lists** (Google Groups)
+2.  **Email Lists**
     - `capibaracollaboration@outlook.com`
     - `crd.capibara@outlook.com`
     - `cosmos.capibara@outlook.com`

@@ -21,16 +21,6 @@ docs
 │   │   ├── MEMBERSHIP_POLICY.md
 │   │   ├── PRIVACY_POLICY.md
 │   │   ├── about.md
-│   │   ├── drafts
-│   │   │   ├── 0_governance.md
-│   │   │   ├── 1_membership.md
-│   │   │   ├── 2_authorship.md
-│   │   │   ├── 3_licensing.md
-│   │   │   ├── 4_communication.md
-│   │   │   ├── 5_privacy_policy.md
-│   │   │   ├── 6_removal_procedure.md
-│   │   │   ├── 7_steering_committee.md
-│   │   │   └── X_environment.md
 │   │   └── index.md
 │   ├── onboarding
 │   │   ├── engineering

@@ -8,7 +8,7 @@ The CAPIBARA Collaboration is an international, student-led initiative to develo
 - **Founding Director:** Joan Alcaide Núñez (oversees collaboration-wide administration)
 - **Program Directors:** 
   - CAPIBARA-CRD: Lluc Soler Manich
-  - CAPIBARA-SENTINEL: Joan Alcaide Núñez
+  - CAPIBARA-COSMOS: Joan Alcaide Núñez
 - **Advisory Board:** To be composed of 3-5 senior scientists/engineers
 - **Member Institutions:** To be composed by our host universities. Formalised via signing Memorandum of Understanding.
 

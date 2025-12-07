@@ -40,5 +40,5 @@ Anyways, here is a brief summary of important contacts:
 
 * Main [contact site](https://capibara3.github.io/contact) for any enquiry to the collaboration lead
 * Official email is linked to the contact form. Members of the collaboration may request the direct address contacting us.
-* For any collaboration-wide or CAPIGX related messages you may contact @joanalnu
-* For any technical CAPICR messages you may contact @luke3773
+* For any COSMOS program related messages you may contact @joanalnu
+* For any CRD related messages you may contact @luke3773
