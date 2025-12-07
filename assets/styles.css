@@ -65,6 +65,13 @@ a {
     color: inherit;
 }
 
+p {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
 img {
     max-width: 100%;
     height: auto;
