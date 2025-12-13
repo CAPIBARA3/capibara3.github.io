@@ -19,12 +19,16 @@ _If you don't know any or some of the previous skills, don't worry; you will lea
 ### 1. Introduction
 You are a student that partially or totally fulfills the prerequisites stated above? Then you should apply to join the CAPIBARA Collaboration, an enthusiastic group of students who will soon be your collaborators and, perhaps, friends.
 
-Note that in order to join the Collaboration you must fulfill a minimum set of requirements outlined in the [membership agreement](../governance/1_membership.md). These requirements are kept at a minimum for example "English communication", which is a basic for working in an international collaboration and particularly in research. There is no selection process or application process as such where the information of applicants is evaluated. Everyone who applies and fulfills these basic requirements can join, and we are happy to meet you!
+Note that in order to join the Collaboration y ou must fulfill a minimum set of requirements, which can be found in the [membership agreement](../governance/MEMBERSHIP_POLICY.md), in addition to those outlined above. These requirements are kept at a minimum for example "English communication", which is a basic for working in an international collaboration and particularly in research. There is no selection process or application process as such where the information of applicants is evaluated. Everyone who applies and fulfills these basic requirements can join, and we are happy to meet you!
 
 ### 2. Setup
-You will need browser and internet connection. You may want to have prepared a Curriculum Vitae (CV), motivation letter or other supporting documentation. The upload of this documentation is absolute optional, but it helps us getting to know you and getting started to work with you.
+You will need a browser and internet connection. You may want to have prepared a curriculum vitae (CV), motivation letter or other supporting documentation. The sharing of this documentation is absolutely optional, but it helps us getting to know you and getting started to work with you.
 
-Before proceeding with the application itself, you may want to download a copy of the membership agreement and signit it. If you are underage in your country (most of Europe that means under 18 years), you will additionally need the signature of at least one of your parents or legal tutors.
+Before proceeding with the application itself, you may want to download a copy of the membership agreement and signit it. If you are under 18 years, you will additionally need the signature of at least one of your parents or legal tutors.
+
+In the application form, you will need to provide key personal information and a contact. Then, we will get in touch with you and ask you for the documents mentioned before which you need to send after request via email to the official collaboration-wide email address as PDF files.
+
+Once you open the application form link in the next step, please don't reframe from reading the "before applying" notice.
 
 ### 3. Execution
 On your browser visit [capibara3.github.io/application-form](https://capibara3.github.io/application-form) and fill in all the required information and, if you want, the optional information. Then submit the form. You will find more information and the data privacy statement at the form itself.
