@@ -12,9 +12,7 @@ Use the navigation tree below to browse the major sections of the documentation.
 ---
 
 ```{toctree}
-:maxdepth: 2
-public/about/index
-public/software/index
+:maxdepth: 1
 public/governance/index
 public/onboarding/index
 public/templates/index
