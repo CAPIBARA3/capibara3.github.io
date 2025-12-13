@@ -9,6 +9,24 @@
     <link rel="stylesheet" href="/assets/styles.css">
     <link rel="stylesheet" href="/assets/contact-form.css">
     <link rel="shortcut icon" type="image/png" href="/images/logos/capibara.png" />
+    <style>
+        /* Center content grid for this page only */
+        .content-grid {
+            grid-template-columns: 1fr !important;
+            max-width: 900px !important;
+            margin: 0 auto !important;
+            margin-bottom: 50px !important;
+        }
+
+        .content-grid a {
+            color: #bf87e6;
+            text-decoration: underline;
+        }
+
+        .content-grid a:hover {
+            color: #ff9800;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,16 +42,24 @@
         </ol>
     </nav>
 
-    <section class="highlight-section">
+    <!-- <section class="highlight-section"> -->
         <div class="highlight-content">
             <header class="page-header">
                 <h1>Join the Capibara Collaboration</h1>
             </header>
 
-            <p>
-                We welcome new collaborators from all backgrounds—professionals, students, researchers, and enthusiasts.  
-                Please fill out the form below to apply. We will get back to you as soon as possible.
-            </p>
+            <section class="content-grid">
+                <h2>Some Advice Before Applying to Join</h2>
+                <p>We welcome new collaborators from all backgrounds: professionals, students, researchers, and enthusiasts. Please, fill out the form below to get in touch with us. We will try to get back to you as soon as possible.</p>
+
+                <p>You can read the latest <a href="/updates/call_for_new_members_2025.html">call for new members</a> and the <a href="docs/public/onboarding/00_applying_to_join.html">official guideline to the application</a>. We encourage you to read the latter document throughout before contacting us.</p>
+
+                <p>As stated in the mentioned guideline, students wanting to become full members of the CAPIBARA Collaboration need to provide the following documents in PDF format: (1) signed <a href="docs/public/governance/MEMBERSHIP_POLICY.html">membership agreement</a> (please the document carefully), (2) any supporting documentation you want to share with us like an academic curriculum vitae, motivation letter, research interest statement, links to coding projects or previous, highlighted papers or reports. The second point is optional and won't affect in any way your application, read our selection requirements in the previously mentioned guideline. The mentioned documents are to be sent after you hear from us and via email to the official collaboration-wide address.</p>
+
+                <p>Please, don't let any of these bureaucratic steps prevent you from joining us. The CAPIBARA Collaboration is open to all students and we will be happy to support you and answer your questions.</p>
+
+                <p>Additional requirements and documents are also required for institutional partnerships, collaborations and potentially advising. Let us get back to you in the first place and we will discuss this matter.</p>
+            </section>
             <br>
 
             <form action="https://formspree.io/f/xdkrorpp" method="POST" enctype="multipart/form-data">
@@ -64,11 +90,11 @@
 
                 <div class="floating-label-group">
                     <select name="groups[]" multiple size="7" required>
-                        <option value="capicr">CAPIBARA Cosmic Ray Detector (CAPICR)</option>
-                        <option value="capigx">CAPI Gamma-/X-ray Mission (CAPIGX)</option>
-                        <option value="sci">Specific Research Initiative (speficy bellow)</option>
+                        <option value="crd">CAPIBARA Cosmic Ray Detector (CAPIBARA-CRD)</option>
+                        <option value="cosmos">CAPIBARA Gamma-/X-ray Program (CAPIBARA-COSMOS)</option>
+                        <option value="sci">Specific Research Initiative (specify below)</option>
                         <option value="comm">Social community/outreach/administrative/legal/</option>
-                        <option value="dev">General development (software/hardware)</option>
+                        <option value="dev">General software/hardware development</option>
                         <option value="idk">I don't know yet, just want to learn!</option>
                         <option value="other">Other (bring new ideas!)</option>
                     </select>
@@ -79,22 +105,6 @@
                     <label class="floating-label">If "Specific Research Initiative", "Other" or just want to explain yourself, please specify</label>
                 </div>
 
-                <div class="form-section-title">Membership Agreement</div>
-
-                <div class="floating-label-group file-upload">
-                    <input type="checkbox" name="agreement" id="agreement" required>
-                    <label class="floating-label" style="top:-10px; font-size:0.8rem; opacity:1;">Upload the membership agreement signed by yourself, and if you are minor in your country, your parents or legal tutor.</label>
-                    <br>
-                    <input type="file" name="documentation">
-                </div>
-
-                <div class="form-section-title">Supporting Documentation</div>
-                <div class="floating-label-group file-upload">
-                    <label class="floating-label" style="top:-10px; font-size:0.8rem; opacity:1;">Upload your CV, motivation letter, etc. Upload a single file. This is not used for selection, but to get to know your interests and it is absolutely optional.</label>
-                    <br>
-                    <input type="file" name="documentation">
-                </div>
-
                 <div class="form-section-title">Leave your message</div>
 
                 <div class="floating-label-group">
@@ -103,21 +113,23 @@
                 </div>
 
                 <div class="floating-label-group">
-                    <input type="text" name="referral" id="referral" class="floating-input" placeholder=" " required>
+                    <input type="text" name="referral" id="referral" class="floating-input" placeholder=" ">
                     <label class="floating-label">How did you hear about us? (optional)</label>
                 </div>
 
                 <p style="font-size: 0.9em; color: #666; margin-top: 1em;">
                     By submitting this form, you consent to the processing of your personal data for the purpose of evaluating your application. 
-                    Your information will not be shared outside the Capibara Collaboration and can be deleted upon request.
+                    Your information will not be shared outside the CAPIBARA Collaboration and can be deleted upon request. Refer to our <a href="docs/public/governance/PRIVACY_POLICY.html" style="text-decoration: underline">privacy policy</a> for more details.
                 </p>
 
                 <button type="submit">Submit Application</button>
             </form>
 
+            <h2>We will get back to you shortly!</h2>
+
 
         </div>
-    </section>
+    <!-- </section> -->
 </main>
 
 <!-- Footer will be injected here -->
