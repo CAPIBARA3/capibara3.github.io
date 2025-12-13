@@ -9,6 +9,24 @@
     <link rel="stylesheet" href="/assets/styles.css">
     <link rel="stylesheet" href="/assets/contact-form.css">
     <link rel="shortcut icon" type="image/png" href="/images/logos/capibara.png" />
+    <style>
+        /* Center content grid for this page only */
+        .content-grid {
+            grid-template-columns: 1fr !important;
+            max-width: 900px !important;
+            margin: 0 auto !important;
+            margin-bottom: 50px !important;
+        }
+
+        .content-grid a {
+            color: #bf87e6;
+            text-decoration: underline;
+        }
+
+        .content-grid a:hover {
+            color: #ff9800;
+        }
+    </style>
 </head>
 <body>
 <!-- Navigation will be injected here -->
@@ -42,23 +60,23 @@
 <!--    </section>-->
 
     <!-- Full-width highlight section -->
-    <section class="highlight-section">
+    <!-- <section class="highlight-section"> -->
         <div class="highlight-content">
             <header class="page-header">
                 <h1>Contact Form</h1>
                 <!-- <p class="subtitle">Contact us here anytime!</p> -->
             </header>
-            
-            <p>Please, specify if you want to be directed to a specific team/topic/member and provide the sufficient contact information for us to get back to you.</p>
+            <section class="content-grid">
+                <p>This is the general contact form. Please, specify in your message if you want to be directed to a specific program, team, topic or person and provide sufficient contact information for us to get back to you.</p>
+
+                <p>If you want to communicate something regarding open-source code from our repositories on GitHub, please consider opening a GitHub issue or pull request on the corresponding repository. Alternatively, you can direclty contact the administrator of that repository.</p>
+
+                <p>The CAPIBARA Collaboration is always actively looking for senior advisors and collaborations, we encourage you to contact us. If you are a student seeking to become a member of the Collaboration, please go to our <a href="application-form.html">application form</a>.</p>
+
+                <p>We are looking forward to hearing from you!</p>                
+            </section>
             <br>
-            <p>If you want to communicate something regarding open-source code from our repositories at <a href="https://github.com/orgs/capibara3">github.com/capibara3</a>, please consider opening a GitHub issue or pull request on the corresponding repository.</p>
-            <br>
-            <p>Bear in mind that you can also schedule an appointment with the projects PI with this <a href="https://calendly.com/joanalnu/30min-meeting">link</a>.</p>
-            <br>
-            <p>The CAPIBARA Collaboration is actively looking for new members and collaborators. Whether you are a space industry professional or a research that can provide feedback, mentoring, or quick advice, we'd like to hear from you! If you are a students and would like participating check out our latest <a href="updates/call_for_new_members_2025.html">Call for new members</a>.</p>
-            <br>
-            <p>If you are looking to apply to become a member of the collaboration, please go to our <a href="application-form.html">application form <li class="fas fa-link"></li></a>.</p>
-            <br>
+
             <form action="https://formspree.io/f/xqallkvn" method="POST">
                 <div class="floating-label-group">
                     <input type="email" name="email" id="email" class="floating-input" placeholder=" ">
@@ -76,10 +94,17 @@
                     <textarea name="message" id="message" class="floating-input" placeholder=" "></textarea>
                     <label class="floating-label">Your message</label>
                 </div>
+
+                <p style="font-size: 0.9em; color: #666; margin-top: 1em;">
+                    By submitting this form, you consent to the processing of your personal data and information provided in the form for the purpose involving this form. You information will not be shared outside the CAPIBARA Collaboration and can be deleted upon request. Refer to our <a href="docs/public/governance/PRIVACY_POLICY.html" style="text-decoration: underline">privacy policy</a> for more details.
+                </p>
+                
                 <button type="submit">Send</button>
             </form>
+
+            <h2>We will get back to you shortly!</h2>
         </div>
-    </section>
+    <!-- </section> -->
 </main>
 
 <!-- Footer will be injected here -->
