@@ -10,6 +10,7 @@
     --header-gradient: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
     --glow-color: rgba(255, 79, 160, 0.3);
     --dark-bg: #111;
+    --link-color: #bf87e6;
 
     /* Dark Theme */
     --dark-primary: #a56bd6;
@@ -19,6 +20,7 @@
     --dark-text: #f0f0f0;
     --dark-card: #2d2d2d;
     --dark-nav: #0d0d0d;
+    --dark-link: #ff66a3;
 }
 
 /* Add this near your :root variables */
@@ -57,6 +59,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ff9800;
 }
 
 /* ===== NEWS POST STYLES ===== */
