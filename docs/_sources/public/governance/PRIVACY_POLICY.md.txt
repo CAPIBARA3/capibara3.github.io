@@ -9,16 +9,13 @@
     - Issues & Projects for task tracking
     - Discussions for Q&A
 2. **Official Email**
-2.  **Email Lists**
-    - `capibaracollaboration@outlook.com`
-    - `crd.capibara@outlook.com`
-    - `cosmos.capibara@outlook.com`
 3.  **Monthly All-Hands Video Call**
     - Agree to a date
     - Notes posted on GitHub docs repository
+    - Calls are managed by programme leads
 
 #### B. Informal Channels (Optional)
-- WhatsApp: the Whatsapp group is voluntary and not managed by the CAPIBARA Collaboration.
+- WhatsApp: the Whatsapp group is voluntary and not managed by the CAPIBARA Collaboration. The whatsapp group was never intended as and will not be managed or responsibility in any way by/of the CAPIBARA Collaboration. It’s entry it absolutely voluntary, not required for CAPIBARA Collaboration membership and has nothing to do with the CAPIBARA Collaboration.
 
 
 ### 2. Data Privacy & Security
@@ -37,20 +34,15 @@
 - **Never share:** Unreleased data, internal disputes, proprietary designs
 
 #### B. Press Inquiries
-- All media requests → `capibaracollaboration@outlook.com`
-- Only Program Directors may give official statements
+- All media requests via the [contact form](https://capibara3.github.io/contact.html")
+- Only programme leads may approve official statements
 
 #### C. Conference Presentations
-- Submit abstract to Program Director 2 weeks before deadline
+- Submit abstract to programme lead 2 weeks before deadline
 - Acknowledge: "The CAPIBARA Collaboration"
 - Share slides in the `.github-private` repository under `internal/outreach`
 
-### 4. Internal Transparency Requirements
-- Partnership decisions: Announced within 24 hours
-- Technical failures: Post-mortem within 1 week
-- Meeting minutes: Posted within 48 hours
-
 ### 5. Violation Procedure
-1. First offense: Private warning from Program Director
-2. Second offense: Temporary suspension (2 weeks)
+1. First offense: Private warning from programme lead
+2. Second offense: Temporary suspension (1 weeks)
 3. Third offense: Membership review (see MEMBERSHIP_POLICY.md)

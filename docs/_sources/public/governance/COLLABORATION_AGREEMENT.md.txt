@@ -11,16 +11,20 @@ The CAPIBARA Collaboration is an international, student-led initiative to develo
   - CAPIBARA-COSMOS: Joan Alcaide Núñez
 - **Advisory Board:** To be composed of 3-5 senior scientists/engineers
 - **Member Institutions:** To be composed by our host universities. Formalised via signing Memorandum of Understanding.
+- Note that each program has its own advisory board and member institutions.
 
 ### 3. Decision Making
-- **Technical decisions:** Made by program team leads
-- **Strategic decisions:** Requires consensus among Program Directors + Advisory Board
-- **New member admissions:** Approved by Program Directors
+- **Collaboration-wide decisions (operation):** Proposed and voted for consensus (minimum of >50%)
+- **Strategic decisions:** Consensus among program leads, majority of team members and advisory board
+- **New member admissions:** Approved by program leads
 
 ### 4. Intellectual Property (IP) Policy
-- All hardware designs, software, and documentation are **open source** under MIT License unless otherwise required by partner institutions.
+- All hardware designs, software, and documentation are **open source** under MIT License (or the equivalent BSD-3-Clause) unless otherwise required by partner institutions.
 - Scientific data will be public with maximum 6-month proprietary period for analysis.
 - Publications must acknowledge "The CAPIBARA Collaboration" and follow our authorship policy.
+- Hardware designs and productions will be under the CERN-OHL-P-2.0 license
+- Documentation, papers, presentations, processed data will be available under a commons license CC-BY 4.0, except for work containing unpublished data or results. Attribution must be always included.
+- All rights are reserved for branding, logos and names.
 
 ### 5. Amendment Process
-This agreement can be amended by 2/3 vote of Program Directors + Advisory Board.
+This agreement can be amended by 2/3 vote of the Collaboration members. Optimally, there a majoritarian support by the advisory board.
