@@ -19,6 +19,8 @@ public/templates/index
 sitemap
 ```
 
+Return to the [main page](https://capibara3.github.io).
+
 
 ## A Documentation for Documentation
 

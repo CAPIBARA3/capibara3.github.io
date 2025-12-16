@@ -480,7 +480,7 @@ E = \nu h
 <h3>3. Execution<a class="headerlink" href="#execution" title="Link to this heading">#</a></h3>
 </section>
 <section id="create-your-first-latex-document">
-<h3>3.1 Create Your FIrst <span class="math notranslate nohighlight">\(\LaTeX{}\)</span> Document<a class="headerlink" href="#create-your-first-latex-document" title="Link to this heading">#</a></h3>
+<h3>3.1 Create Your First <span class="math notranslate nohighlight">\(\LaTeX{}\)</span> Document<a class="headerlink" href="#create-your-first-latex-document" title="Link to this heading">#</a></h3>
 <p>Create a file named <code class="docutils literal notranslate"><span class="pre">paper.tex</span></code>:</p>
 <div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
 <span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
@@ -506,6 +506,13 @@ Hello, world! This is my first <span class="k">\LaTeX</span><span class="nb">{}<
 </pre></div>
 </div>
 <p>After compilation, you’ll find <code class="docutils literal notranslate"><span class="pre">paper.pdf</span></code> in the same directory.</p>
+<p>Note that if you are using <code class="docutils literal notranslate"><span class="pre">bibtex</span></code> citations in your paper you will need to run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pdflatex<span class="w"> </span>paper.tex<span class="w"> </span><span class="c1"># creates structure</span>
+bibtex<span class="w"> </span>paper<span class="w"> </span><span class="c1"># compiles citations</span>
+pdflatex<span class="w"> </span>paper.tex<span class="w"> </span><span class="c1"># adds citations to pdf</span>
+pdflatex<span class="w"> </span>paper.tex<span class="w"> </span><span class="c1"># ensures numbering and indexing is correct</span>
+</pre></div>
+</div>
 </section>
 </section>
 <section id="collaborating-via-github">
@@ -651,7 +658,7 @@ git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </sp
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-debian-ubuntu">2.2 Linux (Debian/Ubuntu)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-fedora-rhel">2.3 Linux (Fedora/RHEL)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#execution">3. Execution</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-your-first-latex-document">3.1 Create Your FIrst <span class="math notranslate nohighlight">\(\LaTeX{}\)</span> Document</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-your-first-latex-document">3.1 Create Your First <span class="math notranslate nohighlight">\(\LaTeX{}\)</span> Document</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compile-the-document">3.2 Compile the Document</a></li>
 </ul>
 </li>

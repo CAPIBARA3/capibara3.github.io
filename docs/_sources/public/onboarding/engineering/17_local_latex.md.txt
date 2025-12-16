@@ -75,7 +75,7 @@ You can edit `.tex` files with any text editor, but these are popular:
 
 ### 3. Execution
 
-### 3.1 Create Your FIrst $\LaTeX{}$ Document
+### 3.1 Create Your First $\LaTeX{}$ Document
 
 Create a file named `paper.tex`:
 
@@ -105,6 +105,14 @@ pdflatex paper.tex
 ```
 
 After compilation, you’ll find `paper.pdf` in the same directory.
+
+Note that if you are using `bibtex` citations in your paper you will need to run:
+```bash
+pdflatex paper.tex # creates structure
+bibtex paper # compiles citations
+pdflatex paper.tex # adds citations to pdf
+pdflatex paper.tex # ensures numbering and indexing is correct
+```
 
 
 ## 4. Collaborating via GitHub
