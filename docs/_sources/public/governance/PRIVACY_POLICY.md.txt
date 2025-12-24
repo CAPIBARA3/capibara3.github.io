@@ -42,7 +42,7 @@
 - Acknowledge: "The CAPIBARA Collaboration"
 - Share slides in the `.github-private` repository under `internal/outreach`
 
-### 5. Violation Procedure
+### 4. Violation Procedure
 1. First offense: Private warning from programme lead
 2. Second offense: Temporary suspension (1 weeks)
 3. Third offense: Membership review (see MEMBERSHIP_POLICY.md)
