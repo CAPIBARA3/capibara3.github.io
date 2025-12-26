@@ -32,7 +32,7 @@ You can consult the structure of the documentation at [capibara3.github.io/docs/
 
 ### 3. Report bugs
 
-If you spot any error of any type (typos, content-wise, missing information, website production, ...) you should communicate these to us. Proceed to click on the bug button in the navigation bar and create an issue to inform us. In all cases when communicating bugs and errors, please provide clear and detailed explanations with links to the relevant pages, you may include screenshots or other supporting documentation to help understanding your situation. We will try to get back to you to solve the problem. We appreaciate your help.
+If you spot any errors of any type (typos, content-wise, missing information, website production, ...) you should communicate these to us. Proceed to click on the bug button in the navigation bar and create an issue to inform us. In all cases when communicating bugs and errors, please provide clear and detailed explanations with links to the relevant pages, you may include screenshots or other supporting documentation to help understanding your situation. We will try to get back to you to solve the problem. We appreaciate your help.
 
 **3.1 Collaboration Members**
 
