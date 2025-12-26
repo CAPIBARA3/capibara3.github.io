@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: CAPIBARA website
+    url: https://capibara3.github.io
+    about: Visit the project website for updates and information.
+  - name: Project documentation
+    url: https://capibara3.github.io/docs/
+    about: Browse the documentation; you may find answers faster.
