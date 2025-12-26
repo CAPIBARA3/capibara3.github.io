@@ -30,9 +30,9 @@ This part of the website (capibara3.githubio/docs) hosts the documentation files
 ### 2. How to use?
 You can consult the structure of the documentation at [capibara3.github.io/docs/sitemap](https:capibara3.github.io/docs/sitemap.html). On the left-handed menu you can see the pages contained in your current directory, while in the right-handed one the section of your current page are displayed. On top there is a menu and a search tab which lets you find relevant pages by keywords. We try to maintain links updated, but since docs are always evolving it can happen that some paths become broken.
 
-### 3.  Report bugs
+### 3. Report bugs
 
-If you spot any errors of any type (website production, typos, content-wise, ...) you should communicate these to us. In all cases when communicating bugs and errors, please provide clear and detailed explanations with links to the relevant pages, you may include screenshots or other supporting documentation to help understanding your situation.
+If you spot any error of any type (typos, content-wise, missing information, website production, ...) you should communicate these to us. Proceed to click on the bug button in the navigation bar and create an issue to inform us. In all cases when communicating bugs and errors, please provide clear and detailed explanations with links to the relevant pages, you may include screenshots or other supporting documentation to help understanding your situation. We will try to get back to you to solve the problem. We appreaciate your help.
 
 **3.1 Collaboration Members**
 
