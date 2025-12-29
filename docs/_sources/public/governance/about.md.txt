@@ -24,7 +24,6 @@ The CAPIBARA Collaboration organisation ([github.com/capibara3](https://github.c
 | martinasolano | COSMOS | COSMOS MCD | scientific collaborator |
 | rosabersab | COSMOS | COSMOS MCD and SNe/MM cosmo | scientific collaborator |
 | --- | --- | --- | --- |
-| adeelalbaa | undecided | CRD software/COSMOS MCD | technical staff (software) |
 | alesab-08 | undecided | prep for SSEA | undecided |
 | Aticus54 | undecided | SNe/CRD support | undecided |
 | truitaderiu | undecided | COSMOS MCD? CRD support? | technical staff |
