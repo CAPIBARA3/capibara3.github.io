@@ -32,18 +32,9 @@ You can consult the structure of the documentation at [capibara3.github.io/docs/
 
 ### 3. Report bugs
 
-If you spot any errors of any type (typos, content-wise, missing information, website production, ...) you should communicate these to us. Proceed to click on the bug button in the navigation bar and create an issue to inform us. In all cases when communicating bugs and errors, please provide clear and detailed explanations with links to the relevant pages, you may include screenshots or other supporting documentation to help understanding your situation. We will try to get back to you to solve the problem. We appreaciate your help.
+If you spot mistakes of any type (typos, content-weise, missing information, website production, ...) you should communicate these to us, so that we can apply the necesary corrections. Proceed to click on the bug button in the navigation bar (top right) and create an issue to inform us. In all cases when communicating bugs and errors, please provide clear and detailed explanations with links to the relevant pages, you may include screenshots or other supporting documentation to help understanding. We will try to get back to you to solve the problem. We appreaciate your help.
 
-**3.1 Collaboration Members**
-
-If you are a member, you can open an issue at the [capibara3/.github-private](https://github.com/capibara3/.github-private) repository or read the next section to know how to submit a PR.
-
-Of course, if you are still unfamiliar with the GitHub workflow, you can contact the project lead through the official email or the [contact page](https://capibara3.github.io/contact.html)
-
-
-**3.2 External**
-
-If you are visitor from outside the collaboration (by the way, happy you're here!), you can send us an email through our [contact page](https://capibara3.github.io/contact.html). Alternatively, if you are familiar with the GitHub workflow you can create an issue at the website repository ([capibara3/capibara3.github.io](https://github.com/capibara3/capibara3.github.io)). In either case, we will try to get back to you as soon as possible.
+If you are a member, you can open an issue directly at [caibara3.github.io/.github-private](https://github.com/capibara3/.github-private) (where our documentation source is) and/or read the next section to know how to submit a PR.
 
 
 ### 4. Contribute
