@@ -88,12 +88,6 @@ section {
     margin-bottom: 3rem;
 }
 
-.section-intro {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 2rem;
-}
-
 /* Navigation */
 .navbar {
     background: var(--header-gradient);
