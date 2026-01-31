@@ -50,16 +50,16 @@
     <!-- Filter Tabs -->
     <section class="filter-section">
         <div class="filter-tabs">
-            <button class="filter-btn active" data-filter="all"><i class="fas fa-th"></i> All</button>
-            <button class="filter-btn" data-filter="reports"><i class="fas fa-file-alt"></i> Reports</button>
-            <button class="filter-btn" data-filter="presentations"><i class="fas fa-presentation"></i> Presentations</button>
-            <button class="filter-btn" data-filter="proposals"><i class="fas fa-lightbulb"></i> Proposals</button>
+            <button class="filter-btn active" data-filter="all" aria-label="Filter by all publications"><i class="fas fa-th"></i> All</button>
+            <button class="filter-btn" data-filter="reports" aria-label="Filter by reports"><i class="fas fa-file-alt"></i> Reports</button>
+            <button class="filter-btn" data-filter="presentations" aria-label="Filter by presentations"><i class="fas fa-presentation"></i> Presentations</button>
+            <button class="filter-btn" data-filter="proposals" aria-label="Filter by proposals"><i class="fas fa-lightbulb"></i> Proposals</button>
         </div>
     </section>
 
     <!-- Publications Grid -->
     <section class="publications-section">
-        <div class="publications-grid">
+        <div class="publications-grid" role="region" aria-live="polite" aria-label="Filtered publications">
             <!-- Year 1 Report -->
             <article class="pub-card" data-category="reports">
                 <div class="pub-image">
@@ -79,7 +79,7 @@
                         <span class="highlight-tag"><i class="fas fa-check"></i> Future Plans</span>
                     </div>
                     <div class="pub-actions">
-                        <a href="../publications/CAPIBARA_Y1_Status_Report.pdf" class="btn btn-primary" target="_blank">
+                        <a href="../publications/CAPIBARA_Y1_Status_Report.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-file-pdf"></i> View PDF
                         </a>
                         <a href="../updates/y1_report_published.html" class="btn btn-outline">
@@ -107,7 +107,7 @@
                         <span class="highlight-tag"><i class="fas fa-landmark"></i> CosmoCaixa</span>
                     </div>
                     <div class="pub-actions">
-                        <a href="../publications/CosmoXarxa_presentation.pdf" class="btn btn-primary" target="_blank">
+                        <a href="../publications/CosmoXarxa_presentation.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-file-pdf"></i> View PDF
                         </a>
                     </div>
@@ -132,7 +132,7 @@
                         <span class="highlight-tag"><i class="fas fa-brain"></i> Technical Vision</span>
                     </div>
                     <div class="pub-actions">
-                        <a href="../publications/preliminar_proposal.pdf" class="btn btn-primary" target="_blank">
+                        <a href="../publications/preliminar_proposal.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-file-pdf"></i> View PDF
                         </a>
                     </div>
@@ -164,12 +164,21 @@
                 // Filter cards
                 const filter = this.dataset.filter;
                 document.querySelectorAll('.pub-card').forEach(card => {
+                    // Clear any pending hide timeout before applying new filter state
+                    if (card._hideTimeoutId) {
+                        clearTimeout(card._hideTimeoutId);
+                        card._hideTimeoutId = null;
+                    }
+
                     if (filter === 'all' || card.dataset.category === filter) {
                         card.style.display = 'flex';
                         setTimeout(() => card.style.opacity = '1', 10);
                     } else {
                         card.style.opacity = '0';
-                        setTimeout(() => card.style.display = 'none', 300);
+                        card._hideTimeoutId = setTimeout(() => {
+                            card.style.display = 'none';
+                            card._hideTimeoutId = null;
+                        }, 300);
                     }
                 });
             });
