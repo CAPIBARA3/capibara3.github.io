@@ -378,7 +378,7 @@ body.dark-mode .multi-select {
 }
 
 .multi-select option:checked {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background-color: var(--primary-color);
     color: white;
 }
 
