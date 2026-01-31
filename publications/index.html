@@ -50,16 +50,16 @@
     <!-- Filter Tabs -->
     <section class="filter-section">
         <div class="filter-tabs">
-            <button class="filter-btn active" data-filter="all"><i class="fas fa-th"></i> All</button>
-            <button class="filter-btn" data-filter="reports"><i class="fas fa-file-alt"></i> Reports</button>
-            <button class="filter-btn" data-filter="presentations"><i class="fas fa-presentation"></i> Presentations</button>
-            <button class="filter-btn" data-filter="proposals"><i class="fas fa-lightbulb"></i> Proposals</button>
+            <button class="filter-btn active" data-filter="all" aria-label="Filter by all publications"><i class="fas fa-th"></i> All</button>
+            <button class="filter-btn" data-filter="reports" aria-label="Filter by reports"><i class="fas fa-file-alt"></i> Reports</button>
+            <button class="filter-btn" data-filter="presentations" aria-label="Filter by presentations"><i class="fas fa-presentation"></i> Presentations</button>
+            <button class="filter-btn" data-filter="proposals" aria-label="Filter by proposals"><i class="fas fa-lightbulb"></i> Proposals</button>
         </div>
     </section>
 
     <!-- Publications Grid -->
     <section class="publications-section">
-        <div class="publications-grid">
+        <div class="publications-grid" role="region" aria-live="polite" aria-label="Filtered publications">
             <!-- Year 1 Report -->
             <article class="pub-card" data-category="reports">
                 <div class="pub-image">
