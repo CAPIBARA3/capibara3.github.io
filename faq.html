@@ -435,23 +435,89 @@
 <script src="assets/script.js"></script>
 <script src="loadComponents.js"></script>
 <script>
-    // FAQ Accordion functionality
-    document.querySelectorAll('.faq-question').forEach(question => {
-        question.addEventListener('click', () => {
+    // FAQ Accordion functionality with ARIA support
+    (function () {
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        if (!faqQuestions.length) {
+            return;
+        }
+
+        faqQuestions.forEach((question, index) => {
             const faqItem = question.parentElement;
+            const answer = faqItem ? faqItem.querySelector('.faq-answer') : null;
+
+            // Ensure the question is announced as a button and is focusable
+            if (!question.hasAttribute('role')) {
+                question.setAttribute('role', 'button');
+            }
+            if (!question.hasAttribute('tabindex')) {
+                question.setAttribute('tabindex', '0');
+            }
+
+            // Associate question with its answer panel via aria-controls / id
+            if (answer) {
+                if (!answer.id) {
+                    answer.id = 'faq-answer-' + (index + 1);
+                }
+                question.setAttribute('aria-controls', answer.id);
+
+                // Initialize aria-hidden on the panel based on current active state
+                const isActive = faqItem && faqItem.classList.contains('active');
+                answer.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+                question.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+            } else {
+                // Fallback if no associated panel is found
+                question.setAttribute('aria-expanded', 'false');
+            }
+
+            // Mouse click handler
+            question.addEventListener('click', () => {
+                toggleFaqItem(question);
+            });
+
+            // Keyboard interaction (Enter or Space)
+            question.addEventListener('keydown', (event) => {
+                const key = event.key || event.code;
+                if (key === 'Enter' || key === ' ' || key === 'Spacebar') {
+                    event.preventDefault();
+                    toggleFaqItem(question);
+                }
+            });
+        });
+
+        function toggleFaqItem(question) {
+            const faqItem = question.parentElement;
+            if (!faqItem) {
+                return;
+            }
+
             const isActive = faqItem.classList.contains('active');
-            
+
             // Close all other items
             document.querySelectorAll('.faq-item').forEach(item => {
                 item.classList.remove('active');
+                const itemQuestion = item.querySelector('.faq-question');
+                const itemAnswer = item.querySelector('.faq-answer');
+                if (itemQuestion) {
+                    itemQuestion.setAttribute('aria-expanded', 'false');
+                }
+                if (itemAnswer) {
+                    itemAnswer.setAttribute('aria-hidden', 'true');
+                }
             });
-            
+
             // Toggle current item
             if (!isActive) {
                 faqItem.classList.add('active');
+                const answer = faqItem.querySelector('.faq-answer');
+                question.setAttribute('aria-expanded', 'true');
+                if (answer) {
+                    answer.setAttribute('aria-hidden', 'false');
+                }
             }
-        });
-    });
+        }
+    })();
 </script>
 </body>
 </html>
