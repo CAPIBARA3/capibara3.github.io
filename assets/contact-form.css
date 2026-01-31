@@ -331,11 +331,12 @@ body.dark-mode .floating-input:not(:placeholder-shown) + .floating-label {
     font-size: 1rem;
     transition: all 0.3s ease;
     pointer-events: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
 }
 
 .floating-label i {
-    position: absolute;
-    left: -22px;
     color: var(--primary-color);
 }
 
