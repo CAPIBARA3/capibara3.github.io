@@ -164,12 +164,21 @@
                 // Filter cards
                 const filter = this.dataset.filter;
                 document.querySelectorAll('.pub-card').forEach(card => {
+                    // Clear any pending hide timeout before applying new filter state
+                    if (card._hideTimeoutId) {
+                        clearTimeout(card._hideTimeoutId);
+                        card._hideTimeoutId = null;
+                    }
+
                     if (filter === 'all' || card.dataset.category === filter) {
                         card.style.display = 'flex';
                         setTimeout(() => card.style.opacity = '1', 10);
                     } else {
                         card.style.opacity = '0';
-                        setTimeout(() => card.style.display = 'none', 300);
+                        card._hideTimeoutId = setTimeout(() => {
+                            card.style.display = 'none';
+                            card._hideTimeoutId = null;
+                        }, 300);
                     }
                 });
             });
