@@ -269,6 +269,14 @@ body.dark-mode .application-guide {
     margin-right: 0.3rem;
 }
 
+/* Required indicator in field labels */
+.field-label .required-indicator {
+    color: #e74c3c;
+    font-weight: 700;
+    margin-left: 0.2rem;
+    font-size: 1.1em;
+}
+
 .field-hint {
     display: block;
     margin-top: 0.5rem;
@@ -338,6 +346,21 @@ body.dark-mode .floating-input:not(:placeholder-shown) + .floating-label {
 
 .floating-label i {
     color: var(--primary-color);
+}
+
+/* Required Field Indicator Styling */
+.required-indicator {
+    color: #e74c3c;
+    font-weight: 700;
+    margin-left: 0.2rem;
+    font-size: 1.1em;
+}
+
+/* When label is floating, keep asterisk visible and red */
+.floating-input:focus + .floating-label .required-indicator,
+.floating-input:not(:placeholder-shown) + .floating-label .required-indicator {
+    color: #e74c3c;
+    font-weight: 700;
 }
 
 /* Textarea Specific */
