@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CAPIBARA Collaboration publications, reports, and presentations. Access our status reports, technical documentation, and research findings.">
     <title>Publications | Capibara Collaboration</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
@@ -23,42 +24,166 @@
 
     <!-- Page header -->
     <header class="page-header">
-        <h1>Publications</h1>
-        <p class="subtitle">Check out our latest publications and reports!</p>
+        <h1><i class="fas fa-newspaper"></i> Publications</h1>
+        <p class="subtitle">Research outputs, reports, and presentations from the CAPIBARA Collaboration</p>
     </header>
 
-    <!-- Image gallery or project grid -->
-    <section class="gallery-section">
-        <div class="gallery-grid">
-            <a href="../publications/CAPIBARA_Y1_Status_Report.pdf" class="gallery-item glow-on-hover">
-                <img src="../images/publications/y1-status-cover.png" alt="Status Report Cover">
-                <div class="gallery-overlay">
+    <!-- Stats Overview -->
+    <section class="pub-stats">
+        <div class="stat-item">
+            <i class="fas fa-file-alt"></i>
+            <span class="stat-number">3</span>
+            <span class="stat-label">Publications</span>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-users"></i>
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Contributors</span>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-calendar"></i>
+            <span class="stat-number">2024-2025</span>
+            <span class="stat-label">Period</span>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="filter-section">
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all" aria-label="Filter by all publications"><i class="fas fa-th"></i> All</button>
+            <button class="filter-btn" data-filter="reports" aria-label="Filter by reports"><i class="fas fa-file-alt"></i> Reports</button>
+            <button class="filter-btn" data-filter="presentations" aria-label="Filter by presentations"><i class="fas fa-presentation"></i> Presentations</button>
+            <button class="filter-btn" data-filter="proposals" aria-label="Filter by proposals"><i class="fas fa-lightbulb"></i> Proposals</button>
+        </div>
+    </section>
+
+    <!-- Publications Grid -->
+    <section class="publications-section">
+        <div class="publications-grid" role="region" aria-live="polite" aria-label="Filtered publications">
+            <!-- Year 1 Report -->
+            <article class="pub-card" data-category="reports">
+                <div class="pub-image">
+                    <img src="../images/publications/y1-status-cover.png" alt="Year 1 Status Report Cover">
+                    <div class="pub-badge report">Report</div>
+                </div>
+                <div class="pub-content">
+                    <div class="pub-meta">
+                        <span class="pub-date"><i class="fas fa-calendar"></i> July 2025</span>
+                        <span class="pub-type"><i class="fas fa-tag"></i> Annual Report</span>
+                    </div>
                     <h3>Year 1 Collaboration Status Report</h3>
+                    <p>Comprehensive overview of our first year: achievements, challenges, team growth, and strategic roadmap for the future.</p>
+                    <div class="pub-highlights">
+                        <span class="highlight-tag"><i class="fas fa-check"></i> Team Growth</span>
+                        <span class="highlight-tag"><i class="fas fa-check"></i> Milestones</span>
+                        <span class="highlight-tag"><i class="fas fa-check"></i> Future Plans</span>
+                    </div>
+                    <div class="pub-actions">
+                        <a href="../publications/CAPIBARA_Y1_Status_Report.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-file-pdf"></i> View PDF
+                        </a>
+                        <a href="../updates/y1_report_published.html" class="btn btn-outline">
+                            <i class="fas fa-info-circle"></i> Details
+                        </a>
+                    </div>
                 </div>
-            </a>
-            <a href="../publications/CosmoXarxa_presentation.pdf" class="gallery-item glow-on-hover">
-                <img src="../images/publications/cosmoxarxa-presentation.png" alt="Presentation Cover">
-                <div class="gallery-overlay">
-                    <h3>Presentation at Barcelona's CosmoCaixa Science Museum</h3>
+            </article>
+
+            <!-- CosmoCaixa Presentation -->
+            <article class="pub-card" data-category="presentations">
+                <div class="pub-image">
+                    <img src="../images/publications/cosmoxarxa-presentation.png" alt="CosmoCaixa Presentation">
+                    <div class="pub-badge presentation">Presentation</div>
                 </div>
-            </a>
-            <a href="../publications/preliminar_proposal.pdf" class="gallery-item glow-on-hover">
-                <img src="../images/publications/proposal.png" alt="Preliminary Proposal">
-                <div class="gallery-overlay">
-                    <h3>Very Preliminary Proposal for Spark Program</h3>
+                <div class="pub-content">
+                    <div class="pub-meta">
+                        <span class="pub-date"><i class="fas fa-calendar"></i> March 2025</span>
+                        <span class="pub-type"><i class="fas fa-tag"></i> Outreach</span>
+                    </div>
+                    <h3>CosmoCaixa Science Museum Presentation</h3>
+                    <p>Public outreach presentation introducing CAPIBARA's vision and missions to Barcelona's science museum volunteers and visitors.</p>
+                    <div class="pub-highlights">
+                        <span class="highlight-tag"><i class="fas fa-users"></i> Public Outreach</span>
+                        <span class="highlight-tag"><i class="fas fa-landmark"></i> CosmoCaixa</span>
+                    </div>
+                    <div class="pub-actions">
+                        <a href="../publications/CosmoXarxa_presentation.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-file-pdf"></i> View PDF
+                        </a>
+                    </div>
                 </div>
+            </article>
+
+            <!-- Preliminary Proposal -->
+            <article class="pub-card" data-category="proposals">
+                <div class="pub-image">
+                    <img src="../images/publications/proposal.png" alt="Preliminary Proposal">
+                    <div class="pub-badge proposal">Proposal</div>
+                </div>
+                <div class="pub-content">
+                    <div class="pub-meta">
+                        <span class="pub-date"><i class="fas fa-calendar"></i> 2024</span>
+                        <span class="pub-type"><i class="fas fa-tag"></i> Spark Program</span>
+                    </div>
+                    <h3>Preliminary Proposal for Spark Program</h3>
+                    <p>Founding document outlining CAPIBARA's vision, technical approach, and mission architecture for student-led space science.</p>
+                    <div class="pub-highlights">
+                        <span class="highlight-tag"><i class="fas fa-rocket"></i> Mission Design</span>
+                        <span class="highlight-tag"><i class="fas fa-brain"></i> Technical Vision</span>
+                    </div>
+                    <div class="pub-actions">
+                        <a href="../publications/preliminar_proposal.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-file-pdf"></i> View PDF
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="pub-cta">
+        <div class="cta-content">
+            <i class="fas fa-lightbulb"></i>
+            <h2>Contribute to Our Research</h2>
+            <p>Interested in contributing to future publications? Join our collaboration and help advance student-led space science.</p>
+            <a href="../application-form.html" class="btn btn-large">
+                <i class="fas fa-rocket"></i> Join CAPIBARA
             </a>
         </div>
     </section>
 
-    <!-- Full-width highlight section -->
-<!--    <section class="highlight-section">-->
-<!--        <div class="highlight-content">-->
-<!--            <h2>Important Highlight</h2>-->
-<!--            <p>This section stands out with a different background color. Use it for key information or calls to action.</p>-->
-<!--            <a href="#" class="btn">Action Button</a>-->
-<!--        </div>-->
-<!--    </section>-->
+    <script>
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter cards
+                const filter = this.dataset.filter;
+                document.querySelectorAll('.pub-card').forEach(card => {
+                    // Clear any pending hide timeout before applying new filter state
+                    if (card._hideTimeoutId) {
+                        clearTimeout(card._hideTimeoutId);
+                        card._hideTimeoutId = null;
+                    }
+
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'flex';
+                        setTimeout(() => card.style.opacity = '1', 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card._hideTimeoutId = setTimeout(() => {
+                            card.style.display = 'none';
+                            card._hideTimeoutId = null;
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
 </main>
 
 <!-- Footer will be injected here -->

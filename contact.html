@@ -3,30 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact CAPIBARA Collaboration. Get in touch with our team to ask questions, discuss partnerships, or learn about joining our student-led space missions.">
     <title>Contact | Capibara Collaboration</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles.css">
     <link rel="stylesheet" href="/assets/contact-form.css">
     <link rel="shortcut icon" type="image/png" href="/images/logos/capibara.png" />
-    <style>
-        /* Center content grid for this page only */
-        .content-grid {
-            grid-template-columns: 1fr !important;
-            max-width: 900px !important;
-            margin: 0 auto !important;
-            margin-bottom: 50px !important;
-        }
-
-        .content-grid a {
-            color: #bf87e6;
-            text-decoration: underline;
-        }
-
-        .content-grid a:hover {
-            color: #ff9800;
-        }
-    </style>
 </head>
 <body>
 <!-- Navigation will be injected here -->
@@ -40,71 +23,78 @@
         </ol>
     </nav>
 
-    <!-- Main content sections -->
-<!--    <section class="content-section">-->
-<!--        <div class="content-grid">-->
-<!--            &lt;!&ndash; Text content &ndash;&gt;-->
-<!--            <div class="text-content">-->
-<!--                -->
-<!--            </div>-->
+    <!-- Page header -->
+    <header class="page-header">
+        <h1><i class="fas fa-envelope"></i> Contact Us</h1>
+        <p class="subtitle">Get in touch with the CAPIBARA Collaboration team</p>
+    </header>
 
-            <!-- Image/content card -->
-<!--            <div class="content-card glow-on-hover">-->
-<!--                <iframe src="/assets/earth.html" alt="Animated Earth rotation" width="100%"></iframe>-->
-<!--                <div class="card-caption">-->
-<!--                    <p>We are an international group!</p>-->
-<!--                    <a href="/team/" class="btn btn-small">Learn <i class="fas fa-plus"></i></a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
+    <div class="form-container">
+        <!-- Info cards -->
+        <div class="contact-info-grid">
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h3>Students</h3>
+                <p>Want to join our team? Use our <a href="application-form.html">application form</a> instead.</p>
+            </div>
+            
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-code-branch"></i>
+                </div>
+                <h3>Technical Issues</h3>
+                <p>For code-related matters, please open an issue on our <a href="https://github.com/CAPIBARA3" target="_blank" rel="noopener noreferrer">GitHub repositories</a>.</p>
+            </div>
+            
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Partnerships</h3>
+                <p>We're actively seeking advisors and institutional collaborations. Let's talk!</p>
+            </div>
+        </div>
 
-    <!-- Full-width highlight section -->
-    <!-- <section class="highlight-section"> -->
-        <div class="highlight-content">
-            <header class="page-header">
-                <h1>Contact Form</h1>
-                <!-- <p class="subtitle">Contact us here anytime!</p> -->
-            </header>
-            <section class="content-grid">
-                <p>This is the general contact form. Please, specify in your message if you want to be directed to a specific program, team, topic or person and provide sufficient contact information for us to get back to you.</p>
-
-                <p>If you want to communicate something regarding open-source code from our repositories on GitHub, please consider opening a GitHub issue or pull request on the corresponding repository. Alternatively, you can direclty contact the administrator of that repository.</p>
-
-                <p>The CAPIBARA Collaboration is always actively looking for senior advisors and collaborations, we encourage you to contact us. If you are a student seeking to become a member of the Collaboration, please go to our <a href="application-form.html">application form</a>.</p>
-
-                <p>We are looking forward to hearing from you!</p>                
-            </section>
-            <br>
+        <!-- Contact form section -->
+        <div class="form-wrapper">
+            <h2><i class="fas fa-paper-plane"></i> Send us a Message</h2>
+            <p class="form-intro">Fill out the form below and we'll get back to you as soon as possible. Please specify in your message if you want to be directed to a specific program, team, or person.</p>
 
             <form action="https://formspree.io/f/xqallkvn" method="POST">
-                <div class="floating-label-group">
-                    <input type="email" name="email" id="email" class="floating-input" placeholder=" ">
-                    <label class="floating-label">Email</label>
+                <div class="form-row">
+                    <div class="floating-label-group">
+                        <input type="text" name="name" id="name" class="floating-input" placeholder=" " required>
+                        <label class="floating-label"><i class="fas fa-user"></i> Your Name *</label>
+                    </div>
+                    <div class="floating-label-group">
+                        <input type="email" name="email" id="email" class="floating-input" placeholder=" " required>
+                        <label class="floating-label"><i class="fas fa-envelope"></i> Email Address *</label>
+                    </div>
                 </div>
-                <div class="floating-label-group">
-                    <input type="text" name="name" id="name" class="floating-input" placeholder=" ">
-                    <label class="floating-label">Name</label>
-                </div>
-                <div class="floating-label-group">
-                    <input type="text" name="subject" id="subject" class="floating-input" placeholder=" ">
-                    <label class="floating-label">Subject</label>
-                </div>
-                <div class="floating-label-group">
-                    <textarea name="message" id="message" class="floating-input" placeholder=" "></textarea>
-                    <label class="floating-label">Your message</label>
-                </div>
-
-                <p style="font-size: 0.9em; color: #666; margin-top: 1em;">
-                    By submitting this form, you consent to the processing of your personal data and information provided in the form for the purpose involving this form. You information will not be shared outside the CAPIBARA Collaboration and can be deleted upon request. Refer to our <a href="docs/public/governance/PRIVACY_POLICY.html" style="text-decoration: underline">privacy policy</a> for more details.
-                </p>
                 
-                <button type="submit">Send</button>
-            </form>
+                <div class="floating-label-group">
+                    <input type="text" name="subject" id="subject" class="floating-input" placeholder=" " required>
+                    <label class="floating-label"><i class="fas fa-tag"></i> Subject *</label>
+                </div>
+                
+                <div class="floating-label-group">
+                    <textarea name="message" id="message" class="floating-input" placeholder=" " required></textarea>
+                    <label class="floating-label"><i class="fas fa-comment"></i> Your Message *</label>
+                </div>
 
-            <h2>We will get back to you shortly!</h2>
+                <div class="privacy-notice">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>By submitting this form, you consent to the processing of your personal data for the purpose of this contact. Your information will not be shared outside the CAPIBARA Collaboration and can be deleted upon request. See our <a href="docs/public/governance/PRIVACY_POLICY.html">privacy policy</a> for details.</p>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
         </div>
-    <!-- </section> -->
+    </div>
 </main>
 
 <!-- Footer will be injected here -->
