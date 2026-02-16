@@ -1,5 +1,7 @@
 # Onboarding
 
+Welcome to the CAPIBARA 
+
 Coming description...
 
 ```{toctree}

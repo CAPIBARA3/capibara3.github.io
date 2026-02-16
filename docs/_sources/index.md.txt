@@ -15,7 +15,6 @@ Use the navigation tree below to browse the major sections of the documentation.
 :maxdepth: 1
 public/governance/index
 public/onboarding/index
-public/templates/index
 sitemap
 ```
 
