@@ -111,7 +111,8 @@ p {
 .info-card p,
 .news-item p,
 .step-content p,
-.highlight-item span {
+.highlight-item span,
+.column p {
     text-align: left;
 }
 
