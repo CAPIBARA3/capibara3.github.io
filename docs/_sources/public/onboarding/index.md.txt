@@ -1,5 +1,7 @@
 # Onboarding
 
+Welcome to the CAPIBARA 
+
 Coming description...
 
 ```{toctree}
@@ -10,28 +12,28 @@ Coming description...
 01_getting_started.md
 
 :caption: Basic Environment Setup
-env/02_setting_up_unix.md
-env/03_command_line.md
-env/04_configuring_git.md
-env/05_configuring_github.md
-env/06_collaborating_github.md
-env/07_configuring_python_pip.md
-env/08_configuring_conda_venv.md
-env/X_code_editors.md
+02_setting_up_unix.md
+03_command_line.md
+04_configuring_git.md
+05_configuring_github.md
+06_collaborating_github.md
+07_configuring_python_pip.md
+08_configuring_conda_venv.md
+X_code_editors.md
 
 :caption: Python tutorials
 python/ <!--right now recommending gh.com/omsharansalafia/intropython, a python tutorial series might come in the future-->
-python/09_python_basics.md
-python/10_jupyter_notebook.md
-python/11_numpy_pandas.md
-python/12_matplotlib.md
-python/13_scipy_fitting.md
+09_python_basics.md
+10_jupyter_notebook.md
+11_numpy_pandas.md
+12_matplotlib.md
+13_scipy_fitting.md
 
 :caption: Additional guides
-engineering/14_packages.md
-engineering/15_automating_tests.md
-engineering/16_docker.md
-engineering/17_local_latex.md
+14_packages.md
+15_automating_tests.md
+16_docker.md
+17_local_latex.md
 ```
 
 Back to the main documentation: [Home](../../index.md)
