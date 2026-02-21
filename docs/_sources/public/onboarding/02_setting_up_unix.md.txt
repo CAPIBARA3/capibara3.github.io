@@ -1,22 +1,17 @@
-# 02 Ubuntu on Windows
+# 02 Setting Up Unix Environment
 
 ## Goal
 
-This guide will walk you through the process of installing Ubuntu on your Windows computer using **VirtualBox**, a free virtualization tool that allows you to run Ubuntu in a window—like an app—without modifying your existing Windows installation.
-
-Using a virtual machine (VM) is often the easiest and safest way for you to get a Unix-like development environment.
-
-Please note that I haven’t personally validated every step of this process. Besides, your computer might have custom or simply different settings. If you encounter issues, consult the VirtualBox/Ubuntu documentation or reach out to other members.
+Set up a Unix-like development environment on your computer. Depending on your operating system, you'll follow a different path:
+- **macOS**: Already Unix-based (just verify)
+- **Linux**: Already Unix-based (just verify)
+- **Windows**: Install Ubuntu using Windows Subsystem for Linux (WSL) or VirtualBox
 
 ## Prerequisites
 
-* A Windows computer with:
-
-  * At least **8 GB RAM** (16 GB recommended)
-  * At least **20–30 GB free disk space**
-* Internet connection
-* Permission to install software
-* **Ubuntu ISO** (downloadable from ubuntu.com)
+- Internet connection
+- Permission to install software
+- For Windows with VirtualBox: At least 8 GB RAM (16 GB recommended), 20–30 GB free disk space
 
 ---
 
@@ -24,32 +19,41 @@ Please note that I haven’t personally validated every step of this process. Be
 
 ### 1. Introduction
 
-**Why install Ubuntu (or Linux in general) on a Windows computer?**
+**Why do you need a Unix environment?**
 
-* **Seamless Code Integration:** Aligns your environment with Linux/macOS (Unix-based) systems, reducing platform-specific bugs.
-* **Consistent File Paths:** Ensures compatibility with Unix-style file paths and case-sensitive filesystems.
-* **Efficient Package Management:** Use APT and other tools for easy installation and management of dependencies.
-* **Improved Development Tools:** Access to Bash, Docker, SSH, and open-source utilities that streamline collaboration.
-* **Better Collaboration:** Reduces “works on my machine” variability and aligns dev environments across teams.
+* **Seamless Code Integration:** Most scientific code and servers run on Linux/Unix. Your local environment should match production.
+* **Consistent File Paths:** Unix uses forward slashes (`/`); Windows uses backslashes (`\`). Code written on Unix works consistently everywhere.
+* **Better Collaboration:** Team members on different machines can work on identical environments.
+* **Professional Tools:** Access to Bash shell, SSH, Git integration, Docker, and open-source utilities.
+* **Reduced Bugs:** Code tested on Unix works better with our code repositories and CI/CD pipelines.
 
-Virtual machines make this possible without altering your actual Windows installation.
+If you use **macOS or Linux**, you already have Unix! Just verify in section 2. If you use **Windows**, you need to set up either WSL (lightweight, recommended) or VirtualBox (full virtual machine).
 
 ---
 
-## 2. Setup
+## 2. Choose Your Operating System
 
-### Step 2.1 — Download VirtualBox
+### macOS Setup
 
-1. Visit: [https://www.virtualbox.org](https://www.virtualbox.org)
-2. Click **Downloads**.
-3. Select **Windows hosts**.
-4. Run the installer and follow the prompts (default options are fine).
+#### 2.1 Verify Unix Compatibility
 
-### Step 2.2 — Download the Ubuntu ISO
+Open **Terminal** (Cmd+Space, type "Terminal", press Enter):
 
-1. Visit: [https://ubuntu.com/download](https://ubuntu.com/download)
-2. Choose **Ubuntu Desktop LTS** (recommended for stability).
-3. Download the `.iso` file (around 4–5 GB).
+```bash
+uname -s
+```
+
+If output is `Darwin`, you're good! macOS is Unix-based. You can proceed to [03 Introduction to the Command Line](03_command_line.md).
+
+#### 2.2 Install Xcode Command Line Tools (Optional but Recommended)
+
+These tools include compilers and utilities you'll need later:
+
+```bash
+xcode-select --install
+```
+
+A dialog will appear—click **Install** and follow the prompts.
 
 ### Step 2.3 — Create a New Virtual Machine
 
@@ -194,4 +198,4 @@ Check `/media` or `/mnt` for your Windows-shared folder.
 
 ## Next Steps
 
-You now have a functional Ubuntu VM. Continue with: [03_command_line](03_command_line.md)
+Congratulations! You now have a Unix environment. Continue learning the command line: [03 Introduction to the Command Line](03_command_line.md)

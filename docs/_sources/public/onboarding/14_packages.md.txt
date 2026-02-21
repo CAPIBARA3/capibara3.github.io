@@ -4,18 +4,20 @@
 In this onboarding tutorial you will learn how to set up your repo structure and additional files to create your own pip package as well as getting a DOI and uploading it to `pypi`.
 
 ## Prerequisites
-- [02_setting_up_unix](../env/02_setting_up_unix.md)
-- [03_command_line](../env/03_command_line.md)
-- [04_configuring_git](../env/04_configuring_git.md)
-- [05_configuring_github](../env/06_collaborating_github.md)
-- [python_pip](../env/07_configuring_python_pip.md)
-- [conda_venv](../env/08_configuring_conda_venv.md)
-- [14_packages](14_packages.md)
+- [02 Setting Up Unix](02_setting_up_unix.md)
+- [03 Introduction to the Command Line](03_command_line.md)
+- [04 Configuring Git](04_configuring_git.md)
+- [05 Configuring GitHub](05_configuring_github.md)
+- [06 Collaborating on GitHub](06_collaborating_github.md)
+- [07 Configuring Python & Pip](07_configuring_python_pip.md)
+- [08 Configuring Conda & venv](08_configuring_conda_venv.md)
 
 ## Steps
 
 ### 1. Introduction
-Many times you will need a specific function in multiple places, or other people will need it too. For example, you may want a cosmic ray flux function in terms of altitude for simulations, for science data analysis preparation, for detector design and calibration, etc. A good way to share code without copying is GitHub, but then instead of downloading or having to work with different repos you can give your code a package structure for making importing to other scripts much more easier. Plus, you can also update your packages to `pypi` for free, the official Python package distributor which will enable anyone to install you package using `pip install <your-package>`.
+Many times you will need a specific function in multiple places, or other people will need it too. For example, you may want a cosmic ray flux function in terms of altitude for simulations, for science data analysis preparation, for detector design and calibration, etc. 
+
+Copying code between projects is error-prone and difficult to maintain: if you find a bug or improve the function, you have to update it everywhere. A better approach is to package your code as a reusable Python package. When you create a package, other developers (including yourself in other projects) can simply install it using `pip install your-package` and import the functions they need. You can also share your packages on [PyPI](https://pypi.org/), the official Python Package Index, making it accessible to the entire Python community.
 
 ### 2. Setup
 

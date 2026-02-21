@@ -1,0 +1,213 @@
+# 10 Jupyter Notebooks
+
+## Goal
+Learn how to use Jupyter Notebooks for interactive coding, data exploration, and scientific communication. Notebooks combine code, text, visualizations, and equations in a single document.
+
+## Prerequisites
+- [07 Configuring Python & Pip](07_configuring_python_pip.md)
+- [08 Configuring Conda & venv](08_configuring_conda_venv.md)
+- [09 Python Basics](09_python_basics.md)
+
+## 1. Introduction
+
+A **Jupyter Notebook** is an interactive environment where you run Python code in "cells" and see results immediately. Unlike regular Python scripts, notebooks let you:
+
+- Write code in small chunks and run them independently
+- Visualize plots and data directly in the notebook
+- Mix code with formatted text (markdown), equations, and images
+- Tell a story with your data analysis
+- Share your work easily (notebooks are just JSON files viewable on GitHub)
+
+Jupyter is widely used in scientific research, data science, and education.
+
+## 2. Installation and Setup
+
+### 2.1 Install Jupyter and IPython
+Jupyter usually comes with Anaconda/Miniconda. If you need to install it:
+
+```bash
+pip install jupyter jupyterlab
+```
+
+### 2.2 Launch Jupyter
+From your terminal, navigate to your project directory and run:
+
+```bash
+jupyter notebook
+```
+
+or for the newer interface:
+
+```bash
+jupyter lab
+```
+
+Your browser will open to `localhost:8888` showing your file browser. If you have VS Code, you can also run notebooks directly in the editor (see [X Code Editors and IDEs](X_code_editors.md)).
+
+## 3. Notebook Basics
+
+### Creating a New Notebook
+1. Click **New** button and select **Python 3**
+2. A new notebook will open with an empty code cell
+
+### Cell Types
+
+**Code Cells** - Contains Python code:
+```python
+x = 5
+y = 3
+print(x + y)
+```
+Run with Shift+Enter or the ▶ button.
+
+**Markdown Cells** - Contains formatted text:
+```markdown
+# Section Title
+This is **bold** text. Here's a [link](https://example.com).
+```
+
+### Writing and Organizing Cells
+
+1. **Add a cell**: Click the + button in the toolbar
+2. **Change cell type**: Use the dropdown (Code/Markdown)
+3. **Run a cell**: Press Shift+Enter (runs and moves to next) or Ctrl+Enter (stays in cell)
+4. **Delete a cell**: Press D twice
+
+### Output and Variables
+
+Variables persist across cells:
+
+Cell 1:
+```python
+name = "Alice"
+age = 25
+```
+
+Cell 2:
+```python
+print(f"{name} is {age} years old")  # Works! Prints "Alice is 25 years old"
+```
+
+## 4. Markdown in Notebooks
+
+Use Markdown cells to document your analysis:
+
+```markdown
+# Main Title
+
+## Subsection
+
+This is regular text with **bold**, *italic*, and `code`.
+
+### Lists
+- Item 1
+- Item 2
+
+### Equations (LaTeX)
+Inline equation: $E = mc^2$
+
+Block equation:
+$$
+\int_0^{\infty} e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
+$$
+```
+
+## 5. Displaying Plots and Data
+
+### Inline Plotting
+```python
+import matplotlib.pyplot as plt
+
+plt.plot([1, 2, 3, 4], [1, 4, 2, 3])
+plt.xlabel("X axis")
+plt.ylabel("Y axis")
+plt.show()
+```
+
+The plot appears directly in the notebook below the cell.
+
+### DataFrames
+```python
+import pandas as pd
+
+data = {"Name": ["Alice", "Bob"], "Age": [25, 30]}
+df = pd.DataFrame(data)
+print(df)  # Displays as a formatted table
+```
+
+## 6. Magic Commands
+
+Jupyter has special commands (starting with %) for convenience:
+
+```python
+# Show execution time
+%timeit sum(range(100))
+
+# Display plots inline (usually automatic)
+%matplotlib inline
+
+# Run a Python script
+%run my_script.py
+
+# List all variables
+%whos
+```
+
+## 7. Keyboard Shortcuts
+
+| Shortcut | Action |
+|----------|--------|
+| Shift+Enter | Run cell and move to next |
+| Ctrl+Enter | Run cell and stay |
+| A | Insert cell above |
+| B | Insert cell below |
+| D, D | Delete cell |
+| M | Change to Markdown |
+| Y | Change to Code |
+| Ctrl+/ | Toggle comment |
+
+## 8. Best Practices
+
+### Organize Your Notebook
+1. Start with a markdown cell describing the purpose
+2. Import all libraries at the top
+3. Use markdown cells to separate sections
+4. Add descriptive comments to complex code
+
+### Example Structure
+```
+[Markdown] Title and Overview
+[Code] Import libraries
+[Markdown] Data Loading Section
+[Code] Load data
+[Markdown] Data Exploration
+[Code] Visualize data
+[Markdown] Analysis
+[Code] Perform calculations
+```
+
+### Checkpoint: Restart and Run All
+Occasionally click **Kernel → Restart & Run All** to ensure your notebook works from scratch (not relying on out-of-order execution).
+
+## 9. Sharing and Exporting
+
+### Share on GitHub
+Just commit your `.ipynb` file to Git. GitHub renders notebooks directly!
+
+### Export to Other Formats
+```bash
+jupyter nbconvert --to html notebook.ipynb
+jupyter nbconvert --to pdf notebook.ipynb
+jupyter nbconvert --to python notebook.ipynb  # Convert to .py script
+```
+
+## 10. Troubleshooting
+
+- **Kernel seems stuck?** Click **Kernel → Interrupt** or restart with **Kernel → Restart**
+- **Variables not showing?** You might be in the wrong kernel (check top right)
+- **Code not running?** Make sure you're in a Code cell, not Markdown
+- **Import errors?** Make sure the package is installed in your active environment
+
+## Next Steps
+
+Now that you can run Python interactively, let's learn about powerful data and visualization libraries: [11 NumPy and Pandas](11_numpy_pandas.md).

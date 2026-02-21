@@ -4,9 +4,9 @@
 The goal is to setup your GitHub account, synchronise it to your device via git and learn about useful commands and resouces.
 
 ## Prerequisites
-- [02_setting_up_unid](02_setting_up_unix.md)
-- [03_command_line](03_command_line.md)
-- [04_configuring_git](04_configuring_git.md)
+- [02 Setting Up Unix](02_setting_up_unix.md)
+- [03 Introduction to the Command Line](03_command_line.md)
+- [04 Configuring Git](04_configuring_git.md)
 
 ## Steps
 

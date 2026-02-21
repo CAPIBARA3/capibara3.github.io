@@ -11,7 +11,7 @@ Once you have submitted the application and received an invitation to join the C
 ## Steps
 
 ### 1. Introduction
-Explain context.
+Congratulations on being accepted to join the CAPIBARA Collaboration! This tutorial will guide you through the essential first steps to become a full member and set up access to our collaboration's tools, repositories, and communication channels. You're about to join a community of student researchers and developers focused on open science and collaborative software development.
 
 ### 2. Setup
 Before starting this process you will need to have created a GitHub account. If you have one, you just need to remember the login credentials (for you to log in). If not you can find a very detailed guide [here](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github). GitHub is our main information hub all of our codes, documentation and files are stored in our organisation ([github.com/capibara3](https://github.com/capibara3)). Decision-making also takes place there through asynchronous communication within issues, pull requests, and discussions. You will learn the "GitHub workflow" once you reach the next tutorials.
@@ -42,7 +42,11 @@ After sharing this information, you may proceed to read the most important docum
 - [...](../governance/index.md)
 
 ### 4. Verification
--
+You can verify this step is complete when:
+- You have received confirmation of your GitHub organization membership
+- You can access [github.com/capibara3](https://github.com/capibara3) and view private repositories
+- Your profile has been added to the team website (if you submitted the optional information)
+- You have reviewed the Code of Conduct and Contributing guidelines
 
 ## Next Steps
 Once you have joined the CAPIBARA GitHub organisation, you can start contributing! Plus, you also have access to all of our private files. Make sure to always comply with the code of conduct and contribution expectations, both collaboration-wide and repository-specific guidelines. You will learn about GitHub in a future tutorial. Now, let's set up your computer: [02_setting_up_unix.md](env/02_setting_up_unix.md).

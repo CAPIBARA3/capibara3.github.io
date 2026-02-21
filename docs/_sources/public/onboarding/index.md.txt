@@ -1,8 +1,8 @@
 # Onboarding
 
-Welcome to the CAPIBARA 
+Welcome to the CAPIBARA Collaboration! This onboarding guide will help you transition from application to becoming a skilled software engineer and researcher. Whether you're a high school or university student with little-to-no coding experience, these tutorials will guide you step-by-step through installing tools, learning Python, collaborating with Git and GitHub, and contributing to real scientific projects.
 
-Coming description...
+Start with application, then move through environment setup, learn Python fundamentals, and progress to professional software engineering practices like testing and containerization.
 
 ```{toctree}
 :maxdepth: 1
@@ -21,8 +21,7 @@ Coming description...
 08_configuring_conda_venv.md
 X_code_editors.md
 
-:caption: Python tutorials
-python/ <!--right now recommending gh.com/omsharansalafia/intropython, a python tutorial series might come in the future-->
+:caption: Python Tutorials
 09_python_basics.md
 10_jupyter_notebook.md
 11_numpy_pandas.md

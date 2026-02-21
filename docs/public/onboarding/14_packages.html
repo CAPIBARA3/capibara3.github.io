@@ -31,8 +31,8 @@
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../../_static/capibara-theme.css?v=7b1a4b07" />
-    <link rel="stylesheet" type="text/css" href="../../_static/capibara-theme.css?v=7b1a4b07" />
+    <link rel="stylesheet" type="text/css" href="../../_static/capibara-theme.css?v=18640566" />
+    <link rel="stylesheet" type="text/css" href="../../_static/capibara-theme.css?v=18640566" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -47,7 +47,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="15 Automating Tests" href="15_automating_tests.html" />
-    <link rel="prev" title="08 Configuring Conda &amp; venv" href="08_configuring_conda_venv.html" />
+    <link rel="prev" title="13 SciPy and Fitting" href="13_scipy_fitting.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -350,13 +350,19 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="00_applying_to_join.html">00 Applying to Join</a></li>
 <li class="toctree-l1"><a class="reference internal" href="01_getting_started.html">01 Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_setting_up_unix.html">02 Ubuntu on Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_setting_up_unix.html">02 Setting Up Unix Environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_command_line.html">03 Introduction to the command line</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_configuring_git.html">04 Configuring Git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05_configuring_github.html">05 Configuring GitHub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="06_collaborating_github.html">06 Collaborating on GitHub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="07_configuring_python_pip.html">07 Configuring Python &amp; Pip</a></li>
 <li class="toctree-l1"><a class="reference internal" href="08_configuring_conda_venv.html">08 Configuring Conda &amp; venv</a></li>
+<li class="toctree-l1"><a class="reference internal" href="X_code_editors.html">Code Editors and IDEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_python_basics.html">09 Python Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_jupyter_notebook.html">10 Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11_numpy_pandas.html">11 NumPy and Pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_matplotlib.html">12 Matplotlib and Data Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13_scipy_fitting.html">13 SciPy and Fitting</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">14 Creating Packages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="15_automating_tests.html">15 Automating Tests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="16_docker.html">16 Docker</a></li>
@@ -430,20 +436,21 @@
 <section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="#../env/02_setting_up_unix.md"><span class="xref myst">02_setting_up_unix</span></a></p></li>
-<li><p><a class="reference internal" href="#../env/03_command_line.md"><span class="xref myst">03_command_line</span></a></p></li>
-<li><p><a class="reference internal" href="#../env/04_configuring_git.md"><span class="xref myst">04_configuring_git</span></a></p></li>
-<li><p><a class="reference internal" href="#../env/06_collaborating_github.md"><span class="xref myst">05_configuring_github</span></a></p></li>
-<li><p><a class="reference internal" href="#../env/07_configuring_python_pip.md"><span class="xref myst">python_pip</span></a></p></li>
-<li><p><a class="reference internal" href="#../env/08_configuring_conda_venv.md"><span class="xref myst">conda_venv</span></a></p></li>
-<li><p><a class="reference internal" href="#"><span class="std std-doc">14_packages</span></a></p></li>
+<li><p><a class="reference internal" href="02_setting_up_unix.html"><span class="std std-doc">02 Setting Up Unix</span></a></p></li>
+<li><p><a class="reference internal" href="03_command_line.html"><span class="std std-doc">03 Introduction to the Command Line</span></a></p></li>
+<li><p><a class="reference internal" href="04_configuring_git.html"><span class="std std-doc">04 Configuring Git</span></a></p></li>
+<li><p><a class="reference internal" href="05_configuring_github.html"><span class="std std-doc">05 Configuring GitHub</span></a></p></li>
+<li><p><a class="reference internal" href="06_collaborating_github.html"><span class="std std-doc">06 Collaborating on GitHub</span></a></p></li>
+<li><p><a class="reference internal" href="07_configuring_python_pip.html"><span class="std std-doc">07 Configuring Python &amp; Pip</span></a></p></li>
+<li><p><a class="reference internal" href="08_configuring_conda_venv.html"><span class="std std-doc">08 Configuring Conda &amp; venv</span></a></p></li>
 </ul>
 </section>
 <section id="steps">
 <h2>Steps<a class="headerlink" href="#steps" title="Link to this heading">#</a></h2>
 <section id="introduction">
 <h3>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h3>
-<p>Many times you will need a specific function in multiple places, or other people will need it too. For example, you may want a cosmic ray flux function in terms of altitude for simulations, for science data analysis preparation, for detector design and calibration, etc. A good way to share code without copying is GitHub, but then instead of downloading or having to work with different repos you can give your code a package structure for making importing to other scripts much more easier. Plus, you can also update your packages to <code class="docutils literal notranslate"><span class="pre">pypi</span></code> for free, the official Python package distributor which will enable anyone to install you package using <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">&lt;your-package&gt;</span></code>.</p>
+<p>Many times you will need a specific function in multiple places, or other people will need it too. For example, you may want a cosmic ray flux function in terms of altitude for simulations, for science data analysis preparation, for detector design and calibration, etc.</p>
+<p>Copying code between projects is error-prone and difficult to maintain: if you find a bug or improve the function, you have to update it everywhere. A better approach is to package your code as a reusable Python package. When you create a package, other developers (including yourself in other projects) can simply install it using <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">your-package</span></code> and import the functions they need. You can also share your packages on <a class="reference external" href="https://pypi.org/">PyPI</a>, the official Python Package Index, making it accessible to the entire Python community.</p>
 </section>
 <section id="setup">
 <h3>2. Setup<a class="headerlink" href="#setup" title="Link to this heading">#</a></h3>
@@ -637,12 +644,12 @@ pip<span class="w"> </span>install<span class="w"> </span>twine
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="08_configuring_conda_venv.html"
+       href="13_scipy_fitting.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">08 Configuring Conda &amp; venv</p>
+        <p class="prev-next-title">13 SciPy and Fitting</p>
       </div>
     </a>
     <a class="right-next"

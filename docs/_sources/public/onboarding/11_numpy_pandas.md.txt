@@ -1,0 +1,261 @@
+# 11 NumPy and Pandas
+
+## Goal
+Learn the fundamentals of NumPy (numerical computing) and Pandas (data manipulation). These are essential libraries for scientific computing and data analysis.
+
+## Prerequisites
+- [07 Configuring Python & Pip](07_configuring_python_pip.md)
+- [08 Configuring Conda & venv](08_configuring_conda_venv.md)
+- [09 Python Basics](09_python_basics.md)
+- [10 Jupyter Notebooks](10_jupyter_notebook.md)
+
+## 1. Introduction
+
+**NumPy** provides efficient arrays and mathematical functions for numerical computing. **Pandas** builds on NumPy to provide high-level data structures (DataFrames) perfect for tabular data like spreadsheets.
+
+Together, they handle tasks like:
+- Reading and writing data files (CSV, Excel, etc.)
+- Cleaning and transforming data
+- Statistical analysis
+- Filtering and aggregating data
+- Preparing data for visualization or machine learning
+
+## 2. Installation
+
+NumPy and Pandas usually come with Anaconda/Miniconda. Install explicitly with:
+
+```bash
+pip install numpy pandas
+```
+
+## 3. NumPy Basics
+
+### 3.1 NumPy Arrays
+
+```python
+import numpy as np
+
+# Create arrays
+arr = np.array([1, 2, 3, 4, 5])
+print(arr)                    # [1 2 3 4 5]
+print(type(arr))              # <class 'numpy.ndarray'>
+
+# 2D arrays (matrices)
+matrix = np.array([[1, 2, 3], [4, 5, 6]])
+print(matrix.shape)           # (2, 3) - 2 rows, 3 columns
+
+# Create special arrays
+zeros = np.zeros(5)           # [0. 0. 0. 0. 0.]
+ones = np.ones((3, 3))        # 3x3 matrix of ones
+range_arr = np.arange(0, 10)  # [0 1 2 3 4 5 6 7 8 9]
+```
+
+### 3.2 Array Operations
+
+```python
+# Element-wise operations
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+print(a + b)      # [5 7 9]
+print(a * 2)      # [2 4 6]
+print(a ** 2)     # [1 4 9]
+print(np.sqrt(a)) # [1.        1.41421356 1.73205081]
+```
+
+### 3.3 Indexing and Slicing
+
+```python
+arr = np.array([10, 20, 30, 40, 50])
+
+print(arr[0])     # 10 (first element)
+print(arr[-1])    # 50 (last element)
+print(arr[1:4])   # [20 30 40] (elements 1 to 3)
+
+# 2D indexing
+matrix = np.array([[1, 2, 3], [4, 5, 6]])
+print(matrix[0, :])  # [1 2 3] (first row)
+print(matrix[:, 1])  # [2 5] (second column)
+```
+
+### 3.4 Useful Functions
+
+```python
+data = np.array([1, 5, 3, 9, 2])
+
+print(np.mean(data))      # 4.0 (average)
+print(np.std(data))       # 3.16... (standard deviation)
+print(np.min(data))       # 1
+print(np.max(data))       # 9
+print(np.sum(data))       # 20
+```
+
+## 4. Pandas Basics
+
+### 4.1 DataFrames (Tables)
+
+```python
+import pandas as pd
+
+# Create from a dictionary
+data = {
+    "Name": ["Alice", "Bob", "Charlie"],
+    "Age": [25, 30, 35],
+    "Score": [85.5, 92.3, 78.9]
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+#      Name  Age  Score
+# 0   Alice   25   85.5
+# 1     Bob   30   92.3
+# 2 Charlie   35   78.9
+```
+
+### 4.2 Reading and Writing Data
+
+```python
+# Read from CSV
+df = pd.read_csv("data.csv")
+
+# Write to CSV
+df.to_csv("output.csv", index=False)
+
+# Read from Excel
+df = pd.read_excel("data.xlsx")
+
+# Write to Excel
+df.to_excel("output.xlsx", index=False)
+```
+
+### 4.3 Accessing Data
+
+```python
+df = pd.DataFrame({
+    "Name": ["Alice", "Bob", "Charlie"],
+    "Age": [25, 30, 35]
+})
+
+# Access column
+print(df["Name"])          # Series of names
+print(df["Age"].mean())    # 30.0 (average age)
+
+# Access row
+print(df.iloc[0])         # First row as Series
+print(df.loc[0, "Name"])  # "Alice" (first row, Name column)
+
+# First/Last rows
+print(df.head(2))         # First 2 rows
+print(df.tail(1))         # Last row
+```
+
+### 4.4 Filtering Data
+
+```python
+# Filter rows where Age > 25
+older = df[df["Age"] > 25]
+
+# Multiple conditions
+young_high_score = df[(df["Age"] < 30) & (df["Score"] > 80)]
+
+# Select specific columns
+names_ages = df[["Name", "Age"]]
+```
+
+### 4.5 Data Cleaning
+
+```python
+# Check for missing values
+print(df.isnull())
+
+# Drop rows with missing values
+df_clean = df.dropna()
+
+# Fill missing values
+df.fillna(0, inplace=True)
+
+# Remove duplicates
+df_unique = df.drop_duplicates()
+
+# Rename columns
+df.rename(columns={"Age": "Years"}, inplace=True)
+```
+
+### 4.6 Grouping and Aggregation
+
+```python
+# Group by a column and calculate statistics
+df_grouped = df.groupby("Age").agg({
+    "Score": ["mean", "min", "max"],
+    "Name": "count"
+})
+
+# By department, get average salary
+df.groupby("Department")["Salary"].mean()
+```
+
+### 4.7 Sorting
+
+```python
+# Sort by Age (ascending)
+df_sorted = df.sort_values("Age")
+
+# Sort by Age (descending)
+df_sorted = df.sort_values("Age", ascending=False)
+
+# Sort by multiple columns
+df_sorted = df.sort_values(["Department", "Salary"])
+```
+
+## 5. Combining NumPy and Pandas
+
+```python
+import numpy as np
+import pandas as pd
+
+# Create data with NumPy
+values = np.random.random(100)  # 100 random numbers
+
+# Put in DataFrame
+df = pd.DataFrame({"measurements": values})
+
+# Calculate statistics
+print(df["measurements"].describe())  # Count, mean, std, min, etc.
+```
+
+## 6. Common Workflow Example
+
+```python
+import pandas as pd
+import numpy as np
+
+# 1. Load data
+df = pd.read_csv("experiment_data.csv")
+
+# 2. Explore
+print(df.shape)              # Dimensions
+print(df.info())             # Data types and null counts
+print(df.describe())         # Statistical summary
+
+# 3. Clean
+df["temperature"].fillna(df["temperature"].mean(), inplace=True)
+df = df[df["result"] != "ERROR"]
+
+# 4. Analyze
+by_condition = df.groupby("condition")["result"].mean()
+print(by_condition)
+
+# 5. Save cleaned data
+df.to_csv("cleaned_data.csv", index=False)
+```
+
+## 7. Resources
+
+- [NumPy Documentation](https://numpy.org/doc/)
+- [Pandas Documentation](https://pandas.pydata.org/docs/)
+- [Intro to Python course](https://github.com/omsharansalafia/intropython) - has NumPy/Pandas notebooks
+
+## Next Steps
+
+Now that you can work with data efficiently, let's visualize it: [12 Matplotlib](12_matplotlib.md).

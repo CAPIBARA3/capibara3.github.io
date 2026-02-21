@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>07 Configuring Python &amp; Pip &#8212; CAPIBARA  documentation</title>
+    <title>Code Editors and IDEs &#8212; CAPIBARA  documentation</title>
   
   
   
@@ -43,11 +43,11 @@
     <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'public/onboarding/07_configuring_python_pip';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'public/onboarding/X_code_editors';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="08 Configuring Conda &amp; venv" href="08_configuring_conda_venv.html" />
-    <link rel="prev" title="06 Collaborating on GitHub" href="06_collaborating_github.html" />
+    <link rel="next" title="09 Python Basics" href="09_python_basics.html" />
+    <link rel="prev" title="08 Configuring Conda &amp; venv" href="08_configuring_conda_venv.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -355,9 +355,9 @@
 <li class="toctree-l1"><a class="reference internal" href="04_configuring_git.html">04 Configuring Git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05_configuring_github.html">05 Configuring GitHub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="06_collaborating_github.html">06 Collaborating on GitHub</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">07 Configuring Python &amp; Pip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_configuring_python_pip.html">07 Configuring Python &amp; Pip</a></li>
 <li class="toctree-l1"><a class="reference internal" href="08_configuring_conda_venv.html">08 Configuring Conda &amp; venv</a></li>
-<li class="toctree-l1"><a class="reference internal" href="X_code_editors.html">Code Editors and IDEs</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Code Editors and IDEs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="09_python_basics.html">09 Python Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="10_jupyter_notebook.html">10 Jupyter Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="11_numpy_pandas.html">11 NumPy and Pandas</a></li>
@@ -410,7 +410,7 @@
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Onboarding</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">07 Configuring Python &amp; Pip</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Code Editors and IDEs</span></li>
   </ul>
 </nav>
 </div>
@@ -427,129 +427,207 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="configuring-python-pip">
-<h1>07 Configuring Python &amp; Pip<a class="headerlink" href="#configuring-python-pip" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="code-editors-and-ides">
+<h1>Code Editors and IDEs<a class="headerlink" href="#code-editors-and-ides" title="Link to this heading">#</a></h1>
 <section id="goal">
 <h2>Goal<a class="headerlink" href="#goal" title="Link to this heading">#</a></h2>
-<p>In this tutorial you will learn to setup your computer to compile and run code in the Python programming language. Since many times you will need additional packages, such as Matplotlib for graphics, Pandas for tabular databases, or NumPy for all sorts of math functions, we will also guide you to installing <code class="docutils literal notranslate"><span class="pre">pip</span></code> a widely used Python package manager.</p>
+<p>Learn about different code editors and integrated development environments (IDEs), and how to choose one that fits your needs. We’ll also show you how to set up a recommended editor (VS Code) with useful extensions for Python and Git development.</p>
 </section>
 <section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="02_setting_up_unix.html"><span class="std std-doc">02_setting_up_unix</span></a></p></li>
-<li><p><a class="reference internal" href="03_command_line.html"><span class="std std-doc">03_command_line</span></a></p></li>
+<li><p><a class="reference internal" href="03_command_line.html"><span class="std std-doc">03 Introduction to the Command Line</span></a></p></li>
 </ul>
 </section>
-<section id="steps">
-<h2>Steps<a class="headerlink" href="#steps" title="Link to this heading">#</a></h2>
 <section id="introduction">
-<h3>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h3>
-<p>Python is one of the most popular programming languages, for its versatility, simple language and lots of powerful packages. It is well-adopted in research and engineering and a very important tool for software developers as well.</p>
+<h2>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>A <strong>code editor</strong> is a tool where you write code. It’s different from a text editor like Notepad because it understands programming languages and provides helpful features like:</p>
+<ul class="simple">
+<li><p><strong>Syntax highlighting</strong>: Colors different parts of code (keywords, strings, comments) to make them easier to read</p></li>
+<li><p><strong>Auto-completion</strong>: Suggests function names and variables as you type</p></li>
+<li><p><strong>Error detection</strong>: Highlights mistakes before you run the code</p></li>
+<li><p><strong>Integration with Git</strong>: Makes it easy to commit and push changes without using the terminal</p></li>
+<li><p><strong>Extensions/Plugins</strong>: Add functionality for specific languages and tools</p></li>
+</ul>
+<p>An <strong>IDE</strong> (Integrated Development Environment) is a more powerful version that also includes a debugger, built-in terminal, and project management tools.</p>
 </section>
-<section id="setup">
-<h3>2. Setup<a class="headerlink" href="#setup" title="Link to this heading">#</a></h3>
-<p>Before we start we will have to check a couple things.</p>
+<section id="popular-options">
+<h2>2. Popular Options<a class="headerlink" href="#popular-options" title="Link to this heading">#</a></h2>
+<section id="vs-code-recommended-for-beginners">
+<h3>VS Code (Recommended for Beginners)<a class="headerlink" href="#vs-code-recommended-for-beginners" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Type</strong>: Lightweight Editor (can act like an IDE with extensions)</p></li>
+<li><p><strong>Cost</strong>: Free and open source</p></li>
+<li><p><strong>Best for</strong>: Python, web development, general coding</p></li>
+<li><p><strong>Pros</strong>: Lightweight, huge extension marketplace, excellent Git integration, great for beginners</p></li>
+<li><p><strong>Cons</strong>: Requires extensions to reach full IDE capabilities</p></li>
+</ul>
+<p><strong>Install</strong>: <a class="reference external" href="https://code.visualstudio.com/">code.visualstudio.com</a></p>
+</section>
+<section id="pycharm">
+<h3>PyCharm<a class="headerlink" href="#pycharm" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Type</strong>: Full IDE</p></li>
+<li><p><strong>Cost</strong>: Free Community Edition (or paid Professional)</p></li>
+<li><p><strong>Best for</strong>: Python development, data science</p></li>
+<li><p><strong>Pros</strong>: Powerful, built specifically for Python, excellent debugging</p></li>
+<li><p><strong>Cons</strong>: Heavier than VS Code, steeper learning curve</p></li>
+</ul>
+<p><strong>Install</strong>: <a class="reference external" href="https://www.jetbrains.com/pycharm/">jetbrains.com/pycharm</a></p>
+</section>
+<section id="jupyter-notebook">
+<h3>Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Type</strong>: Interactive notebook environment</p></li>
+<li><p><strong>Cost</strong>: Free and open source</p></li>
+<li><p><strong>Best for</strong>: Data exploration, scientific computing, teaching</p></li>
+<li><p><strong>Pros</strong>: Great for learning, inline visualization, easy data exploration</p></li>
+<li><p><strong>Cons</strong>: Not ideal for large software packages; hard to use with Git</p></li>
+</ul>
+<p><strong>Install</strong>: Included when you install Anaconda/Miniconda</p>
+</section>
+<section id="sublime-text">
+<h3>Sublime Text<a class="headerlink" href="#sublime-text" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Type</strong>: Lightweight Editor</p></li>
+<li><p><strong>Cost</strong>: Paid (with free trial)</p></li>
+<li><p><strong>Best for</strong>: General coding, quick edits</p></li>
+<li><p><strong>Pros</strong>: Fast, minimal interface, good for advanced users</p></li>
+<li><p><strong>Cons</strong>: Less beginner-friendly than VS Code</p></li>
+</ul>
+</section>
+<section id="vim-neovim">
+<h3>Vim / Neovim<a class="headerlink" href="#vim-neovim" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Type</strong>: Terminal-based Editor</p></li>
+<li><p><strong>Cost</strong>: Free and open source</p></li>
+<li><p><strong>Best for</strong>: Advanced users, remote servers</p></li>
+<li><p><strong>Pros</strong>: Powerful, available everywhere, no GUI needed</p></li>
+<li><p><strong>Cons</strong>: Steep learning curve, not recommended for beginners</p></li>
+</ul>
+</section>
+</section>
+<section id="recommended-setup-vs-code-with-python-extensions">
+<h2>3. Recommended Setup: VS Code with Python Extensions<a class="headerlink" href="#recommended-setup-vs-code-with-python-extensions" title="Link to this heading">#</a></h2>
+<section id="install-vs-code">
+<h3>3.1 Install VS Code<a class="headerlink" href="#install-vs-code" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p>Python is pre-installed in many devices running Linux or MacOS. To check whether you already have installed it run the following command in the terminal</p></li>
+<li><p>Go to <a class="reference external" href="https://code.visualstudio.com/">code.visualstudio.com</a></p></li>
+<li><p>Download and install for your operating system</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>--version
-</pre></div>
-</div>
-<p>Write <code class="docutils literal notranslate"><span class="pre">python3</span></code> to look for Python version &gt;3.0 in particular. You can find out the installation location of your Python by running</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>which<span class="w"> </span>python
-</pre></div>
-</div>
-<p>If you get something like</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span><span class="m">3</span>.10.0
-</pre></div>
-</div>
-<p>then you already have Python installed. <code class="docutils literal notranslate"><span class="pre">pip</span></code> is installed by default with Python after python <code class="docutils literal notranslate"><span class="pre">v3.4</span></code>, you can check for it by running</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>--version
-</pre></div>
-</div>
-<p>If you also have it perfect, you are good to jump into the <a class="reference internal" href="#5-common-pip-commands"><span class="xref myst">common pip commands section</span></a>. You may want to re-install Python with the latest update, so you may also want to continue reading.</p>
-<p>If you are missing both or one of them, no problem that’s why this tutorial is here. Proceed to the next steps.</p>
 </section>
-<section id="execution">
-<h3>3. Execution<a class="headerlink" href="#execution" title="Link to this heading">#</a></h3>
+<section id="essential-extensions">
+<h3>3.2 Essential Extensions<a class="headerlink" href="#essential-extensions" title="Link to this heading">#</a></h3>
+<p>Open VS Code and go to <strong>Extensions</strong> (Ctrl+Shift+X / Cmd+Shift+X). Search for and install:</p>
+<ol class="arabic simple">
+<li><p><strong>Python</strong> (Microsoft)</p>
+<ul class="simple">
+<li><p>Essential for Python development</p></li>
+<li><p>Provides intellisense, linting, debugging</p></li>
+</ul>
+</li>
+<li><p><strong>Pylance</strong> (Microsoft)</p>
+<ul class="simple">
+<li><p>Enhanced Python language support</p></li>
+<li><p>Better code completion and type checking</p></li>
+</ul>
+</li>
+<li><p><strong>Git Graph</strong> (mhutchie)</p>
+<ul class="simple">
+<li><p>Visual representation of your Git branches and commits</p></li>
+</ul>
+</li>
+<li><p><strong>GitHub Pull Requests and Issues</strong> (GitHub)</p>
+<ul class="simple">
+<li><p>Manage PRs and issues directly from VS Code</p></li>
+</ul>
+</li>
+<li><p><strong>Jupyter</strong> (Microsoft)</p>
+<ul class="simple">
+<li><p>Run Jupyter notebooks directly in VS Code</p></li>
+</ul>
+</li>
+<li><p><strong>Better Comments</strong> (Aaron Bond)</p>
+<ul class="simple">
+<li><p>Color-code your comments for better organization</p></li>
+</ul>
+</li>
+</ol>
 </section>
-<section id="linux">
-<h3>3.1 Linux<a class="headerlink" href="#linux" title="Link to this heading">#</a></h3>
-<p>On Linux, you can install Python using the package manager <code class="docutils literal notranslate"><span class="pre">apt</span></code>:</p>
-<ol class="arabic">
-<li><p>Update the package list:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update
-</pre></div>
-</div>
-</li>
-<li><p>Install Python 3:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3
-</pre></div>
-</div>
-</li>
-<li><p>You can verify the installation with:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>--version
-</pre></div>
-</div>
-</li>
+<section id="configure-python-interpreter">
+<h3>3.3 Configure Python Interpreter<a class="headerlink" href="#configure-python-interpreter" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Open a Python file or create one (<code class="docutils literal notranslate"><span class="pre">touch</span> <span class="pre">test.py</span></code>)</p></li>
+<li><p>Press <code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+P</span></code> (Cmd+Shift+P on macOS)</p></li>
+<li><p>Type “Python: Select Interpreter”</p></li>
+<li><p>Choose your preferred Python environment (from conda, venv, or system Python)</p></li>
 </ol>
-<p>### 3.2 macOS
-macOS often comes with Python pre-installed, but it might not be the latest version. to install the latest version, you can use <a class="reference external" href="https://brew.sh">Homebrew</a>, a package manager for macOS:</p>
-<ol class="arabic">
-<li><p>First, install Homebrew if you haven’t already:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">&quot;</span>
-</pre></div>
-</div>
-</li>
-<li><p>Once Homebrew is installed, you can install Python 3:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew<span class="w"> </span>install<span class="w"> </span>python
-</pre></div>
-</div>
-</li>
-<li><p>You can veryfy the installation with:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>--version
-</pre></div>
-</div>
-</li>
+</section>
+<section id="configure-git-integration">
+<h3>3.4 Configure Git Integration<a class="headerlink" href="#configure-git-integration" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Go to <strong>View → Source Control</strong> (or press Ctrl+Shift+G)</p></li>
+<li><p>VS Code will automatically detect your Git repositories</p></li>
+<li><p>You can now stage, commit, and push changes without leaving the editor</p></li>
 </ol>
+</section>
+</section>
+<section id="basic-vs-code-workflow">
+<h2>4. Basic VS Code Workflow<a class="headerlink" href="#basic-vs-code-workflow" title="Link to this heading">#</a></h2>
+<section id="opening-a-project">
+<h3>Opening a Project<a class="headerlink" href="#opening-a-project" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>File → Open Folder</strong> and select your project directory</p></li>
+<li><p>VS Code will recognize it as a workspace</p></li>
+</ol>
+</section>
+<section id="writing-and-editing-code">
+<h3>Writing and Editing Code<a class="headerlink" href="#writing-and-editing-code" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Create new files with <strong>File → New File</strong> or <code class="docutils literal notranslate"><span class="pre">Ctrl+N</span></code></p></li>
+<li><p>VS Code’s intellisense will suggest completions as you type</p></li>
+<li><p>Errors appear as red squiggles—hover over them for details</p></li>
+</ol>
+</section>
+<section id="running-code">
+<h3>Running Code<a class="headerlink" href="#running-code" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Open a Python file</p></li>
+<li><p>Click the ▶ button in the top right, or press <code class="docutils literal notranslate"><span class="pre">Ctrl+F5</span></code></p></li>
+<li><p>Output appears in the Terminal pane</p></li>
+</ol>
+</section>
+<section id="using-the-terminal">
+<h3>Using the Terminal<a class="headerlink" href="#using-the-terminal" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Press `Ctrl+`` (backtick) to open the integrated terminal</p></li>
+<li><p>You can run commands without leaving the editor</p></li>
+</ol>
+</section>
+<section id="using-version-control">
+<h3>Using Version Control<a class="headerlink" href="#using-version-control" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Open <strong>Source Control</strong> (Ctrl+Shift+G)</p></li>
+<li><p>Stage files by clicking the + icon</p></li>
+<li><p>Write a commit message and press Ctrl+Enter</p></li>
+<li><p>Push with <strong>Push</strong> button or from the Source Control menu</p></li>
+</ol>
+</section>
 </section>
 <section id="verification">
-<h3>4. Verification<a class="headerlink" href="#verification" title="Link to this heading">#</a></h3>
-<p>To verify your Python installation run <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">--version</span></code> to find out what version you are using and <code class="docutils literal notranslate"><span class="pre">which</span> <span class="pre">python3</span></code> to know its location (this will become helpful later with environments).</p>
-<p>To verify <code class="docutils literal notranslate"><span class="pre">pip</span></code> installation run <code class="docutils literal notranslate"><span class="pre">pip3</span> <span class="pre">--version</span></code>.</p>
-</section>
-<section id="common-pip-commands">
-<h3>5. Common <code class="docutils literal notranslate"><span class="pre">pip</span></code> commands<a class="headerlink" href="#common-pip-commands" title="Link to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>Upgrade <code class="docutils literal notranslate"><span class="pre">pip</span></code>: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--upgrade</span> <span class="pre">pip</span></code></p></li>
-<li><p>Install package: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">&lt;package-name&gt;</span></code></p></li>
-<li><p>Upgrade package: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--upgrade</span> <span class="pre">&lt;package-name&gt;</span></code></p></li>
-<li><p>Install specific version of package: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">&lt;package-name&gt;==0.0.0&gt;</span></code></p></li>
-<li><p>Uninstall package: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">uninstall</span> <span class="pre">&lt;package-name&gt;&gt;</span></code></p></li>
-<li><p>Show package information: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">show</span> <span class="pre">&lt;package-name&gt;</span></code></p></li>
-</ol>
-</section>
-<section id="learning-python">
-<h3>Learning Python<a class="headerlink" href="#learning-python" title="Link to this heading">#</a></h3>
-<p>Right now, we are developed a custom guide to learning Python specifically tailored for the needs of our community. However, it is a bold task that requires time and patience. For the moment I am going to recommend you the following repository: <a class="github reference external" href="https://github.com/omsharansalafia/intropython">omsharansalafia/intropython</a>. It consists of a straightfoward, notebook based Python course focusing on the language structure itself (in general, the structure of programing), and scientific related packages and functions such as plotting, pandas, file reading/writing, and more. Plus, in contains examples you can run and exercises for every topic. Whether you are new to coding, new to the language, or just want to refresh I couldn’t recommend you more trying it out.</p>
-<p>Here are some other resources for learning to code with Python:</p>
-<ol class="arabic simple">
-<li><p><strong>Official Python Documentation:</strong> <a class="reference external" href="https://docs.python.org/3/tutorial/index.html">https://docs.python.org/3/tutorial/index.html</a></p></li>
-<li><p><strong>Interactive Coding Platforms:</strong></p>
+<h2>5. Verification<a class="headerlink" href="#verification" title="Link to this heading">#</a></h2>
+<p>You can verify your setup is complete when:</p>
 <ul class="simple">
-<li><p>freeCodeCamp: <a class="reference external" href="https://youtu.be/rfscVS0vtbw">https://youtu.be/rfscVS0vtbw</a></p></li>
-<li><p>Python Tutor: <a class="reference external" href="https://pythontutor.com/python-compiler.html#mode=edit">https://pythontutor.com/python-compiler.html#mode=edit</a></p></li>
+<li><p>VS Code opens successfully</p></li>
+<li><p>You can create a new Python file and see syntax highlighting</p></li>
+<li><p>Intellisense suggests code completions as you type</p></li>
+<li><p>You can see your Git repositories in the Source Control panel</p></li>
+<li><p>You can run a simple Python script by clicking the ▶ button</p></li>
 </ul>
-</li>
-<li><p><strong>Stack Overflow</strong></p></li>
-<li><p><strong>Putting Yourself to Test:</strong> Write some code!</p></li>
-</ol>
-<p>Remember to ask for help to me or other experienced team members when you have any doubt or questions! In our Discussions tab you can write in the IT Desk topic or create a complete new topic.</p>
-</section>
 </section>
 <section id="next-steps">
 <h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading">#</a></h2>
-<p>Python is an essential tool for collaborating in the CAPIBARA Collaboration and it is a skill that will serve you well in the future, and not so future. Next up is <a class="reference internal" href="08_configuring_conda_venv.html"><span class="std std-doc">08_configuring_conda_venv</span></a> so you don’t mess up with package updates and versions!</p>
+<p>Congratulations! You now have a professional development environment. You’re ready to write some code! While we’re developing our own Python tutorial series, we recommend exploring the <a class="reference external" href="https://github.com/omsharansalafia/intropython">Intro to Python</a> course to learn Python fundamentals before moving on to more advanced topics.</p>
 </section>
 </section>
 
@@ -564,20 +642,20 @@ macOS often comes with Python pre-installed, but it might not be the latest vers
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="06_collaborating_github.html"
+       href="08_configuring_conda_venv.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">06 Collaborating on GitHub</p>
+        <p class="prev-next-title">08 Configuring Conda &amp; venv</p>
       </div>
     </a>
     <a class="right-next"
-       href="08_configuring_conda_venv.html"
+       href="09_python_basics.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">08 Configuring Conda &amp; venv</p>
+        <p class="prev-next-title">09 Python Basics</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -602,16 +680,31 @@ macOS often comes with Python pre-installed, but it might not be the latest vers
     <ul class="nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal">Goal</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steps">Steps</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">2. Setup</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#execution">3. Execution</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linux">3.1 Linux</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verification">4. Verification</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-pip-commands">5. Common <code class="docutils literal notranslate"><span class="pre">pip</span></code> commands</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-python">Learning Python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#popular-options">2. Popular Options</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-code-recommended-for-beginners">VS Code (Recommended for Beginners)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pycharm">PyCharm</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-notebook">Jupyter Notebook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sublime-text">Sublime Text</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vim-neovim">Vim / Neovim</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recommended-setup-vs-code-with-python-extensions">3. Recommended Setup: VS Code with Python Extensions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-vs-code">3.1 Install VS Code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#essential-extensions">3.2 Essential Extensions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-python-interpreter">3.3 Configure Python Interpreter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-git-integration">3.4 Configure Git Integration</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-vs-code-workflow">4. Basic VS Code Workflow</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#opening-a-project">Opening a Project</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-and-editing-code">Writing and Editing Code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#running-code">Running Code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-terminal">Using the Terminal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-version-control">Using Version Control</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verification">5. Verification</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a></li>
 </ul>
   </nav></div>

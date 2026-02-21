@@ -23,22 +23,20 @@ docs
 │   │   ├── about.md
 │   │   └── index.md
 │   ├── onboarding
-│   │   ├── engineering
-│   │   │   ├── 14_packages.md
-│   │   │   ├── 15_automating_tests.md
-│   │   │   ├── 16_docker.md
-│   │   │   ├── 17_local_latex.md
-│   │   │   └── 18_codecarbon.md
-│   │   ├── env
-│   │   │   ├── 02_setting_up_unix.md
-│   │   │   ├── 03_command_line.md
-│   │   │   ├── 04_configuring_git.md
-│   │   │   ├── 05_configuring_github.md
-│   │   │   ├── 06_collaborating_github.md
-│   │   │   ├── 07_configuring_python_pip.md
-│   │   │   └── 08_configuring_conda_venv.md
 │   │   ├── 00_applying_to_join.md
 │   │   ├── 01_getting_started.md
+│   │   ├── 02_setting_up_unix.md
+│   │   ├── 03_command_line.md
+│   │   ├── 04_configuring_git.md
+│   │   ├── 05_configuring_github.md
+│   │   ├── 06_collaborating_github.md
+│   │   ├── 07_configuring_python_pip.md
+│   │   └── 08_configuring_conda_venv.md
+│   │   ├── 14_packages.md
+│   │   ├── 15_automating_tests.md
+│   │   ├── 16_docker.md
+│   │   ├── 17_local_latex.md
+│   │   └── 18_codecarbon.md
 │   │   └── index.md
 │   ├── templates
 │   │   ├── Engineering Documentation Template.zip
@@ -52,6 +50,5 @@ docs
 ├── conf.py
 ├── index.md
 └── sitemap.md
-
 
 ```
