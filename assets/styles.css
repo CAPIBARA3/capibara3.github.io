@@ -144,9 +144,9 @@ a {
     transition: color 0.25s ease, transform 0.25s ease;
 }
 
-a:hover {
+/* a:hover {
     color: var(--secondary-color);
-}
+} */
 
 .main-content a:not(.btn):not(.nav-link):not(.navbar-logo):not(.card) {
     color: var(--primary-color);
@@ -297,7 +297,7 @@ a:hover {
 }
 
 .nav-link.nav-cta:hover {
-    background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+    /* background: linear-gradient(135deg, var(--accent-color), var(--secondary-color)); */
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(255, 179, 71, 0.45);
 }
@@ -380,7 +380,7 @@ a:hover {
 }
 
 .dropdown-item:hover i {
-    color: var(--secondary-color);
+    /* color: var(--secondary-color); */
     transform: translateX(3px);
 }
 
