@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>00 Applying to Join &#8212; CAPIBARA  documentation</title>
+    <title>Code Editors and IDEs &#8212; CAPIBARA  documentation</title>
   
   
   
@@ -43,11 +43,11 @@
     <script src="../../_static/documentation_options.js?v=8a448e45"></script>
     <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'public/onboarding/00_applying_to_join';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'public/onboarding/X_code_editors';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="01 Getting Started" href="01_getting_started.html" />
-    <link rel="prev" title="Onboarding" href="index.html" />
+    <link rel="next" title="09 Python Basics" href="09_python_basics.html" />
+    <link rel="prev" title="08 Configuring Conda &amp; venv" href="08_configuring_conda_venv.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -347,12 +347,12 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">00 Applying to Join</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="00_applying_to_join.html">00 Applying to Join</a></li>
 <li class="toctree-l1"><a class="reference internal" href="01_getting_started.html">01 Getting Started</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Environment Setup</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="02_setting_up_unix.html">02 Setting Up Unix Environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_command_line.html">03 Introduction to the command line</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_configuring_git.html">04 Configuring Git</a></li>
@@ -360,7 +360,7 @@
 <li class="toctree-l1"><a class="reference internal" href="06_collaborating_github.html">06 Collaborating on GitHub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="07_configuring_python_pip.html">07 Configuring Python &amp; Pip</a></li>
 <li class="toctree-l1"><a class="reference internal" href="08_configuring_conda_venv.html">08 Configuring Conda &amp; venv</a></li>
-<li class="toctree-l1"><a class="reference internal" href="X_code_editors.html">Code Editors and IDEs</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Code Editors and IDEs</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Python Tutorials</span></p>
 <ul class="nav bd-sidenav">
@@ -420,7 +420,7 @@
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Onboarding</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">00 Applying to Join</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Code Editors and IDEs</span></li>
   </ul>
 </nav>
 </div>
@@ -437,49 +437,207 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="applying-to-join">
-<h1>00 Applying to Join<a class="headerlink" href="#applying-to-join" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="code-editors-and-ides">
+<h1>Code Editors and IDEs<a class="headerlink" href="#code-editors-and-ides" title="Link to this heading">#</a></h1>
 <section id="goal">
 <h2>Goal<a class="headerlink" href="#goal" title="Link to this heading">#</a></h2>
-<p>Learn about the application process for joining the CAPIBARA Collaboration. This is not about the process of joining and onboarding, see the next tutorial <a class="reference internal" href="01_getting_started.html"><span class="std std-doc">01_getting_started.md</span></a></p>
+<p>Learn about different code editors and integrated development environments (IDEs), and how to choose one that fits your needs. We’ll also show you how to set up a recommended editor (VS Code) with useful extensions for Python and Git development.</p>
 </section>
 <section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><strong>Strong English communication</strong> (oral/written) is required for collaboration and outreach.</p></li>
-<li><p>Be a <strong>Student from any level</strong>: from high school to PhD. CAPIBARA sends a strong message since it is fully run by students, and originally founded by high schoolers.</p></li>
-<li><p>Be <strong>curious and interested</strong> in a field(s). You don’t have to contribute any expertise or know your field of study, but we recommend having an interest to pursue. Plus, it doesn’t need to be STEM (astrophysics, physics, geophysics; mechanical, aerospace, electronic, software engineering, etc.), we are also looking for artists, social media creators, outreach writters…</p></li>
-<li><p>Be <strong>motivated and passionate</strong> in pursuing this project. Members have different levels of commitment subject to their personal lifes, but you should have a minimum time to interact with the community. Members typically dedicate 1-6 hours/week, but you can work at your own path corresponding with your status (e.g., exams, thesis writing, etc.).</p></li>
+<li><p><a class="reference internal" href="03_command_line.html"><span class="std std-doc">03 Introduction to the Command Line</span></a></p></li>
 </ul>
-<p>Recommended, but <strong>NOT</strong> required at all: strong academic record, experience in a specific field, GitHub/coding knowledge (Python)</p>
-<p><em>If you don’t know any or some of the previous skills, don’t worry; you will learn them by us!</em></p>
 </section>
-<section id="steps">
-<h2>Steps<a class="headerlink" href="#steps" title="Link to this heading">#</a></h2>
 <section id="introduction">
-<h3>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h3>
-<p>You are a student that partially or totally fulfills the prerequisites stated above? Then you should apply to join the CAPIBARA Collaboration, an enthusiastic group of students who will soon be your collaborators and, perhaps, friends.</p>
-<p>Note that in order to join the Collaboration y ou must fulfill a minimum set of requirements, which can be found in the <a class="reference internal" href="../governance/MEMBERSHIP_POLICY.html"><span class="std std-doc">membership agreement</span></a>, in addition to those outlined above. These requirements are kept at a minimum for example “English communication”, which is a basic for working in an international collaboration and particularly in research. There is no selection process or application process as such where the information of applicants is evaluated. Everyone who applies and fulfills these basic requirements can join, and we are happy to meet you!</p>
+<h2>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>A <strong>code editor</strong> is a tool where you write code. It’s different from a text editor like Notepad because it understands programming languages and provides helpful features like:</p>
+<ul class="simple">
+<li><p><strong>Syntax highlighting</strong>: Colors different parts of code (keywords, strings, comments) to make them easier to read</p></li>
+<li><p><strong>Auto-completion</strong>: Suggests function names and variables as you type</p></li>
+<li><p><strong>Error detection</strong>: Highlights mistakes before you run the code</p></li>
+<li><p><strong>Integration with Git</strong>: Makes it easy to commit and push changes without using the terminal</p></li>
+<li><p><strong>Extensions/Plugins</strong>: Add functionality for specific languages and tools</p></li>
+</ul>
+<p>An <strong>IDE</strong> (Integrated Development Environment) is a more powerful version that also includes a debugger, built-in terminal, and project management tools.</p>
 </section>
-<section id="setup">
-<h3>2. Setup<a class="headerlink" href="#setup" title="Link to this heading">#</a></h3>
-<p>You will need a browser and internet connection. You may want to have prepared a curriculum vitae (CV), motivation letter or other supporting documentation. The sharing of this documentation is absolutely optional, but it helps us getting to know you and getting started to work with you.</p>
-<p>Before proceeding with the application itself, you may want to download a copy of the membership agreement and signit it. If you are under 18 years, you will additionally need the signature of at least one of your parents or legal tutors.</p>
-<p>In the application form, you will need to provide key personal information and a contact. Then, we will get in touch with you and ask you for the documents mentioned before which you need to send after request via email to the official collaboration-wide email address as PDF files.</p>
-<p>Once you open the application form link in the next step, please don’t reframe from reading the “before applying” notice.</p>
+<section id="popular-options">
+<h2>2. Popular Options<a class="headerlink" href="#popular-options" title="Link to this heading">#</a></h2>
+<section id="vs-code-recommended-for-beginners">
+<h3>VS Code (Recommended for Beginners)<a class="headerlink" href="#vs-code-recommended-for-beginners" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Type</strong>: Lightweight Editor (can act like an IDE with extensions)</p></li>
+<li><p><strong>Cost</strong>: Free and open source</p></li>
+<li><p><strong>Best for</strong>: Python, web development, general coding</p></li>
+<li><p><strong>Pros</strong>: Lightweight, huge extension marketplace, excellent Git integration, great for beginners</p></li>
+<li><p><strong>Cons</strong>: Requires extensions to reach full IDE capabilities</p></li>
+</ul>
+<p><strong>Install</strong>: <a class="reference external" href="https://code.visualstudio.com/">code.visualstudio.com</a></p>
 </section>
-<section id="execution">
-<h3>3. Execution<a class="headerlink" href="#execution" title="Link to this heading">#</a></h3>
-<p>On your browser visit <a class="reference external" href="https://capibara3.github.io/application-form">capibara3.github.io/application-form</a> and fill in all the required information and, if you want, the optional information. Then submit the form. You will find more information and the data privacy statement at the form itself.</p>
+<section id="pycharm">
+<h3>PyCharm<a class="headerlink" href="#pycharm" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Type</strong>: Full IDE</p></li>
+<li><p><strong>Cost</strong>: Free Community Edition (or paid Professional)</p></li>
+<li><p><strong>Best for</strong>: Python development, data science</p></li>
+<li><p><strong>Pros</strong>: Powerful, built specifically for Python, excellent debugging</p></li>
+<li><p><strong>Cons</strong>: Heavier than VS Code, steeper learning curve</p></li>
+</ul>
+<p><strong>Install</strong>: <a class="reference external" href="https://www.jetbrains.com/pycharm/">jetbrains.com/pycharm</a></p>
+</section>
+<section id="jupyter-notebook">
+<h3>Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Type</strong>: Interactive notebook environment</p></li>
+<li><p><strong>Cost</strong>: Free and open source</p></li>
+<li><p><strong>Best for</strong>: Data exploration, scientific computing, teaching</p></li>
+<li><p><strong>Pros</strong>: Great for learning, inline visualization, easy data exploration</p></li>
+<li><p><strong>Cons</strong>: Not ideal for large software packages; hard to use with Git</p></li>
+</ul>
+<p><strong>Install</strong>: Included when you install Anaconda/Miniconda</p>
+</section>
+<section id="sublime-text">
+<h3>Sublime Text<a class="headerlink" href="#sublime-text" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Type</strong>: Lightweight Editor</p></li>
+<li><p><strong>Cost</strong>: Paid (with free trial)</p></li>
+<li><p><strong>Best for</strong>: General coding, quick edits</p></li>
+<li><p><strong>Pros</strong>: Fast, minimal interface, good for advanced users</p></li>
+<li><p><strong>Cons</strong>: Less beginner-friendly than VS Code</p></li>
+</ul>
+</section>
+<section id="vim-neovim">
+<h3>Vim / Neovim<a class="headerlink" href="#vim-neovim" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Type</strong>: Terminal-based Editor</p></li>
+<li><p><strong>Cost</strong>: Free and open source</p></li>
+<li><p><strong>Best for</strong>: Advanced users, remote servers</p></li>
+<li><p><strong>Pros</strong>: Powerful, available everywhere, no GUI needed</p></li>
+<li><p><strong>Cons</strong>: Steep learning curve, not recommended for beginners</p></li>
+</ul>
+</section>
+</section>
+<section id="recommended-setup-vs-code-with-python-extensions">
+<h2>3. Recommended Setup: VS Code with Python Extensions<a class="headerlink" href="#recommended-setup-vs-code-with-python-extensions" title="Link to this heading">#</a></h2>
+<section id="install-vs-code">
+<h3>3.1 Install VS Code<a class="headerlink" href="#install-vs-code" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Go to <a class="reference external" href="https://code.visualstudio.com/">code.visualstudio.com</a></p></li>
+<li><p>Download and install for your operating system</p></li>
+</ol>
+</section>
+<section id="essential-extensions">
+<h3>3.2 Essential Extensions<a class="headerlink" href="#essential-extensions" title="Link to this heading">#</a></h3>
+<p>Open VS Code and go to <strong>Extensions</strong> (Ctrl+Shift+X / Cmd+Shift+X). Search for and install:</p>
+<ol class="arabic simple">
+<li><p><strong>Python</strong> (Microsoft)</p>
+<ul class="simple">
+<li><p>Essential for Python development</p></li>
+<li><p>Provides intellisense, linting, debugging</p></li>
+</ul>
+</li>
+<li><p><strong>Pylance</strong> (Microsoft)</p>
+<ul class="simple">
+<li><p>Enhanced Python language support</p></li>
+<li><p>Better code completion and type checking</p></li>
+</ul>
+</li>
+<li><p><strong>Git Graph</strong> (mhutchie)</p>
+<ul class="simple">
+<li><p>Visual representation of your Git branches and commits</p></li>
+</ul>
+</li>
+<li><p><strong>GitHub Pull Requests and Issues</strong> (GitHub)</p>
+<ul class="simple">
+<li><p>Manage PRs and issues directly from VS Code</p></li>
+</ul>
+</li>
+<li><p><strong>Jupyter</strong> (Microsoft)</p>
+<ul class="simple">
+<li><p>Run Jupyter notebooks directly in VS Code</p></li>
+</ul>
+</li>
+<li><p><strong>Better Comments</strong> (Aaron Bond)</p>
+<ul class="simple">
+<li><p>Color-code your comments for better organization</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="configure-python-interpreter">
+<h3>3.3 Configure Python Interpreter<a class="headerlink" href="#configure-python-interpreter" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Open a Python file or create one (<code class="docutils literal notranslate"><span class="pre">touch</span> <span class="pre">test.py</span></code>)</p></li>
+<li><p>Press <code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+P</span></code> (Cmd+Shift+P on macOS)</p></li>
+<li><p>Type “Python: Select Interpreter”</p></li>
+<li><p>Choose your preferred Python environment (from conda, venv, or system Python)</p></li>
+</ol>
+</section>
+<section id="configure-git-integration">
+<h3>3.4 Configure Git Integration<a class="headerlink" href="#configure-git-integration" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Go to <strong>View → Source Control</strong> (or press Ctrl+Shift+G)</p></li>
+<li><p>VS Code will automatically detect your Git repositories</p></li>
+<li><p>You can now stage, commit, and push changes without leaving the editor</p></li>
+</ol>
+</section>
+</section>
+<section id="basic-vs-code-workflow">
+<h2>4. Basic VS Code Workflow<a class="headerlink" href="#basic-vs-code-workflow" title="Link to this heading">#</a></h2>
+<section id="opening-a-project">
+<h3>Opening a Project<a class="headerlink" href="#opening-a-project" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>File → Open Folder</strong> and select your project directory</p></li>
+<li><p>VS Code will recognize it as a workspace</p></li>
+</ol>
+</section>
+<section id="writing-and-editing-code">
+<h3>Writing and Editing Code<a class="headerlink" href="#writing-and-editing-code" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Create new files with <strong>File → New File</strong> or <code class="docutils literal notranslate"><span class="pre">Ctrl+N</span></code></p></li>
+<li><p>VS Code’s intellisense will suggest completions as you type</p></li>
+<li><p>Errors appear as red squiggles—hover over them for details</p></li>
+</ol>
+</section>
+<section id="running-code">
+<h3>Running Code<a class="headerlink" href="#running-code" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Open a Python file</p></li>
+<li><p>Click the ▶ button in the top right, or press <code class="docutils literal notranslate"><span class="pre">Ctrl+F5</span></code></p></li>
+<li><p>Output appears in the Terminal pane</p></li>
+</ol>
+</section>
+<section id="using-the-terminal">
+<h3>Using the Terminal<a class="headerlink" href="#using-the-terminal" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Press `Ctrl+`` (backtick) to open the integrated terminal</p></li>
+<li><p>You can run commands without leaving the editor</p></li>
+</ol>
+</section>
+<section id="using-version-control">
+<h3>Using Version Control<a class="headerlink" href="#using-version-control" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Open <strong>Source Control</strong> (Ctrl+Shift+G)</p></li>
+<li><p>Stage files by clicking the + icon</p></li>
+<li><p>Write a commit message and press Ctrl+Enter</p></li>
+<li><p>Push with <strong>Push</strong> button or from the Source Control menu</p></li>
+</ol>
+</section>
 </section>
 <section id="verification">
-<h3>4. Verification<a class="headerlink" href="#verification" title="Link to this heading">#</a></h3>
-<p>In less than 10 working days, you should have received a confirmation email explaining the next steps and maybe inquiring more information. If you don’t received this email, make sure to reach out to us. It may be that we didn’t correctly receive you information or that we are simply too busy at the moment.</p>
-</section>
+<h2>5. Verification<a class="headerlink" href="#verification" title="Link to this heading">#</a></h2>
+<p>You can verify your setup is complete when:</p>
+<ul class="simple">
+<li><p>VS Code opens successfully</p></li>
+<li><p>You can create a new Python file and see syntax highlighting</p></li>
+<li><p>Intellisense suggests code completions as you type</p></li>
+<li><p>You can see your Git repositories in the Source Control panel</p></li>
+<li><p>You can run a simple Python script by clicking the ▶ button</p></li>
+</ul>
 </section>
 <section id="next-steps">
 <h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading">#</a></h2>
-<p>Once you receive the confirmation email, you will proceed to joining the collaboration. Next step <a class="reference internal" href="01_getting_started.html"><span class="std std-doc">01_getting_started.md</span></a>.</p>
+<p>Congratulations! You now have a professional development environment. You’re ready to write some code! While we’re developing our own Python tutorial series, we recommend exploring the <a class="reference external" href="https://github.com/omsharansalafia/intropython">Intro to Python</a> course to learn Python fundamentals before moving on to more advanced topics.</p>
 </section>
 </section>
 
@@ -494,20 +652,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="index.html"
+       href="08_configuring_conda_venv.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Onboarding</p>
+        <p class="prev-next-title">08 Configuring Conda &amp; venv</p>
       </div>
     </a>
     <a class="right-next"
-       href="01_getting_started.html"
+       href="09_python_basics.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">01 Getting Started</p>
+        <p class="prev-next-title">09 Python Basics</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -532,13 +690,31 @@
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal">Goal</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steps">Steps</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">2. Setup</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#execution">3. Execution</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verification">4. Verification</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#popular-options">2. Popular Options</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-code-recommended-for-beginners">VS Code (Recommended for Beginners)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pycharm">PyCharm</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-notebook">Jupyter Notebook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sublime-text">Sublime Text</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vim-neovim">Vim / Neovim</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recommended-setup-vs-code-with-python-extensions">3. Recommended Setup: VS Code with Python Extensions</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-vs-code">3.1 Install VS Code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#essential-extensions">3.2 Essential Extensions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-python-interpreter">3.3 Configure Python Interpreter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-git-integration">3.4 Configure Git Integration</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-vs-code-workflow">4. Basic VS Code Workflow</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#opening-a-project">Opening a Project</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-and-editing-code">Writing and Editing Code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#running-code">Running Code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-terminal">Using the Terminal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-version-control">Using Version Control</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verification">5. Verification</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a></li>
 </ul>
   </nav></div>

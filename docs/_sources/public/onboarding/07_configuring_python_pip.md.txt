@@ -1,7 +1,7 @@
 # 07 Configuring Python & Pip
 
 ## Goal
-In this tutorial you will learn to setup your computer to compile and run code in the Python programming language. Since many times you will need additional packages, such as Matplotlib for graphics, Pandas for tabular databases, or NumPy for all sorts of math functions, we will also guide you to installin `pip` a widely used Python package manager.
+In this tutorial you will learn to setup your computer to compile and run code in the Python programming language. Since many times you will need additional packages, such as Matplotlib for graphics, Pandas for tabular databases, or NumPy for all sorts of math functions, we will also guide you to installing `pip` a widely used Python package manager.
 
 ## Prerequisites
 - [02_setting_up_unix](02_setting_up_unix.md)
@@ -75,9 +75,9 @@ macOS often comes with Python pre-installed, but it might not be the latest vers
     ```
 
 ### 4. Verification
-To verify your Python installation run `python --version` to find out what version you are using and `which python` to know its location (this will become helpful later with environments).
+To verify your Python installation run `python3 --version` to find out what version you are using and `which python3` to know its location (this will become helpful later with environments).
 
-To verify `pip` installation run `pip --version`.
+To verify `pip` installation run `pip3 --version`.
 
 ### 5. Common `pip` commands
 

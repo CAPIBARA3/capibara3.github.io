@@ -4,9 +4,9 @@
 You will learn how to track and visualize the carbon footprint of your Python code using the `codecarbon` package. This includes installing the package, integrating it into a Python script, and creating an interactive web-based visualization of the emissions data.
 
 ## Prerequisites
-- [02_setting_up_unix](../env/02_setting_up_unix.md)
-- [03_command_line](../env/03_command_line.md)
-- [07_configuring_python_pip](../env/07_configuring_python_pip.md)
+- [02 Setting Up Unix](02_setting_up_unix.md)
+- [03 Introduction to the Command Line](03_command_line.md)
+- [07 Configuring Python & Pip](07_configuring_python_pip.md)
 
 ## Steps
 

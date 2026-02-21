@@ -4,18 +4,27 @@
 Here you'll learn to write and run tests for Python using the `pytest` library. With this you will automatise software tests and focus on solving the issues behind failed tests.
 
 ## Prerequisites
-- [02_setting_up_unix](../env/02_setting_up_unix.md)
-- [03_command_line](../env/03_command_line.md)
-- [04_configuring_git](../env/04_configuring_git.md)
-- [05_configuring_github](../env/06_collaborating_github.md)
-- [07_configuring_python_pip](../env/07_configuring_python_pip.md)
-- [08_configuring_conda_venv](../env/08_configuring_conda_venv.md)
-- [14_packages](14_packages.md)
+- [02 Setting Up Unix](02_setting_up_unix.md)
+- [03 Introduction to the Command Line](03_command_line.md)
+- [04 Configuring Git](04_configuring_git.md)
+- [05 Configuring GitHub](05_configuring_github.md)
+- [06 Collaborating on GitHub](06_collaborating_github.md)
+- [07 Configuring Python & Pip](07_configuring_python_pip.md)
+- [08 Configuring Conda & venv](08_configuring_conda_venv.md)
+- [14 Creating Packages](14_packages.md)
 
 ## Steps
 
 ### 1. Introduction
-`Pytest` is a Python pacakge that simplifies running tests and create stardarised tests, without to manually check your files after each itereataion. Additioanlly, you can configuring GitHub CI/CD to automatically run these tests, perhaps using a dockerfile (see [16_docker](16_docker.md)). It is a common way to sync tests and criteria among a group of developers and to automate them, saving time and mistakes,
+`Pytest` is a Python package that simplifies writing and running tests. Instead of manually checking your functions after every change, you write automated tests that run instantly and tell you if something broke.
+
+**Why do you need this?** When you're first writing code, you might test it manually by running it a few times. But as your codebase grows and multiple people contribute, it becomes impossible to manually test everything. Automated tests help you:
+- Catch bugs before they reach users
+- Ensure that when one person changes code, they don't accidentally break features that other people depended on
+- Build confidence that your package works correctly
+- Integrate with GitHub to automatically test every pull request before merging
+
+Additionally, you can configure GitHub CI/CD to automatically run these tests, perhaps using a Dockerfile, creating a standardized testing environment across your team.
 
 ### 2. Setup
 Before starting using `pytest` you will have to install it using `pip`:

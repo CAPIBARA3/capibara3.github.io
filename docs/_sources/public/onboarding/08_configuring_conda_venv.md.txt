@@ -6,9 +6,9 @@ Learn how to create, activate, manage, and remove isolated Python environments u
 
 ## Prerequisites
 
-- [02_setting_up_unix](02_setting_up_unix.md)
-- [03_command_line](03_command_line.md)
-- [07_configuring_python_pip](07_configuring_python_pip.md)
+- [02 Setting Up Unix](02_setting_up_unix.md)
+- [03 Introduction to the Command Line](03_command_line.md)
+- [07 Configuring Python & Pip](07_configuring_python_pip.md)
 
 
 
@@ -16,7 +16,9 @@ Learn how to create, activate, manage, and remove isolated Python environments u
 
 ### 1. Introduction
 
-When working on multiple Python projects, you often need different versions of specific packages or Python itself. Environments are ways to separate versions of packages for different projects and keep different versions isolated. Conda is an environment manager which you can use to create and organise environments and packages inside them. Whiel `venv` stands for virtual environment and is created inside a project's directory and by using Python. It is a more lightweight version of conda environments, but it is distributed instead of centralised.
+When working on multiple Python projects, you often need different versions of specific packages or Python itself. Environments are ways to separate versions of packages for different projects and keep different versions isolated. 
+
+**Why do you need this?** Imagine you're working on two projects: one uses NumPy 1.20 and the other uses NumPy 1.24. If you install both globally on your computer, they'll conflict. Virtual environments let you have separate, isolated Python installations for each project. Conda is a comprehensive environment manager that can manage both Python versions and packages. Meanwhile, `venv` is Python's built-in, lightweight virtual environment tool that works within a single project directory.
 
 
 ### 2. Setup
