@@ -1,0 +1,292 @@
+# 12 Matplotlib and Data Visualization
+
+## Goal
+Learn how to create professional plots and visualizations using Matplotlib. Data visualization is crucial for understanding results and communicating findings.
+
+## Prerequisites
+- [07 Configuring Python & Pip](07_configuring_python_pip.md)
+- [08 Configuring Conda & venv](08_configuring_conda_venv.md)
+- [09 Python Basics](09_python_basics.md)
+- [10 Jupyter Notebooks](10_jupyter_notebook.md)
+- [11 NumPy and Pandas](11_numpy_pandas.md)
+
+## 1. Introduction
+
+**Matplotlib** is Python's primary library for creating static plots and visualizations. It's widely used in scientific research for publication-quality figures.
+
+In this tutorial, you'll learn to create:
+- Line plots
+- Scatter plots
+- Histograms
+- Bar plots
+- Subplots (multiple plots in one figure)
+- Customized plots with labels, legend, and styling
+
+## 2. Installation
+
+Matplotlib usually comes with Anaconda/Miniconda. Install explicitly with:
+
+```bash
+pip install matplotlib
+```
+
+## 3. Basic Plotting
+
+### 3.1 Simple Line Plot
+
+```python
+import matplotlib.pyplot as plt
+
+# Data
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 6, 8, 10]
+
+# Create plot
+plt.plot(x, y)
+plt.xlabel("X-axis Label")
+plt.ylabel("Y-axis Label")
+plt.title("Simple Line Plot")
+plt.show()
+```
+
+### 3.2 Scatter Plot
+
+```python
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 5, 4, 6]
+
+plt.scatter(x, y)
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.title("Scatter Plot")
+plt.show()
+```
+
+### 3.3 Histogram
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+data = np.random.normal(100, 15, 1000)  # 1000 values, mean=100, std=15
+
+plt.hist(data, bins=30)
+plt.xlabel("Value")
+plt.ylabel("Frequency")
+plt.title("Distribution of Data")
+plt.show()
+```
+
+### 3.4 Bar Plot
+
+```python
+import matplotlib.pyplot as plt
+
+categories = ["Physics", "Chemistry", "Biology"]
+values = [85, 78, 92]
+
+plt.bar(categories, values)
+plt.ylabel("Score")
+plt.title("Subject Scores")
+plt.show()
+```
+
+## 4. Customizing Plots
+
+### 4.1 Colors, Markers, and Line Styles
+
+```python
+x = [1, 2, 3, 4, 5]
+y = [1, 4, 9, 16, 25]
+
+# Customize appearance
+plt.plot(x, y, 
+    color='red',           # or 'r', '#FF0000'
+    marker='o',            # o, s, ^, *, +
+    linestyle='--',        # '-', '--', '-.', ':'
+    linewidth=2,
+    markersize=8,
+    label='y = x²'
+)
+
+plt.legend()               # Show label
+plt.show()
+```
+
+### 4.2 Axis Limits and Grid
+
+```python
+x = [1, 2, 3, 4]
+y = [1, 4, 2, 3]
+
+plt.plot(x, y)
+plt.xlim(0, 5)             # Set x-axis limits
+plt.ylim(0, 5)             # Set y-axis limits
+plt.grid(True, alpha=0.3)  # Add grid
+
+plt.show()
+```
+
+### 4.3 Labels and Text
+
+```python
+plt.figure(figsize=(10, 6))  # Set figure size
+
+plt.plot([1, 2, 3], [1, 4, 9])
+plt.title("Quadratic Function", fontsize=16)
+plt.xlabel("X", fontsize=12)
+plt.ylabel("Y", fontsize=12)
+
+# Add text at specific location
+plt.text(2.5, 7, "Important Point", fontsize=10)
+
+plt.show()
+```
+
+## 5. Multiple Plots (Subplots)
+
+### 5.1 Create Subplots
+
+```python
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
+
+# First subplot
+ax1.plot([1, 2, 3], [1, 4, 9])
+ax1.set_title("Plot 1")
+ax1.set_xlabel("X")
+ax1.set_ylabel("Y")
+
+# Second subplot
+ax2.scatter([1, 2, 3], [3, 2, 1])
+ax2.set_title("Plot 2")
+ax2.set_xlabel("X")
+ax2.set_ylabel("Y")
+
+plt.tight_layout()  # Adjust spacing
+plt.show()
+```
+
+### 5.2 2x2 Subplots
+
+```python
+fig, axes = plt.subplots(2, 2, figsize=(10, 8))
+
+# Flatten to iterate easily
+for ax in axes.flat:
+    ax.plot([1, 2, 3], [1, 2, 3])
+    ax.set_xlabel("X")
+    ax.set_ylabel("Y")
+
+plt.tight_layout()
+plt.show()
+```
+
+## 6. Working with Data
+
+### With Pandas
+
+```python
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df = pd.DataFrame({
+    "Month": ["Jan", "Feb", "Mar", "Apr"],
+    "Sales": [100, 150, 120, 200]
+})
+
+plt.bar(df["Month"], df["Sales"])
+plt.ylabel("Sales")
+plt.title("Monthly Sales")
+plt.show()
+```
+
+### With NumPy
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0, 2*np.pi, 100)  # 100 points from 0 to 2π
+y = np.sin(x)
+
+plt.plot(x, y)
+plt.title("Sine Wave")
+plt.show()
+```
+
+## 7. Saving Figures
+
+```python
+import matplotlib.pyplot as plt
+
+plt.plot([1, 2, 3], [1, 4, 9])
+plt.title("My Plot")
+
+# Save to file
+plt.savefig("my_plot.png", dpi=300, bbox_inches='tight')
+plt.show()
+
+# Also save as PDF for publications
+plt.savefig("my_plot.pdf")
+```
+
+## 8. Common Plot Types
+
+### Box Plot (for distributions)
+
+```python
+data1 = [1, 2, 3, 4, 5]
+data2 = [2, 4, 6, 8, 10]
+
+plt.boxplot([data1, data2], labels=['Dataset 1', 'Dataset 2'])
+plt.ylabel("Values")
+plt.show()
+```
+
+### Heatmap (requires seaborn or special handling)
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+data = np.random.random((5, 5))
+
+plt.imshow(data, cmap='viridis')  # cmap = colormap
+plt.colorbar()
+plt.title("Heatmap")
+plt.show()
+```
+
+## 9. Style and Aesthetics
+
+```python
+import matplotlib.pyplot as plt
+
+# Use a different style
+plt.style.use('seaborn-v0_8-darkgrid')  # Other: 'ggplot', 'bmh', etc.
+
+x = [1, 2, 3]
+y = [1, 4, 9]
+plt.plot(x, y, marker='o', linewidth=2)
+plt.show()
+```
+
+## 10. Pro Tips
+
+1. **Always label axes** - viewers need to understand what they're looking at
+2. **Use appropriate plot types** - bar plot for categories, scatter for correlations, histogram for distributions
+3. **Keep it simple** - too many colors/elements make plots hard to read
+4. **Use high DPI when saving** - `dpi=300` is good for publications
+5. **Add units to labels** - e.g., "Temperature (°C)" not just "Temperature"
+
+## Resources
+
+- [Matplotlib Documentation](https://matplotlib.org/)
+- [Matplotlib Gallery](https://matplotlib.org/gallery.html) - examples of different plot types
+- [Seaborn](https://seaborn.pydata.org/) - higher-level plotting on top of Matplotlib
+
+## Next Steps
+
+Now that you can visualize data, let's learn about advanced statistical analysis: [13 SciPy and Fitting](13_scipy_fitting.md).

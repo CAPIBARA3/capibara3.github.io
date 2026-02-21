@@ -32,13 +32,13 @@ The CAPIBARA Collaboration is a volunteer-based international student research c
 
 ## Getting Started
 
-To get familiar with our policies visit the:
+To get familiar with our policies:
 
-1. [Code of Conduct](CODE_OF_CONDUCT.md)
-2. Read the [Government Charter](0_governance.md) and [Membership Agreement](1_membership.md)
-3. Check the [Contributing Guidlines](CONTRIBUTING.md), [Authorship](2_authorship.md) and [Licensing](3_licensing.md) policies
-4. Read the [Communication](4_communication.md) and [Data Privacy](5_privacy_policy.md) policies
-5. Review other documentation
+1. Read the [Code of Conduct](CODE_OF_CONDUCT.md)
+2. Review the [Collaboration Agreement](COLLABORATION_AGREEMENT.md) and [Membership Policy](MEMBERSHIP_POLICY.md)
+3. Check the [Contributing Guidelines](CONTRIBUTING.md) and [Authorship Policy](AUTHORSHIP_POLICY.md)
+4. Read the [Privacy Policy](PRIVACY_POLICY.md)
+5. Explore the [About page](about.md) for more context
 
 
 ## Need Help?

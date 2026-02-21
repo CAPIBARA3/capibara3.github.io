@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>02 Setting Up Unix Environment &#8212; CAPIBARA  documentation</title>
+    <title>Code Editors and IDEs &#8212; CAPIBARA  documentation</title>
   
   
   
@@ -43,11 +43,11 @@
     <script src="../../_static/documentation_options.js?v=8a448e45"></script>
     <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'public/onboarding/02_setting_up_unix';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'public/onboarding/X_code_editors';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="03 Introduction to the command line" href="03_command_line.html" />
-    <link rel="prev" title="01 Getting Started" href="01_getting_started.html" />
+    <link rel="next" title="09 Python Basics" href="09_python_basics.html" />
+    <link rel="prev" title="08 Configuring Conda &amp; venv" href="08_configuring_conda_venv.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -353,14 +353,14 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Environment Setup</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">02 Setting Up Unix Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_setting_up_unix.html">02 Setting Up Unix Environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_command_line.html">03 Introduction to the command line</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_configuring_git.html">04 Configuring Git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05_configuring_github.html">05 Configuring GitHub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="06_collaborating_github.html">06 Collaborating on GitHub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="07_configuring_python_pip.html">07 Configuring Python &amp; Pip</a></li>
 <li class="toctree-l1"><a class="reference internal" href="08_configuring_conda_venv.html">08 Configuring Conda &amp; venv</a></li>
-<li class="toctree-l1"><a class="reference internal" href="X_code_editors.html">Code Editors and IDEs</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Code Editors and IDEs</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Python Tutorials</span></p>
 <ul class="nav bd-sidenav">
@@ -420,7 +420,7 @@
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Onboarding</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">02 Setting Up Unix Environment</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Code Editors and IDEs</span></li>
   </ul>
 </nav>
 </div>
@@ -437,226 +437,207 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="setting-up-unix-environment">
-<h1>02 Setting Up Unix Environment<a class="headerlink" href="#setting-up-unix-environment" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="code-editors-and-ides">
+<h1>Code Editors and IDEs<a class="headerlink" href="#code-editors-and-ides" title="Link to this heading">#</a></h1>
 <section id="goal">
 <h2>Goal<a class="headerlink" href="#goal" title="Link to this heading">#</a></h2>
-<p>Set up a Unix-like development environment on your computer. Depending on your operating system, you’ll follow a different path:</p>
-<ul class="simple">
-<li><p><strong>macOS</strong>: Already Unix-based (just verify)</p></li>
-<li><p><strong>Linux</strong>: Already Unix-based (just verify)</p></li>
-<li><p><strong>Windows</strong>: Install Ubuntu using Windows Subsystem for Linux (WSL) or VirtualBox</p></li>
-</ul>
+<p>Learn about different code editors and integrated development environments (IDEs), and how to choose one that fits your needs. We’ll also show you how to set up a recommended editor (VS Code) with useful extensions for Python and Git development.</p>
 </section>
 <section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Internet connection</p></li>
-<li><p>Permission to install software</p></li>
-<li><p>For Windows with VirtualBox: At least 8 GB RAM (16 GB recommended), 20–30 GB free disk space</p></li>
+<li><p><a class="reference internal" href="03_command_line.html"><span class="std std-doc">03 Introduction to the Command Line</span></a></p></li>
 </ul>
 </section>
-<hr class="docutils" />
-<section id="steps">
-<h2>Steps<a class="headerlink" href="#steps" title="Link to this heading">#</a></h2>
 <section id="introduction">
-<h3>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h3>
-<p><strong>Why do you need a Unix environment?</strong></p>
+<h2>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>A <strong>code editor</strong> is a tool where you write code. It’s different from a text editor like Notepad because it understands programming languages and provides helpful features like:</p>
 <ul class="simple">
-<li><p><strong>Seamless Code Integration:</strong> Most scientific code and servers run on Linux/Unix. Your local environment should match production.</p></li>
-<li><p><strong>Consistent File Paths:</strong> Unix uses forward slashes (<code class="docutils literal notranslate"><span class="pre">/</span></code>); Windows uses backslashes (<code class="docutils literal notranslate"><span class="pre">\</span></code>). Code written on Unix works consistently everywhere.</p></li>
-<li><p><strong>Better Collaboration:</strong> Team members on different machines can work on identical environments.</p></li>
-<li><p><strong>Professional Tools:</strong> Access to Bash shell, SSH, Git integration, Docker, and open-source utilities.</p></li>
-<li><p><strong>Reduced Bugs:</strong> Code tested on Unix works better with our code repositories and CI/CD pipelines.</p></li>
+<li><p><strong>Syntax highlighting</strong>: Colors different parts of code (keywords, strings, comments) to make them easier to read</p></li>
+<li><p><strong>Auto-completion</strong>: Suggests function names and variables as you type</p></li>
+<li><p><strong>Error detection</strong>: Highlights mistakes before you run the code</p></li>
+<li><p><strong>Integration with Git</strong>: Makes it easy to commit and push changes without using the terminal</p></li>
+<li><p><strong>Extensions/Plugins</strong>: Add functionality for specific languages and tools</p></li>
 </ul>
-<p>If you use <strong>macOS or Linux</strong>, you already have Unix! Just verify in section 2. If you use <strong>Windows</strong>, you need to set up either WSL (lightweight, recommended) or VirtualBox (full virtual machine).</p>
+<p>An <strong>IDE</strong> (Integrated Development Environment) is a more powerful version that also includes a debugger, built-in terminal, and project management tools.</p>
+</section>
+<section id="popular-options">
+<h2>2. Popular Options<a class="headerlink" href="#popular-options" title="Link to this heading">#</a></h2>
+<section id="vs-code-recommended-for-beginners">
+<h3>VS Code (Recommended for Beginners)<a class="headerlink" href="#vs-code-recommended-for-beginners" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Type</strong>: Lightweight Editor (can act like an IDE with extensions)</p></li>
+<li><p><strong>Cost</strong>: Free and open source</p></li>
+<li><p><strong>Best for</strong>: Python, web development, general coding</p></li>
+<li><p><strong>Pros</strong>: Lightweight, huge extension marketplace, excellent Git integration, great for beginners</p></li>
+<li><p><strong>Cons</strong>: Requires extensions to reach full IDE capabilities</p></li>
+</ul>
+<p><strong>Install</strong>: <a class="reference external" href="https://code.visualstudio.com/">code.visualstudio.com</a></p>
+</section>
+<section id="pycharm">
+<h3>PyCharm<a class="headerlink" href="#pycharm" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Type</strong>: Full IDE</p></li>
+<li><p><strong>Cost</strong>: Free Community Edition (or paid Professional)</p></li>
+<li><p><strong>Best for</strong>: Python development, data science</p></li>
+<li><p><strong>Pros</strong>: Powerful, built specifically for Python, excellent debugging</p></li>
+<li><p><strong>Cons</strong>: Heavier than VS Code, steeper learning curve</p></li>
+</ul>
+<p><strong>Install</strong>: <a class="reference external" href="https://www.jetbrains.com/pycharm/">jetbrains.com/pycharm</a></p>
+</section>
+<section id="jupyter-notebook">
+<h3>Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Type</strong>: Interactive notebook environment</p></li>
+<li><p><strong>Cost</strong>: Free and open source</p></li>
+<li><p><strong>Best for</strong>: Data exploration, scientific computing, teaching</p></li>
+<li><p><strong>Pros</strong>: Great for learning, inline visualization, easy data exploration</p></li>
+<li><p><strong>Cons</strong>: Not ideal for large software packages; hard to use with Git</p></li>
+</ul>
+<p><strong>Install</strong>: Included when you install Anaconda/Miniconda</p>
+</section>
+<section id="sublime-text">
+<h3>Sublime Text<a class="headerlink" href="#sublime-text" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Type</strong>: Lightweight Editor</p></li>
+<li><p><strong>Cost</strong>: Paid (with free trial)</p></li>
+<li><p><strong>Best for</strong>: General coding, quick edits</p></li>
+<li><p><strong>Pros</strong>: Fast, minimal interface, good for advanced users</p></li>
+<li><p><strong>Cons</strong>: Less beginner-friendly than VS Code</p></li>
+</ul>
+</section>
+<section id="vim-neovim">
+<h3>Vim / Neovim<a class="headerlink" href="#vim-neovim" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Type</strong>: Terminal-based Editor</p></li>
+<li><p><strong>Cost</strong>: Free and open source</p></li>
+<li><p><strong>Best for</strong>: Advanced users, remote servers</p></li>
+<li><p><strong>Pros</strong>: Powerful, available everywhere, no GUI needed</p></li>
+<li><p><strong>Cons</strong>: Steep learning curve, not recommended for beginners</p></li>
+</ul>
 </section>
 </section>
-<hr class="docutils" />
-<section id="choose-your-operating-system">
-<h2>2. Choose Your Operating System<a class="headerlink" href="#choose-your-operating-system" title="Link to this heading">#</a></h2>
-<section id="macos-setup">
-<h3>macOS Setup<a class="headerlink" href="#macos-setup" title="Link to this heading">#</a></h3>
-<section id="verify-unix-compatibility">
-<h4>2.1 Verify Unix Compatibility<a class="headerlink" href="#verify-unix-compatibility" title="Link to this heading">#</a></h4>
-<p>Open <strong>Terminal</strong> (Cmd+Space, type “Terminal”, press Enter):</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uname<span class="w"> </span>-s
-</pre></div>
-</div>
-<p>If output is <code class="docutils literal notranslate"><span class="pre">Darwin</span></code>, you’re good! macOS is Unix-based. You can proceed to <a class="reference internal" href="03_command_line.html"><span class="std std-doc">03 Introduction to the Command Line</span></a>.</p>
-</section>
-<section id="install-xcode-command-line-tools-optional-but-recommended">
-<h4>2.2 Install Xcode Command Line Tools (Optional but Recommended)<a class="headerlink" href="#install-xcode-command-line-tools-optional-but-recommended" title="Link to this heading">#</a></h4>
-<p>These tools include compilers and utilities you’ll need later:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>xcode-select<span class="w"> </span>--install
-</pre></div>
-</div>
-<p>A dialog will appear—click <strong>Install</strong> and follow the prompts.</p>
-</section>
-</section>
-<section id="step-2-3-create-a-new-virtual-machine">
-<h3>Step 2.3 — Create a New Virtual Machine<a class="headerlink" href="#step-2-3-create-a-new-virtual-machine" title="Link to this heading">#</a></h3>
+<section id="recommended-setup-vs-code-with-python-extensions">
+<h2>3. Recommended Setup: VS Code with Python Extensions<a class="headerlink" href="#recommended-setup-vs-code-with-python-extensions" title="Link to this heading">#</a></h2>
+<section id="install-vs-code">
+<h3>3.1 Install VS Code<a class="headerlink" href="#install-vs-code" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p>Open <strong>VirtualBox</strong>.</p></li>
-<li><p>Click <strong>New</strong>.</p></li>
-<li><p>Fill in:</p>
-<ul class="simple">
-<li><p><strong>Name:</strong> Ubuntu</p></li>
-<li><p><strong>Type:</strong> Linux</p></li>
-<li><p><strong>Version:</strong> Ubuntu (64-bit)</p></li>
-</ul>
-</li>
-<li><p>Click <strong>Next</strong>.</p></li>
+<li><p>Go to <a class="reference external" href="https://code.visualstudio.com/">code.visualstudio.com</a></p></li>
+<li><p>Download and install for your operating system</p></li>
 </ol>
 </section>
-<section id="step-2-4-allocate-ram">
-<h3>Step 2.4 — Allocate RAM<a class="headerlink" href="#step-2-4-allocate-ram" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Choose how much memory to give the VM:</p>
-<ul>
-<li><p><strong>4 GB (4096 MB)</strong> minimum</p></li>
-<li><p><strong>8 GB or more</strong> recommended if your system allows</p></li>
-</ul>
-</li>
-</ul>
-<p>Click <strong>Next</strong>.</p>
-</section>
-<section id="step-2-5-create-virtual-hard-disk">
-<h3>Step 2.5 — Create Virtual Hard Disk<a class="headerlink" href="#step-2-5-create-virtual-hard-disk" title="Link to this heading">#</a></h3>
+<section id="essential-extensions">
+<h3>3.2 Essential Extensions<a class="headerlink" href="#essential-extensions" title="Link to this heading">#</a></h3>
+<p>Open VS Code and go to <strong>Extensions</strong> (Ctrl+Shift+X / Cmd+Shift+X). Search for and install:</p>
 <ol class="arabic simple">
-<li><p>Select <strong>Create a virtual hard disk now</strong>.</p></li>
-<li><p>Choose:</p>
+<li><p><strong>Python</strong> (Microsoft)</p>
 <ul class="simple">
-<li><p>Type: <strong>VDI (VirtualBox Disk Image)</strong></p></li>
-<li><p>Storage: <strong>Dynamically allocated</strong></p></li>
+<li><p>Essential for Python development</p></li>
+<li><p>Provides intellisense, linting, debugging</p></li>
 </ul>
 </li>
-<li><p>Set size: <strong>20–40 GB</strong> depending on needs.</p></li>
-</ol>
-<p>Click <strong>Create</strong>.</p>
-</section>
-<section id="step-2-6-attach-the-ubuntu-iso">
-<h3>Step 2.6 — Attach the Ubuntu ISO<a class="headerlink" href="#step-2-6-attach-the-ubuntu-iso" title="Link to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>Select your new VM in the VirtualBox list.</p></li>
-<li><p>Click <strong>Settings → Storage</strong>.</p></li>
-<li><p>Under “Controller: IDE,” click the empty disk icon.</p></li>
-<li><p>On the right, click the small disk icon → <strong>Choose a disk file…</strong></p></li>
-<li><p>Select the Ubuntu ISO you downloaded.</p></li>
-</ol>
-<p>Click <strong>OK</strong>.</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="execution">
-<h2>3. Execution<a class="headerlink" href="#execution" title="Link to this heading">#</a></h2>
-<section id="step-3-1-start-the-vm">
-<h3>Step 3.1 — Start the VM<a class="headerlink" href="#step-3-1-start-the-vm" title="Link to this heading">#</a></h3>
-<p>Click <strong>Start</strong> and the Ubuntu installer will launch.</p>
-</section>
-<section id="step-3-2-install-ubuntu">
-<h3>Step 3.2 — Install Ubuntu<a class="headerlink" href="#step-3-2-install-ubuntu" title="Link to this heading">#</a></h3>
-<p>When the Ubuntu splash screen appears:</p>
-<ol class="arabic simple">
-<li><p>Choose <strong>Try or Install Ubuntu</strong>.</p></li>
-<li><p>Select your language.</p></li>
-<li><p>Click <strong>Install Ubuntu</strong>.</p></li>
-</ol>
-<p>Follow the installation wizard:</p>
+<li><p><strong>Pylance</strong> (Microsoft)</p>
 <ul class="simple">
-<li><p><strong>Keyboard Layout:</strong> Keep default or adjust.</p></li>
-<li><p><strong>Updates and Other Software:</strong></p>
-<ul>
-<li><p>Normal installation (recommended)</p></li>
-<li><p>Check “Install third-party software” if needed for Wi-Fi/media</p></li>
+<li><p>Enhanced Python language support</p></li>
+<li><p>Better code completion and type checking</p></li>
 </ul>
 </li>
-<li><p><strong>Installation Type:</strong></p>
-<ul>
-<li><p>Choose <strong>Erase disk and install Ubuntu</strong>
-<em>This only affects the VM’s virtual disk, not your real Windows disk.</em></p></li>
+<li><p><strong>Git Graph</strong> (mhutchie)</p>
+<ul class="simple">
+<li><p>Visual representation of your Git branches and commits</p></li>
 </ul>
 </li>
-<li><p><strong>Username and Password:</strong>
-Create a user you’ll use for development.</p></li>
+<li><p><strong>GitHub Pull Requests and Issues</strong> (GitHub)</p>
+<ul class="simple">
+<li><p>Manage PRs and issues directly from VS Code</p></li>
 </ul>
-<p>Click <strong>Install Now</strong> and wait for installation to complete.</p>
+</li>
+<li><p><strong>Jupyter</strong> (Microsoft)</p>
+<ul class="simple">
+<li><p>Run Jupyter notebooks directly in VS Code</p></li>
+</ul>
+</li>
+<li><p><strong>Better Comments</strong> (Aaron Bond)</p>
+<ul class="simple">
+<li><p>Color-code your comments for better organization</p></li>
+</ul>
+</li>
+</ol>
 </section>
-<section id="step-3-3-restart">
-<h3>Step 3.3 — Restart<a class="headerlink" href="#step-3-3-restart" title="Link to this heading">#</a></h3>
-<p>After installation finishes, restart the VM when prompted.
-If the ISO boots again by accident, shut down the VM, remove the ISO from <strong>Settings → Storage</strong>, and start it again.</p>
+<section id="configure-python-interpreter">
+<h3>3.3 Configure Python Interpreter<a class="headerlink" href="#configure-python-interpreter" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Open a Python file or create one (<code class="docutils literal notranslate"><span class="pre">touch</span> <span class="pre">test.py</span></code>)</p></li>
+<li><p>Press <code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+P</span></code> (Cmd+Shift+P on macOS)</p></li>
+<li><p>Type “Python: Select Interpreter”</p></li>
+<li><p>Choose your preferred Python environment (from conda, venv, or system Python)</p></li>
+</ol>
+</section>
+<section id="configure-git-integration">
+<h3>3.4 Configure Git Integration<a class="headerlink" href="#configure-git-integration" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Go to <strong>View → Source Control</strong> (or press Ctrl+Shift+G)</p></li>
+<li><p>VS Code will automatically detect your Git repositories</p></li>
+<li><p>You can now stage, commit, and push changes without leaving the editor</p></li>
+</ol>
 </section>
 </section>
-<hr class="docutils" />
+<section id="basic-vs-code-workflow">
+<h2>4. Basic VS Code Workflow<a class="headerlink" href="#basic-vs-code-workflow" title="Link to this heading">#</a></h2>
+<section id="opening-a-project">
+<h3>Opening a Project<a class="headerlink" href="#opening-a-project" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>File → Open Folder</strong> and select your project directory</p></li>
+<li><p>VS Code will recognize it as a workspace</p></li>
+</ol>
+</section>
+<section id="writing-and-editing-code">
+<h3>Writing and Editing Code<a class="headerlink" href="#writing-and-editing-code" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Create new files with <strong>File → New File</strong> or <code class="docutils literal notranslate"><span class="pre">Ctrl+N</span></code></p></li>
+<li><p>VS Code’s intellisense will suggest completions as you type</p></li>
+<li><p>Errors appear as red squiggles—hover over them for details</p></li>
+</ol>
+</section>
+<section id="running-code">
+<h3>Running Code<a class="headerlink" href="#running-code" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Open a Python file</p></li>
+<li><p>Click the ▶ button in the top right, or press <code class="docutils literal notranslate"><span class="pre">Ctrl+F5</span></code></p></li>
+<li><p>Output appears in the Terminal pane</p></li>
+</ol>
+</section>
+<section id="using-the-terminal">
+<h3>Using the Terminal<a class="headerlink" href="#using-the-terminal" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Press `Ctrl+`` (backtick) to open the integrated terminal</p></li>
+<li><p>You can run commands without leaving the editor</p></li>
+</ol>
+</section>
+<section id="using-version-control">
+<h3>Using Version Control<a class="headerlink" href="#using-version-control" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Open <strong>Source Control</strong> (Ctrl+Shift+G)</p></li>
+<li><p>Stage files by clicking the + icon</p></li>
+<li><p>Write a commit message and press Ctrl+Enter</p></li>
+<li><p>Push with <strong>Push</strong> button or from the Source Control menu</p></li>
+</ol>
+</section>
+</section>
 <section id="verification">
-<h2>4. Verification<a class="headerlink" href="#verification" title="Link to this heading">#</a></h2>
-<p>After Ubuntu boots into the desktop:</p>
-<section id="verify-system-basics">
-<h3>Verify system basics<a class="headerlink" href="#verify-system-basics" title="Link to this heading">#</a></h3>
-<p>Open the terminal (Ctrl+Alt+T):</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>lsb_release<span class="w"> </span>-a
-</pre></div>
-</div>
-<p>You should see Ubuntu version information.</p>
-</section>
-<section id="verify-internet-connectivity">
-<h3>Verify internet connectivity<a class="headerlink" href="#verify-internet-connectivity" title="Link to this heading">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">3</span><span class="w"> </span>google.com
-</pre></div>
-</div>
-</section>
-<section id="verify-package-installation-works">
-<h3>Verify package installation works<a class="headerlink" href="#verify-package-installation-works" title="Link to this heading">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade
-</pre></div>
-</div>
-</section>
-<section id="optional-verify-shared-folders-if-configured">
-<h3>Optional: verify shared folders (if configured)<a class="headerlink" href="#optional-verify-shared-folders-if-configured" title="Link to this heading">#</a></h3>
-<p>Check <code class="docutils literal notranslate"><span class="pre">/media</span></code> or <code class="docutils literal notranslate"><span class="pre">/mnt</span></code> for your Windows-shared folder.</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="troubleshooting">
-<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">#</a></h2>
-<section id="vm-wont-start-64-bit-options-missing">
-<h3>VM won’t start / 64-bit options missing<a class="headerlink" href="#vm-wont-start-64-bit-options-missing" title="Link to this heading">#</a></h3>
+<h2>5. Verification<a class="headerlink" href="#verification" title="Link to this heading">#</a></h2>
+<p>You can verify your setup is complete when:</p>
 <ul class="simple">
-<li><p>Enable <strong>Virtualization Technology (VT-x/AMD-V)</strong> in BIOS.</p></li>
-<li><p>Close software that conflicts with virtualization (e.g., Hyper-V, WSL2, Docker Desktop).
-You may need to disable Hyper-V in <em>Windows Features</em>.</p></li>
+<li><p>VS Code opens successfully</p></li>
+<li><p>You can create a new Python file and see syntax highlighting</p></li>
+<li><p>Intellisense suggests code completions as you type</p></li>
+<li><p>You can see your Git repositories in the Source Control panel</p></li>
+<li><p>You can run a simple Python script by clicking the ▶ button</p></li>
 </ul>
 </section>
-<section id="ubuntu-installation-freezes">
-<h3>Ubuntu installation freezes<a class="headerlink" href="#ubuntu-installation-freezes" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Increase RAM or video memory in VirtualBox settings.</p></li>
-<li><p>Switch <strong>Graphics Controller</strong> to “VMSVGA”.</p></li>
-</ul>
-</section>
-<section id="no-internet-in-vm">
-<h3>No internet in VM<a class="headerlink" href="#no-internet-in-vm" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>In VirtualBox: <strong>Settings → Network → Adapter 1 → NAT</strong>.</p></li>
-</ul>
-</section>
-<section id="screen-resolution-is-low">
-<h3>Screen resolution is low<a class="headerlink" href="#screen-resolution-is-low" title="Link to this heading">#</a></h3>
-<ul>
-<li><p>Inside Ubuntu terminal, install Guest Additions:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>virtualbox-guest-dkms<span class="w"> </span>virtualbox-guest-x11
-</pre></div>
-</div>
-<p>Then reboot.</p>
-</li>
-</ul>
-</section>
-</section>
-<hr class="docutils" />
 <section id="next-steps">
 <h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading">#</a></h2>
-<p>Congratulations! You now have a Unix environment. Continue learning the command line: <a class="reference internal" href="03_command_line.html"><span class="std std-doc">03 Introduction to the Command Line</span></a></p>
+<p>Congratulations! You now have a professional development environment. You’re ready to write some code! While we’re developing our own Python tutorial series, we recommend exploring the <a class="reference external" href="https://github.com/omsharansalafia/intropython">Intro to Python</a> course to learn Python fundamentals before moving on to more advanced topics.</p>
 </section>
 </section>
 
@@ -671,20 +652,20 @@ You may need to disable Hyper-V in <em>Windows Features</em>.</p></li>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="01_getting_started.html"
+       href="08_configuring_conda_venv.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">01 Getting Started</p>
+        <p class="prev-next-title">08 Configuring Conda &amp; venv</p>
       </div>
     </a>
     <a class="right-next"
-       href="03_command_line.html"
+       href="09_python_basics.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">03 Introduction to the command line</p>
+        <p class="prev-next-title">09 Python Basics</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -709,42 +690,31 @@ You may need to disable Hyper-V in <em>Windows Features</em>.</p></li>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal">Goal</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steps">Steps</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#popular-options">2. Popular Options</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-code-recommended-for-beginners">VS Code (Recommended for Beginners)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pycharm">PyCharm</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-notebook">Jupyter Notebook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sublime-text">Sublime Text</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vim-neovim">Vim / Neovim</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-your-operating-system">2. Choose Your Operating System</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#macos-setup">macOS Setup</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#verify-unix-compatibility">2.1 Verify Unix Compatibility</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#install-xcode-command-line-tools-optional-but-recommended">2.2 Install Xcode Command Line Tools (Optional but Recommended)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recommended-setup-vs-code-with-python-extensions">3. Recommended Setup: VS Code with Python Extensions</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-vs-code">3.1 Install VS Code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#essential-extensions">3.2 Essential Extensions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-python-interpreter">3.3 Configure Python Interpreter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-git-integration">3.4 Configure Git Integration</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-3-create-a-new-virtual-machine">Step 2.3 — Create a New Virtual Machine</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-4-allocate-ram">Step 2.4 — Allocate RAM</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-5-create-virtual-hard-disk">Step 2.5 — Create Virtual Hard Disk</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-6-attach-the-ubuntu-iso">Step 2.6 — Attach the Ubuntu ISO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-vs-code-workflow">4. Basic VS Code Workflow</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#opening-a-project">Opening a Project</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-and-editing-code">Writing and Editing Code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#running-code">Running Code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-terminal">Using the Terminal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-version-control">Using Version Control</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#execution">3. Execution</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-1-start-the-vm">Step 3.1 — Start the VM</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-2-install-ubuntu">Step 3.2 — Install Ubuntu</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-3-restart">Step 3.3 — Restart</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verification">4. Verification</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verify-system-basics">Verify system basics</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verify-internet-connectivity">Verify internet connectivity</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verify-package-installation-works">Verify package installation works</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-verify-shared-folders-if-configured">Optional: verify shared folders (if configured)</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting">Troubleshooting</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vm-wont-start-64-bit-options-missing">VM won’t start / 64-bit options missing</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ubuntu-installation-freezes">Ubuntu installation freezes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-internet-in-vm">No internet in VM</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#screen-resolution-is-low">Screen resolution is low</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verification">5. Verification</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a></li>
 </ul>
   </nav></div>

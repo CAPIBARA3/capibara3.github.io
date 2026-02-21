@@ -1,0 +1,141 @@
+# Code Editors and IDEs
+
+## Goal
+Learn about different code editors and integrated development environments (IDEs), and how to choose one that fits your needs. We'll also show you how to set up a recommended editor (VS Code) with useful extensions for Python and Git development.
+
+## Prerequisites
+- [03 Introduction to the Command Line](03_command_line.md)
+
+## 1. Introduction
+
+A **code editor** is a tool where you write code. It's different from a text editor like Notepad because it understands programming languages and provides helpful features like:
+
+- **Syntax highlighting**: Colors different parts of code (keywords, strings, comments) to make them easier to read
+- **Auto-completion**: Suggests function names and variables as you type
+- **Error detection**: Highlights mistakes before you run the code
+- **Integration with Git**: Makes it easy to commit and push changes without using the terminal
+- **Extensions/Plugins**: Add functionality for specific languages and tools
+
+An **IDE** (Integrated Development Environment) is a more powerful version that also includes a debugger, built-in terminal, and project management tools.
+
+## 2. Popular Options
+
+### VS Code (Recommended for Beginners)
+- **Type**: Lightweight Editor (can act like an IDE with extensions)
+- **Cost**: Free and open source
+- **Best for**: Python, web development, general coding
+- **Pros**: Lightweight, huge extension marketplace, excellent Git integration, great for beginners
+- **Cons**: Requires extensions to reach full IDE capabilities
+
+**Install**: [code.visualstudio.com](https://code.visualstudio.com/)
+
+### PyCharm
+- **Type**: Full IDE
+- **Cost**: Free Community Edition (or paid Professional)
+- **Best for**: Python development, data science
+- **Pros**: Powerful, built specifically for Python, excellent debugging
+- **Cons**: Heavier than VS Code, steeper learning curve
+
+**Install**: [jetbrains.com/pycharm](https://www.jetbrains.com/pycharm/)
+
+### Jupyter Notebook
+- **Type**: Interactive notebook environment
+- **Cost**: Free and open source
+- **Best for**: Data exploration, scientific computing, teaching
+- **Pros**: Great for learning, inline visualization, easy data exploration
+- **Cons**: Not ideal for large software packages; hard to use with Git
+
+**Install**: Included when you install Anaconda/Miniconda
+
+### Sublime Text
+- **Type**: Lightweight Editor
+- **Cost**: Paid (with free trial)
+- **Best for**: General coding, quick edits
+- **Pros**: Fast, minimal interface, good for advanced users
+- **Cons**: Less beginner-friendly than VS Code
+
+### Vim / Neovim
+- **Type**: Terminal-based Editor
+- **Cost**: Free and open source
+- **Best for**: Advanced users, remote servers
+- **Pros**: Powerful, available everywhere, no GUI needed
+- **Cons**: Steep learning curve, not recommended for beginners
+
+## 3. Recommended Setup: VS Code with Python Extensions
+
+### 3.1 Install VS Code
+1. Go to [code.visualstudio.com](https://code.visualstudio.com/)
+2. Download and install for your operating system
+
+### 3.2 Essential Extensions
+Open VS Code and go to **Extensions** (Ctrl+Shift+X / Cmd+Shift+X). Search for and install:
+
+1. **Python** (Microsoft)
+   - Essential for Python development
+   - Provides intellisense, linting, debugging
+
+2. **Pylance** (Microsoft)
+   - Enhanced Python language support
+   - Better code completion and type checking
+
+3. **Git Graph** (mhutchie)
+   - Visual representation of your Git branches and commits
+
+4. **GitHub Pull Requests and Issues** (GitHub)
+   - Manage PRs and issues directly from VS Code
+
+5. **Jupyter** (Microsoft)
+   - Run Jupyter notebooks directly in VS Code
+
+6. **Better Comments** (Aaron Bond)
+   - Color-code your comments for better organization
+
+### 3.3 Configure Python Interpreter
+1. Open a Python file or create one (`touch test.py`)
+2. Press `Ctrl+Shift+P` (Cmd+Shift+P on macOS)
+3. Type "Python: Select Interpreter"
+4. Choose your preferred Python environment (from conda, venv, or system Python)
+
+### 3.4 Configure Git Integration
+1. Go to **View → Source Control** (or press Ctrl+Shift+G)
+2. VS Code will automatically detect your Git repositories
+3. You can now stage, commit, and push changes without leaving the editor
+
+## 4. Basic VS Code Workflow
+
+### Opening a Project
+1. **File → Open Folder** and select your project directory
+2. VS Code will recognize it as a workspace
+
+### Writing and Editing Code
+1. Create new files with **File → New File** or `Ctrl+N`
+2. VS Code's intellisense will suggest completions as you type
+3. Errors appear as red squiggles—hover over them for details
+
+### Running Code
+1. Open a Python file
+2. Click the ▶ button in the top right, or press `Ctrl+F5`
+3. Output appears in the Terminal pane
+
+### Using the Terminal
+1. Press `Ctrl+\`` (backtick) to open the integrated terminal
+2. You can run commands without leaving the editor
+
+### Using Version Control
+1. Open **Source Control** (Ctrl+Shift+G)
+2. Stage files by clicking the + icon
+3. Write a commit message and press Ctrl+Enter
+4. Push with **Push** button or from the Source Control menu
+
+## 5. Verification
+
+You can verify your setup is complete when:
+- VS Code opens successfully
+- You can create a new Python file and see syntax highlighting
+- Intellisense suggests code completions as you type
+- You can see your Git repositories in the Source Control panel
+- You can run a simple Python script by clicking the ▶ button
+
+## Next Steps
+
+Congratulations! You now have a professional development environment. You're ready to write some code! While we're developing our own Python tutorial series, we recommend exploring the [Intro to Python](https://github.com/omsharansalafia/intropython) course to learn Python fundamentals before moving on to more advanced topics.

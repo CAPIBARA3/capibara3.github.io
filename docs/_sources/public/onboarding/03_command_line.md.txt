@@ -1,10 +1,10 @@
 # 03 Introduction to the command line
 
 ## Goal
-In this tutorial, we'll cover the basic concepts of useing the terminal (often also called shell or command line) and introduce you to some of the most common and important commands that will help you navigate and manage files on your system.
+In this tutorial, we'll cover the basic concepts of using the terminal (often also called shell or command line) and introduce you to some of the most common and important commands that will help you navigate and manage files on your system.
 
 ## Prerequisites
-- [02_setting_up_unix.md](02_setting_up_unix.md)
+- [02 Setting Up Unix](02_setting_up_unix.md)
 
 ## Steps
 

@@ -1,57 +1,72 @@
-# Sitemap for Documentation
+# Documentation Sitemap
 
+This page provides an overview of the complete documentation structure.
 
-```bash
+## Directory Structure
 
-docs
-├── _static
-│   ├── capibara-theme.css
-│   └── logo.png
-├── docs-templates
+```text
+docs/
+├── docs-templates/
 │   ├── legal-template.md
 │   ├── policy-template.md
 │   └── tutorial-template.md
-├── internal-docs
-├── public
-│   ├── governance
+├── internal-docs/
+│   └── (member-only content)
+├── public/
+│   ├── governance/
+│   │   ├── about.md
 │   │   ├── AUTHORSHIP_POLICY.md
 │   │   ├── CODE_OF_CONDUCT.md
 │   │   ├── COLLABORATION_AGREEMENT.md
 │   │   ├── CONTRIBUTING.md
 │   │   ├── MEMBERSHIP_POLICY.md
 │   │   ├── PRIVACY_POLICY.md
-│   │   ├── about.md
 │   │   └── index.md
-│   ├── onboarding
-│   │   ├── engineering
-│   │   │   ├── 14_packages.md
-│   │   │   ├── 15_automating_tests.md
-│   │   │   ├── 16_docker.md
-│   │   │   ├── 17_local_latex.md
-│   │   │   └── 18_codecarbon.md
-│   │   ├── env
-│   │   │   ├── 02_setting_up_unix.md
-│   │   │   ├── 03_command_line.md
-│   │   │   ├── 04_configuring_git.md
-│   │   │   ├── 05_configuring_github.md
-│   │   │   ├── 06_collaborating_github.md
-│   │   │   ├── 07_configuring_python_pip.md
-│   │   │   └── 08_configuring_conda_venv.md
+│   ├── onboarding/
 │   │   ├── 00_applying_to_join.md
 │   │   ├── 01_getting_started.md
+│   │   ├── 02_setting_up_unix.md
+│   │   ├── 03_command_line.md
+│   │   ├── 04_configuring_git.md
+│   │   ├── 05_configuring_github.md
+│   │   ├── 06_collaborating_github.md
+│   │   ├── 07_configuring_python_pip.md
+│   │   ├── 08_configuring_conda_venv.md
+│   │   ├── 09_python_basics.md
+│   │   ├── 10_jupyter_notebook.md
+│   │   ├── 11_numpy_pandas.md
+│   │   ├── 12_matplotlib.md
+│   │   ├── 13_scipy_fitting.md
+│   │   ├── 14_packages.md
+│   │   ├── 15_automating_tests.md
+│   │   ├── 16_docker.md
+│   │   ├── 17_local_latex.md
+│   │   ├── 18_codecarbon.md
 │   │   └── index.md
-│   ├── templates
-│   │   ├── Engineering Documentation Template.zip
-│   │   ├── Scientific White Paper.zip
-│   │   ├── capibara_template.key
+│   ├── templates/
 │   │   ├── emails_capicr.md
 │   │   ├── emails_capigx.md
-│   │   ├── index.md
-│   │   └── power_capibara_template.pptx
+│   │   └── index.md
 │   └── index.md
 ├── conf.py
 ├── index.md
 └── sitemap.md
-
-
 ```
+
+## Quick Links
+
+### Governance
+- [Governance Overview](public/governance/index.md)
+- [Code of Conduct](public/governance/CODE_OF_CONDUCT.md)
+- [Contributing Guidelines](public/governance/CONTRIBUTING.md)
+- [Authorship Policy](public/governance/AUTHORSHIP_POLICY.md)
+- [Membership Policy](public/governance/MEMBERSHIP_POLICY.md)
+
+### Onboarding
+- [Onboarding Overview](public/onboarding/index.md)
+- [Getting Started](public/onboarding/01_getting_started.md)
+- [Setting up Unix](public/onboarding/02_setting_up_unix.md)
+- [Python Basics](public/onboarding/09_python_basics.md)
+
+### Templates
+- [Available Templates](public/templates/index.md)

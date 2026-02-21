@@ -21,25 +21,35 @@ sitemap
 Return to the [main page](https://capibara3.github.io).
 
 
-## A Documentation for Documentation
+## Documentation Guide
 
 ### 1. What is this?
-This part of the website (capibara3.githubio/docs) hosts the documentation files for the CAPIBARA Collaboration, from onboarding tutorials, to software guides as well as organisation and policies. We make all of our files, including organisation and legal ones, open except for signed agreements and documents containing personal data due to privacy protection.
+This part of the website (capibara3.github.io/docs) hosts the documentation files for the CAPIBARA Collaboration, including onboarding tutorials, software guides, organizational structure, and policies. We make all of our files publicly available, including organizational and legal documents, except for signed agreements and documents containing personal data (which are kept private for privacy protection).
 
-### 2. How to use?
-You can consult the structure of the documentation at [capibara3.github.io/docs/sitemap](https:capibara3.github.io/docs/sitemap.html). On the left-handed menu you can see the pages contained in your current directory, while in the right-handed one the section of your current page are displayed. On top there is a menu and a search tab which lets you find relevant pages by keywords. We try to maintain links updated, but since docs are always evolving it can happen that some paths become broken.
+### 2. How to navigate
+You can view the complete documentation structure in the [sitemap](https://capibara3.github.io/docs/sitemap.html). The **left sidebar** shows pages in your current directory, while the **right sidebar** displays sections of your current page. The **top navigation bar** includes a search function to find relevant pages by keywords. We maintain links regularly, but as documentation evolves, some paths may occasionally break.
 
-### 3. Report bugs
+### 3. Report issues
 
-If you spot mistakes of any type (typos, content-wise, missing information, website production, ...) you should communicate these to us, so that we can apply the necessary corrections. Proceed to click on the bug button in the navigation bar (top right) and create an issue to inform us. In all cases when communicating bugs and errors, please provide clear and detailed explanations with links to the relevant pages, you may include screenshots or other supporting documentation to help understanding. We will try to get back to you to solve the problem. We appreciate your help.
+If you spot any mistakes—typos, incorrect content, missing information, website bugs, etc.—please let us know so we can make corrections. Click the **bug icon** in the navigation bar (top right) to create an issue. When reporting problems, please provide clear explanations with:
+- Links to the relevant pages
+- Screenshots or supporting documentation
+- Specific details about the issue
 
-If you are a member, you can open an issue directly at [capibara3.github.io/.github-private](https://github.com/capibara3/.github-private) (where our documentation source is) and/or read the next section to know how to submit a PR.
+We appreciate your help and will work to resolve the problem promptly.
 
+If you are a member, you can open an issue directly at the [.github-private repository](https://github.com/capibara3/.github-private) (where our documentation source lives) or read the next section to learn how to submit a pull request.
 
-### 4. Contribute
+### 4. How to contribute
 
-All members are invited to contribute to the enhancing of the documentation, both guides and tutorials as well as legal documents and policies. We are all part of this so we want to make our tutorials more accessible to unexperienced members and policies adapted to our collaboration and status, although the ammendment of policies is regulated and can only happen by majority.
+All members are invited to contribute to improving the documentation, including guides, tutorials, legal documents, and policies. We want to make our tutorials accessible to inexperienced members and keep our policies adapted to our collaboration's needs. Note that policy amendments are regulated and require majority approval.
 
-Our documentation live in the `.github-private` [repository](https://github.com/capibara3/.github-private), where only collaboration members can access both the public and internal markdown files. These are the files that need to be edited. Then with GitHub Actions, we use `Sphinx` and `pydata-sphinx-theme` to automatically generate HTML pages from these docs and push the public files to our website repository ([capibara3/capibara3.github.io](https://github.com/capibara3/capibara3.github.io)). Afterwards, the website is uploaded and published but this a different process.
+Our documentation lives in the [`.github-private` repository](https://github.com/capibara3/.github-private), where only collaboration members can access both public and internal markdown files—these are the files that need to be edited. Using GitHub Actions, we use Sphinx and pydata-sphinx-theme to automatically generate HTML pages from these markdown files and push the public files to our [website repository](https://github.com/capibara3/capibara3.github.io). The website is then uploaded and published through a separate process.
 
-To contribute to our docs you must fork and/or create a new branch in the [capibara3/.github-private](https://github.com/capibara3/.github-private) repository and later on create a PR for discussion and merging of your changes. Please, make sure to wait for review, comments and suggestions before merging your edits.
+To contribute to our docs:
+1. Fork and/or create a new branch in the [.github-private repository](https://github.com/capibara3/.github-private)
+2. Make your changes
+3. Create a pull request for discussion
+4. Wait for review, comments, and suggestions before merging
+
+Please ensure your edits are reviewed before merging.
