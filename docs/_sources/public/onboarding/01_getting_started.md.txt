@@ -33,13 +33,12 @@ In order to finalise the joining process, you need to enter the CAPIBARA GitHub 
 
 
 After sharing this information, you may proceed to read the most important documentation for best practices:
-- [Code of Conduct](../CODE_OF_CONDUCT.md)
-- [Contributing guidelines](../CONTRIBUTING.md)
-- [Governance overview](../governance/0_governance.md)
-- [Authorship](../governance/2_authorship.md)
-- [Licensing](../governance/3_licensing.md)
-- [Communication](../governance/4_communication.md)
-- [...](../governance/index.md)
+- [Code of Conduct](../governance/CODE_OF_CONDUCT.md)
+- [Contributing Guidelines](../governance/CONTRIBUTING.md)
+- [Governance Overview](../governance/index.md)
+- [Authorship Policy](../governance/AUTHORSHIP_POLICY.md)
+- [Membership Policy](../governance/MEMBERSHIP_POLICY.md)
+- [Privacy Policy](../governance/PRIVACY_POLICY.md)
 
 ### 4. Verification
 You can verify this step is complete when:
@@ -49,4 +48,4 @@ You can verify this step is complete when:
 - You have reviewed the Code of Conduct and Contributing guidelines
 
 ## Next Steps
-Once you have joined the CAPIBARA GitHub organisation, you can start contributing! Plus, you also have access to all of our private files. Make sure to always comply with the code of conduct and contribution expectations, both collaboration-wide and repository-specific guidelines. You will learn about GitHub in a future tutorial. Now, let's set up your computer: [02_setting_up_unix.md](env/02_setting_up_unix.md).
+Once you have joined the CAPIBARA GitHub organisation, you can start contributing! Plus, you also have access to all of our private files. Make sure to always comply with the code of conduct and contribution expectations, both collaboration-wide and repository-specific guidelines. You will learn about GitHub in a future tutorial. Now, let's set up your computer: [Setting up Unix](02_setting_up_unix.md).

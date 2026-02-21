@@ -6,12 +6,16 @@ Start with application, then move through environment setup, learn Python fundam
 
 ```{toctree}
 :maxdepth: 1
-:caption: Onboarding Tutorials
+:caption: Getting Started
 
 00_applying_to_join.md
 01_getting_started.md
+```
 
-:caption: Basic Environment Setup
+```{toctree}
+:maxdepth: 1
+:caption: Environment Setup
+
 02_setting_up_unix.md
 03_command_line.md
 04_configuring_git.md
@@ -20,19 +24,28 @@ Start with application, then move through environment setup, learn Python fundam
 07_configuring_python_pip.md
 08_configuring_conda_venv.md
 X_code_editors.md
+```
 
+```{toctree}
+:maxdepth: 1
 :caption: Python Tutorials
+
 09_python_basics.md
 10_jupyter_notebook.md
 11_numpy_pandas.md
 12_matplotlib.md
 13_scipy_fitting.md
+```
 
-:caption: Additional guides
+```{toctree}
+:maxdepth: 1
+:caption: Advanced Topics
+
 14_packages.md
 15_automating_tests.md
 16_docker.md
 17_local_latex.md
+18_codecarbon.md
 ```
 
 Back to the main documentation: [Home](../../index.md)
