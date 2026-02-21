@@ -1,193 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CAPIBARA Collaboration publications, reports, and presentations. Access our status reports, technical documentation, and research findings.">
-    <title>Publications | Capibara Collaboration</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/styles.css">
-    <link rel="shortcut icon" type="image/png" href="/images/logos/capibara.png" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="CAPIBARA resources hub with combined announcements from updates and publications.">
+	<title>Resources | Capibara Collaboration</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/styles.css">
+	<link rel="shortcut icon" type="image/png" href="/images/logos/capibara.png" />
+	<style>
+		.resources-hero {
+			text-align: center;
+			margin: 2.5rem auto 2rem;
+			max-width: 760px;
+		}
+
+		.resources-hero p {
+			color: var(--muted-text);
+			text-align: center;
+		}
+
+		.announcements-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+			gap: 1.5rem;
+			max-width: 1100px;
+			margin: 0 auto;
+		}
+
+		.announcement-card {
+			background: var(--card-bg);
+			border-radius: var(--radius-lg);
+			box-shadow: var(--shadow-sm);
+			padding: 1.5rem;
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+		}
+
+		.announcement-card:hover {
+			transform: translateY(-6px);
+			box-shadow: var(--shadow-md);
+		}
+
+		.announcement-meta {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.6rem;
+			font-size: 0.85rem;
+			color: var(--muted-text);
+		}
+
+		.announcement-meta i {
+			color: var(--primary-color);
+		}
+
+		.announcement-tag {
+			padding: 0.3rem 0.8rem;
+			border-radius: var(--radius-pill);
+			font-size: 0.75rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.4px;
+		}
+
+		.announcement-tag.update {
+			background: rgba(255, 179, 71, 0.18);
+			color: #c17b1e;
+		}
+
+		.announcement-tag.publication {
+			background: rgba(165, 111, 232, 0.18);
+			color: var(--primary-color);
+		}
+
+		.announcement-card h3 {
+			margin: 0;
+			font-size: 1.25rem;
+		}
+
+		.announcement-card p {
+			margin: 0;
+			color: var(--muted-text);
+			text-align: left;
+		}
+
+		.announcement-actions {
+			margin-top: auto;
+			display: flex;
+			gap: 0.75rem;
+		}
+
+		.announcement-actions .btn {
+			flex: 1;
+			justify-content: center;
+			text-align: center;
+		}
+
+		@media (max-width: 768px) {
+			.announcement-actions {
+				flex-direction: column;
+			}
+		}
+	</style>
 </head>
 <body>
 <!-- Navigation will be injected here -->
 
 <main class="main-content subpage">
-    <!-- Breadcrumb navigation -->
-    <nav class="breadcrumb">
-        <ol>
-            <li><a href="../">Home</a></li>
-            <li>Publications</li>
-        </ol>
-    </nav>
+	<nav class="breadcrumb">
+		<ol>
+			<li><a href="../">Home</a></li>
+			<li>Resources</li>
+		</ol>
+	</nav>
 
-    <!-- Page header -->
-    <header class="page-header">
-        <h1><i class="fas fa-newspaper"></i> Publications</h1>
-        <p class="subtitle">Research outputs, reports, and presentations from the CAPIBARA Collaboration</p>
-    </header>
+	<header class="page-header resources-hero">
+		<h1><i class="fas fa-folder-open"></i> Resources</h1>
+		<p class="subtitle">Combined announcements from team updates and scientific publications.</p>
+	</header>
 
-    <!-- Stats Overview -->
-    <section class="pub-stats">
-        <div class="stat-item">
-            <i class="fas fa-file-alt"></i>
-            <span class="stat-number">3</span>
-            <span class="stat-label">Publications</span>
-        </div>
-        <div class="stat-item">
-            <i class="fas fa-users"></i>
-            <span class="stat-number">20+</span>
-            <span class="stat-label">Contributors</span>
-        </div>
-        <div class="stat-item">
-            <i class="fas fa-calendar"></i>
-            <span class="stat-number">2024-2025</span>
-            <span class="stat-label">Period</span>
-        </div>
-    </section>
+	<section class="filter-section" aria-label="Filter announcements">
+		<div class="filter-tabs">
+			<button class="filter-btn active" data-filter="all" aria-label="Show all announcements">
+				<i class="fas fa-th"></i> All
+			</button>
+			<button class="filter-btn" data-filter="publication" aria-label="Show scientific publications">
+				<i class="fas fa-newspaper"></i> Scientific Publications
+			</button>
+			<button class="filter-btn" data-filter="update" aria-label="Show team updates">
+				<i class="fas fa-bullhorn"></i> Team Updates
+			</button>
+		</div>
+	</section>
 
-    <!-- Filter Tabs -->
-    <section class="filter-section">
-        <div class="filter-tabs">
-            <button class="filter-btn active" data-filter="all" aria-label="Filter by all publications"><i class="fas fa-th"></i> All</button>
-            <button class="filter-btn" data-filter="reports" aria-label="Filter by reports"><i class="fas fa-file-alt"></i> Reports</button>
-            <button class="filter-btn" data-filter="presentations" aria-label="Filter by presentations"><i class="fas fa-presentation"></i> Presentations</button>
-            <button class="filter-btn" data-filter="proposals" aria-label="Filter by proposals"><i class="fas fa-lightbulb"></i> Proposals</button>
-        </div>
-    </section>
+	<section class="publications-section">
+		<div class="announcements-grid" role="region" aria-live="polite" aria-label="Filtered announcements">
+			<article class="announcement-card" data-category="update">
+				<div class="announcement-meta">
+					<span><i class="fas fa-calendar"></i> Jan 01, 2026</span>
+					<span class="announcement-tag update">Recruitment</span>
+				</div>
+				<h3>Call for New Members - 2026</h3>
+				<p>Open invitation for students worldwide to join CAPIBARA across STEM, education, and outreach roles.</p>
+				<div class="announcement-actions">
+					<a class="btn btn-outline" href="call_for_new_members_2026.html">
+						Read Update <i class="fas fa-arrow-right"></i>
+					</a>
+				</div>
+			</article>
 
-    <!-- Publications Grid -->
-    <section class="publications-section">
-        <div class="publications-grid" role="region" aria-live="polite" aria-label="Filtered publications">
-            <!-- Year 1 Report -->
-            <article class="pub-card" data-category="reports">
-                <div class="pub-image">
-                    <img src="../images/publications/y1-status-cover.png" alt="Year 1 Status Report Cover">
-                    <div class="pub-badge report">Report</div>
-                </div>
-                <div class="pub-content">
-                    <div class="pub-meta">
-                        <span class="pub-date"><i class="fas fa-calendar"></i> July 2025</span>
-                        <span class="pub-type"><i class="fas fa-tag"></i> Annual Report</span>
-                    </div>
-                    <h3>Year 1 Collaboration Status Report</h3>
-                    <p>Comprehensive overview of our first year: achievements, challenges, team growth, and strategic roadmap for the future.</p>
-                    <div class="pub-highlights">
-                        <span class="highlight-tag"><i class="fas fa-check"></i> Team Growth</span>
-                        <span class="highlight-tag"><i class="fas fa-check"></i> Milestones</span>
-                        <span class="highlight-tag"><i class="fas fa-check"></i> Future Plans</span>
-                    </div>
-                    <div class="pub-actions">
-                        <a href="../publications/CAPIBARA_Y1_Status_Report.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                            <i class="fas fa-file-pdf"></i> View PDF
-                        </a>
-                        <a href="../updates/y1_report_published.html" class="btn btn-outline">
-                            <i class="fas fa-info-circle"></i> Details
-                        </a>
-                    </div>
-                </div>
-            </article>
+			<!-- <article class="announcement-card" data-category="update">
+				<div class="announcement-meta">
+					<span><i class="fas fa-calendar"></i> Jul 20, 2025</span>
+					<span class="announcement-tag update">Recruitment</span>
+				</div>
+				<h3>Call for New Members - 2025</h3>
+				<p>We welcomed new students from geosciences, physics, engineering, and beyond for the 2025 intake.</p>
+				<div class="announcement-actions">
+					<a class="btn btn-outline" href="./call_for_new_members_2025.html">
+						<i class="fas fa-arrow-right"></i> Read Update
+					</a>
+				</div>
+			</article> -->
 
-            <!-- CosmoCaixa Presentation -->
-            <article class="pub-card" data-category="presentations">
-                <div class="pub-image">
-                    <img src="../images/publications/cosmoxarxa-presentation.png" alt="CosmoCaixa Presentation">
-                    <div class="pub-badge presentation">Presentation</div>
-                </div>
-                <div class="pub-content">
-                    <div class="pub-meta">
-                        <span class="pub-date"><i class="fas fa-calendar"></i> March 2025</span>
-                        <span class="pub-type"><i class="fas fa-tag"></i> Outreach</span>
-                    </div>
-                    <h3>CosmoCaixa Science Museum Presentation</h3>
-                    <p>Public outreach presentation introducing CAPIBARA's vision and missions to Barcelona's science museum volunteers and visitors.</p>
-                    <div class="pub-highlights">
-                        <span class="highlight-tag"><i class="fas fa-users"></i> Public Outreach</span>
-                        <span class="highlight-tag"><i class="fas fa-landmark"></i> CosmoCaixa</span>
-                    </div>
-                    <div class="pub-actions">
-                        <a href="../publications/CosmoXarxa_presentation.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                            <i class="fas fa-file-pdf"></i> View PDF
-                        </a>
-                    </div>
-                </div>
-            </article>
+			<article class="announcement-card" data-category="publication">
+				<div class="announcement-meta">
+					<span><i class="fas fa-calendar"></i> Jul 20, 2025</span>
+					<span class="announcement-tag update">Report</span>
+				</div>
+				<h3>Year 1 Status Report Published</h3>
+				<p>Celebrating our first-year achievements, growth, and the roadmap ahead for CAPIBARA.</p>
+				<div class="announcement-actions">
+					<a class="btn btn-outline" href="y1_report_published.html">
+						Read Update <i class="fas fa-arrow-right"></i>
+					</a>
+				</div>
+			</article>
 
-            <!-- Preliminary Proposal -->
-            <article class="pub-card" data-category="proposals">
-                <div class="pub-image">
-                    <img src="../images/publications/proposal.png" alt="Preliminary Proposal">
-                    <div class="pub-badge proposal">Proposal</div>
-                </div>
-                <div class="pub-content">
-                    <div class="pub-meta">
-                        <span class="pub-date"><i class="fas fa-calendar"></i> 2024</span>
-                        <span class="pub-type"><i class="fas fa-tag"></i> Spark Program</span>
-                    </div>
-                    <h3>Preliminary Proposal for Spark Program</h3>
-                    <p>Founding document outlining CAPIBARA's vision, technical approach, and mission architecture for student-led space science.</p>
-                    <div class="pub-highlights">
-                        <span class="highlight-tag"><i class="fas fa-rocket"></i> Mission Design</span>
-                        <span class="highlight-tag"><i class="fas fa-brain"></i> Technical Vision</span>
-                    </div>
-                    <div class="pub-actions">
-                        <a href="../publications/preliminar_proposal.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                            <i class="fas fa-file-pdf"></i> View PDF
-                        </a>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </section>
+			<article class="announcement-card" data-category="update">
+				<div class="announcement-meta">
+					<span><i class="fas fa-calendar"></i> Mar 06, 2025</span>
+					<span class="announcement-tag update">Outreach</span>
+				</div>
+				<h3>CosmoCaixa Science Museum Presentation</h3>
+				<p>CAPIBARA presented our vision and missions to Barcelona's CosmoCaixa Explainers.</p>
+				<div class="announcement-actions">
+					<a class="btn btn-primary" href="CosmoXarxa_presentation.pdf" target="_blank" rel="noopener noreferrer">
+						<i class="fas fa-file-pdf"></i> View Slides
+					</a>
+				</div>
+			</article>
 
-    <!-- Call to Action -->
-    <section class="pub-cta">
-        <div class="cta-content">
-            <i class="fas fa-lightbulb"></i>
-            <h2>Contribute to Our Research</h2>
-            <p>Interested in contributing to future publications? Join our collaboration and help advance student-led space science.</p>
-            <a href="../application-form.html" class="btn btn-large">
-                <i class="fas fa-rocket"></i> Join CAPIBARA
-            </a>
-        </div>
-    </section>
-
-    <script>
-        // Filter functionality
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                // Update active button
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-                
-                // Filter cards
-                const filter = this.dataset.filter;
-                document.querySelectorAll('.pub-card').forEach(card => {
-                    // Clear any pending hide timeout before applying new filter state
-                    if (card._hideTimeoutId) {
-                        clearTimeout(card._hideTimeoutId);
-                        card._hideTimeoutId = null;
-                    }
-
-                    if (filter === 'all' || card.dataset.category === filter) {
-                        card.style.display = 'flex';
-                        setTimeout(() => card.style.opacity = '1', 10);
-                    } else {
-                        card.style.opacity = '0';
-                        card._hideTimeoutId = setTimeout(() => {
-                            card.style.display = 'none';
-                            card._hideTimeoutId = null;
-                        }, 300);
-                    }
-                });
-            });
-        });
-    </script>
+			<article class="announcement-card" data-category="publication">
+				<div class="announcement-meta">
+					<span><i class="fas fa-calendar"></i> 2024</span>
+					<span class="announcement-tag publication">Proposal</span>
+				</div>
+				<h3>Preliminary Proposal for Spark Program</h3>
+				<p>Founding document outlining CAPIBARA's vision, mission architecture, and technical approach.</p>
+				<div class="announcement-actions">
+					<a class="btn btn-primary" href="preliminar_proposal.pdf" target="_blank" rel="noopener noreferrer">
+						<i class="fas fa-file-pdf"></i> View PDF
+					</a>
+				</div>
+			</article>
+		</div>
+	</section>
 </main>
 
 <!-- Footer will be injected here -->
 <script src="../assets/script.js"></script>
 <script src="../loadComponents.js"></script>
+<script>
+	document.querySelectorAll('.filter-btn').forEach(btn => {
+		btn.addEventListener('click', function() {
+			document.querySelectorAll('.filter-btn').forEach(button => button.classList.remove('active'));
+			this.classList.add('active');
+
+			const filter = this.dataset.filter;
+			document.querySelectorAll('.announcement-card').forEach(card => {
+				if (card._hideTimeoutId) {
+					clearTimeout(card._hideTimeoutId);
+					card._hideTimeoutId = null;
+				}
+
+				if (filter === 'all' || card.dataset.category === filter) {
+					card.style.display = 'flex';
+					requestAnimationFrame(() => {
+						card.style.opacity = '1';
+					});
+				} else {
+					card.style.opacity = '0';
+					card._hideTimeoutId = setTimeout(() => {
+						card.style.display = 'none';
+						card._hideTimeoutId = null;
+					}, 250);
+				}
+			});
+		});
+	});
+</script>
 </body>
 </html>
