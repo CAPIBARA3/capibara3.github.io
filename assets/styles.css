@@ -49,6 +49,7 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.03rem;
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.7;
