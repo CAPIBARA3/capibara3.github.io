@@ -58,35 +58,6 @@ function loadComponents() {
 }
 
 function initNavbar() {
-    // Mobile menu toggle
-    const toggle = document.querySelector('.navbar-toggle');
-    const menu = document.querySelector('.navbar-menu');
-
-    if (toggle && menu) {
-        toggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
-            toggle.classList.toggle('active');
-        });
-    }
-
-    // Dropdown functionality
-    document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
-        toggle.addEventListener('click', (e) => {
-            e.preventDefault();
-            const menu = toggle.parentElement.querySelector('.dropdown-menu');
-            if (menu) menu.classList.toggle('active');
-        });
-    });
-
-    // Close dropdowns when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('.dropdown')) {
-            document.querySelectorAll('.dropdown-menu').forEach(menu => {
-                menu.classList.remove('active');
-            });
-        }
-    });
-
     // Highlight active link
     const currentPath = window.location.pathname.split('/').pop() || 'earth.html';
     document.querySelectorAll('.nav-link').forEach(link => {
@@ -97,6 +68,9 @@ function initNavbar() {
             link.classList.add('active');
         }
     });
+    
+    // Mobile menu initialization is handled in assets/script.js
+    // to avoid duplicate event listeners
 }
 
 // Start loading components
