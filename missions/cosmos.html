@@ -20,6 +20,30 @@
         .content-grid a {
             color: #bf87e6;
         }
+        
+        /* Styling for key concepts section */
+        .concepts-box {
+            background: rgba(191, 135, 230, 0.08);
+            border-left: 4px solid #bf87e6;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .concepts-box h4 {
+            color: #bf87e6;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .concepts-box h4:first-child {
+            margin-top: 0;
+        }
+        
+        .concepts-box p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
@@ -52,12 +76,17 @@
             <div class="text-content">
                 <h2>Our Ambition</h2>
                 <p>The ultimate goal of the CAPIBARA-COSMOS program is to provide a scalable, robust, simple, and agile platform for monitoring high-energy transients in the X-ray and gamma-ray, in particular upon the "golden era" of multi-messenger astronomy in the 2030s. Besides being a student-led endeavour, CAPIBARA-COSMOS has a unique educational value, enabling young aspiring researchers to get their hands dirty with aerospace engineering and satellite development all the way to astrophysical data analysis and fundamental physics.</p>
+            </div>
+        </div>
 
+        <!-- Mission Roadmap Section -->
+        <div class="content-grid">
+            <div class="text-content">
                 <h2>The Three-Phase Roadmap</h2>
                 <div class="roadmap-overview">
                     <div class="phase">
                         <h3><i class="fas fa-rocket"></i> Phase 1: Foundation (2024-2026)</h3>
-                        <p>Our goal in this first phase is to learn about the field, completing a literature review and understanding the high-energy gap and challenges. We will formalise our advisory board (3-5 professors and senior experts), write our FYS! proposal for Duo and secure lab space/resources at 2-3 universities. We also want to get started with the software regarding simulations and data analysis tools, such as ML transient detection for rapid alerts.</p>
+                        <p>Our goal in this first phase is to learn about the field, completing a literature review and understanding the high-energy gap and challenges. We will formalise our advisory board (3-5 professors and senior experts), write our FYS! proposal for COSMOS-Duo and secure lab space/resources at 2-3 universities. We also want to get started with the software regarding simulations and data analysis tools, such as ML transient detection for rapid alerts.</p>
                     </div>
                     <div class="phase">
                         <h3><i class="fas fa-satellite"></i> Phase 2: Demonstrator (2026-2032)</h3>
@@ -69,16 +98,17 @@
                     </div>
                     <p><b>Why this approach works:</b> CAPIBARA-COSMOS flips the usual mission development model—we put students as the primary developers, supported by our advisory council of senior researchers, experts, and industry partners. Thus, each phase proves capability and provides experience to students to build the next. The CAPIBARA Collaboration is an international student-led group building not only innovative missions, but also a network of enthusiastic and high-achieving students across universities.</p>
                 </div>
+            </div>
+        </div>
 
-                <h2>Synergy with Next-Generation Observatories</h2>
-                <p>CAPIBARA-COSMOS is timed to become the high-energy sentinel for the 2035 multi-messenger network:</p>
-                <div class="inline-list">
-                    <p><strong><i class="fas fa-wave-square"></i> Gravitational Waves:</strong> Rapid, precise localization of short GRB counterparts to neutron star mergers detected by LIGO, ET, and LISA.</p>
-                    <p><strong><i class="fas fa-snowflake"></i> Neutrino Astronomy:</strong> Identifying high-energy electromagnetic counterparts to IceCube and KM3NeT neutrino alerts.</p>
-                    <p><strong><i class="fas fa-stopwatch"></i> Time-Domain Astrophysics:</strong> Triggering follow-up observations by THESEUS, NewAthena, and CTAO for transients across the spectrum, including full EM follow-ups.</p>
-                </div>
+        <!-- Scientific Rationale Section -->
+        <div class="content-grid">
+            <div class="text-content">
+                <h2>Scientific Rationale</h2>
+                <h3>Synergies with Next-Generation Observatories</h3>
+                <p>CAPIBARA-COSMOS is timed to become the high-energy sentinel for the 2035 multi-messenger network. Our aim is to provide preliminary transient alerts to trigger advanced telescopes and to provide all-sky monitoring for fast electromagnetic counterparts in the high-energy range. This contributes to rapid and precise localisation of short GRB counterparts to neutron star mergers detected by LIGO, ET, and LISA; and triggering follow-up observations by THESEUS, NewAthena, CTAO, and other observatories. Additionally, it can help identifying high-energy electromangetic counterparts to IceCube and KM3NeT neutrino alerts.</p>
 
-                <h2>Scientific Outcomes</h2>
+                <h3>Scientific Outcomes</h3>
                 <p>CAPIBARA-COSMOS data will join the great amount of diverse data publicly available for astrophysical research, contributing to science in many fields.</p>
                 <div class="inline-list">
                     <p><strong><i class="fas fa-bolt"></i> High-Energy Transients:</strong> Gamma-ray bursts (GRBs), X-ray flashes, magnetar flares, tidal disruption events (TDEs), soft gamma-ray repeaters.</p>
@@ -89,12 +119,20 @@
                     <p><strong><i class="fas fa-sun"></i> Solar High-Energy Events:</strong> Solar physics, SEP acceleration, space weather.</p>
                 </div>
 
-                <h2>Research Initiatives</h2>
+                <h2>Key Concepts</h2>
+                <div class="concepts-box">
+                    <h4>What is Multi-Messenger Astronomy?</h4>
+                    <p>Multi-messenger astronomy is the coordinated observation and interpretation of multiple signals received from the same astronomical event. Many types of events involve interactions radiating not only across the electromagnetic spectrum, but also gravitational waves, neutrinos and cosmic rays. Reconstructing the source through different channels can allow better understand and reveals more information about the event.</p>
+                    <h4>What are high-energy transients?</h4>
+                    <p>Transients events are astrophysical phenomena that are only temporary for a short period of time. Typically between less than a second and days. High energy transients are, for instance, gamma-ray bursts (GRBs), which are jet-driven 'explosion' of unknown origin. They release equivalently the energy of the Sun, in a few moments.</p>
+                </div>
+
+                <h2>Ongoing Initiatives</h2>
                 <p>The research it takes within CAPIBARA to develop CAPIBARA-COSMOS and how we will use its data products.</p>
                 <div class="inline-list">
                     <p><strong><i class="fas fa-brain"></i> Machine Learning Transient Classification:</strong> ML driven classification for rapid alerts and automated transient detection systems.</p>
-                    <p><strong><i class="fas fa-wave-square"></i> Multi-Messenger Cosmology:</strong> Combining information from GRBs and GWs to learn about the expanding Universe. <a href="./multi-messenger-cosmology.html">Learn more -></a></p>
-                    <p><strong><i class="fas fa-atom"></i> Fundamental Physics:</strong> Testing theoretical predictions with high-energy observations from gamma-ray bursts.</p>
+                    <p><strong><i class="fas fa-wave-square"></i> Multi-Messenger Cosmology:</strong> Combining information from GRBs and GWs to learn about the expanding Universe. <a href="https://joanalnu.github.io/contact.html">Contact</a></p>
+                    <p><strong><i class="fas fa-atom"></i> Fundamental Physics:</strong> Testing theoretical predictions with high-energy observations from gamma-ray bursts. <a href="mailto:martinssolanosoto@gmail.com">Contact</a></p>
                 </div>
             </div>
         </div>
@@ -142,7 +180,7 @@
                     </div>
                     <div class="option">
                         <h3><i class="fas fa-university"></i> For Institutions</h3>
-                        <p>Partner with us. Provide lab space, expertise, or funding. Help scale the student-led mission model. <a href="../contact">Contact for partnership</a>.</p>
+                        <p>Partner with us. Provide lab space, expertise, or funding. Help scale the student-led mission model. <a href="../contact.html">Contact for partnership</a>.</p>
                     </div>
                 </div>
 
@@ -150,7 +188,7 @@
                     <h3><i class="fas fa-satellite-dish"></i> Live Project Status</h3>
                     <p>We're currently: <strong>Forming the core consortium and preparing our pathfinder proposal which we will publish soon</strong></p>
                     <a href="https://github.com/CAPIBARA3" class="btn" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github"></i> Follow Our Progress on GitHub
+                        Follow Our Progress on GitHub <i class="fab fa-github"></i>
                     </a>
                 </div>
             </div>

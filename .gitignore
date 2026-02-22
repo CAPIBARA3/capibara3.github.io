@@ -1,4 +1,7 @@
+# general
 .DS_Store
+.idea/
 
-assets/textures
-assets/earth.html
+# outdated
+/publications/
+/missions/projects/*

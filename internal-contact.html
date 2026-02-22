@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Internal Communications Form">
+    <title>Internal Contact | Capibara Collaboration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/assets/contact-form.css">
+    <link rel="shortcut icon" type="image/png" href="/images/logos/capibara.png" />
+</head>
+<body>
+<!-- Navigation will be injected here -->
+
+<main class="main-content subpage">
+    <!-- Breadcrumb navigation -->
+    <nav class="breadcrumb">
+        <ol>
+            <li><a href="/">Home</a></li>
+            <li>Contact</li>
+        </ol>
+    </nav>
+
+    <!-- Page header -->
+    <header class="page-header">
+        <h1><i class="fas fa-envelope"></i> Internal Communications Form</h1>
+        <p class="subtitle">Get in touch with the CAPIBARA Collaboration programme leads</p>
+    </header>
+
+    <div class="form-container">
+        <!-- Contact form section -->
+        <div class="form-wrapper">
+            <h2><i class="fas fa-paper-plane"></i> Send a Message</h2>
+            <p class="form-intro">Fill out the form below and we'll get back to you as soon as possible. Please specify in your message if you want to be directed to a specific program, team, or person.</p>
+
+            <p>We use this form instead of a direct email link to protect our addresses from bots, web scrapers, and AI training tools that scan pages for contact information. By routing your message through this endpoint, we maintain better security and privacy for our communications. You're always welcome to reach out directly if you prefer, but this form adds an extra layer of protection. Thank you for your understanding.</p>
+
+            <form action="https://formspree.io/f/xeelrlap" method="POST">
+                <div class="floating-label-group">
+                    <input type="text" name="GitHub usr" id="subject" class="floating-input" placeholder=" " required>
+                    <label class="floating-label"><i class="fas fa-tag"></i> GitHub username *</label>
+                </div>
+
+                <div class="form-row">
+                    <div class="floating-label-group">
+                        <input type="text" name="name" id="name" class="floating-input" placeholder=" " required>
+                        <label class="floating-label"><i class="fas fa-user"></i> Your Name *</label>
+                    </div>
+                    <div class="floating-label-group">
+                        <input type="email" name="email" id="email" class="floating-input" placeholder=" " required>
+                        <label class="floating-label"><i class="fas fa-envelope"></i> Email Address *</label>
+                    </div>
+                </div>
+                
+                <div class="floating-label-group">
+                    <input type="text" name="subject" id="subject" class="floating-input" placeholder=" " required>
+                    <label class="floating-label"><i class="fas fa-tag"></i> Subject *</label>
+                </div>
+                
+                <div class="floating-label-group">
+                    <textarea name="message" id="message" class="floating-input" placeholder=" " required></textarea>
+                    <label class="floating-label"><i class="fas fa-comment"></i> Your Message *</label>
+                </div>
+
+                <div class="privacy-notice">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>By submitting this form, you consent to the processing of your personal data for the purpose of this contact. Your information will not be shared outside the CAPIBARA Collaboration and can be deleted upon request. See our <a href="docs/public/governance/PRIVACY_POLICY.html">privacy policy</a> for details.</p>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<!-- Footer will be injected here -->
+
+<script src="/assets/script.js"></script>
+</body>
+</html>

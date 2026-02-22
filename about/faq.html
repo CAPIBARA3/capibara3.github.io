@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently Asked Questions about joining CAPIBARA Collaboration. Learn about requirements, time commitment, and how to get involved in student-led space missions.">
+    <title>FAQ | CAPIBARA Collaboration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="shortcut icon" type="image/png" href="/images/logos/capibara.png" />
+    <style>
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-section {
+            margin-bottom: 3rem;
+        }
+
+        .faq-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--secondary-color);
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 15px rgba(191, 135, 230, 0.2);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: rgba(191, 135, 230, 0.05);
+        }
+
+        .faq-question i {
+            transition: transform 0.3s ease;
+            color: var(--primary-color);
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0 1.5rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 10000px;
+            padding: 0 1.5rem 1.5rem 1.5rem;
+        }
+
+        .faq-answer p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .faq-answer ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .faq-answer li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .cta-box h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .cta-box .btn {
+            background: white;
+            color: var(--primary-color);
+            margin-top: 1rem;
+        }
+
+        .cta-box .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation will be injected here -->
+
+<main class="main-content subpage">
+    <!-- Breadcrumb navigation -->
+    <nav class="breadcrumb">
+        <ol>
+            <li><a href="/">Home</a></li>
+            <li>FAQ</li>
+        </ol>
+    </nav>
+
+    <!-- Page header -->
+    <header class="page-header">
+        <h1>Frequently Asked Questions</h1>
+        <p class="subtitle">Everything you need to know about joining CAPIBARA</p>
+    </header>
+
+    <div class="faq-container" id="faq-container"></div>
+
+        <!-- Call to Action -->
+        <div class="cta-box">
+            <h2>Ready to Join?</h2>
+            <p>Become part of the next generation of space scientists and engineers. No experience required—just passion and curiosity!</p>
+            <a href="/application-form.html" class="btn">
+                <i class="fas fa-rocket"></i> Apply Now
+            </a>
+            <a href="/contact.html" class="btn">
+                <i class="fas fa-envelope"></i> Contact Us
+            </a>
+        </div>
+</main>
+
+<!-- Footer will be injected here -->
+
+<script src="/assets/script.js"></script>
+<script src="../loadComponents.js"></script>
+<script>
+    const faqData = [
+        {
+            section: {
+                title: "Getting Started",
+                icon: "fas fa-rocket"
+            },
+            items: [
+                {
+                    id: "what-is-capibara",
+                    question: "What is CAPIBARA Collaboration?",
+                    answer: [
+                        "CAPIBARA is an international, student-led initiative building space observatories for high-energy astrophysics research. We operate two main programs: CAPIBARA-COSMOS (gamma-ray/X-ray satellite constellation) and CAPIBARA-CRD (cosmic ray detector). We're creating a new model where students don't just learn about space missions—they actually build and operate them."
+                    ]
+                },
+                {
+                    id: "who-can-join",
+                    question: "Who can join CAPIBARA?",
+                    answer: [
+                        "<strong>Anyone!</strong> We welcome motivated students from all universities worldwide. You don't need prior experience in aerospace or astrophysics. Our members work in various fields including:",
+                        "<ul><li>Physics and Astronomy</li><li>Engineering (Aerospace, Electrical, Mechanical, Software)</li><li>Computer Science and Data Science</li><li>Mathematics and Statistics</li><li>Education and Science Communication</li><li>Design and Media</li></ul>",
+                        "If you're passionate about space and willing to learn, you're welcome here!"
+                    ]
+                },
+                {
+                    id: "requirements-to-join",
+                    question: "What are the requirements to join?",
+                    answer: [
+                        "There are <strong>no impossible requirements and no selection process</strong>. We only ask for:",
+                        "<ul><li>Being currently enrolled as a student (undergraduate, master's, or PhD)</li><li>Genuine passion for space science and technology</li><li>Willingness to learn and collaborate with others</li><li>Commitment to contribute to the project (flexible hours)</li></ul>",
+                        "We believe in learning by doing and supporting each other throughout the journey."
+                    ]
+                }
+            ]
+        },
+        {
+            section: {
+                title: "Participation & Commitment",
+                icon: "fas fa-calendar-check"
+            },
+            items: [
+                {
+                    id: "time-commitment",
+                    question: "How much time do I need to commit?",
+                    answer: [
+                        "We understand that students have varying schedules. The time commitment is flexible and depends on your role and availability:",
+                        "<ul><li><strong>Minimum:</strong> 5-10 hours per month for staying engaged with the team</li><li><strong>Active contributor:</strong> 10-20 hours per month for regular project work</li><li><strong>Team lead/coordinator:</strong> 20+ hours per month for leadership roles</li></ul>",
+                        "Many members integrate CAPIBARA work into their coursework or thesis projects, which can count towards both!"
+                    ]
+                },
+                {
+                    id: "remote-work",
+                    question: "Can I work remotely?",
+                    answer: [
+                        "<strong>Absolutely!</strong> CAPIBARA is a fully distributed collaboration. Most of our work happens online through:",
+                        "<ul><li>Regular video meetings (team calls, working sessions)</li><li>Collaborative platforms (GitHub)</li><li>Asynchronous communication for different time zones</li></ul>",
+                        "We have members across multiple continents and embrace remote collaboration. Some hands-on hardware work happens at specific university labs, but software, analysis, and design work can be done from anywhere."
+                    ]
+                },
+                {
+                    id: "kind-of-work",
+                    question: "What kind of work can I do?",
+                    answer: [
+                        "There's something for everyone! Here are some examples:",
+                        "<ul><li><strong>Hardware:</strong> Detector design, electronics, mechanical engineering, testing</li><li><strong>Software:</strong> Simulations, data analysis pipelines, mission control software</li><li><strong>Science:</strong> GRB analysis, cosmology research, detector characterization</li><li><strong>Operations:</strong> Mission planning, satellite operations, ground station work</li><li><strong>Outreach:</strong> Website development, social media, presentations, educational materials</li><li><strong>Documentation:</strong> Technical writing, proposal writing, reports</li></ul>",
+                        "We'll help you find a role that matches your interests and skills!"
+                    ]
+                }
+            ]
+        },
+        {
+            section: {
+                title: "Learning & Development",
+                icon: "fas fa-graduation-cap"
+            },
+            items: [
+                {
+                    id: "no-experience",
+                    question: "I have no experience with satellites/space missions. Is that okay?",
+                    answer: [
+                        "<strong>Absolutely okay!</strong> Most of our members started with no space mission experience. That's exactly why CAPIBARA exists—to provide hands-on learning opportunities.",
+                        "We provide:",
+                        "<ul><li>Onboarding documentation and tutorials</li><li>Mentorship from more experienced members</li><li>Learning-by-doing on real projects</li><li>Access to our advisory board of senior researchers</li></ul>",
+                        "Your willingness to learn is more important than what you already know!"
+                    ]
+                },
+                {
+                    id: "training-support",
+                    question: "Will I get training and support?",
+                    answer: [
+                        "Yes! We're committed to helping everyone succeed:",
+                        "<ul><li>Structured onboarding process for new members</li><li>Peer mentoring and collaboration</li><li>Access to technical documentation and resources</li><li>Guidance from our advisory board of professors and industry experts</li></ul>"
+                    ]
+                },
+                {
+                    id: "thesis-coursework",
+                    question: "Can I use CAPIBARA work for my thesis or coursework?",
+                    answer: [
+                        "We still haven't encoutered that situation, but we would be happy to help and to have you do our project, thesis or internship with us. However, we encourage you to check with your supervisor and instituting for any specific requirements we may not comply with."
+                    ]
+                }
+            ]
+        },
+        {
+            section: {
+                title: "Projects & Organization",
+                icon: "fas fa-satellite"
+            },
+            items: [
+                {
+                    id: "cosmos-vs-crd",
+                    question: "What's the difference between COSMOS and CRD?",
+                    answer: [
+                        "<strong>CAPIBARA-COSMOS:</strong> Our flagship program building a constellation of CubeSats for gamma-ray and X-ray transient observations. This is a long-term project (2024-2035) with three phases: single pathfinder, dual-satellite demonstrator, and full constellation.",
+                        "<strong>CAPIBARA-CRD:</strong> A cosmic ray detector for near-Earth space weather monitoring, flying on the OBA FARADAY satellite. This is a more near-term opportunity to work on flight hardware.",
+                        "You can contribute to one or both programs depending on your interests!"
+                    ]
+                },
+                {
+                    id: "organization",
+                    question: "How is CAPIBARA organized?",
+                    answer: [
+                        "We are organised into working groups by missions:",
+                        "<ul><li><strong>COSMOS:</strong> Research, data analysis, mission planning, simulations</li><li><strong>CRD:</strong> Detector development, testing</li>",
+                        "Each team has student coordinators and meets regularly. You can join multiple teams! Additionally, every member is encourage to take action in software development and outreach tasks across groups."
+                    ]
+                },
+                {
+                    id: "launch-timeline",
+                    question: "When will the satellites launch?",
+                    answer: [
+                        "Our timeline is ambitious but realistic:",
+                        "<ul><li><strong>2024-2026:</strong> Foundation phase (we are here now)</li><li><strong>~2030:</strong> COSMOS-Duo launch target (dual CubeSats)</li><li><strong>2032-2035:</strong> COSMOS-NET constellation (4 microsatellites)</li></ul>",
+                        "The CRD detector will fly on FARADAY satellite according to OBA's launch schedule (TBD)."
+                    ]
+                }
+            ]
+        },
+        {
+            section: {
+                title: "Other Questions",
+                icon: "fas fa-question-circle"
+            },
+            items: [
+                {
+                    id: "cost",
+                    question: "Is there any cost to join?",
+                    answer: [
+                        "<strong>No!</strong> Participation in CAPIBARA is completely free. We're a volunteer collaboration supported by university partnerships and grants. You'll need:",
+                        "<ul><li>Your own computer for remote work</li><li>Internet connection for meetings and collaboration</li></ul>",
+                        "If you need hardware access for your work, we'll arrange access through partner universities."
+                    ]
+                },
+                {
+                    id: "credit-authorship",
+                    question: "Will I get credit/authorship for my work?",
+                    answer: [
+                        "<strong>Absolutely!</strong> We follow a clear authorship policy:",
+                        "<ul><li>All contributors are acknowledged in publications</li><li>Significant contributors earn authorship on papers</li><li>Your work is documented and recognized</li><li>You can showcase your contributions for future opportunities</li></ul>",
+                        "See our <a href=\"/docs/public/governance/AUTHORSHIP_POLICY.html\">Authorship Policy</a> for details."
+                    ]
+                },
+                {
+                    id: "professors-advisors",
+                    question: "Can professors/advisors get involved?",
+                    answer: [
+                        "<strong>Yes, we'd love that!</strong> We're always looking for advisors and mentors:",
+                        "<ul><li>Join our Advisory Board to provide guidance</li><li>Host a student team at your institution</li><li>Provide lab space or equipment access</li><li>Supervise student thesis projects</li><li>Collaborate on research publications</li></ul>",
+                        "Contact us at <a href=\"/contact.html\">our contact page</a> to discuss opportunities."
+                    ]
+                },
+                {
+                    id: "how-to-apply",
+                    question: "How do I apply?",
+                    answer: [
+                        "It's simple! Just fill out our <a href=\"/application-form.html\">application form</a> or contact us directly. We'll get back to you within a few days to set up an introductory call and help you get started.",
+                        "There's no formal selection process. Ask you this question: am I motivated and willing to contribute? If the answer is yes, you're in!"
+                    ]
+                }
+            ]
+        }
+    ];
+
+    function renderFAQ() {
+        const container = document.getElementById("faq-container");
+        if (!container) return;
+
+        faqData.forEach(sectionData => {
+            // Create section element
+            const section = document.createElement("section");
+            section.className = "faq-section";
+
+            // Create section header
+            const sectionHeader = document.createElement("h2");
+            sectionHeader.innerHTML = `<i class="${sectionData.section.icon}"></i> ${sectionData.section.title}`;
+            section.appendChild(sectionHeader);
+
+            // Create FAQ items
+            sectionData.items.forEach((item, index) => {
+                const faqItem = document.createElement("div");
+                faqItem.className = "faq-item";
+                faqItem.id = item.id;
+
+                // Create question
+                const question = document.createElement("div");
+                question.className = "faq-question";
+                question.setAttribute("role", "button");
+                question.setAttribute("tabindex", "0");
+                question.innerHTML = `
+                    <span>${item.question}</span>
+                    <i class="fas fa-chevron-down"></i>
+                `;
+
+                // Create answer
+                const answer = document.createElement("div");
+                answer.className = "faq-answer";
+                answer.id = `faq-answer-${item.id}`;
+                answer.innerHTML = item.answer.map(text => `<p>${text}</p>`).join("");
+
+                // Set up aria attributes
+                question.setAttribute("aria-controls", answer.id);
+                question.setAttribute("aria-expanded", "false");
+                answer.setAttribute("aria-hidden", "true");
+
+                // Add event listeners
+                question.addEventListener("click", () => toggleFaqItem(faqItem, question, answer));
+                question.addEventListener("keydown", (event) => {
+                    const key = event.key || event.code;
+                    if (key === "Enter" || key === " " || key === "Spacebar") {
+                        event.preventDefault();
+                        toggleFaqItem(faqItem, question, answer);
+                    }
+                });
+
+                faqItem.appendChild(question);
+                faqItem.appendChild(answer);
+                section.appendChild(faqItem);
+            });
+
+            container.appendChild(section);
+        });
+    }
+
+    function toggleFaqItem(faqItem, question, answer) {
+        const isActive = faqItem.classList.contains("active");
+
+        // Close all other items
+        document.querySelectorAll(".faq-item").forEach(item => {
+            item.classList.remove("active");
+            const itemQuestion = item.querySelector(".faq-question");
+            const itemAnswer = item.querySelector(".faq-answer");
+            if (itemQuestion) {
+                itemQuestion.setAttribute("aria-expanded", "false");
+            }
+            if (itemAnswer) {
+                itemAnswer.setAttribute("aria-hidden", "true");
+            }
+        });
+
+        // Toggle current item
+        if (!isActive) {
+            faqItem.classList.add("active");
+            question.setAttribute("aria-expanded", "true");
+            answer.setAttribute("aria-hidden", "false");
+        }
+    }
+
+    // Render FAQ when DOM is ready
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", renderFAQ);
+    } else {
+        renderFAQ();
+    }
+</script>
+</body>
+</html>
