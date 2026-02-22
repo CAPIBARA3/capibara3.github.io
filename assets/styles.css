@@ -201,6 +201,10 @@ a {
     transform: rotate(-12deg);
 }
 
+.logo-text-full {
+    display: inline;
+}
+
 .logo-text-mobile {
     display: none;
 }
