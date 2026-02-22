@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the CAPIBARA Collaboration team - talented students from universities worldwide building space missions for high-energy astrophysics research.">
+    <meta name="keywords" content="Group, Team, Research Group, Presentation, Student Team, Student Group, Joan Alcaide Núñez, Martí Delgado Farriol, Lluc Soler Manich, Hongda Zheng Xu, Carles Fonseca, Alícia Lòpez, Cosmic Ray, Research, Students, PLDSpace, CAPIBARA, Space Mission, astronomy, astrophysics, aerospace">
+    <title>Meet Our Team | CAPIBARA Collaboration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="shortcut icon" type="image/png" href="/images/logos/capibara.png" />
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin="anonymous"
+    />
+
+    <!-- map-specific styling -->
+    <style>
+        .map-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #map {
+            height: 100vh;
+            width: 80%;
+        }
+
+        /* Popup styling */
+        .leaflet-popup-content-wrapper {
+            border-radius: 12px;
+            padding: 8px;
+            background: white;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+        }
+
+        .leaflet-popup-content {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+            margin: 8px;
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation will be injected here -->
+
+<main class="main-content subpage team-page">
+    <!-- Breadcrumb navigation -->
+    <nav class="breadcrumb">
+        <ol>
+            <li><a href="../">Home</a></li>
+            <li>Team</li>
+        </ol>
+    </nav>
+
+    <!-- Page header -->
+    <header class="page-header">
+        <h1>Meet Our Team</h1>
+        <p class="subtitle">The brilliant minds behind the CAPIBARA Collaboration</p>
+
+        <div class="hero-buttons" style="justify-content: center; margin-top: 30px;">
+            <a href="../application-form.html" class="btn btn-outline glow-on-hover">Join Us!</a>
+        </div>
+    </header>
+
+    <!-- Team Member Cards Section -->
+    <section class="team-grid" id="team-grid"></section>
+
+    <!-- Modals for each team member -->
+    <div id="team-modals"></div>
+
+    <div class="map-container">
+        <div id="map"></div>
+    </div>
+
+    <!-- Back link -->
+    <div class="back-link">
+        <a href="../" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </div>
+</main>
+
+<!-- Footer will be injected here -->
+
+<script src="../assets/script.js"></script>
+<script src="../loadComponents.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+<script>
+    // Modal functionality
+    function openModal(modalId) {
+        document.getElementById(modalId).style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = 'none';
+        document.body.style.overflow = 'auto'; // Re-enable scrolling
+    }
+
+    // Close modal when clicking outside of modal content
+    window.onclick = function(event) {
+        const modals = document.getElementsByClassName('modal');
+        for (let modal of modals) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    }
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            const modals = document.getElementsByClassName('modal');
+            for (let modal of modals) {
+                if (modal.style.display === 'block') {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            }
+        }
+    });
+</script>
+<script>
+    const teamData = [
+        {id: "joan",
+            name: "Joan Alcaide-Núñez",
+            role: "COSMOS Lead & Founder",
+            tagline: "Multi-Messenger Cosmology",
+            image: "/images/team/joan.jpeg",
+            contacts: [
+                { label: "Website", url: "https://joanalnu.github.io", icon: "fas fa-globe" },
+                { label: "LinkedIn", url: "https://www.linkedin.com/in/joan-alcaide-núñez/", icon: "fab fa-linkedin" },
+                { label: "GitHub", url: "https://github.com/joanalnu", icon: "fab fa-github" }
+            ],
+            bio: [
+                "I am a physics student at LMU Munich and an independent researcher specializing in multi-messenger cosmology, specifically integrating EM and GW observations to infer cosmological parameters and investigate the physics of dark energy. I prioritize methodological sovereignty, utilizing original, open-source computational frameworks to ensure first-principles understanding, transparency, and absolute reproducibility.",
+                "Within CAPIBARA, I coordinate the design and planning phases of the COSMOS program and develop simulations to forecast scientific outcomes. I also lead the 'Multi-Messenger Cosmology' internal research initiative, which investigates the synergies between the COSMOS payload, high-energy telescopes, and gravitational-wave observatories to study the expansion of the universe.",
+                "Detailed research notes and contact information are available at my <a href=\"https://joanalnu.github.io\">portfolio</a>. Correspondence via email is preferred."
+            ],
+            map: { label: "Joan - Germany", lat: 48.1371, lng: 11.5761 }
+        },
+        {id: "marti",
+            name: "Martí Delgado Farriol",
+            role: "CRD Team",
+            tagline: "Everything is to be done and everything is possible.",
+            image: "/images/team/marti.png",
+            contacts: [
+                { label: "YouTube", url: "https://youtube.com/@cienciainteres2222?si=SPf9chrj-TOlW_b5", icon: "fab fa-youtube" },
+                { label: "Email", url: "mailto:marti.delgado.farriol@gmail.com", icon: "fas fa-envelope" },
+                { label: "Presentation", url: "/images/team/presentation-videos/marti.mp4", icon: "fas fa-video" }
+            ],
+            bio: [
+                "I'm currently studying high school in Spain (2º Bachillerato) and I would like to start the physics career next year in order to become an astrophysics investigator. Before that, I have had the great opportunity to be involved in CAPIBARA's project, in which I am taking part in the scientific team. My role is to contribute and help other project members as well as analyse the data that will be recollected by our satellite, particularly in the solar cosmic rays research.",
+                "Personally, I'm a hard-working person who has a big interest and desire to enhance my knowledge. Recently, I have been studying stellar astrophysics and solar system objects. Other interests include chemistry, astrophotography, politics, philosophy and agriculture."
+            ],
+            map: { label: "Martí - Spain", lat: 41.4911, lng: 2.1408 }
+        },
+        {id: "carles",
+            name: "Carles Fonseca Maurí",
+            role: "Simulations",
+            tagline: "I am a hard-working curious student focused on understanding AGN jets!",
+            image: "/images/team/carles.png",
+            contacts: [
+                { label: "LinkedIn", url: "https://www.linkedin.com/in/carles-fonseca-mauri-61680a321/", icon: "fab fa-linkedin" },
+                { label: "GitHub", url: "https://github.com/carlesfonseca", icon: "fab fa-github" },
+                { label: "Email", url: "mailto:carles.fonseca.m@gmail.com", icon: "fas fa-envelope" },
+                { label: "Presentation", url: "/images/team/presentation-videos/carles.mp4", icon: "fas fa-video" }
+            ],
+            bio: [
+                "My thirst for challenges coupled with my curious nature has led me to explore the mysteries of the universe. Besides, I enjoy playing the piano, basketball and spending time with family and friends."
+            ],
+            map: { label: "Carles - USA", lat: 34.0522, lng: -118.244 }
+        },
+        {id: "lluc",
+            name: "Lluc Soler Manich",
+            role: "CRD Lead",
+            tagline: "Don't stop trying",
+            image: "/images/team/lluc.png",
+            contacts: [
+                { label: "GitHub", url: "https://github.com/luke3773", icon: "fab fa-github" },
+                { label: "Email", url: "mailto:llucsoler.m@gmail.com", icon: "fas fa-envelope" },
+                { label: "Presentation", url: "/images/team/presentation-videos/lluc.mp4", icon: "fas fa-video" }
+            ],
+            bio: [
+                "I'm currently studying the last year of the Spanish baccalaureate in the technological path, and I hope to start a physics or engineering degree next year. I consider myself as very enthusiastic about learning, perseverant, and someone you can always count on. In my free time I enjoy doing sports (running, skiing, cycling), playing the guitar, hanging out with friends and learning.",
+                "In these last years, I've had the opportunity to take part in multiple learning experiences: University Pompeu Fabra summer programs (artificial intelligence and its applications, and the maths behind cryptography), CIC-MIT Hackathon '22, Bojos per la Física '24, BYISC '24 (Cosmic rays)."
+            ],
+            map: { label: "Lluc - Spain", lat: 41.4036, lng: 2.1744 }
+        },
+        {id: "hongda",
+            name: "Hongda Zheng Xu",
+            role: "Member",
+            tagline: "I am a high school student interested in mathematics and physics among other scientific fields.",
+            image: "/images/team/default.png",
+            contacts: [
+                { label: "GitHub", url: "https://github.com/aticus54", icon: "fab fa-github" },
+                { label: "Email", url: "mailto:zhenghongda7@gmail.com", icon: "fas fa-envelope" },
+                { label: "Presentation", url: "/images/team/presentation-videos/hongda.mp4", icon: "fas fa-video" }
+            ],
+            bio: [
+                "I am a high school student interested in mathematics and physics among other scientific fields."
+            ],
+            map: { label: "Hongda - Spain", lat: 41.4911, lng: 2.0008 }
+        },
+        {id: "martina",
+            name: "Martina Solano Soto",
+            role: "COSMOS Team",
+            tagline: "\"Three quarks for Muster Mark\" - James Joyce",
+            image: "/images/team/default.png",
+            contacts: [
+                { label: "GitHub", url: "https://github.com/martinasolano", icon: "fab fa-github" },
+                { label: "Email", url: "mailto:martinssolanosoto@gmail.com", icon: "fas fa-envelope" },
+                { label: "Presentation", url: "/images/team/presentation-videos/martina.mp4", icon: "fas fa-video" }
+            ],
+            bio: [
+                "Hi everyone! I am Martina Solano, a passionate girl for physics (specially theoretical and astrophysics). I love discovering new things not just from physics but from other fields such as music or history. In my spare time (apart from studying physics) I enjoy spending time with my family as well as doing sport, playing the saxophone and reading!",
+                "Currently, one of the topics that interest me the most is quantum gravity, I hope we can detect gravitons in the future."
+            ],
+            map: { label: "Martina - Spain", lat: 41.4036, lng: 2.0 }
+        },
+        {id: "alessandro",
+            name: "Alessandro Sabia",
+            role: "Member",
+            tagline: "It is your duty in life to save your dream.",
+            image: "/images/team/alessandro.jpg",
+            contacts: [
+                { label: "GitHub", url: "https://github.com/alesab-08", icon: "fab fa-github" },
+                { label: "Email", url: "mailto:ale.sabi2008@gmail.com", icon: "fas fa-envelope" }
+            ],
+            bio: [
+                "I'm a passionate high school student, and my desire is to explore the cosmos to get a deep understanding of it. I'm also fascinated by the principle and the genius intuitions behind rocket science, for this reason I started designing some small homemade rockets.",
+                "I participated in national and international events such as the INAF Astronomy Championship, and I'm going to attend Nasa Space Apps Challenge"
+            ],
+            map: { label: "Alessandro - Italy", lat: 44.5, lng: 8.833 }
+        },
+        {id: "anna",
+            name: "Anna Abadal Garrido",
+            role: "Member",
+            tagline: "Passionate about quantum mechanics/physics and always ready to learn and collaborate.",
+            image: "/images/team/anna.png",
+            contacts: [
+                { label: "GitHub", url: "https://github.com/SnowBreak3742", icon: "fab fa-github" },
+                { label: "Email", url: "mailto:talaxar07@gmail.com", icon: "fas fa-envelope" },
+                { label: "YouTube", url: "https://youtube.com/@Friquisme_vs_Trekkiesme", icon: "fab fa-youtube" }
+            ],
+            bio: [
+                "I'm a curious and driven student interested in mechanics, chemistry, and quantum mechanics/physics.",
+                "I enjoy building models and diving deep into complex scientific concepts.",
+                "I'm excited to contribute to a team where I can learn from others and apply my passion to real challenges."
+            ],
+            map: { label: "Anna - Spain", lat: 41.4036, lng: 1.9058 }
+        },
+        {id: "rosa",
+            name: "Rosa Bermejo Sabugo",
+            role: "COSMOS Team",
+            tagline: "I am a Physics undergraduate, passionate about astronomy, optics and quantum mechanics.",
+            image: "/images/team/default.png",
+            contacts: [
+                { label: "LinkedIn", url: "https://www.linkedin.com/in/rosa-bermejo/", icon: "fab fa-linkedin" },
+                { label: "GitHub", url: "https://github.com/rosabersab", icon: "fab fa-github" },
+                { label: "Email", url: "mailto:rosa.b@usal.es", icon: "fas fa-envelope" }
+            ],
+            bio: [
+                "I am a Final-Year student of Physics at the University of Salamanca.",
+                "I am currently working on my Bachelor’s Thesis in collaboration with the Fundametal Physics Department at USAL, on Spectroscopy, decays of hadrons and chaotic regimes in the context of the non-relativistic quark model, funded by a Research Collaboration Scholarship, awarded by the Ministry of Education of Spain on the basis of academic merit.",
+                "As a student I am highly motivated and dedicated. I also value all opportunities to learn and grow in dynamic educational environments.",
+                "Besides being a member of the Supernova Astronomy Association and the OSAL (Optics) Student Chapter at my university, I volunteer as a content and script writer for the science outreach radio programme Radioacción Cósmica.",
+                "I am currently most interested in quantum computing and quantum technologies, as well as photonics and astroparticles.",
+                "I strive to combine my passion for reading with team sports, languages, playing the piano, and varied cultural activities."
+            ],
+            map: { label: "Rosa - Spain", lat: 40.9701, lng: -5.6635 }
+        }
+    ];
+
+    function contactLinkHtml(link) {
+        const isExternal = link.url.startsWith("http");
+        const attrs = isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
+        return `<a href="${link.url}"${attrs} aria-label="${link.label}"><i class="${link.icon}"></i></a>`;
+    }
+
+    function renderTeam() {
+        const grid = document.getElementById("team-grid");
+        const modals = document.getElementById("team-modals");
+        if (!grid || !modals) {
+            return;
+        }
+
+        teamData.forEach(member => {
+            const modalId = `${member.id}-modal`;
+            const contactsHtml = member.contacts.map(contactLinkHtml).join("");
+            const bioHtml = member.bio.map(text => `<p>${text}</p>`).join("");
+
+            const card = document.createElement("div");
+            card.className = "team-card glow-on-hover";
+            card.innerHTML = `
+                <div class="card-image">
+                    <img src="${member.image}" alt="${member.name}" class="profile-photo">
+                </div>
+                <div class="card-content">
+                    <h2>${member.name}</h2>
+                    <h3>${member.role}</h3>
+                    <p>${member.tagline}</p>
+                    <div class="contact-links">
+                        ${contactsHtml}
+                    </div>
+                </div>
+            `;
+            // Make the card behave like a keyboard-accessible button
+            card.setAttribute("role", "button");
+            card.setAttribute("tabindex", "0");
+            card.addEventListener("click", () => openModal(modalId));
+            card.addEventListener("keydown", (event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    openModal(modalId);
+                }
+            });
+            card.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", event => event.stopPropagation());
+            });
+            grid.appendChild(card);
+
+            const modal = document.createElement("div");
+            modal.id = modalId;
+            modal.className = "modal";
+            modal.innerHTML = `
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>${member.name}</h2>
+                        <span class="close" onclick="closeModal('${modalId}')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-image">
+                            <img src="${member.image}" alt="${member.name}">
+                            <div class="contact-links">
+                                ${contactsHtml}
+                            </div>
+                        </div>
+                        <div class="modal-text">
+                            ${bioHtml}
+                        </div>
+                    </div>
+                </div>
+            `;
+            modals.appendChild(modal);
+        });
+    }
+
+    renderTeam();
+
+    const map = L.map('map', {
+      zoomControl: false,
+      scrollWheelZoom: true,
+      worldCopyJump: true,
+      maxZoom: 10,
+      minZoom: 2,
+      zoomSnap: 0.1,
+    }).setView([20, 0], 2);
+
+    L.control.zoom({ position: "bottomright" }).addTo(map);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO'
+    }).addTo(map);
+
+    teamData.forEach(member => {
+      if (!member.map) {
+        return;
+      }
+
+      const marker = L.circleMarker([member.map.lat, member.map.lng], {
+        radius: 8,
+        color: "#1f78ff",
+        fillColor: "#1f78ff",
+        fillOpacity: 0.9,
+        weight: 2,
+        className: "glow-marker"
+      }).addTo(map);
+
+      marker.bindPopup(`<div>${member.map.label}</div>`);
+    });
+  </script>
+</body>
+</html>
