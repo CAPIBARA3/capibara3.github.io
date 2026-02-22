@@ -1,30 +1,139 @@
 # CAPIBARA Collaboration Agreement
 ## Version 1.0 | Effective Date: January 1, 2026
 
-### 1. Mission Statement
-The CAPIBARA Collaboration is an international, student-led initiative to develop and operate space-based observatories for high-energy astrophysics and cosmic ray research. We operate on principles of open science, educational training, and incremental technological development.
+## What is CAPIBARA?
 
-### 2. Organizational Structure
-- **Founding Director:** Joan Alcaide Núñez (oversees collaboration-wide administration)
-- **Program Directors:** 
-  - CAPIBARA-CRD: Lluc Soler Manich
-  - CAPIBARA-COSMOS: Joan Alcaide Núñez
-- **Advisory Board:** To be composed of 3-5 senior scientists/engineers
-- **Member Institutions:** To be composed by our host universities. Formalised via signing Memorandum of Understanding.
-- Note that each program has its own advisory board and member institutions.
+CAPIBARA is an **informal student research collaboration** focused on space science and high-energy astrophysics. We're a group of students learning by doing — building instruments, analyzing data, and doing real science together.
 
-### 3. Decision Making
-- **Collaboration-wide decisions (operation):** Proposed and voted for consensus (minimum of >50%)
-- **Strategic decisions:** Consensus among program leads, majority of team members and advisory board
-- **New member admissions:** Approved by program leads
+**Important**: This is not a legally registered organization. It's a volunteer collaboration of students and advisors working together on shared research interests.
 
-### 4. Intellectual Property (IP) Policy
-- All hardware designs, software, and documentation are **open source** under MIT License (or the equivalent BSD-3-Clause) unless otherwise required by partner institutions.
-- Scientific data will be public with maximum 6-month proprietary period for analysis.
-- Publications must acknowledge "The CAPIBARA Collaboration" and follow our authorship policy.
-- Hardware designs and productions will be under the CERN-OHL-P-2.0 license
-- Documentation, papers, presentations, processed data will be available under a commons license CC-BY 4.0, except for work containing unpublished data or results. Attribution must be always included.
-- All rights are reserved for branding, logos and names.
+## Key Definitions
 
-### 5. Amendment Process
-This agreement can be amended by 2/3 vote of the Collaboration members. Optimally, there a majoritarian support by the advisory board.
+- **Programme Lead**: Student leading a specific programme (CAPIBARA-CRD or CAPIBARA-COSMOS). Currently: Lluc Soler (CRD), Joan Alcaide (COSMOS)
+- **Advisory Board**: Faculty or senior scientists who mentor us (voluntary, informal)
+- **Member**: Anyone who's joined and contributes regularly
+- **Active Member**: Someone who's contributed in the past 6 months
+- **Consensus**: When most people (~2/3) agree on something important
+- **Minor**: Someone under 18 years old
+
+## How We're Organized
+
+**Current Structure (~10 students)**:
+- **Programme Leads**: Students who coordinate each project (CRD, COSMOS)
+- **Members**: Everyone who actively contributes
+- **Advisors**: Faculty/professionals who help when we need guidance
+
+**Host Institutions**: Our home universities (currently informal partnerships)
+
+## How We Make Decisions
+
+**Day-to-day stuff**: Programme Leads decide or ask the team  
+**Important things** (new policies, major changes): We discuss and vote if needed — usually aim for ~2/3 agreement  
+**New members**: Programme Lead approves after application  
+**Urgent matters**: Programme Leads decide and inform everyone
+
+**Philosophy**: We try to be democratic but practical. With a small group, we mostly reach consensus through discussion.
+
+## Intellectual Property (Open Science)
+
+We believe in open science:
+
+- **Software**: Open source (MIT or BSD-3-Clause license)
+- **Hardware**: Open hardware (CERN-OHL-P-2.0 license)
+- **Documentation**: Creative Commons (CC-BY 4.0)
+- **Data**: Public after 6 months (gives us time to analyze it first)
+- **Papers**: Must acknowledge "CAPIBARA Collaboration"
+- **Branding**: CAPIBARA name/logo stays with the collaboration
+
+**Why?** So others can learn from our work and we can learn from theirs.
+
+## Changes to This Agreement
+
+We can update this as we learn and grow. Major changes need discussion and general agreement (~2/3 of active members).
+
+## Important Legal Stuff
+
+**Disclaimer**: CAPIBARA is an informal student group, not a legal entity. Everything we provide (code, designs, data, documentation) is "as is" — we're students learning, so use at your own risk!
+
+**Your Responsibility**:
+- Follow your university's safety and ethics rules
+- Get necessary approvals from your institution
+- Be responsible for your own safety
+- If you're under 18: work under appropriate supervision
+- Have insurance through your university or family
+
+**No Liability**: Since we're an informal group, there's no organization that can be sued. We're all just students collaborating voluntarily.
+
+## Rules for Members Under 18
+
+If you're under 18, your parent/guardian must:
+- Complete the [Parental Consent Form](PARENTAL_CONSENT_FORM.md)
+- Be okay with you participating in online research activities
+- Understand the time commitment (~2 hours/week)
+
+**Safety rules**:
+- No private chats between adults and minors (all communication in groups)
+- Parents can observe any meetings/activities
+- Parents can withdraw consent anytime
+
+**Why?** To keep everyone safe and make sure parents know what their kids are doing.
+
+## Governing Law
+
+Since we're international and informal:
+- We try to follow GDPR principles for privacy (good baseline)
+- You're responsible for following your own country's/institution's laws
+- If there are disputes, we talk them out (see [Code of Conduct](CODE_OF_CONDUCT.md))
+
+## Leaving the Collaboration
+
+**Voluntary**: You can leave anytime — just let the Programme Lead know. We'll:
+- Remove your GitHub access within a week
+- Handle any in-progress authorship fairly (see [Authorship Policy](AUTHORSHIP_POLICY.md))
+- Delete your personal data if you want (see [Privacy Policy](PRIVACY_POLICY.md))
+- You can stay listed as "Alumni" if you'd like
+
+**Being Removed**: If someone seriously violates the [Code of Conduct](CODE_OF_CONDUCT.md) or [Membership Policy](MEMBERSHIP_POLICY.md), they may be removed. See those policies for details.
+
+## Confidentiality
+
+**Keep private**:
+- Unpublished results (until we publish them)
+- Internal discussions and disagreements
+- Other people's personal information
+- Anything explicitly marked "don't share"
+
+**OK to share**:
+- Public GitHub stuff
+- Published papers
+- Your own work (with proper attribution)
+- General info about the collaboration
+
+**With your advisor**: It's fine to discuss your work with your supervisor/advisor.
+
+## What If the Collaboration Ends?
+
+If CAPIBARA ever dissolves (hopefully not!):
+- Public GitHub repos stay public forever (that's how GitHub works)
+- We'll archive our work appropriately
+- Personal data gets deleted
+- In-progress papers get finished or properly attributed
+
+## Related Policies
+
+This agreement works together with:
+- [Code of Conduct](CODE_OF_CONDUCT.md) — How we treat each other
+- [Membership Policy](MEMBERSHIP_POLICY.md) — Joining and participation
+- [Authorship Policy](AUTHORSHIP_POLICY.md) — Credit for papers
+- [Privacy Policy](PRIVACY_POLICY.md) — Your data
+- [Communications Policy](COMMUNICATIONS_POLICY.md) — Staying in touch
+
+Read all of them — they're designed to be clear and fair.
+
+---
+
+**By joining CAPIBARA**, you're agreeing to follow these guidelines. They're here to help us work together effectively and fairly.
+
+**Questions?** [Email](https://capibara3.github.io/internal-contact.html)
+
+**Last Updated**: January 1, 2026  

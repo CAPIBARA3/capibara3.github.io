@@ -1,30 +1,276 @@
-# CAPIBARA Collaboration Authorship & Publication Policy
+# Authorship Policy
 ## Version 1.0 | Effective Date: January 1, 2026
 
-## 1. Publication Categories
+## Why This Matters
 
-### A. Technical/Instrument Papers
-(e.g., "Design of the CAPIBARA-1 GAGG Detector")
+Getting authorship credit is important for your career! This policy ensures everyone gets fair credit for their work.
 
-**Author list:** All contributors to the specific work described, listed alphabetically.
+## Types of Papers
 
-**Collaboration author:** "for the CAPIBARA Collaboration"
+### Technical/Instrument Papers
 
-### B. Science Results Papers  
-(e.g., "First GRB detection with CAPIBARA-1")
+**Author list**: Everyone who contributed to that specific thing, alphabetically by last name
 
-**Author list:** The CAPIBARA Collaboration (with consortium author list in appendix)
+**Acknowledgment**: "for the CAPIBARA Collaboration" after the names
 
-**Writing committee:** 5-7 members who drafted the paper, listed first alphabetically
+**Good for**: Hardware papers, software papers, methods papers
 
-### C. Student Theses
-Students may use collaboration data for theses with approval from their programme lead.
+### Science Results Papers
 
-## 2. Authorship Requirements
-To be listed as author on collaboration papers, one must:
-1. Make significant contribution to instrumentation, software, data analysis, or interpretation
-2. Participate in paper review
-3. Approve final manuscript
+**Author list**: "The CAPIBARA Collaboration"
 
-## 3. Dispute Resolution
-Authorship disputes go to the programme lead and/or the Advisory Board for mediation.
+**In the paper**: List everyone alphabetically (usually in an appendix or footnote)
+
+**Writing team**: 3-5 people who actually write it (listed first)
+
+**Good for**: Major discoveries, survey results, flagship papers
+
+### Student Thesis Papers
+**Your thesis work**: You're first author!
+
+**Co-authors**: Your supervisor, people who helped significantly
+
+**Acknowledgment**: Credit CAPIBARA for data/support
+
+## Who Gets To Be an Author?
+
+You should be an author if you made a **substantial contribution** to:
+
+**Science/Technical Stuff**:
+- Designed or built the hardware
+- Wrote significant code or analysis tools
+- Collected or processed data
+- Did the actual analysis
+- Came up with key ideas
+
+**The Paper Itself**:
+- Wrote sections of the paper
+- Made key figures/tables
+- Critical review that improved it significantly
+
+**AND you must**:
+- Read and approve the final version
+- Respond to authorship invitation within 2 weeks
+- Be accountable for your part
+
+### What DOESN'T Count as Authorship Alone
+
+- Just general supervision
+- Providing standard resources (computer access, etc.)
+- Minor comments or feedback
+- Routine data collection without analysis
+- Being there when it happened
+- Getting funding (goes in acknowledgments)
+
+## How We Decide Authorship
+
+### For Small Papers (Most of Ours)
+
+1. **Lead author proposes list**: "I think these people should be authors"
+2. **Circulate to proposed authors**: "Are you in? Anyone we're missing?"
+3. **Finalize list**: Within a week or two
+4. **Write the paper**: Lead author + team
+5. **Everyone reviews**: All authors read and comment
+6. **Everyone approves**: All authors say "yes, submit it"
+7. **Submit!**
+
+**Timeline**: ~2-3 months total (varies a lot)
+
+### For Big Collaboration Papers
+
+1. **Programme Lead proposes**: "Let's write about X"
+2. **Form writing team**: Call for volunteers, select 3-5 people
+3. **Make author list**: Who's been active and contributed?
+4. **Opt-in period**: Members opt in (2-3 weeks)
+5. **Write draft**: Writing team writes it (~1-2 months)
+6. **Collaboration review**: Everyone reads and comments (~3 weeks)
+7. **Address comments**: Writing team revises
+8. **Final approval**: Must get >50% to approve
+9. **Submit!**
+
+**Timeline**: ~4-6 months
+
+## Author Order
+
+### Alphabetical (Default)
+Most of our papers list authors alphabetically by last name. Simple and fair.
+
+### Contribution-Based (Optional)
+If everyone agrees, we can order by contribution:
+- **First author**: Did the most work
+- **Last author**: Senior person/supervisor (common in some fields)
+- **Middle**: Others by contribution
+
+**We decide this together** before writing.
+
+### For Collaboration Papers
+- "The CAPIBARA Collaboration" as author
+- Individual names listed alphabetically in appendix
+
+## Student Thesis Work
+
+### Using CAPIBARA Data for Your Thesis
+
+You're allowed! Just:
+
+1. **Ask first**: Email Programme Lead describing what you want to do
+2. **Get approval**: Usually quick and easy
+3. **Do your work**: Analyze, write thesis
+4. **Acknowledge us**: Mention CAPIBARA in acknowledgments
+5. **Share draft**: Let Programme Lead read it before defense
+
+**Your rights**:
+- You can publish first (we won't scoop you)
+- You're first author on thesis papers
+- CAPIBARA can also publish using the same data (with credit to you)
+
+### Example Acknowledgment:
+> "This work was conducted as part of the CAPIBARA Collaboration. Data was provided by CAPIBARA-COSMOS/CRD. I thank the collaboration members for their support, particularly [names]."
+
+## The Writing Process
+
+### Drafting
+- Lead author or writing team writes first draft
+- Share early drafts with team for feedback
+- Iterate until it's solid
+
+### Review
+- Circulate to all proposed authors
+- Give 2-3 weeks for comments
+- Address comments or explain why not
+- Multiple rounds if needed
+
+### Approval
+- Final version sent to all authors
+- Need explicit "yes" from everyone
+- Non-responders: send reminder, then may remove from author list
+- Must approve within 2 weeks usually
+
+## Disputes (Hopefully Rare!)
+
+### If There's a Disagreement About Authorship:
+
+1. **Talk it out**: Try to resolve directly
+2. **Programme Lead mediates**: Looks at evidence, proposes solution
+3. **Advisory Board**: If still stuck, advisors help decide
+4. **Decision is final**: Made by Programme Lead with advisor input
+
+**Prevention is better**: Discuss authorship early and often!
+
+## External Collaborators
+
+Non-members can be authors if:
+- They contributed substantially
+- Programme Lead approved the collaboration
+- They follow our policies
+
+## Adding/Removing Authors After Submission
+
+### Before Acceptance
+- Need really good reason
+- All current authors must agree
+- Must notify journal editor
+
+### After Acceptance
+- **Very hard** - journals don't like this
+- Only for serious ethical reasons
+- Requires journal and everyone's approval
+
+**Bottom line**: Get the author list right BEFORE submitting!
+
+## Acknowledgments Section
+
+People who helped but aren't authors go here:
+- Technical assistance
+- Feedback and suggestions
+- Facility staff
+- Funding agencies (always acknowledge funding!)
+
+**Template**:
+> "We thank [names] for [what they did]. This work was supported by [funding]. We acknowledge use of [facilities/resources]."
+
+## Conference Presentations
+
+### Talks/Posters
+- Include key contributors as authors
+- Acknowledge "CAPIBARA Collaboration"
+- Share slides afterward
+
+### Proceedings Papers
+- Follow same rules as regular papers (usually fewer authors for posters)
+
+## Common Scenarios
+
+### "I built the detector, but someone else used it"
+- **You**: Author on the hardware paper (probably lead)
+- **Them**: Author on the science paper using it
+- **You on their paper**: Author if you helped with the analysis; acknowledged if you just built it
+
+### "I wrote software, others use it"
+- **You**: Author (probably lead) on software paper
+- **Users**: Cite your software paper
+- **Users' papers**: You're author if the software was crucial and novel; otherwise cited
+
+### "Someone left mid-project"
+- If they contributed significantly before leaving: still an author
+- Must still review and approve
+- If can't be reached after trying: may remove (document attempts)
+
+## Data and Code Sharing
+
+When you publish, you should:
+- Archive raw data properly
+- Make analysis code available (GitHub!)
+- Include data availability statement
+- Follow journal/funding agency requirements
+
+Helps reproducibility and open science!
+
+## Publication Tracking
+
+We keep track of all CAPIBARA papers:
+- List on website
+- Celebrate publications!
+- Use for progress reports
+- Helps everyone's CVs
+
+## Policy Violations
+
+If someone:
+- Excludes qualified authors
+- Includes unqualified authors
+- Bypasses review process
+- Submits without approval
+
+This violates [Code of Conduct](CODE_OF_CONDUCT.md) and may result in:
+- Correction of author list
+- Retraction if serious
+- Membership review
+
+---
+
+## Quick Checklist
+
+**Before starting a paper**:
+- Figure out what type of paper
+- Propose author list
+- Get Programme Lead OK
+- Set clear contribution expectations
+
+**While writing**:
+- Keep everyone updated
+- Share drafts
+- Document contributions
+
+**Before submitting**:
+- All authors reviewed it
+- All authors approved it
+- Author list is final and correct
+- Acknowledgments complete
+- Data/code sharing arranged
+
+---
+
+**Last Updated**: January 1, 2026
+
+**Questions?** Ask in GitHub Discussions or email the Programme Lead.
