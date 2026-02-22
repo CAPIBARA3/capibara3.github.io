@@ -1,154 +1,221 @@
-# CAPIBARA Collaboration Membership Policy
+# Membership Guide
 ## Version 1.0 | Effective Date: January 1, 2026
 
-### 1. Membership Tiers & Benefits
+## Who Can Join?
 
-#### Tier 1: Student Member
-**Requirements**
-- Currently enrolled student (high school undergraduate, graduate)
-- Signed Membership agreement
-- Complete onboarding checklist (`env` guides only), including joining GitHub organisation
-- Minimum of 2 hours/week contribution
+**Students** (high school, undergrad, grad) interested in space science, astrophysics, or cosmic rays!
 
-**Benefits:**
-- Write Access to all team's repositories
-- Listed as collaboration member on website (with consent)
-- Eligible for authorship per AUTHORSHIP_POLICY.md
-- May represent CAPIBARA at conferences
-- Vote in decisions
+**What we're looking for**:
+- **Curiosity**: Want to learn and do real science
+- **Time**: ~2 hours/week (flexible - more when you can, less during exams)
+- **English**: Good enough to communicate (doesn't have to be perfect)
+- **Teamwork**: Can work with others online
+- **Interest**: In physics, engineering, data analysis, or outreach
 
-#### Tier 2: External Contributor
-**Requirements:**
-- Contributes once or occasionally
-- May be professionals, alumni, or irregular students
-- Code of Conduct agreement (by contributing to a repository you agree to it)
+**What you DON'T need**:
+- ❌ A physics degree
+- ❌ Coding experience (we can teach you!)
+- ❌ Perfect grades
+- ❌ Fancy equipment
 
-**Benefits:**
-- Access to relevant GitHub repositories
-- Fairly regular contributors may be listed on the website as such
-- May earn authorship for substantial contributions, regulated by AUTHORSHIP_POLICY.md
+## Types of Membership
 
-#### Tier 3: Advisory Member
-**Requirements:**
-- Faculty, industry professional, or senior scientist
-- Agrees to mentor/advise 1 hour/month
+### Active Student Members (~10 currently)
+**You**: Contribute regularly, part of the team
+
+**Requirements**:
+- Submit application (see [how to apply](../onboarding/00_applying_to_join.md))
+- Complete simple onboarding (set up GitHub, etc.)
+- Follow [Code of Conduct](CODE_OF_CONDUCT.md)
+- Contribute when you can (~2 hrs/week average)
+
+**Benefits**:
+- GitHub write access  
+- Listed on website (if you want)
+- Eligible for paper authorship
+- Voice in decisions
+- Learn tons of stuff!
+
+**Under 18?** Your parent/guardian needs to complete [this form](PARENTAL_CONSENT_FORM.md).
+
+### Occasional Contributors
+**You**: Help out sometimes, maybe alumni or busy students
+
+**Requirements**:
+- Follow [Code of Conduct](CODE_OF_CONDUCT.md)
+- Contribute when you can
+
+**Benefits**:
+- GitHub access to relevant projects
+- Can earn authorship for significant work
+- Listed as contributor (if regular enough)
+
+### Advisors/Mentors
+**You**: Faculty or professional who can mentor us
+
+**Requirements**:
+- Be willing to advise (~1 hour/month)
 - Approved by Programme Leads
 
-**Benefits:**
-- Listed on website as member of the Advisory Board
-- Access to the GitHub repositories
-- Invitation to non-advisign meetings
+**Benefits**:
+- Listed as advisor
+- Access to see what we're doing
+- Invited to meetings
 
+## How to Join
 
-### 2. Requirements
+### 1. Apply
+Fill out the application on our website: [https://capibara3.github.io](https://capibara3.github.io)
 
-Additionally, there are general requirements to ensure seamless and enriching collaboration:
-1. Strong English communication (oral and written) is required for collaboration and outreach
-2. Curiosity and interest in a field(s), not necessarily experience or expertise in that field
-    2.1 For technical and scientific positions: in mathematics, physical sciences, chemistry or engineering
-    2.2 For outreach and adminstration positions: in communication, arts, education or law
+Tell us:
+- Who you are
+- What you're interested in (CRD? COSMOS? Both? Unsure?)
+- What you'd like to work on
+- Your background (brief - no need for a full CV)
 
-The following skills are not required at all, but will ease your onboarding process and collaboration: strong academic record, experience in a specific field, GitHub and Python knowledge.
+### 2 Optionally: Quick Chat
+Programme Lead might schedule a 20-30 min video call to:
+- Say hi
+- Answer your questions
+- Figure out how you can contribute
+- Make sure it's a good fit
 
-Students that only partially fulfill the requirements outlined in this section may also be accepted to be part of CAPIBARA upon approval of programme lead.
+**No stress** - this is informal!
 
-### 3. Application Process
+### 3. Get Started
+If accepted:
+- Sign the membership agreement (simple)
+- If under 18: parent completes [consent form](PARENTAL_CONSENT_FORM.md)
+- Join GitHub organization
+- Complete [onboarding tutorials](../onboarding/index.md) (just the basics)
+- Get assigned a mentor or buddy
 
-#### For Student Members:
-1. Submit application via website form
-2. Interview with Programme Lead (30 min video call) (optional)
-3. Receive email requesting signed documents as PDF
-4. Complete onboarding tutorials to get started
-5. 30-day probationary period
-6. Full membership granted upon Programme Lead approval
+### 4. Probation Period (~1 month)
+- See if you like it
+- We see if it's working out
+- No commitment - you can leave, we might suggest it's not a fit
+- Most people continue!
 
-Prospective students can visit a step by step guide in [here](../onboarding/00_applying_to_join.md).
+## What's Expected
 
-#### For Advisory Members:
-1. Invitation from Programme Lead or contact us
-2. Review of CV/background
-3. Meeting with Programme Lead
-4. Signed Memorandum of Understanding
+### All Members Should:
+✅ **Be respectful**: Follow [Code of Conduct](CODE_OF_CONDUCT.md)  
+✅ **Communicate**: Let us know if you'll be inactive  
+✅ **Contribute**: Do something (code, analysis, documentation, ideas...)  
+✅ **Document**: Write down what you did  
+✅ **Participate**: Join meetings when you can  
 
-### 4. Expectations & Responsibilities
+### Time Commitment
+- **Minimum**: ~2 hours/week average
+- **Reality**: Some weeks more, some weeks zero (exams, life, etc.)
+- **If inactive**: Let us know! We understand student life
 
-#### All Members Must:
-- Contribute constructively to team goals
-- Communicate availability changes
-- Document their work
-- Respect collaboration policies
-- Attend meetings
+**Quality over quantity** - an hour of focused work beats 10 hours of distraction.
 
-#### Time Commitment:
-- **Minimum:** 2 hours/week for Student Members
-- **Recommended:** 3+ hours/week for leadership roles
-- **Tracking:** Via GitHub commit log
+## Staying Active
 
-### 5. Removal of Membership
+**Active  = contributed in past 6 months**
 
-#### Grounds for Removal:
-1. **Inactivity:** No contributions for 12 months without notice
-2. **Violations:** Repeated breaches of Code of Conduct or any of the Collaboration's policies
-3. **Harmful Actions:** Deliberate sabotage, harassment, data theft
-4. **Misrepresentation:** Falsifying credentials or contributions
+Contributions count as:
+- Code commits
+- Issues/discussions
+- Documentation
+- Analysis
+- Meetings
+- Outreach
+- Testing
 
-#### Removal Process (Progressive):
-```
-Incident → Private Warning → 30-Day Probation → Vote → Removal
-```
-1. **Documentation:** Incident report by Programmeme Lead
-2. **Private Discussion:** With member to understand situation
-3. **Probation Period:** 30 days to improve (except for severe violations)
-4. **Team Vote:** Majority vote of Programme Lead + CoC committee
-5. **Notification:** Formal email with reasons and appeal process
+**Inactive?** That's okay! Just:
+- Let us know if you're taking a break
+- We might move you to "Alumni" after 12 months
+- You can always come back
 
-#### Appeal Process:
-1. Written appeal within 14 days of removal
-2. Reviewed by 3-member panel (1 Advisory, 2 Student Members not involved)
-3. Decision within 30 days
-4. Final decision binding
+## If Things Aren't Working Out
 
-### 6. Alumni Status
-- Graduating students may become Associate Members
-- Maintain website listing (with "Alumni" tag)
-- Invited to some events
-- May continue contributing if desired
-- Removed members may not be included in the alumni community
+### You Want to Leave
+No problem! Just:
+1. Email the Programme Lead
+2. We'll wrap up any in-progress work
+3. Remove GitHub access
+4. Handle data per [Privacy Policy](PRIVACY_POLICY.md)
+5. You can stay listed as "Alumni"
 
-### 7. Institutional Membership
-For universities/labs wishing to formally partner:
-1. Signed Memorandum of Understanding (MoU template coming)
-2. Designated faculty liaison
-3. Resource contribution (lab space, compute, etc.)
+**No hard feelings** - student life is busy and priorities change!
+
+### We Need to Remove Someone
+
+This **rarely** happens, but if someone:
+- Violates [Code of Conduct](CODE_OF_CONDUCT.md) seriously
+- Is completely inactive without communication (12+ months)
+- Acts harmfully toward the collaboration
+
+**Process**:
+1. **Talk first**: Programme Lead discusses the issue
+2. **Warning**: Clear explanation of problem
+3. **Probation**: 30 days to improve (if appropriate)
+4. **Decision**: Programme Lead + 2 senior members review
+5. **Removal**: If necessary, with clear reasoning
+
+**Appeal**: Can appeal to Advisory Board within 14 days
+
+### Special Case: Minors
+Any violation involving minors (especially safety rules) is taken very seriously and may result in immediate removal.
+
+## Alumni Status
+
+When you leave/graduate:
+- Can be listed as "Alumni" on website
+- Can stay in touch
+- Invited to occasional events
+- Welcome to contribute if you have time
+- Can always rejoin formally if circumstances change
+
+## Advisors/Faculty
+
+Want to formally partner or mentor? Great!
+
+**Contact**: [Email](https://capibara3.github.io/contact.html)
+
+**We value**:
+- Mentorship and guidance
+- Connecting us with resources
+- Scientific expertise
+- Career advice
+- Reality checks
+
+**We don't expect**:
+- Tons of time
+- Micro-management
+- Funding (nice if possible, but not required)
+
+## Membership Agreement
+
+By joining CAPIBARA, you agree to:
+- Follow all collaboration policies ([Code of Conduct](CODE_OF_CONDUCT.md), [Privacy Policy](PRIVACY_POLICY.md), etc.)
+- Contribute when you can (~2 hrs/week)
+- Be professional and respectful
+- Give credit appropriately (cite CAPIBARA in relevant work)
+- Keep unpublished stuff confidential
+- Work under appropriate supervision (especially if under 18)
+
+**Signature**: Digital signature via email as signed PDF
 
 ---
 
-## Membership Agreement (To be signed)
+**For Members Under 18**:
 
-By joining the CAPIBARA Collaboration, I agree to:
-- Abide by all collaboration policies
-- Contribute a minimum of 2 hours/week (Student Members)
-- Maintain professional conduct
-- Acknowledge collaboration in relevant publications
-- Respect data privacy and intellectual property policies
+Your parent/guardian must also complete and sign the [Parental Consent Form](PARENTAL_CONSENT_FORM.md).
 
-I, ________________________________________________,  hereby confirm that I have read, understood, and agree to the terms of this Membership Agreement.
+**Note**: The parental consent form includes detailed provisions for minors and must be reviewed, completed, and signed by a parent or legal guardian.
 
-Signature: ________________________________________
+---
 
-Date: _____________________________________________
+## Questions?
 
-Students that are underage (less than 18 years old) must also submitt a declaration by parents or legal tutors.
+**General**: Post in GitHub Discussions  
+**Application**: [Email](https://capibara3.github.io/internal-contact.html)
+**Specific**: Tag the Programme Lead
 
-If the member is under 18 years of age:
+---
 
-I, ________________________________________________, as the parent/legal guardian of the above-named member, consent to their participation in the CAPIBARA Collaboration and agree to the terms outlined in this agreement.
-
-Relationship to Member: _____________________________
-
-Signature: ________________________________________
-
-Date: _____________________________________________
-
-
-The submission of this document must be via email to the official collaboration email, in PDF form and is a necessary requirement to joining the CAPIBARA Collaboration. If you are joining the CAPIBARA Collaboration for the first time, you will first need to submit the application form and will then be requesteed to send the signed document via email. Please, visit the \href[applying to join](../onboarding/00_applying_to_join.md) tutorial for more details on the process.
+**Last Updated**: 22 February 2026

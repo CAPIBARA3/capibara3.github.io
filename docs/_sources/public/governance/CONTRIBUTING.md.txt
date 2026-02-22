@@ -12,7 +12,7 @@ Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community in
 1. Read the **README** of the repo to understand the project goals and setup
 2. Make sure Git is [installed and set up](https://docs.github.com/en/get-started/git-basics/set-up-git)
 3. Familiarize yourself with the [GitHub flow](https://docs.github.com/en/get-started/using-github/github-flow)
-4. Review our [Governance Charter](./0_governance.md) and [Membership Agreement](./1_membership.md)
+4. Review our [Collaboration Agreement](COLLABORATION_AGREEMENT.md) and [Membership Policy](MEMBERSHIP_POLICY.md)
 
 ### Useful Links
 - [Finding ways to contribute](https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github)
@@ -92,7 +92,7 @@ We welcome all types of contributions! Here's how to make meaningful changes:
    # Run existing tests
    pytest
 
-   # Run liners if available
+   # Run linters if available
    flake8 .
    black --check .
    ```
@@ -119,7 +119,7 @@ git commit -m "test(analysis): add unit tests for statistics module"
 * `test`: Adding tests
 * `chore`: Maintenance tasks
 
-**Keep Commits Atomic:
+**Keep Commits Atomic:**
 * One logical change per commit
 * Commit often, push when ready
 * Write clear commit messages
@@ -178,13 +178,7 @@ Before submitting, ensure:
 * API documentation
 * Translation
 * Example projects
-+ README improvements
-
-### Design & UX
-* UI/UX improvements
-* Graphics and diagrams
-* User research
-* Accessibility improvements
+* README improvements
 
 ### Community
 * Answering questions
@@ -199,7 +193,7 @@ Before submitting, ensure:
 
 If contributing for academic credit:
 
-1. Notify Steering Committee of requirements
+1. Notify Programme lead about requirements
 2. Document hours and contributions
 3. Request supervisor coordination if needed
 4. Ensure compliance with institutional policies
@@ -210,7 +204,6 @@ All contributions are recognized through:
 
 * GitHub contributor graph
 * Publication acknowledgements
-* Annual contributor awards
 * Speaker opportunities
 
 ## 🛠️ Development Guidelines
@@ -256,12 +249,8 @@ All contributions are recognized through:
 
 * Technical Questions: Repository maintainers
 * Governance Questions: Steering Committee
-* Code of Conduct: [Contact Form](https://capibara3.github.io/contact)
+* Code of Conduct: [Contact Form](https://capibara3.github.io/internal-contact)
 * General Inquiries: [GitHub Discussions](https://github.com/capibara3/discussions)
-
-### Meetings
-
-Check for meeting availability for specific members.
 
 ## 🙏 Acknowledgments
 

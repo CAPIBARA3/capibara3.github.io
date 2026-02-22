@@ -2,11 +2,17 @@
 
 > Adapted from the Contributor Covenant, version 2.1
 
+## TL;DR
+
+**Be kind, be respectful, be professional.** We're a small student collaboration learning together. Treat others how you'd want to be treated. If someone's being hurtful or inappropriate, tell a Programme Lead.
+
+---
+
 ## Our Pledge
 
-We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+We pledge to make CAPIBARA a harassment-free, welcoming experience for everyone, regardless of age, background, disability, ethnicity, gender identity, experience level, education, nationality, appearance, race, religion, or sexual orientation.
 
-We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
+We're here to do science and learn together—let's make it positive and inclusive.
 
 ## Our Standards
 
@@ -42,48 +48,50 @@ Given our educational mission and inclusion of student researchers under 18, we 
 
 ## Enforcement Responsibilities
 
-Community leaders (Steering Committee members, Project Lead, Technical Leads) are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.
+Programme Leads and senior members are responsible for enforcing these standards. They'll take fair action if behavior is inappropriate, threatening, or harmful.
 
-Community leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate.
+This includes removing/editing problematic comments, commits, code, issues, or other contributions—with explanation when appropriate.
 
 ## Scope
 
-This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include:
+This Code of Conduct applies everywhere we interact as CAPIBARA members:
+- GitHub (issues, PRs, discussions, comments)
+- Email and video calls
+- Conferences or events where you represent CAPIBARA
+- Anywhere you're acting as a CAPIBARA member
 
-* Using an official e-mail address
-* Posting via an official social media account
-* Acting as an appointed representative at an online or offline event
-* Participating in collaboration activities, whether online or in person
-* Using collaboration infrastructure (GitHub, WhatsApp, email lists)
+**Important**: This applies even in "informal" spaces like WhatsApp if you're discussing CAPIBARA work.
 
-## Reporting and Enforcement Process
+## Reporting Problems
 
-### How to Report
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at:
+### If Someone Violated This Code
 
-**Primary:** [capibara-collaboration@outlook.com](mailto:capibara-collaboration@outlook.com)
-**Alternative:** Contact any Steering Committee member directly
+**Report to**: [internal contact](https://capibara3.gihthub.io/internal-contact.html)
 
-All complaints will be reviewed and investigated promptly and fairly. All community leaders are obligated to respect the privacy and security of the reporter of any incident.
+**Or contact**: Any Programme Lead directly
 
-### What to Include in Reports
-When reporting, please include:
-- Your contact information
-- Names of individuals involved
-- Description of the behavior
-- When and where the incident occurred
-- Any supporting evidence (screenshots, logs, etc.)
-- Whether you'd like to remain anonymous
+**Include if possible**:
+- What happened (be specific)
+- Who was involved
+- When and where it occurred
+- Screenshots or evidence (if you have any)
+- Whether you want to remain anonymous
 
-### Investigation Process
-1. **Acknowledgment:** Report received within 24 hours
-2. **Investigation:** Preliminary review within 72 hours
-3. **Information Gathering:** Additional facts collected as needed
-4. **Decision:** Determination made by Steering Committee
-5. **Communication:** Outcome communicated to reporter and accused
-6. **Appeal:** 7-day appeal period available
+**We promise**:
+- We'll acknowledge your report within 24 hours
+- We'll investigate fairly and promptly
+- We'll keep it confidential
+- We won't retaliate against good-faith reports
 
-## Enforcement Guidelines
+### What Happens Next
+
+1. **We acknowledge**: "Got your report, looking into it"
+2. **We investigate**: Talk to people, gather facts
+3. **We decide**: What happened and what to do about it
+4. **We communicate**: Let you and the accused know the outcome
+5. **Appeal option**: 7 days to appeal if you disagree
+
+## Consequences
 
 Community leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:
 
@@ -105,61 +113,59 @@ Community leaders will follow these Community Impact Guidelines in determining t
 
 **Consequence**: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.
 
-### 4. Permanent Ban
+### 4. Permanent Removal
 
-**Community Impact**: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, aggression toward or disparagement of classes of individuals, or violations involving minors.
+**For**: Pattern of violations, sustained harassment, attacks on groups of people, or violations involving minors
 
-**Consequence**: A permanent ban from any sort of public interaction within the community. All existing contributions may be deprecated or removed, and the individual may be reported to relevant authorities if the violation involves illegal activity or minors.
+**Consequence**: Permanently banned from CAPIBARA. Removed from all platforms. May be reported to authorities if illegal activity or minors involved.
 
-### Special Consideration: Minor Safety Violations
-Any violation involving minors, especially breaches of the "no private communication" rule, will result in immediate temporary ban pending investigation, with high likelihood of permanent ban.
+**Special case**: ANY violation involving minor safety (like private messaging a minor) = immediate temp ban, likely permanent.
+
+---
 
 ## Appeals
 
-Individuals may appeal enforcement decisions by:
-1. Submitting written appeal to Project Lead within 7 days of decision
-2. Presenting new evidence or context
-3. Receiving final decision within 14 days
+Think the decision was unfair? You can appeal:
+1. Write to Programme Lead within 7 days
+2. Explain why you think it's wrong
+3. Get a final decision within 14 days
 
-## Confidentiality
+## We Protect Reporters
 
-All reports and proceedings are confidential to protect all parties involved. Information is shared only with those who need to know for investigation and enforcement.
+**If you report in good faith**, we will NOT retaliate, even if the report turns out to be unfounded.
 
-## Good Faith Reports
-
-We will not retaliate against anyone who reports a violation in good faith, even if the report is later determined to be unfounded. However, knowingly making false reports is itself a violation of this Code of Conduct.
+**But**: Knowingly making false reports is itself a violation.
 
 ## Support for Targets
 
-If you are the target of any violation, we will:
-- Provide support and resources
-- Respect your wishes regarding involvement in proceedings
-- Help you disengage from interactions with the violator
-- Offer mental health resources if needed
+If you're the target of a violation:
+- We'll support you
+- We'll respect your wishes about involvement
+- We'll help you avoid the violator
+- We can connect you with resources if needed
 
-## Education and Prevention
-
-We commit to:
-- Regular Code of Conduct training for leaders
-- Clear communication of expectations
-- Creating inclusive meeting and collaboration practices
-- Addressing systemic issues that enable harmful behavior
+---
 
 ## Attribution
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 2.1, available at https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.
+This Code of Conduct is adapted from the [Contributor Covenant, version 2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct.html).
+
+**Last Updated**: 1 January 2026
+
+---
+
+**Questions?** [internal contact](https://capibara3.github.io/internal-contact.html)
+
+*We're a small group learning to work together. These rules help us treat each other with respect and create a safe, productive environment for everyone.*
 
 Community Impact Guidelines were inspired by [Mozilla's code of conduct enforcement ladder](https://github.com/mozilla/diversity).
 
 [homepage]: https://www.contributor-covenant.org
 
-For answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations.
+For answers to common questions about this code of conduct, see the FAQ at [https://www.contributor-covenant.org/faq](https://www.contributor-covenant.org/faq). Translations are available at [https://www.contributor-covenant.org/translations](https://www.contributor-covenant.org/translations).
 
 ## Updates to this Code of Conduct
 
-This Code of Conduct may be updated by the Steering Committee to address new situations or improve clarity. Changes will be communicated to all members and published in the governance repository.
+This Code of Conduct may be updated by majority consensus to address new situations or improve clarity. Changes will be communicated to all members and published in the governance repository.
 
 ---
-
-*Last updated: December 5, 2025*
-*Version: 2.1 (adapted)*
