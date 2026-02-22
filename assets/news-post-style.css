@@ -1,57 +1,33 @@
 :root {
-    /* Light Theme */
-    --primary-color: #bf87e6;
-    --secondary-color: #ffc857;
-    --accent-color: #ff4fa0;
+    --primary-color: #a56fe8;
+    --secondary-color: #ffb347;
+    --accent-color: #ff5aa2;
     --navbutton-color: #ff9800;
-    --background-color: #f5f5f5;
-    --text-color: #2d2d2d;
+    --background-color: #f7f4fb;
+    --text-color: #2b2b2b;
+    --muted-text: #5b5664;
+    --text-light: #7a7288;
     --card-bg: #ffffff;
-    --header-gradient: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-    --glow-color: rgba(255, 79, 160, 0.3);
-    --dark-bg: #111;
-    --link-color: #bf87e6;
-
-    /* Dark Theme */
-    --dark-primary: #a56bd6;
-    --dark-secondary: #ffbb33;
-    --dark-accent: #ff66a3;
-    --dark-background: #1a1a1a;
-    --dark-text: #f0f0f0;
-    --dark-card: #2d2d2d;
-    --dark-nav: #0d0d0d;
-    --dark-link: #ff66a3;
+    --header-gradient: linear-gradient(135deg, #ffcc66, #a56fe8);
+    --glow-color: rgba(165, 111, 232, 0.28);
+    --dark-bg: #0f0f12;
+    --link-color: var(--primary-color);
 }
 
-/* Add this near your :root variables */
 @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-        --primary-color: var(--dark-primary);
-        --secondary-color: var(--dark-secondary);
-        --accent-color: var(--dark-accent);
-        --background-color: var(--dark-background);
-        --text-color: var(--dark-text);
-        --card-bg: var(--dark-card);
+    :root {
+        --primary-color: #b78cff;
+        --secondary-color: #ffc15c;
+        --accent-color: #ff7ab7;
+        --background-color: #14131a;
+        --text-color: #f3f1f7;
+        --muted-text: #c1bbcf;
+        --text-light: #a79fb5;
+        --card-bg: #201e2a;
+        --header-gradient: linear-gradient(135deg, #ffc15c, #b78cff);
+        --glow-color: rgba(183, 140, 255, 0.3);
+        --dark-bg: #0b0b0e;
     }
-}
-
-/* This ensures manual toggle overrides system preference */
-[data-theme="dark"] {
-    --primary-color: var(--dark-primary);
-    --secondary-color: var(--dark-secondary);
-    --accent-color: var(--dark-accent);
-    --background-color: var(--dark-background);
-    --text-color: var(--dark-text);
-    --card-bg: var(--dark-card);
-}
-
-[data-theme="light"] {
-    --primary-color: #bf87e6;
-    --secondary-color: #ffc857;
-    --accent-color: #ff4fa0;
-    --background-color: #f5f5f5;
-    --text-color: #2d2d2d;
-    --card-bg: #ffffff;
 }
 
 /* Base Styles */
@@ -66,7 +42,7 @@ a {
 }
 
 a:hover {
-    color: #ff9800;
+    color: var(--secondary-color);
 }
 
 /* ===== NEWS POST STYLES ===== */
@@ -92,17 +68,9 @@ a:hover {
     font-size: 0.9rem;
 }
 
-body.dark-mode .article-meta {
-    color: var(--dark-text);
-}
-
 .article-meta i {
     margin-right: 0.5rem;
     color: var(--primary-color);
-}
-
-body.dark-mode .article-meta i {
-    color: var(--dark-primary);
 }
 
 .article-header h1 {
@@ -111,20 +79,12 @@ body.dark-mode .article-meta i {
     color: var(--primary-color);
 }
 
-body.dark-mode .article-header h1 {
-    color: var(--dark-primary);
-}
-
 .article-excerpt {
     font-size: 1.2rem;
     color: var(--text-color);
     font-style: italic;
     max-width: 700px;
     margin: 0 auto;
-}
-
-body.dark-mode .article-excerpt {
-    color: var(--dark-text);
 }
 
 .article-featured-image {
@@ -137,19 +97,11 @@ body.dark-mode .article-excerpt {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-body.dark-mode .article-featured-image img {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
 .image-caption {
     text-align: center;
     font-size: 0.9rem;
     margin-top: 0.5rem;
     color: var(--text-light);
-}
-
-body.dark-mode .image-caption {
-    color: var(--dark-text);
 }
 
 .article-content {
@@ -159,10 +111,6 @@ body.dark-mode .image-caption {
 .article-content h2 {
     color: var(--primary-color);
     margin: 2rem 0 1rem;
-}
-
-body.dark-mode .article-content h2 {
-    color: var(--dark-primary);
 }
 
 .article-content p {
@@ -179,11 +127,6 @@ body.dark-mode .article-content h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-body.dark-mode .article-image-right {
-    background: var(--dark-card);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
 .article-image-right img {
     width: 100%;
     margin-bottom: 0.5rem;
@@ -197,11 +140,6 @@ body.dark-mode .article-image-right {
     font-style: italic;
 }
 
-body.dark-mode .article-quote {
-    background: var(--dark-card);
-    border-left-color: var(--dark-secondary);
-}
-
 .article-quote footer {
     text-align: right;
     font-style: normal;
@@ -210,14 +148,10 @@ body.dark-mode .article-quote {
 }
 
 .article-highlight {
-    background: linear-gradient(135deg, rgba(191, 135, 230, 0.1), rgba(255, 200, 87, 0.1));
+    background: linear-gradient(135deg, rgba(165, 111, 232, 0.12), rgba(255, 179, 71, 0.12));
     padding: 1.5rem;
     border-radius: 8px;
     margin: 1.5rem 0;
-}
-
-body.dark-mode .article-highlight {
-    background: linear-gradient(135deg, rgba(165, 107, 214, 0.1), rgba(255, 187, 51, 0.1));
 }
 
 .article-footer {
@@ -230,27 +164,15 @@ body.dark-mode .article-highlight {
     gap: 1.5rem;
 }
 
-body.dark-mode .article-footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 .article-tags a {
     color: var(--primary-color);
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
-body.dark-mode .article-tags a {
-    color: var(--dark-primary);
-}
-
 .article-tags a:hover {
     text-decoration: underline;
     color: var(--accent-color);
-}
-
-body.dark-mode .article-tags a:hover {
-    color: var(--dark-accent);
 }
 
 .article-share a {
@@ -260,17 +182,9 @@ body.dark-mode .article-tags a:hover {
     transition: all 0.3s ease;
 }
 
-body.dark-mode .article-share a {
-    color: var(--dark-text);
-}
-
 .article-share a:hover {
     color: var(--accent-color);
     transform: translateY(-2px);
-}
-
-body.dark-mode .article-share a:hover {
-    color: var(--dark-accent);
 }
 
 /* Related articles */
@@ -289,10 +203,6 @@ body.dark-mode .article-share a:hover {
     color: var(--primary-color);
 }
 
-body.dark-mode .related-articles h2 i {
-    color: var(--dark-primary);
-}
-
 .related-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -305,11 +215,6 @@ body.dark-mode .related-articles h2 i {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-}
-
-body.dark-mode .related-article {
-    background: var(--dark-card);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .related-article:hover {
@@ -335,10 +240,6 @@ body.dark-mode .related-article {
     font-size: 1.2rem;
 }
 
-body.dark-mode .related-article h3 {
-    color: var(--dark-primary);
-}
-
 .related-article p {
     padding: 0 1rem;
     font-size: 0.9rem;
@@ -346,19 +247,11 @@ body.dark-mode .related-article h3 {
     margin-bottom: 0.5rem;
 }
 
-body.dark-mode .related-article p {
-    color: var(--dark-text);
-}
-
 .related-article time {
     display: block;
     padding: 0 1rem 1rem;
     font-size: 0.8rem;
     color: var(--text-light);
-}
-
-body.dark-mode .related-article time {
-    color: var(--dark-text);
 }
 
 /* Responsive adjustments */
