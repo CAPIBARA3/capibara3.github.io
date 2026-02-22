@@ -15,10 +15,10 @@ The CAPIBARA Collaboration organisation ([github.com/capibara3](https://github.c
 
 | Name | Team | Task | Role |
 | --- | --- | --- | --- |
-| carlesfonseca | CRD / COSMOS | CR simulations, COSMOS MCD | scientific collaborator |
-| snowbreak3742 | CRD | CRD engineering | technical staff |
-| delfarri | CRD | CRD analysis software | scientific collaborator |
 | luke3773 | CRD | CRD engineering | CRD lead, technical staff |
+| carlesfonseca | CRD / COSMOS | CR simulations, COSMOS MCD | external scientific collaborator |
+| delfarri | CRD | CRD analysis software | external scientific collaborator |
+| snowbreak3742 | CRD | CRD engineering | external technical staff |
 | --- | --- | --- | --- |
 | joanalnu | COSMOS | coordination, COSMOS MCD and MM cosmo | COSMOS lead, scientific collaborator |
 | martinasolano | COSMOS | COSMOS MCD | scientific collaborator |
@@ -26,7 +26,7 @@ The CAPIBARA Collaboration organisation ([github.com/capibara3](https://github.c
 | --- | --- | --- | --- |
 | alesab-08 | undecided | prep for SSEA | undecided |
 | Aticus54 | undecided | SNe/CRD support | undecided |
-| truitaderiu | undecided | COSMOS MCD? CRD support? | technical staff |
+| truitaderiu | undecided | COSMOS MCD? CRD support? | external technical staff |
 
 
 Feel free to PR this to update your tasks as you progress. Remember you can see our roadmap in our organisation's [projects](https://github.com/capibara3/projects).
@@ -37,7 +37,7 @@ Most of the contacts are either mentioned on a project's page in the main websit
 
 Anyways, here is a brief summary of important contacts:
 
-* Main [contact site](https://capibara3.github.io/contact) for any enquiry to the collaboration lead
-* Official email is linked to the contact form. Members of the collaboration may request the direct address contacting us.
+* Main [contact site](https://capibara3.github.io/internal-contact.html) for any enquiry to the collaboration lead
+* Official email is linked to the contact form. Member of the collaboration may contact us directly by writing to our address..
 * For any COSMOS program related messages you may contact @joanalnu
 * For any CRD related messages you may contact @luke3773

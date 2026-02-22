@@ -1,0 +1,266 @@
+# Parental Consent Form
+## For CAPIBARA Members Under 18
+
+---
+
+## For Parents/Guardians
+
+Thank you for supporting your child's interest in science! This form explains what CAPIBARA is and what we need from you.
+
+**What is CAPIBARA?** An informal student research collaboration (about 10 students currently) working on space science projects. We're not a company or formal organization—just students learning together online.
+
+**Contact us**: [capibara-collaboration@outlook.com](mailto:capibara-collaboration@outlook.com) or [contact form](https://capibara3.github.io/contact)
+
+---
+
+## Part 1: Your Child's Information
+
+**Full Name**: _________________________________________________________________
+
+**Preferred Name** (if different): _______________________________________________
+
+**Date of Birth**: _______ / _______ / ___________ (DD/MM/YYYY)
+
+**Email**: ____________________________________________________________________
+
+**Country**: __________________________________________________________________
+
+**School/University**: ________________________________________________________
+
+**Current Grade/Year**: _______________________________________________________
+
+**GitHub Username** (if they have one): _________________________________________
+
+**Interested in**: ☐ CAPIBARA-CRD (cosmic rays)  ☐ CAPIBARA-COSMOS (astrophysics)  ☐ Both/Unsure
+
+---
+
+## Part 2: Parent/Guardian Information
+
+**Your Name**: ________________________________________________________________
+
+**Relationship to child**: ☐ Parent  ☐ Legal Guardian  ☐ Other: __________________
+
+**Email**: ____________________________________________________________________
+
+**Phone**: ____________________________________________________________________
+
+**Backup emergency contact**: __________________________________________________
+
+**Their phone**: ______________________________________________________________
+
+---
+
+## Part 3: What Does Participation Involve?
+
+Please read and initial each item to show you understand:
+
+☐ **Online research activities** (_____)  
+Your child will participate in scientific research including data analysis, coding, hardware design, or documentation—all online via GitHub and video calls.
+
+☐ **Time commitment** (_____)  
+About 2 hours per week on average (flexible—more when they can, less during exams).
+
+☐ **Online platforms** (_____)  
+They'll use GitHub (for collaboration), email, and video conferencing (Zoom/Google Meet/etc.).
+
+☐ **Volunteer/unpaid** (_____)  
+This is educational—there's no payment, but they gain real research experience.
+
+☐ **Group communication only** (_____)  
+Adult members will NOT message your child privately. All communication happens in group settings (GitHub, group chats, team meetings).
+
+☐ **Public recognition** (_____)  
+Your child's name and contributions may appear on our website and in scientific publications (with additional consent below).
+
+☐ **Can quit anytime** (_____)  
+Your child (or you) can leave at any time, no questions asked.
+
+---
+
+## Part 4: Privacy and Data
+
+We collect and store:
+- ✅ Required: Name, email, GitHub username, school name
+- ⚠️ Optional (your choice below): Real name publicly, photo, location
+
+Their data is stored on:
+- **GitHub** (Microsoft servers, USA)
+- **Our email** (Microsoft 365)
+- **Our website** (GitHub Pages)
+
+Please check your preferences:
+
+**Required (no choice)**:
+- ☐ I understand GitHub username and activity will be public (that's how GitHub works)
+
+**Optional (your choice)**:
+- ☐ Yes, you can list their real name on the CAPIBARA website
+- ☐ Yes, you can list their school/institution on the website  
+- ☐ Yes, they can upload a profile photo if they want
+
+**Your Rights**:
+- ☐ I understand I can request to see all data you have about my child
+- ☐ I understand I can request deletion of their data (except permanent GitHub history)
+- ☐ I understand I can withdraw consent anytime
+
+More details in the [Privacy Policy](PRIVACY_POLICY.md).
+
+---
+
+## Part 5: Safety
+
+We have special rules for members under 18:
+
+**We promise**:
+- ✅ No private adult-minor communication (everything in groups)
+- ✅ You can observe any meeting your child joins
+- ✅ We'll contact you immediately if there are any concerns
+- ✅ We follow strict [Code of Conduct](CODE_OF_CONDUCT.md)
+
+**You're responsible for**:
+- ✅ Supervising your child's internet use
+- ✅ Making sure they balance this with school
+- ✅ Ensuring your child understands appropriate online behavior
+
+☐ I've read the [Code of Conduct](CODE_OF_CONDUCT.md) and will ensure my child follows it
+
+---
+
+## Part 6: Understanding the Risks
+
+**This is an online activity with typical internet risks**:
+- Exposure to inappropriate content (we'll minimize and moderate)
+- Technical frustrations (coding can be hard!)
+- Time management challenges (balancing with school)
+
+**This is an informal student group**:
+- We're not a registered organization or company
+- No formal insurance or legal protections
+- Supervision is peer-led (students leading students with some faculty advisors)
+- We do our best but can't guarantee perfect oversight
+
+☐ I understand and accept these risks
+
+☐ I confirm my child has appropriate health/liability insurance through family or school
+
+---
+
+## Part 7: Academic Work and Authorship
+
+**Good news**: Your child might get their name on real scientific papers!
+
+**You should know**:
+- Their contributions will be open source (anyone can use them with credit)
+- They may be listed as author on papers if they contribute significantly
+- Their work may be publicly attributed to them (GitHub, publications)
+- They don't get paid for this (it's educational)
+
+☐ I understand and consent to these academic collaboration terms
+
+---
+
+## Part 8: Your Rights
+
+You can:
+- ✅ **Contact us anytime** with questions or concerns
+- ✅ **Join meetings** or observe activities
+- ✅ **Access your child's collaboration data**
+- ✅ **Withdraw consent** anytime (your child just has to leave)
+- ✅ **Request data deletion**
+
+☐ I understand my rights
+
+---
+
+## Part 9: Consent Statement
+
+**I, the parent/legal guardian named above, confirm that**:
+
+☐ I have read all the collaboration policies:
+   - [Code of Conduct](CODE_OF_CONDUCT.md)
+   - [Privacy Policy](PRIVACY_POLICY.md)
+   - [Membership Guide](MEMBERSHIP_POLICY.md)
+   - [Collaboration Agreement](COLLABORATION_AGREEMENT.md)
+
+☐ I've discussed this with my child and they want to participate
+
+☐ I consent to my child participating in CAPIBARA
+
+☐ I understand this consent lasts until they turn 18 or I withdraw it
+
+☐ I'll notify you if my contact information changes
+
+☐ All information provided is accurate
+
+**Your Signature**: ___________________________________________________________
+
+**Your Printed Name**: ________________________________________________________
+
+**Date**: _______ / _______ / ___________ (DD/MM/YYYY)
+
+**Place** (City, Country): ____________________________________________________
+
+---
+
+## Part 10: Your Child's Agreement
+
+**For the student**: Have you read this with your parent/guardian? Do you understand what CAPIBARA is and want to join?
+
+☐ Yes, I want to participate in CAPIBARA  
+☐ I understand the rules and expectations  
+☐ I'll follow the Code of Conduct  
+☐ I'll tell my parent/guardian if I have any concerns
+
+**Student Signature**: ________________________________________________________
+
+**Student Printed Name**: _____________________________________________________
+
+**Date**: _______ / _______ / ___________ (DD/MM/YYYY)
+
+---
+
+## Renewal
+
+This consent is valid for 1 year. We'll email you before it expires to renew.
+
+**Next renewal due**: _______ / _______ / ___________ (Auto-calculated: 1 year from today)
+
+**When your child turns 18**, they'll need to sign their own membership agreement.
+
+---
+
+## How to Submit
+
+1. **Print this form** OR **fill it digitally**
+2. **Sign it** (both parent and student)
+3. **Scan to PDF** or **save as PDF**
+4. **Email to** the collaboration head email address.
+5. **Subject line**: "Parental Consent - [Your Child's Name]"
+
+We'll confirm receipt within 3 days and activate their membership!
+
+---
+
+## Questions?
+
+**Contact form**: [https://capibara3.github.io/contact](https://capibara3.github.io/contact)
+
+We're happy to hop on a call to explain anything or address concerns!
+
+---
+
+**For CAPIBARA Use Only**:
+
+Received by: _________________ Date: ___________  
+Programme: ☐ CRD  ☐ COSMOS  
+Verified: ☐ Age  ☐ Parent consent  
+GitHub access granted: ☐  
+Expires: ___________
+
+---
+
+**Document Version**: 1.0  
+**Last Updated**: 22 February 2026
+
+*Thank you for trusting us with your child's scientific education! We take this responsibility seriously.*

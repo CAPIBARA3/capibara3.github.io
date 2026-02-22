@@ -1,48 +1,162 @@
-# CAPIBARA Collaboration Communications & Data Policy
+# Privacy & Data Policy
 ## Version 1.0 | Effective Date: January 1, 2026
 
-### 1. Communication Channels Hierarchy
+## About This Policy
 
-#### A. Official Channels (All members must join)
-1.  **GitHub Organization** (`CAPIBARA3`)
-    - Source of truth for all technical documentation
-    - Issues & Projects for task tracking
-    - Discussions for Q&A
-2. **Official Email**
-3.  **Monthly All-Hands Video Call**
-    - Agree to a date
-    - Notes posted on GitHub docs repository
-    - Calls are managed by programme leads
+The CAPIBARA Collaboration is a small, informal student research group. This policy explains what information we collect, how we handle it, and your rights. We keep things simple and transparent.
 
-#### B. Informal Channels (Optional)
-- WhatsApp: the Whatsapp group is voluntary and not managed by the CAPIBARA Collaboration. The whatsapp group was never intended as and will not be managed or responsibility in any way by/of the CAPIBARA Collaboration. It’s entry it absolutely voluntary, not required for CAPIBARA Collaboration membership and has nothing to do with the CAPIBARA Collaboration.
+## What Information We Collect
 
+### Required Information
+- **Name** (or preferred name)
+- **Email address**
+- **GitHub username** (needed to collaborate on GitHub)
+- **Institutional affiliation** (e.g., your university)
+- **Role** (student member, advisor, etc.)
 
-### 2. Data Privacy & Security
+### Optional Information
+- Country/location
+- Research interests
+- ORCID ID
+- Profile photo
+- Academic background
 
-- We collect only: Name, email, institution, role, GitHub metadata (by joining the collaboration)
-- Stored in our GitHub website repository. Storage of data is voluntary, except GitHub username.
-- Right to be forgotten: Email the general collaboration email to request your personal data deletion anytime.
-- We never share your personal data without your consent
+### Automatically Collected
+- **GitHub activity**: Your commits, pull requests, issues, and comments on CAPIBARA repositories are public and part of GitHub's permanent record
+- **Meeting attendance**: We track who attends meetings for activity tracking
+- **Contribution records**: What you've worked on (for authorship purposes)
 
+## How We Use Your Information
 
-### 3. External Communications
+We use your information to:
+- Manage membership and GitHub access
+- Communicate about collaboration activities
+- Track contributions for fair authorship attribution
+- List active members on our website (with your consent)
+- Organize meetings and coordinate work
 
-#### A. Social Media Guidelines
-- **Official accounts:** Managed by Communications Lead
-- **Individual members:** May share public info with disclaimer: "Views my own"
-- **Never share:** Unreleased data, internal disputes, proprietary designs
+## Where Your Data is Stored
 
-#### B. Press Inquiries
-- All media requests via the [contact form](https://capibara3.github.io/contact.html")
-- Only programme leads may approve official statements
+- **GitHub**: All code, documentation, issues, and discussions (GitHub's servers, subject to their [privacy policy](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement))
+- **Email**: Microsoft Outlook/365 (subject to their privacy policy)
+- **Website**: GitHub Pages (lists of members, if you consent)
 
-#### C. Conference Presentations
-- Submit abstract to programme lead 2 weeks before deadline
-- Acknowledge: "The CAPIBARA Collaboration"
-- Share slides in the `.github-private` repository under `internal/outreach`
+## Public vs. Private Information
 
-### 4. Violation Procedure
-1. First offense: Private warning from programme lead
-2. Second offense: Temporary suspension (1 weeks)
-3. Third offense: Membership review (see MEMBERSHIP_POLICY.md)
+### Public by Default:
+- Your GitHub username (required to use GitHub)
+- Your GitHub activity (commits, comments, issues)
+- Contributions to public repositories
+
+### Public Only With Your Consent:
+- Your real name on the website
+- Your institutional affiliation
+- Your photo
+- Your ORCID or other identifiers
+
+### Always Private:
+- Your email address (unless you choose to share it)
+- Personal communications
+- Parental consent forms (for minors)
+
+## Your Rights
+
+You can:
+- **See your data**: Ask us what information we have about you
+- **Correct it**: Update any incorrect information
+- **Delete it**: Request we remove your personal information (note: GitHub repository history is permanent)
+- **Opt out**: Choose not to be listed publicly
+- **Leave anytime**: Withdraw from the collaboration
+
+**How to exercise these rights**: [Email](https://capibara3.github.io/internal-contact.html)
+
+## Special Rules for Members Under 18
+
+If you're under 18:
+- Your parent/guardian must complete the [Parental Consent Form](PARENTAL_CONSENT_FORM.md)
+- We have extra privacy protections for you
+- No adult member will message you privately (all communication in groups)
+- Your parents can access your collaboration data anytime
+
+## Data Sharing
+
+**We DO share:**
+- Public GitHub contributions (that's how open source works)
+- Your name/affiliation on the website (only with your consent)
+- Information with GitHub, Microsoft (our tools providers)
+
+**We DON'T share:**
+- Your email or personal info with third parties
+- Your data for marketing purposes
+- Anything without your permission (except legal requirements)
+
+**Exception**: We may disclose information if required by law or to protect safety (especially for minors).
+
+## How Long We Keep Data
+
+- **While you're active**: All data retained
+- **After you leave**: 
+  - Personal data deleted within 90 days (if you request it)
+  - GitHub contribution history stays (it's permanent)
+  - You can stay listed as "Alumni" if you want
+- **Emails**: Kept for 2 years then deleted
+
+## Data Security
+
+We protect your data by:
+- Limiting access to private repositories to verified members
+- Encouraging two-factor authentication on GitHub
+- Using encrypted email when possible
+- Not storing sensitive information unnecessarily
+
+**But remember**: We're a small student group, not a company. We do our best but can't guarantee perfect security.
+
+## If Something Goes Wrong
+
+If there's a data breach affecting your information:
+- We'll email you within 72 hours
+- For minors: we'll contact parents/guardians within 24 hours
+- We'll explain what happened and what to do
+
+## Cookies and Website Tracking
+
+Our website (GitHub Pages) doesn't use cookies for tracking or advertising. GitHub may collect basic anonymous analytics about page views.
+
+## Changes to This Policy
+
+If we update this policy:
+- **Major changes**: We'll email everyone and give 30 days notice
+- **Minor changes**: We'll post updates on GitHub
+- Staying in the collaboration means you accept the updated policy
+
+## International Members
+
+CAPIBARA has members worldwide. Your data might be:
+- Stored on US servers (GitHub, Microsoft)
+- Accessed by members in other countries
+- Subject to different privacy laws
+
+We follow GDPR principles as a baseline, even though we're not a formal EU organization.
+
+## Questions?
+
+Contact us at:
+- Contact form: [capibara3.github.io/internal-contact](https://capibara3.github.io/internal-contact.html)
+
+We'll respond within a week for general questions, within 30 days for formal data requests.
+
+---
+
+## Quick Summary Table
+
+| What We Collect | Why | Where Stored | Who Sees It |
+|----------------|-----|--------------|-------------|
+| Name, email | Membership, communication | GitHub, Email | Private (members only) |
+| GitHub username | Collaboration access | GitHub | Public |
+| Institution | Attribution | Website | Public (with consent) |
+| Contributions | Authorship, recognition | GitHub | Public |
+| Meeting notes | Activity tracking | GitHub docs | Members only |
+
+---
+
+**Last Updated**: January 1, 2026

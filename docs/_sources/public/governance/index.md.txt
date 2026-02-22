@@ -1,6 +1,10 @@
 # Governance
 
-Welcome to the CAPIBARA Collaboration governance documentation. These documents define how our collaboration operates, from membership to publications.
+Welcome to CAPIBARA's governance docs! We're a small (~10 student) informal research collaboration. These documents explain how we work together, make decisions, and treat each other fairly.
+
+**New here?** Start with the [Code of Conduct](CODE_OF_CONDUCT.md) and [Membership Guide](MEMBERSHIP_POLICY.md).
+
+**TL;DR**: Be respectful, contribute when you can, give credit fairly, keep unpublished stuff private. Questions? Just ask!
 
 ```{toctree}
 :maxdepth: 1
@@ -11,39 +15,68 @@ CONTRIBUTING.md
 about.md
 COLLABORATION_AGREEMENT.md
 PRIVACY_POLICY.md
+COMMUNICATIONS_POLICY.md
 AUTHORSHIP_POLICY.md
 MEMBERSHIP_POLICY.md
+PARENTAL_CONSENT_FORM.md
 
 ```
 
-## Overview
+## Quick Start
 
-The CAPIBARA Collaboration is a volunteer-based international student research collective focused on space science and high-energy astrophysics instrumentation. Our governance is designed to be transparent, fair, and educational while producing high-quality scientific outputs.
+**Want to join?**
+1. Read [Code of Conduct](CODE_OF_CONDUCT.md) ← How we treat each other
+2. Check [Membership Guide](MEMBERSHIP_POLICY.md) ← How to join
+3. Review [Collaboration Agreement](COLLABORATION_AGREEMENT.md) ← What we're about
+4. If under 18: Parent completes [Parental Consent Form](PARENTAL_CONSENT_FORM.md)
 
+**Already a member?**
+- [Communications Guide](COMMUNICATIONS_POLICY.md) ← How we stay in touch
+- [Contributing Guidelines](CONTRIBUTING.md) ← How to contribute  
+- [Authorship Policy](AUTHORSHIP_POLICY.md) ← Getting credit for papers
+- [Privacy Policy](PRIVACY_POLICY.md) ← Your data rights
+
+## About CAPIBARA
+
+CAPIBARA is an informal student collaboration working on:
+- **CAPIBARA-CRD**: Cosmic ray detectors (led by Lluc Soler)
+- **CAPIBARA-COSMOS**: High-energy astrophysics (led by Joan Alcaide Núñez)
+
+We're learning by doing: planning ideas, building instruments, analyzing data, publishing updates, and gaining real research experience.
 
 ## Core Principles
 
-1. **Open Science:** Default to open licensing and public dissemination
-2. **Student-Led:** Empower students in leadership and decision-making
-3. **Transparency:** Document decisions and maintain public records
-4. **Safety First:** Protect all members, especially minors
-5. **Merit-Based:** Recognize contributions fairly and objectively
+🔬 **Open Science**: Default to open source and public data  
+🎓 **Student-Led**: Students make decisions and lead projects  
+🌍 **International**: Members from around the world  
+🤝 **Collaborative**: Help each other learn and succeed  
+⚖️ **Fair**: Everyone gets appropriate credit for their work
 
+## How We Work
 
-## Getting Started
+**Decision-making**: Programme Leads handle day-to-day stuff; big decisions need group discussion/consensus (~2/3 agreement)
 
-To get familiar with our policies:
+**Membership**: Apply through website → brief chat → join GitHub → start contributing
 
-1. Read the [Code of Conduct](CODE_OF_CONDUCT.md)
-2. Review the [Collaboration Agreement](COLLABORATION_AGREEMENT.md) and [Membership Policy](MEMBERSHIP_POLICY.md)
-3. Check the [Contributing Guidelines](CONTRIBUTING.md) and [Authorship Policy](AUTHORSHIP_POLICY.md)
-4. Read the [Privacy Policy](PRIVACY_POLICY.md)
-5. Explore the [About page](about.md) for more context
+**Meetings**: Monthly video calls (time zones permitting) + async work on GitHub
 
+**Publications**: Fair authorship based on contribution (see [Authorship Policy](AUTHORSHIP_POLICY.md))
 
 ## Need Help?
 
-* **Code of Conduct Issues:** [Contact us](https://capibara3.github.io/contact)
-* **Policy Questions:** Open an issue or PR in the [`.github-private`](https://github.com/capibara3/.github-private) repository
+* **General questions**: Post in [GitHub Discussions](https://github.com/capibara3/discussions)
+* **Code of Conduct concerns**: [Email](https://capibara3.github.io/internal-contact.html)
+* **Membership questions**: See [how to apply](../onboarding/00_applying_to_join.md)
+* **Policy questions**: Open an issue in `.github-private` repo or ask Programme Lead
 
-Last updated: December 5, 2025
+## About These Policies
+
+We're a small group learning as we go. These policies are meant to be:
+- **Clear**: Understandable, not full of legalese
+- **Fair**: Everyone knows the rules
+- **Flexible**: Will evolve as we grow
+- **Practical**: Actually usable by students
+
+**Not sure about something?** Just ask! We're all learning together.
+
+Last updated: 21 February 2026
