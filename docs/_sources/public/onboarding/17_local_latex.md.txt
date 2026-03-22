@@ -1,4 +1,4 @@
-# 17 Local $\atex$
+# 17 Local $\LaTeX$
 
 ## Goal
 - [02_setting_up_unix](02_setting_up_unix.md)
@@ -12,7 +12,7 @@
 
 ### 1. Introduction
 
-$\LaTeX$ is the most powerful tool for scientific writing, since it includes tons of packages and functions for math writing and diagrams/tables. It also is great for bibliography, and you can even write anywhere in $\Latex$ within markdown files: typing
+$\LaTeX$ is the most powerful tool for scientific writing, since it includes tons of packages and functions for math writing and diagrams/tables. It also is great for bibliography, and you can even write anywhere in $\LaTeX$ within markdown files: typing
 ```markdown
 This is a markdown text with an inline equation: $E = mc^2$, and a block equation:
 $$
@@ -71,7 +71,7 @@ You can edit `.tex` files with any text editor, but these are popular:
 
 * **TeXShop** (macOS, included with MacTeX)
 * **TeXworks** (lightweight, cross-platform)
-* **VS Code** with [\LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
+* **VS Code** with [$\LaTeX$ Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
 
 ### 3. Execution
 
@@ -173,7 +173,7 @@ While we are not using Overleaf within the CAPIBARA Collaboraiton, they have som
 ## Resources
 
 1. [basic math commands](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf): a collection of math symbols and commands (they also have other resources but I think this the most basic)
-2. [Getting Started on Overleaf](https://www.youtube.com/watch?v=lgiCpA4zzGU): YouTube video on $\atex$ for students, introduction to the basic features
+2. [Getting Started on Overleaf](https://www.youtube.com/watch?v=lgiCpA4zzGU): YouTube video on $\LaTeX$ for students, introduction to the basic features
 3. [Introduction to $\LaTeX$](https://github.com/CAPIBARA3/papers/tree/main/Introduction_to_LaTeX): Our own document on GitHub that explains the basic commands and features.
 
 ### Extra Tips
