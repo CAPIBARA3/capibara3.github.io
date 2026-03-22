@@ -1,4 +1,4 @@
-# 17 Local $\LaTeX{}$
+# 17 Local $\atex$
 
 ## Goal
 - [02_setting_up_unix](02_setting_up_unix.md)
@@ -12,7 +12,7 @@
 
 ### 1. Introduction
 
-$\LaTeX{}$ is the most powerful tool for scientific writing, since it includes tons of packages and functions for math writing and diagrams/tables. It also is great for bibliography, and you can even write anywhere in $\LaTeX{}$ within markdown files: typing
+$\LaTeX$ is the most powerful tool for scientific writing, since it includes tons of packages and functions for math writing and diagrams/tables. It also is great for bibliography, and you can even write anywhere in $\Latex$ within markdown files: typing
 ```markdown
 This is a markdown text with an inline equation: $E = mc^2$, and a block equation:
 $$
@@ -33,7 +33,7 @@ will result in
 1. Download and install **MacTeX**:
    - [https://tug.org/mactex/](https://tug.org/mactex/)  
    - (Large package ~4 GB, but includes everything you need.)
-2. After installation, make sure the LaTeX binaries are in your PATH:
+2. After installation, make sure the $\LaTeX$ binaries are in your PATH:
    ```bash
    echo $PATH
 
@@ -71,11 +71,11 @@ You can edit `.tex` files with any text editor, but these are popular:
 
 * **TeXShop** (macOS, included with MacTeX)
 * **TeXworks** (lightweight, cross-platform)
-* **VS Code** with [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
+* **VS Code** with [\LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
 
 ### 3. Execution
 
-### 3.1 Create Your First $\LaTeX{}$ Document
+### 3.1 Create Your First $\LaTeX$ Document
 
 Create a file named `paper.tex`:
 
@@ -91,7 +91,7 @@ Create a file named `paper.tex`:
 
 \maketitle
 
-Hello, world! This is my first \LaTeX{} paper.
+Hello, world! This is my first \atex paper.
 
 \end{document}
 ```
@@ -168,7 +168,13 @@ git push origin your-branch-name
 
 
 ## Troubleshooting
-Visit the Overleaf website, they have some resources around $\LaTeX{}$ troubleshooting and errors. Rice University happens to also have some resources and guides around working with $\LaTeX{}$, like this summary of [basic math commands](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf).
+While we are not using Overleaf within the CAPIBARA Collaboraiton, they have some troubleshotting and helpful resources online you can visit. They are usually valid for all $\LaTeX$ usages.
+
+## Resources
+
+1. [basic math commands](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf): a collection of math symbols and commands (they also have other resources but I think this the most basic)
+2. [Getting Started on Overleaf](https://www.youtube.com/watch?v=lgiCpA4zzGU): YouTube video on $\atex$ for students, introduction to the basic features
+3. [Introduction to $\LaTeX$](https://github.com/CAPIBARA3/papers/tree/main/Introduction_to_LaTeX): Our own document on GitHub that explains the basic commands and features.
 
 ### Extra Tips
 
