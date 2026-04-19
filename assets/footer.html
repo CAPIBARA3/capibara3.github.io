@@ -1,42 +1,51 @@
 <footer class="footer">
-    <div class="footer-container">
-        <div class="footer-section">
-            <h3>CAPIBARA Collaboration</h3>
-            <p>Exploring the high-energy universe through student-led space missions.</p>
-            <div class="social-links">
-                <a href="https://github.com/capibara3" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/company/107744838/admin/dashboard/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/capibara_collaboration/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="/" class="footer__logo">
+          <img src="/images/logos/capibara.png" alt="CAPIBARA logo">
+          CAPIBARA Collaboration
+        </a>
+        <p>Exploring the high-energy universe through student-led science and space missions.</p>
+        <div class="footer__social">
+          <a href="https://github.com/capibara3" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/107744838/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.instagram.com/capibara_collaboration/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
+      </div>
 
-        <div class="footer-section">
-            <h4>About</h4>
-            <ul>
-                <li><a href="/about/index.html">About Us</a></li>
-                <li><a href="/about/team.html">Our Team</a></li>
-                <li><a href="/missions/crd.html">CAPIBARA-CRD</a></li>
-                <li><a href="/missions/cosmos.html">CAPIBARA-COSMOS</a></li>
-            </ul>
-        </div>
+      <div class="footer__links">
+        <h4>Missions</h4>
+        <ul>
+          <li><a href="/crd/">CAPIBARA-CRD</a></li>
+          <li><a href="/gamma/">CAPIBARA-GAMMA</a></li>
+          <li><a href="/gamma/science.html">Science Case</a></li>
+          <li><a href="/gamma/team.html">GAMMA Team</a></li>
+        </ul>
+      </div>
 
-        <div class="footer-section">
-            <h4>Resources</h4>
-            <ul>
-                <li><a href="/about/faq.html">FAQ</a></li>
-                <li><a href="/docs/">Documentation</a></li>
-                <li><a href="/application-form.html">Join Us!</a></li>
-                <li><a href="/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-        </div>
+      <div class="footer__links">
+        <h4>Organisation</h4>
+        <ul>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/docs/">Documentation</a></li>
+          <li><a href="/application-form.html">Join Us</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
 
-    <div class="footer-bottom">
-        <p>&copy; <span id="current-year">2024-2026</span> CAPIBARA Collaboration. All rights reserved.</p>
+    <div class="footer__bottom">
+      <p>&copy; <span id="current-year">2025</span> CAPIBARA Collaboration. All rights reserved.</p>
+      <p>
+        <a href="/docs/privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp;
+      </p>
     </div>
+  </div>
 </footer>
-
-<script>
-    // Update copyright year automatically
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-</script>

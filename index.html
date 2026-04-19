@@ -1,147 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CAPIBARA Collaboration - International student-led initiative building space observatories for high-energy astrophysics. Join students from universities worldwide in developing real space missions.">
-    <title>Capibara Collaboration - High-Energy Universe Research</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/styles.css">
-    <link rel="shortcut icon" type="image/png" href="/images/logos/capibara.png" />
-    <style>
-        /* Center content grid for this page only */
-        .content-grid {
-            grid-template-columns: 1fr !important;
-            max-width: 900px !important;
-            margin: 0 auto !important;
-            margin-bottom: 50px !important;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CAPIBARA Collaboration — International student-led initiative building space observatories for high-energy astrophysics.">
+  <title>CAPIBARA Collaboration — Exploring the High-Energy Universe</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="shortcut icon" href="/images/logos/capibara.png" type="image/png">
 </head>
 <body>
-<!-- Nav injected here -->
 
-<main class="main-content">
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Exploring the High-Energy Universe</h1>
-            <p>Student-led Research in High-Energy Astrophysics and Cosmic Ray Detection</p>
-            <div class="hero-buttons">
-                <a href="./about/index.html" class="btn btn-outline glow-on-hover">Explore Our Mission <i class="fas fa-rocket"></i></a>
-                <a href="./application-form.html" class="btn btn-outline glow-on-hover">Join Us! <i class="fas fa-users"></i></a>
-            </div>
+<div id="site-nav"></div>
+
+<main>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <h1>Exploring the <span class="highlight">High-Energy Universe</span></h1>
+          <p class="hero__desc">
+					  CAPIBARA is an international student collaboration learning about gamma-ray bursts and cosmic rays as well as designing and building instruments to detect those.
+          </p>
+          <div class="hero__actions">
+            <a href="/application-form.html" class="btn btn-outline btn-lg">Join Us <i class="fas fa-users"></i></a>
+          </div>
         </div>
-        <div class="hero-image"> 
-            <img src="images/logos/capibara_sqr.png" alt="CAPIBARA Collaboration Logo - Stylized capybara mascot representing our student-led space mission team" class="glow-on-hover">
+        <div class="hero__image">
+          <img src="/images/logos/capibara_sqr.png" alt="CAPIBARA Collaboration Logo">
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Impact Stats -->
-    <section class="impact-stats">
-        <h2>Our Impact</h2>
-        <div class="stats-container">
-            <div class="stat-card">
-                <div class="stat-number">10</div>
-                <div class="stat-label">Active Members</div>
+  <!-- ── Missions ── -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <h2>Two Missions, One Vision</h2>
+      </div>
+
+      <div class="mission-grid">
+        <!-- CRD -->
+        <a href="/crd/" class="mission-card">
+          <div class="mission-card__header">
+            <div class="mission-card__icon"><i class="fas fa-atom"></i></div>
+            <div>
+							<div class="mission-card__title">CRD</div>
+							<div class="mission-card__tag">COSMIC RAY DETECTOR</div>
             </div>
-            <div class="stat-card">
-                <div class="stat-number">4</div>
-                <div class="stat-label">Countries</div>
+          </div>
+          <div class="mission-card__body">
+            <p>A student-built instrument integrated into the OBA FARADAY CubeSat. Flying in LEO to detect solar and extra-solar primary cosmic rays, using Time-of-Flight techniques to distinguish their origins.</p>
             </div>
-            <div class="stat-card">
-                <div class="stat-number">2</div>
-                <div class="stat-label">Active Missions</div>
+						<div style="display:flex; gap:0.6rem; flex-wrap:wrap; margin-top:0.5rem;"></div>
+          <div class="mission-card__footer">
+            Learn about CRD <i class="fas fa-arrow-right"></i>
+          </div>
+        </a>
+
+        <!-- GAMMA -->
+        <a href="/gamma/" class="mission-card">
+          <div class="mission-card__header">
+            <div class="mission-card__icon" style="background: linear-gradient(135deg,#ff5aa2,#a56fe8)"><i class="fas fa-bolt"></i></div>
+            <div>
+              <div class="mission-card__title">GAMMA</div>
+              <div class="mission-card__tag">Gamma-ray Analysis for Multi-Messenger Astrophysics</div>
             </div>
+          </div>
+          <div class="mission-card__body">
+						<p>A mission concept to observe gamma-ray bursts and advacing in our understanding of fundamental physics.</p>
+            <div style="display:flex; gap:0.6rem; flex-wrap:wrap; margin-top:0.5rem;"></div>
+          </div>
+          <div class="mission-card__footer">
+            Explore GAMMA <i class="fas fa-arrow-right"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Latest News ── -->
+  <section style="background: var(--bg-alt); padding: 5rem 0;">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label"><i class="fas fa-newspaper"></i> Updates</div>
+        <h2>Latest News</h2>
+      </div>
+
+      <div class="news-grid">
+				<div class="news-card">
+					<div class="news-card__date"><i class="fas fa-calendar-alt"></i> April 2026</div>
+					<h3>CAPIBARA Presents at SSEA</h3>
+					<p>Text</p>
+					<div class="news-card__links">
+						<a href="/resources/ssea_paper.pdf"><i class="fas fa-file-pdf"></i> Read Paper</a>
+					</div>
+				</div>
+
+        <div class="news-card">
+					<div class="news-card__date"><i class="fas fa-calendar-alt"></i> March 2026</div>
+					<h3>Call for New Members 2026</h3>
+					<p>We're recruiting motivated students worldwide for both programmes. All disciplines welcome — science, engineering, outreach, and more.</p>
+          <div class="news-card__links">
+            <a href="/application-form.html"><i class="fas fa-rocket"></i> Apply Now</a>
+          </div>
         </div>
-    </section>
 
-    <!-- Missions -->
-    <section class="mission">
-        <h2>Our Missions</h2>
-        <div class="mission-cards">
-            <div class="card glow-on-hover">
-                <img src="images/lego_satellite.jpg" alt="Lego Satellite Picture">
-                <div class="card-content">
-                    <h3>Cosmic Ray Detector</h3>
-                    <p>Detecting cosmic rays from space</p>
-                    <a href="./missions/crd.html" class="btn btn-small">Learn More</a>
-                </div>
-            </div>
-
-            <div class="card glow-on-hover">
-                <img src="images/double_cubesat_formation.jpg" alt="Artist rendering of two CubeSat satellites in formation flying in Earth orbit for triangulation observations">
-                <div class="card-content">
-                    <h3>COSMOS Programme</h3>
-                    <p>Observing the universe for high-energy transients and multi-messenger counterparts</p>
-                    <a href="./missions/cosmos.html" class="btn btn-small">Learn More</a>
-                </div>
-            </div>
+        <div class="news-card">
+          <div class="news-card__date"><i class="fas fa-calendar-alt"></i> March 6, 2025</div>
+          <h3>Presentation at CosmoCaixa Barcelona</h3>
+          <p>Our PI presented CAPIBARA to an audience of science volunteers at Barcelona's CosmoCaixa science museum.</p>
+          <div class="news-card__links">
+            <a href="/resources/CosmoXarxa_presentation.pdf"><i class="fas fa-file-pdf"></i> View Slides</a>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Full-width highlight section -->
-    <section class="highlight-section">
-        <div class="highlight-content">
-            <h2><i class="fas fa-users"></i> Why Join Us?</h2>
-            <p>The CAPIBARA Collaborations is ever growing and we'd like to have you along us! Beyond hardware and science, CAPIBARA is about building community of the new generation of space experts. We're creating a collaboration where students don't just learn about space, they actually engage with it.</p>
+  <!-- ── Join ── -->
+  <section style="padding: 3rem 0;">
+    <div class="container container--narrow">
+      <div class="cta-banner">
+        <div class="section-label" style="margin:0 auto 1.25rem;"><i class="fas fa-users"></i> Get Involved</div>
+        <h2>A Collaboration Built for Students</h2>
+        <p>Whether you're a physics student, an engineer, a science communicator, or someone who just loves space... there's a place for you in CAPIBARA.</p>
 
-            <div class="join-options">
-                <div class="option">
-                    <h3><i class="fas fa-user-graduate"></i> For Students</h3>
-                    <p>Work on real flight hardware and software, with simulations and operations. CAPIABRA is not only engineering, but also science, outreach, communication... there's a place for you to contribute. <strong>No prior experience required, we are here to learn!</strong> <a href="../application-form.html">Application Form</a></p>
-                </div>
-                <div class="option">
-                    <h3><i class="fas fa-chalkboard-teacher"></i> For Advisors</h3>
-                    <p>Mentor the next generation. Join COSMOS' Advisory Board or contact the CRD team. You provide invaluable knowledge and guidance! <a href="../contact.html">Contact Us!</a></p>
-                </div>
-                <div class="option">
-                    <h3><i class="fas fa-university"></i> For Institutions</h3>
-                    <p>Partner with us, provide lab space, expertise, funding or host a student team. Help scale this student-centred mission model. <a href="../contact.html">Contact for partnership</a></p>
-                </div>
-            </div>
+        <div class="join-grid mt-4" style="text-align:left;">
+          <div class="join-card">
+            <div class="join-card__icon"><i class="fas fa-user-graduate"></i></div>
+            <h3>Students</h3>
+            <p>Real missions, real data, real learning. No experience required, learn by doing.</p>
+            <a href="/application-form.html" class="btn btn-primary btn-sm">Apply Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="join-card">
+            <div class="join-card__icon"><i class="fas fa-chalkboard-teacher"></i></div>
+            <h3>Advisors</h3>
+            <p>Mentor the next generation. Join our advisory board.</p>
+            <a href="/contact.html" class="btn btn-outline btn-sm">Get in Touch</a>
+          </div>
+          <div class="join-card">
+            <div class="join-card__icon"><i class="fas fa-university"></i></div>
+            <h3>Institutions</h3>
+            <p>Partner with us for lab space, expertise, or co-supervision of student work.</p>
+            <a href="/contact.html" class="btn btn-outline btn-sm">Partner With Us</a>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="news">
-        <h2>Latest Updates</h2>
-        <div class="news-container">
-            <!-- <article class="news-item glow-on-hover">
-                <h3>Attending SSEA 2026</h3>
-                <p class="date">April, 2026</p>
-                <p>Desc</p>
-                <a href="" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-            </article> -->
-
-            <article class="news-item glow-on-hover">
-                <h3>Call for New Members</h3>
-                <p class="date">1 January, 2026</p>
-                <p>The CAPIBARA Collaboration encourages motivated students worldwide to join its efforts in both is programmes. Students may work in any related fields not only STEM subjects, but also education and outreach related. No impossible requirements, no selection process.</p>
-                <a href="./resources/call_for_new_members_2026.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-            </article>
-
-            <article class="news-item glow-on-hover">
-                <h3>Year 1 Status Report Published!</h3>
-                <p class="date">July 20, 2025</p>
-                <p>We are happy to celebrate our first birthday and to share our progress and next steps.</p>
-                <a href="./resources/CAPIBARA_Y1_Status_Report.pdf" class="read-more">Read it <i class="fas fa-arrow-right"></i></a><br>
-                <a href="./resources/y1_report_published.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-            </article>
-
-            <article class="news-item glow-on-hover">
-                <h3>Project Presentation at Barcelona's Science Museum CosmoCaixa</h3>
-                <p class="date">March 6, 2025</p>
-                <p>Our PI, on behalf of the team, presented the CAPIBARA collaboration, its goals, progress and plans to an audience of Explainers, the museum young volunteers.</p>
-                <a href="./resources/CosmoXarxa_presentation.pdf" class="read-more">Read it <i class="fas fa-arrow-right"></i></a>
-            </article>
-        </div>
-    </section>
 </main>
 
-
-<!-- Footer injected here -->
-
-<script src="assets/script.js"></script>
+<div id="site-footer"></div>
+<script src="/assets/script.js"></script>
 </body>
 </html>
