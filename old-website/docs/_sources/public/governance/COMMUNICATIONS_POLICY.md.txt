@@ -1,0 +1,152 @@
+# Communications Guide
+## Version 1.0 | Effective Date: January 1, 2026
+
+## How We Stay in Touch
+
+CAPIBARA is a distributed collaboration \u2014 we're in different time zones, universities, and countries. Here's how we communicate:
+
+## Official Channels (Everyone Should Use)
+
+### 1. GitHub (`CAPIBARA3` organization)
+**What for**: Everything collaboration-related
+- **Issues**: Bug reports, tasks, feature requests
+- **Pull Requests**: Code and document changes
+- **Discussions**: Questions, ideas, announcements
+- **Projects**: Tracking what we're working on
+
+**Why GitHub?** It's free, keeps a record, and everyone can see what's happening.
+
+### 2. Email
+**What for**: 
+- Formal stuff (joining, leaving, important announcements)
+- External communications
+- Private matters
+- Parental contact (for members under 18)
+
+### 3. Monthly Video Calls
+**What for**: Seeing each other, discussing progress, making decisions
+
+**Schedule**: We agree on a time that works for most people (rotating to accommodate time zones)
+
+**Notes**: Posted on GitHub after each meeting
+
+## Informal Channels (Optional)
+
+**WhatsApp/Discord/Slack**: Some of us use these to chat casually. These are NOT official, important stuff goes on GitHub or email.
+
+## How to Communicate Well
+
+### Response Times (Guidelines, Not Rules)
+- **Urgent stuff**: Try to respond same day
+- **Regular questions**: Within a few days  
+- **Pull requests**: Review within a week
+- **No pressure**: We're all students with exams, projects, life!
+
+### Good Practices
+- **Be clear**: Explain what you need
+- **Be kind**: See [Code of Conduct](CODE_OF_CONDUCT.md)
+- **Tag people**: @ mention if you need someone's attention
+- **Search first**: Check if your question was already answered
+- **English**: Use English for collaboration stuff (so everyone can understand)
+
+## Sharing Our Work Externally
+
+### Social Media
+**Your posts**: You can share public CAPIBARA stuff! Just add: "Views are my own"
+
+**Don't share**:
+- Unpublished results (wait until we publish)
+- Internal arguments or problems
+- Other people's personal info
+- Photos of minors without parental consent
+
+### Conferences & Presentations
+Want to present CAPIBARA work? Great!
+
+1. **Tell the Programme Lead** at least 2 weeks before the abstract deadline
+2. **Give credit**: Acknowledge "CAPIBARA Collaboration"
+3. **Share slides**: Upload them to GitHub
+
+### Media/Press
+If someone from media contacts you:
+- Forward to Programme Lead via [contact form](https://capibara3.github.io/contact)
+- Don't make official statements on behalf of CAPIBARA
+- You can talk about your own work (with proper attribution)
+
+## GitHub Best Practices
+
+### Issues
+- Use descriptive titles
+- Explain the problem/request
+- Add labels if you can
+- Close when done
+
+### Pull Requests
+- Describe what you changed and why
+- Link to related issues
+- Wait for review before merging
+- Be patient \u2014 reviewers are busy too!
+
+### Discussions
+- Pick the right category
+- Search before posting
+- Mark helpful answers
+
+## Meetings
+
+### Monthly All-Hands
+- **Agenda**: Shared a few days before
+- **Attendance**: We track (for activity)
+- **Recording**: Sometimes (announced in advance)
+- **Notes**: Posted on GitHub
+
+### Best Practices
+- Join on time if you can
+- Mute when not talking
+- Video on if possible (but no pressure)
+- Use chat for links/questions
+- Stay on topic
+
+## When Things Go Wrong
+
+### Conflicts
+If you have a problem with someone:
+1. Try talking to them directly (nicely!)
+2. If that doesn't work, talk to the Programme Lead
+3. For serious issues, see [Code of Conduct](CODE_OF_CONDUCT.md)
+
+### Violations
+If someone is consistently unhelpful, rude, or ignoring communication standards:
+1. **First time**: Friendly reminder
+2. **Ongoing**: Programme Lead has a conversation
+3. **Serious/repeated**: May affect membership (see [Membership Policy](MEMBERSHIP_POLICY.md))
+
+## Tips for New Members
+
+- **Don't be shy**: Ask questions!
+- **Introduce yourself**: Say hi in GitHub Discussions
+- **Watch for a bit**: See how others communicate
+- **Start small**: Comment on issues before tackling big tasks
+- **Ask for help**: We're all learning
+
+## Accessibility
+
+We try to be inclusive:
+- **Time zones**: We rotate meeting times
+- **Language**: English is expected, but we're patient with non-native speakers
+- **Formats**: Share important info in multiple ways (written + verbal)
+- **Accommodations**: Need something specific? Just ask!
+
+## For Members Under 18
+
+- **Group settings only**: Adults won't message you privately
+- **Parents welcome**: Your parents can observe meetings
+- **Questions**: Your parents can contact us anytime
+
+## Questions?
+
+Not sure where to post something? Ask in GitHub Discussions or [email](https://capibara3.github.io/internal-contact.html) us!
+
+---
+
+**Last Updated**: January 1, 2026

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join CAPIBARA Collaboration. Apply now to become part of an international student-led team building real space missions. No experience required!">
+    <title>Application Form | Capibara Collaboration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/assets/contact-form.css">
+    <link rel="shortcut icon" type="image/png" href="/images/logos/capibara.png" />
+</head>
+
+<body>
+<!-- Navigation will be injected here -->
+
+<main class="main-content subpage">
+    <!-- Breadcrumb navigation -->
+    <nav class="breadcrumb">
+        <ol>
+            <li><a href="/">Home</a></li>
+            <li>Application Form</li>
+        </ol>
+    </nav>
+
+    <!-- Page header -->
+    <header class="page-header">
+        <h1><i class="fas fa-rocket"></i> Join CAPIBARA Collaboration</h1>
+        <p class="subtitle">Become part of the next generation of space scientists and engineers</p>
+    </header>
+
+    <div class="form-container">
+        <!-- Quick info highlights -->
+        <div class="highlight-banner">
+            <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>No Experience Required</span>
+            </div>
+            <div class="highlight-item">
+                <i class="fas fa-globe"></i>
+                <span>Fully Remote</span>
+            </div>
+            <div class="highlight-item">
+                <i class="fas fa-users"></i>
+                <span>International Team</span>
+            </div>
+            <div class="highlight-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Learn by Doing</span>
+            </div>
+        </div>
+
+        <!-- Application guidance -->
+        <div class="application-guide">
+            <h2><i class="fas fa-info-circle"></i> Before You Apply</h2>
+            <div class="guide-content">
+                <p><strong>Welcome!</strong> We're excited that you want to join us. Here's what you need to know:</p>
+                
+                <div class="guide-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Read the Guidelines</h3>
+                            <p>To inform you and avoid misunderstandings we crafted an application guideline you can access <a href="docs/public/governance/MEMBERSHIP_POLICY.html">here</a>. This page contains all the information you need to know joining the CAPIBARA Collaboration.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Fill the Form</h3>
+                            <p>Complete the application form below. It takes about 5 minutes. After submissions, we'll get in touch via email within a few days.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Submit Documents</h3>
+                            <p>Once accepted, you'll need to send: (1) signed <a href="docs/public/governance/MEMBERSHIP_POLICY.html">membership agreement</a>, and (2) optional supporting docs (CV, motivation letter, etc.).</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="encouragement-box">
+                    <i class="fas fa-heart"></i>
+                    <p><strong>Don't let bureaucracy stop you!</strong> We welcome all students, including high school and undergraduate students. We're here to support you every step of the way.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Application form -->
+        <div class="form-wrapper">
+            <h2><i class="fas fa-file-alt"></i> Application Form</h2>
+            <p class="form-intro">Tell us about yourself and what you'd like to work on. Fields marked with * are required.</p>
+
+            <form action="https://formspree.io/f/xdkrorpp" method="POST" enctype="multipart/form-data">
+
+                <div class="form-section">
+                    <h3><i class="fas fa-user"></i> Personal Information</h3>
+                    
+                    <div class="form-row">
+                        <div class="floating-label-group">
+                            <input type="text" name="full_name" id="full_name" class="floating-input" placeholder=" " required>
+                            <label class="floating-label"><i class="fas fa-id-card"></i> Full Name *</label>
+                        </div>
+                        <div class="floating-label-group">
+                            <input type="email" name="email" id="email" class="floating-input" placeholder=" " required>
+                            <label class="floating-label"><i class="fas fa-envelope"></i> Email Address *</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="floating-label-group">
+                            <input type="date" name="birthday" id="birthday" class="floating-input" placeholder=" " required>
+                            <label class="floating-label"><i class="fas fa-calendar"></i> Date of Birth *</label>
+                            <small class="field-hint">Minors must submit a form signed by parents/guardian</small>
+                        </div>
+                        <div class="floating-label-group">
+                            <input type="text" name="github" id="github" class="floating-input" placeholder=" ">
+                            <label class="floating-label"><i class="fab fa-github"></i> GitHub Username (optional)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3><i class="fas fa-briefcase"></i> Your Interests</h3>
+                    
+                    <div class="floating-label-group">
+                        <label class="field-label"><i class="fas fa-tasks"></i> What would you like to work on? * <small>(Hold Ctrl/Cmd to select multiple)</small></label>
+                        <select name="groups[]" multiple size="7" required class="multi-select">
+                            <option value="crd">🛰️ CAPIBARA Cosmic Ray Detector (CRD)</option>
+                            <option value="cosmos">🌌 CAPIBARA Gamma-/X-ray Program (COSMOS)</option>
+                            <option value="sci">🔬 Specific Research Initiative</option>
+                            <option value="comm">📢 Outreach, Communication & Administration</option>
+                            <option value="dev">💻 Software/Hardware Development</option>
+                            <option value="idk">🎓 I don't know yet, just want to learn!</option>
+                            <option value="other">💡 Other (bring new ideas!)</option>
+                        </select>
+                    </div>
+
+                    <div class="floating-label-group">
+                        <textarea name="specify_group" id="specify_group" class="floating-input" placeholder=" " rows="3"></textarea>
+                        <label class="floating-label"><i class="fas fa-comment"></i> Please elaborate on your interests above</label>
+                        <small class="field-hint">If you selected "Specific Research Initiative" or "Other", please explain. Otherwise, feel free to share more about what excites you!</small>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3><i class="fas fa-pencil-alt"></i> Additional Information</h3>
+                    
+                    <div class="floating-label-group">
+                        <textarea name="notes" id="notes" class="floating-input" placeholder=" " rows="5"></textarea>
+                        <label class="floating-label"><i class="fas fa-sticky-note"></i> Additional Notes</label>
+                        <small class="field-hint">Tell us about your background, skills, motivation, or anything else you'd like us to know! We will not use this to perform any "selection", but to assign you to a working group.</small>
+                    </div>
+
+                    <div class="floating-label-group">
+                        <input type="text" name="referral" id="referral" class="floating-input" placeholder=" ">
+                        <label class="floating-label"><i class="fas fa-bullhorn"></i> How did you hear about us? (optional)</label>
+                    </div>
+                </div>
+
+                <div class="privacy-notice">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>By submitting this form, you consent to the processing of your personal data for evaluating your application. Your information will not be shared outside the CAPIBARA Collaboration and can be deleted upon request at any time. See our <a href="docs/public/governance/PRIVACY_POLICY.html">privacy policy</a> for details.</p>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-rocket"></i> Submit Application
+                </button>
+            </form>
+
+            <div class="success-message">
+                <i class="fas fa-check-circle"></i>
+                <h3>Thank you for applying!</h3>
+                <p>We'll review your application and get back to you within a few days. Check your email (including spam folder) for our response.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer will be injected here -->
+
+<script src="/assets/script.js"></script>
+</body>
+</html>

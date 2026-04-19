@@ -1,0 +1,89 @@
+# Emails for Contacting Institutions for Partnership
+
+
+## **Email for Companies**
+
+**Subject:** Partnership Opportunity with CAPIBARA: A Student-Led Space Research Initiative
+
+Dear [Name],
+
+I am writing to you on behalf of *CAPIBARA*, a student-led space research initiative. We are a highly motivated and talented group of high school and university students dedicated to exploring the high-energy cosmos, focusing on both its ionic and photonic states.
+
+Our first objective is to launch a CubeSat to detect cosmic rays—high-energy particles trapped in Earth’s magnetic field. To advance this mission, we have applied to the Spark Program by the Spanish company PLD Space and are currently in discussions with OBA Space to host our payload aboard their *OBA FARADAY* satellite.
+
+We are designing a cosmic-ray-detecting instrument with the following characteristics:
+
+| **Property**       | **Description**                                 |
+| ------------------ | ----------------------------------------------- |
+| Detector Type      | Silicon-based detector                          |
+| Detector Size      | 7 x 7 x 6 cm (slightly adaptable)               |
+| Detector Weight    | < 1 kg                                          |
+| Mission Objectives | Detect and analyze cosmic rays in Earth's orbit |
+
+However, we currently lack [funding/resources/expertise—please customize] to fully bring this mission to life. This is why we are reaching out to you.
+[Insert personalized message about the company's relevance or capabilities.]
+
+As a company focused on [...], your support and technical assistance would be invaluable to us. In addition, your partnership would significantly strengthen our application to the Spark Program, enhancing our chances of securing a launch opportunity. This collaboration would not only support a unique, student-led mission but also help foster the next generation of engineers and scientists. Naturally, your contribution would be acknowledged in all relevant communications and publications.
+
+Please don’t hesitate to reach out with any questions or comments. We are open to your suggestions on how we can improve our project and how you could support us. Feel free to share this information with your colleagues as well.
+
+You can find more detailed information about CAPIBARA on our website: [capibara3.github.io](https://capibara3.github.io), where you can also schedule a meeting with us.
+
+Sincerely,
+[Your Name]
+[Your Role in CAPIBARA]
+
+---
+
+## **Email for Research Institutes**
+
+**Subject:** Invitation to Collaborate on the CAPIBARA Cosmic Ray Research Mission
+
+Dear [Name],
+
+I am writing to you on behalf of *CAPIBARA*, a student-led space research initiative composed of highly motivated high school and university students. Our mission is to explore the high-energy universe, with a special focus on both its ionic and photonic components.
+
+Our primary goal is to launch a CubeSat equipped to detect cosmic rays—high-energy particles interacting with Earth’s magnetic field. To this end, we have applied to the Spark Program by PLD Space and are coordinating with OBA Space for payload hosting on their *OBA FARADAY* satellite.
+
+Many members of our collaboration have research experience gained through programs like Youth and Science, and others have conducted independent scientific or engineering projects, including rocket model construction.
+
+[Insert your personal background and research interests.]
+
+*Example:*
+As for myself, I am a participant in the Youth and Science program, where I recalculated the Hubble constant using both Cepheid variables and Type Ia supernovae, presenting my results at *Jugend Forscht*, Europe’s largest science fair. With CAPIBARA's measurements, I aim to explore the role of GRBs in addressing the Hubble tension at high redshifts.
+
+Science is collaborative, and this is why we are reaching out. Your guidance and support could greatly improve our chances of securing a free launch through the Spark Program. Moreover, your mentorship would be invaluable in the development of our mission. You would also be part of a unique and pioneering student-led mission, with full acknowledgement for your contributions.
+
+Please feel free to reach out with any questions or suggestions. You can find more details on our scientific goals, instrumentation, and team members on our website: [capibara3.github.io](https://capibara3.github.io), where you can also schedule a meeting with us.
+
+Sincerely,
+[Your Name]
+[Your Role in CAPIBARA]
+
+---
+
+## **Email for Foundations**
+
+**Subject:** Funding Support Request for CAPIBARA Student Space Research Mission
+
+Dear [Name],
+
+I am reaching out on behalf of *CAPIBARA*, a student-led space research initiative formed by a highly motivated group of high school and university students. Our goal is to launch a cosmic-ray-detecting instrument into space!
+
+To achieve this, we have applied to the Spark Program by the Spanish company PLD Space and are working with OBA Space, who will host our instrument aboard their *OBA FARADAY* satellite.
+
+Although our team has a strong background in research and engineering, thanks to participation in programs like Youth and Science, our biggest obstacle is funding. The Spark Program provides free launch services, but we lack the financial resources for manufacturing, testing, and integrating the payload. We are all volunteers and currently operate with no external funding.
+
+We are actively forming partnerships with companies, schools, research institutions, and universities for technical assistance and mentoring. However, their ability to offer financial support is uncertain.
+
+The [Foundation Name] Foundation has long [recognized/contributed to/supported...] — [connect to their mission and values]. We believe our goals are aligned with your commitment to [science/education/youth empowerment/etc.].
+
+This is a truly ambitious mission. It highlights the capabilities of students to engage in serious scientific endeavors, while also promoting STEAM education and space exploration at the secondary and tertiary levels. Your support would not only make this project possible but would also inspire a new generation of scientists and engineers. Naturally, you would receive full recognition for your support.
+
+Please don’t hesitate to contact us with any questions or ideas. We are eager to discuss how we can collaborate. Feel free to share this information with your colleagues.
+
+You can find more information about our mission, technical plans, and team on our website: [capibara3.github.io](https://capibara3.github.io), where you can also schedule a meeting.
+
+Sincerely,
+[Your Name]
+[Your Role in CAPIBARA]

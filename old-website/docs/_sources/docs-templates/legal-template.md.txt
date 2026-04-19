@@ -1,0 +1,33 @@
+# [Document Title]
+
+## Version & Status
+- Version: X.Y
+- Status: Draft / Approved
+- Effective date: YYYY-MM-DD
+
+## Overview
+Brief explanation of the legal or governance context.
+
+## Articles
+
+### Article 1 — Purpose
+Text here.
+
+### Article 2 — Responsibilities
+Text here.
+
+### Article 3 — Procedures
+Text here.
+
+### Article 4 — Enforcement
+Text here.
+
+## Signatures
+- Chair / Representative:
+- Collaboration Lead:
+- Legal Officer (if applicable):
+
+## Revision History
+| Version | Date | Author | Changes |
+|---------|------|--------|----------|
+| 1.0 | YYYY-MM-DD | Name | Created |

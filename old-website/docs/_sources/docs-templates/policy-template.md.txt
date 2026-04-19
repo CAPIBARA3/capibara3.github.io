@@ -1,0 +1,28 @@
+# [Policy Title]
+
+## Purpose
+Explain why this policy exists.
+
+## Scope
+Who does it apply to?
+
+## Definitions
+- **Term 1** — meaning
+- **Term 2** — meaning
+
+## Policy Statement
+Describe the rules or expected behavior.
+
+## Responsibilities
+- Collaboration leadership responsibilities
+- Member responsibilities
+
+## Procedures
+1. Step one
+2. Step two
+3. Step three
+
+## Revision History
+| Version | Date | Author | Notes |
+|---------|------|--------|-------|
+| 1.0 | YYYY-MM-DD | Name | Initial version |

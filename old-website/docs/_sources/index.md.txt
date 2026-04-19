@@ -1,0 +1,55 @@
+# CAPIBARA Collaboration Documentation
+
+Welcome to the official documentation hub of the **CAPIBARA Collaboration**.  
+Here you will find:
+
+- **Public documentation** — project overviews, onboarding tutorials, software guides, governance policies.
+- **Internal documents** — collaboration-only materials such as meeting notes, agreements, and private templates.
+- **Reusable templates** — project templates, proposal forms, analysis note structures, meeting-minute templates, etc.
+
+Use the navigation tree below to browse the major sections of the documentation.
+
+---
+
+```{toctree}
+:maxdepth: 1
+public/governance/index
+public/onboarding/index
+sitemap
+```
+
+Return to the [main page](https://capibara3.github.io).
+
+
+## Documentation Guide
+
+### 1. What is this?
+This part of the website (capibara3.github.io/docs) hosts the documentation files for the CAPIBARA Collaboration, including onboarding tutorials, software guides, organizational structure, and policies. We make all of our files publicly available, including organizational and legal documents, except for signed agreements and documents containing personal data (which are kept private for privacy protection).
+
+### 2. How to navigate
+You can view the complete documentation structure in the [sitemap](https://capibara3.github.io/docs/sitemap.html). The **left sidebar** shows pages in your current directory, while the **right sidebar** displays sections of your current page. The **top navigation bar** includes a search function to find relevant pages by keywords. We maintain links regularly, but as documentation evolves, some paths may occasionally break.
+
+### 3. Report issues
+
+If you spot any mistakes—typos, incorrect content, missing information, website bugs, etc.—please let us know so we can make corrections. Click the **bug icon** in the navigation bar (top right) to create an issue. When reporting problems, please provide clear explanations with:
+- Links to the relevant pages
+- Screenshots or supporting documentation
+- Specific details about the issue
+
+We appreciate your help and will work to resolve the problem promptly.
+
+If you are a member, you can open an issue directly at the [.github-private repository](https://github.com/capibara3/.github-private) (where our documentation source lives) or read the next section to learn how to submit a pull request.
+
+### 4. How to contribute
+
+All members are invited to contribute to improving the documentation, including guides, tutorials, legal documents, and policies. We want to make our tutorials accessible to inexperienced members and keep our policies adapted to our collaboration's needs. Note that policy amendments are regulated and require majority approval.
+
+Our documentation lives in the [`.github-private` repository](https://github.com/capibara3/.github-private), where only collaboration members can access both public and internal markdown files—these are the files that need to be edited. Using GitHub Actions, we use Sphinx and pydata-sphinx-theme to automatically generate HTML pages from these markdown files and push the public files to our [website repository](https://github.com/capibara3/capibara3.github.io). The website is then uploaded and published through a separate process.
+
+To contribute to our docs:
+1. Fork and/or create a new branch in the [.github-private repository](https://github.com/capibara3/.github-private)
+2. Make your changes
+3. Create a pull request for discussion
+4. Wait for review, comments, and suggestions before merging
+
+Please ensure your edits are reviewed before merging.

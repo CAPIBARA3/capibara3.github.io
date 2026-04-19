@@ -1,0 +1,329 @@
+# 13 SciPy and Fitting
+
+## Goal
+Learn how to use SciPy for advanced statistical analysis and curve fitting. These techniques are essential for analyzing experimental data and validating scientific hypotheses.
+
+## Prerequisites
+- [07 Configuring Python & Pip](07_configuring_python_pip.md)
+- [08 Configuring Conda & venv](08_configuring_conda_venv.md)
+- [09 Python Basics](09_python_basics.md)
+- [10 Jupyter Notebooks](10_jupyter_notebook.md)
+- [11 NumPy and Pandas](11_numpy_pandas.md)
+- [12 Matplotlib and Data Visualization](12_matplotlib.md)
+
+## 1. Introduction
+
+**SciPy** (Scientific Python) is a library built on NumPy that provides advanced mathematical functions for:
+- Statistical analysis and hypothesis testing
+- Curve fitting and interpolation
+- Integration and differentiation
+- Linear algebra
+- Signal and image processing
+- Optimization
+
+In this tutorial, we focus on statistics and curve fitting—critical skills for scientific research.
+
+## 2. Installation
+
+SciPy usually comes with Anaconda/Miniconda. Install explicitly with:
+
+```bash
+pip install scipy
+```
+
+## 3. Basic Statistics
+
+### 3.1 Descriptive Statistics
+
+```python
+import numpy as np
+from scipy import stats
+
+data = [25, 30, 28, 35, 32, 29, 33, 31, 28, 34]
+
+# Mean, median, standard deviation
+print(np.mean(data))         # 30.5
+print(np.median(data))       # 31.0
+print(np.std(data))          # 2.76...
+
+# Using scipy.stats
+print(stats.describe(data))
+# DescribeResult(nobs=10, minmax=(25, 35), mean=30.5, variance=7.61..., skewness=-0.11..., kurtosis=-1.09...)
+```
+
+### 3.2 Percentiles and Quantiles
+
+```python
+from scipy import stats
+
+data = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+# Percentiles
+print(np.percentile(data, 25))  # 25th percentile (Q1)
+print(np.percentile(data, 50))  # 50th percentile (median)
+print(np.percentile(data, 75))  # 75th percentile (Q3)
+```
+
+## 4. Hypothesis Testing
+
+### 4.1 T-Test (Compare Two Samples)
+
+Testing if two datasets have different means:
+
+```python
+from scipy import stats
+
+sample1 = [23, 25, 27, 29, 31, 33]  # Group A
+sample2 = [28, 30, 32, 34, 36, 38]  # Group B
+
+# Two-sample t-test
+t_statistic, p_value = stats.ttest_ind(sample1, sample2)
+
+print(f"T-statistic: {t_statistic}")
+print(f"P-value: {p_value}")
+
+if p_value < 0.05:
+    print("The groups are significantly different (p < 0.05)")
+else:
+    print("No significant difference between groups")
+```
+
+**Interpretation:**
+- P-value < 0.05: Groups are statistically significantly different
+- P-value ≥ 0.05: No significant difference detected
+
+### 4.2 Correlation Test
+
+Test if two variables are correlated:
+
+```python
+from scipy import stats
+
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 5, 4, 6]
+
+correlation, p_value = stats.pearsonr(x, y)
+
+print(f"Correlation: {correlation:.3f}")
+print(f"P-value: {p_value:.4f}")
+
+if p_value < 0.05:
+    print("Significant correlation found!")
+```
+
+### 4.3 Chi-Square Test
+
+Test association between categorical variables:
+
+```python
+from scipy.stats import chi2_contingency
+
+# Contingency table: observed frequencies
+observed = [[10, 20], [15, 25]]
+
+chi2, p_value, dof, expected = chi2_contingency(observed)
+
+print(f"Chi-square: {chi2:.3f}")
+print(f"P-value: {p_value:.4f}")
+print(f"Degrees of freedom: {dof}")
+```
+
+## 5. Curve Fitting
+
+### 5.1 Linear Fitting
+
+Fit data to a line: $y = mx + b$
+
+```python
+import numpy as np
+from scipy.optimize import curve_fit
+import matplotlib.pyplot as plt
+
+# Generate data with noise
+x_data = np.array([1, 2, 3, 4, 5])
+y_data = np.array([2.1, 3.9, 6.1, 8.0, 9.9])  # Approximate y = 2x
+
+# Define linear function
+def linear(x, m, b):
+    return m * x + b
+
+# Fit
+params, covariance = curve_fit(linear, x_data, y_data)
+m, b = params
+
+print(f"Slope (m): {m:.3f}")
+print(f"Intercept (b): {b:.3f}")
+
+# Plot
+x_fit = np.linspace(0, 6, 100)
+y_fit = linear(x_fit, m, b)
+
+plt.scatter(x_data, y_data, label="Data")
+plt.plot(x_fit, y_fit, label=f"Fit: y={m:.2f}x+{b:.2f}")
+plt.legend()
+plt.show()
+```
+
+### 5.2 Polynomial Fitting
+
+Fit data to a polynomial: $y = ax^2 + bx + c$
+
+```python
+import numpy as np
+from scipy.optimize import curve_fit
+import matplotlib.pyplot as plt
+
+x_data = np.array([1, 2, 3, 4, 5])
+y_data = np.array([1, 4, 9, 16, 25])  # y = x²
+
+# Define quadratic function
+def quadratic(x, a, b, c):
+    return a * x**2 + b * x + c
+
+# Fit
+params, cov = curve_fit(quadratic, x_data, y_data)
+a, b, c = params
+
+print(f"a={a:.3f}, b={b:.3f}, c={c:.3f}")
+
+# Plot
+x_fit = np.linspace(0, 6, 100)
+y_fit = quadratic(x_fit, a, b, c)
+
+plt.scatter(x_data, y_data, label="Data")
+plt.plot(x_fit, y_fit, label=f"Fit: y={a:.2f}x²+{b:.2f}x+{c:.2f}")
+plt.legend()
+plt.show()
+```
+
+### 5.3 Exponential Fitting
+
+Fit data to: $y = A e^{Bx}$
+
+```python
+from scipy.optimize import curve_fit
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Exponential data
+x_data = np.array([0, 1, 2, 3, 4])
+y_data = np.array([1, 2.7, 7.4, 20.1, 54.6])
+
+# Define exponential function
+def exponential(x, A, B):
+    return A * np.exp(B * x)
+
+# Fit
+params, cov = curve_fit(exponential, x_data, y_data)
+A, B = params
+
+print(f"A={A:.3f}, B={B:.3f}")
+
+# Plot
+x_fit = np.linspace(0, 5, 100)
+y_fit = exponential(x_fit, A, B)
+
+plt.scatter(x_data, y_data, label="Data")
+plt.plot(x_fit, y_fit, label=f"Fit: y={A:.2f}e^({B:.2f}x)")
+plt.legend()
+plt.show()
+```
+
+## 6. Goodness of Fit
+
+### Coefficient of Determination (R²)
+
+Measure how well the fit explains the data:
+
+```python
+from scipy.optimize import curve_fit
+from sklearn.metrics import r2_score
+import numpy as np
+
+x_data = np.array([1, 2, 3, 4, 5])
+y_data = np.array([2.1, 3.9, 6.1, 8.0, 9.9])
+
+def linear(x, m, b):
+    return m * x + b
+
+params, _ = curve_fit(linear, x_data, y_data)
+y_fit = linear(x_data, *params)
+
+r2 = r2_score(y_data, y_fit)
+print(f"R² = {r2:.4f}")  # 1.0 = perfect fit, 0.0 = poor fit
+```
+
+## 7. Unit Conversion and Constants
+
+SciPy provides physical constants:
+
+```python
+from scipy.constants import c, G, k_B, e
+
+print(f"Speed of light: {c} m/s")
+print(f"Gravitational constant: {G} m³/(kg·s²)")
+print(f"Boltzmann constant: {k_B} J/K")
+print(f"Elementary charge: {e} C")
+```
+
+## 8. Integration and Differentiation
+
+### Numerical Integration
+
+```python
+from scipy import integrate
+import numpy as np
+
+def f(x):
+    return x**2
+
+# Integrate from 0 to 2
+result, error = integrate.quad(f, 0, 2)
+print(f"Integral: {result:.4f}")  # Should be 8/3 ≈ 2.667
+```
+
+## 9. Practical Example: Analyzing Experimental Data
+
+```python
+import numpy as np
+from scipy import stats
+from scipy.optimize import curve_fit
+import matplotlib.pyplot as plt
+
+# Hypothetical experiment: measuring voltage vs. current
+voltage = np.array([1.0, 2.1, 3.0, 4.1, 5.0])
+current = np.array([0.10, 0.21, 0.30, 0.41, 0.50])  # Ohm's law: V = I*R
+
+# 1. Calculate resistance (slope)
+def ohms_law(I, R):
+    return I * R
+
+params, cov = curve_fit(ohms_law, current, voltage)
+R = params[0]
+print(f"Resistance: {R:.2f} Ω")
+
+# 2. Calculate uncertainty
+R_uncertainty = np.sqrt(np.diag(cov))[0]
+print(f"Uncertainty: ±{R_uncertainty:.3f} Ω")
+
+# 3. Plot
+I_fit = np.linspace(0, 0.6, 100)
+V_fit = ohms_law(I_fit, R)
+
+plt.scatter(current, voltage, label="Measured")
+plt.plot(I_fit, V_fit, label=f"Fit: V={R:.2f}I")
+plt.xlabel("Current (A)")
+plt.ylabel("Voltage (V)")
+plt.legend()
+plt.show()
+```
+
+## 10. Resources
+
+- [SciPy Documentation](https://docs.scipy.org/)
+- [SciPy Tutorial on Statistics](https://docs.scipy.org/doc/scipy/tutorial/stats.html)
+- [Fitting Curve to Data (StatQuest)](https://www.youtube.com/watch?v=c9vsk2bdjpY)
+
+## Next Steps
+
+You now have solid foundational knowledge of Python for scientific computing! To apply these skills in collaborative projects, proceed to: [14 Creating Packages](14_packages.md).

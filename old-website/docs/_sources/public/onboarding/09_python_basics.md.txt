@@ -1,0 +1,304 @@
+# 09 Python Basics
+
+## Goal
+Learn the fundamentals of Python programming: data types, variables, control flow (if/else, loops), and functions. These concepts form the foundation for all the advanced topics covered in later tutorials.
+
+## Prerequisites
+- [07 Configuring Python & Pip](07_configuring_python_pip.md)
+- [08 Configuring Conda & venv](08_configuring_conda_venv.md)
+- [X Code Editors and IDEs](X_code_editors.md)
+
+## 1. Introduction
+
+Python is a versatile, beginner-friendly programming language used in scientific research, data analysis, web development, and automation. Its simple syntax makes it perfect for learning programming concepts.
+
+**In this tutorial, you'll learn:**
+- How to run Python code
+- Working with variables and data types
+- Understanding control flow (decisions and loops)
+- Writing reusable code with functions
+- Handling errors gracefully
+
+This tutorial provides a foundation. For comprehensive, interactive learning with exercises, we recommend the [Intro to Python course](https://github.com/omsharansalafia/intropython), which covers these topics in depth with notebook-based exercises.
+
+## 2. Running Python Code
+
+### Option 1: Interactive Python Shell
+Open your terminal and type:
+```bash
+python3
+```
+
+You'll see a `>>>` prompt. You can type Python code directly:
+```python
+>>> print("Hello, World!")
+Hello, World!
+>>> 5 + 3
+8
+>>> exit()
+```
+
+Press Ctrl+D (or type `exit()`) to quit.
+
+### Option 2: Python Script File
+Create a file `hello.py`:
+```python
+print("Hello, World!")
+x = 5
+y = 3
+print(f"The sum of {x} and {y} is {x + y}")
+```
+
+Run it from your terminal:
+```bash
+python3 hello.py
+```
+
+### Option 3: VS Code
+If you've set up VS Code with Python extensions, you can open a Python file and click the ▶ button to run it.
+
+## 3. Variables and Data Types
+
+### Variables
+A variable is a named container for storing values:
+```python
+name = "Alice"
+age = 20
+height = 1.75
+is_student = True
+
+print(name)      # Alice
+print(age)       # 20
+```
+
+### Data Types
+```python
+# String (text)
+message = "Welcome to CAPIBARA"
+
+# Integer (whole numbers)
+count = 42
+
+# Float (decimal numbers)
+pi = 3.14159
+
+# Boolean (True or False)
+is_active = True
+
+# Check the type
+print(type(message))   # <class 'str'>
+print(type(count))     # <class 'int'>
+```
+
+### Type Conversion
+```python
+age_string = "25"
+age_number = int(age_string)  # Convert string to integer
+
+height = 1.75
+height_string = str(height)   # Convert float to string
+```
+
+## 4. Basic Operations
+
+### Arithmetic
+```python
+a = 10
+b = 3
+
+print(a + b)      # 13 (addition)
+print(a - b)      # 7 (subtraction)
+print(a * b)      # 30 (multiplication)
+print(a / b)      # 3.333... (division)
+print(a // b)     # 3 (floor division)
+print(a ** b)     # 1000 (exponentiation)
+print(a % b)      # 1 (modulo/remainder)
+```
+
+### String Operations
+```python
+first_name = "John"
+last_name = "Doe"
+
+# Concatenation
+full_name = first_name + " " + last_name
+print(full_name)  # John Doe
+
+# String formatting
+message = f"My name is {first_name} and I'm 25 years old"
+print(message)    # My name is John and I'm 25 years old
+
+# String length
+text = "Python"
+print(len(text))  # 6
+```
+
+## 5. Control Flow: If/Else
+
+Make decisions in your code:
+
+```python
+age = 25
+
+if age >= 18:
+    print("You are an adult")
+elif age >= 13:
+    print("You are a teenager")
+else:
+    print("You are a child")
+```
+
+Comparison operators:
+- `==` (equal to)
+- `!=` (not equal to)
+- `>` (greater than)
+- `<` (less than)
+- `>=` (greater than or equal)
+- `<=` (less than or equal)
+
+Logical operators:
+```python
+age = 25
+has_license = True
+
+if age >= 18 and has_license:
+    print("You can drive")
+
+if age < 18 or has_license == False:
+    print("You cannot drive yet")
+```
+
+## 6. Loops
+
+### While Loop
+Repeat code while a condition is true:
+```python
+count = 0
+while count < 5:
+    print(f"Count is {count}")
+    count = count + 1
+
+# Output: Count is 0, 1, 2, 3, 4
+```
+
+### For Loop
+Repeat code for each item in a collection:
+```python
+# Loop through a range
+for i in range(5):
+    print(f"i is {i}")
+
+# Loop through a list
+fruits = ["apple", "banana", "orange"]
+for fruit in fruits:
+    print(fruit)
+
+# Loop with index
+for i, fruit in enumerate(fruits):
+    print(f"{i}: {fruit}")  # 0: apple, 1: banana, 2: orange
+```
+
+### Breaking Out of Loops
+```python
+for i in range(10):
+    if i == 5:
+        break  # Exit the loop
+    print(i)
+
+# Output: 0, 1, 2, 3, 4
+```
+
+## 7. Lists and Dictionaries
+
+### Lists (Ordered collections)
+```python
+numbers = [1, 2, 3, 4, 5]
+print(numbers[0])      # 1 (first element)
+print(numbers[-1])     # 5 (last element)
+
+# Add elements
+numbers.append(6)
+
+# Remove elements
+numbers.remove(3)
+
+# Length
+print(len(numbers))    # 5
+```
+
+### Dictionaries (Key-value pairs)
+```python
+student = {
+    "name": "Alice",
+    "age": 20,
+    "major": "Physics"
+}
+
+print(student["name"])           # Alice
+student["age"] = 21             # Update value
+student["email"] = "a@uni.edu"  # Add new key
+
+# Check if key exists
+if "name" in student:
+    print("Name field exists")
+```
+
+## 8. Functions
+
+Functions are reusable blocks of code. You define them once and use them many times:
+
+```python
+# Simple function
+def greet(name):
+    message = f"Hello, {name}!"
+    return message
+
+result = greet("Alice")
+print(result)  # Hello, Alice!
+```
+
+### Function with Multiple Parameters
+```python
+def add(a, b):
+    return a + b
+
+sum_result = add(5, 3)
+print(sum_result)  # 8
+```
+
+### Default Parameters
+```python
+def greet(name, greeting="Hello"):
+    return f"{greeting}, {name}!"
+
+print(greet("Alice"))                    # Hello, Alice!
+print(greet("Bob", greeting="Hi"))       # Hi, Bob!
+```
+
+### Multiple Return Values
+```python
+def get_min_max(numbers):
+    return min(numbers), max(numbers)
+
+minimum, maximum = get_min_max([1, 5, 3, 9, 2])
+print(minimum)  # 1
+print(maximum)  # 9
+```
+
+## 9. Handling Errors with Try/Except
+
+Gracefully handle errors instead of crashing:
+
+```python
+try:
+    number = int("not a number")
+except ValueError:
+    print("Error: Cannot convert to integer")
+```
+
+## 10. Next Steps
+
+- **Practice**: Write small Python scripts to solidify these concepts
+- **Explore**: Visit the [Intro to Python course](https://github.com/omsharansalafia/intropython) for interactive notebooks and exercises
+- **Official Docs**: Read [Python's official tutorial](https://docs.python.org/3/tutorial/)
+- **Keep learning**: Once comfortable, move to [10 Jupyter Notebooks](10_jupyter_notebook.md)
