@@ -1,7 +1,6 @@
 /* CAPIBARA Collaboration — Main Script */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initNav();
   initBackToTop();
   initSmoothScroll();
   injectComponents();
@@ -37,9 +36,7 @@ async function injectComponents() {
 }
 
 function getAssetsRoot() {
-  // Determine path depth to assets/
-  const depth = (window.location.pathname.match(/\//g) || []).length - 1;
-  return depth <= 1 ? '/assets/' : '../assets/';
+  return '/assets/';
 }
 
 /* ── Mobile nav ── */
@@ -63,8 +60,10 @@ function initNav() {
     if (!link) return;
     link.addEventListener('click', e => {
       if (window.innerWidth <= 768) {
-        e.preventDefault();
-        dd.classList.toggle('open');
+        const isButtonToggle = link.tagName === 'BUTTON';
+        if (!isButtonToggle) e.preventDefault();
+        const open = dd.classList.toggle('open');
+        if (isButtonToggle) link.setAttribute('aria-expanded', open);
       }
     });
   });
@@ -74,7 +73,11 @@ function initNav() {
       links.classList.remove('open');
       toggle.innerHTML = '<i class="fas fa-bars"></i>';
       toggle.setAttribute('aria-expanded', false);
-      dropdowns.forEach(d => d.classList.remove('open'));
+      dropdowns.forEach(d => {
+        d.classList.remove('open');
+        const ddToggle = d.querySelector('.nav-link[aria-expanded]');
+        if (ddToggle) ddToggle.setAttribute('aria-expanded', false);
+      });
     }
   });
 
@@ -106,7 +109,9 @@ function initBackToTop() {
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
+      const href = a.getAttribute('href');
+      if (!href || href.length <= 1) return;
+      const target = document.getElementById(href.slice(1));
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
