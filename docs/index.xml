@@ -6,65 +6,65 @@
       <description>Last 10 notes on CAPIBARA Docs</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Governance</title>
-    <link>https://capibara3.github.io/02_governance/old-index</link>
-    <guid>https://capibara3.github.io/02_governance/old-index</guid>
-    <description><![CDATA[ Welcome to CAPIBARA’s governance docs! We’re a small (~10 student) informal research collaboration. ]]></description>
-    <pubDate>Thu, 23 Apr 2026 08:41:20 GMT</pubDate>
+    <title>00 Applying to Join</title>
+    <link>https://capibara3.github.io/0_onboarding/01_applying_to_join</link>
+    <guid>https://capibara3.github.io/0_onboarding/01_applying_to_join</guid>
+    <description><![CDATA[  Summary This page explains how to join the CAPIBARA Collaboration as a student at any level. ]]></description>
+    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
   </item><item>
-    <title>Sitemap</title>
-    <link>https://capibara3.github.io/sitemap</link>
-    <guid>https://capibara3.github.io/sitemap</guid>
-    <description><![CDATA[ To navigate the documentation you can use the sidebar to the left. ]]></description>
-    <pubDate>Thu, 23 Apr 2026 08:41:20 GMT</pubDate>
+    <title>11 Unix</title>
+    <link>https://capibara3.github.io/1_tech_foundations/11_unix</link>
+    <guid>https://capibara3.github.io/1_tech_foundations/11_unix</guid>
+    <description><![CDATA[  ABSTRACT The goal of this coding tutorial is to set up a unix-like environment on your computer. ]]></description>
+    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
   </item><item>
-    <title>CAPIBARA Collaboration Documentation</title>
-    <link>https://capibara3.github.io/</link>
-    <guid>https://capibara3.github.io/</guid>
-    <description><![CDATA[ Welcome to the official documentation hub of the CAPIBARA Collaboration. ]]></description>
-    <pubDate>Fri, 27 Mar 2026 13:37:20 GMT</pubDate>
+    <title>13 Git</title>
+    <link>https://capibara3.github.io/1_tech_foundations/13_git</link>
+    <guid>https://capibara3.github.io/1_tech_foundations/13_git</guid>
+    <description><![CDATA[  ABSTRACT Git is essentially a “Time Machine” for you code. ]]></description>
+    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
   </item><item>
-    <title>16 Docker</title>
-    <link>https://capibara3.github.io/01_onboarding/16_docker</link>
-    <guid>https://capibara3.github.io/01_onboarding/16_docker</guid>
-    <description><![CDATA[ Goal Learn how to use Docker to containerize your Python applications and ensure consistent environments across different machines. ]]></description>
-    <pubDate>Fri, 27 Mar 2026 13:22:38 GMT</pubDate>
+    <title>12 Terminal</title>
+    <link>https://capibara3.github.io/1_tech_foundations/13_terminal</link>
+    <guid>https://capibara3.github.io/1_tech_foundations/13_terminal</guid>
+    <description><![CDATA[  ABSTRACT The Terminal (also called Command Line or Shell) is a text-based way to talk to your computer. ]]></description>
+    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
+  </item><item>
+    <title>14 GitHub 1</title>
+    <link>https://capibara3.github.io/1_tech_foundations/14_github_1</link>
+    <guid>https://capibara3.github.io/1_tech_foundations/14_github_1</guid>
+    <description><![CDATA[  ABSTRACT If Git is the “Time Machine” on your computer, GitHub is the “Space Station” in the cloud where everyone parks their time machines. ]]></description>
+    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
+  </item><item>
+    <title>15 GitHub 2</title>
+    <link>https://capibara3.github.io/1_tech_foundations/15_github_2</link>
+    <guid>https://capibara3.github.io/1_tech_foundations/15_github_2</guid>
+    <description><![CDATA[ Goal Learn the GitHub workflow and how to use GitHub’s features to collaborate, contribute, and communicate with the rest of the team. ]]></description>
+    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
+  </item><item>
+    <title>07 Configuring Python &amp; Pip</title>
+    <link>https://capibara3.github.io/1_tech_foundations/16_configuring_python_pip</link>
+    <guid>https://capibara3.github.io/1_tech_foundations/16_configuring_python_pip</guid>
+    <description><![CDATA[ Goal In this tutorial you will learn to setup your computer to compile and run code in the Python programming language. ]]></description>
+    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
   </item><item>
     <title>17 Local $\LaTeX$</title>
-    <link>https://capibara3.github.io/01_onboarding/17_local_latex</link>
-    <guid>https://capibara3.github.io/01_onboarding/17_local_latex</guid>
-    <description><![CDATA[ Goal 02_setting_up_unix 03_command_line Prerequisites Basic collaboration account Installed environment Steps 1. ]]></description>
-    <pubDate>Fri, 27 Mar 2026 13:22:38 GMT</pubDate>
+    <link>https://capibara3.github.io/1_tech_foundations/17_local_latex</link>
+    <guid>https://capibara3.github.io/1_tech_foundations/17_local_latex</guid>
+    <description><![CDATA[ Goal 11_unix 13_terminal Prerequisites Basic collaboration account Installed environment Steps 1. ]]></description>
+    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
   </item><item>
-    <title>CodeCarbon</title>
-    <link>https://capibara3.github.io/01_onboarding/18_codecarbon</link>
-    <guid>https://capibara3.github.io/01_onboarding/18_codecarbon</guid>
-    <description><![CDATA[ Goal You will learn how to track and visualize the carbon footprint of your Python code using the codecarbon package. ]]></description>
-    <pubDate>Fri, 27 Mar 2026 13:22:38 GMT</pubDate>
+    <title>09 Python Basics</title>
+    <link>https://capibara3.github.io/1_tech_foundations/17_python_basics</link>
+    <guid>https://capibara3.github.io/1_tech_foundations/17_python_basics</guid>
+    <description><![CDATA[ Goal Learn the fundamentals of Python programming: data types, variables, control flow (if/else, loops), and functions. ]]></description>
+    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
   </item><item>
-    <title>Code Editors and IDEs</title>
-    <link>https://capibara3.github.io/01_onboarding/X_code_editors</link>
-    <guid>https://capibara3.github.io/01_onboarding/X_code_editors</guid>
-    <description><![CDATA[ Goal Learn about different code editors and integrated development environments (IDEs), and how to choose one that fits your needs. ]]></description>
-    <pubDate>Fri, 27 Mar 2026 13:22:38 GMT</pubDate>
-  </item><item>
-    <title>Onboarding</title>
-    <link>https://capibara3.github.io/01_onboarding/</link>
-    <guid>https://capibara3.github.io/01_onboarding/</guid>
-    <description><![CDATA[ Welcome to the CAPIBARA Collaboration! This onboarding guide will help you transition from application to becoming a skilled software engineer and researcher. ]]></description>
-    <pubDate>Fri, 27 Mar 2026 13:22:38 GMT</pubDate>
-  </item><item>
-    <title>About</title>
-    <link>https://capibara3.github.io/02_governance/about</link>
-    <guid>https://capibara3.github.io/02_governance/about</guid>
-    <description><![CDATA[ Structure Here’s to the structure of the CAPIBARA Collaboration: Parent organisation: The CAPIBARA Collaboration CAPIBARA-CRD: Cosmic Ray Detector Pathfinder. ]]></description>
-    <pubDate>Fri, 27 Mar 2026 13:22:38 GMT</pubDate>
-  </item><item>
-    <title>00 Applying to Join</title>
-    <link>https://capibara3.github.io/01_onboarding/00_applying_to_join</link>
-    <guid>https://capibara3.github.io/01_onboarding/00_applying_to_join</guid>
-    <description><![CDATA[ Goal Learn about the application process for joining the CAPIBARA Collaboration. ]]></description>
-    <pubDate>Fri, 27 Mar 2026 13:21:15 GMT</pubDate>
+    <title>21_CODE_OF_CONDUCT</title>
+    <link>https://capibara3.github.io/2_governance/21_CODE_OF_CONDUCT</link>
+    <guid>https://capibara3.github.io/2_governance/21_CODE_OF_CONDUCT</guid>
+    <description><![CDATA[  Adapted from the Contributor Covenant, version 2.1 TL;DR Be kind, be respectful, be professional. ]]></description>
+    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
   </item>
     </channel>
   </rss>
