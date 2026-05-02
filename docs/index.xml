@@ -6,23 +6,35 @@
       <description>Last 10 notes on CAPIBARA Docs</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>25_PRIVACY_POLICY</title>
-    <link>https://capibara3.github.io/2_governance/25_PRIVACY_POLICY</link>
-    <guid>https://capibara3.github.io/2_governance/25_PRIVACY_POLICY</guid>
-    <description><![CDATA[ Version 1.0 | Effective Date: January 1, 2026 About This Policy The CAPIBARA Collaboration is a small, informal student research group. ]]></description>
-    <pubDate>Sat, 02 May 2026 12:40:57 GMT</pubDate>
+    <title>21 Code of Conduct</title>
+    <link>https://capibara3.github.io/2_governance/21_CODE_OF_CONDUCT</link>
+    <guid>https://capibara3.github.io/2_governance/21_CODE_OF_CONDUCT</guid>
+    <description><![CDATA[  Adapted from the Contributor Covenant, version 2.1 TL;DR Be kind, be respectful, be professional. ]]></description>
+    <pubDate>Sat, 02 May 2026 12:54:42 GMT</pubDate>
   </item><item>
-    <title>CAPIBARA Handbook</title>
+    <title>22 About</title>
+    <link>https://capibara3.github.io/2_governance/22_about</link>
+    <guid>https://capibara3.github.io/2_governance/22_about</guid>
+    <description><![CDATA[ Why does CAPIBARA exist? The Collaboration for the Analysis of Photonic and Ionic Bursts and Radiation (CAPIBARA) was established in July 2024 with a clear mandate: To explore the high-energy cosmos To do so with multi-messenger analysis To be fully led by students CAPIBARA’s development was acceler... ]]></description>
+    <pubDate>Sat, 02 May 2026 12:54:42 GMT</pubDate>
+  </item><item>
+    <title>23 Contributing Guidelines</title>
+    <link>https://capibara3.github.io/2_governance/23_CONTRIBUTING</link>
+    <guid>https://capibara3.github.io/2_governance/23_CONTRIBUTING</guid>
+    <description><![CDATA[  ABSTRACT The goal of this page is to master the GitHub Workflow. In a scientific collaboration, GitHub is more than a code host. ]]></description>
+    <pubDate>Sat, 02 May 2026 12:54:42 GMT</pubDate>
+  </item><item>
+    <title>24 CAPIBARA Handbook</title>
     <link>https://capibara3.github.io/2_governance/24_CAPIBARA_HANDBOOK</link>
     <guid>https://capibara3.github.io/2_governance/24_CAPIBARA_HANDBOOK</guid>
     <description><![CDATA[  The Name CAPIBARA or CAPIBARA Collaboration stands for Collaboration for the Analysis of Photonic and Ionic Bursts and Radiation. 1. ]]></description>
-    <pubDate>Sat, 02 May 2026 12:39:13 GMT</pubDate>
+    <pubDate>Sat, 02 May 2026 12:54:42 GMT</pubDate>
   </item><item>
-    <title>About</title>
-    <link>https://capibara3.github.io/2_governance/22_why_does_capibara_exist</link>
-    <guid>https://capibara3.github.io/2_governance/22_why_does_capibara_exist</guid>
-    <description><![CDATA[ Why does CAPIBARA exist? The Collaboration for the Analysis of Photonic and Ionic Bursts and Radiation (CAPIBARA) was established in July 2024 with a clear mandate: To explore the high-energy cosmos To do so with multi-messenger analysis To be fully led by students CAPIBARA’s development was acceler... ]]></description>
-    <pubDate>Sat, 02 May 2026 12:38:11 GMT</pubDate>
+    <title>Full Privacy Policy</title>
+    <link>https://capibara3.github.io/2_governance/25_PRIVACY_POLICY</link>
+    <guid>https://capibara3.github.io/2_governance/25_PRIVACY_POLICY</guid>
+    <description><![CDATA[ Version 1.0 | Effective Date: January 1, 2026 About This Policy The CAPIBARA Collaboration is a small, informal student research group. ]]></description>
+    <pubDate>Sat, 02 May 2026 12:54:42 GMT</pubDate>
   </item><item>
     <title>README</title>
     <link>https://capibara3.github.io/GAMMA/README</link>
@@ -52,18 +64,6 @@
     <link>https://capibara3.github.io/1_tech_foundations/12_terminal</link>
     <guid>https://capibara3.github.io/1_tech_foundations/12_terminal</guid>
     <description><![CDATA[  ABSTRACT The Terminal (also called Command Line or Shell) is a text-based way to talk to your computer. ]]></description>
-    <pubDate>Sat, 02 May 2026 06:52:02 GMT</pubDate>
-  </item><item>
-    <title>13 Git</title>
-    <link>https://capibara3.github.io/1_tech_foundations/13_git</link>
-    <guid>https://capibara3.github.io/1_tech_foundations/13_git</guid>
-    <description><![CDATA[  ABSTRACT Git is essentially a “Time Machine” for you code. ]]></description>
-    <pubDate>Sat, 02 May 2026 06:52:02 GMT</pubDate>
-  </item><item>
-    <title>14 GitHub</title>
-    <link>https://capibara3.github.io/1_tech_foundations/14_github</link>
-    <guid>https://capibara3.github.io/1_tech_foundations/14_github</guid>
-    <description><![CDATA[  ABSTRACT If Git is the “Time Machine” on your computer, GitHub is the “Space Station” in the cloud where everyone parks their time machines. ]]></description>
     <pubDate>Sat, 02 May 2026 06:52:02 GMT</pubDate>
   </item>
     </channel>
