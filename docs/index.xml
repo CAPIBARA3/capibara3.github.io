@@ -6,6 +6,24 @@
       <description>Last 10 notes on CAPIBARA Docs</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>25_PRIVACY_POLICY</title>
+    <link>https://capibara3.github.io/2_governance/25_PRIVACY_POLICY</link>
+    <guid>https://capibara3.github.io/2_governance/25_PRIVACY_POLICY</guid>
+    <description><![CDATA[ Version 1.0 | Effective Date: January 1, 2026 About This Policy The CAPIBARA Collaboration is a small, informal student research group. ]]></description>
+    <pubDate>Sat, 02 May 2026 12:40:57 GMT</pubDate>
+  </item><item>
+    <title>CAPIBARA Handbook</title>
+    <link>https://capibara3.github.io/2_governance/24_CAPIBARA_HANDBOOK</link>
+    <guid>https://capibara3.github.io/2_governance/24_CAPIBARA_HANDBOOK</guid>
+    <description><![CDATA[  The Name CAPIBARA or CAPIBARA Collaboration stands for Collaboration for the Analysis of Photonic and Ionic Bursts and Radiation. 1. ]]></description>
+    <pubDate>Sat, 02 May 2026 12:39:13 GMT</pubDate>
+  </item><item>
+    <title>About</title>
+    <link>https://capibara3.github.io/2_governance/22_why_does_capibara_exist</link>
+    <guid>https://capibara3.github.io/2_governance/22_why_does_capibara_exist</guid>
+    <description><![CDATA[ Why does CAPIBARA exist? The Collaboration for the Analysis of Photonic and Ionic Bursts and Radiation (CAPIBARA) was established in July 2024 with a clear mandate: To explore the high-energy cosmos To do so with multi-messenger analysis To be fully led by students CAPIBARA’s development was acceler... ]]></description>
+    <pubDate>Sat, 02 May 2026 12:38:11 GMT</pubDate>
+  </item><item>
     <title>README</title>
     <link>https://capibara3.github.io/GAMMA/README</link>
     <guid>https://capibara3.github.io/GAMMA/README</guid>
@@ -46,24 +64,6 @@
     <link>https://capibara3.github.io/1_tech_foundations/14_github</link>
     <guid>https://capibara3.github.io/1_tech_foundations/14_github</guid>
     <description><![CDATA[  ABSTRACT If Git is the “Time Machine” on your computer, GitHub is the “Space Station” in the cloud where everyone parks their time machines. ]]></description>
-    <pubDate>Sat, 02 May 2026 06:52:02 GMT</pubDate>
-  </item><item>
-    <title>15 Local LaTeX</title>
-    <link>https://capibara3.github.io/1_tech_foundations/15_local_latex</link>
-    <guid>https://capibara3.github.io/1_tech_foundations/15_local_latex</guid>
-    <description><![CDATA[  ABSTRACT If Markdown is a quick handwritten note (what we use on GitHub), \LaTeX is a professional printing press. ]]></description>
-    <pubDate>Sat, 02 May 2026 06:52:02 GMT</pubDate>
-  </item><item>
-    <title>16a Configuring Python &amp; Pip</title>
-    <link>https://capibara3.github.io/1_tech_foundations/16a_configuring_python_pip</link>
-    <guid>https://capibara3.github.io/1_tech_foundations/16a_configuring_python_pip</guid>
-    <description><![CDATA[  ABSTRACT To contribute to the CAPIBARA Collaboration, you need a functional Python environment. ]]></description>
-    <pubDate>Sat, 02 May 2026 06:52:02 GMT</pubDate>
-  </item><item>
-    <title>23_CONTRIBUTING</title>
-    <link>https://capibara3.github.io/2_governance/23_CONTRIBUTING</link>
-    <guid>https://capibara3.github.io/2_governance/23_CONTRIBUTING</guid>
-    <description><![CDATA[  ABSTRACT The goal of this page is to master the GitHub Workflow. In a scientific collaboration, GitHub is more than a code host. ]]></description>
     <pubDate>Sat, 02 May 2026 06:52:02 GMT</pubDate>
   </item>
     </channel>
