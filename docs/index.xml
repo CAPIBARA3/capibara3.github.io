@@ -6,6 +6,12 @@
       <description>Last 10 notes on CAPIBARA Docs</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>16b Python Basics</title>
+    <link>https://capibara3.github.io/1_tech_foundations/16b_python_basics</link>
+    <guid>https://capibara3.github.io/1_tech_foundations/16b_python_basics</guid>
+    <description><![CDATA[  ABSTRACT Python is the “Swiss Army Knife” of modern science. ]]></description>
+    <pubDate>Sat, 02 May 2026 06:55:11 GMT</pubDate>
+  </item><item>
     <title>01 Applying to Join</title>
     <link>https://capibara3.github.io/0_onboarding/01_applying_to_join</link>
     <guid>https://capibara3.github.io/0_onboarding/01_applying_to_join</guid>
@@ -46,12 +52,6 @@
     <link>https://capibara3.github.io/1_tech_foundations/16a_configuring_python_pip</link>
     <guid>https://capibara3.github.io/1_tech_foundations/16a_configuring_python_pip</guid>
     <description><![CDATA[  ABSTRACT To contribute to the CAPIBARA Collaboration, you need a functional Python environment. ]]></description>
-    <pubDate>Sat, 02 May 2026 06:52:02 GMT</pubDate>
-  </item><item>
-    <title>16 Python Basics</title>
-    <link>https://capibara3.github.io/1_tech_foundations/16b_python_basics</link>
-    <guid>https://capibara3.github.io/1_tech_foundations/16b_python_basics</guid>
-    <description><![CDATA[  ABSTRACT Python is the “Swiss Army Knife” of modern science. ]]></description>
     <pubDate>Sat, 02 May 2026 06:52:02 GMT</pubDate>
   </item><item>
     <title>23_CONTRIBUTING</title>
