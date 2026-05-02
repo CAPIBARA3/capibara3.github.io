@@ -6,65 +6,65 @@
       <description>Last 10 notes on CAPIBARA Docs</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>00 Applying to Join</title>
+    <title>01 Applying to Join</title>
     <link>https://capibara3.github.io/0_onboarding/01_applying_to_join</link>
     <guid>https://capibara3.github.io/0_onboarding/01_applying_to_join</guid>
     <description><![CDATA[  Summary This page explains how to join the CAPIBARA Collaboration as a student at any level. ]]></description>
-    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
+    <pubDate>Sat, 02 May 2026 06:52:02 GMT</pubDate>
   </item><item>
     <title>11 Unix</title>
     <link>https://capibara3.github.io/1_tech_foundations/11_unix</link>
     <guid>https://capibara3.github.io/1_tech_foundations/11_unix</guid>
     <description><![CDATA[  ABSTRACT The goal of this coding tutorial is to set up a unix-like environment on your computer. ]]></description>
-    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
+    <pubDate>Sat, 02 May 2026 06:52:02 GMT</pubDate>
+  </item><item>
+    <title>12 Terminal</title>
+    <link>https://capibara3.github.io/1_tech_foundations/12_terminal</link>
+    <guid>https://capibara3.github.io/1_tech_foundations/12_terminal</guid>
+    <description><![CDATA[  ABSTRACT The Terminal (also called Command Line or Shell) is a text-based way to talk to your computer. ]]></description>
+    <pubDate>Sat, 02 May 2026 06:52:02 GMT</pubDate>
   </item><item>
     <title>13 Git</title>
     <link>https://capibara3.github.io/1_tech_foundations/13_git</link>
     <guid>https://capibara3.github.io/1_tech_foundations/13_git</guid>
     <description><![CDATA[  ABSTRACT Git is essentially a “Time Machine” for you code. ]]></description>
-    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
+    <pubDate>Sat, 02 May 2026 06:52:02 GMT</pubDate>
   </item><item>
-    <title>12 Terminal</title>
-    <link>https://capibara3.github.io/1_tech_foundations/13_terminal</link>
-    <guid>https://capibara3.github.io/1_tech_foundations/13_terminal</guid>
-    <description><![CDATA[  ABSTRACT The Terminal (also called Command Line or Shell) is a text-based way to talk to your computer. ]]></description>
-    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
-  </item><item>
-    <title>14 GitHub 1</title>
-    <link>https://capibara3.github.io/1_tech_foundations/14_github_1</link>
-    <guid>https://capibara3.github.io/1_tech_foundations/14_github_1</guid>
+    <title>14 GitHub</title>
+    <link>https://capibara3.github.io/1_tech_foundations/14_github</link>
+    <guid>https://capibara3.github.io/1_tech_foundations/14_github</guid>
     <description><![CDATA[  ABSTRACT If Git is the “Time Machine” on your computer, GitHub is the “Space Station” in the cloud where everyone parks their time machines. ]]></description>
-    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
+    <pubDate>Sat, 02 May 2026 06:52:02 GMT</pubDate>
   </item><item>
-    <title>15 GitHub 2</title>
-    <link>https://capibara3.github.io/1_tech_foundations/15_github_2</link>
-    <guid>https://capibara3.github.io/1_tech_foundations/15_github_2</guid>
-    <description><![CDATA[ Goal Learn the GitHub workflow and how to use GitHub’s features to collaborate, contribute, and communicate with the rest of the team. ]]></description>
-    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
+    <title>15 Local LaTeX</title>
+    <link>https://capibara3.github.io/1_tech_foundations/15_local_latex</link>
+    <guid>https://capibara3.github.io/1_tech_foundations/15_local_latex</guid>
+    <description><![CDATA[  ABSTRACT If Markdown is a quick handwritten note (what we use on GitHub), \LaTeX is a professional printing press. ]]></description>
+    <pubDate>Sat, 02 May 2026 06:52:02 GMT</pubDate>
+  </item><item>
+    <title>16a Configuring Python &amp; Pip</title>
+    <link>https://capibara3.github.io/1_tech_foundations/16a_configuring_python_pip</link>
+    <guid>https://capibara3.github.io/1_tech_foundations/16a_configuring_python_pip</guid>
+    <description><![CDATA[  ABSTRACT To contribute to the CAPIBARA Collaboration, you need a functional Python environment. ]]></description>
+    <pubDate>Sat, 02 May 2026 06:52:02 GMT</pubDate>
+  </item><item>
+    <title>16 Python Basics</title>
+    <link>https://capibara3.github.io/1_tech_foundations/16b_python_basics</link>
+    <guid>https://capibara3.github.io/1_tech_foundations/16b_python_basics</guid>
+    <description><![CDATA[  ABSTRACT Python is the “Swiss Army Knife” of modern science. ]]></description>
+    <pubDate>Sat, 02 May 2026 06:52:02 GMT</pubDate>
+  </item><item>
+    <title>23_CONTRIBUTING</title>
+    <link>https://capibara3.github.io/2_governance/23_CONTRIBUTING</link>
+    <guid>https://capibara3.github.io/2_governance/23_CONTRIBUTING</guid>
+    <description><![CDATA[  ABSTRACT The goal of this page is to master the GitHub Workflow. In a scientific collaboration, GitHub is more than a code host. ]]></description>
+    <pubDate>Sat, 02 May 2026 06:52:02 GMT</pubDate>
   </item><item>
     <title>07 Configuring Python &amp; Pip</title>
-    <link>https://capibara3.github.io/1_tech_foundations/16_configuring_python_pip</link>
-    <guid>https://capibara3.github.io/1_tech_foundations/16_configuring_python_pip</guid>
+    <link>https://capibara3.github.io/4_advanced_coding/15_configuring_python_pip</link>
+    <guid>https://capibara3.github.io/4_advanced_coding/15_configuring_python_pip</guid>
     <description><![CDATA[ Goal In this tutorial you will learn to setup your computer to compile and run code in the Python programming language. ]]></description>
-    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
-  </item><item>
-    <title>17 Local $\LaTeX$</title>
-    <link>https://capibara3.github.io/1_tech_foundations/17_local_latex</link>
-    <guid>https://capibara3.github.io/1_tech_foundations/17_local_latex</guid>
-    <description><![CDATA[ Goal 11_unix 13_terminal Prerequisites Basic collaboration account Installed environment Steps 1. ]]></description>
-    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
-  </item><item>
-    <title>09 Python Basics</title>
-    <link>https://capibara3.github.io/1_tech_foundations/17_python_basics</link>
-    <guid>https://capibara3.github.io/1_tech_foundations/17_python_basics</guid>
-    <description><![CDATA[ Goal Learn the fundamentals of Python programming: data types, variables, control flow (if/else, loops), and functions. ]]></description>
-    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
-  </item><item>
-    <title>21_CODE_OF_CONDUCT</title>
-    <link>https://capibara3.github.io/2_governance/21_CODE_OF_CONDUCT</link>
-    <guid>https://capibara3.github.io/2_governance/21_CODE_OF_CONDUCT</guid>
-    <description><![CDATA[  Adapted from the Contributor Covenant, version 2.1 TL;DR Be kind, be respectful, be professional. ]]></description>
-    <pubDate>Thu, 23 Apr 2026 21:49:33 GMT</pubDate>
+    <pubDate>Sat, 02 May 2026 06:52:02 GMT</pubDate>
   </item>
     </channel>
   </rss>

@@ -1,30 +1,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
     <loc>https://capibara3.github.io/0_onboarding/01_applying_to_join</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/1_tech_foundations/11_unix</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
+  </url><url>
+    <loc>https://capibara3.github.io/1_tech_foundations/12_terminal</loc>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/1_tech_foundations/13_git</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
-    <loc>https://capibara3.github.io/1_tech_foundations/13_terminal</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <loc>https://capibara3.github.io/1_tech_foundations/14_github</loc>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
-    <loc>https://capibara3.github.io/1_tech_foundations/14_github_1</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <loc>https://capibara3.github.io/1_tech_foundations/15_local_latex</loc>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
-    <loc>https://capibara3.github.io/1_tech_foundations/15_github_2</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <loc>https://capibara3.github.io/1_tech_foundations/16a_configuring_python_pip</loc>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
-    <loc>https://capibara3.github.io/1_tech_foundations/16_configuring_python_pip</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/1_tech_foundations/17_local_latex</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/1_tech_foundations/17_python_basics</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <loc>https://capibara3.github.io/1_tech_foundations/16b_python_basics</loc>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/2_governance/21_CODE_OF_CONDUCT</loc>
     <lastmod>2026-04-23T21:49:33.000Z</lastmod>
@@ -33,7 +30,7 @@
     <lastmod>2026-04-23T21:49:33.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/2_governance/23_CONTRIBUTING</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/2_governance/24_MEMBERSHIP_POLICY</loc>
     <lastmod>2026-04-23T21:49:33.000Z</lastmod>
@@ -44,156 +41,60 @@
     <loc>https://capibara3.github.io/2_governance/old-index</loc>
     <lastmod>2026-04-23T21:49:33.000Z</lastmod>
   </url><url>
+    <loc>https://capibara3.github.io/4_advanced_coding/15_configuring_python_pip</loc>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
+  </url><url>
     <loc>https://capibara3.github.io/4_advanced_coding/41_jupyter_notebook</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/4_advanced_coding/42_configuring_conda_venv</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/4_advanced_coding/43_numpy_pandas</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/4_advanced_coding/44_matplotlib</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/4_advanced_coding/45_scipy_fitting</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/4_advanced_coding/46_packages</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/4_advanced_coding/47_docker</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/CRD/</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
+  </url><url>
+    <loc>https://capibara3.github.io/GAMMA/README</loc>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/GAMMA/authorship</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/GAMMA/cosmology</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/GAMMA/cubesats</loc>
     <lastmod>2026-04-23T21:49:33.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/GAMMA/ml_recognition</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/GAMMA/multi_messenger</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/GAMMA/onboarding</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/GAMMA/photon_lag</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/GAMMA/stellar_evo</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url><url>
     <loc>https://capibara3.github.io/</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/00_applying_to_join</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/01_getting_started</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/02_setting_up_unix</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/03_command_line</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/04_configuring_git</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/05_configuring_github</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/06_collaborating_github</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/07_configuring_python_pip</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/08_configuring_conda_venv</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/09_python_basics</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/10_jupyter_notebook</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/11_numpy_pandas</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/12_matplotlib</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/13_scipy_fitting</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/14_packages</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/15_automating_tests</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/16_docker</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/17_local_latex</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/18_codecarbon</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/X_code_editors</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/01_onboarding/</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/02_governance/AUTHORSHIP_POLICY</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/02_governance/CODE_OF_CONDUCT</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/02_governance/COLLABORATION_AGREEMENT</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/02_governance/COMMUNICATIONS_POLICY</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/02_governance/CONTRIBUTING</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/02_governance/MEMBERSHIP_POLICY</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/02_governance/PARENTAL_CONSENT_FORM</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/02_governance/PRIVACY_POLICY</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/02_governance/about</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/02_governance/old-index</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/03_internal/internal</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
-  </url><url>
-    <loc>https://capibara3.github.io/old_docs/sitemap</loc>
-    <lastmod>2026-04-23T21:49:33.000Z</lastmod>
+    <lastmod>2026-05-02T06:52:02.000Z</lastmod>
   </url></urlset>
