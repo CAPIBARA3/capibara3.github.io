@@ -6,6 +6,12 @@
       <description>Last 10 notes on CAPIBARA Docs</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>22 About</title>
+    <link>https://capibara3.github.io/2_governance/22_about</link>
+    <guid>https://capibara3.github.io/2_governance/22_about</guid>
+    <description><![CDATA[ Why does CAPIBARA exist? The Collaboration for the Analysis of Photonic and Ionic Bursts and Radiation (CAPIBARA) was established in July 2024 with a clear mandate: To explore the high-energy cosmos To do so with multi-messenger analysis To be fully led by students CAPIBARA’s development was acceler... ]]></description>
+    <pubDate>Fri, 26 Jun 2026 18:52:06 GMT</pubDate>
+  </item><item>
     <title>GRB Cosmology</title>
     <link>https://capibara3.github.io/GAMMA/cosmology</link>
     <guid>https://capibara3.github.io/GAMMA/cosmology</guid>
@@ -58,12 +64,6 @@
     <link>https://capibara3.github.io/3_advanced_coding/43_numpy_pandas</link>
     <guid>https://capibara3.github.io/3_advanced_coding/43_numpy_pandas</guid>
     <description><![CDATA[ Goal Learn the fundamentals of NumPy (numerical computing) and Pandas (data manipulation). ]]></description>
-    <pubDate>Wed, 17 Jun 2026 22:43:09 GMT</pubDate>
-  </item><item>
-    <title>12 Matplotlib and Data Visualization</title>
-    <link>https://capibara3.github.io/3_advanced_coding/44_matplotlib</link>
-    <guid>https://capibara3.github.io/3_advanced_coding/44_matplotlib</guid>
-    <description><![CDATA[ Goal Learn how to create professional plots and visualizations using Matplotlib. ]]></description>
     <pubDate>Wed, 17 Jun 2026 22:43:09 GMT</pubDate>
   </item>
     </channel>
