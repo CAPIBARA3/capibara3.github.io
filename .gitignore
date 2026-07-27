@@ -1,7 +1,1 @@
-# general
 .DS_Store
-.idea/
-
-# outdated
-/publications/
-/missions/projects/*
