@@ -1,0 +1,88 @@
+@use "./base.scss";
+
+/* =========================================
+   CAPIBARA3 - Documentation Custom Styles
+   ========================================= */
+
+/* 1. Global Page Distinction */
+/* Adds a brand-colored accent line at the very top of the window */
+body {
+  border-top: 6px solid var(--tertiary); 
+}
+
+/* 2. Header Typography */
+/* Gives the main title a stronger presence and a clean underline */
+h1 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  border-bottom: 2px solid var(--lightgray);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark);
+}
+
+h2 {
+  font-weight: 700;
+  margin-top: 2rem;
+  color: var(--secondary); /* Ties subheaders to your brand color */
+}
+
+/* 3. Link Styling */
+/* Replaces standard link colors with a sleek, interactive underline effect */
+a.internal, 
+a.external {
+  text-decoration: none;
+  border-bottom: 1px dotted var(--tertiary);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--tertiary);
+    border-bottom: 1px solid var(--tertiary);
+    background-color: var(--highlight); /* Soft highlight on hover */
+  }
+}
+
+/* 4. Callouts (Admonitions) */
+/* Makes info boxes rounder and more distinct from standard text */
+.callout {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--lightgray);
+  border-left: 5px solid var(--secondary);
+  background-color: var(--light);
+  
+  /* Example: Custom styling for specific callout types */
+  &[data-callout="info"] {
+    border-left-color: var(--tertiary);
+  }
+}
+
+/* 5. Code Blocks */
+/* Softens the edges of code environments */
+.highlight {
+  border-radius: 8px;
+  border: 1px solid var(--lightgray);
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
+}
+
+/* 6. Sidebar/Navigation Tweaks */
+/* Gives the left sidebar a subtle background to separate it from content */
+@media all and (min-width: 1200px) {
+  .sidebar.left {
+    background-color: rgba(0, 0, 0, 0.01); /* Extremely subtle shading */
+    border-right: 1px solid var(--lightgray);
+    padding-right: 1.5rem;
+    margin-right: 2rem;
+  }
+}
+
+/* 7. Footer */
+/* Centers the footer and makes it feel more integrated */
+footer {
+  text-align: center;
+  border-top: 1px solid var(--lightgray);
+  padding-top: 2rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: var(--gray);
+}
