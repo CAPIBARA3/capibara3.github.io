@@ -11,6 +11,10 @@ on:
       - quartz/**
   workflow_dispatch:
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   build:
     if: ${{ github.repository == 'jackyzha0/quartz' }} # Comment this out if you want to publish your own images on a fork!
