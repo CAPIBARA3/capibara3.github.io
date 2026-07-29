@@ -95,7 +95,7 @@ export async function fetchTtf(
   const css = await cssResponse.text()
 
   // Extract .ttf url from css file
-  const urlRegex = /url\((https:\/\/fonts.gstatic.com\/s\/.*?.ttf)\)/g
+  const urlRegex = /url\((https:\/\/fonts\.gstatic\.com\/s\/.*?\.ttf)\)/g
   const match = urlRegex.exec(css)
 
   if (!match) {
