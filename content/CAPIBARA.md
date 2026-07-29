@@ -11,7 +11,7 @@ alias: index
 ## CRD – Cosmic Ray Detector
 A student-built instrument integrated into the OBA FARADAY CubeSat. FLying in LEO to detect solar and extra-solar primary cosmic rays, using Time-of-Flight techniques to distinguish their origins.
 
-[[index|Learn about CRD]]
+[[CRD|Learn about CRD]]
 
 ## GAMMA – Gamma-ray Analysis for Mutli-Messenger Astrophysics
 
@@ -41,10 +41,10 @@ Whether you're a physics student, an engineer, a science communicator, or someon
 
 ## Quick Links
 
-- [[index|CAPIBARA-CRD]]
+- [[CRD|CAPIBARA-CRD]]
 - [[GAMMA/index|CAPIBARA-GAMMA]]
 - [[About|About Us]]
-- [[Documentation|Documentation]]
+- [[Documentation/index|Documentation]]
 - [[join-us|Join Us]]
 - [[contact|Contact]]
 

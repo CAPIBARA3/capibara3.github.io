@@ -7,7 +7,7 @@ author: joanalnu
 > This page explains how to join the CAPIBARA Collaboration as a student at any level.
 
 > [!INFO] Applying for the GAMMA Team
-> If you already know you want to be in the GAMMA Science Team, there's a dedicated page for that [[onboarding|here]]. If you don't want to apply to the GAMMA Science Team or are still unsure, continue reading this page about the general application.
+> If you already know you want to be in the GAMMA Science Team, there's a dedicated page for that [[Onboarding|here]]. If you don't want to apply to the GAMMA Science Team or are still unsure, continue reading this page about the general application.
 
 
 # Requirements
