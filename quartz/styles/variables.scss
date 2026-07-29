@@ -1,0 +1,52 @@
+@use "sass:map";
+
+$breakpoints: (
+  mobile: 800px,
+  desktop: 1200px,
+);
+
+$mobile: "(max-width: #{map.get($breakpoints, mobile)})";
+$tablet: "(min-width: #{map.get($breakpoints, mobile)}) and (max-width: #{map.get($breakpoints, desktop)})";
+$desktop: "(min-width: #{map.get($breakpoints, desktop)})";
+
+// Increased from Quartz defaults to give a "full website" width
+$pageWidth: 1140px; 
+$sidePanelWidth: 280px; 
+$topSpacing: 4rem;
+$boldWeight: 700;
+$semiBoldWeight: 600;
+$normalWeight: 400;
+
+$mobileGrid: (
+  templateRows: "auto auto auto auto auto",
+  templateColumns: "auto",
+  rowGap: "5px",
+  columnGap: "5px",
+  templateAreas:
+    '"grid-sidebar-left"\
+      "grid-header"\
+      "grid-center"\
+      "grid-sidebar-right"\
+      "grid-footer"',
+);
+$tabletGrid: (
+  templateRows: "auto auto auto auto",
+  templateColumns: "#{$sidePanelWidth} auto",
+  rowGap: "5px",
+  columnGap: "5px",
+  templateAreas:
+    '"grid-sidebar-left grid-header"\
+      "grid-sidebar-left grid-center"\
+      "grid-sidebar-left grid-sidebar-right"\
+      "grid-sidebar-left grid-footer"',
+);
+$desktopGrid: (
+  templateRows: "auto auto auto",
+  templateColumns: "#{$sidePanelWidth} auto #{$sidePanelWidth}",
+  rowGap: "5px",
+  columnGap: "5px",
+  templateAreas:
+    '"grid-sidebar-left grid-header grid-sidebar-right"\
+      "grid-sidebar-left grid-center grid-sidebar-right"\
+      "grid-sidebar-left grid-footer grid-sidebar-right"',
+);
