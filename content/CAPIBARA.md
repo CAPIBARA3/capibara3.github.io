@@ -21,10 +21,7 @@ A mission concept to observe gamma-ray bursts and advancing in our understanding
 
 # Latest News
 
-```dataview
-LIST
-FROM #news
-```
+
 
 # Get Involved
 

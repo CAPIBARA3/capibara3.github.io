@@ -15,8 +15,8 @@ Become part of the next generation of space scientists and engineers.
 
 ## 🛰️ Applying to a specific programme?
 If you know which programme you'd like to join, use a dedicated form for a faster process:
-* [Apply to GAMMA](gamma/apply)
-* [CRD Info](crd/index)
+* [[GAMMA/index|GAMMA Info]]
+* [[CRD|CRD Info]]
 
 ---
 

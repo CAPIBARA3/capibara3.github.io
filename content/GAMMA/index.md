@@ -1,38 +1,43 @@
-# What is the GAMMA Initiative?
+---
+title: GAMMA
+description: Student-led gamma-ray and X-ray transient observation programme building toward a microsatellite constellation.
+---
 
-> [!TODO] 
+# CAPIBARA-GAMMA
+> **A student-led initiative observing gamma-ray bursts (GRBs) and advancing transient astrophysics for the multi-messenger era.**
 
-# What is our current focus?
+CAPIBARA-GAMMA brings together students, researchers, and mentors to design, simulate, and analyze high-energy astrophysics missions. We are currently preparing a $\gamma$-ray transient observing CubeSat concept in partnership with aerospace engineering teams.
 
-We are currently studying and conducting research to motivate a $\gamma$-ray transient observing student CubeSat mission. This mission would then be developed in partnership with an aerospace engineering student team or club.
+---
 
-# How do we work?
+## 🚀 Quick Navigation
 
-## The Research Flow
+* 🔬 **[[Science Case|Explore our Science Case]]** — Discover our scientific objectives, research topics, and physics simulations.
+* 👥 **[[Team|Meet the Team]]** — See our student leads, research contributors, and academic advisors.
+* 📝 **[[Join Us|Apply to GAMMA]]** — Join the research team (no prior experience required).
 
-## Our Tools
-| Task | Tool | Comment |
-| --- | --- | --- |
-| Communication | GitHub Discussions and chat features | Communication is key so that everyone is updated on status, progess is discussed, and work is focused. |
-| Documentation | [`.github-private` repository](https://github.com/capibara3/.github-private) | Documentation is very important so that future and new members can understand what we have already done. |
-| Research coding | `Python` | Modern physics and astronomy research deeply relies on computational tools. We use `Python` (community standard) for our data analysis, simulations and plot generation. Every single line of code related to GAMMA activity should be saved in a repository within the `capibara3` GitHub organisation named `gamma-<research-title>`.
-| Paper Writing | $\LaTeX$ | By the end of a research project, a paper is written to share your insights publicly. |
+---
 
-## Resources
+## 🛠️ How We Work
 
-- [ArXiV](https://arxiv.org): An online, free pre-print archive service. Nearly all papers are uploaded here before publishing in a journal. It provides early access to new and old papers, although they are not peer-reviewed.
+Modern physics and astronomy rely heavily on collaborative, open computational tools. Every member works within our standardized research stack:
 
+| Task              | Tool                                                          | Role & Workflow                                                                        |
+| :---------------- | :------------------------------------------------------------ | :------------------------------------------------------------------------------------- |
+| **Communication** | GitHub Discussions                                            | Central hub for status updates, technical questions, and task tracking.                |
+| **Documentation** | [`Website`](https://github.com/capibara3/capibara3.github.io) | Onboarding guides, meeting notes, and archived research logs.                          |
+| **Data & Code**   | `Python`                                                      | Data analysis, light-curve simulations, and plotting (`gamma-<research-title>` repos). |
+| **Publications**  | $\LaTeX$                                                      | Drafting formal pre-prints, conference proceedings, and proposal papers.               |
 
-# Want to contribute?
+### Research Guidelines & Tools
+* **Literature:** We use [ArXiV](https://arxiv.org) as our primary open-access paper repository.
+* **Open Source:** All research code is maintained in public or private repositories under the `capibara3` GitHub organization.
 
-> You are not a member of the GAMMA team? [Join us!](https://capibara3.github.io/gamma/apply.html)
+---
 
-You can visit the overview page for each of the topics we are currently working on and contact the reference author listed there.
+## 💡 Ready to Contribute?
 
+Whether you want to work on theoretical modeling, machine learning for transient detection, or orbital simulations, everyone is welcome.
 
-- [[GRB Cosmology]]
-- [[cubesats]]
-- [[ml_recognition]]
-- [[Multi-Messenger Astronomy]]
-- [[Lorentz Invariance]]
-- [[Stellar Evolution]]
+<a href="Join-Us.html" class="btn btn-primary">Apply to the GAMMA Team</a>
+<a href="/contact" class="btn btn-outline">Contact the Lead</a>
