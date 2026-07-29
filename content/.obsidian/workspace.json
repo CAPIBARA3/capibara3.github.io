@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "documentation/GAMMA/README.md",
+                "file": "GAMMA/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "index"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1300453a6866e40c",
@@ -185,8 +186,8 @@
   },
   "active": "1eb6617e73bb64f6",
   "lastOpenFiles": [
-    "GAMMA/index.md",
     "documentation/GAMMA/README.md",
+    "GAMMA/index.md",
     "CRD.md",
     "GAMMA",
     "CRD/index.md",
