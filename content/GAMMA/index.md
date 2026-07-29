@@ -30,9 +30,9 @@ We are currently studying and conducting research to motivate a $\gamma$-ray tra
 You can visit the overview page for each of the topics we are currently working on and contact the reference author listed there.
 
 
-- [[cosmology]]
+- [[GRB Cosmology]]
 - [[cubesats]]
 - [[ml_recognition]]
-- [[multi_messenger]]
-- [[photon_lag]]
-- [[stellar_evo]]
+- [[Multi-Messenger Astronomy]]
+- [[Lorentz Invariance]]
+- [[Stellar Evolution]]
