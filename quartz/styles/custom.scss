@@ -1,88 +1,127 @@
 @use "./base.scss";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
 /* =========================================
-   CAPIBARA3 - Documentation Custom Styles
+   CAPIBARA COLLABORATION - Website Styles
    ========================================= */
 
-/* 1. Global Page Distinction */
-/* Adds a brand-colored accent line at the very top of the window */
-body {
-  border-top: 6px solid var(--tertiary); 
+:root {
+  /* ── Capibara Core Palette ── */
+  --brand-purple: #a56fe8;
+  --brand-gold: #ffb347;
+  --brand-pink: #ff5aa2;
+  --grad-brand: linear-gradient(135deg, #a56fe8, #ffb347);
+  
+  /* ── Overriding Quartz Native Variables ── */
+  --headerFont: 'Syne', sans-serif;
+  --bodyFont: 'Space Grotesk', system-ui, sans-serif;
+  --codeFont: 'JetBrains Mono', monospace;
+  
+  --secondary: var(--brand-purple); /* Links, active states */
+  --tertiary: var(--brand-gold);    /* Hover states, accents */
 }
 
-/* 2. Header Typography */
-/* Gives the main title a stronger presence and a clean underline */
-h1 {
-  font-weight: 800;
+/* ── Global Page Resets ── */
+body {
+  border-top: 4px solid var(--brand-purple); 
+  letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headerFont);
+  font-weight: 700;
   letter-spacing: -0.02em;
-  border-bottom: 2px solid var(--lightgray);
-  padding-bottom: 0.4rem;
-  margin-bottom: 1.5rem;
   color: var(--dark);
 }
 
-h2 {
-  font-weight: 700;
-  margin-top: 2rem;
-  color: var(--secondary); /* Ties subheaders to your brand color */
-}
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); border-bottom: none; }
+h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); margin-top: 2.5rem; }
 
-/* 3. Link Styling */
-/* Replaces standard link colors with a sleek, interactive underline effect */
+/* ── Re-styling Quartz Elements ── */
+/* Makes Quartz's internal links look less like a wiki and more like a sleek site */
 a.internal, 
 a.external {
   text-decoration: none;
-  border-bottom: 1px dotted var(--tertiary);
-  transition: all 0.2s ease-in-out;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  padding: 0;
 
   &:hover {
     color: var(--tertiary);
-    border-bottom: 1px solid var(--tertiary);
-    background-color: var(--highlight); /* Soft highlight on hover */
+    border-bottom: 2px solid var(--tertiary);
+    background-color: transparent;
   }
 }
 
-/* 4. Callouts (Admonitions) */
-/* Makes info boxes rounder and more distinct from standard text */
+/* Callouts look more like website feature boxes */
 .callout {
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(30, 10, 60, 0.05);
   border: 1px solid var(--lightgray);
-  border-left: 5px solid var(--secondary);
+  border-left: 4px solid var(--secondary);
   background-color: var(--light);
-  
-  /* Example: Custom styling for specific callout types */
-  &[data-callout="info"] {
-    border-left-color: var(--tertiary);
-  }
 }
 
-/* 5. Code Blocks */
-/* Softens the edges of code environments */
-.highlight {
-  border-radius: 8px;
+/* ── Ported Capibara Components ── */
+/* Your team can use these using HTML inside Markdown, e.g. <a href="..." class="btn btn-primary"> */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  font-family: var(--bodyFont);
+  font-size: 0.925rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none !important;
+  transition: transform 0.2s cubic-bezier(0.22, 0.68, 0, 1.2), box-shadow 0.2s;
+  border: none;
+  border-bottom: none !important;
+}
+
+.btn:hover { transform: translateY(-2px); }
+
+.btn-primary {
+  background: var(--grad-brand);
+  color: white !important;
+  box-shadow: 0 4px 14px rgba(165,111,232,0.35);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 8px 22px rgba(165,111,232,0.45);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--brand-purple) !important;
+  border: 1.5px solid var(--brand-purple);
+}
+
+.card {
+  background: var(--light);
   border: 1px solid var(--lightgray);
-  box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
+  border-radius: 20px;
+  padding: 1.75rem;
+  transition: transform 0.25s ease, box-shadow 0.25s, border-color 0.25s;
 }
 
-/* 6. Sidebar/Navigation Tweaks */
-/* Gives the left sidebar a subtle background to separate it from content */
-@media all and (min-width: 1200px) {
-  .sidebar.left {
-    background-color: rgba(0, 0, 0, 0.01); /* Extremely subtle shading */
-    border-right: 1px solid var(--lightgray);
-    padding-right: 1.5rem;
-    margin-right: 2rem;
-  }
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(30, 10, 60, 0.07);
+  border-color: rgba(165,111,232,0.3);
 }
 
-/* 7. Footer */
-/* Centers the footer and makes it feel more integrated */
-footer {
-  text-align: center;
-  border-top: 1px solid var(--lightgray);
-  padding-top: 2rem;
-  margin-top: 4rem;
-  font-size: 0.9rem;
-  color: var(--gray);
+.highlight-banner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: linear-gradient(135deg, rgba(165,111,232,0.07) 0%, rgba(255,179,71,0.07) 100%);
+  border: 1px solid var(--lightgray);
+  border-radius: 20px;
+  padding: 1.25rem 1.75rem;
+  margin-bottom: 2rem;
 }

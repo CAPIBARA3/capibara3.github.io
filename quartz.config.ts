@@ -21,36 +21,36 @@ const config: QuartzConfig = {
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
-      typography: {
-        header: "Roboto",
-        body: "Inter",
-        code: "Fira Code",
-      },
-      colors: {
-        lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#a56fe8",
-          tertiary: "#ffb347",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+        typography: {
+          header: "Syne",
+            body: "Space Grotesk",
+            code: "JetBrains Mono",
         },
-        darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#b78cff",
-          tertiary: "#ffc15c",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+        colors: {
+          lightMode: {
+            light: "#f4f2f9", // --bg
+            lightgray: "rgba(165, 111, 232, 0.15)", // --border
+            gray: "#9b92ab", // --text-faint
+            darkgray: "#1a1625", // --text
+            dark: "#000000",
+            secondary: "#a56fe8", // --purple
+            tertiary: "#ffb347", // --gold
+            highlight: "rgba(165, 111, 232, 0.07)",
+            textHighlight: "rgba(255, 179, 71, 0.2)",
+          },
+          darkMode: {
+            light: "#0f0d16",
+            lightgray: "rgba(165, 111, 232, 0.18)",
+            gray: "#6e6585",
+            darkgray: "#f0ecfa",
+            dark: "#ffffff",
+            secondary: "#c49af5",
+            tertiary: "#ffb347",
+            highlight: "rgba(165, 111, 232, 0.10)",
+            textHighlight: "rgba(255, 179, 71, 0.2)",
+          },
         },
-      },
-    },
+    }
   },
   plugins: {
     transformers: [
