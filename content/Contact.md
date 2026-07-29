@@ -2,7 +2,7 @@
 > [!INFO] **For Students**
 > Want to join? Use our [[Join Us|Application Form]] instead of this page.
 
-> [!INFO] For Technical Issues
+> [!INFO] **For Technical Issues**
 > For code-related matters, open an issue or PR on our [GitHub Repositories](https://github.com/capibara3/).
 
 
