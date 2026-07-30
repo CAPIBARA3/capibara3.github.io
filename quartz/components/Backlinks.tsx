@@ -36,7 +36,7 @@ export default ((opts?: Partial<BacklinksOptions>) => {
             backlinkFiles.map((f) => (
               <li>
                 <a href={resolveRelative(fileData.slug!, f.slug!)} class="internal">
-                  {f.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title ?? simplifySlug(f.slug!)}
+                  {f.frontmatter?.title}
                 </a>
               </li>
             ))

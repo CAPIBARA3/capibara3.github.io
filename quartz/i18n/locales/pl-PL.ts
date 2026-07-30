@@ -16,7 +16,7 @@ export default {
       question: "Pytanie",
       warning: "Ostrzeżenie",
       failure: "Usterka",
-      danger: "Niebezpieczeństwo",
+      danger: "Niebiezpieczeństwo",
       bug: "Błąd w kodzie",
       example: "Przykład",
       quote: "Cytat",
@@ -26,7 +26,7 @@ export default {
       noBacklinksFound: "Brak połączeń zwrotnych",
     },
     themeToggle: {
-      lightMode: "Tryb jasny",
+      lightMode: "Trzyb jasny",
       darkMode: "Tryb ciemny",
     },
     readerMode: {

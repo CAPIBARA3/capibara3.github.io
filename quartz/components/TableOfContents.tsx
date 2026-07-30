@@ -47,9 +47,9 @@ export default ((opts?: Partial<Options>) => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
             class="fold"
           >
             <polyline points="6 9 12 15 18 9"></polyline>

@@ -411,16 +411,7 @@ export async function handleBuild(argv) {
         res.end()
       }
 
-      const rawFp = req.url?.split("?")[0] ?? "/"
-      const normalizedFp = path.posix.normalize(rawFp.startsWith("/") ? rawFp : `/${rawFp}`)
-      const rootOutput = path.resolve(argv.output)
-      const candidatePath = path.resolve(rootOutput, `.${normalizedFp}`)
-      if (candidatePath !== rootOutput && !candidatePath.startsWith(rootOutput + path.sep)) {
-        res.writeHead(403)
-        res.end()
-        return
-      }
-      let fp = normalizedFp
+      let fp = req.url?.split("?")[0] ?? "/"
 
       // handle redirects
       if (fp.endsWith("/")) {

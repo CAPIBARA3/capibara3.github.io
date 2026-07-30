@@ -1,12 +1,17 @@
-# Welcome to the CAPIBARA Collaboration! 🎉
+# Quartz v4
 
-This document will guide you to the key onboarding resources.
+> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
 
-- **Documentation:** Every collaboration-wide important document lives [there](https://capibara3.github.io/docs), including our Code of Conduct, Contributing guidelines, collaboration governance, and coding tutorials.
-- **Discussion**: Check out the [dicussions](https://github.com/capibara3/.github-private/discussions), you will always find help there.
-- **Project planning**: You can consult past, current, and future tasks [here](https://github.com/orgs/CAPIBARA3/projects/).
+Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
 
-## 📣 Contact: Have Questions or Suggestions?
-As always, feel free to [reach out](https://capibara3.github.io/contact.html).
+🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
 
-By the way, our acronym stands for: **C**ollaboration for the **A**nalysis of **P**hotonic and **I**onic **B**ursts **A**nd **RA**diation
+[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+
+## Sponsors
+
+<p align="center">
+  <a href="https://github.com/sponsors/jackyzha0">
+    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
+  </a>
+</p>

@@ -8,49 +8,50 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "CAPIBARA Docs",
+    pageTitle: "CAPIBARA",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-GB",
-    baseUrl: "capibara3.github.io",
+    locale: "en-US",
+    baseUrl: "https//capibara3.github.io",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
-        typography: {
-          header: "Syne",
-            body: "Space Grotesk",
-            code: "JetBrains Mono",
+      cdnCaching: true,
+      typography: {
+        header: "Syne",
+        body: "Space Grotesk",
+        code: "JetBrains Mono",
+      },
+      colors: {
+        lightMode: {
+          light: "#fafafa",                         // Pure page/paper background
+          lightgray: "#e5e5e5",                     // Borders, dividers, search inputs
+          gray: "#737373",                          // Subtitles and metadata
+          darkgray: "#171717",                      // Main text body
+          dark: "#0a0a0a",                          // Headings and titles
+          secondary: "#a56fe8",                     // Brand Purple (Links, active states)
+          tertiary: "#ffb347",                      // Brand Gold (Hover states)
+          highlight: "rgba(165, 111, 232, 0.1)",   // Soft purple highlight overlay
+          textHighlight: "#ffb34788",               // Text highlight background
         },
-        colors: {
-          lightMode: {
-            light: "#f4f2f9", // --bg
-            lightgray: "rgba(165, 111, 232, 0.15)", // --border
-            gray: "#9b92ab", // --text-faint
-            darkgray: "#1a1625", // --text
-            dark: "#000000",
-            secondary: "#a56fe8", // --purple
-            tertiary: "#ffb347", // --gold
-            highlight: "rgba(165, 111, 232, 0.07)",
-            textHighlight: "rgba(255, 179, 71, 0.2)",
-          },
-          darkMode: {
-            light: "#0f0d16",
-            lightgray: "rgba(165, 111, 232, 0.18)",
-            gray: "#6e6585",
-            darkgray: "#f0ecfa",
-            dark: "#ffffff",
-            secondary: "#c49af5",
-            tertiary: "#ffb347",
-            highlight: "rgba(165, 111, 232, 0.10)",
-            textHighlight: "rgba(255, 179, 71, 0.2)",
-          },
+        darkMode: {
+          light: "#0a0a0a",                         // Deep dark background
+          lightgray: "#262626",                     // Dark borders and graph grid
+          gray: "#a3a3a3",                          // Muted text
+          darkgray: "#e5e5e5",                      // Main crisp text body
+          dark: "#fafafa",                          // Bright headings
+          secondary: "#a56fe8",                     // Brand Purple (Links, active states)
+          tertiary: "#ffb347",                      // Brand Gold (Hover states)
+          highlight: "rgba(165, 111, 232, 0.15)",  // Soft purple highlight overlay
+          textHighlight: "#ffb34788",               // Text highlight background
         },
-    }
+      },
+    },
   },
   plugins: {
     transformers: [
